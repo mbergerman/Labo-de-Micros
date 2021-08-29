@@ -16,7 +16,7 @@
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
 // clock frequency
-#define FCLK 100000000U
+#define FCLK __CORE_CLOCK__
 
 // control and status register
 #define CSR_MASK 0x00010007

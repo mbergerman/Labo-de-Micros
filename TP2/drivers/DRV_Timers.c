@@ -9,7 +9,6 @@
  ******************************************************************************/
 
 #include "DRV_Timers.h"
-
 #include "PDRV_SysTick.h"
 
 
@@ -73,15 +72,15 @@ static tim_id_t timers_cant = TIMER_ID_INTERNAL+1;
  *******************************************************************************
  ******************************************************************************/
 
-void timerInit(void)
+void initTimers(void)
 {
-    static bool yaInit = false;
-    if (yaInit)
+    static bool alreadyInit = false;
+    if (alreadyInit)
         return;
     
     SysTick_Init(timer_isr); // init peripheral
     
-    yaInit = true;
+    alreadyInit = true;
 }
 
 
@@ -106,27 +105,39 @@ void timerStart(tim_id_t id, ttick_t ticks, uint8_t mode, tim_callback_t callbac
     if ((id < timers_cant) && (mode < CANT_TIM_MODES))
 #endif // TIMER_DEVELOPMENT_MODE
     {
-        // ****** COMPLETAR ******
         // disable timer
+    	timers[id].running = false;
+
         // configure timer
+		timers[id].period = ticks;
+		timers[id].cnt = ticks;
+		timers[id].mode = mode;
+		timers[id].expired = false;
+		timers[id].callback = callback;
+
         // enable timer
+		timers[id].running = true;
     }
 }
 
 
 void timerStop(tim_id_t id)
 {
-    // ****** COMPLETAR ******
     // Apago el timer
+	timers[id].running = false;
+
     // y bajo el flag
+	timers[id].expired = false;
 }
 
 
 bool timerExpired(tim_id_t id)
 {
-    // ****** COMPLETAR ******
     // Verifico si expiró el timer
-    // y bajo el flag
+	bool expired = timers[id].expired;
+
+	// Hola
+	return expired;
 }
 
 
@@ -137,6 +148,9 @@ void timerDelay(ttick_t ticks)
     {
         // wait...
     }
+
+    // Bajo el flag
+	timers[TIMER_ID_INTERNAL].expired = false;
 }
 
 
@@ -148,11 +162,22 @@ void timerDelay(ttick_t ticks)
 
 static void timer_isr(void)
 {
-    // ****** COMPLETAR ******
     // decremento los timers activos
-    // si hubo timeout!
-    // 1) execute action: callback or set flag
-    // 2) update state
+	for(tim_id_t id = 0; id < TIMERS_MAX_CANT; id++){
+
+		// si hubo timeout!
+		if(timers[id].running){
+			if(--timers[id].cnt == 0){
+				// 1) execute action: callback or set flag
+				timers[id].expired = true;
+				(*timers[id].callback)();
+
+				// 2) update state
+				timers[id].cnt = timers[id].period;
+				timers[id].expired = (timers[id].mode != TIM_MODE_PERIODIC);
+			}
+		}
+	}
 }
 
 

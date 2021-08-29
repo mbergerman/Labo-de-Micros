@@ -51,7 +51,7 @@ typedef void (*tim_callback_t)(void);
 /**
  * @brief Initialice timer and corresponding peripheral
  */
-void timerInit(void);
+void initTimers(void);
 
 
 // Non-Blocking services ////////////////////////////////////////////////

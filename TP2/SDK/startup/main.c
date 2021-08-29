@@ -7,7 +7,6 @@
 #include "hardware.h"
 
 void App_Init (void);
-void PIT_Init (void);
 void App_Run (void);
 
 int main (void)

@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../drivers/DRV_Board.c \
 ../drivers/DRV_Timers.c \
 ../drivers/PDRV_GPIO.c \
 ../drivers/PDRV_SysTick.c 
 
 OBJS += \
+./drivers/DRV_Board.o \
 ./drivers/DRV_Timers.o \
 ./drivers/PDRV_GPIO.o \
 ./drivers/PDRV_SysTick.o 
 
 C_DEPS += \
+./drivers/DRV_Board.d \
 ./drivers/DRV_Timers.d \
 ./drivers/PDRV_GPIO.d \
 ./drivers/PDRV_SysTick.d 
