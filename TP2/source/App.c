@@ -44,20 +44,19 @@ void App_Init (void)
    	initTimers();
 
    	led_tim_id = timerGetId();
-   	//timerStart(led_tim_id, TIMER_MS2TICKS(1000), TIM_MODE_PERIODIC, animateLEDs);
+   	timerStart(led_tim_id, TIMER_MS2TICKS(1000), TIM_MODE_PERIODIC, animateLEDs);
 }
 
 /* Función que se llama constantemente en un ciclo infinito */
 void App_Run (void)
 {
 
-	setLED(RED);
-	timerDelay(TIMER_MS2TICKS(500));
-	clearLED(RED);
-	timerDelay(TIMER_MS2TICKS(500));
+//	setLED(RED);
+//	timerDelay(TIMER_MS2TICKS(500));
+//	clearLED(RED);
+//	timerDelay(TIMER_MS2TICKS(500));
 
-
-	/*static bool last_sw2 = false;
+	static bool last_sw2 = false;
 
 	if( getSW(SW2) && !last_sw2 ){
 		timerStop(led_tim_id);
@@ -65,12 +64,16 @@ void App_Run (void)
 		clearLED(RED);
 		clearLED(GREEN);
 		clearLED(BLUE);
+		timerDelay(TIMER_MS2TICKS(1000));
+		setLED(RED);
+		setLED(GREEN);
+		setLED(BLUE);
 	}
 	if( !getSW(SW2) && last_sw2 ){
 		timerStart(led_tim_id, TIMER_MS2TICKS(1000), TIM_MODE_PERIODIC, animateLEDs);
 	}
 
-	last_sw2 = getSW(SW2);*/
+	last_sw2 = getSW(SW2);
 }
 
 /*******************************************************************************
@@ -97,6 +100,7 @@ void animateLEDs(){
 		clearLED(RED);
 		clearLED(GREEN);
 		setLED(BLUE);
+		//timerDelay(TIMER_MS2TICKS(30));
 		break;
 	}
 

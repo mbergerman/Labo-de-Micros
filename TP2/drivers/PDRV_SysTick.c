@@ -41,13 +41,13 @@
  ******************************************************************************/
 // See Section 4.4 ARM-Cortex-M4 Generic User Guide
 
-typedef struct {
-	__IO uint32_t CSR;
-	__IO uint32_t RVR;
-	__IO uint32_t CVR;
-	__I uint32_t CALIB;
-} SysTick_t;
-#define SYSTICK ((SysTick_t*)0xE000E010)
+//typedef struct {
+//	__IO uint32_t CSR;
+//	__IO uint32_t RVR;
+//	__IO uint32_t CVR;
+//	__I uint32_t CALIB;
+//} SysTick_t;
+//#define SYSTICK ((SysTick_t*)0xE000E010)
 
 /*******************************************************************************
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
@@ -61,16 +61,15 @@ static void (*funcallback_ptr)(void);
  ******************************************************************************/
 
 bool SysTick_Init (void (*funcallback)(void)) {
-	SYSTICK->CSR = 0x00;
+	SysTick->CTRL = 0x00;
 	// 1) set reload value
-	SYSTICK->RVR = RVR_MASK & RELOAD_VALUE;
+	SysTick->LOAD = RVR_MASK & RELOAD_VALUE;
 
 	// 2) clear current value
-	SYSTICK->CVR = CVR_MASK & CLEAR_VALUE;
+	SysTick->VAL = CVR_MASK & CLEAR_VALUE;
 
 	// 3) enable SysTick
-	SYSTICK->CSR = CSR_MASK & (ENABLE_MASK | TICKINT_MASK | CLKSOURCE_MASK);
-
+	SysTick->CTRL = CSR_MASK & (ENABLE_MASK | TICKINT_MASK | CLKSOURCE_MASK);
 
 	funcallback_ptr = funcallback;
 	return 0;

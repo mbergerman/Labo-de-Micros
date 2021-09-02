@@ -133,24 +133,17 @@ void timerStop(tim_id_t id)
 
 bool timerExpired(tim_id_t id)
 {
-    // Verifico si expiró el timer
-	bool expired = timers[id].expired;
-
-	// Hola
-	return expired;
+	return timers[id].expired;
 }
 
 
 void timerDelay(ttick_t ticks)
 {
     timerStart(TIMER_ID_INTERNAL, ticks, TIM_MODE_SINGLESHOT, NULL);
-    while (!timerExpired(TIMER_ID_INTERNAL))
-    {
-        // wait...
+    while ( !timerExpired(TIMER_ID_INTERNAL) ){
+        //wait
     }
-
-    // Bajo el flag
-	timers[TIMER_ID_INTERNAL].expired = false;
+    timerStop(TIMER_ID_INTERNAL);
 }
 
 
@@ -170,7 +163,10 @@ static void timer_isr(void)
 			if(--timers[id].cnt == 0){
 				// 1) execute action: callback or set flag
 				timers[id].expired = true;
-				(*timers[id].callback)();
+
+				if(timers[id].callback != NULL) {
+					(*timers[id].callback)();
+				}
 
 				// 2) update state
 				timers[id].cnt = timers[id].period;

@@ -26,25 +26,25 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: TP2_G1.axf
+all: TP2.axf
 
 # Tool invocations
-TP2_G1.axf: $(OBJS) $(USER_OBJS)
+TP2.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -Xlinker -Map="TP2_G1.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T "Blink_Debug.ld" -o "TP2_G1.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -Xlinker -Map="TP2.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T "Blink_Debug.ld" -o "TP2.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) TP2_G1.axf
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) TP2.axf
 	-@echo ' '
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "TP2_G1.axf"; # arm-none-eabi-objcopy -v -O binary "TP2_G1.axf" "TP2_G1.bin" ; # checksum -p MK64FN1M0xxx12 -d "TP2_G1.bin";
+	-arm-none-eabi-size "TP2.axf"; # arm-none-eabi-objcopy -v -O binary "TP2.axf" "TP2.bin" ; # checksum -p MK64FN1M0xxx12 -d "TP2.bin";
 	-@echo ' '
 
 .PHONY: all clean dependents post-build
