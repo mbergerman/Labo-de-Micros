@@ -1,12 +1,11 @@
 /*
  * GENERATED FILE - DO NOT EDIT
- * Copyright (c) 2008-2013 Code Red Technologies Ltd,
- * Copyright 2015, 2018-2019 NXP
+ * (c) Code Red Technologies Ltd, 2008-2013
  * (c) NXP Semiconductors 2013-2021
  * Generated linker script file for MK64FN1M0xxx12
  * Created from linkscript.ldt by FMCreateLinkLibraries
- * Using Freemarker v2.3.30
- * MCUXpresso IDE v11.4.0 [Build 6237] [2021-08-06] on 2 sep. 2021 08:48:30
+ * Using Freemarker v2.3.23
+ * MCUXpresso IDE v10.2.0 [Build 759] [2018-05-15]  on 03/09/2021 19:52:41
  */
 
 INCLUDE "Blink_Debug_library.ld"
@@ -16,7 +15,7 @@ ENTRY(ResetISR)
 
 SECTIONS
 {
-     /* MAIN TEXT SECTION */
+    /* MAIN TEXT SECTION */
     .text : ALIGN(8)
     {
         FILL(0xff)
@@ -67,20 +66,21 @@ SECTIONS
     } > PROGRAM_FLASH
     /*
      * for exception handling/unwind - some Newlib functions (in common
-     * with C++ and STDC++) use this.
+     * with C++ and STDC++) use this. 
      */
-    .ARM.extab : ALIGN(8)
+    .ARM.extab : ALIGN(8) 
     {
         *(.ARM.extab* .gnu.linkonce.armextab.*)
     } > PROGRAM_FLASH
 
+    __exidx_start = .;
+
     .ARM.exidx : ALIGN(8)
     {
-        __exidx_start = .;
         *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-        __exidx_end = .;
     } > PROGRAM_FLASH
- 
+    __exidx_end = .;
+
     _etext = .;
         
  
@@ -88,154 +88,108 @@ SECTIONS
     .m_usb_data (NOLOAD) :
     {
         *(m_usb_bdt)
-    } > SRAM_UPPER AT> SRAM_UPPER
+    } > SRAM_UPPER
     /* DATA section for SRAM_LOWER */
 
     .data_RAM2 : ALIGN(8)
     {
         FILL(0xff)
         PROVIDE(__start_data_RAM2 = .) ;
-        PROVIDE(__start_data_SRAM_LOWER = .) ;
         *(.ramfunc.$RAM2)
         *(.ramfunc.$SRAM_LOWER)
-        *(.data.$RAM2)
-        *(.data.$SRAM_LOWER)
-        *(.data.$RAM2.*)
-        *(.data.$SRAM_LOWER.*)
+        *(.data.$RAM2*)
+        *(.data.$SRAM_LOWER*)
         . = ALIGN(8) ;
         PROVIDE(__end_data_RAM2 = .) ;
-        PROVIDE(__end_data_SRAM_LOWER = .) ;
      } > SRAM_LOWER AT>PROGRAM_FLASH
-
     /* DATA section for FLEX_RAM */
 
     .data_RAM3 : ALIGN(8)
     {
         FILL(0xff)
         PROVIDE(__start_data_RAM3 = .) ;
-        PROVIDE(__start_data_FLEX_RAM = .) ;
         *(.ramfunc.$RAM3)
         *(.ramfunc.$FLEX_RAM)
-        *(.data.$RAM3)
-        *(.data.$FLEX_RAM)
-        *(.data.$RAM3.*)
-        *(.data.$FLEX_RAM.*)
+        *(.data.$RAM3*)
+        *(.data.$FLEX_RAM*)
         . = ALIGN(8) ;
         PROVIDE(__end_data_RAM3 = .) ;
-        PROVIDE(__end_data_FLEX_RAM = .) ;
      } > FLEX_RAM AT>PROGRAM_FLASH
-
     /* MAIN DATA SECTION */
-    .uninit_RESERVED (NOLOAD) : ALIGN(8)
+    .uninit_RESERVED : ALIGN(8)
     {
-        _start_uninit_RESERVED = .;
         KEEP(*(.bss.$RESERVED*))
-       . = ALIGN(8) ;
+        . = ALIGN(4) ;
         _end_uninit_RESERVED = .;
-    } > SRAM_UPPER AT> SRAM_UPPER
+    } > SRAM_UPPER
 
     /* Main DATA section (SRAM_UPPER) */
     .data : ALIGN(8)
     {
        FILL(0xff)
        _data = . ;
-       PROVIDE(__start_data_RAM = .) ;
-       PROVIDE(__start_data_SRAM_UPPER = .) ;
        *(vtable)
        *(.ramfunc*)
-       KEEP(*(CodeQuickAccess))
-       KEEP(*(DataQuickAccess))
-       *(RamFunction)
        *(.data*)
        . = ALIGN(8) ;
        _edata = . ;
-       PROVIDE(__end_data_RAM = .) ;
-       PROVIDE(__end_data_SRAM_UPPER = .) ;
     } > SRAM_UPPER AT>PROGRAM_FLASH
 
     /* BSS section for SRAM_LOWER */
     .bss_RAM2 : ALIGN(8)
     {
        PROVIDE(__start_bss_RAM2 = .) ;
-       PROVIDE(__start_bss_SRAM_LOWER = .) ;
-       *(.bss.$RAM2)
-       *(.bss.$SRAM_LOWER)
-       *(.bss.$RAM2.*)
-       *(.bss.$SRAM_LOWER.*)
+       *(.bss.$RAM2*)
+       *(.bss.$SRAM_LOWER*)
        . = ALIGN (. != 0 ? 8 : 1) ; /* avoid empty segment */
        PROVIDE(__end_bss_RAM2 = .) ;
-       PROVIDE(__end_bss_SRAM_LOWER = .) ;
-    } > SRAM_LOWER AT> SRAM_LOWER
+    } > SRAM_LOWER 
 
     /* BSS section for FLEX_RAM */
     .bss_RAM3 : ALIGN(8)
     {
        PROVIDE(__start_bss_RAM3 = .) ;
-       PROVIDE(__start_bss_FLEX_RAM = .) ;
-       *(.bss.$RAM3)
-       *(.bss.$FLEX_RAM)
-       *(.bss.$RAM3.*)
-       *(.bss.$FLEX_RAM.*)
+       *(.bss.$RAM3*)
+       *(.bss.$FLEX_RAM*)
        . = ALIGN (. != 0 ? 8 : 1) ; /* avoid empty segment */
        PROVIDE(__end_bss_RAM3 = .) ;
-       PROVIDE(__end_bss_FLEX_RAM = .) ;
-    } > FLEX_RAM AT> FLEX_RAM
+    } > FLEX_RAM 
 
     /* MAIN BSS SECTION */
     .bss : ALIGN(8)
     {
         _bss = .;
-        PROVIDE(__start_bss_RAM = .) ;
-        PROVIDE(__start_bss_SRAM_UPPER = .) ;
         *(.bss*)
         *(COMMON)
         . = ALIGN(8) ;
         _ebss = .;
-        PROVIDE(__end_bss_RAM = .) ;
-        PROVIDE(__end_bss_SRAM_UPPER = .) ;
         PROVIDE(end = .);
-    } > SRAM_UPPER AT> SRAM_UPPER
+    } > SRAM_UPPER
 
     /* NOINIT section for SRAM_LOWER */
     .noinit_RAM2 (NOLOAD) : ALIGN(8)
     {
-       PROVIDE(__start_noinit_RAM2 = .) ;
-       PROVIDE(__start_noinit_SRAM_LOWER = .) ;
-       *(.noinit.$RAM2)
-       *(.noinit.$SRAM_LOWER)
-       *(.noinit.$RAM2.*)
-       *(.noinit.$SRAM_LOWER.*)
+       *(.noinit.$RAM2*)
+       *(.noinit.$SRAM_LOWER*)
        . = ALIGN(8) ;
-       PROVIDE(__end_noinit_RAM2 = .) ;
-       PROVIDE(__end_noinit_SRAM_LOWER = .) ;
-    } > SRAM_LOWER AT> SRAM_LOWER
+    } > SRAM_LOWER 
 
     /* NOINIT section for FLEX_RAM */
     .noinit_RAM3 (NOLOAD) : ALIGN(8)
     {
-       PROVIDE(__start_noinit_RAM3 = .) ;
-       PROVIDE(__start_noinit_FLEX_RAM = .) ;
-       *(.noinit.$RAM3)
-       *(.noinit.$FLEX_RAM)
-       *(.noinit.$RAM3.*)
-       *(.noinit.$FLEX_RAM.*)
+       *(.noinit.$RAM3*)
+       *(.noinit.$FLEX_RAM*)
        . = ALIGN(8) ;
-       PROVIDE(__end_noinit_RAM3 = .) ;
-       PROVIDE(__end_noinit_FLEX_RAM = .) ;
-    } > FLEX_RAM AT> FLEX_RAM
+    } > FLEX_RAM 
 
     /* DEFAULT NOINIT SECTION */
     .noinit (NOLOAD): ALIGN(8)
     {
         _noinit = .;
-        PROVIDE(__start_noinit_RAM = .) ;
-        PROVIDE(__start_noinit_SRAM_UPPER = .) ;
-        *(.noinit*)
+        *(.noinit*) 
          . = ALIGN(8) ;
         _end_noinit = .;
-       PROVIDE(__end_noinit_RAM = .) ;
-       PROVIDE(__end_noinit_SRAM_UPPER = .) ;        
-    } > SRAM_UPPER AT> SRAM_UPPER
+    } > SRAM_UPPER
 
     /* Reserve and place Heap within memory map */
     _HeapSize = 0x1000;

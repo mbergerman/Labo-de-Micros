@@ -84,7 +84,7 @@ enum{
 
 static void reader_enable_irq();
 static void reader_clock_irq();
-static char* parse_buffer();
+static void parse_buffer(char*, uint8_t*);
 
 /*******************************************************************************
  * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
@@ -98,8 +98,8 @@ static char* parse_buffer();
 
 static lectorCallback_t reader_finished_callback;
 static char reading_buffer[BUFFER_LEN];
-static uint_8 reading_buffer_pos;
-static lrc_check;
+static uint8_t reading_buffer_pos;
+static uint8_t lrc_check;
 
 /*******************************************************************************
  *******************************************************************************
@@ -132,7 +132,7 @@ static void reader_enable_irq(){
 		char result_buffer[PAN_MAX_LEN];
 		uint8_t result_buffer_len;
 
-		parse_buffer(&result_buffer, &result_buffer_len);
+		parse_buffer(result_buffer, &result_buffer_len);
 
 		(*reader_finished_callback)( result_buffer, result_buffer_len );
 	}
@@ -143,7 +143,7 @@ static void reader_clock_irq(){
 	static bool bit_buffer[CHAR_BITS];
 	static uint8_t pos = 0;
 
-	bool data = (gpioRead(READER_DATA_PIN) == DATA_ACTIVE);
+	bool data = (gpioRead(READER_DATA_PIN) == DATA_ONE);
 
 	switch(state){
 	case START:
@@ -158,9 +158,9 @@ static void reader_clock_irq(){
 		bit_buffer[pos] = data;
 		pos += 1;
 		if(pos == CHAR_BITS){
-			uint_t new_char = 0;
-			for(uint_t i = 0; i < CHAR_BITS; i++){
-				new_char = (newchar<<1) | (bit_buffer[i]);
+			uint8_t new_char = 0;
+			for(uint8_t i = 0; i < CHAR_BITS; i++){
+				new_char = (new_char<<1) | (bit_buffer[i]);
 			}
 			pos = 0;
 			reading_buffer[reading_buffer_pos] = BITS2CHAR(new_char);
@@ -168,7 +168,7 @@ static void reader_clock_irq(){
 
 			lrc_check ^= new_char;
 
-			if(reading_pos == BUFFER_LEN){
+			if(reading_buffer_pos == BUFFER_LEN){
 				state = END;
 			}
 		}
@@ -178,7 +178,7 @@ static void reader_clock_irq(){
 	}
 }
 
-static char* parse_buffer(char** result_buffer_ptr, uint8_t* result_buffer_len_ptr){
+static void parse_buffer(char* result_buffer_ptr, uint8_t* result_buffer_len_ptr){
 	uint8_t state = SS;
 	*result_buffer_len_ptr = 0;
 	uint8_t additional_chars = 0;
@@ -186,21 +186,18 @@ static char* parse_buffer(char** result_buffer_ptr, uint8_t* result_buffer_len_p
 	for(uint8_t i = 0; i < reading_buffer_pos; i++){
 		switch(state){
 		case SS:
-			if(reading_buffer[i] != SS_CHAR){
-				state = ERROR;
-			}else{
-				state = PAN;
-			}
+			if(reading_buffer[i] != SS_CHAR) goto breakParseLoop;
+			state = PAN;
 			break;
 		case PAN:
-			if(buffer[i] != FS_CHAR){
+			if(reading_buffer[i] != FS_CHAR){
 				if(*result_buffer_len_ptr >= PAN_MAX_LEN) goto breakParseLoop;
 				if(reading_buffer[i] < '0' || reading_buffer[i] > '9') goto breakParseLoop;
 
-				(*result_buffer_ptr)[*result_buffer_len_ptr] = reading_buffer[i];
+				result_buffer_ptr[*result_buffer_len_ptr] = reading_buffer[i];
 				(*result_buffer_len_ptr)++;
 			}else{
-				(*result_buffer_ptr)[*result_buffer_len_ptr] = TERMINATOR_CHAR;
+				result_buffer_ptr[*result_buffer_len_ptr] = TERMINATOR_CHAR;
 				state = AD;
 			}
 			break;

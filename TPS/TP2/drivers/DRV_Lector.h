@@ -25,7 +25,7 @@
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
 
-typedef	void (*lectorCallback_t)(char*);
+typedef	void (*lectorCallback_t)(char*, uint8_t);
 
 /*******************************************************************************
  * VARIABLE PROTOTYPES WITH GLOBAL SCOPE
