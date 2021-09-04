@@ -30,7 +30,8 @@
 #define BUFFER_LEN		40
 #define PAN_MAX_LEN		19
 #define ADD_CHARS_MIN	7
-#define ADD_CHARS_MAX	17
+#define NUM_DATA_LEN	37
+#define FS_LEN			1
 
 #define SS_CHAR	';'
 #define FS_CHAR	'='
@@ -54,7 +55,7 @@
 						((b == 0b11111) ? '?' : 'X' \
 						))))))))))))))))
 
-#define LRC_MASK	(~(0b1 << CHAR_BITS))
+#define LRC_MASK	(~(0b1 << (CHAR_BITS-1)))
 
 #define BITPARITY4(b)	((b & 0b1) ^ (b>>1 & 0b1) ^ (b>>2 & 0b1) ^ (b>>3 & 0b1))
 
@@ -146,11 +147,12 @@ static void reader_enable_irq(){
 static void reader_clock_irq(){
 	static uint8_t state = START;
 	static bool bit_buffer[CHAR_BITS];
-	static uint8_t pos = 0;
+	static uint8_t bit_buffer_pos = 0;
 
 	if(bit_buffer_flag){
 		state = START;
-		pos = 0;
+		bit_buffer_pos = 0;
+		reading_buffer_pos = 0;
 		bit_buffer_flag = false;
 	}
 
@@ -161,19 +163,19 @@ static void reader_clock_irq(){
 		if(data){
 			state = CHAR;
 			bit_buffer[0] = 1;
-			pos = 1;
-			lrc_check = 0b0;
+			bit_buffer_pos = 1;
+			lrc_check = 0b00000;
 		}
 		break;
 	case CHAR:
-		bit_buffer[pos] = data;
-		pos += 1;
-		if(pos == CHAR_BITS){
+		bit_buffer[bit_buffer_pos] = data;
+		bit_buffer_pos += 1;
+		if(bit_buffer_pos == CHAR_BITS){
 			uint8_t new_char = 0;
 			for(uint8_t i = 0; i < CHAR_BITS; i++){
 				new_char = (new_char<<1) | (bit_buffer[CHAR_BITS - 1 - i]);
 			}
-			pos = 0;
+			bit_buffer_pos = 0;
 			reading_buffer[reading_buffer_pos] = BITS2CHAR(new_char);
 			reading_buffer_pos += 1;
 
@@ -214,7 +216,8 @@ static void parse_buffer(char* result_buffer_ptr, uint8_t* result_buffer_len_ptr
 			break;
 		case AD:
 			if(reading_buffer[i] == ES_CHAR){
-				if(additional_chars < ADD_CHARS_MIN || additional_chars > ADD_CHARS_MAX) goto breakParseLoop;
+				if(additional_chars < ADD_CHARS_MIN) goto breakParseLoop;
+				if(additional_chars > (NUM_DATA_LEN-FS_LEN-(*result_buffer_len_ptr))) goto breakParseLoop;
 				state = LRC;
 			}else{
 				additional_chars++;
@@ -222,8 +225,8 @@ static void parse_buffer(char* result_buffer_ptr, uint8_t* result_buffer_len_ptr
 			break;
 		case LRC:
 			// Hay un tema con que reading_buffer es el LRC ya pasado por la macro
-			//lrc_check = ((!BITPARITY4(lrc_check & LRC_MASK)) << CHAR_BITS  ) | (lrc_check & LRC_MASK);
-			//if(reading_buffer[i] != lrc_check) goto breakParseLoop;
+			lrc_check = ((!BITPARITY4(lrc_check & LRC_MASK)) << (CHAR_BITS-1)  ) | (lrc_check & LRC_MASK);
+			//if(reading_buffer[i] != BITS2CHAR(lrc_check)) goto breakParseLoop;
 			state = SUCCESS;
 			break;
 		case SUCCESS:
