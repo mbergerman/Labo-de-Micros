@@ -18,9 +18,9 @@
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
 
-#define CHARS_NUM	4
-#define LEDS_NUM	3
-#define BUFFER_LEN	32		// Longitud del buffer de palabras
+#define DISP_CHARS_NUM		4
+#define DISP_LEDS_NUM		3
+#define DISP_BUFFER_LEN	32		// Longitud del buffer de palabras
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS

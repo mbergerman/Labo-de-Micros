@@ -11,6 +11,10 @@
 #include "DRV_Board.h"
 #include "DRV_Timers.h"
 #include "DRV_Display.h"
+#include "DRV_Lector.h"
+
+//debug
+#include <stdio.h>
 
 
 /*******************************************************************************
@@ -22,6 +26,7 @@
  ******************************************************************************/
 
 void animateLEDs();
+void lector_callback(char*, uint8_t);
 
 /*******************************************************************************
  * GLOBAL VARIABLES ?)
@@ -42,11 +47,10 @@ void App_Init (void)
    	initBoard();
    	initTimers();
    	initDisplay();
+   	initLector(lector_callback);
 
    	led_tim_id = timerGetId();
    	timerStart(led_tim_id, TIMER_MS2TICKS(1000), TIM_MODE_PERIODIC, animateLEDs);
-
-   	dispWriteBuffer(11, "Hola Mundo!");
 }
 
 /* Función que se llama constantemente en un ciclo infinito */
@@ -84,6 +88,16 @@ void App_Run (void)
  *******************************************************************************
  ******************************************************************************/
 
+
+void lector_callback(char* numbers, uint8_t n){
+	printf("Lector:  ");
+	for(int i = 0; i < n; i++){
+		printf("%c", numbers[i]);
+	}
+	printf("\n");
+}
+
+
 void animateLEDs(){
 	static int x = 0;
 
@@ -107,8 +121,6 @@ void animateLEDs(){
 	}
 
 	x = (x+1)%3;
-
-	dispScrollLeft();
 }
 
 

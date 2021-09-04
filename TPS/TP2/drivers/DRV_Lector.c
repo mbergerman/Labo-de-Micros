@@ -11,6 +11,9 @@
 #include "DRV_Lector.h"
 #include "PDRV_GPIO.h"
 
+//debug
+#include <stdio.h>
+
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
@@ -100,6 +103,7 @@ static lectorCallback_t reader_finished_callback;
 static char reading_buffer[BUFFER_LEN];
 static uint8_t reading_buffer_pos;
 static uint8_t lrc_check;
+static bool bit_buffer_flag;
 
 /*******************************************************************************
  *******************************************************************************
@@ -125,6 +129,7 @@ void initLector(lectorCallback_t lectorCallback){
 
 static void reader_enable_irq(){
 	if(gpioRead(READER_EN_PIN) == EN_ACTIVE){
+		bit_buffer_flag = true;
 		gpioIRQ(READER_CLK_PIN, GPIO_IRQ_MODE_FALLING_EDGE, reader_clock_irq);
 	}else{
 		gpioIRQ(READER_CLK_PIN, GPIO_IRQ_MODE_DISABLE, reader_clock_irq);
@@ -143,11 +148,17 @@ static void reader_clock_irq(){
 	static bool bit_buffer[CHAR_BITS];
 	static uint8_t pos = 0;
 
+	if(bit_buffer_flag){
+		state = START;
+		pos = 0;
+		bit_buffer_flag = false;
+	}
+
 	bool data = (gpioRead(READER_DATA_PIN) == DATA_ONE);
 
 	switch(state){
 	case START:
-		if(data == DATA_ONE){
+		if(data){
 			state = CHAR;
 			bit_buffer[0] = 1;
 			pos = 1;
@@ -160,7 +171,7 @@ static void reader_clock_irq(){
 		if(pos == CHAR_BITS){
 			uint8_t new_char = 0;
 			for(uint8_t i = 0; i < CHAR_BITS; i++){
-				new_char = (new_char<<1) | (bit_buffer[i]);
+				new_char = (new_char<<1) | (bit_buffer[CHAR_BITS - 1 - i]);
 			}
 			pos = 0;
 			reading_buffer[reading_buffer_pos] = BITS2CHAR(new_char);
@@ -210,8 +221,9 @@ static void parse_buffer(char* result_buffer_ptr, uint8_t* result_buffer_len_ptr
 			}
 			break;
 		case LRC:
-			lrc_check = ((!BITPARITY4(lrc_check & LRC_MASK)) << CHAR_BITS  ) | (lrc_check & LRC_MASK);
-			if(reading_buffer[i] != lrc_check) goto breakParseLoop;
+			// Hay un tema con que reading_buffer es el LRC ya pasado por la macro
+			//lrc_check = ((!BITPARITY4(lrc_check & LRC_MASK)) << CHAR_BITS  ) | (lrc_check & LRC_MASK);
+			//if(reading_buffer[i] != lrc_check) goto breakParseLoop;
 			state = SUCCESS;
 			break;
 		case SUCCESS:

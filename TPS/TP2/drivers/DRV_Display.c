@@ -48,7 +48,7 @@ static void print_buffer();
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-static char char_buffer[BUFFER_LEN];
+static char char_buffer[DISP_BUFFER_LEN];
 static uint8_t buffer_current_len = 0;
 static uint8_t buffer_pos = 0;
 
@@ -72,7 +72,7 @@ void dispClearBuffer(){
 
 void dispWriteBuffer(int c, char* buffer){
 #ifdef DISPLAY_DEVELOPMENT_MODE
-	if(c > BUFFER_LEN) return;
+	if(c > DISP_BUFFER_LEN) return;
 #endif // DISPLAY_DEVELOPMENT_MODE
 
 	for(int i = 0; i < c; i++){
@@ -84,7 +84,7 @@ void dispWriteBuffer(int c, char* buffer){
 
 void dispWriteChar(int n, char character){
 #ifdef DISPLAY_DEVELOPMENT_MODE
-	if(n >= BUFFER_LEN || n > buffer_current_len) return;
+	if(n >= DISP_BUFFER_LEN || n > buffer_current_len) return;
 #endif // DISPLAY_DEVELOPMENT_MODE
 
 	char_buffer[n] = character;
@@ -135,7 +135,7 @@ void dispToggleLED();		//TO-DO
 
 static void print_buffer(){
 	printf("Display: |");
-	for(int i = 0; i < CHARS_NUM; i++){
+	for(int i = 0; i < DISP_CHARS_NUM; i++){
 		uint8_t index = (i + buffer_pos)%buffer_current_len;
 		printf("%c|", (i < buffer_current_len)? char_buffer[index] : ' ');
 	}
