@@ -18,9 +18,9 @@
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
 
-#define NUM_CHARS	4
-#define NUM_LEDS	3
-#define NUM_BUFFER	32		// Longitud del buffer de palabras
+#define CHARS_NUM	4
+#define LEDS_NUM	3
+#define BUFFER_LEN	32		// Longitud del buffer de palabras
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -41,24 +41,22 @@ enum{
  ******************************************************************************/
 
 void initDisplay();
-void clearDisplay();
-void clearChar(int n);
-void setChar(int n, char character);
-void validChar(char character);
+void dispClearBuffer();
+void dispWriteBuffer(int c, char* buffer);
+void dispWriteChar(int n, char character);
+bool dispValidChar(char character);
 
-void setWord(int c, char* word);
+void dispScrollLeft();
+void dispScrollRight();
+void dispStartAutoscroll(int speed);
+void dispStopAutoscroll();
+void dispResetScroll();
+void dispSetBufferPos(int n);	//Set position within buffer
+int dispGetBufferPos();
 
-void scrollLeft();
-void scrollRight();
-void startAutoscroll(int speed);
-void stopAutoscroll();
-void resetScroll();
-void setPosition(int n);	//Set position within buffer
-int getPosition();
-
-void clearLED(int n);
-void setLED(int n);
-void toggleLED();
+void dispClearLED(int n);
+void dispSetLED(int n);
+void dispToggleLED();
 
 
 /*******************************************************************************

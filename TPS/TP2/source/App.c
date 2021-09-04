@@ -10,8 +10,7 @@
 
 #include "DRV_Board.h"
 #include "DRV_Timers.h"
-
-#include "PDRV_GPIO.h"	// Debug
+#include "DRV_Display.h"
 
 
 /*******************************************************************************
@@ -42,9 +41,12 @@ void App_Init (void)
 {
    	initBoard();
    	initTimers();
+   	initDisplay();
 
    	led_tim_id = timerGetId();
    	timerStart(led_tim_id, TIMER_MS2TICKS(1000), TIM_MODE_PERIODIC, animateLEDs);
+
+   	dispWriteBuffer(11, "Hola Mundo!");
 }
 
 /* Función que se llama constantemente en un ciclo infinito */
@@ -105,6 +107,8 @@ void animateLEDs(){
 	}
 
 	x = (x+1)%3;
+
+	dispScrollLeft();
 }
 
 

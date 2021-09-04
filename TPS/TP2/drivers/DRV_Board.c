@@ -19,16 +19,16 @@
 
 // On Board User LEDs
 static const pin_t PIN_LEDS[] = {	PORTNUM2PIN(PB,22), // PTB22
-   								PORTNUM2PIN(PE,26), // PTE26
-								PORTNUM2PIN(PB,21) // PTB21
-								};
+									PORTNUM2PIN(PE,26), // PTE26
+									PORTNUM2PIN(PB,21) 	// PTB21
+									};
 
 #define LED_ACTIVE      LOW
 
 
 // On Board User Switches
-static const pin_t PIN_SWS[] = {	PORTNUM2PIN(PC,6),  // PTC6
-								PORTNUM2PIN(PA,4)  // PTA4
+static const pin_t PIN_SWS[] = {PORTNUM2PIN(PC,6),	// PTC6
+								PORTNUM2PIN(PA,4)	// PTA4
 								};
 
 #define SW_ACTIVE       LOW
