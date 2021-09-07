@@ -50,7 +50,7 @@ void App_Init (void)
    	initLector(lector_callback);
 
    	led_tim_id = timerGetId();
-   	timerStart(led_tim_id, TIMER_MS2TICKS(1000), TIM_MODE_PERIODIC, animateLEDs);
+   	//timerStart(led_tim_id, TIMER_MS2TICKS(1000), TIM_MODE_PERIODIC, animateLEDs);
 }
 
 /* Función que se llama constantemente en un ciclo infinito */

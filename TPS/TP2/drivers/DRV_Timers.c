@@ -170,7 +170,7 @@ static void timer_isr(void)
 
 				// 2) update state
 				timers[id].cnt = timers[id].period;
-				timers[id].expired = (timers[id].mode != TIM_MODE_PERIODIC);
+				timers[id].expired = (timers[id].mode == TIM_MODE_PERIODIC) ? false : timers[id].expired;
 			}
 		}
 	}

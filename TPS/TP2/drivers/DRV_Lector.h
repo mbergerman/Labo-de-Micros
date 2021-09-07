@@ -20,6 +20,7 @@
  ******************************************************************************/
 
 #define TERMINATOR_CHAR	'\0'
+#define READER_TIMEOUT	500	// Milisegundos a esperar antes de cancelar una lectura
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -37,6 +38,7 @@ typedef	void (*lectorCallback_t)(char*, uint8_t);
  ******************************************************************************/
 
 void initLector(lectorCallback_t);
+bool readerRunning(void);
 
 
 /*******************************************************************************

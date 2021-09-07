@@ -1,5 +1,5 @@
 /***************************************************************************//**
-  @file     +Nombre del archivo (ej: template.c)+
+  @file     DRV_Lector.c
   @brief    +Descripcion del archivo+
   @author   +Nombre del autor (ej: Salvador Allende)+
  ******************************************************************************/
@@ -9,18 +9,16 @@
  ******************************************************************************/
 
 #include "DRV_Lector.h"
+#include "DRV_Timers.h"
 #include "PDRV_GPIO.h"
-
-//debug
-#include <stdio.h>
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
 
-#define READER_EN_PIN	PORTNUM2PIN(PB, 9)	// PTB9
-#define READER_CLK_PIN	PORTNUM2PIN(PA, 1)	// PTA1
-#define READER_DATA_PIN	PORTNUM2PIN(PB, 23)	// PTB23
+#define READER_EN_PIN	PORTNUM2PIN(PD, 0)	// PTD0
+#define READER_CLK_PIN	PORTNUM2PIN(PC, 4)	// PTC4
+#define READER_DATA_PIN	PORTNUM2PIN(PC, 12)	// PTC12
 
 #define EN_ACTIVE	false
 #define DATA_ONE	false
@@ -36,6 +34,8 @@
 #define SS_CHAR	';'
 #define FS_CHAR	'='
 #define ES_CHAR	'?'
+
+#define ES_BITS	0b11111
 
 #define BITS2CHAR(b)	((b == 0b10000) ? '0' : \
 						((b == 0b00001) ? '1' : \
@@ -54,8 +54,6 @@
 						((b == 0b01110) ? '>' : \
 						((b == 0b11111) ? '?' : 'X' \
 						))))))))))))))))
-
-#define LRC_MASK	(~(0b1 << (CHAR_BITS-1)))
 
 #define BITPARITY4(b)	((b & 0b1) ^ (b>>1 & 0b1) ^ (b>>2 & 0b1) ^ (b>>3 & 0b1))
 
@@ -89,6 +87,7 @@ enum{
 static void reader_enable_irq();
 static void reader_clock_irq();
 static void parse_buffer(char*, uint8_t*);
+static void reader_timeout_callback();
 
 /*******************************************************************************
  * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
@@ -105,6 +104,8 @@ static char reading_buffer[BUFFER_LEN];
 static uint8_t reading_buffer_pos;
 static uint8_t lrc_check;
 static bool bit_buffer_flag;
+static bool reader_running;
+static tim_id_t reader_tim_id;
 
 /*******************************************************************************
  *******************************************************************************
@@ -120,6 +121,12 @@ void initLector(lectorCallback_t lectorCallback){
 	reader_finished_callback = lectorCallback;
 
 	gpioIRQ(READER_EN_PIN, GPIO_IRQ_MODE_BOTH_EDGES, reader_enable_irq);
+
+	reader_tim_id = timerGetId();
+}
+
+bool readerRunning(){
+	return reader_running;
 }
 
 /*******************************************************************************
@@ -131,16 +138,23 @@ void initLector(lectorCallback_t lectorCallback){
 static void reader_enable_irq(){
 	if(gpioRead(READER_EN_PIN) == EN_ACTIVE){
 		bit_buffer_flag = true;
+		reader_running = true;
+		timerStart(reader_tim_id, TIMER_MS2TICKS(READER_TIMEOUT), TIM_MODE_SINGLESHOT, reader_timeout_callback);
 		gpioIRQ(READER_CLK_PIN, GPIO_IRQ_MODE_FALLING_EDGE, reader_clock_irq);
 	}else{
-		gpioIRQ(READER_CLK_PIN, GPIO_IRQ_MODE_DISABLE, reader_clock_irq);
+		if(reader_running){
+			timerStop(reader_tim_id);
+			reader_running = false;
 
-		char result_buffer[PAN_MAX_LEN];
-		uint8_t result_buffer_len;
+			gpioIRQ(READER_CLK_PIN, GPIO_IRQ_MODE_DISABLE, reader_clock_irq);
 
-		parse_buffer(result_buffer, &result_buffer_len);
+			char result_buffer[PAN_MAX_LEN];
+			uint8_t result_buffer_len;
 
-		(*reader_finished_callback)( result_buffer, result_buffer_len );
+			parse_buffer(result_buffer, &result_buffer_len);
+
+			(*reader_finished_callback)( result_buffer, result_buffer_len );
+		}
 	}
 }
 
@@ -148,6 +162,7 @@ static void reader_clock_irq(){
 	static uint8_t state = START;
 	static bool bit_buffer[CHAR_BITS];
 	static uint8_t bit_buffer_pos = 0;
+	static bool lrc_flag = false;
 
 	if(bit_buffer_flag){
 		state = START;
@@ -165,6 +180,7 @@ static void reader_clock_irq(){
 			bit_buffer[0] = 1;
 			bit_buffer_pos = 1;
 			lrc_check = 0b00000;
+			lrc_flag = false;
 		}
 		break;
 	case CHAR:
@@ -179,7 +195,9 @@ static void reader_clock_irq(){
 			reading_buffer[reading_buffer_pos] = BITS2CHAR(new_char);
 			reading_buffer_pos += 1;
 
-			lrc_check ^= new_char;
+			if(lrc_flag == false)	lrc_check ^= new_char;
+
+			if(new_char == ES_BITS) lrc_flag = true;
 
 			if(reading_buffer_pos == BUFFER_LEN){
 				state = END;
@@ -224,9 +242,7 @@ static void parse_buffer(char* result_buffer_ptr, uint8_t* result_buffer_len_ptr
 			}
 			break;
 		case LRC:
-			// Hay un tema con que reading_buffer es el LRC ya pasado por la macro
-			lrc_check = ((!BITPARITY4(lrc_check & LRC_MASK)) << (CHAR_BITS-1)  ) | (lrc_check & LRC_MASK);
-			//if(reading_buffer[i] != BITS2CHAR(lrc_check)) goto breakParseLoop;
+			if(reading_buffer[i] != BITS2CHAR(lrc_check)) goto breakParseLoop;
 			state = SUCCESS;
 			break;
 		case SUCCESS:
@@ -239,3 +255,11 @@ breakParseLoop:
 	return;
 }
 
+static void reader_timeout_callback(){
+	if(reader_running){
+		timerStop(reader_tim_id);
+		reader_running = false;
+
+		gpioIRQ(READER_CLK_PIN, GPIO_IRQ_MODE_DISABLE, reader_clock_irq);
+	}
+}
