@@ -23,15 +23,7 @@
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
-
-typedef enum{
-			LEFT,
-			RIGHT,
-			CLICK
-		}encoderEvent_t;
-
-
-typedef	void (*encoderCallback_t)(encoderEvent_t);
+enum encoderResults {LEFT,RIGHT,CLICK,NONE};
 
 /*******************************************************************************
  * VARIABLE PROTOTYPES WITH GLOBAL SCOPE
@@ -41,10 +33,13 @@ typedef	void (*encoderCallback_t)(encoderEvent_t);
 /*******************************************************************************
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
+void initEncoder();
 
-void initEncoder(encoderCallback_t);
+//Devuelve true si hubo movimiento
+bool getStatus();
 
-
+//Devuelve la data
+enum encoderResults getData();
 /*******************************************************************************
  ******************************************************************************/
 

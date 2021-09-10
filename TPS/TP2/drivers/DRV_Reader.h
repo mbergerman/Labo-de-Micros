@@ -1,12 +1,12 @@
 /*
- * DRV_Lector.h
+ * DRV_Reader.h
  *
  *  Created on: 29 ago. 2021
  *      Author: matia
  */
 
-#ifndef DRV_LECTOR_H_
-#define DRV_LECTOR_H_
+#ifndef DRV_READER_H_
+#define DRV_READER_H_
 
 
 /*******************************************************************************
@@ -26,7 +26,7 @@
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
 
-typedef	void (*lectorCallback_t)(char*, uint8_t);
+typedef	void (*readerCallback_t)(char*, uint8_t);
 
 /*******************************************************************************
  * VARIABLE PROTOTYPES WITH GLOBAL SCOPE
@@ -37,12 +37,15 @@ typedef	void (*lectorCallback_t)(char*, uint8_t);
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
 
-void initLector(lectorCallback_t);
+void initReader(readerCallback_t);
 bool readerRunning(void);
+//bool isReady() // return and clear flag
+//char* getValue()
+//void clearFlagReady()
 
 
 /*******************************************************************************
  ******************************************************************************/
 
 
-#endif /* DRV_LECTOR_H_ */
+#endif /* DRV_READER_H_ */

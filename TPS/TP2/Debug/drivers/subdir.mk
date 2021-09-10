@@ -6,7 +6,7 @@
 C_SRCS += \
 ../drivers/DRV_Board.c \
 ../drivers/DRV_Display.c \
-../drivers/DRV_Lector.c \
+../drivers/DRV_Reader.c \
 ../drivers/DRV_Timers.c \
 ../drivers/PDRV_GPIO.c \
 ../drivers/PDRV_SysTick.c 
@@ -14,7 +14,7 @@ C_SRCS += \
 OBJS += \
 ./drivers/DRV_Board.o \
 ./drivers/DRV_Display.o \
-./drivers/DRV_Lector.o \
+./drivers/DRV_Reader.o \
 ./drivers/DRV_Timers.o \
 ./drivers/PDRV_GPIO.o \
 ./drivers/PDRV_SysTick.o 
@@ -22,7 +22,7 @@ OBJS += \
 C_DEPS += \
 ./drivers/DRV_Board.d \
 ./drivers/DRV_Display.d \
-./drivers/DRV_Lector.d \
+./drivers/DRV_Reader.d \
 ./drivers/DRV_Timers.d \
 ./drivers/PDRV_GPIO.d \
 ./drivers/PDRV_SysTick.d 

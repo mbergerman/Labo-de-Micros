@@ -11,7 +11,6 @@
 #include "DRV_Board.h"
 #include "DRV_Timers.h"
 #include "DRV_Display.h"
-#include "DRV_Lector.h"
 
 //debug
 #include <stdio.h>
@@ -47,7 +46,6 @@ void App_Init (void)
    	initBoard();
    	initTimers();
    	initDisplay();
-   	initLector(lector_callback);
 
    	led_tim_id = timerGetId();
    	//timerStart(led_tim_id, TIMER_MS2TICKS(1000), TIM_MODE_PERIODIC, animateLEDs);

@@ -1,5 +1,5 @@
 /***************************************************************************//**
-  @file     DRV_Lector.c
+  @file     DRV_Reader.c
   @brief    +Descripcion del archivo+
   @author   +Nombre del autor (ej: Salvador Allende)+
  ******************************************************************************/
@@ -8,7 +8,7 @@
  * INCLUDE HEADER FILES
  ******************************************************************************/
 
-#include "DRV_Lector.h"
+#include "DRV_Reader.h"
 #include "DRV_Timers.h"
 #include "PDRV_GPIO.h"
 
@@ -37,6 +37,7 @@
 
 #define ES_BITS	0b11111
 
+// Hacer una tabla en vez de una macro?
 #define BITS2CHAR(b)	((b == 0b10000) ? '0' : \
 						((b == 0b00001) ? '1' : \
 						((b == 0b00010) ? '2' : \
@@ -99,7 +100,7 @@ static void reader_timeout_callback();
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-static lectorCallback_t reader_finished_callback;
+static readerCallback_t reader_finished_callback;
 static char reading_buffer[BUFFER_LEN];
 static uint8_t reading_buffer_pos;
 static uint8_t lrc_check;
@@ -113,12 +114,12 @@ static tim_id_t reader_tim_id;
  *******************************************************************************
  ******************************************************************************/
 
-void initLector(lectorCallback_t lectorCallback){
+void initReader(readerCallback_t readerCallback){
 	gpioMode(READER_EN_PIN, INPUT);
 	gpioMode(READER_CLK_PIN, INPUT);
 	gpioMode(READER_DATA_PIN, INPUT);
 
-	reader_finished_callback = lectorCallback;
+	reader_finished_callback = readerCallback;
 
 	gpioIRQ(READER_EN_PIN, GPIO_IRQ_MODE_BOTH_EDGES, reader_enable_irq);
 
@@ -135,6 +136,7 @@ bool readerRunning(){
  *******************************************************************************
  ******************************************************************************/
 
+// sacar la interrupcion por enable
 static void reader_enable_irq(){
 	if(gpioRead(READER_EN_PIN) == EN_ACTIVE){
 		bit_buffer_flag = true;
@@ -151,6 +153,7 @@ static void reader_enable_irq(){
 			char result_buffer[PAN_MAX_LEN];
 			uint8_t result_buffer_len;
 
+			//TO-DO: Hacer el parseo cuando me lo pide el usuario
 			parse_buffer(result_buffer, &result_buffer_len);
 
 			(*reader_finished_callback)( result_buffer, result_buffer_len );
