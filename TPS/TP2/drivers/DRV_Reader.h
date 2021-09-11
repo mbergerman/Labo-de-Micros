@@ -1,9 +1,8 @@
-/*
- * DRV_Reader.h
- *
- *  Created on: 29 ago. 2021
- *      Author: matia
- */
+/***************************************************************************//**
+  @file     DRV_Reader.h
+  @brief    +Descripcion del archivo+
+  @author   Grupo 1
+ ******************************************************************************/
 
 #ifndef DRV_READER_H_
 #define DRV_READER_H_
@@ -20,7 +19,7 @@
  ******************************************************************************/
 
 #define TERMINATOR_CHAR	'\0'
-#define READER_TIMEOUT	500	// Milisegundos a esperar antes de cancelar una lectura
+#define READER_TIMEOUT	500	 // Milisegundos a esperar antes de cancelar una lectura
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS

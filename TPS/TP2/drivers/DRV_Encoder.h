@@ -23,7 +23,13 @@
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
-enum encoderResults {LEFT,RIGHT,CLICK,NONE};
+
+typedef enum{
+	ENC_LEFT,
+	ENC_RIGHT,
+	ENC_CLICK,
+	ENC_NONE
+}encoderResult_t;
 
 /*******************************************************************************
  * VARIABLE PROTOTYPES WITH GLOBAL SCOPE
@@ -36,10 +42,10 @@ enum encoderResults {LEFT,RIGHT,CLICK,NONE};
 void initEncoder();
 
 //Devuelve true si hubo movimiento
-bool getStatus();
+bool encoderGetStatus();
 
 //Devuelve la data
-enum encoderResults getData();
+encoderResult_t encoderGetEvent();
 /*******************************************************************************
  ******************************************************************************/
 

@@ -15,7 +15,7 @@ static bool C_curr;
 
 //Data de encoder
 static bool status;
-static enum encoderResults data;
+static encoderResult_t data;
 
 //Def del timer
 static tim_id_t encoder_timer;
@@ -24,12 +24,11 @@ static tim_id_t encoder_timer;
 enum states {START, CW1, CW2, CW3, ACW1, ACW2, ACW3};
 
 
-
 //FSM que determina si se realizo un movimiento en sentido horario (CW) o antihorario (ACW)
-static enum encoderResults CheckMovement(bool A, bool B){
+static encoderResult_t CheckMovement(bool A, bool B){
 
     static enum states CurrentState = START;
-    enum encoderResults result = NONE;
+    encoderResult_t result = ENC_NONE;
     //status = false;
 
     switch(CurrentState){
@@ -64,7 +63,7 @@ static enum encoderResults CheckMovement(bool A, bool B){
         case CW3:
                 if(A && B){
                     CurrentState = START;
-                    result = RIGHT;
+                    result = ENC_RIGHT;
                     status = true;
                 } 
                 else if(!A && B){
@@ -98,7 +97,7 @@ static enum encoderResults CheckMovement(bool A, bool B){
         case ACW3:
                 if(A && B){
                     CurrentState = START;
-                    result = LEFT;
+                    result = ENC_LEFT;
                     status = true;
                 } 
                 else if(A && !B){
@@ -127,12 +126,12 @@ static void callbackEncoder(void) {
 
     getCurr(); // Busco valores actuales de A, B y C
 
-    enum encoderResults newCheck = CheckMovement(A_curr, B_curr);   //FSM analiza los valores actuales
+    encoderResult_t newCheck = CheckMovement(A_curr, B_curr);   //FSM analiza los valores actuales
 
-    // Si se precionó el boton, el resultado de data es CLICK. Notar que si se aprieta el botón, se ignora el resultado de la FSM
+    // Si se precionó el boton, el resultado de data es ENC_CLICK. Notar que si se aprieta el botón, se ignora el resultado de la FSM
     if(C_curr == SW_ACTIVE)
     {
-        data = CLICK;
+        data = ENC_CLICK;
     }
     else
     {
@@ -141,7 +140,7 @@ static void callbackEncoder(void) {
 
 }
 
-bool getStatus(){
+bool encoderGetStatus(){
 	if(status){
 		status = false;
 		return true;
@@ -150,10 +149,9 @@ bool getStatus(){
 	}
 }
 
- enum encoderResults getData(){
-
-    return data;
- }
+encoderResult_t encoderGetEvent(){
+	return data;
+}
 
 void initEncoder() {
     //Inicializo Timer
@@ -161,7 +159,7 @@ void initEncoder() {
 	encoder_timer = timerGetId();
 
     //Inicializo Data 
-    data = NONE;
+    data = ENC_NONE;
     status = false;
 
     //Seteo los Pines

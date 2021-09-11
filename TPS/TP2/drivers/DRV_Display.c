@@ -70,7 +70,7 @@ void dispClearBuffer(){
 	print_buffer();
 }
 
-void dispWriteBuffer(int c, char* buffer){
+void dispWriteBuffer(int c, const char* buffer){
 #ifdef DISPLAY_DEVELOPMENT_MODE
 	if(c > DISP_BUFFER_LEN) return;
 #endif // DISPLAY_DEVELOPMENT_MODE
@@ -82,7 +82,7 @@ void dispWriteBuffer(int c, char* buffer){
 	print_buffer();
 }
 
-void dispWriteChar(int n, char character){
+void dispWriteChar(int n, const char character){
 #ifdef DISPLAY_DEVELOPMENT_MODE
 	if(n >= DISP_BUFFER_LEN || n > buffer_current_len) return;
 #endif // DISPLAY_DEVELOPMENT_MODE

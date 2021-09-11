@@ -20,7 +20,7 @@
 
 #define DISP_CHARS_NUM		4
 #define DISP_LEDS_NUM		3
-#define DISP_BUFFER_LEN	32		// Longitud del buffer de palabras
+#define DISP_BUFFER_LEN		32		// Longitud del buffer de palabras
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -42,8 +42,8 @@ enum{
 
 void initDisplay();
 void dispClearBuffer();
-void dispWriteBuffer(int c, char* buffer);
-void dispWriteChar(int n, char character);
+void dispWriteBuffer(int c, const char* buffer);
+void dispWriteChar(int n, const char character);
 bool dispValidChar(char character);
 
 void dispScrollLeft();
