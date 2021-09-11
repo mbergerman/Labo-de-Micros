@@ -68,8 +68,8 @@ void initBoard(){
 	clearLED(BLUE);
 }
 
-void setLED(LED_t led){
-	gpioWrite(PIN_LEDS[led], LED_ACTIVE);
+void setLED(LED_t led, bool value){
+	gpioWrite(PIN_LEDS[led], (value)? LED_ACTIVE : !LED_ACTIVE);
 }
 
 void clearLED(LED_t led){

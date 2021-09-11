@@ -10,7 +10,7 @@
 
 #include "DRV_Board.h"
 #include "DRV_Timers.h"
-#include "DRV_Display.h"
+#include "DRV_Encoder.h"
 
 //debug
 #include <stdio.h>
@@ -24,14 +24,14 @@
  * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-void animateLEDs();
-void lector_callback(char*, uint8_t);
+static void blink_callback();
 
 /*******************************************************************************
  * GLOBAL VARIABLES ?)
  ******************************************************************************/
 
-static tim_id_t led_tim_id;
+tim_id_t encoder_tim_id;
+uint32_t blink_period = 500;
 
 /*******************************************************************************
  *******************************************************************************
@@ -45,39 +45,25 @@ void App_Init (void)
 {
    	initBoard();
    	initTimers();
-   	initDisplay();
+   	initEncoder();
 
-   	led_tim_id = timerGetId();
-   	//timerStart(led_tim_id, TIMER_MS2TICKS(1000), TIM_MODE_PERIODIC, animateLEDs);
+   	encoder_tim_id = timerGetId();
+
+   	timerStart(encoder_tim_id, TIMER_MS2TICKS(blink_period), TIM_MODE_SINGLESHOT, blink_callback);
 }
 
 /* Función que se llama constantemente en un ciclo infinito */
 void App_Run (void)
 {
-
-//	setLED(RED);
-//	timerDelay(TIMER_MS2TICKS(500));
-//	clearLED(RED);
-//	timerDelay(TIMER_MS2TICKS(500));
-
-	static bool last_sw2 = false;
-
-	if( getSW(SW2) && !last_sw2 ){
-		timerStop(led_tim_id);
-		timerDelay(TIMER_MS2TICKS(1000));
-		clearLED(RED);
-		clearLED(GREEN);
-		clearLED(BLUE);
-		timerDelay(TIMER_MS2TICKS(1000));
-		setLED(RED);
-		setLED(GREEN);
-		setLED(BLUE);
-	}
-	if( !getSW(SW2) && last_sw2 ){
-		timerStart(led_tim_id, TIMER_MS2TICKS(1000), TIM_MODE_PERIODIC, animateLEDs);
+	if(getStatus()){
+		if(getData() == LEFT){
+			blink_period = (blink_period > 100)? blink_period-100 : blink_period;
+		}
+		if(getData() == RIGHT){
+			blink_period += 100;
+		}
 	}
 
-	last_sw2 = getSW(SW2);
 }
 
 /*******************************************************************************
@@ -86,41 +72,10 @@ void App_Run (void)
  *******************************************************************************
  ******************************************************************************/
 
-
-void lector_callback(char* numbers, uint8_t n){
-	printf("Lector:  ");
-	for(int i = 0; i < n; i++){
-		printf("%c", numbers[i]);
-	}
-	printf("\n");
+static void blink_callback(){
+	toggleLED(BLUE);
+   	timerStart(encoder_tim_id, TIMER_MS2TICKS(blink_period), TIM_MODE_SINGLESHOT, blink_callback);
 }
-
-
-void animateLEDs(){
-	static int x = 0;
-
-	switch(x){
-	case 0:
-		setLED(RED);
-		clearLED(GREEN);
-		clearLED(BLUE);
-		break;
-	case 1:
-		clearLED(RED);
-		setLED(GREEN);
-		clearLED(BLUE);
-		break;
-	case 2:
-		clearLED(RED);
-		clearLED(GREEN);
-		setLED(BLUE);
-		//timerDelay(TIMER_MS2TICKS(30));
-		break;
-	}
-
-	x = (x+1)%3;
-}
-
 
 /*******************************************************************************
  ******************************************************************************/

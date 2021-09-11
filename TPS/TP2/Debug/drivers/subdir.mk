@@ -6,6 +6,7 @@
 C_SRCS += \
 ../drivers/DRV_Board.c \
 ../drivers/DRV_Display.c \
+../drivers/DRV_Encoder.c \
 ../drivers/DRV_Reader.c \
 ../drivers/DRV_Timers.c \
 ../drivers/PDRV_GPIO.c \
@@ -14,6 +15,7 @@ C_SRCS += \
 OBJS += \
 ./drivers/DRV_Board.o \
 ./drivers/DRV_Display.o \
+./drivers/DRV_Encoder.o \
 ./drivers/DRV_Reader.o \
 ./drivers/DRV_Timers.o \
 ./drivers/PDRV_GPIO.o \
@@ -22,6 +24,7 @@ OBJS += \
 C_DEPS += \
 ./drivers/DRV_Board.d \
 ./drivers/DRV_Display.d \
+./drivers/DRV_Encoder.d \
 ./drivers/DRV_Reader.d \
 ./drivers/DRV_Timers.d \
 ./drivers/PDRV_GPIO.d \
@@ -32,7 +35,7 @@ C_DEPS += \
 drivers/%.o: ../drivers/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU C Compiler'
-	arm-none-eabi-gcc -DCPU_MK64FN1M0VLL12 -D__USE_CMSIS -DDEBUG -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -I../CMSIS -I../drivers -I../drivers/pit -I../source -I../ -I../SDK/CMSIS -I../SDK/startup -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-none-eabi-gcc -DCPU_MK64FN1M0VLL12 -D__USE_CMSIS -DDEBUG -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -I../CMSIS -I../drivers -I../source -I../ -I../SDK/CMSIS -I../SDK/startup -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

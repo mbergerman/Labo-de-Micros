@@ -42,7 +42,7 @@ typedef enum{
 
 void initBoard();
 
-void setLED(LED_t led);
+void setLED(LED_t led, bool value);
 void clearLED(LED_t led);
 void toggleLED(LED_t led);
 

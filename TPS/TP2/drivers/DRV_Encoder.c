@@ -3,9 +3,9 @@
 #include "DRV_Timers.h"
 
 //Definiciones de pines que irian en config
-#define PIN_A PORTNUM2PIN(PB,21) // PTB21  
-#define PIN_B PORTNUM2PIN(PE,26) // PTE26
-#define PIN_SWA PORTNUM2PIN(PC,6) // PTC6
+#define PIN_A PORTNUM2PIN(PA,1)
+#define PIN_B PORTNUM2PIN(PB,23)
+#define PIN_SWA PORTNUM2PIN(PA,2)
 #define SW_ACTIVE LOW
 
 //Valores actuales de A, B y C que se actualizan con getCurr()
@@ -30,7 +30,7 @@ static enum encoderResults CheckMovement(bool A, bool B){
 
     static enum states CurrentState = START;
     enum encoderResults result = NONE;
-    status = false;
+    //status = false;
 
     switch(CurrentState){
         case START:
@@ -141,10 +141,14 @@ static void callbackEncoder(void) {
 
 }
 
- bool getStatus(){
-
-    return status;
- }
+bool getStatus(){
+	if(status){
+		status = false;
+		return true;
+	}else{
+		return false;
+	}
+}
 
  enum encoderResults getData(){
 
@@ -163,7 +167,8 @@ void initEncoder() {
     //Seteo los Pines
 	gpioMode(PIN_A, INPUT);
 	gpioMode(PIN_B, INPUT);
+	gpioMode(PIN_SWA, INPUT);
 
     //Seteo el timer para que llame periodicamente a callbackEncoder con 10ms
-	timerStart(encoder_timer, TIMER_MS2TICKS(10), TIM_MODE_PERIODIC, callbackEncoder);
+	timerStart(encoder_timer, TIMER_MS2TICKS(1), TIM_MODE_PERIODIC, callbackEncoder);
 }
