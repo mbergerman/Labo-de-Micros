@@ -108,26 +108,43 @@ static bool bit_buffer_flag;
 static bool reader_running;
 static tim_id_t reader_tim_id;
 
+static char result_buffer[PAN_MAX_LEN]; //número de la tarjeta
+static uint8_t result_buffer_len;
+static bool is_ready = false; //hubo un input que todavía no fue parseado. Se puede leer con getValue()
 /*******************************************************************************
  *******************************************************************************
                         GLOBAL FUNCTION DEFINITIONS
  *******************************************************************************
  ******************************************************************************/
 
-void initReader(readerCallback_t readerCallback){
+void initReader(void){
 	gpioMode(READER_EN_PIN, INPUT);
 	gpioMode(READER_CLK_PIN, INPUT);
 	gpioMode(READER_DATA_PIN, INPUT);
-
-	reader_finished_callback = readerCallback;
 
 	gpioIRQ(READER_EN_PIN, GPIO_IRQ_MODE_BOTH_EDGES, reader_enable_irq);
 
 	reader_tim_id = timerGetId();
 }
 
+void stopReader(){
+	gpioIRQ(READER_EN_PIN, GPIO_IRQ_MODE_DISABLE, reader_enable_irq);
+	timerStop(reader_tim_id);
+}
+
 bool readerRunning(){
 	return reader_running;
+}
+
+bool readerIsReady() {
+	return is_ready;
+}
+
+void getValueReader(char* result_number_ptr, uint8_t* result_len_ptr) {
+	parse_buffer(result_buffer, &result_buffer_len);
+	result_number_ptr = result_buffer;
+	result_len_ptr = &result_buffer_len;
+	is_ready = false;
 }
 
 /*******************************************************************************
@@ -150,13 +167,7 @@ static void reader_enable_irq(){
 
 			gpioIRQ(READER_CLK_PIN, GPIO_IRQ_MODE_DISABLE, reader_clock_irq);
 
-			char result_buffer[PAN_MAX_LEN];
-			uint8_t result_buffer_len;
-
-			//TO-DO: Hacer el parseo cuando me lo pide el usuario
-			parse_buffer(result_buffer, &result_buffer_len);
-
-			(*reader_finished_callback)( result_buffer, result_buffer_len );
+			is_ready = true;
 		}
 	}
 }
@@ -266,3 +277,5 @@ static void reader_timeout_callback(){
 		gpioIRQ(READER_CLK_PIN, GPIO_IRQ_MODE_DISABLE, reader_clock_irq);
 	}
 }
+
+

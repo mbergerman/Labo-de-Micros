@@ -82,6 +82,9 @@ static bool edit_flag = false;
 static tim_id_t encoder_tim_id;
 static uint32_t blink_period = 500;
 
+static char* card_number;
+static uint8_t card_number_len = 0;
+
 /*******************************************************************************
  *******************************************************************************
                         GLOBAL FUNCTION DEFINITIONS
@@ -121,6 +124,17 @@ void App_Run (void)
 	/*}else*/
 	if(encoderGetStatus()){
 		event = encoderGetEvent();	//Ya que en el enum se definen los mismos índices
+	}
+
+	if(menu_state == STATE_ID) {
+		initReader();
+		if(readerIsReady()) {
+			getValueReader(card_number, &card_number_len);
+			if(card_number_len != 0) {
+				event = EVENT_CARD;
+			}
+		}
+		stopReader();
 	}
 
 	if(event != EVENT_NONE){
@@ -206,6 +220,7 @@ static menuState_t state_id(menuEvent_t event) {
 	menuState_t next_state = STATE_ID;
 	editorEvent_t event_click = EVENT_EDITOR_NONE;
 
+
 	switch(event){
 	case EVENT_ENC_LEFT:
 		number_editor_left();
@@ -219,6 +234,9 @@ static menuState_t state_id(menuEvent_t event) {
 		else if(event_click == EVENT_EDITOR_NEXT) {
 			//check id
 		}
+		break;
+	case EVENT_CARD:
+		//check_id
 		break;
 	default: break;
 	}

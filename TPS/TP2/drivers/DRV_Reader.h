@@ -36,11 +36,12 @@ typedef	void (*readerCallback_t)(char*, uint8_t);
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
 
-void initReader(readerCallback_t);
-bool readerRunning(void);
-//bool isReady() // return and clear flag
-//char* getValue()
-//void clearFlagReady()
+void initReader(void);
+void stopReader(void);
+//bool readerRunning(void);
+bool readerIsReady(); // return and clear flag
+void getValueReader(char* result_number_ptr, uint8_t* result_len_ptr);
+//void clearFlagReady();
 
 
 /*******************************************************************************

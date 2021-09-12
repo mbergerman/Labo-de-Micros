@@ -58,6 +58,9 @@ void dispClearLED(int n);
 void dispSetLED(int n);
 void dispToggleLED();
 
+void dispSetDP(uint8_t);
+void dispClearDP(uint8_t);
+void dispToggleDP(uint8_t);
 
 /*******************************************************************************
  ******************************************************************************/

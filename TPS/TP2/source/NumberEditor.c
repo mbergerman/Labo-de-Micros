@@ -109,6 +109,7 @@ void number_editor_right() {
 			dispSetDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
 		}
 		if ((digit_pointer - &number_editor_array[dispGetBufferPos()] ) == 4) {
+			dispSetDP(3);
 			dispScrollRight();
 		}
 		break;
@@ -129,6 +130,7 @@ void number_editor_left() {
 			dispSetDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
 		}
 		if ((digit_pointer - &number_editor_array[dispGetBufferPos()] ) == -1) {
+			dispSetDP(0);
 			dispScrollLeft();
 		}
 		break;
@@ -152,12 +154,12 @@ editorEvent_t number_editor_click() {
 			return EVENT_EDITOR_NEXT;
 		}
 		else {
-			timerStart(blink_dp_tim_id, TIMER_MS2TICKS(BLINK_DP_MS), TIM_MODE_PERIODIC, toggle_current_dp);
+			//timerStart(blink_dp_tim_id, TIMER_MS2TICKS(BLINK_DP_MS), TIM_MODE_PERIODIC, toggle_current_dp);
 			editor_state = STATE_EDITOR_MODIFY;
 		}
 		break;
 	case STATE_EDITOR_MODIFY:
-		timerStop(blink_dp_tim_id);
+		//timerStop(blink_dp_tim_id);
 		dispSetDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
 		editor_state = STATE_EDITOR_SCROLL;
 		break;

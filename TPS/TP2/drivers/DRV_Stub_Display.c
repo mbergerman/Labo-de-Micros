@@ -8,7 +8,7 @@
  * INCLUDE HEADER FILES
  ******************************************************************************/
 
-#include <DRV_Stub_Display.h>
+#include "DRV_Display.h"
 #include <stdio.h>
 
 /*******************************************************************************
@@ -41,7 +41,6 @@ static void print_buffer();
  * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-// +ej: static const int temperaturas_medias[4] = {23, 26, 24, 29};+
 
 
 /*******************************************************************************
@@ -52,7 +51,7 @@ static char char_buffer[DISP_BUFFER_LEN];
 static uint8_t buffer_current_len = 0;
 static uint8_t buffer_pos = 0;
 
-
+static bool dp_buffer[4] = {0};
 /*******************************************************************************
  *******************************************************************************
                         GLOBAL FUNCTION DEFINITIONS
@@ -65,6 +64,7 @@ void initDisplay(){
 }
 
 void dispClearBuffer(){
+	for(int i=0; i<4; i++) {dp_buffer[i]=false;}
 	buffer_current_len = 0;
 	buffer_pos = 0;
 	print_buffer();
@@ -108,8 +108,8 @@ void dispScrollLeft(){
 	print_buffer();
 }
 
-void dispStartAutoscroll(int speed){}	//TO-DO
-void dispStopAutoscroll(){}				//TO-DO
+void dispStartAutoScroll(int speed){}	//TO-DO
+void dispStopAutoScroll(){}				//TO-DO
 
 
 void dispResetScroll(){
@@ -124,7 +124,7 @@ void dispSetBufferPos(int n){
 	print_buffer();
 }
 
-int dispGetBufferPos(){
+uint8_t dispGetBufferPos(){
 	return buffer_pos;
 }
 
@@ -133,13 +133,16 @@ void dispSetLED(int n);		//TO-DO
 void dispToggleLED();		//TO-DO
 
 
-static void print_buffer(){
-	//printf("Display: |");
-	for(int i = 0; i < DISP_CHARS_NUM; i++){
-		uint8_t index = (i + buffer_pos)%buffer_current_len;
-		printf("%c|", (i < buffer_current_len)? char_buffer[index] : ' ');
-	}
-	printf("\n");
+
+
+void dispSetDP(int i) {
+	dp_buffer[i] = true;
+}
+void dispClearDP(int i) {
+	dp_buffer[i] = false;
+}
+void dispToggleDP(int i) {
+	dp_buffer[i] ^= 0b1;
 }
 
 /*******************************************************************************
@@ -147,4 +150,15 @@ static void print_buffer(){
                         LOCAL FUNCTION DEFINITIONS
  *******************************************************************************
  ******************************************************************************/
- 
+static void print_buffer(){
+	//printf("Display: |");
+	for(int i = 0; i < DISP_CHARS_NUM; i++){
+		uint8_t index = (i + buffer_pos)%buffer_current_len;
+		printf("%c|", (i < buffer_current_len)? char_buffer[index] : ' ');
+	}
+	printf("\t");
+	for(int i = 0; i < DISP_CHARS_NUM; i++){
+		printf("%1d|", dp_buffer[i]);
+	}
+	printf("\n");
+}
