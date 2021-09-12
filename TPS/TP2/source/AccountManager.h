@@ -12,6 +12,7 @@ typedef struct Users {
 	uint32_t ID;
 	uint32_t PIN;
 	bool admin;
+	uint8_t error_counter;
 } User;
 
 void init_data_base();
@@ -29,4 +30,8 @@ bool add_to_data_base(User admin_user, uint32_t ID_u, uint32_t PIN_u, bool admin
 bool delete_from_data_base(User admin_user, uint32_t ID_u);
 
 bool edit_PIN(uint32_t user_to_change, uint32_t PIN_u);
+
+void unblock_user(User u);
+
+bool is_blocked(User u);
 

@@ -25,6 +25,8 @@
 
 #define ID_LENGTH	8
 #define PIN_LENGTH	5
+#define ERROR_TIME_MS 5000
+#define LATCH_TIME_MS 5000
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -42,6 +44,7 @@ typedef enum{
 	STATE_MAIN,
 	STATE_ID,
 	STATE_PIN,
+	STATE_EDIT,
 	STATE_ADMIN,
 	STATE_BRIGHTNESS,
 	STATE_SPEED
@@ -55,6 +58,11 @@ typedef enum{
 	NUM_ITEMS
 }menuItem_t;
 
+enum {
+	LED_ERROR,
+	LED_OK,
+	LED_LATCH
+};
 /*******************************************************************************
  * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
@@ -78,6 +86,7 @@ static menuState_t state_id(menuEvent_t event);
 
 static menuItem_t menu_item = ITEM_ID;
 static bool edit_flag = false;
+static bool edit_user_pin = false;
 
 static tim_id_t encoder_tim_id;
 static uint32_t blink_period = 500;
@@ -85,6 +94,12 @@ static uint32_t blink_period = 500;
 static char* card_number;
 static uint8_t card_number_len = 0;
 
+static User user_to_check;
+
+static tim_id_t error_tim_id;
+static tim_id_t latch_tim_id;
+
+static uint8_t error_counter = 0;
 /*******************************************************************************
  *******************************************************************************
                         GLOBAL FUNCTION DEFINITIONS
@@ -108,12 +123,18 @@ void App_Init (void)
 
 	dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
 	dispStartAutoScroll(DISP_FAST);
+
+	//Inicializo timers de latch y error
+	error_tim_id = timerGetId();
+	latch_tim_id = timerGetId();
+
+	//Inicializo DB
+	init_data_base();
 }
 
 /* Función que se llama constantemente en un ciclo infinito */
 void App_Run (void)
 {
-
 
 	static menuState_t menu_state = STATE_MAIN;
 	menuEvent_t event = EVENT_NONE;
@@ -217,9 +238,10 @@ static menuState_t state_main(menuEvent_t event){
 }
 
 static menuState_t state_id(menuEvent_t event) {
+
 	menuState_t next_state = STATE_ID;
 	editorEvent_t event_click = EVENT_EDITOR_NONE;
-
+	error_counter = 0;
 
 	switch(event){
 	case EVENT_ENC_LEFT:
@@ -232,16 +254,128 @@ static menuState_t state_id(menuEvent_t event) {
 		event_click = number_editor_click();
 		if(event_click == EVENT_EDITOR_PREV) next_state = STATE_MAIN;
 		else if(event_click == EVENT_EDITOR_NEXT) {
-			//check id
+			char* buffer = getBufferNumber();
+			buffer[getNumberLen()] = '\0';
+			id_value = atoi(buffer);
+			next_state = state_check_id(id_value);
 		}
 		break;
 	case EVENT_CARD:
-		//check_id
+		card_number[card_number_len] = '\0';
+		uint32_t id_value = atoi(card_number);
+		next_state = state_check_id(id_value);
 		break;
-	default: break;
+	default: 
+	break;
 	}
 
 	return next_state;
+}
+
+
+static menuState_t state_check_id(uint32_t id_value){
+	next_state = STATE_ID;
+	if (id_check(id_value))
+		{
+		next_state = STATE_PIN;
+		user_to_check = user_search(id_value);
+		start_number_editor(PIN_LENGTH, 1, 1);
+		if(user_to_check.is_blocked()){
+			timerStart(error_tim_id, TIMER_MS2TICKS(ERROR_TIME_MS), TIM_MODE_SINGLESHOT, unshow_LED_error());
+			show_LED_error();
+			next_state = STATE_MAIN;
+			}
+		}
+	else {
+		timerStart(error_tim_id, TIMER_MS2TICKS(ERROR_TIME_MS), TIM_MODE_SINGLESHOT, unshow_LED_error());
+		show_LED_error();
+		}
+	return next_state;
+}
+
+static menuState_t state_pin(menuEvent_t event) {
+
+	menuState_t next_state = STATE_PIN;
+
+
+	switch (event) {
+		case EVENT_ENC_LEFT:
+			number_editor_left();
+			break;
+		case EVENT_ENC_RIGHT:
+			number_editor_right();
+			break;
+		case EVENT_ENC_CLICK:
+			editorEvent_t event_click = number_editor_click();
+			if (event_click == EVENT_EDITOR_PREV) next_state = STATE_MAIN;
+			else if (event_click == EVENT_EDITOR_NEXT) {
+				char* buffer = getBufferNumber();
+				buffer[getNumberLen()] = '\0';
+				pin_value = atoi(buffer);
+				
+				if (edit_user_pin){
+					edit_PIN(user_to_check.ID, pin_value);
+					next_state = STATE_MAIN;
+					edit_user_pin = false; 
+				}
+				else if ((pin_value == user_to_check.PIN) && !edit_user_pin){
+					if (edit_flag) {
+						if (!user_to_check.admin) {
+							edit_user_pin = true;
+							next_state = STATE_PIN;
+							start_number_editor(PIN_LENGTH, 1, 1);
+							edit_flag = false;
+						}
+						else {
+							next_state = STATE_ADMIN;
+							edit_flag = false;
+							user_to_check.unblock_user();
+
+						}
+					}
+					else {
+						//activo latch "entro"
+						timerStart(latch_tim_id, TIMER_MS2TICKS(LATCH_TIME_MS), TIM_MODE_SINGLESHOT, deactivate_latch());
+						activate_latch();
+						next_state = STATE_MAIN;
+						user_to_check.unblock_user();
+					}
+
+				}
+				else {
+					//Si no se valida ID y PIN, se prende el PIN de error
+					timerStart(error_tim_id, TIMER_MS2TICKS(LATCH_TIME_MS), TIM_MODE_SINGLESHOT, unshow_LED_error());
+					show_LED_error();
+					user_to_check.error_counter++;
+				}
+			}
+			break;
+		default:
+			break;
+		}
+}
+
+
+void activate_latch() {
+	
+	dispSetLED(LED_LATCH);
+}
+
+
+void  deactivate_latch() {
+
+	dispClearLED(LED_LATCH);
+}
+
+
+void show_LED_error() {
+
+	dispSetLED(LED_ERROR);
+}
+
+void unshow_LED_error() {
+
+	dispClearLED(LED_ERROR);
 }
 /*******************************************************************************
  ******************************************************************************/

@@ -12,6 +12,7 @@ void init_data_base()
 	master_user.ID = 12345678;
 	master_user.PIN = 12345;
 	master_user.admin = true;
+	master_user.error_counter = 0;
 	user_data_base[users_in_db] = master_user;
 	users_in_db++;
 }
@@ -52,6 +53,7 @@ bool add_to_data_base(User admin_user, uint32_t ID_u, uint32_t PIN_u, bool admin
 		new_user.ID = ID_u;
 		new_user.PIN = PIN_u;
 		new_user.admin = admin_u;
+		new_user.error_counter = 0;
 		user_data_base[users_in_db] = new_user;
 		users_in_db++;
 		done = true;
@@ -86,4 +88,12 @@ bool edit_PIN(uint32_t user_to_change, uint32_t new_PIN){
 	    }
 	}
 	return found;
+}
+
+void unblock_user(User u){
+	u.error_counter = 0;
+}
+
+bool is_blocked(User u){
+	return u.error_counter >= 3;
 }

@@ -65,6 +65,9 @@ editorEvent_t number_editor_click();
 
 void init_number_editor();
 
+char* getBufferNumber();
+
+uint8_t getNumberLen();
 /*******************************************************************************
  ******************************************************************************/
 
