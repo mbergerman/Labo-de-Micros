@@ -1,71 +1,67 @@
-/***************************************************************************//**
-  @file     +Nombre del archivo (ej: template.h)+
-  @brief    +Descripcion del archivo+
-  @author   +Nombre del autor (ej: Salvador Allende)+
- ******************************************************************************/
+/*
+ * DRV_Display.h
+ *
+ *  Created on: 29 ago. 2021
+ *      Author: matia
+ */
 
-#ifndef _NUMBER_EDITOR_H_
-#define _NUMBER_EDITOR_H_
+#ifndef DRV_STUB_DISPLAY_H_
+#define DRV_STUB_DISPLAY_H_
 
 /*******************************************************************************
  * INCLUDE HEADER FILES
  ******************************************************************************/
 
-#include <stdbool.h>
-#include <stdint.h>
-
+#include "PDRV_GPIO.h"
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
 
-
+#define DISP_CHARS_NUM		4
+#define DISP_LEDS_NUM		3
+#define DISP_BUFFER_LEN		32		// Longitud del buffer de palabras
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
 
-typedef enum{
-	EVENT_EDITOR_PREV,
-	EVENT_EDITOR_NEXT,
-	EVENT_EDITOR_NONE
-}editorEvent_t;
+enum{
+	SLOW,
+	MEDIUM,
+	FAST
+};
 
 /*******************************************************************************
  * VARIABLE PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
 
-// +ej: extern unsigned int anio_actual;+
-
-
 /*******************************************************************************
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
 
-/**
- * @brief TODO: completar descripcion
- * @param param1 Descripcion parametro 1
- * @param param2 Descripcion parametro 2
- * @return Descripcion valor que devuelve
-*/
-// +ej: char lcd_goto (int fil, int col);+
+void initDisplay();
+void dispClearBuffer();
+void dispWriteBuffer(int c, const char* buffer);
+void dispWriteChar(int n, const char character);
+bool dispValidChar(char character);
 
-void start_number_editor(uint8_t editor_len, bool flag_next, bool flag_hidden);
+void dispScrollLeft();
+void dispScrollRight();
+void dispStartAutoscroll(int speed);
+void dispStopAutoscroll();
+void dispResetScroll();
+void dispSetBufferPos(int n);	//Set position within buffer
+int dispGetBufferPos();
 
-void number_editor_left();
+void dispClearLED(int n);
+void dispSetLED(int n);
+void dispToggleLED();
 
-void number_editor_right();
-
-
-// Si clickeas en '<' devuelve PREV
-// Si clickeas en '>' devuelve NEXT
-// Si clickeas en un dígito devuelve NONE
-
-editorEvent_t number_editor_click();
-
-void init_number_editor();
 
 /*******************************************************************************
  ******************************************************************************/
 
-#endif // _TEMPLATE_H_
+
+
+#endif /* DRV_STUB_DISPLAY_H_ */

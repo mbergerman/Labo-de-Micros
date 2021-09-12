@@ -1,4 +1,4 @@
-#include "DRV_Stub-Encoder.h"
+#include <DRV_Stub_Encoder.h>
 #include <stdio.h>
 #include "DRV_Board.h"
 #include "PDRV_GPIO.h"

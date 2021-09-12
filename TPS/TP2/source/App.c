@@ -8,10 +8,11 @@
  * INCLUDE HEADER FILES
  ******************************************************************************/
 
+#include "DRV_Display.h"
+#include "DRV_LEDs.h"
+#include "DRV_Encoder.h"
 #include "DRV_Board.h"
 #include "DRV_Timers.h"
-#include "DRV_Stub-Encoder.h"
-#include "DRV_Display.h"
 #include "NumberEditor.h"
 
 #include <stdio.h>
@@ -94,6 +95,8 @@ void App_Init (void)
    	initBoard();
    	initTimers();
    	initEncoder();
+   	initDisplay();
+   	initLEDs();
 
    	encoder_tim_id = timerGetId();
 
@@ -101,13 +104,17 @@ void App_Init (void)
 
 
 	dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
+	dispStartAutoScroll(DISP_FAST);
 }
 
 /* Función que se llama constantemente en un ciclo infinito */
 void App_Run (void)
 {
+
+
 	static menuState_t menu_state = STATE_MAIN;
 	menuEvent_t event = EVENT_NONE;
+
 
 	//if(readerGetStatus()){
 	//	event = EVENT_CARD;
@@ -213,6 +220,7 @@ static menuState_t state_id(menuEvent_t event) {
 			//check id
 		}
 		break;
+	default: break;
 	}
 
 	return next_state;

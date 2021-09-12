@@ -28,8 +28,16 @@ enum states {START, CW1, CW2, CW3, ACW1, ACW2, ACW3};
 static encoderResult_t CheckMovement(bool A, bool B){
 
     static enum states CurrentState = START;
+    static bool last_sw = false;
+
+
+    bool current_sw = C_curr == SW_ACTIVE;
     encoderResult_t result = ENC_NONE;
-    //status = false;
+    if(!last_sw && current_sw){
+    	result = ENC_CLICK;
+    	status = true;
+    }
+    last_sw = current_sw;
 
     switch(CurrentState){
         case START:
@@ -126,18 +134,7 @@ static void callbackEncoder(void) {
 
     getCurr(); // Busco valores actuales de A, B y C
 
-    encoderResult_t newCheck = CheckMovement(A_curr, B_curr);   //FSM analiza los valores actuales
-
-    // Si se precionó el boton, el resultado de data es ENC_CLICK. Notar que si se aprieta el botón, se ignora el resultado de la FSM
-    if(C_curr == SW_ACTIVE)
-    {
-        data = ENC_CLICK;
-    }
-    else
-    {
-        data = newCheck;
-    }
-
+    data = CheckMovement(A_curr, B_curr);   //FSM analiza los valores actuales
 }
 
 bool encoderGetStatus(){
