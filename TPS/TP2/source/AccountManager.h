@@ -4,7 +4,6 @@
 #define DATA_BASE_MAX 100
 #define ID_SIZE 8
 #define PIN_SIZE_MAX 6
-#define LATCH_TIME_MS 5000
 #define MASTER_ID 12345678
 #define MASTER_PIN 12345
 
