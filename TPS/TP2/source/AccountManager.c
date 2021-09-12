@@ -5,6 +5,7 @@ static User user_data_base[DATA_BASE_MAX];
 static int users_in_db = 0;
 
 
+
 void init_data_base()
 {
 	User master_user;
@@ -56,6 +57,33 @@ bool add_to_data_base(User admin_user, uint32_t ID_u, uint32_t PIN_u, bool admin
 		done = true;
 	}
 	return done;
-
 }
 
+bool delete_from_data_base(User admin_user, uint32_t ID_u){
+	bool found = false;
+	if(admin_user.admin){
+	for (uint8_t i = 0; i < users_in_db && !found ; i++){
+		if(user_data_base[i].ID == ID_u){
+			user_data_base[i] = user_data_base[users_in_db-1];
+			users_in_db = users_in_db-1; 
+			found = true;
+		}
+	}
+}
+	return found;
+}
+
+
+bool edit_PIN(uint32_t user_to_change, uint32_t new_PIN){
+	bool found = false;
+	if(id_check(user_to_change)){
+		for (uint8_t i = 0; (i < users_in_db) && !found; i++) {
+		uint32_t id_db = user_data_base[i].ID;
+		if (id_db == user_to_change) {
+			found = true;
+			user_data_base[i].PIN = new_PIN;
+		    }
+	    }
+	}
+	return found;
+}
