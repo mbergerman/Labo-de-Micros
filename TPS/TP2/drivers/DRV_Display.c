@@ -95,14 +95,14 @@ bool dispValidChar(char character){
 	return true;
 }
 
-void dispScrollLeft(){
+void dispScrollRight(){
 	buffer_pos++;
 	buffer_pos = (buffer_pos >= buffer_current_len)? 0 : buffer_pos;
 	print_buffer();
 }
 
 
-void dispScrollRight(){
+void dispScrollLeft(){
 	buffer_pos--;
 	buffer_pos = (buffer_pos < 0)? buffer_current_len-1 : buffer_pos;
 	print_buffer();
@@ -134,7 +134,7 @@ void dispToggleLED();		//TO-DO
 
 
 static void print_buffer(){
-	printf("Display: |");
+	//printf("Display: |");
 	for(int i = 0; i < DISP_CHARS_NUM; i++){
 		uint8_t index = (i + buffer_pos)%buffer_current_len;
 		printf("%c|", (i < buffer_current_len)? char_buffer[index] : ' ');

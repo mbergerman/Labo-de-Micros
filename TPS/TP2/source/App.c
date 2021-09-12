@@ -10,8 +10,9 @@
 
 #include "DRV_Board.h"
 #include "DRV_Timers.h"
-#include "DRV_Encoder.h"
+#include "DRV_Stub-Encoder.h"
 #include "DRV_Display.h"
+#include "NumberEditor.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -20,11 +21,6 @@
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
-
-#define EDITOR_BUFFER_LEN	(DISP_BUFFER_LEN-2)
-
-#define CHAR_PREV	'<'
-#define CHAR_NEXT	'>'
 
 #define ID_LENGTH	8
 #define PIN_LENGTH	5
@@ -40,12 +36,6 @@ typedef enum{
 	EVENT_NONE = ENC_NONE,
 	EVENT_CARD,
 }menuEvent_t;
-
-typedef enum{
-	EVENT_EDITOR_PREV,
-	EVENT_EDITOR_NEXT,
-	EVENT_EDITOR_NONE
-}editorEvent_t;
 
 typedef enum{
 	STATE_MAIN,
@@ -78,33 +68,18 @@ static void blink_callback();
 
 static menuState_t state_main(menuEvent_t);
 
-static void start_number_editor(uint8_t editor_len, bool flag_next, bool flag_hidden);
+static menuState_t state_id(menuEvent_t event);
 
-//static void number_editor_left();
-
-//static void number_editor_right();
-
-
-// Si clickeas en '<' devuelve PREV
-// Si clickeas en '>' devuelve NEXT
-// Si clickeas en un dígito devuelve NONE
-
-//static editorEvent_t number_editor_click();
 
 /*******************************************************************************
  * GLOBAL VARIABLES ?)
  ******************************************************************************/
 
-menuItem_t menu_item = ITEM_ID;
-bool edit_flag = false;
+static menuItem_t menu_item = ITEM_ID;
+static bool edit_flag = false;
 
-uint8_t number_editor_len = 0;
-uint8_t number_editor_array[EDITOR_BUFFER_LEN];
-bool number_editor_flag_next = true;
-bool number_editor_flag_hidden = false;
-
-tim_id_t encoder_tim_id;
-uint32_t blink_period = 500;
+static tim_id_t encoder_tim_id;
+static uint32_t blink_period = 500;
 
 /*******************************************************************************
  *******************************************************************************
@@ -147,7 +122,7 @@ void App_Run (void)
 			menu_state = state_main(event);
 			break;
 		case STATE_ID:
-			//menu_state = state_id(event);
+			menu_state = state_id(event);
 			break;
 		case STATE_PIN:
 			//menu_state = state_pin(event);
@@ -178,38 +153,7 @@ static void blink_callback(){
    	timerStart(encoder_tim_id, TIMER_MS2TICKS(blink_period), TIM_MODE_SINGLESHOT, blink_callback);
 }
 
-// editor_len: cuántos numero queres editar?
-// flag_next: si queres que haya un botón de 'ok' (flechita para la derecha)
-static void start_number_editor(uint8_t editor_len, bool flag_next, bool flag_hidden){
-	number_editor_len = editor_len;
-	number_editor_flag_hidden = flag_hidden;
 
-	dispStopAutoscroll();
-	dispSetBufferPos(0);
-	dispClearBuffer();
-
-	dispWriteChar(0, CHAR_PREV);	// '<'
-	for(uint8_t i = 0; i < editor_len; i++){
-		number_editor_array[i] = 0;
-		dispWriteChar(i+1, (flag_hidden)? '-': '0');
-	}
-	number_editor_flag_next = flag_next;
-
-	if(flag_next){
-		dispWriteChar(editor_len + 1, CHAR_NEXT);  // '>'
-	}
-}
-
-//static void number_editor_left();
-
-//static void number_editor_right();
-
-
-// Si clickeas en '<' devuelve PREV
-// Si clickeas en '>' devuelve NEXT
-// Si clickeas en un dígito devuelve NONE
-
-//static editorEvent_t number_editor_click();
 
 static menuState_t state_main(menuEvent_t event){
 	menuState_t next_state = STATE_MAIN;
@@ -237,11 +181,11 @@ static menuState_t state_main(menuEvent_t event){
 			break;
 		case ITEM_BRIGHTNESS:
 			next_state = STATE_BRIGHTNESS;
-			start_number_editor(1, false);
+			start_number_editor(1, false, false);
 			break;
 		case ITEM_SPEED:
 			next_state = STATE_SPEED;
-			start_number_editor(1, false);
+			start_number_editor(1, false, false);
 			break;
 		default: break;
 		}
@@ -251,5 +195,27 @@ static menuState_t state_main(menuEvent_t event){
 	return next_state;
 }
 
+static menuState_t state_id(menuEvent_t event) {
+	menuState_t next_state = STATE_ID;
+	editorEvent_t event_click = EVENT_EDITOR_NONE;
+
+	switch(event){
+	case EVENT_ENC_LEFT:
+		number_editor_left();
+		break;
+	case EVENT_ENC_RIGHT:
+		number_editor_right();
+		break;
+	case EVENT_ENC_CLICK:
+		event_click = number_editor_click();
+		if(event_click == EVENT_EDITOR_PREV) next_state = STATE_MAIN;
+		else if(event_click == EVENT_EDITOR_NEXT) {
+			//check id
+		}
+		break;
+	}
+
+	return next_state;
+}
 /*******************************************************************************
  ******************************************************************************/
