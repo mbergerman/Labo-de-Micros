@@ -3,10 +3,10 @@
 #include "DRV_Timers.h"
 
 //Definiciones de pines que irian en config
-#define PIN_A PORTNUM2PIN(PA,1)
-#define PIN_B PORTNUM2PIN(PB,23)
-#define PIN_SWA PORTNUM2PIN(PA,2)
-#define SW_ACTIVE LOW
+#define PIN_A 		PORTNUM2PIN(PA,1)
+#define PIN_B 		PORTNUM2PIN(PB,23)
+#define PIN_SWA 	PORTNUM2PIN(PA,2)
+#define SW_ACTIVE 	LOW
 
 //Valores actuales de A, B y C que se actualizan con getCurr()
 static bool A_curr;
@@ -22,7 +22,6 @@ static tim_id_t encoder_timer;
 
 //Estados de la FSM
 enum states {START, CW1, CW2, CW3, ACW1, ACW2, ACW3};
-
 
 //FSM que determina si se realizo un movimiento en sentido horario (CW) o antihorario (ACW)
 static encoderResult_t CheckMovement(bool A, bool B){

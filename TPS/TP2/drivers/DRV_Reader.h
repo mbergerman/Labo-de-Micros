@@ -18,8 +18,9 @@
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
 
-#define TERMINATOR_CHAR	'\0'
-#define READER_TIMEOUT	500	 // Milisegundos a esperar antes de cancelar una lectura
+#define TERMINATOR_CHAR		'\0'
+#define READER_TIMEOUT		500	 // Milisegundos a esperar antes de cancelar una lectura
+#define READER_NUM_MAX_LEN	19
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -37,7 +38,8 @@ typedef	void (*readerCallback_t)(char*, uint8_t);
  ******************************************************************************/
 
 void initReader(void);
-void stopReader(void);
+void enableReader(void);
+void disableReader(void);
 //bool readerRunning(void);
 bool readerIsReady(); // return and clear flag
 void getValueReader(char* result_number_ptr, uint8_t* result_len_ptr);

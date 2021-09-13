@@ -26,7 +26,7 @@
 
 #define CHAR_BITS		5
 #define BUFFER_LEN		40
-#define PAN_MAX_LEN		19
+#define PAN_MAX_LEN		READER_NUM_MAX_LEN
 #define ADD_CHARS_MIN	7
 #define NUM_DATA_LEN	37
 #define FS_LEN			1
@@ -100,7 +100,6 @@ static void reader_timeout_callback();
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-static readerCallback_t reader_finished_callback;
 static char reading_buffer[BUFFER_LEN];
 static uint8_t reading_buffer_pos;
 static uint8_t lrc_check;
@@ -122,14 +121,17 @@ void initReader(void){
 	gpioMode(READER_CLK_PIN, INPUT);
 	gpioMode(READER_DATA_PIN, INPUT);
 
-	gpioIRQ(READER_EN_PIN, GPIO_IRQ_MODE_BOTH_EDGES, reader_enable_irq);
-
 	reader_tim_id = timerGetId();
 }
 
-void stopReader(){
+void enableReader(){
+	gpioIRQ(READER_EN_PIN, GPIO_IRQ_MODE_BOTH_EDGES, reader_enable_irq);
+}
+
+void disableReader(){
 	gpioIRQ(READER_EN_PIN, GPIO_IRQ_MODE_DISABLE, reader_enable_irq);
 	timerStop(reader_tim_id);
+	is_ready = false;
 }
 
 bool readerRunning(){
@@ -142,8 +144,10 @@ bool readerIsReady() {
 
 void getValueReader(char* result_number_ptr, uint8_t* result_len_ptr) {
 	parse_buffer(result_buffer, &result_buffer_len);
-	result_number_ptr = result_buffer;
-	result_len_ptr = &result_buffer_len;
+	for(int i = 0; i < result_buffer_len; i++){
+		result_number_ptr[i] = result_buffer[i];
+	}
+	*result_len_ptr = result_buffer_len;
 	is_ready = false;
 }
 

@@ -8,6 +8,8 @@
  * INCLUDE HEADER FILES
  ******************************************************************************/
 
+#include "stdlib.h"
+
 #include "DRV_Display.h"
 #include "DRV_Timers.h"
 #include "NumberEditor.h"
@@ -16,7 +18,7 @@
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
 
-#define EDITOR_BUFFER_LEN	(DISP_BUFFER_LEN-2)
+#define EDITOR_BUFFER_LEN	(DISP_BUFFER_LEN)
 #define CHAR_PREV	'<'
 #define CHAR_NEXT	'>'
 #define BLINK_DP_MS	250
@@ -88,8 +90,8 @@ void start_number_editor(uint8_t editor_len, bool flag_next, bool flag_hidden){
 
 	dispWriteChar(0, CHAR_PREV);	// '<'
 	for(uint8_t i = 0; i < editor_len; i++){
-		number_editor_array[i] = 0;
-		dispWriteChar(i+1, (flag_hidden)? '-': ('0'+i));
+		number_editor_array[i+1] = 0;
+		dispWriteChar(i+1, (flag_hidden)? '-': ('0'));
 	}
 	digit_pointer = number_editor_array;
 	dispSetDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
@@ -108,7 +110,7 @@ void number_editor_right() {
 			digit_pointer++;
 			dispSetDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
 		}
-		if ((digit_pointer - &number_editor_array[dispGetBufferPos()] ) == 4) {
+		if ((digit_pointer - &number_editor_array[dispGetBufferPos()] ) == DISP_CHARS_NUM) {
 			dispSetDP(3);
 			dispScrollRight();
 		}
@@ -149,22 +151,38 @@ void number_editor_left() {
 editorEvent_t number_editor_click() {
 	switch(editor_state) {
 	case STATE_EDITOR_SCROLL:
-		if ( digit_pointer - number_editor_array == 0 ) return EVENT_EDITOR_PREV;
+		if ( digit_pointer - number_editor_array == 0 ){
+			dispClearDP(digit_pointer - &number_editor_array[dispGetBufferPos()]);
+			return EVENT_EDITOR_PREV;
+		}
 		else if ( number_editor_flag_next && (digit_pointer - number_editor_array == (number_editor_len+1) )) {
+			dispClearDP(digit_pointer - &number_editor_array[dispGetBufferPos()]);
 			return EVENT_EDITOR_NEXT;
 		}
 		else {
-			//timerStart(blink_dp_tim_id, TIMER_MS2TICKS(BLINK_DP_MS), TIM_MODE_PERIODIC, toggle_current_dp);
+			timerStart(blink_dp_tim_id, TIMER_MS2TICKS(BLINK_DP_MS), TIM_MODE_PERIODIC, toggle_current_dp);
 			editor_state = STATE_EDITOR_MODIFY;
 		}
 		break;
 	case STATE_EDITOR_MODIFY:
-		//timerStop(blink_dp_tim_id);
+		timerStop(blink_dp_tim_id);
 		dispSetDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
 		editor_state = STATE_EDITOR_SCROLL;
 		break;
 	}
 	return EVENT_EDITOR_NONE;
+}
+
+
+uint32_t getBufferNumber(){
+	uint32_t result = 0;
+	for(int i = 1; i <= number_editor_len; i++){
+		if(number_editor_array[i] < 10){
+			result *= 10;
+			result += number_editor_array[i];
+		}
+	}
+	return result;
 }
 
 /*******************************************************************************

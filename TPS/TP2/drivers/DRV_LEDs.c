@@ -36,11 +36,11 @@ static bool leds[DISP_LEDS_NUM];
 
 static int LEDCounter = 0;
 
-static int my_refresh_rate = 50;
+static int my_refresh_rate = 2;
 
 static tim_id_t rate_id;
 
-static selector_data_t leds_selector[] = {{HIGH, LOW}, {LOW, HIGH}, {HIGH, HIGH}};
+static selector_data_t leds_selector[] = {{HIGH, LOW}, {LOW, HIGH}, {HIGH, HIGH}, {LOW, LOW}};
 
 // update_leds - update LEDs.
 static void update_leds();
@@ -55,7 +55,6 @@ static void update_leds();
 // initDisplay() - Initialize display.
 void initLEDs()
 {
-
 	gpioMode(STATUS0, OUTPUT);
 	gpioMode(STATUS1, OUTPUT);
 
@@ -107,6 +106,9 @@ static void update_leds()
 	{
 		gpioWrite (STATUS0, leds_selector[LEDCounter].select0);
 		gpioWrite (STATUS1, leds_selector[LEDCounter].select1);
+	}else{
+		gpioWrite (STATUS0, leds_selector[DISP_LEDS_NUM].select0);
+		gpioWrite (STATUS1, leds_selector[DISP_LEDS_NUM].select1);
 	}
 	LEDCounter++;
 }

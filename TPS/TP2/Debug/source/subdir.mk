@@ -4,14 +4,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../source/AccountManager.c \
 ../source/App.c \
 ../source/NumberEditor.c 
 
 OBJS += \
+./source/AccountManager.o \
 ./source/App.o \
 ./source/NumberEditor.o 
 
 C_DEPS += \
+./source/AccountManager.d \
 ./source/App.d \
 ./source/NumberEditor.d 
 
