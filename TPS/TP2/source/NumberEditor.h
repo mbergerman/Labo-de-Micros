@@ -52,6 +52,8 @@ typedef enum{
 
 void start_number_editor(uint8_t editor_len, bool flag_next, bool flag_hidden);
 
+void set_number_editor_digit(uint8_t n, uint8_t digit);
+
 void number_editor_left();
 
 void number_editor_right();

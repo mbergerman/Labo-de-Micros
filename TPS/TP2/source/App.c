@@ -215,6 +215,7 @@ static menuState_t state_main(menuEvent_t event){
 		case ITEM_BRIGHTNESS:
 			next_state = STATE_BRIGHTNESS;
 			start_number_editor(1, false, false);
+			set_number_editor_digit(0, dispGetBrightness());
 			break;
 		case ITEM_SPEED:
 			next_state = STATE_SPEED;
@@ -398,7 +399,6 @@ static void unshow_warning() {
 }
 
 
-
 static menuEvent_t state_brightness(menuEvent_t event) {
 	menuState_t next_state = STATE_BRIGHTNESS;
 	editorEvent_t event_click = EVENT_EDITOR_NONE;
@@ -406,15 +406,20 @@ static menuEvent_t state_brightness(menuEvent_t event) {
 	switch(event){
 	case EVENT_ENC_RIGHT:
 		number_editor_right();
+		dispUpdateBrightness(getBufferNumber());
 		break;
 	case EVENT_ENC_LEFT:
 		number_editor_left();
+		dispUpdateBrightness(getBufferNumber());
 		break;
 	case EVENT_ENC_CLICK:
 		event_click = number_editor_click();
 		if(event_click == EVENT_EDITOR_PREV) {
 			dispUpdateBrightness(getBufferNumber());
 			next_state = STATE_MAIN;
+
+			dispStartAutoScroll(disp_scroll_speed);
+			dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
 		}
 
 	default:break;
