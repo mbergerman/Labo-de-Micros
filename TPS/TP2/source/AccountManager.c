@@ -9,8 +9,8 @@ static int users_in_db = 0;
 void init_data_base()
 {
 	User master_user;
-	master_user.ID = 12345678;
-	master_user.PIN = 12345;
+	master_user.ID = MASTER_ID;
+	master_user.PIN = MASTER_PIN;
 	master_user.admin = true;
 	master_user.error_counter = 0;
 	user_data_base[users_in_db] = master_user;
