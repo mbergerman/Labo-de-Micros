@@ -116,22 +116,28 @@ void number_editor_right() {
 	case STATE_EDITOR_SCROLL:
 		if ( (digit_pointer - number_editor_array) < (number_editor_len + (uint8_t)number_editor_flag_next) ) {
 
-			dispClearDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
-
 			// check hideness
 			bool hide = false;
 			uint8_t index = digit_pointer-number_editor_array;
 			if(number_editor_flag_hidden) {
-				if(index>=1 && index<=number_editor_len) hide = true;
+				//if(index>=1 && index<=number_editor_len)
+				hide = true;
 			}
 
-			if(hide) dispWriteChar(index , '-' ); //hide value
+			if(hide && index>0) {
+				dispWriteChar(index , '-' ); //hide value
+			}
+
+			dispClearDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
 
 			digit_pointer++;
 
-			if(hide && index<number_editor_len) dispWriteChar(index+1, (char)('0'+*digit_pointer) ); // show value to modify
-
 			dispSetDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
+
+			if(hide && index<number_editor_len){
+				dispWriteChar(index+1, (char)('0'+*digit_pointer) ); // show value to modify
+			}
+
 		}
 		if ((digit_pointer - &number_editor_array[dispGetBufferPos()] ) == DISP_CHARS_NUM) {
 			dispSetDP(3);
@@ -150,8 +156,6 @@ void number_editor_left() {
 	case STATE_EDITOR_SCROLL:
 		if ( (digit_pointer - number_editor_array) > 0 ) {
 
-			dispClearDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
-
 			// check hideness
 			bool hide = false;
 			uint8_t index = digit_pointer-number_editor_array;
@@ -159,13 +163,19 @@ void number_editor_left() {
 				if(index>=1 && index<=number_editor_len) hide = true;
 			}
 
-			if(hide) dispWriteChar(index , '-' ); //hide value
+			if(hide) {
+				dispWriteChar(index , '-' ); //hide value
+			}
+
+			dispClearDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
 
 			digit_pointer--;
 
-			if(hide && index>1) dispWriteChar(index-1, (char)('0'+*digit_pointer) ); // show value to modify
-
 			dispSetDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
+
+			if(hide && index>1) {
+				dispWriteChar(index-1, (char)('0'+*digit_pointer) ); // show value to modify
+			}
 		}
 		if ((digit_pointer - &number_editor_array[dispGetBufferPos()] ) == -1) {
 			dispSetDP(0);

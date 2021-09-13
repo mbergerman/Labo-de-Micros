@@ -52,6 +52,7 @@ static uint8_t buffer_current_len = 0;
 static uint8_t buffer_pos = 0;
 
 static bool dp_buffer[4] = {0};
+static int brightness;
 /*******************************************************************************
  *******************************************************************************
                         GLOBAL FUNCTION DEFINITIONS
@@ -144,8 +145,13 @@ void dispClearDP(int i) {
 void dispToggleDP(int i) {
 	dp_buffer[i] ^= 0b1;
 }
-void dispUpdateBrightness(int brightness) {
+void dispUpdateBrightness(int b) {
+	brightness = b;
 	printf("Brightness %d\n", brightness);
+}
+
+int dispGetBrightness() {
+	return brightness;
 }
 
 /*******************************************************************************
