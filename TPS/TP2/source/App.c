@@ -323,45 +323,50 @@ static menuState_t state_pin(menuEvent_t event) {
 				next_state = STATE_ID;
 				enableReader();
 			}else if (event_click == EVENT_EDITOR_NEXT) {
-				uint32_t pin_value = getBufferNumber();
-				
-				if (edit_user_pin){
-					edit_PIN(user_to_check.ID, pin_value);
-					next_state = STATE_MAIN;
+				if(is_blocked(user_to_check)){
+					show_warning();
+					timerStart(warning_tim_id, TIMER_MS2TICKS(ERROR_TIME_MS), TIM_MODE_SINGLESHOT, unshow_warning);
+				}else{
+					uint32_t pin_value = getBufferNumber();
 
-					dispStartAutoScroll(disp_scroll_speed);
-					dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
-
-					edit_user_pin = false; 
-				}else if ((pin_value == user_to_check.PIN) && !edit_user_pin){
-					if (edit_flag) {
-						if (!user_to_check.admin) {
-							edit_user_pin = true;
-							next_state = STATE_PIN;
-							start_number_editor(PIN_LENGTH, 1, 1);
-							edit_flag = false;
-						}else{
-							next_state = STATE_ADMIN;
-							edit_flag = false;
-							unblock_user(user_to_check);
-
-						}
-					}else{
-						//activo latch "entro"
-						activate_latch();
-						timerStart(latch_tim_id, TIMER_MS2TICKS(LATCH_TIME_MS), TIM_MODE_SINGLESHOT, deactivate_latch);
+					if (edit_user_pin){
+						edit_PIN(user_to_check.ID, pin_value);
 						next_state = STATE_MAIN;
 
 						dispStartAutoScroll(disp_scroll_speed);
 						dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
 
-						unblock_user(user_to_check);
+						edit_user_pin = false;
+					}else if ((pin_value == user_to_check.PIN) && !edit_user_pin){
+						if (edit_flag) {
+							if (!user_to_check.admin) {
+								edit_user_pin = true;
+								next_state = STATE_PIN;
+								start_number_editor(PIN_LENGTH, 1, 1);
+								edit_flag = false;
+							}else{
+								next_state = STATE_ADMIN;
+								edit_flag = false;
+								unblock_user(user_to_check);
+
+							}
+						}else{
+							//activo latch "entro"
+							activate_latch();
+							timerStart(latch_tim_id, TIMER_MS2TICKS(LATCH_TIME_MS), TIM_MODE_SINGLESHOT, deactivate_latch);
+							next_state = STATE_MAIN;
+
+							dispStartAutoScroll(disp_scroll_speed);
+							dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
+
+							unblock_user(user_to_check);
+						}
+					}else{
+						//Si no se valida ID y PIN, se prende el PIN de error
+						show_error();
+						timerStart(error_tim_id, TIMER_MS2TICKS(ERROR_TIME_MS), TIM_MODE_SINGLESHOT, unshow_error);
+						add_error(user_to_check);
 					}
-				}else{
-					//Si no se valida ID y PIN, se prende el PIN de error
-					show_error();
-					timerStart(error_tim_id, TIMER_MS2TICKS(ERROR_TIME_MS), TIM_MODE_SINGLESHOT, unshow_error);
-					add_error(user_to_check);
 				}
 			}
 			break;
