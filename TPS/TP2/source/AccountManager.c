@@ -17,6 +17,7 @@ void init_data_base()
 	users_in_db++;
 
 	add_to_data_base(master_user, 22747207, 800, false);
+	add_to_data_base(master_user, 10000000, 1090, false);
 }
 
 //Devuelve si el ID está en la BD

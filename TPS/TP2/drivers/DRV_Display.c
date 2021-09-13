@@ -240,6 +240,9 @@ void dispUpdateRefreshRate(int refreshRate)
 
 void dispUpdateBrightness(int brightness)
 {
+	if(!brightness) {
+		brightness = MIN_BRIGHT;
+	}
 	if(brightness >= MIN_BRIGHT && brightness <= MAX_BRIGHT)
 	{
 		my_brightness = (my_refresh_rate / 2) * (brightness / 10.0);

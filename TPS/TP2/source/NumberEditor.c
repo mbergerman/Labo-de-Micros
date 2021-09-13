@@ -61,6 +61,8 @@ static uint8_t number_editor_len = 0;
 static uint8_t number_editor_array[EDITOR_BUFFER_LEN];
 static uint8_t* digit_pointer;
 
+static char display_editor_array[EDITOR_BUFFER_LEN];
+
 static bool number_editor_flag_next = true;
 static bool number_editor_flag_hidden = false;
 
@@ -88,17 +90,19 @@ void start_number_editor(uint8_t editor_len, bool flag_next, bool flag_hidden){
 	dispSetBufferPos(0);
 	dispClearBuffer();
 
-	dispWriteChar(0, CHAR_PREV);	// '<'
+	display_editor_array[0] = CHAR_PREV;
 	for(uint8_t i = 0; i < editor_len; i++){
 		number_editor_array[i+1] = 0;
-		dispWriteChar(i+1, (flag_hidden)? '-': ('0'));
+		display_editor_array[i+1] = (number_editor_flag_hidden)? '-': '0';
 	}
 	digit_pointer = number_editor_array;
 	dispSetDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
 
 	if(flag_next){
-		dispWriteChar(editor_len + 1, CHAR_NEXT);  // '>'
+		display_editor_array[editor_len + 1] = CHAR_NEXT;
 	}
+
+	dispWriteBuffer(number_editor_len+1+flag_next , display_editor_array);
 }
 
 void number_editor_right() {
@@ -107,7 +111,20 @@ void number_editor_right() {
 		if ( (digit_pointer - number_editor_array) < (number_editor_len + (uint8_t)number_editor_flag_next) ) {
 
 			dispClearDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
+
+			// check hideness
+			bool hide = false;
+			uint8_t index = digit_pointer-number_editor_array;
+			if(number_editor_flag_hidden) {
+				if(index>=1 && index<=number_editor_len) hide = true;
+			}
+
+			if(hide) dispWriteChar(index , '-' ); //hide value
+
 			digit_pointer++;
+
+			if(hide && index<number_editor_len) dispWriteChar(index+1, (char)('0'+*digit_pointer) ); // show value to modify
+
 			dispSetDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
 		}
 		if ((digit_pointer - &number_editor_array[dispGetBufferPos()] ) == DISP_CHARS_NUM) {
@@ -128,7 +145,20 @@ void number_editor_left() {
 		if ( (digit_pointer - number_editor_array) > 0 ) {
 
 			dispClearDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
+
+			// check hideness
+			bool hide = false;
+			uint8_t index = digit_pointer-number_editor_array;
+			if(number_editor_flag_hidden) {
+				if(index>=1 && index<=number_editor_len) hide = true;
+			}
+
+			if(hide) dispWriteChar(index , '-' ); //hide value
+
 			digit_pointer--;
+
+			if(hide && index>1) dispWriteChar(index-1, (char)('0'+*digit_pointer) ); // show value to modify
+
 			dispSetDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
 		}
 		if ((digit_pointer - &number_editor_array[dispGetBufferPos()] ) == -1) {
@@ -160,12 +190,12 @@ editorEvent_t number_editor_click() {
 			return EVENT_EDITOR_NEXT;
 		}
 		else {
-			timerStart(blink_dp_tim_id, TIMER_MS2TICKS(BLINK_DP_MS), TIM_MODE_PERIODIC, toggle_current_dp);
+			//timerStart(blink_dp_tim_id, TIMER_MS2TICKS(BLINK_DP_MS), TIM_MODE_PERIODIC, toggle_current_dp);
 			editor_state = STATE_EDITOR_MODIFY;
 		}
 		break;
 	case STATE_EDITOR_MODIFY:
-		timerStop(blink_dp_tim_id);
+		//timerStop(blink_dp_tim_id);
 		dispSetDP( digit_pointer - &number_editor_array[dispGetBufferPos()] );
 		editor_state = STATE_EDITOR_SCROLL;
 		break;

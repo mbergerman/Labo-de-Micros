@@ -144,6 +144,9 @@ void dispClearDP(int i) {
 void dispToggleDP(int i) {
 	dp_buffer[i] ^= 0b1;
 }
+void dispUpdateBrightness(int brightness) {
+	printf("Brightness %d\n", brightness);
+}
 
 /*******************************************************************************
  *******************************************************************************

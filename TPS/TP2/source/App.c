@@ -80,6 +80,7 @@ static const char* menu_item_strings[] = {"Enter ID", "Edit", "Brightness", "Spe
 static menuState_t state_main(menuEvent_t);
 static menuState_t state_id(menuEvent_t event);
 static menuState_t state_pin(menuEvent_t event);
+static menuEvent_t state_brightness(menuEvent_t event);
 
 static menuState_t state_check_id(uint32_t id_value);
 
@@ -168,7 +169,7 @@ void App_Run (void)
 			//menu_state = state_admin(event);
 			break;
 		case STATE_BRIGHTNESS:
-			//menu_state = state_brightness(event);
+			menu_state = state_brightness(event);
 			break;
 		case STATE_SPEED:
 			//menu_state = state_speed(event);
@@ -394,6 +395,32 @@ static void show_warning() {
 
 static void unshow_warning() {
 	dispClearLED(LED_WARNING);
+}
+
+
+
+static menuEvent_t state_brightness(menuEvent_t event) {
+	menuState_t next_state = STATE_BRIGHTNESS;
+	editorEvent_t event_click = EVENT_EDITOR_NONE;
+
+	switch(event){
+	case EVENT_ENC_RIGHT:
+		number_editor_right();
+		break;
+	case EVENT_ENC_LEFT:
+		number_editor_left();
+		break;
+	case EVENT_ENC_CLICK:
+		event_click = number_editor_click();
+		if(event_click == EVENT_EDITOR_PREV) {
+			dispUpdateBrightness(getBufferNumber());
+			next_state = STATE_MAIN;
+		}
+
+	default:break;
+	}
+
+	return next_state;
 }
 
 /*******************************************************************************
