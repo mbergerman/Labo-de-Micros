@@ -80,7 +80,8 @@ static const char* menu_item_strings[] = {"Enter ID", "Edit", "Brightness", "Spe
 static menuState_t state_main(menuEvent_t);
 static menuState_t state_id(menuEvent_t event);
 static menuState_t state_pin(menuEvent_t event);
-static menuEvent_t state_brightness(menuEvent_t event);
+static menuState_t state_brightness(menuEvent_t event);
+static menuState_t state_speed(menuEvent_t event);
 
 static menuState_t state_check_id(uint32_t id_value);
 
@@ -92,7 +93,7 @@ static void show_warning();
 static void unshow_warning();
 
 /*******************************************************************************
- * GLOBAL VARIABLES ?)
+* STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
 static menuItem_t menu_item = ITEM_ID;
@@ -108,6 +109,7 @@ static tim_id_t error_tim_id;
 static tim_id_t warning_tim_id;
 static tim_id_t latch_tim_id;
 
+static const int disp_speeds[10] = {1000, 900, 800, 700, 600, 500, 400, 300 , 200 ,100};
 static uint16_t disp_scroll_speed = DISP_MEDIUM;
 
 /*******************************************************************************
@@ -172,7 +174,7 @@ void App_Run (void)
 			menu_state = state_brightness(event);
 			break;
 		case STATE_SPEED:
-			//menu_state = state_speed(event);
+			menu_state = state_speed(event);
 			break;
 		default: break;
 		}
@@ -404,7 +406,7 @@ static void unshow_warning() {
 }
 
 
-static menuEvent_t state_brightness(menuEvent_t event) {
+static menuState_t state_brightness(menuEvent_t event) {
 	menuState_t next_state = STATE_BRIGHTNESS;
 	editorEvent_t event_click = EVENT_EDITOR_NONE;
 
@@ -421,6 +423,36 @@ static menuEvent_t state_brightness(menuEvent_t event) {
 		event_click = number_editor_click();
 		if(event_click == EVENT_EDITOR_PREV) {
 			dispUpdateBrightness(getBufferNumber());
+			next_state = STATE_MAIN;
+
+			dispStartAutoScroll(disp_scroll_speed);
+			dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
+		}
+
+	default:break;
+	}
+
+	return next_state;
+}
+
+
+static menuState_t state_speed(menuEvent_t event) {
+	menuState_t next_state = STATE_SPEED;
+	editorEvent_t event_click = EVENT_EDITOR_NONE;
+
+	switch(event){
+	case EVENT_ENC_RIGHT:
+		number_editor_right();
+		disp_scroll_speed = disp_speeds[getBufferNumber()];
+		break;
+	case EVENT_ENC_LEFT:
+		number_editor_left();
+		disp_scroll_speed = disp_speeds[getBufferNumber()];
+		break;
+	case EVENT_ENC_CLICK:
+		event_click = number_editor_click();
+		if(event_click == EVENT_EDITOR_PREV) {
+			disp_scroll_speed = disp_speeds[getBufferNumber()];
 			next_state = STATE_MAIN;
 
 			dispStartAutoScroll(disp_scroll_speed);

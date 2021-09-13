@@ -37,8 +37,6 @@ typedef enum {
  * VARIABLES WITH GLOBAL SCOPE
  ******************************************************************************/
 
-// +ej: unsigned int anio_actual;+
-
 
 /*******************************************************************************
  * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE

@@ -42,7 +42,6 @@ static void print_buffer();
  ******************************************************************************/
 
 
-
 /*******************************************************************************
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
@@ -109,7 +108,9 @@ void dispScrollLeft(){
 	print_buffer();
 }
 
-void dispStartAutoScroll(int speed){}	//TO-DO
+void dispStartAutoScroll(int speed){
+	printf("Speed = %d\n", speed);
+}
 void dispStopAutoScroll(){}				//TO-DO
 
 
