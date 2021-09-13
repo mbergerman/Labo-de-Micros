@@ -94,11 +94,29 @@ bool edit_PIN(uint32_t user_to_change, uint32_t new_PIN){
 }
 
 void unblock_user(User u){
-	u.error_counter = 0;
+	bool found = false;
+	if(id_check(u.ID)){
+		for (uint8_t i = 0; (i < users_in_db) && !found; i++) {
+		uint32_t id_db = user_data_base[i].ID;
+		if (id_db == u.ID) {
+			found = true;
+			user_data_base[i].error_counter = 0;
+		    }
+	    }
+	}
 }
 
 bool is_blocked(User u){
-	return u.error_counter >= 3;
+	bool found = false;
+	if(id_check(u.ID)){
+		for (uint8_t i = 0; (i < users_in_db) && !found; i++) {
+		uint32_t id_db = user_data_base[i].ID;
+		if (id_db == u.ID) {
+			return user_data_base[i].error_counter >= 3;
+		    }
+	    }
+	}
+	return false;
 }
 
 void add_error(User u){
