@@ -100,3 +100,17 @@ void unblock_user(User u){
 bool is_blocked(User u){
 	return u.error_counter >= 3;
 }
+
+void add_error(User u){
+	bool found = false;
+	if(id_check(u.ID)){
+		for (uint8_t i = 0; (i < users_in_db) && !found; i++) {
+		uint32_t id_db = user_data_base[i].ID;
+		if (id_db == u.ID) {
+			found = true;
+			user_data_base[i].error_counter++;
+		    }
+	    }
+	}
+}
+

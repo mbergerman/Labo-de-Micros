@@ -35,3 +35,4 @@ void unblock_user(User u);
 
 bool is_blocked(User u);
 
+void add_error(User u);

@@ -360,7 +360,7 @@ static menuState_t state_pin(menuEvent_t event) {
 					//Si no se valida ID y PIN, se prende el PIN de error
 					show_error();
 					timerStart(error_tim_id, TIMER_MS2TICKS(ERROR_TIME_MS), TIM_MODE_SINGLESHOT, unshow_error);
-					user_to_check.error_counter++;
+					add_error(user_to_check);
 				}
 			}
 			break;
