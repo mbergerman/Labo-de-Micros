@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="arm__const__structs_8h" kind="file" language="C++">
+    <compoundname>arm_const_structs.h</compoundname>
+    <includes refid="arm__math_8h" local="yes">arm_math.h</includes>
+    <includes refid="arm__common__tables_8h" local="yes">arm_common_tables.h</includes>
+    <incdepgraph>
+      <node id="207">
+        <label>arm_common_tables.h</label>
+        <link refid="arm__common__tables_8h"/>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>string.h</label>
+      </node>
+      <node id="206">
+        <label>math.h</label>
+      </node>
+      <node id="203">
+        <label>SDK/CMSIS/arm_const_structs.h</label>
+        <link refid="arm__const__structs_8h"/>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>arm_math.h</label>
+        <link refid="arm__math_8h"/>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="arm__const__structs_8h_1a27127e9d3deb59df12747233b1b9ea31" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref></type>
+        <definition>const arm_cfft_instance_f32 arm_cfft_sR_f32_len16</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_f32_len16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a5fed2b5e0cc4cb5b8675f14daf226a25" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref></type>
+        <definition>const arm_cfft_instance_f32 arm_cfft_sR_f32_len32</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_f32_len32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1af94d90db836f662321946154c76b5b80" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref></type>
+        <definition>const arm_cfft_instance_f32 arm_cfft_sR_f32_len64</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_f32_len64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1ad283193397ba476465a330db9a955973" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref></type>
+        <definition>const arm_cfft_instance_f32 arm_cfft_sR_f32_len128</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_f32_len128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1aeb2f0a0be605963264217cc10b7bd3b2" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref></type>
+        <definition>const arm_cfft_instance_f32 arm_cfft_sR_f32_len256</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_f32_len256</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a15f6e533f5cfeb014839303d8ed52e19" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref></type>
+        <definition>const arm_cfft_instance_f32 arm_cfft_sR_f32_len512</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_f32_len512</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a05abc294a9159abbd6ffb4f188fe18b1" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref></type>
+        <definition>const arm_cfft_instance_f32 arm_cfft_sR_f32_len1024</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_f32_len1024</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a8d2fad347dcadc47377e1226231b9f62" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref></type>
+        <definition>const arm_cfft_instance_f32 arm_cfft_sR_f32_len2048</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_f32_len2048</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a01d2dbdb8193d43c2b7f003f9cb9a39d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref></type>
+        <definition>const arm_cfft_instance_f32 arm_cfft_sR_f32_len4096</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_f32_len4096</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a1336431c4d2a88d32c42308cfe2defa1" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref></type>
+        <definition>const arm_cfft_instance_q31 arm_cfft_sR_q31_len16</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q31_len16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a4c083c013ef17920cf8f28dc6f139a39" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref></type>
+        <definition>const arm_cfft_instance_q31 arm_cfft_sR_q31_len32</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q31_len32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1ad11668a5662334e0bc6a2811c9cb1047" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref></type>
+        <definition>const arm_cfft_instance_q31 arm_cfft_sR_q31_len64</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q31_len64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a9a2fcdb54300f75ef1fafe02954e9a61" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref></type>
+        <definition>const arm_cfft_instance_q31 arm_cfft_sR_q31_len128</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q31_len128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a3f2de67938bd228918e40f60f18dd6b5" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref></type>
+        <definition>const arm_cfft_instance_q31 arm_cfft_sR_q31_len256</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q31_len256</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1aa337272cf78aaf6075e7e19d0a097d6f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref></type>
+        <definition>const arm_cfft_instance_q31 arm_cfft_sR_q31_len512</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q31_len512</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1ada9813a027999f3cff066c9f7b5df51b" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref></type>
+        <definition>const arm_cfft_instance_q31 arm_cfft_sR_q31_len1024</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q31_len1024</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a420622d75b277070784083ddd44b95fb" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref></type>
+        <definition>const arm_cfft_instance_q31 arm_cfft_sR_q31_len2048</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q31_len2048</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1abfc9595f40a1c7aaba85e1328d824b1c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref></type>
+        <definition>const arm_cfft_instance_q31 arm_cfft_sR_q31_len4096</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q31_len4096</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a7ed661717c58b18f3e557daa72f2b91b" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref></type>
+        <definition>const arm_cfft_instance_q15 arm_cfft_sR_q15_len16</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q15_len16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a8d5426a822a6017235b5e10119606a90" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref></type>
+        <definition>const arm_cfft_instance_q15 arm_cfft_sR_q15_len32</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q15_len32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a95c216e7dcfd59a8d40ef55ac223a749" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref></type>
+        <definition>const arm_cfft_instance_q15 arm_cfft_sR_q15_len64</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q15_len64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a736a97efd37c6386dab8db730904f69b" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref></type>
+        <definition>const arm_cfft_instance_q15 arm_cfft_sR_q15_len128</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q15_len128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1ad80be0db1ea40c66b079404c48d2dcf4" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref></type>
+        <definition>const arm_cfft_instance_q15 arm_cfft_sR_q15_len256</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q15_len256</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a273b91ec86bb2bd8ac14e69252d487fb" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref></type>
+        <definition>const arm_cfft_instance_q15 arm_cfft_sR_q15_len512</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q15_len512</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1ad343fb2e4cba826f092f9d72c4adc831" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref></type>
+        <definition>const arm_cfft_instance_q15 arm_cfft_sR_q15_len1024</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q15_len1024</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1a92c94dc79c66ec66c95f793aedb964b9" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref></type>
+        <definition>const arm_cfft_instance_q15 arm_cfft_sR_q15_len2048</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q15_len2048</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__const__structs_8h_1ab57c118edaa3260f7f16686152845b18" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref></type>
+        <definition>const arm_cfft_instance_q15 arm_cfft_sR_q15_len4096</definition>
+        <argsstring></argsstring>
+        <name>arm_cfft_sR_q15_len4096</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_const_structs.h" line="64" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Project:<sp/><sp/><sp/><sp/><sp/><sp/>CMSIS<sp/>DSP<sp/>Library</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Title:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arm_const_structs.h</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Description:<sp/><sp/>Constant<sp/>structs<sp/>that<sp/>are<sp/>initialized<sp/>for<sp/>user<sp/>convenience.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>For<sp/>example,<sp/>some<sp/>can<sp/>be<sp/>given<sp/>as<sp/>arguments<sp/>to<sp/>the<sp/>arm_cfft_f32()<sp/>function.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>$Date:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>27.<sp/>January<sp/>2017</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>$Revision:<sp/><sp/><sp/><sp/>V.1.5.1</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>Target<sp/>Processor:<sp/>Cortex-M<sp/>cores</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>--------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2010-2017<sp/>ARM<sp/>Limited<sp/>or<sp/>its<sp/>affiliates.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>Apache-2.0</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>License);<sp/>you<sp/>may</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>AS<sp/>IS<sp/>BASIS,<sp/>WITHOUT</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ARM_CONST_STRUCTS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ARM_CONST_STRUCTS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arm__math_8h" kindref="compound">arm_math.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arm__common__tables_8h" kindref="compound">arm_common_tables.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref><sp/><ref refid="arm__const__structs_8h_1a27127e9d3deb59df12747233b1b9ea31" kindref="member">arm_cfft_sR_f32_len16</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref><sp/><ref refid="arm__const__structs_8h_1a5fed2b5e0cc4cb5b8675f14daf226a25" kindref="member">arm_cfft_sR_f32_len32</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref><sp/><ref refid="arm__const__structs_8h_1af94d90db836f662321946154c76b5b80" kindref="member">arm_cfft_sR_f32_len64</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref><sp/><ref refid="arm__const__structs_8h_1ad283193397ba476465a330db9a955973" kindref="member">arm_cfft_sR_f32_len128</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref><sp/><ref refid="arm__const__structs_8h_1aeb2f0a0be605963264217cc10b7bd3b2" kindref="member">arm_cfft_sR_f32_len256</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref><sp/><ref refid="arm__const__structs_8h_1a15f6e533f5cfeb014839303d8ed52e19" kindref="member">arm_cfft_sR_f32_len512</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref><sp/><ref refid="arm__const__structs_8h_1a05abc294a9159abbd6ffb4f188fe18b1" kindref="member">arm_cfft_sR_f32_len1024</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref><sp/><ref refid="arm__const__structs_8h_1a8d2fad347dcadc47377e1226231b9f62" kindref="member">arm_cfft_sR_f32_len2048</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref><sp/><ref refid="arm__const__structs_8h_1a01d2dbdb8193d43c2b7f003f9cb9a39d" kindref="member">arm_cfft_sR_f32_len4096</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref><sp/><ref refid="arm__const__structs_8h_1a1336431c4d2a88d32c42308cfe2defa1" kindref="member">arm_cfft_sR_q31_len16</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref><sp/><ref refid="arm__const__structs_8h_1a4c083c013ef17920cf8f28dc6f139a39" kindref="member">arm_cfft_sR_q31_len32</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref><sp/><ref refid="arm__const__structs_8h_1ad11668a5662334e0bc6a2811c9cb1047" kindref="member">arm_cfft_sR_q31_len64</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref><sp/><ref refid="arm__const__structs_8h_1a9a2fcdb54300f75ef1fafe02954e9a61" kindref="member">arm_cfft_sR_q31_len128</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref><sp/><ref refid="arm__const__structs_8h_1a3f2de67938bd228918e40f60f18dd6b5" kindref="member">arm_cfft_sR_q31_len256</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref><sp/><ref refid="arm__const__structs_8h_1aa337272cf78aaf6075e7e19d0a097d6f" kindref="member">arm_cfft_sR_q31_len512</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref><sp/><ref refid="arm__const__structs_8h_1ada9813a027999f3cff066c9f7b5df51b" kindref="member">arm_cfft_sR_q31_len1024</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref><sp/><ref refid="arm__const__structs_8h_1a420622d75b277070784083ddd44b95fb" kindref="member">arm_cfft_sR_q31_len2048</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q31" kindref="compound">arm_cfft_instance_q31</ref><sp/><ref refid="arm__const__structs_8h_1abfc9595f40a1c7aaba85e1328d824b1c" kindref="member">arm_cfft_sR_q31_len4096</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref><sp/><ref refid="arm__const__structs_8h_1a7ed661717c58b18f3e557daa72f2b91b" kindref="member">arm_cfft_sR_q15_len16</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref><sp/><ref refid="arm__const__structs_8h_1a8d5426a822a6017235b5e10119606a90" kindref="member">arm_cfft_sR_q15_len32</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref><sp/><ref refid="arm__const__structs_8h_1a95c216e7dcfd59a8d40ef55ac223a749" kindref="member">arm_cfft_sR_q15_len64</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref><sp/><ref refid="arm__const__structs_8h_1a736a97efd37c6386dab8db730904f69b" kindref="member">arm_cfft_sR_q15_len128</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref><sp/><ref refid="arm__const__structs_8h_1ad80be0db1ea40c66b079404c48d2dcf4" kindref="member">arm_cfft_sR_q15_len256</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref><sp/><ref refid="arm__const__structs_8h_1a273b91ec86bb2bd8ac14e69252d487fb" kindref="member">arm_cfft_sR_q15_len512</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref><sp/><ref refid="arm__const__structs_8h_1ad343fb2e4cba826f092f9d72c4adc831" kindref="member">arm_cfft_sR_q15_len1024</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref><sp/><ref refid="arm__const__structs_8h_1a92c94dc79c66ec66c95f793aedb964b9" kindref="member">arm_cfft_sR_q15_len2048</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structarm__cfft__instance__q15" kindref="compound">arm_cfft_instance_q15</ref><sp/><ref refid="arm__const__structs_8h_1ab57c118edaa3260f7f16686152845b18" kindref="member">arm_cfft_sR_q15_len4096</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="SDK/CMSIS/arm_const_structs.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___d_m_a_m_u_x___register___masks" kind="group">
+    <compoundname>DMAMUX_Register_Masks</compoundname>
+    <title>DMAMUX Register Masks</title>
+      <sectiondef kind="user-defined">
+      <header>CHCFG - Channel Configuration register</header>
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1ga35b279ba0b1c9e817901494cdac305c5" prot="public" static="no">
+        <name>DMAMUX_CHCFG_SOURCE_MASK</name>
+        <initializer>(0x3FU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4602" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4602" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1gac2b7553c4599d8e919750598dd03f8a3" prot="public" static="no">
+        <name>DMAMUX_CHCFG_SOURCE_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4603" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4603" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1ga26ed125b670223f11ea326335729bb9b" prot="public" static="no">
+        <name>DMAMUX_CHCFG_SOURCE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___d_m_a_m_u_x___register___masks_1gac2b7553c4599d8e919750598dd03f8a3" kindref="member">DMAMUX_CHCFG_SOURCE_SHIFT</ref>)) &amp; <ref refid="group___d_m_a_m_u_x___register___masks_1ga35b279ba0b1c9e817901494cdac305c5" kindref="member">DMAMUX_CHCFG_SOURCE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4604" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4604" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1gafd2b6158f86bedffb640e73c40cdd0f5" prot="public" static="no">
+        <name>DMAMUX_CHCFG_TRIG_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4605" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1ga714a6b142fde49d701e3f624bb2417e1" prot="public" static="no">
+        <name>DMAMUX_CHCFG_TRIG_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4606" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4606" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1ga7f31af225c1b0eca76b430ba76b5e516" prot="public" static="no">
+        <name>DMAMUX_CHCFG_TRIG</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___d_m_a_m_u_x___register___masks_1ga714a6b142fde49d701e3f624bb2417e1" kindref="member">DMAMUX_CHCFG_TRIG_SHIFT</ref>)) &amp; <ref refid="group___d_m_a_m_u_x___register___masks_1gafd2b6158f86bedffb640e73c40cdd0f5" kindref="member">DMAMUX_CHCFG_TRIG_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4607" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1ga311ccb0a9a00f29da44f8c41b33ba79f" prot="public" static="no">
+        <name>DMAMUX_CHCFG_ENBL_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4608" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4608" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1ga23d6f41370761b5c68e4d49f419aaee9" prot="public" static="no">
+        <name>DMAMUX_CHCFG_ENBL_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4609" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4609" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1gaa2db13a0c108bf15d36830b42495686c" prot="public" static="no">
+        <name>DMAMUX_CHCFG_ENBL</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___d_m_a_m_u_x___register___masks_1ga23d6f41370761b5c68e4d49f419aaee9" kindref="member">DMAMUX_CHCFG_ENBL_SHIFT</ref>)) &amp; <ref refid="group___d_m_a_m_u_x___register___masks_1ga311ccb0a9a00f29da44f8c41b33ba79f" kindref="member">DMAMUX_CHCFG_ENBL_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4610" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4610" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1ga142bd4d929a1397622dd8a716558f3bb" prot="public" static="no">
+        <name>DMAMUX_CHCFG_COUNT</name>
+        <initializer>(16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4613" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4613" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1gab59b16200deae0e15cd58d322b7cc75b" prot="public" static="no">
+        <name>DMAMUX_BASE</name>
+        <initializer>(0x40021000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral DMAMUX base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4623" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4623" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1ga0b7b7bd666a76aa791434bb59ea03693" prot="public" static="no">
+        <name>DMAMUX</name>
+        <initializer>((<ref refid="struct_d_m_a_m_u_x___type" kindref="compound">DMAMUX_Type</ref> *)<ref refid="group___d_m_a_m_u_x___register___masks_1gab59b16200deae0e15cd58d322b7cc75b" kindref="member">DMAMUX_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral DMAMUX base pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4625" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4625" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1ga829aeb2ec17eff9c9fa684315a70bc2a" prot="public" static="no">
+        <name>DMAMUX_BASE_ADDRS</name>
+        <initializer>{ <ref refid="group___d_m_a_m_u_x___register___masks_1gab59b16200deae0e15cd58d322b7cc75b" kindref="member">DMAMUX_BASE</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of DMAMUX peripheral base addresses </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4627" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4627" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a_m_u_x___register___masks_1gaad218c12978071501dc2899f0624de4b" prot="public" static="no">
+        <name>DMAMUX_BASE_PTRS</name>
+        <initializer>{ <ref refid="group___d_m_a_m_u_x___register___masks_1ga0b7b7bd666a76aa791434bb59ea03693" kindref="member">DMAMUX</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of DMAMUX peripheral base pointers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="4629" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="4629" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

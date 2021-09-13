@@ -1,0 +1,1061 @@
+.TH "CMSIS_TPI" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_TPI \- Type definitions for the Trace Port Interface (TPI)  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBTPI_Type\fP"
+.br
+.RI "Structure type to access the Trace Port Interface Register (TPI)\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTPI_ACPR_PRESCALER_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_ACPR_PRESCALER_Msk\fP   (0x1FFFUL /*<< TPI_ACPR_PRESCALER_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_SPPR_TXMODE_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_SPPR_TXMODE_Msk\fP   (0x3UL /*<< TPI_SPPR_TXMODE_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FtNonStop_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FtNonStop_Msk\fP   (0x1UL << TPI_FFSR_FtNonStop_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_TCPresent_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_TCPresent_Msk\fP   (0x1UL << TPI_FFSR_TCPresent_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FtStopped_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FtStopped_Msk\fP   (0x1UL << TPI_FFSR_FtStopped_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FlInProg_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FlInProg_Msk\fP   (0x1UL /*<< TPI_FFSR_FlInProg_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFCR_TrigIn_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFCR_TrigIn_Msk\fP   (0x1UL << TPI_FFCR_TrigIn_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFCR_EnFCont_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFCR_EnFCont_Msk\fP   (0x1UL << TPI_FFCR_EnFCont_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_TRIGGER_TRIGGER_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_TRIGGER_TRIGGER_Msk\fP   (0x1UL /*<< TPI_TRIGGER_TRIGGER_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ITM_ATVALID_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ITM_ATVALID_Msk\fP   (0x3UL << TPI_FIFO0_ITM_ATVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ITM_bytecount_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ITM_bytecount_Msk\fP   (0x3UL << TPI_FIFO0_ITM_bytecount_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM_ATVALID_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM_ATVALID_Msk\fP   (0x3UL << TPI_FIFO0_ETM_ATVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM_bytecount_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM_bytecount_Msk\fP   (0x3UL << TPI_FIFO0_ETM_bytecount_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM2_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM2_Msk\fP   (0xFFUL << TPI_FIFO0_ETM2_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM1_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM1_Msk\fP   (0xFFUL << TPI_FIFO0_ETM1_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM0_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM0_Msk\fP   (0xFFUL /*<< TPI_FIFO0_ETM0_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITATBCTR2_ATREADY_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITATBCTR2_ATREADY_Msk\fP   (0x1UL /*<< TPI_ITATBCTR2_ATREADY_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM_ATVALID_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM_ATVALID_Msk\fP   (0x3UL << TPI_FIFO1_ITM_ATVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM_bytecount_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM_bytecount_Msk\fP   (0x3UL << TPI_FIFO1_ITM_bytecount_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ETM_ATVALID_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ETM_ATVALID_Msk\fP   (0x3UL << TPI_FIFO1_ETM_ATVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ETM_bytecount_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ETM_bytecount_Msk\fP   (0x3UL << TPI_FIFO1_ETM_bytecount_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM2_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM2_Msk\fP   (0xFFUL << TPI_FIFO1_ITM2_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM1_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM1_Msk\fP   (0xFFUL << TPI_FIFO1_ITM1_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM0_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM0_Msk\fP   (0xFFUL /*<< TPI_FIFO1_ITM0_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITATBCTR0_ATREADY_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITATBCTR0_ATREADY_Msk\fP   (0x1UL /*<< TPI_ITATBCTR0_ATREADY_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITCTRL_Mode_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITCTRL_Mode_Msk\fP   (0x1UL /*<< TPI_ITCTRL_Mode_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_NRZVALID_Pos\fP   11U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_NRZVALID_Msk\fP   (0x1UL << TPI_DEVID_NRZVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_MANCVALID_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_MANCVALID_Msk\fP   (0x1UL << TPI_DEVID_MANCVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_PTINVALID_Pos\fP   9U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_PTINVALID_Msk\fP   (0x1UL << TPI_DEVID_PTINVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_MinBufSz_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_MinBufSz_Msk\fP   (0x7UL << TPI_DEVID_MinBufSz_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_AsynClkIn_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_AsynClkIn_Msk\fP   (0x1UL << TPI_DEVID_AsynClkIn_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_NrTraceInput_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_NrTraceInput_Msk\fP   (0x1FUL /*<< TPI_DEVID_NrTraceInput_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVTYPE_MajorType_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVTYPE_MajorType_Msk\fP   (0xFUL << TPI_DEVTYPE_MajorType_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVTYPE_SubType_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVTYPE_SubType_Msk\fP   (0xFUL /*<< TPI_DEVTYPE_SubType_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_ACPR_PRESCALER_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_ACPR_PRESCALER_Msk\fP   (0x1FFFUL /*<< TPI_ACPR_PRESCALER_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_SPPR_TXMODE_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_SPPR_TXMODE_Msk\fP   (0x3UL /*<< TPI_SPPR_TXMODE_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FtNonStop_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FtNonStop_Msk\fP   (0x1UL << TPI_FFSR_FtNonStop_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_TCPresent_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_TCPresent_Msk\fP   (0x1UL << TPI_FFSR_TCPresent_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FtStopped_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FtStopped_Msk\fP   (0x1UL << TPI_FFSR_FtStopped_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FlInProg_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FlInProg_Msk\fP   (0x1UL /*<< TPI_FFSR_FlInProg_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFCR_TrigIn_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFCR_TrigIn_Msk\fP   (0x1UL << TPI_FFCR_TrigIn_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFCR_EnFCont_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFCR_EnFCont_Msk\fP   (0x1UL << TPI_FFCR_EnFCont_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_TRIGGER_TRIGGER_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_TRIGGER_TRIGGER_Msk\fP   (0x1UL /*<< TPI_TRIGGER_TRIGGER_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ITM_ATVALID_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ITM_ATVALID_Msk\fP   (0x3UL << TPI_FIFO0_ITM_ATVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ITM_bytecount_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ITM_bytecount_Msk\fP   (0x3UL << TPI_FIFO0_ITM_bytecount_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM_ATVALID_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM_ATVALID_Msk\fP   (0x3UL << TPI_FIFO0_ETM_ATVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM_bytecount_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM_bytecount_Msk\fP   (0x3UL << TPI_FIFO0_ETM_bytecount_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM2_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM2_Msk\fP   (0xFFUL << TPI_FIFO0_ETM2_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM1_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM1_Msk\fP   (0xFFUL << TPI_FIFO0_ETM1_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM0_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM0_Msk\fP   (0xFFUL /*<< TPI_FIFO0_ETM0_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITATBCTR2_ATREADY_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITATBCTR2_ATREADY_Msk\fP   (0x1UL /*<< TPI_ITATBCTR2_ATREADY_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM_ATVALID_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM_ATVALID_Msk\fP   (0x3UL << TPI_FIFO1_ITM_ATVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM_bytecount_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM_bytecount_Msk\fP   (0x3UL << TPI_FIFO1_ITM_bytecount_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ETM_ATVALID_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ETM_ATVALID_Msk\fP   (0x3UL << TPI_FIFO1_ETM_ATVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ETM_bytecount_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ETM_bytecount_Msk\fP   (0x3UL << TPI_FIFO1_ETM_bytecount_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM2_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM2_Msk\fP   (0xFFUL << TPI_FIFO1_ITM2_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM1_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM1_Msk\fP   (0xFFUL << TPI_FIFO1_ITM1_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM0_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM0_Msk\fP   (0xFFUL /*<< TPI_FIFO1_ITM0_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITATBCTR0_ATREADY_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITATBCTR0_ATREADY_Msk\fP   (0x1UL /*<< TPI_ITATBCTR0_ATREADY_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITCTRL_Mode_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITCTRL_Mode_Msk\fP   (0x1UL /*<< TPI_ITCTRL_Mode_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_NRZVALID_Pos\fP   11U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_NRZVALID_Msk\fP   (0x1UL << TPI_DEVID_NRZVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_MANCVALID_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_MANCVALID_Msk\fP   (0x1UL << TPI_DEVID_MANCVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_PTINVALID_Pos\fP   9U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_PTINVALID_Msk\fP   (0x1UL << TPI_DEVID_PTINVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_MinBufSz_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_MinBufSz_Msk\fP   (0x7UL << TPI_DEVID_MinBufSz_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_AsynClkIn_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_AsynClkIn_Msk\fP   (0x1UL << TPI_DEVID_AsynClkIn_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_NrTraceInput_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_NrTraceInput_Msk\fP   (0x1FUL /*<< TPI_DEVID_NrTraceInput_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVTYPE_MajorType_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVTYPE_MajorType_Msk\fP   (0xFUL << TPI_DEVTYPE_MajorType_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVTYPE_SubType_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVTYPE_SubType_Msk\fP   (0xFUL /*<< TPI_DEVTYPE_SubType_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_ACPR_PRESCALER_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_ACPR_PRESCALER_Msk\fP   (0x1FFFUL /*<< TPI_ACPR_PRESCALER_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_ACPR_SWOSCALER_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_ACPR_SWOSCALER_Msk\fP   (0xFFFFUL /*<< TPI_ACPR_SWOSCALER_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_SPPR_TXMODE_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_SPPR_TXMODE_Msk\fP   (0x3UL /*<< TPI_SPPR_TXMODE_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FtNonStop_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FtNonStop_Msk\fP   (0x1UL << TPI_FFSR_FtNonStop_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_TCPresent_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_TCPresent_Msk\fP   (0x1UL << TPI_FFSR_TCPresent_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FtStopped_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FtStopped_Msk\fP   (0x1UL << TPI_FFSR_FtStopped_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FlInProg_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFSR_FlInProg_Msk\fP   (0x1UL /*<< TPI_FFSR_FlInProg_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFCR_TrigIn_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFCR_TrigIn_Msk\fP   (0x1UL << TPI_FFCR_TrigIn_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFCR_EnFCont_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FFCR_EnFCont_Msk\fP   (0x1UL << TPI_FFCR_EnFCont_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_TRIGGER_TRIGGER_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_TRIGGER_TRIGGER_Msk\fP   (0x1UL /*<< TPI_TRIGGER_TRIGGER_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ITM_ATVALID_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ITM_ATVALID_Msk\fP   (0x3UL << TPI_FIFO0_ITM_ATVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ITM_bytecount_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ITM_bytecount_Msk\fP   (0x3UL << TPI_FIFO0_ITM_bytecount_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM_ATVALID_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM_ATVALID_Msk\fP   (0x3UL << TPI_FIFO0_ETM_ATVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM_bytecount_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM_bytecount_Msk\fP   (0x3UL << TPI_FIFO0_ETM_bytecount_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM2_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM2_Msk\fP   (0xFFUL << TPI_FIFO0_ETM2_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM1_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM1_Msk\fP   (0xFFUL << TPI_FIFO0_ETM1_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM0_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO0_ETM0_Msk\fP   (0xFFUL /*<< TPI_FIFO0_ETM0_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITATBCTR2_ATREADY_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITATBCTR2_ATREADY_Msk\fP   (0x1UL /*<< TPI_ITATBCTR2_ATREADY_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM_ATVALID_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM_ATVALID_Msk\fP   (0x3UL << TPI_FIFO1_ITM_ATVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM_bytecount_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM_bytecount_Msk\fP   (0x3UL << TPI_FIFO1_ITM_bytecount_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ETM_ATVALID_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ETM_ATVALID_Msk\fP   (0x3UL << TPI_FIFO1_ETM_ATVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ETM_bytecount_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ETM_bytecount_Msk\fP   (0x3UL << TPI_FIFO1_ETM_bytecount_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM2_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM2_Msk\fP   (0xFFUL << TPI_FIFO1_ITM2_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM1_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM1_Msk\fP   (0xFFUL << TPI_FIFO1_ITM1_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM0_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_FIFO1_ITM0_Msk\fP   (0xFFUL /*<< TPI_FIFO1_ITM0_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITATBCTR0_ATREADY_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITATBCTR0_ATREADY_Msk\fP   (0x1UL /*<< TPI_ITATBCTR0_ATREADY_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITCTRL_Mode_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_ITCTRL_Mode_Msk\fP   (0x1UL /*<< TPI_ITCTRL_Mode_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_NRZVALID_Pos\fP   11U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_NRZVALID_Msk\fP   (0x1UL << TPI_DEVID_NRZVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_MANCVALID_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_MANCVALID_Msk\fP   (0x1UL << TPI_DEVID_MANCVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_PTINVALID_Pos\fP   9U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_PTINVALID_Msk\fP   (0x1UL << TPI_DEVID_PTINVALID_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_MinBufSz_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_MinBufSz_Msk\fP   (0x7UL << TPI_DEVID_MinBufSz_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_AsynClkIn_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_AsynClkIn_Msk\fP   (0x1UL << TPI_DEVID_AsynClkIn_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_NrTraceInput_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVID_NrTraceInput_Msk\fP   (0x1FUL /*<< TPI_DEVID_NrTraceInput_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVTYPE_MajorType_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVTYPE_MajorType_Msk\fP   (0xFUL << TPI_DEVTYPE_MajorType_Pos)"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVTYPE_SubType_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBTPI_DEVTYPE_SubType_Msk\fP   (0xFUL /*<< TPI_DEVTYPE_SubType_Pos*/)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Type definitions for the Trace Port Interface (TPI) 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define TPI_ACPR_PRESCALER_Msk   (0x1FFFUL /*<< TPI_ACPR_PRESCALER_Pos*/)"
+TPI ACPR: PRESCALER Mask 
+.SS "#define TPI_ACPR_PRESCALER_Msk   (0x1FFFUL /*<< TPI_ACPR_PRESCALER_Pos*/)"
+TPI ACPR: PRESCALER Mask 
+.SS "#define TPI_ACPR_PRESCALER_Msk   (0x1FFFUL /*<< TPI_ACPR_PRESCALER_Pos*/)"
+TPI ACPR: PRESCALER Mask 
+.SS "#define TPI_ACPR_PRESCALER_Pos   0U"
+TPI ACPR: PRESCALER Position 
+.SS "#define TPI_ACPR_PRESCALER_Pos   0U"
+TPI ACPR: PRESCALER Position 
+.SS "#define TPI_ACPR_PRESCALER_Pos   0U"
+TPI ACPR: PRESCALER Position 
+.SS "#define TPI_ACPR_SWOSCALER_Msk   (0xFFFFUL /*<< TPI_ACPR_SWOSCALER_Pos*/)"
+TPI ACPR: SWOSCALER Mask 
+.SS "#define TPI_ACPR_SWOSCALER_Pos   0U"
+TPI ACPR: SWOSCALER Position 
+.SS "#define TPI_DEVID_AsynClkIn_Msk   (0x1UL << TPI_DEVID_AsynClkIn_Pos)"
+TPI DEVID: AsynClkIn Mask 
+.SS "#define TPI_DEVID_AsynClkIn_Msk   (0x1UL << TPI_DEVID_AsynClkIn_Pos)"
+TPI DEVID: AsynClkIn Mask 
+.SS "#define TPI_DEVID_AsynClkIn_Msk   (0x1UL << TPI_DEVID_AsynClkIn_Pos)"
+TPI DEVID: AsynClkIn Mask 
+.SS "#define TPI_DEVID_AsynClkIn_Pos   5U"
+TPI DEVID: AsynClkIn Position 
+.SS "#define TPI_DEVID_AsynClkIn_Pos   5U"
+TPI DEVID: AsynClkIn Position 
+.SS "#define TPI_DEVID_AsynClkIn_Pos   5U"
+TPI DEVID: AsynClkIn Position 
+.SS "#define TPI_DEVID_MANCVALID_Msk   (0x1UL << TPI_DEVID_MANCVALID_Pos)"
+TPI DEVID: MANCVALID Mask 
+.SS "#define TPI_DEVID_MANCVALID_Msk   (0x1UL << TPI_DEVID_MANCVALID_Pos)"
+TPI DEVID: MANCVALID Mask 
+.SS "#define TPI_DEVID_MANCVALID_Msk   (0x1UL << TPI_DEVID_MANCVALID_Pos)"
+TPI DEVID: MANCVALID Mask 
+.SS "#define TPI_DEVID_MANCVALID_Pos   10U"
+TPI DEVID: MANCVALID Position 
+.SS "#define TPI_DEVID_MANCVALID_Pos   10U"
+TPI DEVID: MANCVALID Position 
+.SS "#define TPI_DEVID_MANCVALID_Pos   10U"
+TPI DEVID: MANCVALID Position 
+.SS "#define TPI_DEVID_MinBufSz_Msk   (0x7UL << TPI_DEVID_MinBufSz_Pos)"
+TPI DEVID: MinBufSz Mask 
+.SS "#define TPI_DEVID_MinBufSz_Msk   (0x7UL << TPI_DEVID_MinBufSz_Pos)"
+TPI DEVID: MinBufSz Mask 
+.SS "#define TPI_DEVID_MinBufSz_Msk   (0x7UL << TPI_DEVID_MinBufSz_Pos)"
+TPI DEVID: MinBufSz Mask 
+.SS "#define TPI_DEVID_MinBufSz_Pos   6U"
+TPI DEVID: MinBufSz Position 
+.SS "#define TPI_DEVID_MinBufSz_Pos   6U"
+TPI DEVID: MinBufSz Position 
+.SS "#define TPI_DEVID_MinBufSz_Pos   6U"
+TPI DEVID: MinBufSz Position 
+.SS "#define TPI_DEVID_NrTraceInput_Msk   (0x1FUL /*<< TPI_DEVID_NrTraceInput_Pos*/)"
+TPI DEVID: NrTraceInput Mask 
+.SS "#define TPI_DEVID_NrTraceInput_Msk   (0x1FUL /*<< TPI_DEVID_NrTraceInput_Pos*/)"
+TPI DEVID: NrTraceInput Mask 
+.SS "#define TPI_DEVID_NrTraceInput_Msk   (0x1FUL /*<< TPI_DEVID_NrTraceInput_Pos*/)"
+TPI DEVID: NrTraceInput Mask 
+.SS "#define TPI_DEVID_NrTraceInput_Pos   0U"
+TPI DEVID: NrTraceInput Position 
+.SS "#define TPI_DEVID_NrTraceInput_Pos   0U"
+TPI DEVID: NrTraceInput Position 
+.SS "#define TPI_DEVID_NrTraceInput_Pos   0U"
+TPI DEVID: NrTraceInput Position 
+.SS "#define TPI_DEVID_NRZVALID_Msk   (0x1UL << TPI_DEVID_NRZVALID_Pos)"
+TPI DEVID: NRZVALID Mask 
+.SS "#define TPI_DEVID_NRZVALID_Msk   (0x1UL << TPI_DEVID_NRZVALID_Pos)"
+TPI DEVID: NRZVALID Mask 
+.SS "#define TPI_DEVID_NRZVALID_Msk   (0x1UL << TPI_DEVID_NRZVALID_Pos)"
+TPI DEVID: NRZVALID Mask 
+.SS "#define TPI_DEVID_NRZVALID_Pos   11U"
+TPI DEVID: NRZVALID Position 
+.SS "#define TPI_DEVID_NRZVALID_Pos   11U"
+TPI DEVID: NRZVALID Position 
+.SS "#define TPI_DEVID_NRZVALID_Pos   11U"
+TPI DEVID: NRZVALID Position 
+.SS "#define TPI_DEVID_PTINVALID_Msk   (0x1UL << TPI_DEVID_PTINVALID_Pos)"
+TPI DEVID: PTINVALID Mask 
+.SS "#define TPI_DEVID_PTINVALID_Msk   (0x1UL << TPI_DEVID_PTINVALID_Pos)"
+TPI DEVID: PTINVALID Mask 
+.SS "#define TPI_DEVID_PTINVALID_Msk   (0x1UL << TPI_DEVID_PTINVALID_Pos)"
+TPI DEVID: PTINVALID Mask 
+.SS "#define TPI_DEVID_PTINVALID_Pos   9U"
+TPI DEVID: PTINVALID Position 
+.SS "#define TPI_DEVID_PTINVALID_Pos   9U"
+TPI DEVID: PTINVALID Position 
+.SS "#define TPI_DEVID_PTINVALID_Pos   9U"
+TPI DEVID: PTINVALID Position 
+.SS "#define TPI_DEVTYPE_MajorType_Msk   (0xFUL << TPI_DEVTYPE_MajorType_Pos)"
+TPI DEVTYPE: MajorType Mask 
+.SS "#define TPI_DEVTYPE_MajorType_Msk   (0xFUL << TPI_DEVTYPE_MajorType_Pos)"
+TPI DEVTYPE: MajorType Mask 
+.SS "#define TPI_DEVTYPE_MajorType_Msk   (0xFUL << TPI_DEVTYPE_MajorType_Pos)"
+TPI DEVTYPE: MajorType Mask 
+.SS "#define TPI_DEVTYPE_MajorType_Pos   4U"
+TPI DEVTYPE: MajorType Position 
+.SS "#define TPI_DEVTYPE_MajorType_Pos   4U"
+TPI DEVTYPE: MajorType Position 
+.SS "#define TPI_DEVTYPE_MajorType_Pos   4U"
+TPI DEVTYPE: MajorType Position 
+.SS "#define TPI_DEVTYPE_SubType_Msk   (0xFUL /*<< TPI_DEVTYPE_SubType_Pos*/)"
+TPI DEVTYPE: SubType Mask 
+.SS "#define TPI_DEVTYPE_SubType_Msk   (0xFUL /*<< TPI_DEVTYPE_SubType_Pos*/)"
+TPI DEVTYPE: SubType Mask 
+.SS "#define TPI_DEVTYPE_SubType_Msk   (0xFUL /*<< TPI_DEVTYPE_SubType_Pos*/)"
+TPI DEVTYPE: SubType Mask 
+.SS "#define TPI_DEVTYPE_SubType_Pos   0U"
+TPI DEVTYPE: SubType Position 
+.SS "#define TPI_DEVTYPE_SubType_Pos   0U"
+TPI DEVTYPE: SubType Position 
+.SS "#define TPI_DEVTYPE_SubType_Pos   0U"
+TPI DEVTYPE: SubType Position 
+.SS "#define TPI_FFCR_EnFCont_Msk   (0x1UL << TPI_FFCR_EnFCont_Pos)"
+TPI FFCR: EnFCont Mask 
+.SS "#define TPI_FFCR_EnFCont_Msk   (0x1UL << TPI_FFCR_EnFCont_Pos)"
+TPI FFCR: EnFCont Mask 
+.SS "#define TPI_FFCR_EnFCont_Msk   (0x1UL << TPI_FFCR_EnFCont_Pos)"
+TPI FFCR: EnFCont Mask 
+.SS "#define TPI_FFCR_EnFCont_Pos   1U"
+TPI FFCR: EnFCont Position 
+.SS "#define TPI_FFCR_EnFCont_Pos   1U"
+TPI FFCR: EnFCont Position 
+.SS "#define TPI_FFCR_EnFCont_Pos   1U"
+TPI FFCR: EnFCont Position 
+.SS "#define TPI_FFCR_TrigIn_Msk   (0x1UL << TPI_FFCR_TrigIn_Pos)"
+TPI FFCR: TrigIn Mask 
+.SS "#define TPI_FFCR_TrigIn_Msk   (0x1UL << TPI_FFCR_TrigIn_Pos)"
+TPI FFCR: TrigIn Mask 
+.SS "#define TPI_FFCR_TrigIn_Msk   (0x1UL << TPI_FFCR_TrigIn_Pos)"
+TPI FFCR: TrigIn Mask 
+.SS "#define TPI_FFCR_TrigIn_Pos   8U"
+TPI FFCR: TrigIn Position 
+.SS "#define TPI_FFCR_TrigIn_Pos   8U"
+TPI FFCR: TrigIn Position 
+.SS "#define TPI_FFCR_TrigIn_Pos   8U"
+TPI FFCR: TrigIn Position 
+.SS "#define TPI_FFSR_FlInProg_Msk   (0x1UL /*<< TPI_FFSR_FlInProg_Pos*/)"
+TPI FFSR: FlInProg Mask 
+.SS "#define TPI_FFSR_FlInProg_Msk   (0x1UL /*<< TPI_FFSR_FlInProg_Pos*/)"
+TPI FFSR: FlInProg Mask 
+.SS "#define TPI_FFSR_FlInProg_Msk   (0x1UL /*<< TPI_FFSR_FlInProg_Pos*/)"
+TPI FFSR: FlInProg Mask 
+.SS "#define TPI_FFSR_FlInProg_Pos   0U"
+TPI FFSR: FlInProg Position 
+.SS "#define TPI_FFSR_FlInProg_Pos   0U"
+TPI FFSR: FlInProg Position 
+.SS "#define TPI_FFSR_FlInProg_Pos   0U"
+TPI FFSR: FlInProg Position 
+.SS "#define TPI_FFSR_FtNonStop_Msk   (0x1UL << TPI_FFSR_FtNonStop_Pos)"
+TPI FFSR: FtNonStop Mask 
+.SS "#define TPI_FFSR_FtNonStop_Msk   (0x1UL << TPI_FFSR_FtNonStop_Pos)"
+TPI FFSR: FtNonStop Mask 
+.SS "#define TPI_FFSR_FtNonStop_Msk   (0x1UL << TPI_FFSR_FtNonStop_Pos)"
+TPI FFSR: FtNonStop Mask 
+.SS "#define TPI_FFSR_FtNonStop_Pos   3U"
+TPI FFSR: FtNonStop Position 
+.SS "#define TPI_FFSR_FtNonStop_Pos   3U"
+TPI FFSR: FtNonStop Position 
+.SS "#define TPI_FFSR_FtNonStop_Pos   3U"
+TPI FFSR: FtNonStop Position 
+.SS "#define TPI_FFSR_FtStopped_Msk   (0x1UL << TPI_FFSR_FtStopped_Pos)"
+TPI FFSR: FtStopped Mask 
+.SS "#define TPI_FFSR_FtStopped_Msk   (0x1UL << TPI_FFSR_FtStopped_Pos)"
+TPI FFSR: FtStopped Mask 
+.SS "#define TPI_FFSR_FtStopped_Msk   (0x1UL << TPI_FFSR_FtStopped_Pos)"
+TPI FFSR: FtStopped Mask 
+.SS "#define TPI_FFSR_FtStopped_Pos   1U"
+TPI FFSR: FtStopped Position 
+.SS "#define TPI_FFSR_FtStopped_Pos   1U"
+TPI FFSR: FtStopped Position 
+.SS "#define TPI_FFSR_FtStopped_Pos   1U"
+TPI FFSR: FtStopped Position 
+.SS "#define TPI_FFSR_TCPresent_Msk   (0x1UL << TPI_FFSR_TCPresent_Pos)"
+TPI FFSR: TCPresent Mask 
+.SS "#define TPI_FFSR_TCPresent_Msk   (0x1UL << TPI_FFSR_TCPresent_Pos)"
+TPI FFSR: TCPresent Mask 
+.SS "#define TPI_FFSR_TCPresent_Msk   (0x1UL << TPI_FFSR_TCPresent_Pos)"
+TPI FFSR: TCPresent Mask 
+.SS "#define TPI_FFSR_TCPresent_Pos   2U"
+TPI FFSR: TCPresent Position 
+.SS "#define TPI_FFSR_TCPresent_Pos   2U"
+TPI FFSR: TCPresent Position 
+.SS "#define TPI_FFSR_TCPresent_Pos   2U"
+TPI FFSR: TCPresent Position 
+.SS "#define TPI_FIFO0_ETM0_Msk   (0xFFUL /*<< TPI_FIFO0_ETM0_Pos*/)"
+TPI FIFO0: ETM0 Mask 
+.SS "#define TPI_FIFO0_ETM0_Msk   (0xFFUL /*<< TPI_FIFO0_ETM0_Pos*/)"
+TPI FIFO0: ETM0 Mask 
+.SS "#define TPI_FIFO0_ETM0_Msk   (0xFFUL /*<< TPI_FIFO0_ETM0_Pos*/)"
+TPI FIFO0: ETM0 Mask 
+.SS "#define TPI_FIFO0_ETM0_Pos   0U"
+TPI FIFO0: ETM0 Position 
+.SS "#define TPI_FIFO0_ETM0_Pos   0U"
+TPI FIFO0: ETM0 Position 
+.SS "#define TPI_FIFO0_ETM0_Pos   0U"
+TPI FIFO0: ETM0 Position 
+.SS "#define TPI_FIFO0_ETM1_Msk   (0xFFUL << TPI_FIFO0_ETM1_Pos)"
+TPI FIFO0: ETM1 Mask 
+.SS "#define TPI_FIFO0_ETM1_Msk   (0xFFUL << TPI_FIFO0_ETM1_Pos)"
+TPI FIFO0: ETM1 Mask 
+.SS "#define TPI_FIFO0_ETM1_Msk   (0xFFUL << TPI_FIFO0_ETM1_Pos)"
+TPI FIFO0: ETM1 Mask 
+.SS "#define TPI_FIFO0_ETM1_Pos   8U"
+TPI FIFO0: ETM1 Position 
+.SS "#define TPI_FIFO0_ETM1_Pos   8U"
+TPI FIFO0: ETM1 Position 
+.SS "#define TPI_FIFO0_ETM1_Pos   8U"
+TPI FIFO0: ETM1 Position 
+.SS "#define TPI_FIFO0_ETM2_Msk   (0xFFUL << TPI_FIFO0_ETM2_Pos)"
+TPI FIFO0: ETM2 Mask 
+.SS "#define TPI_FIFO0_ETM2_Msk   (0xFFUL << TPI_FIFO0_ETM2_Pos)"
+TPI FIFO0: ETM2 Mask 
+.SS "#define TPI_FIFO0_ETM2_Msk   (0xFFUL << TPI_FIFO0_ETM2_Pos)"
+TPI FIFO0: ETM2 Mask 
+.SS "#define TPI_FIFO0_ETM2_Pos   16U"
+TPI FIFO0: ETM2 Position 
+.SS "#define TPI_FIFO0_ETM2_Pos   16U"
+TPI FIFO0: ETM2 Position 
+.SS "#define TPI_FIFO0_ETM2_Pos   16U"
+TPI FIFO0: ETM2 Position 
+.SS "#define TPI_FIFO0_ETM_ATVALID_Msk   (0x3UL << TPI_FIFO0_ETM_ATVALID_Pos)"
+TPI FIFO0: ETM_ATVALID Mask 
+.SS "#define TPI_FIFO0_ETM_ATVALID_Msk   (0x3UL << TPI_FIFO0_ETM_ATVALID_Pos)"
+TPI FIFO0: ETM_ATVALID Mask 
+.SS "#define TPI_FIFO0_ETM_ATVALID_Msk   (0x3UL << TPI_FIFO0_ETM_ATVALID_Pos)"
+TPI FIFO0: ETM_ATVALID Mask 
+.SS "#define TPI_FIFO0_ETM_ATVALID_Pos   26U"
+TPI FIFO0: ETM_ATVALID Position 
+.SS "#define TPI_FIFO0_ETM_ATVALID_Pos   26U"
+TPI FIFO0: ETM_ATVALID Position 
+.SS "#define TPI_FIFO0_ETM_ATVALID_Pos   26U"
+TPI FIFO0: ETM_ATVALID Position 
+.SS "#define TPI_FIFO0_ETM_bytecount_Msk   (0x3UL << TPI_FIFO0_ETM_bytecount_Pos)"
+TPI FIFO0: ETM_bytecount Mask 
+.SS "#define TPI_FIFO0_ETM_bytecount_Msk   (0x3UL << TPI_FIFO0_ETM_bytecount_Pos)"
+TPI FIFO0: ETM_bytecount Mask 
+.SS "#define TPI_FIFO0_ETM_bytecount_Msk   (0x3UL << TPI_FIFO0_ETM_bytecount_Pos)"
+TPI FIFO0: ETM_bytecount Mask 
+.SS "#define TPI_FIFO0_ETM_bytecount_Pos   24U"
+TPI FIFO0: ETM_bytecount Position 
+.SS "#define TPI_FIFO0_ETM_bytecount_Pos   24U"
+TPI FIFO0: ETM_bytecount Position 
+.SS "#define TPI_FIFO0_ETM_bytecount_Pos   24U"
+TPI FIFO0: ETM_bytecount Position 
+.SS "#define TPI_FIFO0_ITM_ATVALID_Msk   (0x3UL << TPI_FIFO0_ITM_ATVALID_Pos)"
+TPI FIFO0: ITM_ATVALID Mask 
+.SS "#define TPI_FIFO0_ITM_ATVALID_Msk   (0x3UL << TPI_FIFO0_ITM_ATVALID_Pos)"
+TPI FIFO0: ITM_ATVALID Mask 
+.SS "#define TPI_FIFO0_ITM_ATVALID_Msk   (0x3UL << TPI_FIFO0_ITM_ATVALID_Pos)"
+TPI FIFO0: ITM_ATVALID Mask 
+.SS "#define TPI_FIFO0_ITM_ATVALID_Pos   29U"
+TPI FIFO0: ITM_ATVALID Position 
+.SS "#define TPI_FIFO0_ITM_ATVALID_Pos   29U"
+TPI FIFO0: ITM_ATVALID Position 
+.SS "#define TPI_FIFO0_ITM_ATVALID_Pos   29U"
+TPI FIFO0: ITM_ATVALID Position 
+.SS "#define TPI_FIFO0_ITM_bytecount_Msk   (0x3UL << TPI_FIFO0_ITM_bytecount_Pos)"
+TPI FIFO0: ITM_bytecount Mask 
+.SS "#define TPI_FIFO0_ITM_bytecount_Msk   (0x3UL << TPI_FIFO0_ITM_bytecount_Pos)"
+TPI FIFO0: ITM_bytecount Mask 
+.SS "#define TPI_FIFO0_ITM_bytecount_Msk   (0x3UL << TPI_FIFO0_ITM_bytecount_Pos)"
+TPI FIFO0: ITM_bytecount Mask 
+.SS "#define TPI_FIFO0_ITM_bytecount_Pos   27U"
+TPI FIFO0: ITM_bytecount Position 
+.SS "#define TPI_FIFO0_ITM_bytecount_Pos   27U"
+TPI FIFO0: ITM_bytecount Position 
+.SS "#define TPI_FIFO0_ITM_bytecount_Pos   27U"
+TPI FIFO0: ITM_bytecount Position 
+.SS "#define TPI_FIFO1_ETM_ATVALID_Msk   (0x3UL << TPI_FIFO1_ETM_ATVALID_Pos)"
+TPI FIFO1: ETM_ATVALID Mask 
+.SS "#define TPI_FIFO1_ETM_ATVALID_Msk   (0x3UL << TPI_FIFO1_ETM_ATVALID_Pos)"
+TPI FIFO1: ETM_ATVALID Mask 
+.SS "#define TPI_FIFO1_ETM_ATVALID_Msk   (0x3UL << TPI_FIFO1_ETM_ATVALID_Pos)"
+TPI FIFO1: ETM_ATVALID Mask 
+.SS "#define TPI_FIFO1_ETM_ATVALID_Pos   26U"
+TPI FIFO1: ETM_ATVALID Position 
+.SS "#define TPI_FIFO1_ETM_ATVALID_Pos   26U"
+TPI FIFO1: ETM_ATVALID Position 
+.SS "#define TPI_FIFO1_ETM_ATVALID_Pos   26U"
+TPI FIFO1: ETM_ATVALID Position 
+.SS "#define TPI_FIFO1_ETM_bytecount_Msk   (0x3UL << TPI_FIFO1_ETM_bytecount_Pos)"
+TPI FIFO1: ETM_bytecount Mask 
+.SS "#define TPI_FIFO1_ETM_bytecount_Msk   (0x3UL << TPI_FIFO1_ETM_bytecount_Pos)"
+TPI FIFO1: ETM_bytecount Mask 
+.SS "#define TPI_FIFO1_ETM_bytecount_Msk   (0x3UL << TPI_FIFO1_ETM_bytecount_Pos)"
+TPI FIFO1: ETM_bytecount Mask 
+.SS "#define TPI_FIFO1_ETM_bytecount_Pos   24U"
+TPI FIFO1: ETM_bytecount Position 
+.SS "#define TPI_FIFO1_ETM_bytecount_Pos   24U"
+TPI FIFO1: ETM_bytecount Position 
+.SS "#define TPI_FIFO1_ETM_bytecount_Pos   24U"
+TPI FIFO1: ETM_bytecount Position 
+.SS "#define TPI_FIFO1_ITM0_Msk   (0xFFUL /*<< TPI_FIFO1_ITM0_Pos*/)"
+TPI FIFO1: ITM0 Mask 
+.SS "#define TPI_FIFO1_ITM0_Msk   (0xFFUL /*<< TPI_FIFO1_ITM0_Pos*/)"
+TPI FIFO1: ITM0 Mask 
+.SS "#define TPI_FIFO1_ITM0_Msk   (0xFFUL /*<< TPI_FIFO1_ITM0_Pos*/)"
+TPI FIFO1: ITM0 Mask 
+.SS "#define TPI_FIFO1_ITM0_Pos   0U"
+TPI FIFO1: ITM0 Position 
+.SS "#define TPI_FIFO1_ITM0_Pos   0U"
+TPI FIFO1: ITM0 Position 
+.SS "#define TPI_FIFO1_ITM0_Pos   0U"
+TPI FIFO1: ITM0 Position 
+.SS "#define TPI_FIFO1_ITM1_Msk   (0xFFUL << TPI_FIFO1_ITM1_Pos)"
+TPI FIFO1: ITM1 Mask 
+.SS "#define TPI_FIFO1_ITM1_Msk   (0xFFUL << TPI_FIFO1_ITM1_Pos)"
+TPI FIFO1: ITM1 Mask 
+.SS "#define TPI_FIFO1_ITM1_Msk   (0xFFUL << TPI_FIFO1_ITM1_Pos)"
+TPI FIFO1: ITM1 Mask 
+.SS "#define TPI_FIFO1_ITM1_Pos   8U"
+TPI FIFO1: ITM1 Position 
+.SS "#define TPI_FIFO1_ITM1_Pos   8U"
+TPI FIFO1: ITM1 Position 
+.SS "#define TPI_FIFO1_ITM1_Pos   8U"
+TPI FIFO1: ITM1 Position 
+.SS "#define TPI_FIFO1_ITM2_Msk   (0xFFUL << TPI_FIFO1_ITM2_Pos)"
+TPI FIFO1: ITM2 Mask 
+.SS "#define TPI_FIFO1_ITM2_Msk   (0xFFUL << TPI_FIFO1_ITM2_Pos)"
+TPI FIFO1: ITM2 Mask 
+.SS "#define TPI_FIFO1_ITM2_Msk   (0xFFUL << TPI_FIFO1_ITM2_Pos)"
+TPI FIFO1: ITM2 Mask 
+.SS "#define TPI_FIFO1_ITM2_Pos   16U"
+TPI FIFO1: ITM2 Position 
+.SS "#define TPI_FIFO1_ITM2_Pos   16U"
+TPI FIFO1: ITM2 Position 
+.SS "#define TPI_FIFO1_ITM2_Pos   16U"
+TPI FIFO1: ITM2 Position 
+.SS "#define TPI_FIFO1_ITM_ATVALID_Msk   (0x3UL << TPI_FIFO1_ITM_ATVALID_Pos)"
+TPI FIFO1: ITM_ATVALID Mask 
+.SS "#define TPI_FIFO1_ITM_ATVALID_Msk   (0x3UL << TPI_FIFO1_ITM_ATVALID_Pos)"
+TPI FIFO1: ITM_ATVALID Mask 
+.SS "#define TPI_FIFO1_ITM_ATVALID_Msk   (0x3UL << TPI_FIFO1_ITM_ATVALID_Pos)"
+TPI FIFO1: ITM_ATVALID Mask 
+.SS "#define TPI_FIFO1_ITM_ATVALID_Pos   29U"
+TPI FIFO1: ITM_ATVALID Position 
+.SS "#define TPI_FIFO1_ITM_ATVALID_Pos   29U"
+TPI FIFO1: ITM_ATVALID Position 
+.SS "#define TPI_FIFO1_ITM_ATVALID_Pos   29U"
+TPI FIFO1: ITM_ATVALID Position 
+.SS "#define TPI_FIFO1_ITM_bytecount_Msk   (0x3UL << TPI_FIFO1_ITM_bytecount_Pos)"
+TPI FIFO1: ITM_bytecount Mask 
+.SS "#define TPI_FIFO1_ITM_bytecount_Msk   (0x3UL << TPI_FIFO1_ITM_bytecount_Pos)"
+TPI FIFO1: ITM_bytecount Mask 
+.SS "#define TPI_FIFO1_ITM_bytecount_Msk   (0x3UL << TPI_FIFO1_ITM_bytecount_Pos)"
+TPI FIFO1: ITM_bytecount Mask 
+.SS "#define TPI_FIFO1_ITM_bytecount_Pos   27U"
+TPI FIFO1: ITM_bytecount Position 
+.SS "#define TPI_FIFO1_ITM_bytecount_Pos   27U"
+TPI FIFO1: ITM_bytecount Position 
+.SS "#define TPI_FIFO1_ITM_bytecount_Pos   27U"
+TPI FIFO1: ITM_bytecount Position 
+.SS "#define TPI_ITATBCTR0_ATREADY_Msk   (0x1UL /*<< TPI_ITATBCTR0_ATREADY_Pos*/)"
+TPI ITATBCTR0: ATREADY Mask 
+.SS "#define TPI_ITATBCTR0_ATREADY_Msk   (0x1UL /*<< TPI_ITATBCTR0_ATREADY_Pos*/)"
+TPI ITATBCTR0: ATREADY Mask 
+.SS "#define TPI_ITATBCTR0_ATREADY_Msk   (0x1UL /*<< TPI_ITATBCTR0_ATREADY_Pos*/)"
+TPI ITATBCTR0: ATREADY Mask 
+.SS "#define TPI_ITATBCTR0_ATREADY_Pos   0U"
+TPI ITATBCTR0: ATREADY Position 
+.SS "#define TPI_ITATBCTR0_ATREADY_Pos   0U"
+TPI ITATBCTR0: ATREADY Position 
+.SS "#define TPI_ITATBCTR0_ATREADY_Pos   0U"
+TPI ITATBCTR0: ATREADY Position 
+.SS "#define TPI_ITATBCTR2_ATREADY_Msk   (0x1UL /*<< TPI_ITATBCTR2_ATREADY_Pos*/)"
+TPI ITATBCTR2: ATREADY Mask 
+.SS "#define TPI_ITATBCTR2_ATREADY_Msk   (0x1UL /*<< TPI_ITATBCTR2_ATREADY_Pos*/)"
+TPI ITATBCTR2: ATREADY Mask 
+.SS "#define TPI_ITATBCTR2_ATREADY_Msk   (0x1UL /*<< TPI_ITATBCTR2_ATREADY_Pos*/)"
+TPI ITATBCTR2: ATREADY Mask 
+.SS "#define TPI_ITATBCTR2_ATREADY_Pos   0U"
+TPI ITATBCTR2: ATREADY Position 
+.SS "#define TPI_ITATBCTR2_ATREADY_Pos   0U"
+TPI ITATBCTR2: ATREADY Position 
+.SS "#define TPI_ITATBCTR2_ATREADY_Pos   0U"
+TPI ITATBCTR2: ATREADY Position 
+.SS "#define TPI_ITCTRL_Mode_Msk   (0x1UL /*<< TPI_ITCTRL_Mode_Pos*/)"
+TPI ITCTRL: Mode Mask 
+.SS "#define TPI_ITCTRL_Mode_Msk   (0x1UL /*<< TPI_ITCTRL_Mode_Pos*/)"
+TPI ITCTRL: Mode Mask 
+.SS "#define TPI_ITCTRL_Mode_Msk   (0x1UL /*<< TPI_ITCTRL_Mode_Pos*/)"
+TPI ITCTRL: Mode Mask 
+.SS "#define TPI_ITCTRL_Mode_Pos   0U"
+TPI ITCTRL: Mode Position 
+.SS "#define TPI_ITCTRL_Mode_Pos   0U"
+TPI ITCTRL: Mode Position 
+.SS "#define TPI_ITCTRL_Mode_Pos   0U"
+TPI ITCTRL: Mode Position 
+.SS "#define TPI_SPPR_TXMODE_Msk   (0x3UL /*<< TPI_SPPR_TXMODE_Pos*/)"
+TPI SPPR: TXMODE Mask 
+.SS "#define TPI_SPPR_TXMODE_Msk   (0x3UL /*<< TPI_SPPR_TXMODE_Pos*/)"
+TPI SPPR: TXMODE Mask 
+.SS "#define TPI_SPPR_TXMODE_Msk   (0x3UL /*<< TPI_SPPR_TXMODE_Pos*/)"
+TPI SPPR: TXMODE Mask 
+.SS "#define TPI_SPPR_TXMODE_Pos   0U"
+TPI SPPR: TXMODE Position 
+.SS "#define TPI_SPPR_TXMODE_Pos   0U"
+TPI SPPR: TXMODE Position 
+.SS "#define TPI_SPPR_TXMODE_Pos   0U"
+TPI SPPR: TXMODE Position 
+.SS "#define TPI_TRIGGER_TRIGGER_Msk   (0x1UL /*<< TPI_TRIGGER_TRIGGER_Pos*/)"
+TPI TRIGGER: TRIGGER Mask 
+.SS "#define TPI_TRIGGER_TRIGGER_Msk   (0x1UL /*<< TPI_TRIGGER_TRIGGER_Pos*/)"
+TPI TRIGGER: TRIGGER Mask 
+.SS "#define TPI_TRIGGER_TRIGGER_Msk   (0x1UL /*<< TPI_TRIGGER_TRIGGER_Pos*/)"
+TPI TRIGGER: TRIGGER Mask 
+.SS "#define TPI_TRIGGER_TRIGGER_Pos   0U"
+TPI TRIGGER: TRIGGER Position 
+.SS "#define TPI_TRIGGER_TRIGGER_Pos   0U"
+TPI TRIGGER: TRIGGER Position 
+.SS "#define TPI_TRIGGER_TRIGGER_Pos   0U"
+TPI TRIGGER: TRIGGER Position 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

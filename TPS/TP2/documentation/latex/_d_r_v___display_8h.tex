@@ -1,0 +1,355 @@
+\hypertarget{_d_r_v___display_8h}{}\section{drivers/\+D\+R\+V\+\_\+\+Display.h File Reference}
+\label{_d_r_v___display_8h}\index{drivers/\+D\+R\+V\+\_\+\+Display.\+h@{drivers/\+D\+R\+V\+\_\+\+Display.\+h}}
+
+
+7-\/segment display driver  
+
+
+{\ttfamily \#include \char`\"{}P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8h_af6b255d26a5a4a9919682add7cdb912a}{D\+I\+S\+P\+\_\+\+C\+H\+A\+R\+S\+\_\+\+N\+UM}}~4
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8h_a3f61b4197942c82065f8477a5c814f39}{D\+I\+S\+P\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}}~32
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8h_ac5130858a0d0dcd82d7e028f3791551e}{M\+I\+N\+\_\+\+B\+R\+I\+G\+HT}}~1
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8h_a9e90c85256c4f5a45a78b71c3bc73a42}{M\+A\+X\+\_\+\+B\+R\+I\+G\+HT}}~9
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55baab013f7b3316a6b1ae6c5c52df079c1d}{D\+I\+S\+P\+\_\+\+S\+L\+OW}} =750, 
+\mbox{\hyperlink{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55ba96925af6e84dc0c2d05c39464abef379}{D\+I\+S\+P\+\_\+\+M\+E\+D\+I\+UM}} =500, 
+\mbox{\hyperlink{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55ba67c9260cf1fa9aafc72169e1c6d5e850}{D\+I\+S\+P\+\_\+\+F\+A\+ST}} =250, 
+\mbox{\hyperlink{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55ba3ca63ca1c7f315261523e911b8eb9e52}{D\+I\+S\+P\+\_\+\+S\+P\+E\+E\+D\+S\+\_\+\+N\+UM}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_a1a9171e2595ab20c0d50a6b9ba243997}{init\+Display}} ()
+\begin{DoxyCompactList}\small\item\em Initialize display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_a82b49831690c342069ad4f428cae5e61}{disp\+Clear\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Clears the display buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_ad00f5868f176187b270a7080d78dff9e}{disp\+Clear\+Char}} (int n)
+\begin{DoxyCompactList}\small\item\em Clears the character from position n from the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_ae060797a83c109f6bd357d8b3d980f56}{disp\+Write\+Char}} (int n, char character)
+\begin{DoxyCompactList}\small\item\em Sets character in position n of the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_a6500a77a9aec67f9d83e6f8b03a1f192}{disp\+Write\+Buffer}} (int c, const char $\ast$word)
+\begin{DoxyCompactList}\small\item\em Sets word of length c in the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_af1a015e3c5565ef030fec23921f1a6c0}{disp\+Update\+Refresh\+Rate}} (int refresh\+Rate)
+\begin{DoxyCompactList}\small\item\em Updates the refresh rate of the display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_a278ed4464485157b9579be0db6ecf1a3}{disp\+Update\+Brightness}} (int brightness)
+\begin{DoxyCompactList}\small\item\em Updates the brightness of the display. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_d_r_v___display_8h_ab0b20802e79e6235241df747854f8765}{disp\+Get\+Brightness}} ()
+\begin{DoxyCompactList}\small\item\em Returns current display brightness. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_a7147ac15263b2fdc3e1f8491697292e4}{disp\+Scroll\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Scroll display to the left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_ac217e6c75ca80b82afe700b9ce024294}{disp\+Scroll\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Scroll display to the right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_a7f77d4be414c1ef99847d387917a3870}{disp\+Start\+Auto\+Scroll}} (int speed)
+\begin{DoxyCompactList}\small\item\em Initialize autoscroll with specified speed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_a1748ae93f3d907dab9fb47fd4b481594}{disp\+Stop\+Auto\+Scroll}} ()
+\begin{DoxyCompactList}\small\item\em Stop autoscroll. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_ac7715f91cb1f99c919ee00327e79c7fa}{disp\+Set\+Buffer\+Pos}} (int n)
+\begin{DoxyCompactList}\small\item\em Sets n as the starting print position for the buffer. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{_d_r_v___display_8h_a00c499300ac10262772db567c5f67278}{disp\+Get\+Buffer\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em Get starting print position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_a46d9b2124fe5c5be680425d5a5c17d3f}{disp\+Set\+DP}} (int n)
+\begin{DoxyCompactList}\small\item\em Turns on the decimal point of the nth seven segment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_afd7c4be152510beeb065c9fe7e4c060e}{disp\+Clear\+DP}} (int n)
+\begin{DoxyCompactList}\small\item\em Turns off the decimal point of the nth seven segment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8h_a23d2e2688f5aaa319a5884169c526e4f}{disp\+Toggle\+DP}} (int n)
+\begin{DoxyCompactList}\small\item\em Toggles the decimal point of the nth seven segment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+7-\/segment display driver 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_d_r_v___display_8h_a3f61b4197942c82065f8477a5c814f39}\label{_d_r_v___display_8h_a3f61b4197942c82065f8477a5c814f39}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!D\+I\+S\+P\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN@{D\+I\+S\+P\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}}
+\index{D\+I\+S\+P\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN@{D\+I\+S\+P\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+S\+P\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}{DISP\_BUFFER\_LEN}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN~32}
+
+\mbox{\Hypertarget{_d_r_v___display_8h_af6b255d26a5a4a9919682add7cdb912a}\label{_d_r_v___display_8h_af6b255d26a5a4a9919682add7cdb912a}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!D\+I\+S\+P\+\_\+\+C\+H\+A\+R\+S\+\_\+\+N\+UM@{D\+I\+S\+P\+\_\+\+C\+H\+A\+R\+S\+\_\+\+N\+UM}}
+\index{D\+I\+S\+P\+\_\+\+C\+H\+A\+R\+S\+\_\+\+N\+UM@{D\+I\+S\+P\+\_\+\+C\+H\+A\+R\+S\+\_\+\+N\+UM}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+S\+P\+\_\+\+C\+H\+A\+R\+S\+\_\+\+N\+UM}{DISP\_CHARS\_NUM}}
+{\footnotesize\ttfamily \#define D\+I\+S\+P\+\_\+\+C\+H\+A\+R\+S\+\_\+\+N\+UM~4}
+
+\mbox{\Hypertarget{_d_r_v___display_8h_a9e90c85256c4f5a45a78b71c3bc73a42}\label{_d_r_v___display_8h_a9e90c85256c4f5a45a78b71c3bc73a42}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!M\+A\+X\+\_\+\+B\+R\+I\+G\+HT@{M\+A\+X\+\_\+\+B\+R\+I\+G\+HT}}
+\index{M\+A\+X\+\_\+\+B\+R\+I\+G\+HT@{M\+A\+X\+\_\+\+B\+R\+I\+G\+HT}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+B\+R\+I\+G\+HT}{MAX\_BRIGHT}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+B\+R\+I\+G\+HT~9}
+
+\mbox{\Hypertarget{_d_r_v___display_8h_ac5130858a0d0dcd82d7e028f3791551e}\label{_d_r_v___display_8h_ac5130858a0d0dcd82d7e028f3791551e}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!M\+I\+N\+\_\+\+B\+R\+I\+G\+HT@{M\+I\+N\+\_\+\+B\+R\+I\+G\+HT}}
+\index{M\+I\+N\+\_\+\+B\+R\+I\+G\+HT@{M\+I\+N\+\_\+\+B\+R\+I\+G\+HT}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+N\+\_\+\+B\+R\+I\+G\+HT}{MIN\_BRIGHT}}
+{\footnotesize\ttfamily \#define M\+I\+N\+\_\+\+B\+R\+I\+G\+HT~1}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55b}\label{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55b}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+I\+S\+P\+\_\+\+S\+L\+OW@{D\+I\+S\+P\+\_\+\+S\+L\+OW}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!D\+I\+S\+P\+\_\+\+S\+L\+OW@{D\+I\+S\+P\+\_\+\+S\+L\+OW}}}\mbox{\Hypertarget{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55baab013f7b3316a6b1ae6c5c52df079c1d}\label{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55baab013f7b3316a6b1ae6c5c52df079c1d}} 
+D\+I\+S\+P\+\_\+\+S\+L\+OW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+I\+S\+P\+\_\+\+M\+E\+D\+I\+UM@{D\+I\+S\+P\+\_\+\+M\+E\+D\+I\+UM}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!D\+I\+S\+P\+\_\+\+M\+E\+D\+I\+UM@{D\+I\+S\+P\+\_\+\+M\+E\+D\+I\+UM}}}\mbox{\Hypertarget{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55ba96925af6e84dc0c2d05c39464abef379}\label{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55ba96925af6e84dc0c2d05c39464abef379}} 
+D\+I\+S\+P\+\_\+\+M\+E\+D\+I\+UM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+I\+S\+P\+\_\+\+F\+A\+ST@{D\+I\+S\+P\+\_\+\+F\+A\+ST}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!D\+I\+S\+P\+\_\+\+F\+A\+ST@{D\+I\+S\+P\+\_\+\+F\+A\+ST}}}\mbox{\Hypertarget{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55ba67c9260cf1fa9aafc72169e1c6d5e850}\label{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55ba67c9260cf1fa9aafc72169e1c6d5e850}} 
+D\+I\+S\+P\+\_\+\+F\+A\+ST&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+I\+S\+P\+\_\+\+S\+P\+E\+E\+D\+S\+\_\+\+N\+UM@{D\+I\+S\+P\+\_\+\+S\+P\+E\+E\+D\+S\+\_\+\+N\+UM}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!D\+I\+S\+P\+\_\+\+S\+P\+E\+E\+D\+S\+\_\+\+N\+UM@{D\+I\+S\+P\+\_\+\+S\+P\+E\+E\+D\+S\+\_\+\+N\+UM}}}\mbox{\Hypertarget{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55ba3ca63ca1c7f315261523e911b8eb9e52}\label{_d_r_v___display_8h_a06fc87d81c62e9abb8790b6e5713c55ba3ca63ca1c7f315261523e911b8eb9e52}} 
+D\+I\+S\+P\+\_\+\+S\+P\+E\+E\+D\+S\+\_\+\+N\+UM&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_d_r_v___display_8h_a82b49831690c342069ad4f428cae5e61}\label{_d_r_v___display_8h_a82b49831690c342069ad4f428cae5e61}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Clear\+Buffer@{disp\+Clear\+Buffer}}
+\index{disp\+Clear\+Buffer@{disp\+Clear\+Buffer}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Clear\+Buffer()}{dispClearBuffer()}}
+{\footnotesize\ttfamily void disp\+Clear\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the display buffer. 
+
+\mbox{\Hypertarget{_d_r_v___display_8h_ad00f5868f176187b270a7080d78dff9e}\label{_d_r_v___display_8h_ad00f5868f176187b270a7080d78dff9e}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Clear\+Char@{disp\+Clear\+Char}}
+\index{disp\+Clear\+Char@{disp\+Clear\+Char}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Clear\+Char()}{dispClearChar()}}
+{\footnotesize\ttfamily void disp\+Clear\+Char (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Clears the character from position n from the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index of char to clear \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8h_afd7c4be152510beeb065c9fe7e4c060e}\label{_d_r_v___display_8h_afd7c4be152510beeb065c9fe7e4c060e}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Clear\+DP@{disp\+Clear\+DP}}
+\index{disp\+Clear\+DP@{disp\+Clear\+DP}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Clear\+D\+P()}{dispClearDP()}}
+{\footnotesize\ttfamily void disp\+Clear\+DP (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Turns off the decimal point of the nth seven segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & DP index = 0, 1, 2, 3 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8h_ab0b20802e79e6235241df747854f8765}\label{_d_r_v___display_8h_ab0b20802e79e6235241df747854f8765}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Get\+Brightness@{disp\+Get\+Brightness}}
+\index{disp\+Get\+Brightness@{disp\+Get\+Brightness}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Get\+Brightness()}{dispGetBrightness()}}
+{\footnotesize\ttfamily int disp\+Get\+Brightness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns current display brightness. 
+
+\begin{DoxyReturn}{Returns}
+brightness value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_r_v___display_8h_a00c499300ac10262772db567c5f67278}\label{_d_r_v___display_8h_a00c499300ac10262772db567c5f67278}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Get\+Buffer\+Pos@{disp\+Get\+Buffer\+Pos}}
+\index{disp\+Get\+Buffer\+Pos@{disp\+Get\+Buffer\+Pos}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Get\+Buffer\+Pos()}{dispGetBufferPos()}}
+{\footnotesize\ttfamily uint8\+\_\+t disp\+Get\+Buffer\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get starting print position. 
+
+\mbox{\Hypertarget{_d_r_v___display_8h_a7147ac15263b2fdc3e1f8491697292e4}\label{_d_r_v___display_8h_a7147ac15263b2fdc3e1f8491697292e4}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Scroll\+Left@{disp\+Scroll\+Left}}
+\index{disp\+Scroll\+Left@{disp\+Scroll\+Left}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Scroll\+Left()}{dispScrollLeft()}}
+{\footnotesize\ttfamily void disp\+Scroll\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Scroll display to the left. 
+
+\mbox{\Hypertarget{_d_r_v___display_8h_ac217e6c75ca80b82afe700b9ce024294}\label{_d_r_v___display_8h_ac217e6c75ca80b82afe700b9ce024294}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Scroll\+Right@{disp\+Scroll\+Right}}
+\index{disp\+Scroll\+Right@{disp\+Scroll\+Right}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Scroll\+Right()}{dispScrollRight()}}
+{\footnotesize\ttfamily void disp\+Scroll\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Scroll display to the right. 
+
+\mbox{\Hypertarget{_d_r_v___display_8h_ac7715f91cb1f99c919ee00327e79c7fa}\label{_d_r_v___display_8h_ac7715f91cb1f99c919ee00327e79c7fa}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Set\+Buffer\+Pos@{disp\+Set\+Buffer\+Pos}}
+\index{disp\+Set\+Buffer\+Pos@{disp\+Set\+Buffer\+Pos}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Set\+Buffer\+Pos()}{dispSetBufferPos()}}
+{\footnotesize\ttfamily void disp\+Set\+Buffer\+Pos (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Sets n as the starting print position for the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & New buffer position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8h_a46d9b2124fe5c5be680425d5a5c17d3f}\label{_d_r_v___display_8h_a46d9b2124fe5c5be680425d5a5c17d3f}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Set\+DP@{disp\+Set\+DP}}
+\index{disp\+Set\+DP@{disp\+Set\+DP}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Set\+D\+P()}{dispSetDP()}}
+{\footnotesize\ttfamily void disp\+Set\+DP (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Turns on the decimal point of the nth seven segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & DP index = 0, 1, 2, 3 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8h_a7f77d4be414c1ef99847d387917a3870}\label{_d_r_v___display_8h_a7f77d4be414c1ef99847d387917a3870}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Start\+Auto\+Scroll@{disp\+Start\+Auto\+Scroll}}
+\index{disp\+Start\+Auto\+Scroll@{disp\+Start\+Auto\+Scroll}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Start\+Auto\+Scroll()}{dispStartAutoScroll()}}
+{\footnotesize\ttfamily void disp\+Start\+Auto\+Scroll (\begin{DoxyParamCaption}\item[{int}]{speed }\end{DoxyParamCaption})}
+
+
+
+Initialize autoscroll with specified speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & Scroll speed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8h_a1748ae93f3d907dab9fb47fd4b481594}\label{_d_r_v___display_8h_a1748ae93f3d907dab9fb47fd4b481594}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Stop\+Auto\+Scroll@{disp\+Stop\+Auto\+Scroll}}
+\index{disp\+Stop\+Auto\+Scroll@{disp\+Stop\+Auto\+Scroll}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Stop\+Auto\+Scroll()}{dispStopAutoScroll()}}
+{\footnotesize\ttfamily void disp\+Stop\+Auto\+Scroll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stop autoscroll. 
+
+\mbox{\Hypertarget{_d_r_v___display_8h_a23d2e2688f5aaa319a5884169c526e4f}\label{_d_r_v___display_8h_a23d2e2688f5aaa319a5884169c526e4f}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Toggle\+DP@{disp\+Toggle\+DP}}
+\index{disp\+Toggle\+DP@{disp\+Toggle\+DP}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Toggle\+D\+P()}{dispToggleDP()}}
+{\footnotesize\ttfamily void disp\+Toggle\+DP (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Toggles the decimal point of the nth seven segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & DP index = 0, 1, 2, 3 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8h_a278ed4464485157b9579be0db6ecf1a3}\label{_d_r_v___display_8h_a278ed4464485157b9579be0db6ecf1a3}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Update\+Brightness@{disp\+Update\+Brightness}}
+\index{disp\+Update\+Brightness@{disp\+Update\+Brightness}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Update\+Brightness()}{dispUpdateBrightness()}}
+{\footnotesize\ttfamily void disp\+Update\+Brightness (\begin{DoxyParamCaption}\item[{int}]{brightness }\end{DoxyParamCaption})}
+
+
+
+Updates the brightness of the display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em brightness} & brightness\+: int between one and nine \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8h_af1a015e3c5565ef030fec23921f1a6c0}\label{_d_r_v___display_8h_af1a015e3c5565ef030fec23921f1a6c0}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Update\+Refresh\+Rate@{disp\+Update\+Refresh\+Rate}}
+\index{disp\+Update\+Refresh\+Rate@{disp\+Update\+Refresh\+Rate}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Update\+Refresh\+Rate()}{dispUpdateRefreshRate()}}
+{\footnotesize\ttfamily void disp\+Update\+Refresh\+Rate (\begin{DoxyParamCaption}\item[{int}]{refresh\+Rate }\end{DoxyParamCaption})}
+
+
+
+Updates the refresh rate of the display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em refresh\+Rate} & New refresh rate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8h_a6500a77a9aec67f9d83e6f8b03a1f192}\label{_d_r_v___display_8h_a6500a77a9aec67f9d83e6f8b03a1f192}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Write\+Buffer@{disp\+Write\+Buffer}}
+\index{disp\+Write\+Buffer@{disp\+Write\+Buffer}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Write\+Buffer()}{dispWriteBuffer()}}
+{\footnotesize\ttfamily void disp\+Write\+Buffer (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{const char $\ast$}]{word }\end{DoxyParamCaption})}
+
+
+
+Sets word of length c in the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Length of word \\
+\hline
+{\em word} & Word to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8h_ae060797a83c109f6bd357d8b3d980f56}\label{_d_r_v___display_8h_ae060797a83c109f6bd357d8b3d980f56}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!disp\+Write\+Char@{disp\+Write\+Char}}
+\index{disp\+Write\+Char@{disp\+Write\+Char}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{disp\+Write\+Char()}{dispWriteChar()}}
+{\footnotesize\ttfamily void disp\+Write\+Char (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{char}]{character }\end{DoxyParamCaption})}
+
+
+
+Sets character in position n of the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index of char to write \\
+\hline
+{\em character} & Value of char \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8h_a1a9171e2595ab20c0d50a6b9ba243997}\label{_d_r_v___display_8h_a1a9171e2595ab20c0d50a6b9ba243997}} 
+\index{D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}!init\+Display@{init\+Display}}
+\index{init\+Display@{init\+Display}!D\+R\+V\+\_\+\+Display.\+h@{D\+R\+V\+\_\+\+Display.\+h}}
+\subsubsection{\texorpdfstring{init\+Display()}{initDisplay()}}
+{\footnotesize\ttfamily void init\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize display. 
+

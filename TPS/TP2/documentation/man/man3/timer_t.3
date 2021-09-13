@@ -1,0 +1,53 @@
+.TH "timer_t" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+timer_t
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBttick_t\fP \fBperiod\fP"
+.br
+.ti -1c
+.RI "\fBttick_t\fP \fBcnt\fP"
+.br
+.ti -1c
+.RI "\fBtim_callback_t\fP \fBcallback\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBmode\fP: 1"
+.br
+.ti -1c
+.RI "uint8_t \fBrunning\fP: 1"
+.br
+.ti -1c
+.RI "uint8_t \fBexpired\fP: 1"
+.br
+.ti -1c
+.RI "uint8_t \fBunused\fP: 5"
+.br
+.in -1c
+.SH "Field Documentation"
+.PP 
+.SS "\fBtim_callback_t\fP callback"
+
+.SS "\fBttick_t\fP cnt"
+
+.SS "uint8_t expired"
+
+.SS "uint8_t mode"
+
+.SS "\fBttick_t\fP period"
+
+.SS "uint8_t running"
+
+.SS "uint8_t unused"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structarm__biquad__casd__df1__inst__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_biquad_casd_df1_inst_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__biquad__casd__df1__inst__f32_1aed9c8a6224cd149e8e12b17b25b9b767" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t numStages</definition>
+        <argsstring></argsstring>
+        <name>numStages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of 2nd order stages in the filter. Overall order is 2*numStages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1225" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__biquad__casd__df1__inst__f32_1a335c87e6fdc4b96601d95a5de8b9c463" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Points to the array of state coefficients. The array is of length 4*numStages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1226" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__biquad__casd__df1__inst__f32_1aacbb8dd8eeba4b21fc2bb40076405ee3" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* pCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Points to the array of coefficients. The array is of length 5*numStages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1227" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point Biquad cascade filter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/arm_math.h" line="1224" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1223" bodyend="1228"/>
+    <listofallmembers>
+      <member refid="structarm__biquad__casd__df1__inst__f32_1aed9c8a6224cd149e8e12b17b25b9b767" prot="public" virt="non-virtual"><scope>arm_biquad_casd_df1_inst_f32</scope><name>numStages</name></member>
+      <member refid="structarm__biquad__casd__df1__inst__f32_1aacbb8dd8eeba4b21fc2bb40076405ee3" prot="public" virt="non-virtual"><scope>arm_biquad_casd_df1_inst_f32</scope><name>pCoeffs</name></member>
+      <member refid="structarm__biquad__casd__df1__inst__f32_1a335c87e6fdc4b96601d95a5de8b9c463" prot="public" virt="non-virtual"><scope>arm_biquad_casd_df1_inst_f32</scope><name>pState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

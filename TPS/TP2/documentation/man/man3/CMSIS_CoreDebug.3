@@ -1,0 +1,891 @@
+.TH "CMSIS_CoreDebug" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_CoreDebug \- Type definitions for the Core Debug Registers\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBCoreDebug_Type\fP"
+.br
+.RI "Structure type to access the Core Debug Register (CoreDebug)\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_DBGKEY_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_DBGKEY_Msk\fP   (0xFFFFUL << CoreDebug_DHCSR_DBGKEY_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RESTART_ST_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RESTART_ST_Msk\fP   (1UL << CoreDebug_DHCSR_S_RESTART_ST_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RESET_ST_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RESET_ST_Msk\fP   (1UL << CoreDebug_DHCSR_S_RESET_ST_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RETIRE_ST_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RETIRE_ST_Msk\fP   (1UL << CoreDebug_DHCSR_S_RETIRE_ST_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_LOCKUP_Pos\fP   19U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_LOCKUP_Msk\fP   (1UL << CoreDebug_DHCSR_S_LOCKUP_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_SLEEP_Pos\fP   18U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_SLEEP_Msk\fP   (1UL << CoreDebug_DHCSR_S_SLEEP_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_HALT_Pos\fP   17U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_HALT_Msk\fP   (1UL << CoreDebug_DHCSR_S_HALT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_REGRDY_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_REGRDY_Msk\fP   (1UL << CoreDebug_DHCSR_S_REGRDY_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_MASKINTS_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_MASKINTS_Msk\fP   (1UL << CoreDebug_DHCSR_C_MASKINTS_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_STEP_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_STEP_Msk\fP   (1UL << CoreDebug_DHCSR_C_STEP_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_HALT_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_HALT_Msk\fP   (1UL << CoreDebug_DHCSR_C_HALT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_DEBUGEN_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_DEBUGEN_Msk\fP   (1UL /*<< CoreDebug_DHCSR_C_DEBUGEN_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DCRSR_REGWnR_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DCRSR_REGWnR_Msk\fP   (1UL << CoreDebug_DCRSR_REGWnR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DCRSR_REGSEL_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DCRSR_REGSEL_Msk\fP   (0x1FUL /*<< CoreDebug_DCRSR_REGSEL_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_DWTENA_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_DWTENA_Msk\fP   (1UL << CoreDebug_DEMCR_DWTENA_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_HARDERR_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_HARDERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_HARDERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_CORERESET_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_CORERESET_Msk\fP   (1UL /*<< CoreDebug_DEMCR_VC_CORERESET_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_INTSPNIDEN_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_INTSPNIDEN_Msk\fP   (1UL << CoreDebug_DAUTHCTRL_INTSPNIDEN_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_SPNIDENSEL_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_SPNIDENSEL_Msk\fP   (1UL << CoreDebug_DAUTHCTRL_SPNIDENSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_INTSPIDEN_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_INTSPIDEN_Msk\fP   (1UL << CoreDebug_DAUTHCTRL_INTSPIDEN_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_SPIDENSEL_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_SPIDENSEL_Msk\fP   (1UL /*<< CoreDebug_DAUTHCTRL_SPIDENSEL_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DSCSR_CDS_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DSCSR_CDS_Msk\fP   (1UL << CoreDebug_DSCSR_CDS_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DSCSR_SBRSEL_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DSCSR_SBRSEL_Msk\fP   (1UL << CoreDebug_DSCSR_SBRSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DSCSR_SBRSELEN_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DSCSR_SBRSELEN_Msk\fP   (1UL /*<< CoreDebug_DSCSR_SBRSELEN_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_DBGKEY_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_DBGKEY_Msk\fP   (0xFFFFUL << CoreDebug_DHCSR_DBGKEY_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RESTART_ST_Pos\fP   26U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RESTART_ST_Msk\fP   (1UL << CoreDebug_DHCSR_S_RESTART_ST_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RESET_ST_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RESET_ST_Msk\fP   (1UL << CoreDebug_DHCSR_S_RESET_ST_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RETIRE_ST_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RETIRE_ST_Msk\fP   (1UL << CoreDebug_DHCSR_S_RETIRE_ST_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_LOCKUP_Pos\fP   19U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_LOCKUP_Msk\fP   (1UL << CoreDebug_DHCSR_S_LOCKUP_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_SLEEP_Pos\fP   18U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_SLEEP_Msk\fP   (1UL << CoreDebug_DHCSR_S_SLEEP_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_HALT_Pos\fP   17U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_HALT_Msk\fP   (1UL << CoreDebug_DHCSR_S_HALT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_REGRDY_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_REGRDY_Msk\fP   (1UL << CoreDebug_DHCSR_S_REGRDY_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_SNAPSTALL_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_SNAPSTALL_Msk\fP   (1UL << CoreDebug_DHCSR_C_SNAPSTALL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_MASKINTS_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_MASKINTS_Msk\fP   (1UL << CoreDebug_DHCSR_C_MASKINTS_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_STEP_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_STEP_Msk\fP   (1UL << CoreDebug_DHCSR_C_STEP_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_HALT_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_HALT_Msk\fP   (1UL << CoreDebug_DHCSR_C_HALT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_DEBUGEN_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_DEBUGEN_Msk\fP   (1UL /*<< CoreDebug_DHCSR_C_DEBUGEN_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DCRSR_REGWnR_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DCRSR_REGWnR_Msk\fP   (1UL << CoreDebug_DCRSR_REGWnR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DCRSR_REGSEL_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DCRSR_REGSEL_Msk\fP   (0x1FUL /*<< CoreDebug_DCRSR_REGSEL_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_TRCENA_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_TRCENA_Msk\fP   (1UL << CoreDebug_DEMCR_TRCENA_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_REQ_Pos\fP   19U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_REQ_Msk\fP   (1UL << CoreDebug_DEMCR_MON_REQ_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_STEP_Pos\fP   18U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_STEP_Msk\fP   (1UL << CoreDebug_DEMCR_MON_STEP_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_PEND_Pos\fP   17U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_PEND_Msk\fP   (1UL << CoreDebug_DEMCR_MON_PEND_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_EN_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_EN_Msk\fP   (1UL << CoreDebug_DEMCR_MON_EN_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_HARDERR_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_HARDERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_HARDERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_INTERR_Pos\fP   9U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_INTERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_INTERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_BUSERR_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_BUSERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_BUSERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_STATERR_Pos\fP   7U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_STATERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_STATERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_CHKERR_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_CHKERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_CHKERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_NOCPERR_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_NOCPERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_NOCPERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_MMERR_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_MMERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_MMERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_CORERESET_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_CORERESET_Msk\fP   (1UL /*<< CoreDebug_DEMCR_VC_CORERESET_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_INTSPNIDEN_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_INTSPNIDEN_Msk\fP   (1UL << CoreDebug_DAUTHCTRL_INTSPNIDEN_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_SPNIDENSEL_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_SPNIDENSEL_Msk\fP   (1UL << CoreDebug_DAUTHCTRL_SPNIDENSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_INTSPIDEN_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_INTSPIDEN_Msk\fP   (1UL << CoreDebug_DAUTHCTRL_INTSPIDEN_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_SPIDENSEL_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DAUTHCTRL_SPIDENSEL_Msk\fP   (1UL /*<< CoreDebug_DAUTHCTRL_SPIDENSEL_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DSCSR_CDS_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DSCSR_CDS_Msk\fP   (1UL << CoreDebug_DSCSR_CDS_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DSCSR_SBRSEL_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DSCSR_SBRSEL_Msk\fP   (1UL << CoreDebug_DSCSR_SBRSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DSCSR_SBRSELEN_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DSCSR_SBRSELEN_Msk\fP   (1UL /*<< CoreDebug_DSCSR_SBRSELEN_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_DBGKEY_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_DBGKEY_Msk\fP   (0xFFFFUL << CoreDebug_DHCSR_DBGKEY_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RESET_ST_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RESET_ST_Msk\fP   (1UL << CoreDebug_DHCSR_S_RESET_ST_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RETIRE_ST_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_RETIRE_ST_Msk\fP   (1UL << CoreDebug_DHCSR_S_RETIRE_ST_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_LOCKUP_Pos\fP   19U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_LOCKUP_Msk\fP   (1UL << CoreDebug_DHCSR_S_LOCKUP_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_SLEEP_Pos\fP   18U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_SLEEP_Msk\fP   (1UL << CoreDebug_DHCSR_S_SLEEP_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_HALT_Pos\fP   17U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_HALT_Msk\fP   (1UL << CoreDebug_DHCSR_S_HALT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_REGRDY_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_S_REGRDY_Msk\fP   (1UL << CoreDebug_DHCSR_S_REGRDY_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_SNAPSTALL_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_SNAPSTALL_Msk\fP   (1UL << CoreDebug_DHCSR_C_SNAPSTALL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_MASKINTS_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_MASKINTS_Msk\fP   (1UL << CoreDebug_DHCSR_C_MASKINTS_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_STEP_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_STEP_Msk\fP   (1UL << CoreDebug_DHCSR_C_STEP_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_HALT_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_HALT_Msk\fP   (1UL << CoreDebug_DHCSR_C_HALT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_DEBUGEN_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DHCSR_C_DEBUGEN_Msk\fP   (1UL /*<< CoreDebug_DHCSR_C_DEBUGEN_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DCRSR_REGWnR_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DCRSR_REGWnR_Msk\fP   (1UL << CoreDebug_DCRSR_REGWnR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DCRSR_REGSEL_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DCRSR_REGSEL_Msk\fP   (0x1FUL /*<< CoreDebug_DCRSR_REGSEL_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_TRCENA_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_TRCENA_Msk\fP   (1UL << CoreDebug_DEMCR_TRCENA_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_REQ_Pos\fP   19U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_REQ_Msk\fP   (1UL << CoreDebug_DEMCR_MON_REQ_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_STEP_Pos\fP   18U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_STEP_Msk\fP   (1UL << CoreDebug_DEMCR_MON_STEP_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_PEND_Pos\fP   17U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_PEND_Msk\fP   (1UL << CoreDebug_DEMCR_MON_PEND_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_EN_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_MON_EN_Msk\fP   (1UL << CoreDebug_DEMCR_MON_EN_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_HARDERR_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_HARDERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_HARDERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_INTERR_Pos\fP   9U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_INTERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_INTERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_BUSERR_Pos\fP   8U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_BUSERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_BUSERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_STATERR_Pos\fP   7U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_STATERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_STATERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_CHKERR_Pos\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_CHKERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_CHKERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_NOCPERR_Pos\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_NOCPERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_NOCPERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_MMERR_Pos\fP   4U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_MMERR_Msk\fP   (1UL << CoreDebug_DEMCR_VC_MMERR_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_CORERESET_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCoreDebug_DEMCR_VC_CORERESET_Msk\fP   (1UL /*<< CoreDebug_DEMCR_VC_CORERESET_Pos*/)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Type definitions for the Core Debug Registers\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CoreDebug_DAUTHCTRL_INTSPIDEN_Msk   (1UL << CoreDebug_DAUTHCTRL_INTSPIDEN_Pos)"
+CoreDebug DAUTHCTRL: INTSPIDEN Mask 
+.SS "#define CoreDebug_DAUTHCTRL_INTSPIDEN_Msk   (1UL << CoreDebug_DAUTHCTRL_INTSPIDEN_Pos)"
+CoreDebug DAUTHCTRL: INTSPIDEN Mask 
+.SS "#define CoreDebug_DAUTHCTRL_INTSPIDEN_Pos   1U"
+CoreDebug DAUTHCTRL: INTSPIDEN Position 
+.SS "#define CoreDebug_DAUTHCTRL_INTSPIDEN_Pos   1U"
+CoreDebug DAUTHCTRL: INTSPIDEN Position 
+.SS "#define CoreDebug_DAUTHCTRL_INTSPNIDEN_Msk   (1UL << CoreDebug_DAUTHCTRL_INTSPNIDEN_Pos)"
+CoreDebug DAUTHCTRL: INTSPNIDEN, Mask 
+.SS "#define CoreDebug_DAUTHCTRL_INTSPNIDEN_Msk   (1UL << CoreDebug_DAUTHCTRL_INTSPNIDEN_Pos)"
+CoreDebug DAUTHCTRL: INTSPNIDEN, Mask 
+.SS "#define CoreDebug_DAUTHCTRL_INTSPNIDEN_Pos   3U"
+CoreDebug DAUTHCTRL: INTSPNIDEN, Position 
+.SS "#define CoreDebug_DAUTHCTRL_INTSPNIDEN_Pos   3U"
+CoreDebug DAUTHCTRL: INTSPNIDEN, Position 
+.SS "#define CoreDebug_DAUTHCTRL_SPIDENSEL_Msk   (1UL /*<< CoreDebug_DAUTHCTRL_SPIDENSEL_Pos*/)"
+CoreDebug DAUTHCTRL: SPIDENSEL Mask 
+.SS "#define CoreDebug_DAUTHCTRL_SPIDENSEL_Msk   (1UL /*<< CoreDebug_DAUTHCTRL_SPIDENSEL_Pos*/)"
+CoreDebug DAUTHCTRL: SPIDENSEL Mask 
+.SS "#define CoreDebug_DAUTHCTRL_SPIDENSEL_Pos   0U"
+CoreDebug DAUTHCTRL: SPIDENSEL Position 
+.SS "#define CoreDebug_DAUTHCTRL_SPIDENSEL_Pos   0U"
+CoreDebug DAUTHCTRL: SPIDENSEL Position 
+.SS "#define CoreDebug_DAUTHCTRL_SPNIDENSEL_Msk   (1UL << CoreDebug_DAUTHCTRL_SPNIDENSEL_Pos)"
+CoreDebug DAUTHCTRL: SPNIDENSEL Mask 
+.SS "#define CoreDebug_DAUTHCTRL_SPNIDENSEL_Msk   (1UL << CoreDebug_DAUTHCTRL_SPNIDENSEL_Pos)"
+CoreDebug DAUTHCTRL: SPNIDENSEL Mask 
+.SS "#define CoreDebug_DAUTHCTRL_SPNIDENSEL_Pos   2U"
+CoreDebug DAUTHCTRL: SPNIDENSEL Position 
+.SS "#define CoreDebug_DAUTHCTRL_SPNIDENSEL_Pos   2U"
+CoreDebug DAUTHCTRL: SPNIDENSEL Position 
+.SS "#define CoreDebug_DCRSR_REGSEL_Msk   (0x1FUL /*<< CoreDebug_DCRSR_REGSEL_Pos*/)"
+CoreDebug DCRSR: REGSEL Mask 
+.SS "#define CoreDebug_DCRSR_REGSEL_Msk   (0x1FUL /*<< CoreDebug_DCRSR_REGSEL_Pos*/)"
+CoreDebug DCRSR: REGSEL Mask 
+.SS "#define CoreDebug_DCRSR_REGSEL_Msk   (0x1FUL /*<< CoreDebug_DCRSR_REGSEL_Pos*/)"
+CoreDebug DCRSR: REGSEL Mask 
+.SS "#define CoreDebug_DCRSR_REGSEL_Pos   0U"
+CoreDebug DCRSR: REGSEL Position 
+.SS "#define CoreDebug_DCRSR_REGSEL_Pos   0U"
+CoreDebug DCRSR: REGSEL Position 
+.SS "#define CoreDebug_DCRSR_REGSEL_Pos   0U"
+CoreDebug DCRSR: REGSEL Position 
+.SS "#define CoreDebug_DCRSR_REGWnR_Msk   (1UL << CoreDebug_DCRSR_REGWnR_Pos)"
+CoreDebug DCRSR: REGWnR Mask 
+.SS "#define CoreDebug_DCRSR_REGWnR_Msk   (1UL << CoreDebug_DCRSR_REGWnR_Pos)"
+CoreDebug DCRSR: REGWnR Mask 
+.SS "#define CoreDebug_DCRSR_REGWnR_Msk   (1UL << CoreDebug_DCRSR_REGWnR_Pos)"
+CoreDebug DCRSR: REGWnR Mask 
+.SS "#define CoreDebug_DCRSR_REGWnR_Pos   16U"
+CoreDebug DCRSR: REGWnR Position 
+.SS "#define CoreDebug_DCRSR_REGWnR_Pos   16U"
+CoreDebug DCRSR: REGWnR Position 
+.SS "#define CoreDebug_DCRSR_REGWnR_Pos   16U"
+CoreDebug DCRSR: REGWnR Position 
+.SS "#define CoreDebug_DEMCR_DWTENA_Msk   (1UL << CoreDebug_DEMCR_DWTENA_Pos)"
+CoreDebug DEMCR: DWTENA Mask 
+.SS "#define CoreDebug_DEMCR_DWTENA_Pos   24U"
+CoreDebug DEMCR: DWTENA Position 
+.SS "#define CoreDebug_DEMCR_MON_EN_Msk   (1UL << CoreDebug_DEMCR_MON_EN_Pos)"
+CoreDebug DEMCR: MON_EN Mask 
+.SS "#define CoreDebug_DEMCR_MON_EN_Msk   (1UL << CoreDebug_DEMCR_MON_EN_Pos)"
+CoreDebug DEMCR: MON_EN Mask 
+.SS "#define CoreDebug_DEMCR_MON_EN_Pos   16U"
+CoreDebug DEMCR: MON_EN Position 
+.SS "#define CoreDebug_DEMCR_MON_EN_Pos   16U"
+CoreDebug DEMCR: MON_EN Position 
+.SS "#define CoreDebug_DEMCR_MON_PEND_Msk   (1UL << CoreDebug_DEMCR_MON_PEND_Pos)"
+CoreDebug DEMCR: MON_PEND Mask 
+.SS "#define CoreDebug_DEMCR_MON_PEND_Msk   (1UL << CoreDebug_DEMCR_MON_PEND_Pos)"
+CoreDebug DEMCR: MON_PEND Mask 
+.SS "#define CoreDebug_DEMCR_MON_PEND_Pos   17U"
+CoreDebug DEMCR: MON_PEND Position 
+.SS "#define CoreDebug_DEMCR_MON_PEND_Pos   17U"
+CoreDebug DEMCR: MON_PEND Position 
+.SS "#define CoreDebug_DEMCR_MON_REQ_Msk   (1UL << CoreDebug_DEMCR_MON_REQ_Pos)"
+CoreDebug DEMCR: MON_REQ Mask 
+.SS "#define CoreDebug_DEMCR_MON_REQ_Msk   (1UL << CoreDebug_DEMCR_MON_REQ_Pos)"
+CoreDebug DEMCR: MON_REQ Mask 
+.SS "#define CoreDebug_DEMCR_MON_REQ_Pos   19U"
+CoreDebug DEMCR: MON_REQ Position 
+.SS "#define CoreDebug_DEMCR_MON_REQ_Pos   19U"
+CoreDebug DEMCR: MON_REQ Position 
+.SS "#define CoreDebug_DEMCR_MON_STEP_Msk   (1UL << CoreDebug_DEMCR_MON_STEP_Pos)"
+CoreDebug DEMCR: MON_STEP Mask 
+.SS "#define CoreDebug_DEMCR_MON_STEP_Msk   (1UL << CoreDebug_DEMCR_MON_STEP_Pos)"
+CoreDebug DEMCR: MON_STEP Mask 
+.SS "#define CoreDebug_DEMCR_MON_STEP_Pos   18U"
+CoreDebug DEMCR: MON_STEP Position 
+.SS "#define CoreDebug_DEMCR_MON_STEP_Pos   18U"
+CoreDebug DEMCR: MON_STEP Position 
+.SS "#define CoreDebug_DEMCR_TRCENA_Msk   (1UL << CoreDebug_DEMCR_TRCENA_Pos)"
+CoreDebug DEMCR: TRCENA Mask 
+.SS "#define CoreDebug_DEMCR_TRCENA_Msk   (1UL << CoreDebug_DEMCR_TRCENA_Pos)"
+CoreDebug DEMCR: TRCENA Mask 
+.SS "#define CoreDebug_DEMCR_TRCENA_Pos   24U"
+CoreDebug DEMCR: TRCENA Position 
+.SS "#define CoreDebug_DEMCR_TRCENA_Pos   24U"
+CoreDebug DEMCR: TRCENA Position 
+.SS "#define CoreDebug_DEMCR_VC_BUSERR_Msk   (1UL << CoreDebug_DEMCR_VC_BUSERR_Pos)"
+CoreDebug DEMCR: VC_BUSERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_BUSERR_Msk   (1UL << CoreDebug_DEMCR_VC_BUSERR_Pos)"
+CoreDebug DEMCR: VC_BUSERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_BUSERR_Pos   8U"
+CoreDebug DEMCR: VC_BUSERR Position 
+.SS "#define CoreDebug_DEMCR_VC_BUSERR_Pos   8U"
+CoreDebug DEMCR: VC_BUSERR Position 
+.SS "#define CoreDebug_DEMCR_VC_CHKERR_Msk   (1UL << CoreDebug_DEMCR_VC_CHKERR_Pos)"
+CoreDebug DEMCR: VC_CHKERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_CHKERR_Msk   (1UL << CoreDebug_DEMCR_VC_CHKERR_Pos)"
+CoreDebug DEMCR: VC_CHKERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_CHKERR_Pos   6U"
+CoreDebug DEMCR: VC_CHKERR Position 
+.SS "#define CoreDebug_DEMCR_VC_CHKERR_Pos   6U"
+CoreDebug DEMCR: VC_CHKERR Position 
+.SS "#define CoreDebug_DEMCR_VC_CORERESET_Msk   (1UL /*<< CoreDebug_DEMCR_VC_CORERESET_Pos*/)"
+CoreDebug DEMCR: VC_CORERESET Mask 
+.SS "#define CoreDebug_DEMCR_VC_CORERESET_Msk   (1UL /*<< CoreDebug_DEMCR_VC_CORERESET_Pos*/)"
+CoreDebug DEMCR: VC_CORERESET Mask 
+.SS "#define CoreDebug_DEMCR_VC_CORERESET_Msk   (1UL /*<< CoreDebug_DEMCR_VC_CORERESET_Pos*/)"
+CoreDebug DEMCR: VC_CORERESET Mask 
+.SS "#define CoreDebug_DEMCR_VC_CORERESET_Pos   0U"
+CoreDebug DEMCR: VC_CORERESET Position 
+.SS "#define CoreDebug_DEMCR_VC_CORERESET_Pos   0U"
+CoreDebug DEMCR: VC_CORERESET Position 
+.SS "#define CoreDebug_DEMCR_VC_CORERESET_Pos   0U"
+CoreDebug DEMCR: VC_CORERESET Position 
+.SS "#define CoreDebug_DEMCR_VC_HARDERR_Msk   (1UL << CoreDebug_DEMCR_VC_HARDERR_Pos)"
+CoreDebug DEMCR: VC_HARDERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_HARDERR_Msk   (1UL << CoreDebug_DEMCR_VC_HARDERR_Pos)"
+CoreDebug DEMCR: VC_HARDERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_HARDERR_Msk   (1UL << CoreDebug_DEMCR_VC_HARDERR_Pos)"
+CoreDebug DEMCR: VC_HARDERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_HARDERR_Pos   10U"
+CoreDebug DEMCR: VC_HARDERR Position 
+.SS "#define CoreDebug_DEMCR_VC_HARDERR_Pos   10U"
+CoreDebug DEMCR: VC_HARDERR Position 
+.SS "#define CoreDebug_DEMCR_VC_HARDERR_Pos   10U"
+CoreDebug DEMCR: VC_HARDERR Position 
+.SS "#define CoreDebug_DEMCR_VC_INTERR_Msk   (1UL << CoreDebug_DEMCR_VC_INTERR_Pos)"
+CoreDebug DEMCR: VC_INTERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_INTERR_Msk   (1UL << CoreDebug_DEMCR_VC_INTERR_Pos)"
+CoreDebug DEMCR: VC_INTERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_INTERR_Pos   9U"
+CoreDebug DEMCR: VC_INTERR Position 
+.SS "#define CoreDebug_DEMCR_VC_INTERR_Pos   9U"
+CoreDebug DEMCR: VC_INTERR Position 
+.SS "#define CoreDebug_DEMCR_VC_MMERR_Msk   (1UL << CoreDebug_DEMCR_VC_MMERR_Pos)"
+CoreDebug DEMCR: VC_MMERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_MMERR_Msk   (1UL << CoreDebug_DEMCR_VC_MMERR_Pos)"
+CoreDebug DEMCR: VC_MMERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_MMERR_Pos   4U"
+CoreDebug DEMCR: VC_MMERR Position 
+.SS "#define CoreDebug_DEMCR_VC_MMERR_Pos   4U"
+CoreDebug DEMCR: VC_MMERR Position 
+.SS "#define CoreDebug_DEMCR_VC_NOCPERR_Msk   (1UL << CoreDebug_DEMCR_VC_NOCPERR_Pos)"
+CoreDebug DEMCR: VC_NOCPERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_NOCPERR_Msk   (1UL << CoreDebug_DEMCR_VC_NOCPERR_Pos)"
+CoreDebug DEMCR: VC_NOCPERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_NOCPERR_Pos   5U"
+CoreDebug DEMCR: VC_NOCPERR Position 
+.SS "#define CoreDebug_DEMCR_VC_NOCPERR_Pos   5U"
+CoreDebug DEMCR: VC_NOCPERR Position 
+.SS "#define CoreDebug_DEMCR_VC_STATERR_Msk   (1UL << CoreDebug_DEMCR_VC_STATERR_Pos)"
+CoreDebug DEMCR: VC_STATERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_STATERR_Msk   (1UL << CoreDebug_DEMCR_VC_STATERR_Pos)"
+CoreDebug DEMCR: VC_STATERR Mask 
+.SS "#define CoreDebug_DEMCR_VC_STATERR_Pos   7U"
+CoreDebug DEMCR: VC_STATERR Position 
+.SS "#define CoreDebug_DEMCR_VC_STATERR_Pos   7U"
+CoreDebug DEMCR: VC_STATERR Position 
+.SS "#define CoreDebug_DHCSR_C_DEBUGEN_Msk   (1UL /*<< CoreDebug_DHCSR_C_DEBUGEN_Pos*/)"
+CoreDebug DHCSR: C_DEBUGEN Mask 
+.SS "#define CoreDebug_DHCSR_C_DEBUGEN_Msk   (1UL /*<< CoreDebug_DHCSR_C_DEBUGEN_Pos*/)"
+CoreDebug DHCSR: C_DEBUGEN Mask 
+.SS "#define CoreDebug_DHCSR_C_DEBUGEN_Msk   (1UL /*<< CoreDebug_DHCSR_C_DEBUGEN_Pos*/)"
+CoreDebug DHCSR: C_DEBUGEN Mask 
+.SS "#define CoreDebug_DHCSR_C_DEBUGEN_Pos   0U"
+CoreDebug DHCSR: C_DEBUGEN Position 
+.SS "#define CoreDebug_DHCSR_C_DEBUGEN_Pos   0U"
+CoreDebug DHCSR: C_DEBUGEN Position 
+.SS "#define CoreDebug_DHCSR_C_DEBUGEN_Pos   0U"
+CoreDebug DHCSR: C_DEBUGEN Position 
+.SS "#define CoreDebug_DHCSR_C_HALT_Msk   (1UL << CoreDebug_DHCSR_C_HALT_Pos)"
+CoreDebug DHCSR: C_HALT Mask 
+.SS "#define CoreDebug_DHCSR_C_HALT_Msk   (1UL << CoreDebug_DHCSR_C_HALT_Pos)"
+CoreDebug DHCSR: C_HALT Mask 
+.SS "#define CoreDebug_DHCSR_C_HALT_Msk   (1UL << CoreDebug_DHCSR_C_HALT_Pos)"
+CoreDebug DHCSR: C_HALT Mask 
+.SS "#define CoreDebug_DHCSR_C_HALT_Pos   1U"
+CoreDebug DHCSR: C_HALT Position 
+.SS "#define CoreDebug_DHCSR_C_HALT_Pos   1U"
+CoreDebug DHCSR: C_HALT Position 
+.SS "#define CoreDebug_DHCSR_C_HALT_Pos   1U"
+CoreDebug DHCSR: C_HALT Position 
+.SS "#define CoreDebug_DHCSR_C_MASKINTS_Msk   (1UL << CoreDebug_DHCSR_C_MASKINTS_Pos)"
+CoreDebug DHCSR: C_MASKINTS Mask 
+.SS "#define CoreDebug_DHCSR_C_MASKINTS_Msk   (1UL << CoreDebug_DHCSR_C_MASKINTS_Pos)"
+CoreDebug DHCSR: C_MASKINTS Mask 
+.SS "#define CoreDebug_DHCSR_C_MASKINTS_Msk   (1UL << CoreDebug_DHCSR_C_MASKINTS_Pos)"
+CoreDebug DHCSR: C_MASKINTS Mask 
+.SS "#define CoreDebug_DHCSR_C_MASKINTS_Pos   3U"
+CoreDebug DHCSR: C_MASKINTS Position 
+.SS "#define CoreDebug_DHCSR_C_MASKINTS_Pos   3U"
+CoreDebug DHCSR: C_MASKINTS Position 
+.SS "#define CoreDebug_DHCSR_C_MASKINTS_Pos   3U"
+CoreDebug DHCSR: C_MASKINTS Position 
+.SS "#define CoreDebug_DHCSR_C_SNAPSTALL_Msk   (1UL << CoreDebug_DHCSR_C_SNAPSTALL_Pos)"
+CoreDebug DHCSR: C_SNAPSTALL Mask 
+.SS "#define CoreDebug_DHCSR_C_SNAPSTALL_Msk   (1UL << CoreDebug_DHCSR_C_SNAPSTALL_Pos)"
+CoreDebug DHCSR: C_SNAPSTALL Mask 
+.SS "#define CoreDebug_DHCSR_C_SNAPSTALL_Pos   5U"
+CoreDebug DHCSR: C_SNAPSTALL Position 
+.SS "#define CoreDebug_DHCSR_C_SNAPSTALL_Pos   5U"
+CoreDebug DHCSR: C_SNAPSTALL Position 
+.SS "#define CoreDebug_DHCSR_C_STEP_Msk   (1UL << CoreDebug_DHCSR_C_STEP_Pos)"
+CoreDebug DHCSR: C_STEP Mask 
+.SS "#define CoreDebug_DHCSR_C_STEP_Msk   (1UL << CoreDebug_DHCSR_C_STEP_Pos)"
+CoreDebug DHCSR: C_STEP Mask 
+.SS "#define CoreDebug_DHCSR_C_STEP_Msk   (1UL << CoreDebug_DHCSR_C_STEP_Pos)"
+CoreDebug DHCSR: C_STEP Mask 
+.SS "#define CoreDebug_DHCSR_C_STEP_Pos   2U"
+CoreDebug DHCSR: C_STEP Position 
+.SS "#define CoreDebug_DHCSR_C_STEP_Pos   2U"
+CoreDebug DHCSR: C_STEP Position 
+.SS "#define CoreDebug_DHCSR_C_STEP_Pos   2U"
+CoreDebug DHCSR: C_STEP Position 
+.SS "#define CoreDebug_DHCSR_DBGKEY_Msk   (0xFFFFUL << CoreDebug_DHCSR_DBGKEY_Pos)"
+CoreDebug DHCSR: DBGKEY Mask 
+.SS "#define CoreDebug_DHCSR_DBGKEY_Msk   (0xFFFFUL << CoreDebug_DHCSR_DBGKEY_Pos)"
+CoreDebug DHCSR: DBGKEY Mask 
+.SS "#define CoreDebug_DHCSR_DBGKEY_Msk   (0xFFFFUL << CoreDebug_DHCSR_DBGKEY_Pos)"
+CoreDebug DHCSR: DBGKEY Mask 
+.SS "#define CoreDebug_DHCSR_DBGKEY_Pos   16U"
+CoreDebug DHCSR: DBGKEY Position 
+.SS "#define CoreDebug_DHCSR_DBGKEY_Pos   16U"
+CoreDebug DHCSR: DBGKEY Position 
+.SS "#define CoreDebug_DHCSR_DBGKEY_Pos   16U"
+CoreDebug DHCSR: DBGKEY Position 
+.SS "#define CoreDebug_DHCSR_S_HALT_Msk   (1UL << CoreDebug_DHCSR_S_HALT_Pos)"
+CoreDebug DHCSR: S_HALT Mask 
+.SS "#define CoreDebug_DHCSR_S_HALT_Msk   (1UL << CoreDebug_DHCSR_S_HALT_Pos)"
+CoreDebug DHCSR: S_HALT Mask 
+.SS "#define CoreDebug_DHCSR_S_HALT_Msk   (1UL << CoreDebug_DHCSR_S_HALT_Pos)"
+CoreDebug DHCSR: S_HALT Mask 
+.SS "#define CoreDebug_DHCSR_S_HALT_Pos   17U"
+CoreDebug DHCSR: S_HALT Position 
+.SS "#define CoreDebug_DHCSR_S_HALT_Pos   17U"
+CoreDebug DHCSR: S_HALT Position 
+.SS "#define CoreDebug_DHCSR_S_HALT_Pos   17U"
+CoreDebug DHCSR: S_HALT Position 
+.SS "#define CoreDebug_DHCSR_S_LOCKUP_Msk   (1UL << CoreDebug_DHCSR_S_LOCKUP_Pos)"
+CoreDebug DHCSR: S_LOCKUP Mask 
+.SS "#define CoreDebug_DHCSR_S_LOCKUP_Msk   (1UL << CoreDebug_DHCSR_S_LOCKUP_Pos)"
+CoreDebug DHCSR: S_LOCKUP Mask 
+.SS "#define CoreDebug_DHCSR_S_LOCKUP_Msk   (1UL << CoreDebug_DHCSR_S_LOCKUP_Pos)"
+CoreDebug DHCSR: S_LOCKUP Mask 
+.SS "#define CoreDebug_DHCSR_S_LOCKUP_Pos   19U"
+CoreDebug DHCSR: S_LOCKUP Position 
+.SS "#define CoreDebug_DHCSR_S_LOCKUP_Pos   19U"
+CoreDebug DHCSR: S_LOCKUP Position 
+.SS "#define CoreDebug_DHCSR_S_LOCKUP_Pos   19U"
+CoreDebug DHCSR: S_LOCKUP Position 
+.SS "#define CoreDebug_DHCSR_S_REGRDY_Msk   (1UL << CoreDebug_DHCSR_S_REGRDY_Pos)"
+CoreDebug DHCSR: S_REGRDY Mask 
+.SS "#define CoreDebug_DHCSR_S_REGRDY_Msk   (1UL << CoreDebug_DHCSR_S_REGRDY_Pos)"
+CoreDebug DHCSR: S_REGRDY Mask 
+.SS "#define CoreDebug_DHCSR_S_REGRDY_Msk   (1UL << CoreDebug_DHCSR_S_REGRDY_Pos)"
+CoreDebug DHCSR: S_REGRDY Mask 
+.SS "#define CoreDebug_DHCSR_S_REGRDY_Pos   16U"
+CoreDebug DHCSR: S_REGRDY Position 
+.SS "#define CoreDebug_DHCSR_S_REGRDY_Pos   16U"
+CoreDebug DHCSR: S_REGRDY Position 
+.SS "#define CoreDebug_DHCSR_S_REGRDY_Pos   16U"
+CoreDebug DHCSR: S_REGRDY Position 
+.SS "#define CoreDebug_DHCSR_S_RESET_ST_Msk   (1UL << CoreDebug_DHCSR_S_RESET_ST_Pos)"
+CoreDebug DHCSR: S_RESET_ST Mask 
+.SS "#define CoreDebug_DHCSR_S_RESET_ST_Msk   (1UL << CoreDebug_DHCSR_S_RESET_ST_Pos)"
+CoreDebug DHCSR: S_RESET_ST Mask 
+.SS "#define CoreDebug_DHCSR_S_RESET_ST_Msk   (1UL << CoreDebug_DHCSR_S_RESET_ST_Pos)"
+CoreDebug DHCSR: S_RESET_ST Mask 
+.SS "#define CoreDebug_DHCSR_S_RESET_ST_Pos   25U"
+CoreDebug DHCSR: S_RESET_ST Position 
+.SS "#define CoreDebug_DHCSR_S_RESET_ST_Pos   25U"
+CoreDebug DHCSR: S_RESET_ST Position 
+.SS "#define CoreDebug_DHCSR_S_RESET_ST_Pos   25U"
+CoreDebug DHCSR: S_RESET_ST Position 
+.SS "#define CoreDebug_DHCSR_S_RESTART_ST_Msk   (1UL << CoreDebug_DHCSR_S_RESTART_ST_Pos)"
+CoreDebug DHCSR: S_RESTART_ST Mask 
+.SS "#define CoreDebug_DHCSR_S_RESTART_ST_Msk   (1UL << CoreDebug_DHCSR_S_RESTART_ST_Pos)"
+CoreDebug DHCSR: S_RESTART_ST Mask 
+.SS "#define CoreDebug_DHCSR_S_RESTART_ST_Pos   26U"
+CoreDebug DHCSR: S_RESTART_ST Position 
+.SS "#define CoreDebug_DHCSR_S_RESTART_ST_Pos   26U"
+CoreDebug DHCSR: S_RESTART_ST Position 
+.SS "#define CoreDebug_DHCSR_S_RETIRE_ST_Msk   (1UL << CoreDebug_DHCSR_S_RETIRE_ST_Pos)"
+CoreDebug DHCSR: S_RETIRE_ST Mask 
+.SS "#define CoreDebug_DHCSR_S_RETIRE_ST_Msk   (1UL << CoreDebug_DHCSR_S_RETIRE_ST_Pos)"
+CoreDebug DHCSR: S_RETIRE_ST Mask 
+.SS "#define CoreDebug_DHCSR_S_RETIRE_ST_Msk   (1UL << CoreDebug_DHCSR_S_RETIRE_ST_Pos)"
+CoreDebug DHCSR: S_RETIRE_ST Mask 
+.SS "#define CoreDebug_DHCSR_S_RETIRE_ST_Pos   24U"
+CoreDebug DHCSR: S_RETIRE_ST Position 
+.SS "#define CoreDebug_DHCSR_S_RETIRE_ST_Pos   24U"
+CoreDebug DHCSR: S_RETIRE_ST Position 
+.SS "#define CoreDebug_DHCSR_S_RETIRE_ST_Pos   24U"
+CoreDebug DHCSR: S_RETIRE_ST Position 
+.SS "#define CoreDebug_DHCSR_S_SLEEP_Msk   (1UL << CoreDebug_DHCSR_S_SLEEP_Pos)"
+CoreDebug DHCSR: S_SLEEP Mask 
+.SS "#define CoreDebug_DHCSR_S_SLEEP_Msk   (1UL << CoreDebug_DHCSR_S_SLEEP_Pos)"
+CoreDebug DHCSR: S_SLEEP Mask 
+.SS "#define CoreDebug_DHCSR_S_SLEEP_Msk   (1UL << CoreDebug_DHCSR_S_SLEEP_Pos)"
+CoreDebug DHCSR: S_SLEEP Mask 
+.SS "#define CoreDebug_DHCSR_S_SLEEP_Pos   18U"
+CoreDebug DHCSR: S_SLEEP Position 
+.SS "#define CoreDebug_DHCSR_S_SLEEP_Pos   18U"
+CoreDebug DHCSR: S_SLEEP Position 
+.SS "#define CoreDebug_DHCSR_S_SLEEP_Pos   18U"
+CoreDebug DHCSR: S_SLEEP Position 
+.SS "#define CoreDebug_DSCSR_CDS_Msk   (1UL << CoreDebug_DSCSR_CDS_Pos)"
+CoreDebug DSCSR: CDS Mask 
+.SS "#define CoreDebug_DSCSR_CDS_Msk   (1UL << CoreDebug_DSCSR_CDS_Pos)"
+CoreDebug DSCSR: CDS Mask 
+.SS "#define CoreDebug_DSCSR_CDS_Pos   16U"
+CoreDebug DSCSR: CDS Position 
+.SS "#define CoreDebug_DSCSR_CDS_Pos   16U"
+CoreDebug DSCSR: CDS Position 
+.SS "#define CoreDebug_DSCSR_SBRSEL_Msk   (1UL << CoreDebug_DSCSR_SBRSEL_Pos)"
+CoreDebug DSCSR: SBRSEL Mask 
+.SS "#define CoreDebug_DSCSR_SBRSEL_Msk   (1UL << CoreDebug_DSCSR_SBRSEL_Pos)"
+CoreDebug DSCSR: SBRSEL Mask 
+.SS "#define CoreDebug_DSCSR_SBRSEL_Pos   1U"
+CoreDebug DSCSR: SBRSEL Position 
+.SS "#define CoreDebug_DSCSR_SBRSEL_Pos   1U"
+CoreDebug DSCSR: SBRSEL Position 
+.SS "#define CoreDebug_DSCSR_SBRSELEN_Msk   (1UL /*<< CoreDebug_DSCSR_SBRSELEN_Pos*/)"
+CoreDebug DSCSR: SBRSELEN Mask 
+.SS "#define CoreDebug_DSCSR_SBRSELEN_Msk   (1UL /*<< CoreDebug_DSCSR_SBRSELEN_Pos*/)"
+CoreDebug DSCSR: SBRSELEN Mask 
+.SS "#define CoreDebug_DSCSR_SBRSELEN_Pos   0U"
+CoreDebug DSCSR: SBRSELEN Position 
+.SS "#define CoreDebug_DSCSR_SBRSELEN_Pos   0U"
+CoreDebug DSCSR: SBRSELEN Position 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

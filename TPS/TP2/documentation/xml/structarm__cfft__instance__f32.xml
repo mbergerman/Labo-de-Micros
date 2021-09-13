@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structarm__cfft__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_cfft_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__cfft__instance__f32_1ab8db3bbe7c61e6bb8ca2a55e3446e11a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t fftLen</definition>
+        <argsstring></argsstring>
+        <name>fftLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the FFT. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2124" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__instance__f32_1a8292d9775f5c5472f59915649fe3b378" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>const float32_t* pTwiddle</definition>
+        <argsstring></argsstring>
+        <name>pTwiddle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the Twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2125" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__instance__f32_1a3b229432d381b0a511a9cdbe3aa74e78" prot="public" static="no" mutable="no">
+        <type>const uint16_t *</type>
+        <definition>const uint16_t* pBitRevTable</definition>
+        <argsstring></argsstring>
+        <name>pBitRevTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the bit reversal table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2126" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__instance__f32_1a65e1b3e327b8fab9404287ed8f347cc8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t bitRevLength</definition>
+        <argsstring></argsstring>
+        <name>bitRevLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit reversal table length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2127" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point CFFT/CIFFT function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/arm_math.h" line="2123" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2122" bodyend="2128"/>
+    <listofallmembers>
+      <member refid="structarm__cfft__instance__f32_1a65e1b3e327b8fab9404287ed8f347cc8" prot="public" virt="non-virtual"><scope>arm_cfft_instance_f32</scope><name>bitRevLength</name></member>
+      <member refid="structarm__cfft__instance__f32_1ab8db3bbe7c61e6bb8ca2a55e3446e11a" prot="public" virt="non-virtual"><scope>arm_cfft_instance_f32</scope><name>fftLen</name></member>
+      <member refid="structarm__cfft__instance__f32_1a3b229432d381b0a511a9cdbe3aa74e78" prot="public" virt="non-virtual"><scope>arm_cfft_instance_f32</scope><name>pBitRevTable</name></member>
+      <member refid="structarm__cfft__instance__f32_1a8292d9775f5c5472f59915649fe3b378" prot="public" virt="non-virtual"><scope>arm_cfft_instance_f32</scope><name>pTwiddle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

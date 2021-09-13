@@ -1,0 +1,57 @@
+.TH "SDK/CMSIS/system_MK64F12.c" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDK/CMSIS/system_MK64F12.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdint\&.h>\fP
+.br
+\fC#include 'fsl_device_registers\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSystemInit\fP (void)"
+.br
+.RI "Setup the microcontroller system\&. "
+.ti -1c
+.RI "void \fBSystemCoreClockUpdate\fP (void)"
+.br
+.RI "Updates the SystemCoreClock variable\&. "
+.ti -1c
+.RI "\fB__attribute__\fP ((weak))"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBSystemCoreClock\fP = \fBDEFAULT_SYSTEM_CLOCK\fP"
+.br
+.RI "System clock frequency (core clock) "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "__attribute__ ((weak))"
+
+.SS "void SystemCoreClockUpdate (void)"
+
+.PP
+Updates the SystemCoreClock variable\&. It must be called whenever the core clock is changed during program execution\&. \fBSystemCoreClockUpdate()\fP evaluates the clock register settings and calculates the current core clock\&. 
+.SS "void SystemInit (void)"
+
+.PP
+Setup the microcontroller system\&. Typically this function configures the oscillator (PLL) that is part of the microcontroller device\&. For systems with variable clock speed it also updates the variable SystemCoreClock\&. SystemInit is called from startup_device file\&. 
+.SH "Variable Documentation"
+.PP 
+.SS "uint32_t SystemCoreClock = \fBDEFAULT_SYSTEM_CLOCK\fP"
+
+.PP
+System clock frequency (core clock) The system clock frequency supplied to the SysTick timer and the processor core clock\&. This variable can be used by the user application to setup the SysTick timer or configure other parameters\&. It may also be used by debugger to query the frequency of the debug timer or configure the trace clock speed SystemCoreClock is initialized with a correct predefined value\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

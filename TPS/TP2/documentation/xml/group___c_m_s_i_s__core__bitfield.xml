@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___c_m_s_i_s__core__bitfield" kind="group">
+    <compoundname>CMSIS_core_bitfield</compoundname>
+    <title>Core register bit field macros</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga286e3b913dbd236c7f48ea70c8821f4e" prot="public" static="no">
+        <name>_VAL2FLD</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>(((uint32_t)(value) &lt;&lt; field ## _Pos) &amp; field ## _Msk)</initializer>
+        <briefdescription>
+<para>Mask and shift a bit field value for use in a register bit range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the bit field. This parameter is interpreted as an uint32_t type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1146" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga139b6e261c981f014f386927ca4a8444" prot="public" static="no">
+        <name>_FLD2VAL</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>(((uint32_t)(value) &amp; field ## _Msk) &gt;&gt; field ## _Pos)</initializer>
+        <briefdescription>
+<para>Mask and shift a register value to extract a bit filed value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of register. This parameter is interpreted as an uint32_t type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted bit field value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1154" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga286e3b913dbd236c7f48ea70c8821f4e" prot="public" static="no">
+        <name>_VAL2FLD</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>(((uint32_t)(value) &lt;&lt; field ## _Pos) &amp; field ## _Msk)</initializer>
+        <briefdescription>
+<para>Mask and shift a bit field value for use in a register bit range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the bit field. This parameter is interpreted as an uint32_t type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2006" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2006" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga139b6e261c981f014f386927ca4a8444" prot="public" static="no">
+        <name>_FLD2VAL</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>(((uint32_t)(value) &amp; field ## _Msk) &gt;&gt; field ## _Pos)</initializer>
+        <briefdescription>
+<para>Mask and shift a register value to extract a bit filed value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of register. This parameter is interpreted as an uint32_t type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted bit field value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2014" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2014" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga286e3b913dbd236c7f48ea70c8821f4e" prot="public" static="no">
+        <name>_VAL2FLD</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>(((uint32_t)(value) &lt;&lt; field ## _Pos) &amp; field ## _Msk)</initializer>
+        <briefdescription>
+<para>Mask and shift a bit field value for use in a register bit range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the bit field. This parameter is interpreted as an uint32_t type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1530" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1530" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core__bitfield_1ga139b6e261c981f014f386927ca4a8444" prot="public" static="no">
+        <name>_FLD2VAL</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>(((uint32_t)(value) &amp; field ## _Msk) &gt;&gt; field ## _Pos)</initializer>
+        <briefdescription>
+<para>Mask and shift a register value to extract a bit filed value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of register. This parameter is interpreted as an uint32_t type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted bit field value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1538" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1538" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Macros for use with bit field definitions (xxx_Pos, xxx_Msk). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

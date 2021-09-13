@@ -1,0 +1,1150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="arm__common__tables_8h" kind="file" language="C++">
+    <compoundname>arm_common_tables.h</compoundname>
+    <includes refid="arm__math_8h" local="yes">arm_math.h</includes>
+    <includedby refid="arm__const__structs_8h" local="yes">SDK/CMSIS/arm_const_structs.h</includedby>
+    <incdepgraph>
+      <node id="197">
+        <label>SDK/CMSIS/arm_common_tables.h</label>
+        <link refid="arm__common__tables_8h"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>string.h</label>
+      </node>
+      <node id="200">
+        <label>math.h</label>
+      </node>
+      <node id="198">
+        <label>arm_math.h</label>
+        <link refid="arm__math_8h"/>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="201">
+        <label>SDK/CMSIS/arm_common_tables.h</label>
+        <link refid="arm__common__tables_8h"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>SDK/CMSIS/arm_const_structs.h</label>
+        <link refid="arm__const__structs_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="arm__common__tables_8h_1a9bf8c85e4c91b9b55818b3d650d2c761" prot="public" static="no">
+        <name>twiddleCoef</name>
+        <initializer><ref refid="arm__common__tables_8h_1ae0182d1dd3b2f21aad4e38a815a0bd40" kindref="member">twiddleCoef_4096</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="46" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1ae238c932ca2cc11cc8aebdfc953adb63" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_16_TABLE_LENGTH</name>
+        <initializer>((uint16_t)20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="75" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1a53e4f11ab8b72fd91e9654efe1154ca5" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_32_TABLE_LENGTH</name>
+        <initializer>((uint16_t)48)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="76" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1aa4cbc689396d844f626d942ef28eb4ba" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_64_TABLE_LENGTH</name>
+        <initializer>((uint16_t)56)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="77" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1abb73376f7efda869394aab2acef4291c" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_128_TABLE_LENGTH</name>
+        <initializer>((uint16_t)208)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="78" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1aa7dc18c3b4f8d76f5a29f7b182007934" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_256_TABLE_LENGTH</name>
+        <initializer>((uint16_t)440)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="79" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1ab21231782baf177ef3edad11aeba5a4f" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_512_TABLE_LENGTH</name>
+        <initializer>((uint16_t)448)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="80" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1a5f6f615f438c5134a9b7e746139705df" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_1024_TABLE_LENGTH</name>
+        <initializer>((uint16_t)1800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="81" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1a3c561d85c5fc37cf2e111123d32353c3" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_2048_TABLE_LENGTH</name>
+        <initializer>((uint16_t)3808)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="82" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1ae89013dc2971400f8afa166c578ad944" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_4096_TABLE_LENGTH</name>
+        <initializer>((uint16_t)4032)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="83" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1ab8f00f11c681f734778ea7d9cecb3fe3" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_FIXED_16_TABLE_LENGTH</name>
+        <initializer>((uint16_t)12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="96" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1aae3857ea311fb1832bb4451ec77c77c4" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_FIXED_32_TABLE_LENGTH</name>
+        <initializer>((uint16_t)24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="97" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1ad3ffb74158ea438cc1a78eb17991df55" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_FIXED_64_TABLE_LENGTH</name>
+        <initializer>((uint16_t)56)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="98" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1a274d724b2798c114102f561ac4d9cb17" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_FIXED_128_TABLE_LENGTH</name>
+        <initializer>((uint16_t)112)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="99" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1a11c6f68fdde47cf4d0143354533399c9" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_FIXED_256_TABLE_LENGTH</name>
+        <initializer>((uint16_t)240)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="100" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1a03e3f60f55c4cb2d4b34cc1b4f805e6e" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_FIXED_512_TABLE_LENGTH</name>
+        <initializer>((uint16_t)480)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="101" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1ab78db333c5f36a927cf5f6b492e93dd3" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_FIXED_1024_TABLE_LENGTH</name>
+        <initializer>((uint16_t)992)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="102" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1a7dbfc9019953b525d83184a50f9976cc" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_FIXED_2048_TABLE_LENGTH</name>
+        <initializer>((uint16_t)1984)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="103" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="arm__common__tables_8h_1acbf48883fbb31d3dc71d232aa8e8f91f" prot="public" static="no">
+        <name>ARMBITREVINDEXTABLE_FIXED_4096_TABLE_LENGTH</name>
+        <initializer>((uint16_t)4032)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="104" column="9" bodyfile="SDK/CMSIS/arm_common_tables.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="arm__common__tables_8h_1ae247e83ad50d474107254e25b36ad42b" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevTable[1024]</definition>
+        <argsstring>[1024]</argsstring>
+        <name>armBitRevTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a56d3642e4ee33e3ada57ff11ecda1498" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>const q15_t armRecipTableQ15[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>armRecipTableQ15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1aae6056f6c4e8f7e494445196bf864479" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>const q31_t armRecipTableQ31[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>armRecipTableQ31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1ae75e243ec61706427314270f222e0c8e" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_16[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>twiddleCoef_16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a78a72c85d88185de98050c930cfc76e3" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_32[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>twiddleCoef_32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a4f3c6d98c7e66393b4ef3ac63746e43d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_64[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>twiddleCoef_64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a948433536dafaac1381decfccf4e2d9c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_128[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>twiddleCoef_128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1afe813758a03a798e972359a092315be4" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_256[512]</definition>
+        <argsstring>[512]</argsstring>
+        <name>twiddleCoef_256</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1ad8830f0c068ab2cc19f2f87d220fa148" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_512[1024]</definition>
+        <argsstring>[1024]</argsstring>
+        <name>twiddleCoef_512</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a27c056eb130a4333d1cc5dd43ec738b1" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_1024[2048]</definition>
+        <argsstring>[2048]</argsstring>
+        <name>twiddleCoef_1024</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a23e7f30421a7905b21c2015429779633" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_2048[4096]</definition>
+        <argsstring>[4096]</argsstring>
+        <name>twiddleCoef_2048</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1ae0182d1dd3b2f21aad4e38a815a0bd40" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_4096[8192]</definition>
+        <argsstring>[8192]</argsstring>
+        <name>twiddleCoef_4096</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1aef4697e1ba348c4ac9358f2b9e279e93" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>const q31_t twiddleCoef_16_q31[24]</definition>
+        <argsstring>[24]</argsstring>
+        <name>twiddleCoef_16_q31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a8ba78d5e6ef4bdc58e8f0044e0664a0a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>const q31_t twiddleCoef_32_q31[48]</definition>
+        <argsstring>[48]</argsstring>
+        <name>twiddleCoef_32_q31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a6e0a7e941a25a0d74b2e6590307de47e" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>const q31_t twiddleCoef_64_q31[96]</definition>
+        <argsstring>[96]</argsstring>
+        <name>twiddleCoef_64_q31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1afecf9ed9873415d9f5f17f37b30c7250" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>const q31_t twiddleCoef_128_q31[192]</definition>
+        <argsstring>[192]</argsstring>
+        <name>twiddleCoef_128_q31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1aef1ea005053b715b851cf5f908168ede" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>const q31_t twiddleCoef_256_q31[384]</definition>
+        <argsstring>[384]</argsstring>
+        <name>twiddleCoef_256_q31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a416c61b2f08542a39111e06b0378bebe" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>const q31_t twiddleCoef_512_q31[768]</definition>
+        <argsstring>[768]</argsstring>
+        <name>twiddleCoef_512_q31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a514443c44b62b8b3d240afefebcda310" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>const q31_t twiddleCoef_1024_q31[1536]</definition>
+        <argsstring>[1536]</argsstring>
+        <name>twiddleCoef_1024_q31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a9c5767de9f5a409fd0c2027e6ac67179" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>const q31_t twiddleCoef_2048_q31[3072]</definition>
+        <argsstring>[3072]</argsstring>
+        <name>twiddleCoef_2048_q31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a67c0890317deab3391e276f22c1fc400" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>const q31_t twiddleCoef_4096_q31[6144]</definition>
+        <argsstring>[6144]</argsstring>
+        <name>twiddleCoef_4096_q31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a8e4e2e05f4a3112184c96cb3308d6c39" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>const q15_t twiddleCoef_16_q15[24]</definition>
+        <argsstring>[24]</argsstring>
+        <name>twiddleCoef_16_q15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1ac194a4fe04a19051ae1811f69c6e5df2" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>const q15_t twiddleCoef_32_q15[48]</definition>
+        <argsstring>[48]</argsstring>
+        <name>twiddleCoef_32_q15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1aa0cc411e0b3c82078e85cfdf1b84290f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>const q15_t twiddleCoef_64_q15[96]</definition>
+        <argsstring>[96]</argsstring>
+        <name>twiddleCoef_64_q15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1abfdd1c5cd2b3f96da5fe5f07c707a8e5" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>const q15_t twiddleCoef_128_q15[192]</definition>
+        <argsstring>[192]</argsstring>
+        <name>twiddleCoef_128_q15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a6099ae5262a0a3a8d9ce1e6da02f0c2e" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>const q15_t twiddleCoef_256_q15[384]</definition>
+        <argsstring>[384]</argsstring>
+        <name>twiddleCoef_256_q15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a6152621af210f847128c6f38958fa385" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>const q15_t twiddleCoef_512_q15[768]</definition>
+        <argsstring>[768]</argsstring>
+        <name>twiddleCoef_512_q15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a8a0ec95d866fe96b740e77d6e1356b59" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>const q15_t twiddleCoef_1024_q15[1536]</definition>
+        <argsstring>[1536]</argsstring>
+        <name>twiddleCoef_1024_q15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1add16ce08ffd1048c385e0534a3b19cbb" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>const q15_t twiddleCoef_2048_q15[3072]</definition>
+        <argsstring>[3072]</argsstring>
+        <name>twiddleCoef_2048_q15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a9b409d6995eab17805b1d1881d4bc652" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>const q15_t twiddleCoef_4096_q15[6144]</definition>
+        <argsstring>[6144]</argsstring>
+        <name>twiddleCoef_4096_q15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a5992afe8574289cd71921651b80bd57d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_rfft_32[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>twiddleCoef_rfft_32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a2759d8789e1e6ae2ba7fb8d7f5e9c2ab" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_rfft_64[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>twiddleCoef_rfft_64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1af089dd2fe1a543d40a3325982bf45e7c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_rfft_128[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>twiddleCoef_rfft_128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a5c5c161dd469d8e6806664956dae31f9" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_rfft_256[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>twiddleCoef_rfft_256</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a94bd2fc98798f87003fef5cd0c04d1f5" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_rfft_512[512]</definition>
+        <argsstring>[512]</argsstring>
+        <name>twiddleCoef_rfft_512</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1aa7d8d3aa9898d557385748a13c959a4c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_rfft_1024[1024]</definition>
+        <argsstring>[1024]</argsstring>
+        <name>twiddleCoef_rfft_1024</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a749a5995ebd433a163f7adc474dabcaa" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_rfft_2048[2048]</definition>
+        <argsstring>[2048]</argsstring>
+        <name>twiddleCoef_rfft_2048</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a8013d68dd2476c86b77173bb98b87b29" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t twiddleCoef_rfft_4096[4096]</definition>
+        <argsstring>[4096]</argsstring>
+        <name>twiddleCoef_rfft_4096</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a1d4574fdfbfd5698054602b26ad97575" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable16[ARMBITREVINDEXTABLE_16_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_16_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a5eee9bb0fadbf7753c02cfcff1226185" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable32[ARMBITREVINDEXTABLE_32_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_32_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a07798450c81fc35b0e1b79359ee06ea1" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable64[ARMBITREVINDEXTABLE_64_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_64_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a04711bbb245f2ac7202db666eaaf10f2" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable128[ARMBITREVINDEXTABLE_128_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_128_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a77b17c8e7539af315c57de27610d8407" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable256[ARMBITREVINDEXTABLE_256_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_256_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable256</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a297a311183fb6d17d7ee0152ad1e43f3" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable512[ARMBITREVINDEXTABLE_512_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_512_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable512</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a08dd0b98fa4cc50cad0f48ce752f8149" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable1024[ARMBITREVINDEXTABLE_1024_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_1024_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable1024</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1adaa1b91f1cb7be2c5e236a3c3352caa0" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable2048[ARMBITREVINDEXTABLE_2048_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_2048_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable2048</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a8ffa3e551ae1de2bdafc33beba9c83eb" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable4096[ARMBITREVINDEXTABLE_4096_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_4096_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable4096</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a4685f68ca0a6c8f40d1a5738d2ce3797" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable_fixed_16[ARMBITREVINDEXTABLE_FIXED_16_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_FIXED_16_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable_fixed_16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1ac5dc7168ea9694ae75adac3cc567bce8" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable_fixed_32[ARMBITREVINDEXTABLE_FIXED_32_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_FIXED_32_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable_fixed_32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a162819f8903f8b65ff40adc195aec214" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable_fixed_64[ARMBITREVINDEXTABLE_FIXED_64_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_FIXED_64_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable_fixed_64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1ae026eb3302d18a88f6d9a45070bb34a9" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable_fixed_128[ARMBITREVINDEXTABLE_FIXED_128_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_FIXED_128_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable_fixed_128</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a14e05e3c3a86ebd7ee0d33c85d67803f" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable_fixed_256[ARMBITREVINDEXTABLE_FIXED_256_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_FIXED_256_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable_fixed_256</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1ae78e67d99c9870210f5776a6dab7266e" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable_fixed_512[ARMBITREVINDEXTABLE_FIXED_512_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_FIXED_512_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable_fixed_512</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a579beb19201fab01210c37253447fa52" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable_fixed_1024[ARMBITREVINDEXTABLE_FIXED_1024_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_FIXED_1024_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable_fixed_1024</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1ad888a207e20f601ed80b2ad43428c8cc" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable_fixed_2048[ARMBITREVINDEXTABLE_FIXED_2048_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_FIXED_2048_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable_fixed_2048</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a2db644df1e878209441166cbb8d0db4f" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t armBitRevIndexTable_fixed_4096[ARMBITREVINDEXTABLE_FIXED_4096_TABLE_LENGTH]</definition>
+        <argsstring>[ARMBITREVINDEXTABLE_FIXED_4096_TABLE_LENGTH]</argsstring>
+        <name>armBitRevIndexTable_fixed_4096</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a1dec82d596780f1a66ef4f76f137c1d9" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>const float32_t sinTable_f32[FAST_MATH_TABLE_SIZE+1]</definition>
+        <argsstring>[FAST_MATH_TABLE_SIZE+1]</argsstring>
+        <name>sinTable_f32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a8bfccee9e1c0042cf4a765f4b19d097d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>const q31_t sinTable_q31[FAST_MATH_TABLE_SIZE+1]</definition>
+        <argsstring>[FAST_MATH_TABLE_SIZE+1]</argsstring>
+        <name>sinTable_q31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="arm__common__tables_8h_1a9cbcfe313f61add745ebfeddb4fecd55" prot="public" static="no" mutable="no">
+        <type>const <ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>const q15_t sinTable_q15[FAST_MATH_TABLE_SIZE+1]</definition>
+        <argsstring>[FAST_MATH_TABLE_SIZE+1]</argsstring>
+        <name>sinTable_q15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_common_tables.h" line="119" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>----------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Project:<sp/><sp/><sp/><sp/><sp/><sp/>CMSIS<sp/>DSP<sp/>Library</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Title:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arm_common_tables.h</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Description:<sp/><sp/>Extern<sp/>declaration<sp/>for<sp/>common<sp/>tables</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>$Date:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>27.<sp/>January<sp/>2017</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>$Revision:<sp/><sp/><sp/><sp/>V.1.5.1</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Target<sp/>Processor:<sp/>Cortex-M<sp/>cores</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>--------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2010-2017<sp/>ARM<sp/>Limited<sp/>or<sp/>its<sp/>affiliates.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>Apache-2.0</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>License);<sp/>you<sp/>may</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>AS<sp/>IS<sp/>BASIS,<sp/>WITHOUT</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ARM_COMMON_TABLES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ARM_COMMON_TABLES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arm__math_8h" kindref="compound">arm_math.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1ae247e83ad50d474107254e25b36ad42b" kindref="member">armBitRevTable</ref>[1024];</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref><sp/><ref refid="arm__common__tables_8h_1a56d3642e4ee33e3ada57ff11ecda1498" kindref="member">armRecipTableQ15</ref>[64];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref><sp/><ref refid="arm__common__tables_8h_1aae6056f6c4e8f7e494445196bf864479" kindref="member">armRecipTableQ31</ref>[64];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1ae75e243ec61706427314270f222e0c8e" kindref="member">twiddleCoef_16</ref>[32];</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1a78a72c85d88185de98050c930cfc76e3" kindref="member">twiddleCoef_32</ref>[64];</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1a4f3c6d98c7e66393b4ef3ac63746e43d" kindref="member">twiddleCoef_64</ref>[128];</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1a948433536dafaac1381decfccf4e2d9c" kindref="member">twiddleCoef_128</ref>[256];</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1afe813758a03a798e972359a092315be4" kindref="member">twiddleCoef_256</ref>[512];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1ad8830f0c068ab2cc19f2f87d220fa148" kindref="member">twiddleCoef_512</ref>[1024];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1a27c056eb130a4333d1cc5dd43ec738b1" kindref="member">twiddleCoef_1024</ref>[2048];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1a23e7f30421a7905b21c2015429779633" kindref="member">twiddleCoef_2048</ref>[4096];</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1ae0182d1dd3b2f21aad4e38a815a0bd40" kindref="member">twiddleCoef_4096</ref>[8192];</highlight></codeline>
+<codeline lineno="46" refid="arm__common__tables_8h_1a9bf8c85e4c91b9b55818b3d650d2c761" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>twiddleCoef<sp/>twiddleCoef_4096</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref><sp/><ref refid="arm__common__tables_8h_1aef4697e1ba348c4ac9358f2b9e279e93" kindref="member">twiddleCoef_16_q31</ref>[24];</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref><sp/><ref refid="arm__common__tables_8h_1a8ba78d5e6ef4bdc58e8f0044e0664a0a" kindref="member">twiddleCoef_32_q31</ref>[48];</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref><sp/><ref refid="arm__common__tables_8h_1a6e0a7e941a25a0d74b2e6590307de47e" kindref="member">twiddleCoef_64_q31</ref>[96];</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref><sp/><ref refid="arm__common__tables_8h_1afecf9ed9873415d9f5f17f37b30c7250" kindref="member">twiddleCoef_128_q31</ref>[192];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref><sp/><ref refid="arm__common__tables_8h_1aef1ea005053b715b851cf5f908168ede" kindref="member">twiddleCoef_256_q31</ref>[384];</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref><sp/><ref refid="arm__common__tables_8h_1a416c61b2f08542a39111e06b0378bebe" kindref="member">twiddleCoef_512_q31</ref>[768];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref><sp/><ref refid="arm__common__tables_8h_1a514443c44b62b8b3d240afefebcda310" kindref="member">twiddleCoef_1024_q31</ref>[1536];</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref><sp/><ref refid="arm__common__tables_8h_1a9c5767de9f5a409fd0c2027e6ac67179" kindref="member">twiddleCoef_2048_q31</ref>[3072];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref><sp/><ref refid="arm__common__tables_8h_1a67c0890317deab3391e276f22c1fc400" kindref="member">twiddleCoef_4096_q31</ref>[6144];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref><sp/><ref refid="arm__common__tables_8h_1a8e4e2e05f4a3112184c96cb3308d6c39" kindref="member">twiddleCoef_16_q15</ref>[24];</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref><sp/><ref refid="arm__common__tables_8h_1ac194a4fe04a19051ae1811f69c6e5df2" kindref="member">twiddleCoef_32_q15</ref>[48];</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref><sp/><ref refid="arm__common__tables_8h_1aa0cc411e0b3c82078e85cfdf1b84290f" kindref="member">twiddleCoef_64_q15</ref>[96];</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref><sp/><ref refid="arm__common__tables_8h_1abfdd1c5cd2b3f96da5fe5f07c707a8e5" kindref="member">twiddleCoef_128_q15</ref>[192];</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref><sp/><ref refid="arm__common__tables_8h_1a6099ae5262a0a3a8d9ce1e6da02f0c2e" kindref="member">twiddleCoef_256_q15</ref>[384];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref><sp/><ref refid="arm__common__tables_8h_1a6152621af210f847128c6f38958fa385" kindref="member">twiddleCoef_512_q15</ref>[768];</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref><sp/><ref refid="arm__common__tables_8h_1a8a0ec95d866fe96b740e77d6e1356b59" kindref="member">twiddleCoef_1024_q15</ref>[1536];</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref><sp/><ref refid="arm__common__tables_8h_1add16ce08ffd1048c385e0534a3b19cbb" kindref="member">twiddleCoef_2048_q15</ref>[3072];</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref><sp/><ref refid="arm__common__tables_8h_1a9b409d6995eab17805b1d1881d4bc652" kindref="member">twiddleCoef_4096_q15</ref>[6144];</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1a5992afe8574289cd71921651b80bd57d" kindref="member">twiddleCoef_rfft_32</ref>[32];</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1a2759d8789e1e6ae2ba7fb8d7f5e9c2ab" kindref="member">twiddleCoef_rfft_64</ref>[64];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1af089dd2fe1a543d40a3325982bf45e7c" kindref="member">twiddleCoef_rfft_128</ref>[128];</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1a5c5c161dd469d8e6806664956dae31f9" kindref="member">twiddleCoef_rfft_256</ref>[256];</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1a94bd2fc98798f87003fef5cd0c04d1f5" kindref="member">twiddleCoef_rfft_512</ref>[512];</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1aa7d8d3aa9898d557385748a13c959a4c" kindref="member">twiddleCoef_rfft_1024</ref>[1024];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1a749a5995ebd433a163f7adc474dabcaa" kindref="member">twiddleCoef_rfft_2048</ref>[2048];</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1a8013d68dd2476c86b77173bb98b87b29" kindref="member">twiddleCoef_rfft_4096</ref>[4096];</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>floating-point<sp/>bit<sp/>reversal<sp/>tables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="arm__common__tables_8h_1ae238c932ca2cc11cc8aebdfc953adb63" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_16_TABLE_LENGTH<sp/>((uint16_t)20)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="arm__common__tables_8h_1a53e4f11ab8b72fd91e9654efe1154ca5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_32_TABLE_LENGTH<sp/>((uint16_t)48)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="arm__common__tables_8h_1aa4cbc689396d844f626d942ef28eb4ba" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_64_TABLE_LENGTH<sp/>((uint16_t)56)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="arm__common__tables_8h_1abb73376f7efda869394aab2acef4291c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_128_TABLE_LENGTH<sp/>((uint16_t)208)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="arm__common__tables_8h_1aa7dc18c3b4f8d76f5a29f7b182007934" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_256_TABLE_LENGTH<sp/>((uint16_t)440)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="arm__common__tables_8h_1ab21231782baf177ef3edad11aeba5a4f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_512_TABLE_LENGTH<sp/>((uint16_t)448)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="arm__common__tables_8h_1a5f6f615f438c5134a9b7e746139705df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_1024_TABLE_LENGTH<sp/>((uint16_t)1800)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="arm__common__tables_8h_1a3c561d85c5fc37cf2e111123d32353c3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_2048_TABLE_LENGTH<sp/>((uint16_t)3808)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="arm__common__tables_8h_1ae89013dc2971400f8afa166c578ad944" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_4096_TABLE_LENGTH<sp/>((uint16_t)4032)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1a1d4574fdfbfd5698054602b26ad97575" kindref="member">armBitRevIndexTable16</ref>[<ref refid="arm__common__tables_8h_1ae238c932ca2cc11cc8aebdfc953adb63" kindref="member">ARMBITREVINDEXTABLE_16_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1a5eee9bb0fadbf7753c02cfcff1226185" kindref="member">armBitRevIndexTable32</ref>[<ref refid="arm__common__tables_8h_1a53e4f11ab8b72fd91e9654efe1154ca5" kindref="member">ARMBITREVINDEXTABLE_32_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1a07798450c81fc35b0e1b79359ee06ea1" kindref="member">armBitRevIndexTable64</ref>[<ref refid="arm__common__tables_8h_1aa4cbc689396d844f626d942ef28eb4ba" kindref="member">ARMBITREVINDEXTABLE_64_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1a04711bbb245f2ac7202db666eaaf10f2" kindref="member">armBitRevIndexTable128</ref>[<ref refid="arm__common__tables_8h_1abb73376f7efda869394aab2acef4291c" kindref="member">ARMBITREVINDEXTABLE_128_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1a77b17c8e7539af315c57de27610d8407" kindref="member">armBitRevIndexTable256</ref>[<ref refid="arm__common__tables_8h_1aa7dc18c3b4f8d76f5a29f7b182007934" kindref="member">ARMBITREVINDEXTABLE_256_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1a297a311183fb6d17d7ee0152ad1e43f3" kindref="member">armBitRevIndexTable512</ref>[<ref refid="arm__common__tables_8h_1ab21231782baf177ef3edad11aeba5a4f" kindref="member">ARMBITREVINDEXTABLE_512_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1a08dd0b98fa4cc50cad0f48ce752f8149" kindref="member">armBitRevIndexTable1024</ref>[<ref refid="arm__common__tables_8h_1a5f6f615f438c5134a9b7e746139705df" kindref="member">ARMBITREVINDEXTABLE_1024_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1adaa1b91f1cb7be2c5e236a3c3352caa0" kindref="member">armBitRevIndexTable2048</ref>[<ref refid="arm__common__tables_8h_1a3c561d85c5fc37cf2e111123d32353c3" kindref="member">ARMBITREVINDEXTABLE_2048_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1a8ffa3e551ae1de2bdafc33beba9c83eb" kindref="member">armBitRevIndexTable4096</ref>[<ref refid="arm__common__tables_8h_1ae89013dc2971400f8afa166c578ad944" kindref="member">ARMBITREVINDEXTABLE_4096_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>fixed-point<sp/>bit<sp/>reversal<sp/>tables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="arm__common__tables_8h_1ab8f00f11c681f734778ea7d9cecb3fe3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_FIXED_16_TABLE_LENGTH<sp/>((uint16_t)12)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="arm__common__tables_8h_1aae3857ea311fb1832bb4451ec77c77c4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_FIXED_32_TABLE_LENGTH<sp/>((uint16_t)24)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="arm__common__tables_8h_1ad3ffb74158ea438cc1a78eb17991df55" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_FIXED_64_TABLE_LENGTH<sp/>((uint16_t)56)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="arm__common__tables_8h_1a274d724b2798c114102f561ac4d9cb17" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_FIXED_128_TABLE_LENGTH<sp/>((uint16_t)112)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="arm__common__tables_8h_1a11c6f68fdde47cf4d0143354533399c9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_FIXED_256_TABLE_LENGTH<sp/>((uint16_t)240)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="arm__common__tables_8h_1a03e3f60f55c4cb2d4b34cc1b4f805e6e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_FIXED_512_TABLE_LENGTH<sp/>((uint16_t)480)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="arm__common__tables_8h_1ab78db333c5f36a927cf5f6b492e93dd3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_FIXED_1024_TABLE_LENGTH<sp/>((uint16_t)992)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="arm__common__tables_8h_1a7dbfc9019953b525d83184a50f9976cc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_FIXED_2048_TABLE_LENGTH<sp/>((uint16_t)1984)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="arm__common__tables_8h_1acbf48883fbb31d3dc71d232aa8e8f91f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARMBITREVINDEXTABLE_FIXED_4096_TABLE_LENGTH<sp/>((uint16_t)4032)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1a4685f68ca0a6c8f40d1a5738d2ce3797" kindref="member">armBitRevIndexTable_fixed_16</ref>[<ref refid="arm__common__tables_8h_1ab8f00f11c681f734778ea7d9cecb3fe3" kindref="member">ARMBITREVINDEXTABLE_FIXED_16_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1ac5dc7168ea9694ae75adac3cc567bce8" kindref="member">armBitRevIndexTable_fixed_32</ref>[<ref refid="arm__common__tables_8h_1aae3857ea311fb1832bb4451ec77c77c4" kindref="member">ARMBITREVINDEXTABLE_FIXED_32_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1a162819f8903f8b65ff40adc195aec214" kindref="member">armBitRevIndexTable_fixed_64</ref>[<ref refid="arm__common__tables_8h_1ad3ffb74158ea438cc1a78eb17991df55" kindref="member">ARMBITREVINDEXTABLE_FIXED_64_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1ae026eb3302d18a88f6d9a45070bb34a9" kindref="member">armBitRevIndexTable_fixed_128</ref>[<ref refid="arm__common__tables_8h_1a274d724b2798c114102f561ac4d9cb17" kindref="member">ARMBITREVINDEXTABLE_FIXED_128_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1a14e05e3c3a86ebd7ee0d33c85d67803f" kindref="member">armBitRevIndexTable_fixed_256</ref>[<ref refid="arm__common__tables_8h_1a11c6f68fdde47cf4d0143354533399c9" kindref="member">ARMBITREVINDEXTABLE_FIXED_256_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1ae78e67d99c9870210f5776a6dab7266e" kindref="member">armBitRevIndexTable_fixed_512</ref>[<ref refid="arm__common__tables_8h_1a03e3f60f55c4cb2d4b34cc1b4f805e6e" kindref="member">ARMBITREVINDEXTABLE_FIXED_512_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1a579beb19201fab01210c37253447fa52" kindref="member">armBitRevIndexTable_fixed_1024</ref>[<ref refid="arm__common__tables_8h_1ab78db333c5f36a927cf5f6b492e93dd3" kindref="member">ARMBITREVINDEXTABLE_FIXED_1024_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1ad888a207e20f601ed80b2ad43428c8cc" kindref="member">armBitRevIndexTable_fixed_2048</ref>[<ref refid="arm__common__tables_8h_1a7dbfc9019953b525d83184a50f9976cc" kindref="member">ARMBITREVINDEXTABLE_FIXED_2048_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="arm__common__tables_8h_1a2db644df1e878209441166cbb8d0db4f" kindref="member">armBitRevIndexTable_fixed_4096</ref>[<ref refid="arm__common__tables_8h_1acbf48883fbb31d3dc71d232aa8e8f91f" kindref="member">ARMBITREVINDEXTABLE_FIXED_4096_TABLE_LENGTH</ref>];</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Tables<sp/>for<sp/>Fast<sp/>Math<sp/>Sine<sp/>and<sp/>Cosine<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref><sp/><ref refid="arm__common__tables_8h_1a1dec82d596780f1a66ef4f76f137c1d9" kindref="member">sinTable_f32</ref>[<ref refid="arm__math_8h_1afcb9147c96853bea484cfc2dde07463d" kindref="member">FAST_MATH_TABLE_SIZE</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref><sp/><ref refid="arm__common__tables_8h_1a8bfccee9e1c0042cf4a765f4b19d097d" kindref="member">sinTable_q31</ref>[<ref refid="arm__math_8h_1afcb9147c96853bea484cfc2dde07463d" kindref="member">FAST_MATH_TABLE_SIZE</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref><sp/><ref refid="arm__common__tables_8h_1a9cbcfe313f61add745ebfeddb4fecd55" kindref="member">sinTable_q15</ref>[<ref refid="arm__math_8h_1afcb9147c96853bea484cfc2dde07463d" kindref="member">FAST_MATH_TABLE_SIZE</ref><sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/><sp/>ARM_COMMON_TABLES_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="SDK/CMSIS/arm_common_tables.h"/>
+  </compounddef>
+</doxygen>

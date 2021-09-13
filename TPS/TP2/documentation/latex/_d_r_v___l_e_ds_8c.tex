@@ -1,0 +1,130 @@
+\hypertarget{_d_r_v___l_e_ds_8c}{}\section{drivers/\+D\+R\+V\+\_\+\+L\+E\+Ds.c File Reference}
+\label{_d_r_v___l_e_ds_8c}\index{drivers/\+D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{drivers/\+D\+R\+V\+\_\+\+L\+E\+Ds.\+c}}
+
+
+L\+E\+Ds driver.  
+
+
+{\ttfamily \#include \char`\"{}D\+R\+V\+\_\+\+L\+E\+Ds.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}D\+R\+V\+\_\+\+Timers.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structselector__data__t}{selector\+\_\+data\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___l_e_ds_8c_aaf584f70289e5fd799fef97c85bb97ee}{S\+T\+A\+T\+U\+S0}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46}{PC}},2)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___l_e_ds_8c_aa6aa3353326411951938073499579582}{S\+T\+A\+T\+U\+S1}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46}{PC}},3)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structselector__data__t}{selector\+\_\+data\+\_\+t}} \mbox{\hyperlink{_d_r_v___l_e_ds_8c_a33d1f8844621110eee19cffeca4da32f}{selector\+\_\+data\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_r_v___l_e_ds_8c_ad01e06046ad67ff45343f39dcc81df90}{init\+L\+E\+Ds}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the L\+E\+Ds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___l_e_ds_8c_a83d7de4cef0c2924540b0290e67c579d}{disp\+Clear\+L\+ED}} (int n)
+\begin{DoxyCompactList}\small\item\em Turn off a L\+ED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___l_e_ds_8c_a83cf1c2a8516ed219e648d78a9633466}{disp\+Set\+L\+ED}} (int n)
+\begin{DoxyCompactList}\small\item\em Turn on a L\+ED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___l_e_ds_8c_ac68048849fab011ad6d1ef6bc3d77005}{disp\+Toggle\+L\+ED}} (int n)
+\begin{DoxyCompactList}\small\item\em Toggle a L\+ED. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+L\+E\+Ds driver. 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_aaf584f70289e5fd799fef97c85bb97ee}\label{_d_r_v___l_e_ds_8c_aaf584f70289e5fd799fef97c85bb97ee}} 
+\index{D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}!S\+T\+A\+T\+U\+S0@{S\+T\+A\+T\+U\+S0}}
+\index{S\+T\+A\+T\+U\+S0@{S\+T\+A\+T\+U\+S0}!D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+U\+S0}{STATUS0}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+U\+S0~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46}{PC}},2)}
+
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_aa6aa3353326411951938073499579582}\label{_d_r_v___l_e_ds_8c_aa6aa3353326411951938073499579582}} 
+\index{D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}!S\+T\+A\+T\+U\+S1@{S\+T\+A\+T\+U\+S1}}
+\index{S\+T\+A\+T\+U\+S1@{S\+T\+A\+T\+U\+S1}!D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+U\+S1}{STATUS1}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+U\+S1~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46}{PC}},3)}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_a33d1f8844621110eee19cffeca4da32f}\label{_d_r_v___l_e_ds_8c_a33d1f8844621110eee19cffeca4da32f}} 
+\index{D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}!selector\+\_\+data\+\_\+t@{selector\+\_\+data\+\_\+t}}
+\index{selector\+\_\+data\+\_\+t@{selector\+\_\+data\+\_\+t}!D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}}
+\subsubsection{\texorpdfstring{selector\+\_\+data\+\_\+t}{selector\_data\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structselector__data__t}{selector\+\_\+data\+\_\+t}} \mbox{\hyperlink{structselector__data__t}{selector\+\_\+data\+\_\+t}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_a83d7de4cef0c2924540b0290e67c579d}\label{_d_r_v___l_e_ds_8c_a83d7de4cef0c2924540b0290e67c579d}} 
+\index{D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}!disp\+Clear\+L\+ED@{disp\+Clear\+L\+ED}}
+\index{disp\+Clear\+L\+ED@{disp\+Clear\+L\+ED}!D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}}
+\subsubsection{\texorpdfstring{disp\+Clear\+L\+E\+D()}{dispClearLED()}}
+{\footnotesize\ttfamily void disp\+Clear\+L\+ED (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Turn off a L\+ED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index of L\+ED to turn off \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_a83cf1c2a8516ed219e648d78a9633466}\label{_d_r_v___l_e_ds_8c_a83cf1c2a8516ed219e648d78a9633466}} 
+\index{D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}!disp\+Set\+L\+ED@{disp\+Set\+L\+ED}}
+\index{disp\+Set\+L\+ED@{disp\+Set\+L\+ED}!D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}}
+\subsubsection{\texorpdfstring{disp\+Set\+L\+E\+D()}{dispSetLED()}}
+{\footnotesize\ttfamily void disp\+Set\+L\+ED (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Turn on a L\+ED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index of L\+ED to turn on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_ac68048849fab011ad6d1ef6bc3d77005}\label{_d_r_v___l_e_ds_8c_ac68048849fab011ad6d1ef6bc3d77005}} 
+\index{D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}!disp\+Toggle\+L\+ED@{disp\+Toggle\+L\+ED}}
+\index{disp\+Toggle\+L\+ED@{disp\+Toggle\+L\+ED}!D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}}
+\subsubsection{\texorpdfstring{disp\+Toggle\+L\+E\+D()}{dispToggleLED()}}
+{\footnotesize\ttfamily void disp\+Toggle\+L\+ED (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Toggle a L\+ED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index of L\+ED to toggle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 = timer expired 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_ad01e06046ad67ff45343f39dcc81df90}\label{_d_r_v___l_e_ds_8c_ad01e06046ad67ff45343f39dcc81df90}} 
+\index{D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}!init\+L\+E\+Ds@{init\+L\+E\+Ds}}
+\index{init\+L\+E\+Ds@{init\+L\+E\+Ds}!D\+R\+V\+\_\+\+L\+E\+Ds.\+c@{D\+R\+V\+\_\+\+L\+E\+Ds.\+c}}
+\subsubsection{\texorpdfstring{init\+L\+E\+Ds()}{initLEDs()}}
+{\footnotesize\ttfamily void init\+L\+E\+Ds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the L\+E\+Ds. 
+

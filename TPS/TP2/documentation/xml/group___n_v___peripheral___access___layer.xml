@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___n_v___peripheral___access___layer" kind="group">
+    <compoundname>NV_Peripheral_Access_Layer</compoundname>
+    <title>NV Peripheral Access Layer</title>
+    <innerclass refid="struct_n_v___type" prot="public">NV_Type</innerclass>
+    <innergroup refid="group___n_v___register___masks">NV Register Masks</innergroup>
+    <innergroup refid="group___o_s_c___peripheral___access___layer">OSC Peripheral Access Layer</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

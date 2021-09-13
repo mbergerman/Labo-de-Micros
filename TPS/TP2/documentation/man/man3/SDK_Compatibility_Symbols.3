@@ -1,0 +1,365 @@
+.TH "SDK_Compatibility_Symbols" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDK_Compatibility_Symbols
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBENET_RMON_R_DROP_REG\fP(base)   ENET_IEEE_R_DROP_REG(base)"
+.br
+.ti -1c
+.RI "#define \fBENET_RMON_R_FRAME_OK_REG\fP(base)   ENET_IEEE_R_FRAME_OK_REG(base)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_EREFS0_MASK\fP   \fBMCG_C2_EREFS_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_EREFS0_SHIFT\fP   \fBMCG_C2_EREFS_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_HGO0_MASK\fP   \fBMCG_C2_HGO_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_HGO0_SHIFT\fP   \fBMCG_C2_HGO_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_RANGE0_MASK\fP   \fBMCG_C2_RANGE_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_RANGE0_SHIFT\fP   \fBMCG_C2_RANGE_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_RANGE0\fP(x)   \fBMCG_C2_RANGE\fP(x)"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_REG\fP(base)   MCM_ISCR_REG(base)"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FIOC_MASK\fP   \fBMCM_ISCR_FIOC_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FIOC_SHIFT\fP   \fBMCM_ISCR_FIOC_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FDZC_MASK\fP   \fBMCM_ISCR_FDZC_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FDZC_SHIFT\fP   \fBMCM_ISCR_FDZC_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FOFC_MASK\fP   \fBMCM_ISCR_FOFC_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FOFC_SHIFT\fP   \fBMCM_ISCR_FOFC_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FUFC_MASK\fP   \fBMCM_ISCR_FUFC_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FUFC_SHIFT\fP   \fBMCM_ISCR_FUFC_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FIXC_MASK\fP   \fBMCM_ISCR_FIXC_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FIXC_SHIFT\fP   \fBMCM_ISCR_FIXC_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FIDC_MASK\fP   \fBMCM_ISCR_FIDC_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FIDC_SHIFT\fP   \fBMCM_ISCR_FIDC_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FIOCE_MASK\fP   \fBMCM_ISCR_FIOCE_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FIOCE_SHIFT\fP   \fBMCM_ISCR_FIOCE_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FDZCE_MASK\fP   \fBMCM_ISCR_FDZCE_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FDZCE_SHIFT\fP   \fBMCM_ISCR_FDZCE_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FOFCE_MASK\fP   \fBMCM_ISCR_FOFCE_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FOFCE_SHIFT\fP   \fBMCM_ISCR_FOFCE_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FUFCE_MASK\fP   \fBMCM_ISCR_FUFCE_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FUFCE_SHIFT\fP   \fBMCM_ISCR_FUFCE_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FIXCE_MASK\fP   \fBMCM_ISCR_FIXCE_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FIXCE_SHIFT\fP   \fBMCM_ISCR_FIXCE_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FIDCE_MASK\fP   \fBMCM_ISCR_FIDCE_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM_ISR_FIDCE_SHIFT\fP   \fBMCM_ISCR_FIDCE_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBDSPI0\fP   \fBSPI0\fP"
+.br
+.ti -1c
+.RI "#define \fBDSPI1\fP   \fBSPI1\fP"
+.br
+.ti -1c
+.RI "#define \fBDSPI2\fP   \fBSPI2\fP"
+.br
+.ti -1c
+.RI "#define \fBFLEXCAN0\fP   \fBCAN0\fP"
+.br
+.ti -1c
+.RI "#define \fBPTA_BASE\fP   \fBGPIOA_BASE\fP"
+.br
+.ti -1c
+.RI "#define \fBPTA\fP   \fBGPIOA\fP"
+.br
+.ti -1c
+.RI "#define \fBPTB_BASE\fP   \fBGPIOB_BASE\fP"
+.br
+.ti -1c
+.RI "#define \fBPTB\fP   \fBGPIOB\fP"
+.br
+.ti -1c
+.RI "#define \fBPTC_BASE\fP   \fBGPIOC_BASE\fP"
+.br
+.ti -1c
+.RI "#define \fBPTC\fP   \fBGPIOC\fP"
+.br
+.ti -1c
+.RI "#define \fBPTD_BASE\fP   \fBGPIOD_BASE\fP"
+.br
+.ti -1c
+.RI "#define \fBPTD\fP   \fBGPIOD\fP"
+.br
+.ti -1c
+.RI "#define \fBPTE_BASE\fP   \fBGPIOE_BASE\fP"
+.br
+.ti -1c
+.RI "#define \fBPTE\fP   \fBGPIOE\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816_T_TYPE0_REG\fP(base)   UART_WP7816T0_REG(base)"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816_T_TYPE1_REG\fP(base)   UART_WP7816T1_REG(base)"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816_T_TYPE0_WI_MASK\fP   \fBUART_WP7816T0_WI_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816_T_TYPE0_WI_SHIFT\fP   \fBUART_WP7816T0_WI_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816_T_TYPE0_WI\fP(x)   \fBUART_WP7816T0_WI\fP(x)"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816_T_TYPE1_BWI_MASK\fP   \fBUART_WP7816T1_BWI_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816_T_TYPE1_BWI_SHIFT\fP   \fBUART_WP7816T1_BWI_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816_T_TYPE1_BWI\fP(x)   \fBUART_WP7816T1_BWI\fP(x)"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816_T_TYPE1_CWI_MASK\fP   \fBUART_WP7816T1_CWI_MASK\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816_T_TYPE1_CWI_SHIFT\fP   \fBUART_WP7816T1_CWI_SHIFT\fP"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816_T_TYPE1_CWI\fP(x)   \fBUART_WP7816T1_CWI\fP(x)"
+.br
+.ti -1c
+.RI "#define \fBWatchdog_IRQn\fP   \fBWDOG_EWM_IRQn\fP"
+.br
+.ti -1c
+.RI "#define \fBWatchdog_IRQHandler\fP   \fBWDOG_EWM_IRQHandler\fP"
+.br
+.ti -1c
+.RI "#define \fBLPTimer_IRQn\fP   \fBLPTMR0_IRQn\fP"
+.br
+.ti -1c
+.RI "#define \fBLPTimer_IRQHandler\fP   \fBLPTMR0_IRQHandler\fP"
+.br
+.ti -1c
+.RI "#define \fBLLW_IRQn\fP   \fBLLWU_IRQn\fP"
+.br
+.ti -1c
+.RI "#define \fBLLW_IRQHandler\fP   \fBLLWU_IRQHandler\fP"
+.br
+.ti -1c
+.RI "#define \fBDMAMUX0\fP   \fBDMAMUX\fP"
+.br
+.ti -1c
+.RI "#define \fBWDOG0\fP   \fBWDOG\fP"
+.br
+.ti -1c
+.RI "#define \fBMCM0\fP   \fBMCM\fP"
+.br
+.ti -1c
+.RI "#define \fBRTC0\fP   \fBRTC\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DMAMUX0   \fBDMAMUX\fP"
+
+.SS "#define DSPI0   \fBSPI0\fP"
+
+.SS "#define DSPI1   \fBSPI1\fP"
+
+.SS "#define DSPI2   \fBSPI2\fP"
+
+.SS "#define ENET_RMON_R_DROP_REG(base)   ENET_IEEE_R_DROP_REG(base)"
+
+.SS "#define ENET_RMON_R_FRAME_OK_REG(base)   ENET_IEEE_R_FRAME_OK_REG(base)"
+
+.SS "#define FLEXCAN0   \fBCAN0\fP"
+
+.SS "#define LLW_IRQHandler   \fBLLWU_IRQHandler\fP"
+
+.SS "#define LLW_IRQn   \fBLLWU_IRQn\fP"
+
+.SS "#define LPTimer_IRQHandler   \fBLPTMR0_IRQHandler\fP"
+
+.SS "#define LPTimer_IRQn   \fBLPTMR0_IRQn\fP"
+
+.SS "#define MCG_C2_EREFS0_MASK   \fBMCG_C2_EREFS_MASK\fP"
+
+.SS "#define MCG_C2_EREFS0_SHIFT   \fBMCG_C2_EREFS_SHIFT\fP"
+
+.SS "#define MCG_C2_HGO0_MASK   \fBMCG_C2_HGO_MASK\fP"
+
+.SS "#define MCG_C2_HGO0_SHIFT   \fBMCG_C2_HGO_SHIFT\fP"
+
+.SS "#define MCG_C2_RANGE0(x)   \fBMCG_C2_RANGE\fP(x)"
+
+.SS "#define MCG_C2_RANGE0_MASK   \fBMCG_C2_RANGE_MASK\fP"
+
+.SS "#define MCG_C2_RANGE0_SHIFT   \fBMCG_C2_RANGE_SHIFT\fP"
+
+.SS "#define MCM0   \fBMCM\fP"
+
+.SS "#define MCM_ISR_FDZC_MASK   \fBMCM_ISCR_FDZC_MASK\fP"
+
+.SS "#define MCM_ISR_FDZC_SHIFT   \fBMCM_ISCR_FDZC_SHIFT\fP"
+
+.SS "#define MCM_ISR_FDZCE_MASK   \fBMCM_ISCR_FDZCE_MASK\fP"
+
+.SS "#define MCM_ISR_FDZCE_SHIFT   \fBMCM_ISCR_FDZCE_SHIFT\fP"
+
+.SS "#define MCM_ISR_FIDC_MASK   \fBMCM_ISCR_FIDC_MASK\fP"
+
+.SS "#define MCM_ISR_FIDC_SHIFT   \fBMCM_ISCR_FIDC_SHIFT\fP"
+
+.SS "#define MCM_ISR_FIDCE_MASK   \fBMCM_ISCR_FIDCE_MASK\fP"
+
+.SS "#define MCM_ISR_FIDCE_SHIFT   \fBMCM_ISCR_FIDCE_SHIFT\fP"
+
+.SS "#define MCM_ISR_FIOC_MASK   \fBMCM_ISCR_FIOC_MASK\fP"
+
+.SS "#define MCM_ISR_FIOC_SHIFT   \fBMCM_ISCR_FIOC_SHIFT\fP"
+
+.SS "#define MCM_ISR_FIOCE_MASK   \fBMCM_ISCR_FIOCE_MASK\fP"
+
+.SS "#define MCM_ISR_FIOCE_SHIFT   \fBMCM_ISCR_FIOCE_SHIFT\fP"
+
+.SS "#define MCM_ISR_FIXC_MASK   \fBMCM_ISCR_FIXC_MASK\fP"
+
+.SS "#define MCM_ISR_FIXC_SHIFT   \fBMCM_ISCR_FIXC_SHIFT\fP"
+
+.SS "#define MCM_ISR_FIXCE_MASK   \fBMCM_ISCR_FIXCE_MASK\fP"
+
+.SS "#define MCM_ISR_FIXCE_SHIFT   \fBMCM_ISCR_FIXCE_SHIFT\fP"
+
+.SS "#define MCM_ISR_FOFC_MASK   \fBMCM_ISCR_FOFC_MASK\fP"
+
+.SS "#define MCM_ISR_FOFC_SHIFT   \fBMCM_ISCR_FOFC_SHIFT\fP"
+
+.SS "#define MCM_ISR_FOFCE_MASK   \fBMCM_ISCR_FOFCE_MASK\fP"
+
+.SS "#define MCM_ISR_FOFCE_SHIFT   \fBMCM_ISCR_FOFCE_SHIFT\fP"
+
+.SS "#define MCM_ISR_FUFC_MASK   \fBMCM_ISCR_FUFC_MASK\fP"
+
+.SS "#define MCM_ISR_FUFC_SHIFT   \fBMCM_ISCR_FUFC_SHIFT\fP"
+
+.SS "#define MCM_ISR_FUFCE_MASK   \fBMCM_ISCR_FUFCE_MASK\fP"
+
+.SS "#define MCM_ISR_FUFCE_SHIFT   \fBMCM_ISCR_FUFCE_SHIFT\fP"
+
+.SS "#define MCM_ISR_REG(base)   MCM_ISCR_REG(base)"
+
+.SS "#define PTA   \fBGPIOA\fP"
+
+.SS "#define PTA_BASE   \fBGPIOA_BASE\fP"
+
+.SS "#define PTB   \fBGPIOB\fP"
+
+.SS "#define PTB_BASE   \fBGPIOB_BASE\fP"
+
+.SS "#define PTC   \fBGPIOC\fP"
+
+.SS "#define PTC_BASE   \fBGPIOC_BASE\fP"
+
+.SS "#define PTD   \fBGPIOD\fP"
+
+.SS "#define PTD_BASE   \fBGPIOD_BASE\fP"
+
+.SS "#define PTE   \fBGPIOE\fP"
+
+.SS "#define PTE_BASE   \fBGPIOE_BASE\fP"
+
+.SS "#define RTC0   \fBRTC\fP"
+
+.SS "#define UART_WP7816_T_TYPE0_REG(base)   UART_WP7816T0_REG(base)"
+
+.SS "#define UART_WP7816_T_TYPE0_WI(x)   \fBUART_WP7816T0_WI\fP(x)"
+
+.SS "#define UART_WP7816_T_TYPE0_WI_MASK   \fBUART_WP7816T0_WI_MASK\fP"
+
+.SS "#define UART_WP7816_T_TYPE0_WI_SHIFT   \fBUART_WP7816T0_WI_SHIFT\fP"
+
+.SS "#define UART_WP7816_T_TYPE1_BWI(x)   \fBUART_WP7816T1_BWI\fP(x)"
+
+.SS "#define UART_WP7816_T_TYPE1_BWI_MASK   \fBUART_WP7816T1_BWI_MASK\fP"
+
+.SS "#define UART_WP7816_T_TYPE1_BWI_SHIFT   \fBUART_WP7816T1_BWI_SHIFT\fP"
+
+.SS "#define UART_WP7816_T_TYPE1_CWI(x)   \fBUART_WP7816T1_CWI\fP(x)"
+
+.SS "#define UART_WP7816_T_TYPE1_CWI_MASK   \fBUART_WP7816T1_CWI_MASK\fP"
+
+.SS "#define UART_WP7816_T_TYPE1_CWI_SHIFT   \fBUART_WP7816T1_CWI_SHIFT\fP"
+
+.SS "#define UART_WP7816_T_TYPE1_REG(base)   UART_WP7816T1_REG(base)"
+
+.SS "#define Watchdog_IRQHandler   \fBWDOG_EWM_IRQHandler\fP"
+
+.SS "#define Watchdog_IRQn   \fBWDOG_EWM_IRQn\fP"
+
+.SS "#define WDOG0   \fBWDOG\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

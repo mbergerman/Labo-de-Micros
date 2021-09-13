@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___bit___field___generic___macros" kind="group">
+    <compoundname>Bit_Field_Generic_Macros</compoundname>
+    <title>Macros for use with bit field definitions (xxx_SHIFT, xxx_MASK).</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___bit___field___generic___macros_1ga174e73af51fd6bf7974359c28ec60c0d" prot="public" static="no">
+        <name>NXP_VAL2FLD</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>(((value) &lt;&lt; (field ## _SHIFT)) &amp; (field ## _MASK))</initializer>
+        <briefdescription>
+<para>Mask and left-shift a bit field value for use in a register bit range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the bit field. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12678" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___bit___field___generic___macros_1ga83e253adbbe07eccc440659bf67ef176" prot="public" static="no">
+        <name>NXP_FLD2VAL</name>
+        <param><defname>field</defname></param>
+        <param><defname>value</defname></param>
+        <initializer>(((value) &amp; (field ## _MASK)) &gt;&gt; (field ## _SHIFT))</initializer>
+        <briefdescription>
+<para>Mask and right-shift a register value to extract a bit field value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the register bit field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Masked and shifted bit field value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12685" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12685" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_r_c_m___type" kind="struct" language="C++" prot="public">
+    <compoundname>RCM_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga41d4e6ae9fb47445146929d15e97153f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t SRS0</definition>
+        <argsstring></argsstring>
+        <name>SRS0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Reset Status Register 0, offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9038" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9038" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga2164524ec77565baad264a25fbc65378" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t SRS1</definition>
+        <argsstring></argsstring>
+        <name>SRS1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Reset Status Register 1, offset: 0x1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9039" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9039" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga1d386ff4b328960f430b4c63f61423fa" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_0[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>RESERVED_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9040" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9040" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gadb3a6cb8a3c37e9a55ab12962d0983d1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t RPFC</definition>
+        <argsstring></argsstring>
+        <name>RPFC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset Pin Filter Control register, offset: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9041" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga9423324babed28ac7e0a6990356c8cb1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t RPFW</definition>
+        <argsstring></argsstring>
+        <name>RPFW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset Pin Filter Width register, offset: 0x5 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9042" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9042" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga83b2d6f5756a9b0aa609216190380d5f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_1[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>RESERVED_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9043" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9043" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaab9056b0fa2520560ed862f6bbde62d5" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t MR</definition>
+        <argsstring></argsstring>
+        <name>MR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mode Register, offset: 0x7 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9044" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9044" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>RCM - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="9037" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9037" bodyend="9045"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaab9056b0fa2520560ed862f6bbde62d5" prot="public" virt="non-virtual"><scope>RCM_Type</scope><name>MR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga1d386ff4b328960f430b4c63f61423fa" prot="public" virt="non-virtual"><scope>RCM_Type</scope><name>RESERVED_0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga83b2d6f5756a9b0aa609216190380d5f" prot="public" virt="non-virtual"><scope>RCM_Type</scope><name>RESERVED_1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gadb3a6cb8a3c37e9a55ab12962d0983d1" prot="public" virt="non-virtual"><scope>RCM_Type</scope><name>RPFC</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga9423324babed28ac7e0a6990356c8cb1" prot="public" virt="non-virtual"><scope>RCM_Type</scope><name>RPFW</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga41d4e6ae9fb47445146929d15e97153f" prot="public" virt="non-virtual"><scope>RCM_Type</scope><name>SRS0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga2164524ec77565baad264a25fbc65378" prot="public" virt="non-virtual"><scope>RCM_Type</scope><name>SRS1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_users" kind="struct" language="C++" prot="public">
+    <compoundname>Users</compoundname>
+    <includes refid="_account_manager_8h" local="no">AccountManager.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_users_1a505f98fde467109a9b37b3c7e008df91" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/AccountManager.h" line="12" column="1" bodyfile="source/AccountManager.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_users_1a91ee63dd24a702a6b71474783c75a66c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PIN</definition>
+        <argsstring></argsstring>
+        <name>PIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/AccountManager.h" line="13" column="1" bodyfile="source/AccountManager.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_users_1a2b91ea0bc21540d131b22cfdfe731575" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool admin</definition>
+        <argsstring></argsstring>
+        <name>admin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/AccountManager.h" line="14" column="1" bodyfile="source/AccountManager.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_users_1ac600fd46d2914d09fe3d45b3a2c7ac1f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t error_counter</definition>
+        <argsstring></argsstring>
+        <name>error_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="source/AccountManager.h" line="15" column="1" bodyfile="source/AccountManager.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="source/AccountManager.h" line="11" column="1" bodyfile="source/AccountManager.h" bodystart="11" bodyend="16"/>
+    <listofallmembers>
+      <member refid="struct_users_1a2b91ea0bc21540d131b22cfdfe731575" prot="public" virt="non-virtual"><scope>Users</scope><name>admin</name></member>
+      <member refid="struct_users_1ac600fd46d2914d09fe3d45b3a2c7ac1f" prot="public" virt="non-virtual"><scope>Users</scope><name>error_counter</name></member>
+      <member refid="struct_users_1a505f98fde467109a9b37b3c7e008df91" prot="public" virt="non-virtual"><scope>Users</scope><name>ID</name></member>
+      <member refid="struct_users_1a91ee63dd24a702a6b71474783c75a66c" prot="public" virt="non-virtual"><scope>Users</scope><name>PIN</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

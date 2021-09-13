@@ -1,0 +1,336 @@
+\hypertarget{_d_r_v___reader_8c}{}\section{drivers/\+D\+R\+V\+\_\+\+Reader.c File Reference}
+\label{_d_r_v___reader_8c}\index{drivers/\+D\+R\+V\+\_\+\+Reader.\+c@{drivers/\+D\+R\+V\+\_\+\+Reader.\+c}}
+
+
+Card Reader driver.  
+
+
+{\ttfamily \#include \char`\"{}D\+R\+V\+\_\+\+Reader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}D\+R\+V\+\_\+\+Timers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_a28159f70aebcb3b21df0120d594e1939}{R\+E\+A\+D\+E\+R\+\_\+\+E\+N\+\_\+\+P\+IN}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caefbc069e0ac4cd293f3ba527bec2befe}{PD}}, 0)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_a7168ccc01afed197832116ec978ba63a}{R\+E\+A\+D\+E\+R\+\_\+\+C\+L\+K\+\_\+\+P\+IN}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46}{PC}}, 4)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_affad0f95379bff37886b116b51bf8b0d}{R\+E\+A\+D\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+P\+IN}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46}{PC}}, 12)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_aa719023469aabec46d4dadd666d9f209}{E\+N\+\_\+\+A\+C\+T\+I\+VE}}~false
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_a993b4fb67e3437103133ed87460a4532}{D\+A\+T\+A\+\_\+\+O\+NE}}~false
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_a6757469e1915383ea7fc7343fe496452}{D\+A\+T\+A\+\_\+\+Z\+E\+RO}}~(!\mbox{\hyperlink{_d_r_v___reader_8c_a993b4fb67e3437103133ed87460a4532}{D\+A\+T\+A\+\_\+\+O\+NE}})
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_ad49a288461a55d7886b997cdf802eb4c}{C\+H\+A\+R\+\_\+\+B\+I\+TS}}~5
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_a46130dc86f2322714bba26960b64e7bb}{B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}}~40
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_af27cdd7d86a39cdc58fac232a2722f59}{P\+A\+N\+\_\+\+M\+A\+X\+\_\+\+L\+EN}}~\mbox{\hyperlink{_d_r_v___reader_8h_a273974a97c208115303726fba17f353a}{R\+E\+A\+D\+E\+R\+\_\+\+N\+U\+M\+\_\+\+M\+A\+X\+\_\+\+L\+EN}}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_a5bbe679437d50ba51d08134a57e1076b}{A\+D\+D\+\_\+\+C\+H\+A\+R\+S\+\_\+\+M\+IN}}~7
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_a187ee748ebe6331b05836f8046b3564c}{N\+U\+M\+\_\+\+D\+A\+T\+A\+\_\+\+L\+EN}}~37
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_ae9c987690f7203f4de165caa0f9b0b2c}{F\+S\+\_\+\+L\+EN}}~1
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_af65d8899dad9889cd9807bc893109a1f}{S\+S\+\_\+\+C\+H\+AR}}~\textquotesingle{};\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_a1bf20da49202b479833dc11d48a46816}{F\+S\+\_\+\+C\+H\+AR}}~\textquotesingle{}=\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_a59f85504422ee376edc566e322b61059}{E\+S\+\_\+\+C\+H\+AR}}~\textquotesingle{}?\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_a1452476a5d1d19e5cc2ff6019b246196}{E\+S\+\_\+\+B\+I\+TS}}~0b11111
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_a5cab2c25d7665ad88929a668e4618881}{B\+I\+T\+S2\+C\+H\+AR}}(b)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___reader_8c_a576acc9d81faf889a7fa391bc0efa52e}{B\+I\+T\+P\+A\+R\+I\+T\+Y4}}(b)~((b \& 0b1) $^\wedge$ (b$>$$>$1 \& 0b1) $^\wedge$ (b$>$$>$2 \& 0b1) $^\wedge$ (b$>$$>$3 \& 0b1))
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{_d_r_v___reader_8c_adf764cbdea00d65edcd07bb9953ad2b7a13d000b4d7dc70d90239b7430d1eb6b2}{S\+T\+A\+RT}}, 
+\mbox{\hyperlink{_d_r_v___reader_8c_adf764cbdea00d65edcd07bb9953ad2b7a4618cf21306b3c647741afa7ebefcab8}{C\+H\+AR}}, 
+\mbox{\hyperlink{_d_r_v___reader_8c_adf764cbdea00d65edcd07bb9953ad2b7adc6f24fd6915a3f2786a1b7045406924}{E\+ND}}
+ \}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5acc878d90418c98b0b3a20258310c0f52}{SS}}, 
+\mbox{\hyperlink{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5a1fea4799e7e5d4fd82b3df6813ce0e71}{P\+AN}}, 
+\mbox{\hyperlink{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5ae63d77c61a2a5b9777024af082a36719}{AD}}, 
+\mbox{\hyperlink{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5aaf30f40fd895faed3d20bf98ad054e7c}{L\+RC}}, 
+\newline
+\mbox{\hyperlink{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5ac7f69f7c9e5aea9b8f54cf02870e2bf8}{S\+U\+C\+C\+E\+SS}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_r_v___reader_8c_a1edc5658ebaaaed4ec5b1b520bc5cf71}{init\+Reader}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize Card Reader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___reader_8c_a23a56b75cca671151b013d1464a3bf2a}{enable\+Reader}} ()
+\begin{DoxyCompactList}\small\item\em Enable card Reader interruptions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___reader_8c_a4160776125d798e39060872637a4b597}{disable\+Reader}} ()
+\begin{DoxyCompactList}\small\item\em Disable Card Reader interruptions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_d_r_v___reader_8c_adb8a350345065d17d49f01b9f3bd01b2}{reader\+Running}} ()
+\item 
+bool \mbox{\hyperlink{_d_r_v___reader_8c_a9062773cd482afcd89e2de039c2ea172}{reader\+Is\+Ready}} ()
+\begin{DoxyCompactList}\small\item\em Check if card has been correctly swiped. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___reader_8c_aea291c8cddfc6d9987a2a94fbe3fd3ea}{get\+Value\+Reader}} (char $\ast$result\+\_\+number\+\_\+ptr, uint8\+\_\+t $\ast$result\+\_\+len\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Get card number value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Card Reader driver. 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_d_r_v___reader_8c_a5bbe679437d50ba51d08134a57e1076b}\label{_d_r_v___reader_8c_a5bbe679437d50ba51d08134a57e1076b}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!A\+D\+D\+\_\+\+C\+H\+A\+R\+S\+\_\+\+M\+IN@{A\+D\+D\+\_\+\+C\+H\+A\+R\+S\+\_\+\+M\+IN}}
+\index{A\+D\+D\+\_\+\+C\+H\+A\+R\+S\+\_\+\+M\+IN@{A\+D\+D\+\_\+\+C\+H\+A\+R\+S\+\_\+\+M\+IN}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{A\+D\+D\+\_\+\+C\+H\+A\+R\+S\+\_\+\+M\+IN}{ADD\_CHARS\_MIN}}
+{\footnotesize\ttfamily \#define A\+D\+D\+\_\+\+C\+H\+A\+R\+S\+\_\+\+M\+IN~7}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_a576acc9d81faf889a7fa391bc0efa52e}\label{_d_r_v___reader_8c_a576acc9d81faf889a7fa391bc0efa52e}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!B\+I\+T\+P\+A\+R\+I\+T\+Y4@{B\+I\+T\+P\+A\+R\+I\+T\+Y4}}
+\index{B\+I\+T\+P\+A\+R\+I\+T\+Y4@{B\+I\+T\+P\+A\+R\+I\+T\+Y4}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{B\+I\+T\+P\+A\+R\+I\+T\+Y4}{BITPARITY4}}
+{\footnotesize\ttfamily \#define B\+I\+T\+P\+A\+R\+I\+T\+Y4(\begin{DoxyParamCaption}\item[{}]{b }\end{DoxyParamCaption})~((b \& 0b1) $^\wedge$ (b$>$$>$1 \& 0b1) $^\wedge$ (b$>$$>$2 \& 0b1) $^\wedge$ (b$>$$>$3 \& 0b1))}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_a5cab2c25d7665ad88929a668e4618881}\label{_d_r_v___reader_8c_a5cab2c25d7665ad88929a668e4618881}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!B\+I\+T\+S2\+C\+H\+AR@{B\+I\+T\+S2\+C\+H\+AR}}
+\index{B\+I\+T\+S2\+C\+H\+AR@{B\+I\+T\+S2\+C\+H\+AR}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{B\+I\+T\+S2\+C\+H\+AR}{BITS2CHAR}}
+{\footnotesize\ttfamily \#define B\+I\+T\+S2\+C\+H\+AR(\begin{DoxyParamCaption}\item[{}]{b }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((b == 0b10000) ? \textcolor{charliteral}{'0'} : \(\backslash\)
+                        ((b == 0b00001) ? \textcolor{charliteral}{'1'} : \(\backslash\)
+                        ((b == 0b00010) ? \textcolor{charliteral}{'2'} : \(\backslash\)
+                        ((b == 0b10011) ? \textcolor{charliteral}{'3'} : \(\backslash\)
+                        ((b == 0b00100) ? \textcolor{charliteral}{'4'} : \(\backslash\)
+                        ((b == 0b10101) ? \textcolor{charliteral}{'5'} : \(\backslash\)
+                        ((b == 0b10110) ? \textcolor{charliteral}{'6'} : \(\backslash\)
+                        ((b == 0b00111) ? \textcolor{charliteral}{'7'} : \(\backslash\)
+                        ((b == 0b01000) ? \textcolor{charliteral}{'8'} : \(\backslash\)
+                        ((b == 0b11001) ? \textcolor{charliteral}{'9'} : \(\backslash\)
+                        ((b == 0b11010) ? \textcolor{charliteral}{':'} : \(\backslash\)
+                        ((b == 0b01011) ? \textcolor{charliteral}{';'} : \(\backslash\)
+                        ((b == 0b11100) ? \textcolor{charliteral}{'<'} : \(\backslash\)
+                        ((b == 0b01101) ? \textcolor{charliteral}{'='} : \(\backslash\)
+                        ((b == 0b01110) ? \textcolor{charliteral}{'>'} : \(\backslash\)
+                        ((b == 0b11111) ? \textcolor{charliteral}{'?'} : \textcolor{charliteral}{'X'} \(\backslash\)
+                        ))))))))))))))))
+\end{DoxyCode}
+\mbox{\Hypertarget{_d_r_v___reader_8c_a46130dc86f2322714bba26960b64e7bb}\label{_d_r_v___reader_8c_a46130dc86f2322714bba26960b64e7bb}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!B\+U\+F\+F\+E\+R\+\_\+\+L\+EN@{B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}}
+\index{B\+U\+F\+F\+E\+R\+\_\+\+L\+EN@{B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}{BUFFER\_LEN}}
+{\footnotesize\ttfamily \#define B\+U\+F\+F\+E\+R\+\_\+\+L\+EN~40}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_ad49a288461a55d7886b997cdf802eb4c}\label{_d_r_v___reader_8c_ad49a288461a55d7886b997cdf802eb4c}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!C\+H\+A\+R\+\_\+\+B\+I\+TS@{C\+H\+A\+R\+\_\+\+B\+I\+TS}}
+\index{C\+H\+A\+R\+\_\+\+B\+I\+TS@{C\+H\+A\+R\+\_\+\+B\+I\+TS}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{C\+H\+A\+R\+\_\+\+B\+I\+TS}{CHAR\_BITS}}
+{\footnotesize\ttfamily \#define C\+H\+A\+R\+\_\+\+B\+I\+TS~5}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_a993b4fb67e3437103133ed87460a4532}\label{_d_r_v___reader_8c_a993b4fb67e3437103133ed87460a4532}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!D\+A\+T\+A\+\_\+\+O\+NE@{D\+A\+T\+A\+\_\+\+O\+NE}}
+\index{D\+A\+T\+A\+\_\+\+O\+NE@{D\+A\+T\+A\+\_\+\+O\+NE}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{D\+A\+T\+A\+\_\+\+O\+NE}{DATA\_ONE}}
+{\footnotesize\ttfamily \#define D\+A\+T\+A\+\_\+\+O\+NE~false}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_a6757469e1915383ea7fc7343fe496452}\label{_d_r_v___reader_8c_a6757469e1915383ea7fc7343fe496452}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!D\+A\+T\+A\+\_\+\+Z\+E\+RO@{D\+A\+T\+A\+\_\+\+Z\+E\+RO}}
+\index{D\+A\+T\+A\+\_\+\+Z\+E\+RO@{D\+A\+T\+A\+\_\+\+Z\+E\+RO}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{D\+A\+T\+A\+\_\+\+Z\+E\+RO}{DATA\_ZERO}}
+{\footnotesize\ttfamily \#define D\+A\+T\+A\+\_\+\+Z\+E\+RO~(!\mbox{\hyperlink{_d_r_v___reader_8c_a993b4fb67e3437103133ed87460a4532}{D\+A\+T\+A\+\_\+\+O\+NE}})}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_aa719023469aabec46d4dadd666d9f209}\label{_d_r_v___reader_8c_aa719023469aabec46d4dadd666d9f209}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!E\+N\+\_\+\+A\+C\+T\+I\+VE@{E\+N\+\_\+\+A\+C\+T\+I\+VE}}
+\index{E\+N\+\_\+\+A\+C\+T\+I\+VE@{E\+N\+\_\+\+A\+C\+T\+I\+VE}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{E\+N\+\_\+\+A\+C\+T\+I\+VE}{EN\_ACTIVE}}
+{\footnotesize\ttfamily \#define E\+N\+\_\+\+A\+C\+T\+I\+VE~false}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_a1452476a5d1d19e5cc2ff6019b246196}\label{_d_r_v___reader_8c_a1452476a5d1d19e5cc2ff6019b246196}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!E\+S\+\_\+\+B\+I\+TS@{E\+S\+\_\+\+B\+I\+TS}}
+\index{E\+S\+\_\+\+B\+I\+TS@{E\+S\+\_\+\+B\+I\+TS}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{E\+S\+\_\+\+B\+I\+TS}{ES\_BITS}}
+{\footnotesize\ttfamily \#define E\+S\+\_\+\+B\+I\+TS~0b11111}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_a59f85504422ee376edc566e322b61059}\label{_d_r_v___reader_8c_a59f85504422ee376edc566e322b61059}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!E\+S\+\_\+\+C\+H\+AR@{E\+S\+\_\+\+C\+H\+AR}}
+\index{E\+S\+\_\+\+C\+H\+AR@{E\+S\+\_\+\+C\+H\+AR}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{E\+S\+\_\+\+C\+H\+AR}{ES\_CHAR}}
+{\footnotesize\ttfamily \#define E\+S\+\_\+\+C\+H\+AR~\textquotesingle{}?\textquotesingle{}}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_a1bf20da49202b479833dc11d48a46816}\label{_d_r_v___reader_8c_a1bf20da49202b479833dc11d48a46816}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!F\+S\+\_\+\+C\+H\+AR@{F\+S\+\_\+\+C\+H\+AR}}
+\index{F\+S\+\_\+\+C\+H\+AR@{F\+S\+\_\+\+C\+H\+AR}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{F\+S\+\_\+\+C\+H\+AR}{FS\_CHAR}}
+{\footnotesize\ttfamily \#define F\+S\+\_\+\+C\+H\+AR~\textquotesingle{}=\textquotesingle{}}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_ae9c987690f7203f4de165caa0f9b0b2c}\label{_d_r_v___reader_8c_ae9c987690f7203f4de165caa0f9b0b2c}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!F\+S\+\_\+\+L\+EN@{F\+S\+\_\+\+L\+EN}}
+\index{F\+S\+\_\+\+L\+EN@{F\+S\+\_\+\+L\+EN}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{F\+S\+\_\+\+L\+EN}{FS\_LEN}}
+{\footnotesize\ttfamily \#define F\+S\+\_\+\+L\+EN~1}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_a187ee748ebe6331b05836f8046b3564c}\label{_d_r_v___reader_8c_a187ee748ebe6331b05836f8046b3564c}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!N\+U\+M\+\_\+\+D\+A\+T\+A\+\_\+\+L\+EN@{N\+U\+M\+\_\+\+D\+A\+T\+A\+\_\+\+L\+EN}}
+\index{N\+U\+M\+\_\+\+D\+A\+T\+A\+\_\+\+L\+EN@{N\+U\+M\+\_\+\+D\+A\+T\+A\+\_\+\+L\+EN}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{N\+U\+M\+\_\+\+D\+A\+T\+A\+\_\+\+L\+EN}{NUM\_DATA\_LEN}}
+{\footnotesize\ttfamily \#define N\+U\+M\+\_\+\+D\+A\+T\+A\+\_\+\+L\+EN~37}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_af27cdd7d86a39cdc58fac232a2722f59}\label{_d_r_v___reader_8c_af27cdd7d86a39cdc58fac232a2722f59}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!P\+A\+N\+\_\+\+M\+A\+X\+\_\+\+L\+EN@{P\+A\+N\+\_\+\+M\+A\+X\+\_\+\+L\+EN}}
+\index{P\+A\+N\+\_\+\+M\+A\+X\+\_\+\+L\+EN@{P\+A\+N\+\_\+\+M\+A\+X\+\_\+\+L\+EN}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{P\+A\+N\+\_\+\+M\+A\+X\+\_\+\+L\+EN}{PAN\_MAX\_LEN}}
+{\footnotesize\ttfamily \#define P\+A\+N\+\_\+\+M\+A\+X\+\_\+\+L\+EN~\mbox{\hyperlink{_d_r_v___reader_8h_a273974a97c208115303726fba17f353a}{R\+E\+A\+D\+E\+R\+\_\+\+N\+U\+M\+\_\+\+M\+A\+X\+\_\+\+L\+EN}}}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_a7168ccc01afed197832116ec978ba63a}\label{_d_r_v___reader_8c_a7168ccc01afed197832116ec978ba63a}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!R\+E\+A\+D\+E\+R\+\_\+\+C\+L\+K\+\_\+\+P\+IN@{R\+E\+A\+D\+E\+R\+\_\+\+C\+L\+K\+\_\+\+P\+IN}}
+\index{R\+E\+A\+D\+E\+R\+\_\+\+C\+L\+K\+\_\+\+P\+IN@{R\+E\+A\+D\+E\+R\+\_\+\+C\+L\+K\+\_\+\+P\+IN}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{R\+E\+A\+D\+E\+R\+\_\+\+C\+L\+K\+\_\+\+P\+IN}{READER\_CLK\_PIN}}
+{\footnotesize\ttfamily \#define R\+E\+A\+D\+E\+R\+\_\+\+C\+L\+K\+\_\+\+P\+IN~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46}{PC}}, 4)}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_affad0f95379bff37886b116b51bf8b0d}\label{_d_r_v___reader_8c_affad0f95379bff37886b116b51bf8b0d}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!R\+E\+A\+D\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+P\+IN@{R\+E\+A\+D\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+P\+IN}}
+\index{R\+E\+A\+D\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+P\+IN@{R\+E\+A\+D\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+P\+IN}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{R\+E\+A\+D\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+P\+IN}{READER\_DATA\_PIN}}
+{\footnotesize\ttfamily \#define R\+E\+A\+D\+E\+R\+\_\+\+D\+A\+T\+A\+\_\+\+P\+IN~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46}{PC}}, 12)}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_a28159f70aebcb3b21df0120d594e1939}\label{_d_r_v___reader_8c_a28159f70aebcb3b21df0120d594e1939}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!R\+E\+A\+D\+E\+R\+\_\+\+E\+N\+\_\+\+P\+IN@{R\+E\+A\+D\+E\+R\+\_\+\+E\+N\+\_\+\+P\+IN}}
+\index{R\+E\+A\+D\+E\+R\+\_\+\+E\+N\+\_\+\+P\+IN@{R\+E\+A\+D\+E\+R\+\_\+\+E\+N\+\_\+\+P\+IN}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{R\+E\+A\+D\+E\+R\+\_\+\+E\+N\+\_\+\+P\+IN}{READER\_EN\_PIN}}
+{\footnotesize\ttfamily \#define R\+E\+A\+D\+E\+R\+\_\+\+E\+N\+\_\+\+P\+IN~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caefbc069e0ac4cd293f3ba527bec2befe}{PD}}, 0)}
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_af65d8899dad9889cd9807bc893109a1f}\label{_d_r_v___reader_8c_af65d8899dad9889cd9807bc893109a1f}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!S\+S\+\_\+\+C\+H\+AR@{S\+S\+\_\+\+C\+H\+AR}}
+\index{S\+S\+\_\+\+C\+H\+AR@{S\+S\+\_\+\+C\+H\+AR}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{S\+S\+\_\+\+C\+H\+AR}{SS\_CHAR}}
+{\footnotesize\ttfamily \#define S\+S\+\_\+\+C\+H\+AR~\textquotesingle{};\textquotesingle{}}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_d_r_v___reader_8c_adf764cbdea00d65edcd07bb9953ad2b7}\label{_d_r_v___reader_8c_adf764cbdea00d65edcd07bb9953ad2b7}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+RT@{S\+T\+A\+RT}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!S\+T\+A\+RT@{S\+T\+A\+RT}}}\mbox{\Hypertarget{_d_r_v___reader_8c_adf764cbdea00d65edcd07bb9953ad2b7a13d000b4d7dc70d90239b7430d1eb6b2}\label{_d_r_v___reader_8c_adf764cbdea00d65edcd07bb9953ad2b7a13d000b4d7dc70d90239b7430d1eb6b2}} 
+S\+T\+A\+RT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+H\+AR@{C\+H\+AR}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!C\+H\+AR@{C\+H\+AR}}}\mbox{\Hypertarget{_d_r_v___reader_8c_adf764cbdea00d65edcd07bb9953ad2b7a4618cf21306b3c647741afa7ebefcab8}\label{_d_r_v___reader_8c_adf764cbdea00d65edcd07bb9953ad2b7a4618cf21306b3c647741afa7ebefcab8}} 
+C\+H\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+ND@{E\+ND}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!E\+ND@{E\+ND}}}\mbox{\Hypertarget{_d_r_v___reader_8c_adf764cbdea00d65edcd07bb9953ad2b7adc6f24fd6915a3f2786a1b7045406924}\label{_d_r_v___reader_8c_adf764cbdea00d65edcd07bb9953ad2b7adc6f24fd6915a3f2786a1b7045406924}} 
+E\+ND&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5}\label{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SS@{SS}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!SS@{SS}}}\mbox{\Hypertarget{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5acc878d90418c98b0b3a20258310c0f52}\label{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5acc878d90418c98b0b3a20258310c0f52}} 
+SS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+AN@{P\+AN}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!P\+AN@{P\+AN}}}\mbox{\Hypertarget{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5a1fea4799e7e5d4fd82b3df6813ce0e71}\label{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5a1fea4799e7e5d4fd82b3df6813ce0e71}} 
+P\+AN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AD@{AD}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!AD@{AD}}}\mbox{\Hypertarget{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5ae63d77c61a2a5b9777024af082a36719}\label{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5ae63d77c61a2a5b9777024af082a36719}} 
+AD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+RC@{L\+RC}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!L\+RC@{L\+RC}}}\mbox{\Hypertarget{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5aaf30f40fd895faed3d20bf98ad054e7c}\label{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5aaf30f40fd895faed3d20bf98ad054e7c}} 
+L\+RC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+U\+C\+C\+E\+SS@{S\+U\+C\+C\+E\+SS}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!S\+U\+C\+C\+E\+SS@{S\+U\+C\+C\+E\+SS}}}\mbox{\Hypertarget{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5ac7f69f7c9e5aea9b8f54cf02870e2bf8}\label{_d_r_v___reader_8c_a99fb83031ce9923c84392b4e92f956b5ac7f69f7c9e5aea9b8f54cf02870e2bf8}} 
+S\+U\+C\+C\+E\+SS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_d_r_v___reader_8c_a4160776125d798e39060872637a4b597}\label{_d_r_v___reader_8c_a4160776125d798e39060872637a4b597}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!disable\+Reader@{disable\+Reader}}
+\index{disable\+Reader@{disable\+Reader}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{disable\+Reader()}{disableReader()}}
+{\footnotesize\ttfamily void disable\+Reader (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Disable Card Reader interruptions. 
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_a23a56b75cca671151b013d1464a3bf2a}\label{_d_r_v___reader_8c_a23a56b75cca671151b013d1464a3bf2a}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!enable\+Reader@{enable\+Reader}}
+\index{enable\+Reader@{enable\+Reader}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{enable\+Reader()}{enableReader()}}
+{\footnotesize\ttfamily void enable\+Reader (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Enable card Reader interruptions. 
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_aea291c8cddfc6d9987a2a94fbe3fd3ea}\label{_d_r_v___reader_8c_aea291c8cddfc6d9987a2a94fbe3fd3ea}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!get\+Value\+Reader@{get\+Value\+Reader}}
+\index{get\+Value\+Reader@{get\+Value\+Reader}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{get\+Value\+Reader()}{getValueReader()}}
+{\footnotesize\ttfamily void get\+Value\+Reader (\begin{DoxyParamCaption}\item[{char $\ast$}]{result\+\_\+number\+\_\+ptr,  }\item[{uint8\+\_\+t $\ast$}]{result\+\_\+len\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Get card number value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+\_\+number\+\_\+ptr} & Pointer to result array \\
+\hline
+{\em result\+\_\+len\+\_\+ptr} & Pointer to result length variable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___reader_8c_a1edc5658ebaaaed4ec5b1b520bc5cf71}\label{_d_r_v___reader_8c_a1edc5658ebaaaed4ec5b1b520bc5cf71}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!init\+Reader@{init\+Reader}}
+\index{init\+Reader@{init\+Reader}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{init\+Reader()}{initReader()}}
+{\footnotesize\ttfamily void init\+Reader (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize Card Reader. 
+
+\mbox{\Hypertarget{_d_r_v___reader_8c_a9062773cd482afcd89e2de039c2ea172}\label{_d_r_v___reader_8c_a9062773cd482afcd89e2de039c2ea172}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!reader\+Is\+Ready@{reader\+Is\+Ready}}
+\index{reader\+Is\+Ready@{reader\+Is\+Ready}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{reader\+Is\+Ready()}{readerIsReady()}}
+{\footnotesize\ttfamily bool reader\+Is\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if card has been correctly swiped. 
+
+\begin{DoxyReturn}{Returns}
+reading ready 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_r_v___reader_8c_adb8a350345065d17d49f01b9f3bd01b2}\label{_d_r_v___reader_8c_adb8a350345065d17d49f01b9f3bd01b2}} 
+\index{D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}!reader\+Running@{reader\+Running}}
+\index{reader\+Running@{reader\+Running}!D\+R\+V\+\_\+\+Reader.\+c@{D\+R\+V\+\_\+\+Reader.\+c}}
+\subsubsection{\texorpdfstring{reader\+Running()}{readerRunning()}}
+{\footnotesize\ttfamily bool reader\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

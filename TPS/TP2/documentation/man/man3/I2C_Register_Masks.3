@@ -1,0 +1,758 @@
+.TH "I2C_Register_Masks" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+I2C_Register_Masks
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C0_BASE\fP   (0x40066000u)"
+.br
+.ti -1c
+.RI "#define \fBI2C0\fP   ((\fBI2C_Type\fP *)\fBI2C0_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C1_BASE\fP   (0x40067000u)"
+.br
+.ti -1c
+.RI "#define \fBI2C1\fP   ((\fBI2C_Type\fP *)\fBI2C1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C2_BASE\fP   (0x400E6000u)"
+.br
+.ti -1c
+.RI "#define \fBI2C2\fP   ((\fBI2C_Type\fP *)\fBI2C2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_BASE_ADDRS\fP   { \fBI2C0_BASE\fP, \fBI2C1_BASE\fP, \fBI2C2_BASE\fP }"
+.br
+.ti -1c
+.RI "#define \fBI2C_BASE_PTRS\fP   { \fBI2C0\fP, \fBI2C1\fP, \fBI2C2\fP }"
+.br
+.ti -1c
+.RI "#define \fBI2C_IRQS\fP   { \fBI2C0_IRQn\fP, \fBI2C1_IRQn\fP, \fBI2C2_IRQn\fP }"
+.br
+.in -1c
+.SS "A1 - I2C Address Register 1"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_A1_AD_MASK\fP   (0xFEU)"
+.br
+.ti -1c
+.RI "#define \fBI2C_A1_AD_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_A1_AD\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_A1_AD_SHIFT\fP)) & \fBI2C_A1_AD_MASK\fP)"
+.br
+.in -1c
+.SS "F - I2C Frequency Divider register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_F_ICR_MASK\fP   (0x3FU)"
+.br
+.ti -1c
+.RI "#define \fBI2C_F_ICR_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_F_ICR\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_F_ICR_SHIFT\fP)) & \fBI2C_F_ICR_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_F_MULT_MASK\fP   (0xC0U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_F_MULT_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_F_MULT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_F_MULT_SHIFT\fP)) & \fBI2C_F_MULT_MASK\fP)"
+.br
+.in -1c
+.SS "C1 - I2C Control Register 1"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_C1_DMAEN_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_DMAEN_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_DMAEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_DMAEN_SHIFT\fP)) & \fBI2C_C1_DMAEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_WUEN_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_WUEN_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_WUEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_WUEN_SHIFT\fP)) & \fBI2C_C1_WUEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_RSTA_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_RSTA_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_RSTA\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_RSTA_SHIFT\fP)) & \fBI2C_C1_RSTA_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_TXAK_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_TXAK_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_TXAK\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_TXAK_SHIFT\fP)) & \fBI2C_C1_TXAK_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_TX_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_TX_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_TX\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_TX_SHIFT\fP)) & \fBI2C_C1_TX_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_MST_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_MST_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_MST\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_MST_SHIFT\fP)) & \fBI2C_C1_MST_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_IICIE_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_IICIE_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_IICIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_IICIE_SHIFT\fP)) & \fBI2C_C1_IICIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_IICEN_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_IICEN_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C1_IICEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_IICEN_SHIFT\fP)) & \fBI2C_C1_IICEN_MASK\fP)"
+.br
+.in -1c
+.SS "S - I2C Status register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_S_RXAK_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_RXAK_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_RXAK\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_RXAK_SHIFT\fP)) & \fBI2C_S_RXAK_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_IICIF_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_IICIF_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_IICIF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_IICIF_SHIFT\fP)) & \fBI2C_S_IICIF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_SRW_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_SRW_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_SRW\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_SRW_SHIFT\fP)) & \fBI2C_S_SRW_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_RAM_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_RAM_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_RAM\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_RAM_SHIFT\fP)) & \fBI2C_S_RAM_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_ARBL_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_ARBL_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_ARBL\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_ARBL_SHIFT\fP)) & \fBI2C_S_ARBL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_BUSY_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_BUSY_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_BUSY\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_BUSY_SHIFT\fP)) & \fBI2C_S_BUSY_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_IAAS_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_IAAS_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_IAAS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_IAAS_SHIFT\fP)) & \fBI2C_S_IAAS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_TCF_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_TCF_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_S_TCF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_TCF_SHIFT\fP)) & \fBI2C_S_TCF_MASK\fP)"
+.br
+.in -1c
+.SS "D - I2C Data I/O register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_D_DATA_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBI2C_D_DATA_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_D_DATA\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_D_DATA_SHIFT\fP)) & \fBI2C_D_DATA_MASK\fP)"
+.br
+.in -1c
+.SS "C2 - I2C Control Register 2"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_C2_AD_MASK\fP   (0x7U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_AD_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_AD\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C2_AD_SHIFT\fP)) & \fBI2C_C2_AD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_RMEN_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_RMEN_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_RMEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C2_RMEN_SHIFT\fP)) & \fBI2C_C2_RMEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_SBRC_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_SBRC_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_SBRC\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C2_SBRC_SHIFT\fP)) & \fBI2C_C2_SBRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_HDRS_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_HDRS_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_HDRS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C2_HDRS_SHIFT\fP)) & \fBI2C_C2_HDRS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_ADEXT_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_ADEXT_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_ADEXT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C2_ADEXT_SHIFT\fP)) & \fBI2C_C2_ADEXT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_GCAEN_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_GCAEN_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_C2_GCAEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C2_GCAEN_SHIFT\fP)) & \fBI2C_C2_GCAEN_MASK\fP)"
+.br
+.in -1c
+.SS "FLT - I2C Programmable Input Glitch Filter register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_FLT_FLT_MASK\fP   (0xFU)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_FLT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_FLT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_FLT_FLT_SHIFT\fP)) & \fBI2C_FLT_FLT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_STARTF_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_STARTF_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_STARTF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_FLT_STARTF_SHIFT\fP)) & \fBI2C_FLT_STARTF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_SSIE_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_SSIE_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_SSIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_FLT_SSIE_SHIFT\fP)) & \fBI2C_FLT_SSIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_STOPF_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_STOPF_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_STOPF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_FLT_STOPF_SHIFT\fP)) & \fBI2C_FLT_STOPF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_SHEN_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_SHEN_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_FLT_SHEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_FLT_SHEN_SHIFT\fP)) & \fBI2C_FLT_SHEN_MASK\fP)"
+.br
+.in -1c
+.SS "RA - I2C Range Address register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_RA_RAD_MASK\fP   (0xFEU)"
+.br
+.ti -1c
+.RI "#define \fBI2C_RA_RAD_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_RA_RAD\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_RA_RAD_SHIFT\fP)) & \fBI2C_RA_RAD_MASK\fP)"
+.br
+.in -1c
+.SS "SMB - I2C SMBus Control and Status register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_SMB_SHTF2IE_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SHTF2IE_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SHTF2IE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_SHTF2IE_SHIFT\fP)) & \fBI2C_SMB_SHTF2IE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SHTF2_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SHTF2_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SHTF2\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_SHTF2_SHIFT\fP)) & \fBI2C_SMB_SHTF2_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SHTF1_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SHTF1_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SHTF1\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_SHTF1_SHIFT\fP)) & \fBI2C_SMB_SHTF1_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SLTF_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SLTF_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SLTF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_SLTF_SHIFT\fP)) & \fBI2C_SMB_SLTF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_TCKSEL_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_TCKSEL_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_TCKSEL\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_TCKSEL_SHIFT\fP)) & \fBI2C_SMB_TCKSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SIICAEN_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SIICAEN_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_SIICAEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_SIICAEN_SHIFT\fP)) & \fBI2C_SMB_SIICAEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_ALERTEN_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_ALERTEN_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_ALERTEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_ALERTEN_SHIFT\fP)) & \fBI2C_SMB_ALERTEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_FACK_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_FACK_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SMB_FACK\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_FACK_SHIFT\fP)) & \fBI2C_SMB_FACK_MASK\fP)"
+.br
+.in -1c
+.SS "A2 - I2C Address Register 2"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_A2_SAD_MASK\fP   (0xFEU)"
+.br
+.ti -1c
+.RI "#define \fBI2C_A2_SAD_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_A2_SAD\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_A2_SAD_SHIFT\fP)) & \fBI2C_A2_SAD_MASK\fP)"
+.br
+.in -1c
+.SS "SLTH - I2C SCL Low Timeout Register High"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_SLTH_SSLT_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SLTH_SSLT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SLTH_SSLT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SLTH_SSLT_SHIFT\fP)) & \fBI2C_SLTH_SSLT_MASK\fP)"
+.br
+.in -1c
+.SS "SLTL - I2C SCL Low Timeout Register Low"
+
+.in +1c
+.ti -1c
+.RI "#define \fBI2C_SLTL_SSLT_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SLTL_SSLT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBI2C_SLTL_SSLT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SLTL_SSLT_SHIFT\fP)) & \fBI2C_SLTL_SSLT_MASK\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define I2C0   ((\fBI2C_Type\fP *)\fBI2C0_BASE\fP)"
+Peripheral I2C0 base pointer 
+.SS "#define I2C0_BASE   (0x40066000u)"
+Peripheral I2C0 base address 
+.SS "#define I2C1   ((\fBI2C_Type\fP *)\fBI2C1_BASE\fP)"
+Peripheral I2C1 base pointer 
+.SS "#define I2C1_BASE   (0x40067000u)"
+Peripheral I2C1 base address 
+.SS "#define I2C2   ((\fBI2C_Type\fP *)\fBI2C2_BASE\fP)"
+Peripheral I2C2 base pointer 
+.SS "#define I2C2_BASE   (0x400E6000u)"
+Peripheral I2C2 base address 
+.SS "#define I2C_A1_AD(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_A1_AD_SHIFT\fP)) & \fBI2C_A1_AD_MASK\fP)"
+
+.SS "#define I2C_A1_AD_MASK   (0xFEU)"
+
+.SS "#define I2C_A1_AD_SHIFT   (1U)"
+
+.SS "#define I2C_A2_SAD(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_A2_SAD_SHIFT\fP)) & \fBI2C_A2_SAD_MASK\fP)"
+
+.SS "#define I2C_A2_SAD_MASK   (0xFEU)"
+
+.SS "#define I2C_A2_SAD_SHIFT   (1U)"
+
+.SS "#define I2C_BASE_ADDRS   { \fBI2C0_BASE\fP, \fBI2C1_BASE\fP, \fBI2C2_BASE\fP }"
+Array initializer of I2C peripheral base addresses 
+.SS "#define I2C_BASE_PTRS   { \fBI2C0\fP, \fBI2C1\fP, \fBI2C2\fP }"
+Array initializer of I2C peripheral base pointers 
+.SS "#define I2C_C1_DMAEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_DMAEN_SHIFT\fP)) & \fBI2C_C1_DMAEN_MASK\fP)"
+
+.SS "#define I2C_C1_DMAEN_MASK   (0x1U)"
+
+.SS "#define I2C_C1_DMAEN_SHIFT   (0U)"
+
+.SS "#define I2C_C1_IICEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_IICEN_SHIFT\fP)) & \fBI2C_C1_IICEN_MASK\fP)"
+
+.SS "#define I2C_C1_IICEN_MASK   (0x80U)"
+
+.SS "#define I2C_C1_IICEN_SHIFT   (7U)"
+
+.SS "#define I2C_C1_IICIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_IICIE_SHIFT\fP)) & \fBI2C_C1_IICIE_MASK\fP)"
+
+.SS "#define I2C_C1_IICIE_MASK   (0x40U)"
+
+.SS "#define I2C_C1_IICIE_SHIFT   (6U)"
+
+.SS "#define I2C_C1_MST(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_MST_SHIFT\fP)) & \fBI2C_C1_MST_MASK\fP)"
+
+.SS "#define I2C_C1_MST_MASK   (0x20U)"
+
+.SS "#define I2C_C1_MST_SHIFT   (5U)"
+
+.SS "#define I2C_C1_RSTA(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_RSTA_SHIFT\fP)) & \fBI2C_C1_RSTA_MASK\fP)"
+
+.SS "#define I2C_C1_RSTA_MASK   (0x4U)"
+
+.SS "#define I2C_C1_RSTA_SHIFT   (2U)"
+
+.SS "#define I2C_C1_TX(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_TX_SHIFT\fP)) & \fBI2C_C1_TX_MASK\fP)"
+
+.SS "#define I2C_C1_TX_MASK   (0x10U)"
+
+.SS "#define I2C_C1_TX_SHIFT   (4U)"
+
+.SS "#define I2C_C1_TXAK(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_TXAK_SHIFT\fP)) & \fBI2C_C1_TXAK_MASK\fP)"
+
+.SS "#define I2C_C1_TXAK_MASK   (0x8U)"
+
+.SS "#define I2C_C1_TXAK_SHIFT   (3U)"
+
+.SS "#define I2C_C1_WUEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C1_WUEN_SHIFT\fP)) & \fBI2C_C1_WUEN_MASK\fP)"
+
+.SS "#define I2C_C1_WUEN_MASK   (0x2U)"
+
+.SS "#define I2C_C1_WUEN_SHIFT   (1U)"
+
+.SS "#define I2C_C2_AD(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C2_AD_SHIFT\fP)) & \fBI2C_C2_AD_MASK\fP)"
+
+.SS "#define I2C_C2_AD_MASK   (0x7U)"
+
+.SS "#define I2C_C2_AD_SHIFT   (0U)"
+
+.SS "#define I2C_C2_ADEXT(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C2_ADEXT_SHIFT\fP)) & \fBI2C_C2_ADEXT_MASK\fP)"
+
+.SS "#define I2C_C2_ADEXT_MASK   (0x40U)"
+
+.SS "#define I2C_C2_ADEXT_SHIFT   (6U)"
+
+.SS "#define I2C_C2_GCAEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C2_GCAEN_SHIFT\fP)) & \fBI2C_C2_GCAEN_MASK\fP)"
+
+.SS "#define I2C_C2_GCAEN_MASK   (0x80U)"
+
+.SS "#define I2C_C2_GCAEN_SHIFT   (7U)"
+
+.SS "#define I2C_C2_HDRS(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C2_HDRS_SHIFT\fP)) & \fBI2C_C2_HDRS_MASK\fP)"
+
+.SS "#define I2C_C2_HDRS_MASK   (0x20U)"
+
+.SS "#define I2C_C2_HDRS_SHIFT   (5U)"
+
+.SS "#define I2C_C2_RMEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C2_RMEN_SHIFT\fP)) & \fBI2C_C2_RMEN_MASK\fP)"
+
+.SS "#define I2C_C2_RMEN_MASK   (0x8U)"
+
+.SS "#define I2C_C2_RMEN_SHIFT   (3U)"
+
+.SS "#define I2C_C2_SBRC(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_C2_SBRC_SHIFT\fP)) & \fBI2C_C2_SBRC_MASK\fP)"
+
+.SS "#define I2C_C2_SBRC_MASK   (0x10U)"
+
+.SS "#define I2C_C2_SBRC_SHIFT   (4U)"
+
+.SS "#define I2C_D_DATA(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_D_DATA_SHIFT\fP)) & \fBI2C_D_DATA_MASK\fP)"
+
+.SS "#define I2C_D_DATA_MASK   (0xFFU)"
+
+.SS "#define I2C_D_DATA_SHIFT   (0U)"
+
+.SS "#define I2C_F_ICR(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_F_ICR_SHIFT\fP)) & \fBI2C_F_ICR_MASK\fP)"
+
+.SS "#define I2C_F_ICR_MASK   (0x3FU)"
+
+.SS "#define I2C_F_ICR_SHIFT   (0U)"
+
+.SS "#define I2C_F_MULT(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_F_MULT_SHIFT\fP)) & \fBI2C_F_MULT_MASK\fP)"
+
+.SS "#define I2C_F_MULT_MASK   (0xC0U)"
+
+.SS "#define I2C_F_MULT_SHIFT   (6U)"
+
+.SS "#define I2C_FLT_FLT(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_FLT_FLT_SHIFT\fP)) & \fBI2C_FLT_FLT_MASK\fP)"
+
+.SS "#define I2C_FLT_FLT_MASK   (0xFU)"
+
+.SS "#define I2C_FLT_FLT_SHIFT   (0U)"
+
+.SS "#define I2C_FLT_SHEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_FLT_SHEN_SHIFT\fP)) & \fBI2C_FLT_SHEN_MASK\fP)"
+
+.SS "#define I2C_FLT_SHEN_MASK   (0x80U)"
+
+.SS "#define I2C_FLT_SHEN_SHIFT   (7U)"
+
+.SS "#define I2C_FLT_SSIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_FLT_SSIE_SHIFT\fP)) & \fBI2C_FLT_SSIE_MASK\fP)"
+
+.SS "#define I2C_FLT_SSIE_MASK   (0x20U)"
+
+.SS "#define I2C_FLT_SSIE_SHIFT   (5U)"
+
+.SS "#define I2C_FLT_STARTF(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_FLT_STARTF_SHIFT\fP)) & \fBI2C_FLT_STARTF_MASK\fP)"
+
+.SS "#define I2C_FLT_STARTF_MASK   (0x10U)"
+
+.SS "#define I2C_FLT_STARTF_SHIFT   (4U)"
+
+.SS "#define I2C_FLT_STOPF(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_FLT_STOPF_SHIFT\fP)) & \fBI2C_FLT_STOPF_MASK\fP)"
+
+.SS "#define I2C_FLT_STOPF_MASK   (0x40U)"
+
+.SS "#define I2C_FLT_STOPF_SHIFT   (6U)"
+
+.SS "#define I2C_IRQS   { \fBI2C0_IRQn\fP, \fBI2C1_IRQn\fP, \fBI2C2_IRQn\fP }"
+Interrupt vectors for the I2C peripheral type 
+.SS "#define I2C_RA_RAD(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_RA_RAD_SHIFT\fP)) & \fBI2C_RA_RAD_MASK\fP)"
+
+.SS "#define I2C_RA_RAD_MASK   (0xFEU)"
+
+.SS "#define I2C_RA_RAD_SHIFT   (1U)"
+
+.SS "#define I2C_S_ARBL(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_ARBL_SHIFT\fP)) & \fBI2C_S_ARBL_MASK\fP)"
+
+.SS "#define I2C_S_ARBL_MASK   (0x10U)"
+
+.SS "#define I2C_S_ARBL_SHIFT   (4U)"
+
+.SS "#define I2C_S_BUSY(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_BUSY_SHIFT\fP)) & \fBI2C_S_BUSY_MASK\fP)"
+
+.SS "#define I2C_S_BUSY_MASK   (0x20U)"
+
+.SS "#define I2C_S_BUSY_SHIFT   (5U)"
+
+.SS "#define I2C_S_IAAS(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_IAAS_SHIFT\fP)) & \fBI2C_S_IAAS_MASK\fP)"
+
+.SS "#define I2C_S_IAAS_MASK   (0x40U)"
+
+.SS "#define I2C_S_IAAS_SHIFT   (6U)"
+
+.SS "#define I2C_S_IICIF(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_IICIF_SHIFT\fP)) & \fBI2C_S_IICIF_MASK\fP)"
+
+.SS "#define I2C_S_IICIF_MASK   (0x2U)"
+
+.SS "#define I2C_S_IICIF_SHIFT   (1U)"
+
+.SS "#define I2C_S_RAM(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_RAM_SHIFT\fP)) & \fBI2C_S_RAM_MASK\fP)"
+
+.SS "#define I2C_S_RAM_MASK   (0x8U)"
+
+.SS "#define I2C_S_RAM_SHIFT   (3U)"
+
+.SS "#define I2C_S_RXAK(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_RXAK_SHIFT\fP)) & \fBI2C_S_RXAK_MASK\fP)"
+
+.SS "#define I2C_S_RXAK_MASK   (0x1U)"
+
+.SS "#define I2C_S_RXAK_SHIFT   (0U)"
+
+.SS "#define I2C_S_SRW(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_SRW_SHIFT\fP)) & \fBI2C_S_SRW_MASK\fP)"
+
+.SS "#define I2C_S_SRW_MASK   (0x4U)"
+
+.SS "#define I2C_S_SRW_SHIFT   (2U)"
+
+.SS "#define I2C_S_TCF(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_S_TCF_SHIFT\fP)) & \fBI2C_S_TCF_MASK\fP)"
+
+.SS "#define I2C_S_TCF_MASK   (0x80U)"
+
+.SS "#define I2C_S_TCF_SHIFT   (7U)"
+
+.SS "#define I2C_SLTH_SSLT(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SLTH_SSLT_SHIFT\fP)) & \fBI2C_SLTH_SSLT_MASK\fP)"
+
+.SS "#define I2C_SLTH_SSLT_MASK   (0xFFU)"
+
+.SS "#define I2C_SLTH_SSLT_SHIFT   (0U)"
+
+.SS "#define I2C_SLTL_SSLT(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SLTL_SSLT_SHIFT\fP)) & \fBI2C_SLTL_SSLT_MASK\fP)"
+
+.SS "#define I2C_SLTL_SSLT_MASK   (0xFFU)"
+
+.SS "#define I2C_SLTL_SSLT_SHIFT   (0U)"
+
+.SS "#define I2C_SMB_ALERTEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_ALERTEN_SHIFT\fP)) & \fBI2C_SMB_ALERTEN_MASK\fP)"
+
+.SS "#define I2C_SMB_ALERTEN_MASK   (0x40U)"
+
+.SS "#define I2C_SMB_ALERTEN_SHIFT   (6U)"
+
+.SS "#define I2C_SMB_FACK(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_FACK_SHIFT\fP)) & \fBI2C_SMB_FACK_MASK\fP)"
+
+.SS "#define I2C_SMB_FACK_MASK   (0x80U)"
+
+.SS "#define I2C_SMB_FACK_SHIFT   (7U)"
+
+.SS "#define I2C_SMB_SHTF1(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_SHTF1_SHIFT\fP)) & \fBI2C_SMB_SHTF1_MASK\fP)"
+
+.SS "#define I2C_SMB_SHTF1_MASK   (0x4U)"
+
+.SS "#define I2C_SMB_SHTF1_SHIFT   (2U)"
+
+.SS "#define I2C_SMB_SHTF2(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_SHTF2_SHIFT\fP)) & \fBI2C_SMB_SHTF2_MASK\fP)"
+
+.SS "#define I2C_SMB_SHTF2_MASK   (0x2U)"
+
+.SS "#define I2C_SMB_SHTF2_SHIFT   (1U)"
+
+.SS "#define I2C_SMB_SHTF2IE(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_SHTF2IE_SHIFT\fP)) & \fBI2C_SMB_SHTF2IE_MASK\fP)"
+
+.SS "#define I2C_SMB_SHTF2IE_MASK   (0x1U)"
+
+.SS "#define I2C_SMB_SHTF2IE_SHIFT   (0U)"
+
+.SS "#define I2C_SMB_SIICAEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_SIICAEN_SHIFT\fP)) & \fBI2C_SMB_SIICAEN_MASK\fP)"
+
+.SS "#define I2C_SMB_SIICAEN_MASK   (0x20U)"
+
+.SS "#define I2C_SMB_SIICAEN_SHIFT   (5U)"
+
+.SS "#define I2C_SMB_SLTF(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_SLTF_SHIFT\fP)) & \fBI2C_SMB_SLTF_MASK\fP)"
+
+.SS "#define I2C_SMB_SLTF_MASK   (0x8U)"
+
+.SS "#define I2C_SMB_SLTF_SHIFT   (3U)"
+
+.SS "#define I2C_SMB_TCKSEL(x)   (((uint8_t)(((uint8_t)(x)) << \fBI2C_SMB_TCKSEL_SHIFT\fP)) & \fBI2C_SMB_TCKSEL_MASK\fP)"
+
+.SS "#define I2C_SMB_TCKSEL_MASK   (0x10U)"
+
+.SS "#define I2C_SMB_TCKSEL_SHIFT   (4U)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

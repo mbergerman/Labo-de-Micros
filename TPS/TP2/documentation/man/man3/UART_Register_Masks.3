@@ -1,0 +1,1879 @@
+.TH "UART_Register_Masks" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UART_Register_Masks
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART0_BASE\fP   (0x4006A000u)"
+.br
+.ti -1c
+.RI "#define \fBUART0\fP   ((\fBUART_Type\fP *)\fBUART0_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART1_BASE\fP   (0x4006B000u)"
+.br
+.ti -1c
+.RI "#define \fBUART1\fP   ((\fBUART_Type\fP *)\fBUART1_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART2_BASE\fP   (0x4006C000u)"
+.br
+.ti -1c
+.RI "#define \fBUART2\fP   ((\fBUART_Type\fP *)\fBUART2_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART3_BASE\fP   (0x4006D000u)"
+.br
+.ti -1c
+.RI "#define \fBUART3\fP   ((\fBUART_Type\fP *)\fBUART3_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART4_BASE\fP   (0x400EA000u)"
+.br
+.ti -1c
+.RI "#define \fBUART4\fP   ((\fBUART_Type\fP *)\fBUART4_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART5_BASE\fP   (0x400EB000u)"
+.br
+.ti -1c
+.RI "#define \fBUART5\fP   ((\fBUART_Type\fP *)\fBUART5_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_BASE_ADDRS\fP   { \fBUART0_BASE\fP, \fBUART1_BASE\fP, \fBUART2_BASE\fP, \fBUART3_BASE\fP, \fBUART4_BASE\fP, \fBUART5_BASE\fP }"
+.br
+.ti -1c
+.RI "#define \fBUART_BASE_PTRS\fP   { \fBUART0\fP, \fBUART1\fP, \fBUART2\fP, \fBUART3\fP, \fBUART4\fP, \fBUART5\fP }"
+.br
+.ti -1c
+.RI "#define \fBUART_RX_TX_IRQS\fP   { \fBUART0_RX_TX_IRQn\fP, \fBUART1_RX_TX_IRQn\fP, \fBUART2_RX_TX_IRQn\fP, \fBUART3_RX_TX_IRQn\fP, \fBUART4_RX_TX_IRQn\fP, \fBUART5_RX_TX_IRQn\fP }"
+.br
+.ti -1c
+.RI "#define \fBUART_ERR_IRQS\fP   { \fBUART0_ERR_IRQn\fP, \fBUART1_ERR_IRQn\fP, \fBUART2_ERR_IRQn\fP, \fBUART3_ERR_IRQn\fP, \fBUART4_ERR_IRQn\fP, \fBUART5_ERR_IRQn\fP }"
+.br
+.ti -1c
+.RI "#define \fBUART_LON_IRQS\fP   { \fBUART0_LON_IRQn\fP, \fBNotAvail_IRQn\fP, \fBNotAvail_IRQn\fP, \fBNotAvail_IRQn\fP, \fBNotAvail_IRQn\fP, \fBNotAvail_IRQn\fP }"
+.br
+.in -1c
+.SS "BDH - UART Baud Rate Registers: High"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_BDH_SBR_MASK\fP   (0x1FU)"
+.br
+.ti -1c
+.RI "#define \fBUART_BDH_SBR_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_BDH_SBR\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_BDH_SBR_SHIFT\fP)) & \fBUART_BDH_SBR_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_BDH_SBNS_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBUART_BDH_SBNS_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBUART_BDH_SBNS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_BDH_SBNS_SHIFT\fP)) & \fBUART_BDH_SBNS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_BDH_RXEDGIE_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBUART_BDH_RXEDGIE_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBUART_BDH_RXEDGIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_BDH_RXEDGIE_SHIFT\fP)) & \fBUART_BDH_RXEDGIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_BDH_LBKDIE_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_BDH_LBKDIE_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_BDH_LBKDIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_BDH_LBKDIE_SHIFT\fP)) & \fBUART_BDH_LBKDIE_MASK\fP)"
+.br
+.in -1c
+.SS "BDL - UART Baud Rate Registers: Low"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_BDL_SBR_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_BDL_SBR_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_BDL_SBR\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_BDL_SBR_SHIFT\fP)) & \fBUART_BDL_SBR_MASK\fP)"
+.br
+.in -1c
+.SS "C1 - UART Control Register 1"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_C1_PT_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_PT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_PT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_PT_SHIFT\fP)) & \fBUART_C1_PT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_PE_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_PE_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_PE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_PE_SHIFT\fP)) & \fBUART_C1_PE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_ILT_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_ILT_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_ILT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_ILT_SHIFT\fP)) & \fBUART_C1_ILT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_WAKE_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_WAKE_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_WAKE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_WAKE_SHIFT\fP)) & \fBUART_C1_WAKE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_M_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_M_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_M\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_M_SHIFT\fP)) & \fBUART_C1_M_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_RSRC_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_RSRC_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_RSRC\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_RSRC_SHIFT\fP)) & \fBUART_C1_RSRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_UARTSWAI_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_UARTSWAI_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_UARTSWAI\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_UARTSWAI_SHIFT\fP)) & \fBUART_C1_UARTSWAI_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_LOOPS_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_LOOPS_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C1_LOOPS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_LOOPS_SHIFT\fP)) & \fBUART_C1_LOOPS_MASK\fP)"
+.br
+.in -1c
+.SS "C2 - UART Control Register 2"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_C2_SBK_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_SBK_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_SBK\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_SBK_SHIFT\fP)) & \fBUART_C2_SBK_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_RWU_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_RWU_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_RWU\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_RWU_SHIFT\fP)) & \fBUART_C2_RWU_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_RE_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_RE_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_RE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_RE_SHIFT\fP)) & \fBUART_C2_RE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_TE_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_TE_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_TE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_TE_SHIFT\fP)) & \fBUART_C2_TE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_ILIE_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_ILIE_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_ILIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_ILIE_SHIFT\fP)) & \fBUART_C2_ILIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_RIE_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_RIE_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_RIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_RIE_SHIFT\fP)) & \fBUART_C2_RIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_TCIE_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_TCIE_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_TCIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_TCIE_SHIFT\fP)) & \fBUART_C2_TCIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_TIE_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_TIE_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C2_TIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_TIE_SHIFT\fP)) & \fBUART_C2_TIE_MASK\fP)"
+.br
+.in -1c
+.SS "S1 - UART Status Register 1"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_S1_PF_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_PF_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_PF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_PF_SHIFT\fP)) & \fBUART_S1_PF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_FE_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_FE_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_FE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_FE_SHIFT\fP)) & \fBUART_S1_FE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_NF_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_NF_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_NF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_NF_SHIFT\fP)) & \fBUART_S1_NF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_OR_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_OR_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_OR\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_OR_SHIFT\fP)) & \fBUART_S1_OR_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_IDLE_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_IDLE_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_IDLE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_IDLE_SHIFT\fP)) & \fBUART_S1_IDLE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_RDRF_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_RDRF_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_RDRF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_RDRF_SHIFT\fP)) & \fBUART_S1_RDRF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_TC_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_TC_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_TC\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_TC_SHIFT\fP)) & \fBUART_S1_TC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_TDRE_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_TDRE_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S1_TDRE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_TDRE_SHIFT\fP)) & \fBUART_S1_TDRE_MASK\fP)"
+.br
+.in -1c
+.SS "S2 - UART Status Register 2"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_S2_RAF_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_RAF_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_RAF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_RAF_SHIFT\fP)) & \fBUART_S2_RAF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_LBKDE_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_LBKDE_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_LBKDE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_LBKDE_SHIFT\fP)) & \fBUART_S2_LBKDE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_BRK13_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_BRK13_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_BRK13\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_BRK13_SHIFT\fP)) & \fBUART_S2_BRK13_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_RWUID_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_RWUID_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_RWUID\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_RWUID_SHIFT\fP)) & \fBUART_S2_RWUID_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_RXINV_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_RXINV_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_RXINV\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_RXINV_SHIFT\fP)) & \fBUART_S2_RXINV_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_MSBF_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_MSBF_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_MSBF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_MSBF_SHIFT\fP)) & \fBUART_S2_MSBF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_RXEDGIF_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_RXEDGIF_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_RXEDGIF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_RXEDGIF_SHIFT\fP)) & \fBUART_S2_RXEDGIF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_LBKDIF_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_LBKDIF_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_S2_LBKDIF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_LBKDIF_SHIFT\fP)) & \fBUART_S2_LBKDIF_MASK\fP)"
+.br
+.in -1c
+.SS "C3 - UART Control Register 3"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_C3_PEIE_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_PEIE_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_PEIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_PEIE_SHIFT\fP)) & \fBUART_C3_PEIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_FEIE_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_FEIE_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_FEIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_FEIE_SHIFT\fP)) & \fBUART_C3_FEIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_NEIE_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_NEIE_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_NEIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_NEIE_SHIFT\fP)) & \fBUART_C3_NEIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_ORIE_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_ORIE_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_ORIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_ORIE_SHIFT\fP)) & \fBUART_C3_ORIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_TXINV_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_TXINV_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_TXINV\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_TXINV_SHIFT\fP)) & \fBUART_C3_TXINV_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_TXDIR_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_TXDIR_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_TXDIR\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_TXDIR_SHIFT\fP)) & \fBUART_C3_TXDIR_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_T8_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_T8_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_T8\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_T8_SHIFT\fP)) & \fBUART_C3_T8_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_R8_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_R8_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C3_R8\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_R8_SHIFT\fP)) & \fBUART_C3_R8_MASK\fP)"
+.br
+.in -1c
+.SS "D - UART Data Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_D_RT_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_D_RT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_D_RT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_D_RT_SHIFT\fP)) & \fBUART_D_RT_MASK\fP)"
+.br
+.in -1c
+.SS "MA1 - UART Match Address Registers 1"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_MA1_MA_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_MA1_MA_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_MA1_MA\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_MA1_MA_SHIFT\fP)) & \fBUART_MA1_MA_MASK\fP)"
+.br
+.in -1c
+.SS "MA2 - UART Match Address Registers 2"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_MA2_MA_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_MA2_MA_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_MA2_MA\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_MA2_MA_SHIFT\fP)) & \fBUART_MA2_MA_MASK\fP)"
+.br
+.in -1c
+.SS "C4 - UART Control Register 4"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_C4_BRFA_MASK\fP   (0x1FU)"
+.br
+.ti -1c
+.RI "#define \fBUART_C4_BRFA_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C4_BRFA\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C4_BRFA_SHIFT\fP)) & \fBUART_C4_BRFA_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C4_M10_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C4_M10_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C4_M10\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C4_M10_SHIFT\fP)) & \fBUART_C4_M10_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C4_MAEN2_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C4_MAEN2_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C4_MAEN2\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C4_MAEN2_SHIFT\fP)) & \fBUART_C4_MAEN2_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C4_MAEN1_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C4_MAEN1_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C4_MAEN1\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C4_MAEN1_SHIFT\fP)) & \fBUART_C4_MAEN1_MASK\fP)"
+.br
+.in -1c
+.SS "C5 - UART Control Register 5"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_C5_LBKDDMAS_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_LBKDDMAS_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_LBKDDMAS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C5_LBKDDMAS_SHIFT\fP)) & \fBUART_C5_LBKDDMAS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_ILDMAS_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_ILDMAS_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_ILDMAS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C5_ILDMAS_SHIFT\fP)) & \fBUART_C5_ILDMAS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_RDMAS_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_RDMAS_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_RDMAS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C5_RDMAS_SHIFT\fP)) & \fBUART_C5_RDMAS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_TCDMAS_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_TCDMAS_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_TCDMAS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C5_TCDMAS_SHIFT\fP)) & \fBUART_C5_TCDMAS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_TDMAS_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_TDMAS_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C5_TDMAS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C5_TDMAS_SHIFT\fP)) & \fBUART_C5_TDMAS_MASK\fP)"
+.br
+.in -1c
+.SS "ED - UART Extended Data Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_ED_PARITYE_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBUART_ED_PARITYE_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBUART_ED_PARITYE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_ED_PARITYE_SHIFT\fP)) & \fBUART_ED_PARITYE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_ED_NOISY_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_ED_NOISY_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_ED_NOISY\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_ED_NOISY_SHIFT\fP)) & \fBUART_ED_NOISY_MASK\fP)"
+.br
+.in -1c
+.SS "MODEM - UART Modem Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_MODEM_TXCTSE_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_MODEM_TXCTSE_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_MODEM_TXCTSE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_MODEM_TXCTSE_SHIFT\fP)) & \fBUART_MODEM_TXCTSE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_MODEM_TXRTSE_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_MODEM_TXRTSE_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_MODEM_TXRTSE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_MODEM_TXRTSE_SHIFT\fP)) & \fBUART_MODEM_TXRTSE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_MODEM_TXRTSPOL_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_MODEM_TXRTSPOL_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_MODEM_TXRTSPOL\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_MODEM_TXRTSPOL_SHIFT\fP)) & \fBUART_MODEM_TXRTSPOL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_MODEM_RXRTSE_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBUART_MODEM_RXRTSE_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBUART_MODEM_RXRTSE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_MODEM_RXRTSE_SHIFT\fP)) & \fBUART_MODEM_RXRTSE_MASK\fP)"
+.br
+.in -1c
+.SS "IR - UART Infrared Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_IR_TNP_MASK\fP   (0x3U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IR_TNP_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IR_TNP\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IR_TNP_SHIFT\fP)) & \fBUART_IR_TNP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_IR_IREN_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IR_IREN_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IR_IREN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IR_IREN_SHIFT\fP)) & \fBUART_IR_IREN_MASK\fP)"
+.br
+.in -1c
+.SS "PFIFO - UART FIFO Parameters"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_PFIFO_RXFIFOSIZE_MASK\fP   (0x7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_PFIFO_RXFIFOSIZE_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_PFIFO_RXFIFOSIZE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_PFIFO_RXFIFOSIZE_SHIFT\fP)) & \fBUART_PFIFO_RXFIFOSIZE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_PFIFO_RXFE_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBUART_PFIFO_RXFE_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBUART_PFIFO_RXFE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_PFIFO_RXFE_SHIFT\fP)) & \fBUART_PFIFO_RXFE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_PFIFO_TXFIFOSIZE_MASK\fP   (0x70U)"
+.br
+.ti -1c
+.RI "#define \fBUART_PFIFO_TXFIFOSIZE_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_PFIFO_TXFIFOSIZE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_PFIFO_TXFIFOSIZE_SHIFT\fP)) & \fBUART_PFIFO_TXFIFOSIZE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_PFIFO_TXFE_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_PFIFO_TXFE_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_PFIFO_TXFE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_PFIFO_TXFE_SHIFT\fP)) & \fBUART_PFIFO_TXFE_MASK\fP)"
+.br
+.in -1c
+.SS "CFIFO - UART FIFO Control Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_CFIFO_RXUFE_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_RXUFE_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_RXUFE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_CFIFO_RXUFE_SHIFT\fP)) & \fBUART_CFIFO_RXUFE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_TXOFE_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_TXOFE_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_TXOFE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_CFIFO_TXOFE_SHIFT\fP)) & \fBUART_CFIFO_TXOFE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_RXOFE_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_RXOFE_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_RXOFE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_CFIFO_RXOFE_SHIFT\fP)) & \fBUART_CFIFO_RXOFE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_RXFLUSH_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_RXFLUSH_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_RXFLUSH\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_CFIFO_RXFLUSH_SHIFT\fP)) & \fBUART_CFIFO_RXFLUSH_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_TXFLUSH_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_TXFLUSH_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_CFIFO_TXFLUSH\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_CFIFO_TXFLUSH_SHIFT\fP)) & \fBUART_CFIFO_TXFLUSH_MASK\fP)"
+.br
+.in -1c
+.SS "SFIFO - UART FIFO Status Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_SFIFO_RXUF_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_RXUF_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_RXUF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_SFIFO_RXUF_SHIFT\fP)) & \fBUART_SFIFO_RXUF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_TXOF_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_TXOF_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_TXOF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_SFIFO_TXOF_SHIFT\fP)) & \fBUART_SFIFO_TXOF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_RXOF_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_RXOF_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_RXOF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_SFIFO_RXOF_SHIFT\fP)) & \fBUART_SFIFO_RXOF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_RXEMPT_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_RXEMPT_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_RXEMPT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_SFIFO_RXEMPT_SHIFT\fP)) & \fBUART_SFIFO_RXEMPT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_TXEMPT_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_TXEMPT_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_SFIFO_TXEMPT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_SFIFO_TXEMPT_SHIFT\fP)) & \fBUART_SFIFO_TXEMPT_MASK\fP)"
+.br
+.in -1c
+.SS "TWFIFO - UART FIFO Transmit Watermark"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_TWFIFO_TXWATER_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_TWFIFO_TXWATER_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_TWFIFO_TXWATER\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_TWFIFO_TXWATER_SHIFT\fP)) & \fBUART_TWFIFO_TXWATER_MASK\fP)"
+.br
+.in -1c
+.SS "TCFIFO - UART FIFO Transmit Count"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_TCFIFO_TXCOUNT_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_TCFIFO_TXCOUNT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_TCFIFO_TXCOUNT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_TCFIFO_TXCOUNT_SHIFT\fP)) & \fBUART_TCFIFO_TXCOUNT_MASK\fP)"
+.br
+.in -1c
+.SS "RWFIFO - UART FIFO Receive Watermark"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_RWFIFO_RXWATER_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_RWFIFO_RXWATER_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_RWFIFO_RXWATER\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_RWFIFO_RXWATER_SHIFT\fP)) & \fBUART_RWFIFO_RXWATER_MASK\fP)"
+.br
+.in -1c
+.SS "RCFIFO - UART FIFO Receive Count"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_RCFIFO_RXCOUNT_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_RCFIFO_RXCOUNT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_RCFIFO_RXCOUNT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_RCFIFO_RXCOUNT_SHIFT\fP)) & \fBUART_RCFIFO_RXCOUNT_MASK\fP)"
+.br
+.in -1c
+.SS "C7816 - UART 7816 Control Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_C7816_ISO_7816E_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_ISO_7816E_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_ISO_7816E\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C7816_ISO_7816E_SHIFT\fP)) & \fBUART_C7816_ISO_7816E_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_TTYPE_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_TTYPE_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_TTYPE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C7816_TTYPE_SHIFT\fP)) & \fBUART_C7816_TTYPE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_INIT_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_INIT_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_INIT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C7816_INIT_SHIFT\fP)) & \fBUART_C7816_INIT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_ANACK_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_ANACK_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_ANACK\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C7816_ANACK_SHIFT\fP)) & \fBUART_C7816_ANACK_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_ONACK_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_ONACK_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_C7816_ONACK\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C7816_ONACK_SHIFT\fP)) & \fBUART_C7816_ONACK_MASK\fP)"
+.br
+.in -1c
+.SS "IE7816 - UART 7816 Interrupt Enable Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_IE7816_RXTE_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_RXTE_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_RXTE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_RXTE_SHIFT\fP)) & \fBUART_IE7816_RXTE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_TXTE_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_TXTE_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_TXTE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_TXTE_SHIFT\fP)) & \fBUART_IE7816_TXTE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_GTVE_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_GTVE_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_GTVE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_GTVE_SHIFT\fP)) & \fBUART_IE7816_GTVE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_INITDE_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_INITDE_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_INITDE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_INITDE_SHIFT\fP)) & \fBUART_IE7816_INITDE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_BWTE_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_BWTE_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_BWTE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_BWTE_SHIFT\fP)) & \fBUART_IE7816_BWTE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_CWTE_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_CWTE_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_CWTE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_CWTE_SHIFT\fP)) & \fBUART_IE7816_CWTE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_WTE_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_WTE_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IE7816_WTE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_WTE_SHIFT\fP)) & \fBUART_IE7816_WTE_MASK\fP)"
+.br
+.in -1c
+.SS "IS7816 - UART 7816 Interrupt Status Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_IS7816_RXT_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_RXT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_RXT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_RXT_SHIFT\fP)) & \fBUART_IS7816_RXT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_TXT_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_TXT_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_TXT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_TXT_SHIFT\fP)) & \fBUART_IS7816_TXT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_GTV_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_GTV_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_GTV\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_GTV_SHIFT\fP)) & \fBUART_IS7816_GTV_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_INITD_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_INITD_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_INITD\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_INITD_SHIFT\fP)) & \fBUART_IS7816_INITD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_BWT_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_BWT_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_BWT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_BWT_SHIFT\fP)) & \fBUART_IS7816_BWT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_CWT_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_CWT_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_CWT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_CWT_SHIFT\fP)) & \fBUART_IS7816_CWT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_WT_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_WT_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBUART_IS7816_WT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_WT_SHIFT\fP)) & \fBUART_IS7816_WT_MASK\fP)"
+.br
+.in -1c
+.SS "WP7816T0 - UART 7816 Wait Parameter Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_WP7816T0_WI_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816T0_WI_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816T0_WI\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_WP7816T0_WI_SHIFT\fP)) & \fBUART_WP7816T0_WI_MASK\fP)"
+.br
+.in -1c
+.SS "WP7816T1 - UART 7816 Wait Parameter Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_WP7816T1_BWI_MASK\fP   (0xFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816T1_BWI_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816T1_BWI\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_WP7816T1_BWI_SHIFT\fP)) & \fBUART_WP7816T1_BWI_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816T1_CWI_MASK\fP   (0xF0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816T1_CWI_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_WP7816T1_CWI\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_WP7816T1_CWI_SHIFT\fP)) & \fBUART_WP7816T1_CWI_MASK\fP)"
+.br
+.in -1c
+.SS "WN7816 - UART 7816 Wait N Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_WN7816_GTN_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_WN7816_GTN_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_WN7816_GTN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_WN7816_GTN_SHIFT\fP)) & \fBUART_WN7816_GTN_MASK\fP)"
+.br
+.in -1c
+.SS "WF7816 - UART 7816 Wait FD Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_WF7816_GTFD_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_WF7816_GTFD_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_WF7816_GTFD\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_WF7816_GTFD_SHIFT\fP)) & \fBUART_WF7816_GTFD_MASK\fP)"
+.br
+.in -1c
+.SS "ET7816 - UART 7816 Error Threshold Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_ET7816_RXTHRESHOLD_MASK\fP   (0xFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_ET7816_RXTHRESHOLD_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_ET7816_RXTHRESHOLD\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_ET7816_RXTHRESHOLD_SHIFT\fP)) & \fBUART_ET7816_RXTHRESHOLD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBUART_ET7816_TXTHRESHOLD_MASK\fP   (0xF0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_ET7816_TXTHRESHOLD_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBUART_ET7816_TXTHRESHOLD\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_ET7816_TXTHRESHOLD_SHIFT\fP)) & \fBUART_ET7816_TXTHRESHOLD_MASK\fP)"
+.br
+.in -1c
+.SS "TL7816 - UART 7816 Transmit Length Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUART_TL7816_TLEN_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBUART_TL7816_TLEN_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBUART_TL7816_TLEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_TL7816_TLEN_SHIFT\fP)) & \fBUART_TL7816_TLEN_MASK\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define UART0   ((\fBUART_Type\fP *)\fBUART0_BASE\fP)"
+Peripheral UART0 base pointer 
+.SS "#define UART0_BASE   (0x4006A000u)"
+Peripheral UART0 base address 
+.SS "#define UART1   ((\fBUART_Type\fP *)\fBUART1_BASE\fP)"
+Peripheral UART1 base pointer 
+.SS "#define UART1_BASE   (0x4006B000u)"
+Peripheral UART1 base address 
+.SS "#define UART2   ((\fBUART_Type\fP *)\fBUART2_BASE\fP)"
+Peripheral UART2 base pointer 
+.SS "#define UART2_BASE   (0x4006C000u)"
+Peripheral UART2 base address 
+.SS "#define UART3   ((\fBUART_Type\fP *)\fBUART3_BASE\fP)"
+Peripheral UART3 base pointer 
+.SS "#define UART3_BASE   (0x4006D000u)"
+Peripheral UART3 base address 
+.SS "#define UART4   ((\fBUART_Type\fP *)\fBUART4_BASE\fP)"
+Peripheral UART4 base pointer 
+.SS "#define UART4_BASE   (0x400EA000u)"
+Peripheral UART4 base address 
+.SS "#define UART5   ((\fBUART_Type\fP *)\fBUART5_BASE\fP)"
+Peripheral UART5 base pointer 
+.SS "#define UART5_BASE   (0x400EB000u)"
+Peripheral UART5 base address 
+.SS "#define UART_BASE_ADDRS   { \fBUART0_BASE\fP, \fBUART1_BASE\fP, \fBUART2_BASE\fP, \fBUART3_BASE\fP, \fBUART4_BASE\fP, \fBUART5_BASE\fP }"
+Array initializer of UART peripheral base addresses 
+.SS "#define UART_BASE_PTRS   { \fBUART0\fP, \fBUART1\fP, \fBUART2\fP, \fBUART3\fP, \fBUART4\fP, \fBUART5\fP }"
+Array initializer of UART peripheral base pointers 
+.SS "#define UART_BDH_LBKDIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_BDH_LBKDIE_SHIFT\fP)) & \fBUART_BDH_LBKDIE_MASK\fP)"
+
+.SS "#define UART_BDH_LBKDIE_MASK   (0x80U)"
+
+.SS "#define UART_BDH_LBKDIE_SHIFT   (7U)"
+
+.SS "#define UART_BDH_RXEDGIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_BDH_RXEDGIE_SHIFT\fP)) & \fBUART_BDH_RXEDGIE_MASK\fP)"
+
+.SS "#define UART_BDH_RXEDGIE_MASK   (0x40U)"
+
+.SS "#define UART_BDH_RXEDGIE_SHIFT   (6U)"
+
+.SS "#define UART_BDH_SBNS(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_BDH_SBNS_SHIFT\fP)) & \fBUART_BDH_SBNS_MASK\fP)"
+
+.SS "#define UART_BDH_SBNS_MASK   (0x20U)"
+
+.SS "#define UART_BDH_SBNS_SHIFT   (5U)"
+
+.SS "#define UART_BDH_SBR(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_BDH_SBR_SHIFT\fP)) & \fBUART_BDH_SBR_MASK\fP)"
+
+.SS "#define UART_BDH_SBR_MASK   (0x1FU)"
+
+.SS "#define UART_BDH_SBR_SHIFT   (0U)"
+
+.SS "#define UART_BDL_SBR(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_BDL_SBR_SHIFT\fP)) & \fBUART_BDL_SBR_MASK\fP)"
+
+.SS "#define UART_BDL_SBR_MASK   (0xFFU)"
+
+.SS "#define UART_BDL_SBR_SHIFT   (0U)"
+
+.SS "#define UART_C1_ILT(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_ILT_SHIFT\fP)) & \fBUART_C1_ILT_MASK\fP)"
+
+.SS "#define UART_C1_ILT_MASK   (0x4U)"
+
+.SS "#define UART_C1_ILT_SHIFT   (2U)"
+
+.SS "#define UART_C1_LOOPS(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_LOOPS_SHIFT\fP)) & \fBUART_C1_LOOPS_MASK\fP)"
+
+.SS "#define UART_C1_LOOPS_MASK   (0x80U)"
+
+.SS "#define UART_C1_LOOPS_SHIFT   (7U)"
+
+.SS "#define UART_C1_M(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_M_SHIFT\fP)) & \fBUART_C1_M_MASK\fP)"
+
+.SS "#define UART_C1_M_MASK   (0x10U)"
+
+.SS "#define UART_C1_M_SHIFT   (4U)"
+
+.SS "#define UART_C1_PE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_PE_SHIFT\fP)) & \fBUART_C1_PE_MASK\fP)"
+
+.SS "#define UART_C1_PE_MASK   (0x2U)"
+
+.SS "#define UART_C1_PE_SHIFT   (1U)"
+
+.SS "#define UART_C1_PT(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_PT_SHIFT\fP)) & \fBUART_C1_PT_MASK\fP)"
+
+.SS "#define UART_C1_PT_MASK   (0x1U)"
+
+.SS "#define UART_C1_PT_SHIFT   (0U)"
+
+.SS "#define UART_C1_RSRC(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_RSRC_SHIFT\fP)) & \fBUART_C1_RSRC_MASK\fP)"
+
+.SS "#define UART_C1_RSRC_MASK   (0x20U)"
+
+.SS "#define UART_C1_RSRC_SHIFT   (5U)"
+
+.SS "#define UART_C1_UARTSWAI(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_UARTSWAI_SHIFT\fP)) & \fBUART_C1_UARTSWAI_MASK\fP)"
+
+.SS "#define UART_C1_UARTSWAI_MASK   (0x40U)"
+
+.SS "#define UART_C1_UARTSWAI_SHIFT   (6U)"
+
+.SS "#define UART_C1_WAKE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C1_WAKE_SHIFT\fP)) & \fBUART_C1_WAKE_MASK\fP)"
+
+.SS "#define UART_C1_WAKE_MASK   (0x8U)"
+
+.SS "#define UART_C1_WAKE_SHIFT   (3U)"
+
+.SS "#define UART_C2_ILIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_ILIE_SHIFT\fP)) & \fBUART_C2_ILIE_MASK\fP)"
+
+.SS "#define UART_C2_ILIE_MASK   (0x10U)"
+
+.SS "#define UART_C2_ILIE_SHIFT   (4U)"
+
+.SS "#define UART_C2_RE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_RE_SHIFT\fP)) & \fBUART_C2_RE_MASK\fP)"
+
+.SS "#define UART_C2_RE_MASK   (0x4U)"
+
+.SS "#define UART_C2_RE_SHIFT   (2U)"
+
+.SS "#define UART_C2_RIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_RIE_SHIFT\fP)) & \fBUART_C2_RIE_MASK\fP)"
+
+.SS "#define UART_C2_RIE_MASK   (0x20U)"
+
+.SS "#define UART_C2_RIE_SHIFT   (5U)"
+
+.SS "#define UART_C2_RWU(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_RWU_SHIFT\fP)) & \fBUART_C2_RWU_MASK\fP)"
+
+.SS "#define UART_C2_RWU_MASK   (0x2U)"
+
+.SS "#define UART_C2_RWU_SHIFT   (1U)"
+
+.SS "#define UART_C2_SBK(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_SBK_SHIFT\fP)) & \fBUART_C2_SBK_MASK\fP)"
+
+.SS "#define UART_C2_SBK_MASK   (0x1U)"
+
+.SS "#define UART_C2_SBK_SHIFT   (0U)"
+
+.SS "#define UART_C2_TCIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_TCIE_SHIFT\fP)) & \fBUART_C2_TCIE_MASK\fP)"
+
+.SS "#define UART_C2_TCIE_MASK   (0x40U)"
+
+.SS "#define UART_C2_TCIE_SHIFT   (6U)"
+
+.SS "#define UART_C2_TE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_TE_SHIFT\fP)) & \fBUART_C2_TE_MASK\fP)"
+
+.SS "#define UART_C2_TE_MASK   (0x8U)"
+
+.SS "#define UART_C2_TE_SHIFT   (3U)"
+
+.SS "#define UART_C2_TIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C2_TIE_SHIFT\fP)) & \fBUART_C2_TIE_MASK\fP)"
+
+.SS "#define UART_C2_TIE_MASK   (0x80U)"
+
+.SS "#define UART_C2_TIE_SHIFT   (7U)"
+
+.SS "#define UART_C3_FEIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_FEIE_SHIFT\fP)) & \fBUART_C3_FEIE_MASK\fP)"
+
+.SS "#define UART_C3_FEIE_MASK   (0x2U)"
+
+.SS "#define UART_C3_FEIE_SHIFT   (1U)"
+
+.SS "#define UART_C3_NEIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_NEIE_SHIFT\fP)) & \fBUART_C3_NEIE_MASK\fP)"
+
+.SS "#define UART_C3_NEIE_MASK   (0x4U)"
+
+.SS "#define UART_C3_NEIE_SHIFT   (2U)"
+
+.SS "#define UART_C3_ORIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_ORIE_SHIFT\fP)) & \fBUART_C3_ORIE_MASK\fP)"
+
+.SS "#define UART_C3_ORIE_MASK   (0x8U)"
+
+.SS "#define UART_C3_ORIE_SHIFT   (3U)"
+
+.SS "#define UART_C3_PEIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_PEIE_SHIFT\fP)) & \fBUART_C3_PEIE_MASK\fP)"
+
+.SS "#define UART_C3_PEIE_MASK   (0x1U)"
+
+.SS "#define UART_C3_PEIE_SHIFT   (0U)"
+
+.SS "#define UART_C3_R8(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_R8_SHIFT\fP)) & \fBUART_C3_R8_MASK\fP)"
+
+.SS "#define UART_C3_R8_MASK   (0x80U)"
+
+.SS "#define UART_C3_R8_SHIFT   (7U)"
+
+.SS "#define UART_C3_T8(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_T8_SHIFT\fP)) & \fBUART_C3_T8_MASK\fP)"
+
+.SS "#define UART_C3_T8_MASK   (0x40U)"
+
+.SS "#define UART_C3_T8_SHIFT   (6U)"
+
+.SS "#define UART_C3_TXDIR(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_TXDIR_SHIFT\fP)) & \fBUART_C3_TXDIR_MASK\fP)"
+
+.SS "#define UART_C3_TXDIR_MASK   (0x20U)"
+
+.SS "#define UART_C3_TXDIR_SHIFT   (5U)"
+
+.SS "#define UART_C3_TXINV(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C3_TXINV_SHIFT\fP)) & \fBUART_C3_TXINV_MASK\fP)"
+
+.SS "#define UART_C3_TXINV_MASK   (0x10U)"
+
+.SS "#define UART_C3_TXINV_SHIFT   (4U)"
+
+.SS "#define UART_C4_BRFA(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C4_BRFA_SHIFT\fP)) & \fBUART_C4_BRFA_MASK\fP)"
+
+.SS "#define UART_C4_BRFA_MASK   (0x1FU)"
+
+.SS "#define UART_C4_BRFA_SHIFT   (0U)"
+
+.SS "#define UART_C4_M10(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C4_M10_SHIFT\fP)) & \fBUART_C4_M10_MASK\fP)"
+
+.SS "#define UART_C4_M10_MASK   (0x20U)"
+
+.SS "#define UART_C4_M10_SHIFT   (5U)"
+
+.SS "#define UART_C4_MAEN1(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C4_MAEN1_SHIFT\fP)) & \fBUART_C4_MAEN1_MASK\fP)"
+
+.SS "#define UART_C4_MAEN1_MASK   (0x80U)"
+
+.SS "#define UART_C4_MAEN1_SHIFT   (7U)"
+
+.SS "#define UART_C4_MAEN2(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C4_MAEN2_SHIFT\fP)) & \fBUART_C4_MAEN2_MASK\fP)"
+
+.SS "#define UART_C4_MAEN2_MASK   (0x40U)"
+
+.SS "#define UART_C4_MAEN2_SHIFT   (6U)"
+
+.SS "#define UART_C5_ILDMAS(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C5_ILDMAS_SHIFT\fP)) & \fBUART_C5_ILDMAS_MASK\fP)"
+
+.SS "#define UART_C5_ILDMAS_MASK   (0x10U)"
+
+.SS "#define UART_C5_ILDMAS_SHIFT   (4U)"
+
+.SS "#define UART_C5_LBKDDMAS(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C5_LBKDDMAS_SHIFT\fP)) & \fBUART_C5_LBKDDMAS_MASK\fP)"
+
+.SS "#define UART_C5_LBKDDMAS_MASK   (0x8U)"
+
+.SS "#define UART_C5_LBKDDMAS_SHIFT   (3U)"
+
+.SS "#define UART_C5_RDMAS(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C5_RDMAS_SHIFT\fP)) & \fBUART_C5_RDMAS_MASK\fP)"
+
+.SS "#define UART_C5_RDMAS_MASK   (0x20U)"
+
+.SS "#define UART_C5_RDMAS_SHIFT   (5U)"
+
+.SS "#define UART_C5_TCDMAS(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C5_TCDMAS_SHIFT\fP)) & \fBUART_C5_TCDMAS_MASK\fP)"
+
+.SS "#define UART_C5_TCDMAS_MASK   (0x40U)"
+
+.SS "#define UART_C5_TCDMAS_SHIFT   (6U)"
+
+.SS "#define UART_C5_TDMAS(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C5_TDMAS_SHIFT\fP)) & \fBUART_C5_TDMAS_MASK\fP)"
+
+.SS "#define UART_C5_TDMAS_MASK   (0x80U)"
+
+.SS "#define UART_C5_TDMAS_SHIFT   (7U)"
+
+.SS "#define UART_C7816_ANACK(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C7816_ANACK_SHIFT\fP)) & \fBUART_C7816_ANACK_MASK\fP)"
+
+.SS "#define UART_C7816_ANACK_MASK   (0x8U)"
+
+.SS "#define UART_C7816_ANACK_SHIFT   (3U)"
+
+.SS "#define UART_C7816_INIT(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C7816_INIT_SHIFT\fP)) & \fBUART_C7816_INIT_MASK\fP)"
+
+.SS "#define UART_C7816_INIT_MASK   (0x4U)"
+
+.SS "#define UART_C7816_INIT_SHIFT   (2U)"
+
+.SS "#define UART_C7816_ISO_7816E(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C7816_ISO_7816E_SHIFT\fP)) & \fBUART_C7816_ISO_7816E_MASK\fP)"
+
+.SS "#define UART_C7816_ISO_7816E_MASK   (0x1U)"
+
+.SS "#define UART_C7816_ISO_7816E_SHIFT   (0U)"
+
+.SS "#define UART_C7816_ONACK(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C7816_ONACK_SHIFT\fP)) & \fBUART_C7816_ONACK_MASK\fP)"
+
+.SS "#define UART_C7816_ONACK_MASK   (0x10U)"
+
+.SS "#define UART_C7816_ONACK_SHIFT   (4U)"
+
+.SS "#define UART_C7816_TTYPE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_C7816_TTYPE_SHIFT\fP)) & \fBUART_C7816_TTYPE_MASK\fP)"
+
+.SS "#define UART_C7816_TTYPE_MASK   (0x2U)"
+
+.SS "#define UART_C7816_TTYPE_SHIFT   (1U)"
+
+.SS "#define UART_CFIFO_RXFLUSH(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_CFIFO_RXFLUSH_SHIFT\fP)) & \fBUART_CFIFO_RXFLUSH_MASK\fP)"
+
+.SS "#define UART_CFIFO_RXFLUSH_MASK   (0x40U)"
+
+.SS "#define UART_CFIFO_RXFLUSH_SHIFT   (6U)"
+
+.SS "#define UART_CFIFO_RXOFE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_CFIFO_RXOFE_SHIFT\fP)) & \fBUART_CFIFO_RXOFE_MASK\fP)"
+
+.SS "#define UART_CFIFO_RXOFE_MASK   (0x4U)"
+
+.SS "#define UART_CFIFO_RXOFE_SHIFT   (2U)"
+
+.SS "#define UART_CFIFO_RXUFE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_CFIFO_RXUFE_SHIFT\fP)) & \fBUART_CFIFO_RXUFE_MASK\fP)"
+
+.SS "#define UART_CFIFO_RXUFE_MASK   (0x1U)"
+
+.SS "#define UART_CFIFO_RXUFE_SHIFT   (0U)"
+
+.SS "#define UART_CFIFO_TXFLUSH(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_CFIFO_TXFLUSH_SHIFT\fP)) & \fBUART_CFIFO_TXFLUSH_MASK\fP)"
+
+.SS "#define UART_CFIFO_TXFLUSH_MASK   (0x80U)"
+
+.SS "#define UART_CFIFO_TXFLUSH_SHIFT   (7U)"
+
+.SS "#define UART_CFIFO_TXOFE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_CFIFO_TXOFE_SHIFT\fP)) & \fBUART_CFIFO_TXOFE_MASK\fP)"
+
+.SS "#define UART_CFIFO_TXOFE_MASK   (0x2U)"
+
+.SS "#define UART_CFIFO_TXOFE_SHIFT   (1U)"
+
+.SS "#define UART_D_RT(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_D_RT_SHIFT\fP)) & \fBUART_D_RT_MASK\fP)"
+
+.SS "#define UART_D_RT_MASK   (0xFFU)"
+
+.SS "#define UART_D_RT_SHIFT   (0U)"
+
+.SS "#define UART_ED_NOISY(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_ED_NOISY_SHIFT\fP)) & \fBUART_ED_NOISY_MASK\fP)"
+
+.SS "#define UART_ED_NOISY_MASK   (0x80U)"
+
+.SS "#define UART_ED_NOISY_SHIFT   (7U)"
+
+.SS "#define UART_ED_PARITYE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_ED_PARITYE_SHIFT\fP)) & \fBUART_ED_PARITYE_MASK\fP)"
+
+.SS "#define UART_ED_PARITYE_MASK   (0x40U)"
+
+.SS "#define UART_ED_PARITYE_SHIFT   (6U)"
+
+.SS "#define UART_ERR_IRQS   { \fBUART0_ERR_IRQn\fP, \fBUART1_ERR_IRQn\fP, \fBUART2_ERR_IRQn\fP, \fBUART3_ERR_IRQn\fP, \fBUART4_ERR_IRQn\fP, \fBUART5_ERR_IRQn\fP }"
+
+.SS "#define UART_ET7816_RXTHRESHOLD(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_ET7816_RXTHRESHOLD_SHIFT\fP)) & \fBUART_ET7816_RXTHRESHOLD_MASK\fP)"
+
+.SS "#define UART_ET7816_RXTHRESHOLD_MASK   (0xFU)"
+
+.SS "#define UART_ET7816_RXTHRESHOLD_SHIFT   (0U)"
+
+.SS "#define UART_ET7816_TXTHRESHOLD(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_ET7816_TXTHRESHOLD_SHIFT\fP)) & \fBUART_ET7816_TXTHRESHOLD_MASK\fP)"
+
+.SS "#define UART_ET7816_TXTHRESHOLD_MASK   (0xF0U)"
+
+.SS "#define UART_ET7816_TXTHRESHOLD_SHIFT   (4U)"
+
+.SS "#define UART_IE7816_BWTE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_BWTE_SHIFT\fP)) & \fBUART_IE7816_BWTE_MASK\fP)"
+
+.SS "#define UART_IE7816_BWTE_MASK   (0x20U)"
+
+.SS "#define UART_IE7816_BWTE_SHIFT   (5U)"
+
+.SS "#define UART_IE7816_CWTE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_CWTE_SHIFT\fP)) & \fBUART_IE7816_CWTE_MASK\fP)"
+
+.SS "#define UART_IE7816_CWTE_MASK   (0x40U)"
+
+.SS "#define UART_IE7816_CWTE_SHIFT   (6U)"
+
+.SS "#define UART_IE7816_GTVE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_GTVE_SHIFT\fP)) & \fBUART_IE7816_GTVE_MASK\fP)"
+
+.SS "#define UART_IE7816_GTVE_MASK   (0x4U)"
+
+.SS "#define UART_IE7816_GTVE_SHIFT   (2U)"
+
+.SS "#define UART_IE7816_INITDE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_INITDE_SHIFT\fP)) & \fBUART_IE7816_INITDE_MASK\fP)"
+
+.SS "#define UART_IE7816_INITDE_MASK   (0x10U)"
+
+.SS "#define UART_IE7816_INITDE_SHIFT   (4U)"
+
+.SS "#define UART_IE7816_RXTE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_RXTE_SHIFT\fP)) & \fBUART_IE7816_RXTE_MASK\fP)"
+
+.SS "#define UART_IE7816_RXTE_MASK   (0x1U)"
+
+.SS "#define UART_IE7816_RXTE_SHIFT   (0U)"
+
+.SS "#define UART_IE7816_TXTE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_TXTE_SHIFT\fP)) & \fBUART_IE7816_TXTE_MASK\fP)"
+
+.SS "#define UART_IE7816_TXTE_MASK   (0x2U)"
+
+.SS "#define UART_IE7816_TXTE_SHIFT   (1U)"
+
+.SS "#define UART_IE7816_WTE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IE7816_WTE_SHIFT\fP)) & \fBUART_IE7816_WTE_MASK\fP)"
+
+.SS "#define UART_IE7816_WTE_MASK   (0x80U)"
+
+.SS "#define UART_IE7816_WTE_SHIFT   (7U)"
+
+.SS "#define UART_IR_IREN(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IR_IREN_SHIFT\fP)) & \fBUART_IR_IREN_MASK\fP)"
+
+.SS "#define UART_IR_IREN_MASK   (0x4U)"
+
+.SS "#define UART_IR_IREN_SHIFT   (2U)"
+
+.SS "#define UART_IR_TNP(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IR_TNP_SHIFT\fP)) & \fBUART_IR_TNP_MASK\fP)"
+
+.SS "#define UART_IR_TNP_MASK   (0x3U)"
+
+.SS "#define UART_IR_TNP_SHIFT   (0U)"
+
+.SS "#define UART_IS7816_BWT(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_BWT_SHIFT\fP)) & \fBUART_IS7816_BWT_MASK\fP)"
+
+.SS "#define UART_IS7816_BWT_MASK   (0x20U)"
+
+.SS "#define UART_IS7816_BWT_SHIFT   (5U)"
+
+.SS "#define UART_IS7816_CWT(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_CWT_SHIFT\fP)) & \fBUART_IS7816_CWT_MASK\fP)"
+
+.SS "#define UART_IS7816_CWT_MASK   (0x40U)"
+
+.SS "#define UART_IS7816_CWT_SHIFT   (6U)"
+
+.SS "#define UART_IS7816_GTV(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_GTV_SHIFT\fP)) & \fBUART_IS7816_GTV_MASK\fP)"
+
+.SS "#define UART_IS7816_GTV_MASK   (0x4U)"
+
+.SS "#define UART_IS7816_GTV_SHIFT   (2U)"
+
+.SS "#define UART_IS7816_INITD(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_INITD_SHIFT\fP)) & \fBUART_IS7816_INITD_MASK\fP)"
+
+.SS "#define UART_IS7816_INITD_MASK   (0x10U)"
+
+.SS "#define UART_IS7816_INITD_SHIFT   (4U)"
+
+.SS "#define UART_IS7816_RXT(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_RXT_SHIFT\fP)) & \fBUART_IS7816_RXT_MASK\fP)"
+
+.SS "#define UART_IS7816_RXT_MASK   (0x1U)"
+
+.SS "#define UART_IS7816_RXT_SHIFT   (0U)"
+
+.SS "#define UART_IS7816_TXT(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_TXT_SHIFT\fP)) & \fBUART_IS7816_TXT_MASK\fP)"
+
+.SS "#define UART_IS7816_TXT_MASK   (0x2U)"
+
+.SS "#define UART_IS7816_TXT_SHIFT   (1U)"
+
+.SS "#define UART_IS7816_WT(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_IS7816_WT_SHIFT\fP)) & \fBUART_IS7816_WT_MASK\fP)"
+
+.SS "#define UART_IS7816_WT_MASK   (0x80U)"
+
+.SS "#define UART_IS7816_WT_SHIFT   (7U)"
+
+.SS "#define UART_LON_IRQS   { \fBUART0_LON_IRQn\fP, \fBNotAvail_IRQn\fP, \fBNotAvail_IRQn\fP, \fBNotAvail_IRQn\fP, \fBNotAvail_IRQn\fP, \fBNotAvail_IRQn\fP }"
+
+.SS "#define UART_MA1_MA(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_MA1_MA_SHIFT\fP)) & \fBUART_MA1_MA_MASK\fP)"
+
+.SS "#define UART_MA1_MA_MASK   (0xFFU)"
+
+.SS "#define UART_MA1_MA_SHIFT   (0U)"
+
+.SS "#define UART_MA2_MA(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_MA2_MA_SHIFT\fP)) & \fBUART_MA2_MA_MASK\fP)"
+
+.SS "#define UART_MA2_MA_MASK   (0xFFU)"
+
+.SS "#define UART_MA2_MA_SHIFT   (0U)"
+
+.SS "#define UART_MODEM_RXRTSE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_MODEM_RXRTSE_SHIFT\fP)) & \fBUART_MODEM_RXRTSE_MASK\fP)"
+
+.SS "#define UART_MODEM_RXRTSE_MASK   (0x8U)"
+
+.SS "#define UART_MODEM_RXRTSE_SHIFT   (3U)"
+
+.SS "#define UART_MODEM_TXCTSE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_MODEM_TXCTSE_SHIFT\fP)) & \fBUART_MODEM_TXCTSE_MASK\fP)"
+
+.SS "#define UART_MODEM_TXCTSE_MASK   (0x1U)"
+
+.SS "#define UART_MODEM_TXCTSE_SHIFT   (0U)"
+
+.SS "#define UART_MODEM_TXRTSE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_MODEM_TXRTSE_SHIFT\fP)) & \fBUART_MODEM_TXRTSE_MASK\fP)"
+
+.SS "#define UART_MODEM_TXRTSE_MASK   (0x2U)"
+
+.SS "#define UART_MODEM_TXRTSE_SHIFT   (1U)"
+
+.SS "#define UART_MODEM_TXRTSPOL(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_MODEM_TXRTSPOL_SHIFT\fP)) & \fBUART_MODEM_TXRTSPOL_MASK\fP)"
+
+.SS "#define UART_MODEM_TXRTSPOL_MASK   (0x4U)"
+
+.SS "#define UART_MODEM_TXRTSPOL_SHIFT   (2U)"
+
+.SS "#define UART_PFIFO_RXFE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_PFIFO_RXFE_SHIFT\fP)) & \fBUART_PFIFO_RXFE_MASK\fP)"
+
+.SS "#define UART_PFIFO_RXFE_MASK   (0x8U)"
+
+.SS "#define UART_PFIFO_RXFE_SHIFT   (3U)"
+
+.SS "#define UART_PFIFO_RXFIFOSIZE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_PFIFO_RXFIFOSIZE_SHIFT\fP)) & \fBUART_PFIFO_RXFIFOSIZE_MASK\fP)"
+
+.SS "#define UART_PFIFO_RXFIFOSIZE_MASK   (0x7U)"
+
+.SS "#define UART_PFIFO_RXFIFOSIZE_SHIFT   (0U)"
+
+.SS "#define UART_PFIFO_TXFE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_PFIFO_TXFE_SHIFT\fP)) & \fBUART_PFIFO_TXFE_MASK\fP)"
+
+.SS "#define UART_PFIFO_TXFE_MASK   (0x80U)"
+
+.SS "#define UART_PFIFO_TXFE_SHIFT   (7U)"
+
+.SS "#define UART_PFIFO_TXFIFOSIZE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_PFIFO_TXFIFOSIZE_SHIFT\fP)) & \fBUART_PFIFO_TXFIFOSIZE_MASK\fP)"
+
+.SS "#define UART_PFIFO_TXFIFOSIZE_MASK   (0x70U)"
+
+.SS "#define UART_PFIFO_TXFIFOSIZE_SHIFT   (4U)"
+
+.SS "#define UART_RCFIFO_RXCOUNT(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_RCFIFO_RXCOUNT_SHIFT\fP)) & \fBUART_RCFIFO_RXCOUNT_MASK\fP)"
+
+.SS "#define UART_RCFIFO_RXCOUNT_MASK   (0xFFU)"
+
+.SS "#define UART_RCFIFO_RXCOUNT_SHIFT   (0U)"
+
+.SS "#define UART_RWFIFO_RXWATER(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_RWFIFO_RXWATER_SHIFT\fP)) & \fBUART_RWFIFO_RXWATER_MASK\fP)"
+
+.SS "#define UART_RWFIFO_RXWATER_MASK   (0xFFU)"
+
+.SS "#define UART_RWFIFO_RXWATER_SHIFT   (0U)"
+
+.SS "#define UART_RX_TX_IRQS   { \fBUART0_RX_TX_IRQn\fP, \fBUART1_RX_TX_IRQn\fP, \fBUART2_RX_TX_IRQn\fP, \fBUART3_RX_TX_IRQn\fP, \fBUART4_RX_TX_IRQn\fP, \fBUART5_RX_TX_IRQn\fP }"
+Interrupt vectors for the UART peripheral type 
+.SS "#define UART_S1_FE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_FE_SHIFT\fP)) & \fBUART_S1_FE_MASK\fP)"
+
+.SS "#define UART_S1_FE_MASK   (0x2U)"
+
+.SS "#define UART_S1_FE_SHIFT   (1U)"
+
+.SS "#define UART_S1_IDLE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_IDLE_SHIFT\fP)) & \fBUART_S1_IDLE_MASK\fP)"
+
+.SS "#define UART_S1_IDLE_MASK   (0x10U)"
+
+.SS "#define UART_S1_IDLE_SHIFT   (4U)"
+
+.SS "#define UART_S1_NF(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_NF_SHIFT\fP)) & \fBUART_S1_NF_MASK\fP)"
+
+.SS "#define UART_S1_NF_MASK   (0x4U)"
+
+.SS "#define UART_S1_NF_SHIFT   (2U)"
+
+.SS "#define UART_S1_OR(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_OR_SHIFT\fP)) & \fBUART_S1_OR_MASK\fP)"
+
+.SS "#define UART_S1_OR_MASK   (0x8U)"
+
+.SS "#define UART_S1_OR_SHIFT   (3U)"
+
+.SS "#define UART_S1_PF(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_PF_SHIFT\fP)) & \fBUART_S1_PF_MASK\fP)"
+
+.SS "#define UART_S1_PF_MASK   (0x1U)"
+
+.SS "#define UART_S1_PF_SHIFT   (0U)"
+
+.SS "#define UART_S1_RDRF(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_RDRF_SHIFT\fP)) & \fBUART_S1_RDRF_MASK\fP)"
+
+.SS "#define UART_S1_RDRF_MASK   (0x20U)"
+
+.SS "#define UART_S1_RDRF_SHIFT   (5U)"
+
+.SS "#define UART_S1_TC(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_TC_SHIFT\fP)) & \fBUART_S1_TC_MASK\fP)"
+
+.SS "#define UART_S1_TC_MASK   (0x40U)"
+
+.SS "#define UART_S1_TC_SHIFT   (6U)"
+
+.SS "#define UART_S1_TDRE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S1_TDRE_SHIFT\fP)) & \fBUART_S1_TDRE_MASK\fP)"
+
+.SS "#define UART_S1_TDRE_MASK   (0x80U)"
+
+.SS "#define UART_S1_TDRE_SHIFT   (7U)"
+
+.SS "#define UART_S2_BRK13(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_BRK13_SHIFT\fP)) & \fBUART_S2_BRK13_MASK\fP)"
+
+.SS "#define UART_S2_BRK13_MASK   (0x4U)"
+
+.SS "#define UART_S2_BRK13_SHIFT   (2U)"
+
+.SS "#define UART_S2_LBKDE(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_LBKDE_SHIFT\fP)) & \fBUART_S2_LBKDE_MASK\fP)"
+
+.SS "#define UART_S2_LBKDE_MASK   (0x2U)"
+
+.SS "#define UART_S2_LBKDE_SHIFT   (1U)"
+
+.SS "#define UART_S2_LBKDIF(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_LBKDIF_SHIFT\fP)) & \fBUART_S2_LBKDIF_MASK\fP)"
+
+.SS "#define UART_S2_LBKDIF_MASK   (0x80U)"
+
+.SS "#define UART_S2_LBKDIF_SHIFT   (7U)"
+
+.SS "#define UART_S2_MSBF(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_MSBF_SHIFT\fP)) & \fBUART_S2_MSBF_MASK\fP)"
+
+.SS "#define UART_S2_MSBF_MASK   (0x20U)"
+
+.SS "#define UART_S2_MSBF_SHIFT   (5U)"
+
+.SS "#define UART_S2_RAF(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_RAF_SHIFT\fP)) & \fBUART_S2_RAF_MASK\fP)"
+
+.SS "#define UART_S2_RAF_MASK   (0x1U)"
+
+.SS "#define UART_S2_RAF_SHIFT   (0U)"
+
+.SS "#define UART_S2_RWUID(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_RWUID_SHIFT\fP)) & \fBUART_S2_RWUID_MASK\fP)"
+
+.SS "#define UART_S2_RWUID_MASK   (0x8U)"
+
+.SS "#define UART_S2_RWUID_SHIFT   (3U)"
+
+.SS "#define UART_S2_RXEDGIF(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_RXEDGIF_SHIFT\fP)) & \fBUART_S2_RXEDGIF_MASK\fP)"
+
+.SS "#define UART_S2_RXEDGIF_MASK   (0x40U)"
+
+.SS "#define UART_S2_RXEDGIF_SHIFT   (6U)"
+
+.SS "#define UART_S2_RXINV(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_S2_RXINV_SHIFT\fP)) & \fBUART_S2_RXINV_MASK\fP)"
+
+.SS "#define UART_S2_RXINV_MASK   (0x10U)"
+
+.SS "#define UART_S2_RXINV_SHIFT   (4U)"
+
+.SS "#define UART_SFIFO_RXEMPT(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_SFIFO_RXEMPT_SHIFT\fP)) & \fBUART_SFIFO_RXEMPT_MASK\fP)"
+
+.SS "#define UART_SFIFO_RXEMPT_MASK   (0x40U)"
+
+.SS "#define UART_SFIFO_RXEMPT_SHIFT   (6U)"
+
+.SS "#define UART_SFIFO_RXOF(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_SFIFO_RXOF_SHIFT\fP)) & \fBUART_SFIFO_RXOF_MASK\fP)"
+
+.SS "#define UART_SFIFO_RXOF_MASK   (0x4U)"
+
+.SS "#define UART_SFIFO_RXOF_SHIFT   (2U)"
+
+.SS "#define UART_SFIFO_RXUF(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_SFIFO_RXUF_SHIFT\fP)) & \fBUART_SFIFO_RXUF_MASK\fP)"
+
+.SS "#define UART_SFIFO_RXUF_MASK   (0x1U)"
+
+.SS "#define UART_SFIFO_RXUF_SHIFT   (0U)"
+
+.SS "#define UART_SFIFO_TXEMPT(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_SFIFO_TXEMPT_SHIFT\fP)) & \fBUART_SFIFO_TXEMPT_MASK\fP)"
+
+.SS "#define UART_SFIFO_TXEMPT_MASK   (0x80U)"
+
+.SS "#define UART_SFIFO_TXEMPT_SHIFT   (7U)"
+
+.SS "#define UART_SFIFO_TXOF(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_SFIFO_TXOF_SHIFT\fP)) & \fBUART_SFIFO_TXOF_MASK\fP)"
+
+.SS "#define UART_SFIFO_TXOF_MASK   (0x2U)"
+
+.SS "#define UART_SFIFO_TXOF_SHIFT   (1U)"
+
+.SS "#define UART_TCFIFO_TXCOUNT(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_TCFIFO_TXCOUNT_SHIFT\fP)) & \fBUART_TCFIFO_TXCOUNT_MASK\fP)"
+
+.SS "#define UART_TCFIFO_TXCOUNT_MASK   (0xFFU)"
+
+.SS "#define UART_TCFIFO_TXCOUNT_SHIFT   (0U)"
+
+.SS "#define UART_TL7816_TLEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_TL7816_TLEN_SHIFT\fP)) & \fBUART_TL7816_TLEN_MASK\fP)"
+
+.SS "#define UART_TL7816_TLEN_MASK   (0xFFU)"
+
+.SS "#define UART_TL7816_TLEN_SHIFT   (0U)"
+
+.SS "#define UART_TWFIFO_TXWATER(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_TWFIFO_TXWATER_SHIFT\fP)) & \fBUART_TWFIFO_TXWATER_MASK\fP)"
+
+.SS "#define UART_TWFIFO_TXWATER_MASK   (0xFFU)"
+
+.SS "#define UART_TWFIFO_TXWATER_SHIFT   (0U)"
+
+.SS "#define UART_WF7816_GTFD(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_WF7816_GTFD_SHIFT\fP)) & \fBUART_WF7816_GTFD_MASK\fP)"
+
+.SS "#define UART_WF7816_GTFD_MASK   (0xFFU)"
+
+.SS "#define UART_WF7816_GTFD_SHIFT   (0U)"
+
+.SS "#define UART_WN7816_GTN(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_WN7816_GTN_SHIFT\fP)) & \fBUART_WN7816_GTN_MASK\fP)"
+
+.SS "#define UART_WN7816_GTN_MASK   (0xFFU)"
+
+.SS "#define UART_WN7816_GTN_SHIFT   (0U)"
+
+.SS "#define UART_WP7816T0_WI(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_WP7816T0_WI_SHIFT\fP)) & \fBUART_WP7816T0_WI_MASK\fP)"
+
+.SS "#define UART_WP7816T0_WI_MASK   (0xFFU)"
+
+.SS "#define UART_WP7816T0_WI_SHIFT   (0U)"
+
+.SS "#define UART_WP7816T1_BWI(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_WP7816T1_BWI_SHIFT\fP)) & \fBUART_WP7816T1_BWI_MASK\fP)"
+
+.SS "#define UART_WP7816T1_BWI_MASK   (0xFU)"
+
+.SS "#define UART_WP7816T1_BWI_SHIFT   (0U)"
+
+.SS "#define UART_WP7816T1_CWI(x)   (((uint8_t)(((uint8_t)(x)) << \fBUART_WP7816T1_CWI_SHIFT\fP)) & \fBUART_WP7816T1_CWI_MASK\fP)"
+
+.SS "#define UART_WP7816T1_CWI_MASK   (0xF0U)"
+
+.SS "#define UART_WP7816T1_CWI_SHIFT   (4U)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

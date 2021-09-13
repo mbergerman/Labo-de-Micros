@@ -1,0 +1,462 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_d_r_v___timers_8c" kind="file" language="C++">
+    <compoundname>DRV_Timers.c</compoundname>
+    <includes refid="_d_r_v___timers_8h" local="yes">DRV_Timers.h</includes>
+    <includes refid="_p_d_r_v___sys_tick_8h" local="yes">PDRV_SysTick.h</includes>
+    <incdepgraph>
+      <node id="133">
+        <label>stdbool.h</label>
+      </node>
+      <node id="132">
+        <label>stdint.h</label>
+      </node>
+      <node id="134">
+        <label>stdlib.h</label>
+      </node>
+      <node id="130">
+        <label>drivers/DRV_Timers.c</label>
+        <link refid="_d_r_v___timers_8c"/>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>DRV_Timers.h</label>
+        <link refid="_d_r_v___timers_8h"/>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>PDRV_SysTick.h</label>
+        <link refid="_p_d_r_v___sys_tick_8h"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structtimer__t" prot="public">timer_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_d_r_v___timers_8c_1a407b249f8f53dc7fcf5ce862e1922e2e" prot="public" static="no">
+        <name>TIMER_DEVELOPMENT_MODE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Timers.c" line="23" column="9" bodyfile="drivers/DRV_Timers.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___timers_8c_1ad6b06c871709a54592b54c2f63426eaf" prot="public" static="no">
+        <name>TIMER_ID_INTERNAL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Timers.c" line="25" column="9" bodyfile="drivers/DRV_Timers.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_d_r_v___timers_8c_1af81d39ee9248f1c2cc9ed5ddb35630a7" prot="public" static="yes" mutable="no">
+        <type><ref refid="structtimer__t" kindref="compound">timer_t</ref></type>
+        <definition>timer_t timers[TIMERS_MAX_CANT]</definition>
+        <argsstring>[TIMERS_MAX_CANT]</argsstring>
+        <name>timers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Timers.c" line="65" column="1" bodyfile="drivers/DRV_Timers.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_d_r_v___timers_8c_1ab5a98a4fecc54c19c86e4e7478c68a1b" prot="public" static="yes" mutable="no">
+        <type><ref refid="_d_r_v___timers_8h_1a196e96c7c2523d4d6c9d3e0c47e8c582" kindref="member">tim_id_t</ref></type>
+        <definition>tim_id_t timers_cant</definition>
+        <argsstring></argsstring>
+        <name>timers_cant</name>
+        <initializer>= <ref refid="_d_r_v___timers_8c_1ad6b06c871709a54592b54c2f63426eaf" kindref="member">TIMER_ID_INTERNAL</ref>+1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Timers.c" line="66" column="1" bodyfile="drivers/DRV_Timers.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_d_r_v___timers_8c_1a8f4c8c4fd8e3dbf0c149d10da1e263dc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void timer_isr</definition>
+        <argsstring>(void)</argsstring>
+        <name>timer_isr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Periodic service. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Timers.c" line="54" column="1" bodyfile="drivers/DRV_Timers.c" bodystart="156" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___timers_8c_1a9e737e3249388fb2e50d868bad69c688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initTimers</definition>
+        <argsstring>(void)</argsstring>
+        <name>initTimers</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialice timer and corresponding peripheral. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Timers.c" line="75" column="1" bodyfile="drivers/DRV_Timers.c" bodystart="75" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___timers_8c_1a482d96c2dea661ebf999865b82f776b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_d_r_v___timers_8h_1a196e96c7c2523d4d6c9d3e0c47e8c582" kindref="member">tim_id_t</ref></type>
+        <definition>tim_id_t timerGetId</definition>
+        <argsstring>(void)</argsstring>
+        <name>timerGetId</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Request an timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ID of the timer to use </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Timers.c" line="87" column="1" bodyfile="drivers/DRV_Timers.c" bodystart="87" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___timers_8c_1a03e4dcebc46bc9c08d903d44fbb8f834" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void timerStart</definition>
+        <argsstring>(tim_id_t id, ttick_t ticks, uint8_t mode, tim_callback_t callback)</argsstring>
+        <name>timerStart</name>
+        <param>
+          <type><ref refid="_d_r_v___timers_8h_1a196e96c7c2523d4d6c9d3e0c47e8c582" kindref="member">tim_id_t</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="_d_r_v___timers_8h_1a21588d564d58c0716d3901da569691db" kindref="member">ttick_t</ref></type>
+          <declname>ticks</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type><ref refid="_d_r_v___timers_8h_1a0b70e2941dede906fc97d15b026a16e1" kindref="member">tim_callback_t</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Begin to run a new timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the timer to start </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ticks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time until timer expires, in ticks </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SINGLESHOT or PERIODIC </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to be call when timer expires </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Timers.c" line="102" column="1" bodyfile="drivers/DRV_Timers.c" bodystart="102" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___timers_8c_1a1d8fc7435aca9180251cd17ee1f61cb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void timerStop</definition>
+        <argsstring>(tim_id_t id)</argsstring>
+        <name>timerStop</name>
+        <param>
+          <type><ref refid="_d_r_v___timers_8h_1a196e96c7c2523d4d6c9d3e0c47e8c582" kindref="member">tim_id_t</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Finish to run a timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the timer to stop </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Timers.c" line="124" column="1" bodyfile="drivers/DRV_Timers.c" bodystart="124" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___timers_8c_1a9d870bec105107f492485b93d20867da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool timerExpired</definition>
+        <argsstring>(tim_id_t id)</argsstring>
+        <name>timerExpired</name>
+        <param>
+          <type><ref refid="_d_r_v___timers_8h_1a196e96c7c2523d4d6c9d3e0c47e8c582" kindref="member">tim_id_t</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Verify if a timer has run timeout. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the timer to check for expiration </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 = timer expired </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Timers.c" line="134" column="1" bodyfile="drivers/DRV_Timers.c" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___timers_8c_1a367713eae4c0901efd5b7336f20ddefa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void timerDelay</definition>
+        <argsstring>(ttick_t ticks)</argsstring>
+        <name>timerDelay</name>
+        <param>
+          <type><ref refid="_d_r_v___timers_8h_1a21588d564d58c0716d3901da569691db" kindref="member">ttick_t</ref></type>
+          <declname>ticks</declname>
+        </param>
+        <briefdescription>
+<para>Wait the specified time. Use internal timer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ticks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time to wait in ticks </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Timers.c" line="140" column="1" bodyfile="drivers/DRV_Timers.c" bodystart="140" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Timers driver. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Grupo 1 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>INCLUDE<sp/>HEADER<sp/>FILES</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_d_r_v___timers_8h" kindref="compound">DRV_Timers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_p_d_r_v___sys_tick_8h" kindref="compound">PDRV_SysTick.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>CONSTANT<sp/>AND<sp/>MACRO<sp/>DEFINITIONS<sp/>USING<sp/>#DEFINE</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TIMER_TICK_MS<sp/>!=<sp/>(1000U/SYSTICK_ISR_FREQUENCY_HZ)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>Las<sp/>frecuencias<sp/>no<sp/>coinciden!!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TIMER_TICK_MS<sp/>!=<sp/>(1000U/SYSTICK_ISR_FREQUENCY_HZ)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER_DEVELOPMENT_MODE<sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER_ID_INTERNAL<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>ENUMERATIONS<sp/>AND<sp/>STRUCTURES<sp/>AND<sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structtimer__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___timers_8h_1a21588d564d58c0716d3901da569691db" kindref="member">ttick_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>period;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___timers_8h_1a21588d564d58c0716d3901da569691db" kindref="member">ttick_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cnt;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___timers_8h_1a0b70e2941dede906fc97d15b026a16e1" kindref="member">tim_callback_t</ref><sp/><sp/><sp/><sp/><sp/><sp/>callback;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>running<sp/><sp/><sp/><sp/><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>expired<sp/><sp/><sp/><sp/><sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unused<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>5;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}<sp/><ref refid="structtimer__t" kindref="compound">timer_t</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>VARIABLES<sp/>WITH<sp/>GLOBAL<sp/>SCOPE</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>FUNCTION<sp/>PROTOTYPES<sp/>FOR<sp/>PRIVATE<sp/>FUNCTIONS<sp/>WITH<sp/>FILE<sp/>LEVEL<sp/>SCOPE</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>timer_isr(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>ROM<sp/>CONST<sp/>VARIABLES<sp/>WITH<sp/>FILE<sp/>LEVEL<sp/>SCOPE</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/>STATIC<sp/>VARIABLES<sp/>AND<sp/>CONST<sp/>VARIABLES<sp/>WITH<sp/>FILE<sp/>LEVEL<sp/>SCOPE</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structtimer__t" kindref="compound">timer_t</ref><sp/>timers[<ref refid="_d_r_v___timers_8h_1ae0c10facd6ab8d9e1f609e1b59abfdbf" kindref="member">TIMERS_MAX_CANT</ref>];</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___timers_8h_1a196e96c7c2523d4d6c9d3e0c47e8c582" kindref="member">tim_id_t</ref><sp/>timers_cant<sp/>=<sp/><ref refid="_d_r_v___timers_8c_1ad6b06c871709a54592b54c2f63426eaf" kindref="member">TIMER_ID_INTERNAL</ref>+1;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*******************************************************************************</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GLOBAL<sp/>FUNCTION<sp/>DEFINITIONS</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*******************************************************************************</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___timers_8c_1a9e737e3249388fb2e50d868bad69c688" kindref="member">initTimers</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>alreadyInit<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(alreadyInit)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___sys_tick_8c_1ab2a8b988c01547bab2f66998dedf990e" kindref="member">SysTick_Init</ref>(timer_isr);<sp/></highlight><highlight class="comment">//<sp/>init<sp/>peripheral</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>alreadyInit<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><ref refid="_d_r_v___timers_8h_1a196e96c7c2523d4d6c9d3e0c47e8c582" kindref="member">tim_id_t</ref><sp/><ref refid="_d_r_v___timers_8c_1a482d96c2dea661ebf999865b82f776b8" kindref="member">timerGetId</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>TIMER_DEVELOPMENT_MODE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(timers_cant<sp/>&gt;=<sp/><ref refid="_d_r_v___timers_8h_1ae0c10facd6ab8d9e1f609e1b59abfdbf" kindref="member">TIMERS_MAX_CANT</ref>)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___timers_8h_1a4d069cdc857a5c07fb77aa308c72a904" kindref="member">TIMER_INVALID_ID</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TIMER_DEVELOPMENT_MODE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>timers_cant++;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___timers_8c_1a03e4dcebc46bc9c08d903d44fbb8f834" kindref="member">timerStart</ref>(<ref refid="_d_r_v___timers_8h_1a196e96c7c2523d4d6c9d3e0c47e8c582" kindref="member">tim_id_t</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="_d_r_v___timers_8h_1a21588d564d58c0716d3901da569691db" kindref="member">ttick_t</ref><sp/>ticks,<sp/>uint8_t<sp/>mode,<sp/><ref refid="_d_r_v___timers_8h_1a0b70e2941dede906fc97d15b026a16e1" kindref="member">tim_callback_t</ref><sp/>callback)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>TIMER_DEVELOPMENT_MODE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;<sp/>timers_cant)<sp/>&amp;&amp;<sp/>(mode<sp/>&lt;<sp/><ref refid="_d_r_v___timers_8h_1abc6126af1d45847bc59afa0aa3216b04ae2f303315d389a36b806045ab38241e4" kindref="member">CANT_TIM_MODES</ref>))</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TIMER_DEVELOPMENT_MODE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>disable<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timers[id].<ref refid="structtimer__t_1af77f8244799e85284b8b438289f5f689" kindref="member">running</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>configure<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timers[id].<ref refid="structtimer__t_1a976c363fce8b06537399ab30e6f7c03b" kindref="member">period</ref><sp/>=<sp/>ticks;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timers[id].<ref refid="structtimer__t_1a3980dcfb7fcff9f9cee05b4161a9947f" kindref="member">cnt</ref><sp/>=<sp/>ticks;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timers[id].<ref refid="structtimer__t_1a37e90f5e3bd99fac2021fb3a326607d4" kindref="member">mode</ref><sp/>=<sp/>mode;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timers[id].<ref refid="structtimer__t_1a15d0425d06d715ce5e278c8c0a70c662" kindref="member">expired</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timers[id].<ref refid="structtimer__t_1aa37654455bc7491ab30941da9afee3d6" kindref="member">callback</ref><sp/>=<sp/>callback;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timers[id].<ref refid="structtimer__t_1af77f8244799e85284b8b438289f5f689" kindref="member">running</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___timers_8c_1a1d8fc7435aca9180251cd17ee1f61cb4" kindref="member">timerStop</ref>(<ref refid="_d_r_v___timers_8h_1a196e96c7c2523d4d6c9d3e0c47e8c582" kindref="member">tim_id_t</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Apago<sp/>el<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>timers[id].<ref refid="structtimer__t_1af77f8244799e85284b8b438289f5f689" kindref="member">running</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>y<sp/>bajo<sp/>el<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>timers[id].<ref refid="structtimer__t_1a15d0425d06d715ce5e278c8c0a70c662" kindref="member">expired</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___timers_8c_1a9d870bec105107f492485b93d20867da" kindref="member">timerExpired</ref>(<ref refid="_d_r_v___timers_8h_1a196e96c7c2523d4d6c9d3e0c47e8c582" kindref="member">tim_id_t</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>timers[id].<ref refid="structtimer__t_1a15d0425d06d715ce5e278c8c0a70c662" kindref="member">expired</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___timers_8c_1a367713eae4c0901efd5b7336f20ddefa" kindref="member">timerDelay</ref>(<ref refid="_d_r_v___timers_8h_1a21588d564d58c0716d3901da569691db" kindref="member">ttick_t</ref><sp/>ticks)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___timers_8c_1a03e4dcebc46bc9c08d903d44fbb8f834" kindref="member">timerStart</ref>(<ref refid="_d_r_v___timers_8c_1ad6b06c871709a54592b54c2f63426eaf" kindref="member">TIMER_ID_INTERNAL</ref>,<sp/>ticks,<sp/><ref refid="_d_r_v___timers_8h_1abc6126af1d45847bc59afa0aa3216b04a6155e9404d43a8e6efa4063c86efcfaf" kindref="member">TIM_MODE_SINGLESHOT</ref>,<sp/>NULL);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<sp/>!<ref refid="_d_r_v___timers_8c_1a9d870bec105107f492485b93d20867da" kindref="member">timerExpired</ref>(<ref refid="_d_r_v___timers_8c_1ad6b06c871709a54592b54c2f63426eaf" kindref="member">TIMER_ID_INTERNAL</ref>)<sp/>){</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//wait</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___timers_8c_1a1d8fc7435aca9180251cd17ee1f61cb4" kindref="member">timerStop</ref>(<ref refid="_d_r_v___timers_8c_1ad6b06c871709a54592b54c2f63426eaf" kindref="member">TIMER_ID_INTERNAL</ref>);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/>*******************************************************************************</highlight></codeline>
+<codeline lineno="152"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOCAL<sp/>FUNCTION<sp/>DEFINITIONS</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/>*******************************************************************************</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>timer_isr(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>decremento<sp/>los<sp/>timers<sp/>activos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="_d_r_v___timers_8h_1a196e96c7c2523d4d6c9d3e0c47e8c582" kindref="member">tim_id_t</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>0;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;<sp/><ref refid="_d_r_v___timers_8h_1ae0c10facd6ab8d9e1f609e1b59abfdbf" kindref="member">TIMERS_MAX_CANT</ref>;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">++){</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>si<sp/>hubo<sp/>timeout!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(timers[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">].running){</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(--timers[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">].cnt<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1)<sp/>execute<sp/>action:<sp/>callback<sp/>or<sp/>set<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timers[id].<ref refid="structtimer__t_1a15d0425d06d715ce5e278c8c0a70c662" kindref="member">expired</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(timers[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">].callback<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*timers[id].<ref refid="structtimer__t_1aa37654455bc7491ab30941da9afee3d6" kindref="member">callback</ref>)();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2)<sp/>update<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timers[id].<ref refid="structtimer__t_1a3980dcfb7fcff9f9cee05b4161a9947f" kindref="member">cnt</ref><sp/>=<sp/>timers[id].<ref refid="structtimer__t_1a976c363fce8b06537399ab30e6f7c03b" kindref="member">period</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timers[id].<ref refid="structtimer__t_1a15d0425d06d715ce5e278c8c0a70c662" kindref="member">expired</ref><sp/>=<sp/>(timers[id].<ref refid="structtimer__t_1a37e90f5e3bd99fac2021fb3a326607d4" kindref="member">mode</ref><sp/>==<sp/><ref refid="_d_r_v___timers_8h_1abc6126af1d45847bc59afa0aa3216b04a7a1497f4309bf8f5d2fb0ac7695822c3" kindref="member">TIM_MODE_PERIODIC</ref>)<sp/>?<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>:<sp/>timers[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">].expired;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="drivers/DRV_Timers.c"/>
+  </compounddef>
+</doxygen>

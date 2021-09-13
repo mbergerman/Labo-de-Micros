@@ -1,0 +1,194 @@
+.TH "GPIO_Register_Masks" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GPIO_Register_Masks
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGPIOA_BASE\fP   (0x400FF000u)"
+.br
+.ti -1c
+.RI "#define \fBGPIOA\fP   ((\fBGPIO_Type\fP *)\fBGPIOA_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOB_BASE\fP   (0x400FF040u)"
+.br
+.ti -1c
+.RI "#define \fBGPIOB\fP   ((\fBGPIO_Type\fP *)\fBGPIOB_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOC_BASE\fP   (0x400FF080u)"
+.br
+.ti -1c
+.RI "#define \fBGPIOC\fP   ((\fBGPIO_Type\fP *)\fBGPIOC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOD_BASE\fP   (0x400FF0C0u)"
+.br
+.ti -1c
+.RI "#define \fBGPIOD\fP   ((\fBGPIO_Type\fP *)\fBGPIOD_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIOE_BASE\fP   (0x400FF100u)"
+.br
+.ti -1c
+.RI "#define \fBGPIOE\fP   ((\fBGPIO_Type\fP *)\fBGPIOE_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_BASE_ADDRS\fP   { \fBGPIOA_BASE\fP, \fBGPIOB_BASE\fP, \fBGPIOC_BASE\fP, \fBGPIOD_BASE\fP, \fBGPIOE_BASE\fP }"
+.br
+.ti -1c
+.RI "#define \fBGPIO_BASE_PTRS\fP   { \fBGPIOA\fP, \fBGPIOB\fP, \fBGPIOC\fP, \fBGPIOD\fP, \fBGPIOE\fP }"
+.br
+.in -1c
+.SS "PDOR - Port Data Output Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGPIO_PDOR_PDO_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PDOR_PDO_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PDOR_PDO\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBGPIO_PDOR_PDO_SHIFT\fP)) & \fBGPIO_PDOR_PDO_MASK\fP)"
+.br
+.in -1c
+.SS "PSOR - Port Set Output Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGPIO_PSOR_PTSO_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PSOR_PTSO_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PSOR_PTSO\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBGPIO_PSOR_PTSO_SHIFT\fP)) & \fBGPIO_PSOR_PTSO_MASK\fP)"
+.br
+.in -1c
+.SS "PCOR - Port Clear Output Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGPIO_PCOR_PTCO_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PCOR_PTCO_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PCOR_PTCO\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBGPIO_PCOR_PTCO_SHIFT\fP)) & \fBGPIO_PCOR_PTCO_MASK\fP)"
+.br
+.in -1c
+.SS "PTOR - Port Toggle Output Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGPIO_PTOR_PTTO_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PTOR_PTTO_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PTOR_PTTO\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBGPIO_PTOR_PTTO_SHIFT\fP)) & \fBGPIO_PTOR_PTTO_MASK\fP)"
+.br
+.in -1c
+.SS "PDIR - Port Data Input Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGPIO_PDIR_PDI_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PDIR_PDI_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PDIR_PDI\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBGPIO_PDIR_PDI_SHIFT\fP)) & \fBGPIO_PDIR_PDI_MASK\fP)"
+.br
+.in -1c
+.SS "PDDR - Port Data Direction Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBGPIO_PDDR_PDD_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PDDR_PDD_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBGPIO_PDDR_PDD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBGPIO_PDDR_PDD_SHIFT\fP)) & \fBGPIO_PDDR_PDD_MASK\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define GPIO_BASE_ADDRS   { \fBGPIOA_BASE\fP, \fBGPIOB_BASE\fP, \fBGPIOC_BASE\fP, \fBGPIOD_BASE\fP, \fBGPIOE_BASE\fP }"
+Array initializer of GPIO peripheral base addresses 
+.SS "#define GPIO_BASE_PTRS   { \fBGPIOA\fP, \fBGPIOB\fP, \fBGPIOC\fP, \fBGPIOD\fP, \fBGPIOE\fP }"
+Array initializer of GPIO peripheral base pointers 
+.SS "#define GPIO_PCOR_PTCO(x)   (((uint32_t)(((uint32_t)(x)) << \fBGPIO_PCOR_PTCO_SHIFT\fP)) & \fBGPIO_PCOR_PTCO_MASK\fP)"
+
+.SS "#define GPIO_PCOR_PTCO_MASK   (0xFFFFFFFFU)"
+
+.SS "#define GPIO_PCOR_PTCO_SHIFT   (0U)"
+
+.SS "#define GPIO_PDDR_PDD(x)   (((uint32_t)(((uint32_t)(x)) << \fBGPIO_PDDR_PDD_SHIFT\fP)) & \fBGPIO_PDDR_PDD_MASK\fP)"
+
+.SS "#define GPIO_PDDR_PDD_MASK   (0xFFFFFFFFU)"
+
+.SS "#define GPIO_PDDR_PDD_SHIFT   (0U)"
+
+.SS "#define GPIO_PDIR_PDI(x)   (((uint32_t)(((uint32_t)(x)) << \fBGPIO_PDIR_PDI_SHIFT\fP)) & \fBGPIO_PDIR_PDI_MASK\fP)"
+
+.SS "#define GPIO_PDIR_PDI_MASK   (0xFFFFFFFFU)"
+
+.SS "#define GPIO_PDIR_PDI_SHIFT   (0U)"
+
+.SS "#define GPIO_PDOR_PDO(x)   (((uint32_t)(((uint32_t)(x)) << \fBGPIO_PDOR_PDO_SHIFT\fP)) & \fBGPIO_PDOR_PDO_MASK\fP)"
+
+.SS "#define GPIO_PDOR_PDO_MASK   (0xFFFFFFFFU)"
+
+.SS "#define GPIO_PDOR_PDO_SHIFT   (0U)"
+
+.SS "#define GPIO_PSOR_PTSO(x)   (((uint32_t)(((uint32_t)(x)) << \fBGPIO_PSOR_PTSO_SHIFT\fP)) & \fBGPIO_PSOR_PTSO_MASK\fP)"
+
+.SS "#define GPIO_PSOR_PTSO_MASK   (0xFFFFFFFFU)"
+
+.SS "#define GPIO_PSOR_PTSO_SHIFT   (0U)"
+
+.SS "#define GPIO_PTOR_PTTO(x)   (((uint32_t)(((uint32_t)(x)) << \fBGPIO_PTOR_PTTO_SHIFT\fP)) & \fBGPIO_PTOR_PTTO_MASK\fP)"
+
+.SS "#define GPIO_PTOR_PTTO_MASK   (0xFFFFFFFFU)"
+
+.SS "#define GPIO_PTOR_PTTO_SHIFT   (0U)"
+
+.SS "#define GPIOA   ((\fBGPIO_Type\fP *)\fBGPIOA_BASE\fP)"
+Peripheral GPIOA base pointer 
+.SS "#define GPIOA_BASE   (0x400FF000u)"
+Peripheral GPIOA base address 
+.SS "#define GPIOB   ((\fBGPIO_Type\fP *)\fBGPIOB_BASE\fP)"
+Peripheral GPIOB base pointer 
+.SS "#define GPIOB_BASE   (0x400FF040u)"
+Peripheral GPIOB base address 
+.SS "#define GPIOC   ((\fBGPIO_Type\fP *)\fBGPIOC_BASE\fP)"
+Peripheral GPIOC base pointer 
+.SS "#define GPIOC_BASE   (0x400FF080u)"
+Peripheral GPIOC base address 
+.SS "#define GPIOD   ((\fBGPIO_Type\fP *)\fBGPIOD_BASE\fP)"
+Peripheral GPIOD base pointer 
+.SS "#define GPIOD_BASE   (0x400FF0C0u)"
+Peripheral GPIOD base address 
+.SS "#define GPIOE   ((\fBGPIO_Type\fP *)\fBGPIOE_BASE\fP)"
+Peripheral GPIOE base pointer 
+.SS "#define GPIOE_BASE   (0x400FF100u)"
+Peripheral GPIOE base address 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

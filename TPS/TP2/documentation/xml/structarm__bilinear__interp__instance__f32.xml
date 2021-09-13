@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structarm__bilinear__interp__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_bilinear_interp_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__bilinear__interp__instance__f32_1a1bcf80ccdc2acc29198f1592ae300390" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t numRows</definition>
+        <argsstring></argsstring>
+        <name>numRows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of rows in the data table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1834" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1834" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__bilinear__interp__instance__f32_1a4bb5ec0d13eb4c9cf887aa8366a44117" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t numCols</definition>
+        <argsstring></argsstring>
+        <name>numCols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of columns in the data table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1835" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1835" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__bilinear__interp__instance__f32_1af5c3a2f15c98850cdcfbe6f87e5ac5df" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* pData</definition>
+        <argsstring></argsstring>
+        <name>pData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the data table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1836" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1836" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point bilinear interpolation function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/arm_math.h" line="1833" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1832" bodyend="1837"/>
+    <listofallmembers>
+      <member refid="structarm__bilinear__interp__instance__f32_1a4bb5ec0d13eb4c9cf887aa8366a44117" prot="public" virt="non-virtual"><scope>arm_bilinear_interp_instance_f32</scope><name>numCols</name></member>
+      <member refid="structarm__bilinear__interp__instance__f32_1a1bcf80ccdc2acc29198f1592ae300390" prot="public" virt="non-virtual"><scope>arm_bilinear_interp_instance_f32</scope><name>numRows</name></member>
+      <member refid="structarm__bilinear__interp__instance__f32_1af5c3a2f15c98850cdcfbe6f87e5ac5df" prot="public" virt="non-virtual"><scope>arm_bilinear_interp_instance_f32</scope><name>pData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

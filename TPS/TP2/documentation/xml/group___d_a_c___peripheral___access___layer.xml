@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___d_a_c___peripheral___access___layer" kind="group">
+    <compoundname>DAC_Peripheral_Access_Layer</compoundname>
+    <title>DAC Peripheral Access Layer</title>
+    <innerclass refid="struct_d_a_c___type" prot="public">DAC_Type</innerclass>
+    <innergroup refid="group___d_a_c___register___masks">DAC Register Masks</innergroup>
+    <innergroup refid="group___d_m_a___peripheral___access___layer">DMA Peripheral Access Layer</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

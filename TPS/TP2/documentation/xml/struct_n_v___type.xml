@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_n_v___type" kind="struct" language="C++" prot="public">
+    <compoundname>NV_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga7d27c275caa809e8b950cb9fb1f52ea5" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t BACKKEY3</definition>
+        <argsstring></argsstring>
+        <name>BACKKEY3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Backdoor Comparison Key 3., offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8303" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gae0ad5dd66c2109955a90e1a6f4720a43" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t BACKKEY2</definition>
+        <argsstring></argsstring>
+        <name>BACKKEY2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Backdoor Comparison Key 2., offset: 0x1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8304" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga42fa40dda0fa3aee0b861bdf6ffa1eae" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t BACKKEY1</definition>
+        <argsstring></argsstring>
+        <name>BACKKEY1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Backdoor Comparison Key 1., offset: 0x2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8305" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaa0da3d6ede3a90b0697a300ddf18cd65" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t BACKKEY0</definition>
+        <argsstring></argsstring>
+        <name>BACKKEY0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Backdoor Comparison Key 0., offset: 0x3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8306" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gae3df2dcb7a5f33570f8cc15cc8126810" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t BACKKEY7</definition>
+        <argsstring></argsstring>
+        <name>BACKKEY7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Backdoor Comparison Key 7., offset: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8307" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga3076fe0bf30cde224dfb9c944d517de0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t BACKKEY6</definition>
+        <argsstring></argsstring>
+        <name>BACKKEY6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Backdoor Comparison Key 6., offset: 0x5 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8308" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaa4ca5b627931a03b02c1d4ac01e664d5" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t BACKKEY5</definition>
+        <argsstring></argsstring>
+        <name>BACKKEY5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Backdoor Comparison Key 5., offset: 0x6 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8309" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga925e5cd64e47102087d0a66af786a626" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t BACKKEY4</definition>
+        <argsstring></argsstring>
+        <name>BACKKEY4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Backdoor Comparison Key 4., offset: 0x7 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8310" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gae95f76fe298558644b1a5c8acc1cdf3a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t FPROT3</definition>
+        <argsstring></argsstring>
+        <name>FPROT3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Non-volatile P-Flash Protection 1 - Low Register, offset: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8311" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gae87543688ebb5c30285916eaa270c014" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t FPROT2</definition>
+        <argsstring></argsstring>
+        <name>FPROT2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Non-volatile P-Flash Protection 1 - High Register, offset: 0x9 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8312" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gae00ef9e85bce41b17b8c85e226bfeadb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t FPROT1</definition>
+        <argsstring></argsstring>
+        <name>FPROT1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Non-volatile P-Flash Protection 0 - Low Register, offset: 0xA </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8313" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga060054d1f5f54bb8a55d0eeb7cd8ae29" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t FPROT0</definition>
+        <argsstring></argsstring>
+        <name>FPROT0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Non-volatile P-Flash Protection 0 - High Register, offset: 0xB </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8314" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga9c289cf99054de8442c0847062613f18" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t FSEC</definition>
+        <argsstring></argsstring>
+        <name>FSEC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Non-volatile Flash Security Register, offset: 0xC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8315" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga4a588e9f6d971bfa0ec727d08935c72e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t FOPT</definition>
+        <argsstring></argsstring>
+        <name>FOPT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Non-volatile Flash Option Register, offset: 0xD </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8316" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gab0f3424deecc64d5eb53e21c4b98290a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t FEPROT</definition>
+        <argsstring></argsstring>
+        <name>FEPROT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Non-volatile EERAM Protection Register, offset: 0xE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8317" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gab8c86749c6e17e098c55c08aa58fb1c1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t FDPROT</definition>
+        <argsstring></argsstring>
+        <name>FDPROT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Non-volatile D-Flash Protection Register, offset: 0xF </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8318" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8318" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>NV - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="8302" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8302" bodyend="8319"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaa0da3d6ede3a90b0697a300ddf18cd65" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>BACKKEY0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga42fa40dda0fa3aee0b861bdf6ffa1eae" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>BACKKEY1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gae0ad5dd66c2109955a90e1a6f4720a43" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>BACKKEY2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga7d27c275caa809e8b950cb9fb1f52ea5" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>BACKKEY3</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga925e5cd64e47102087d0a66af786a626" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>BACKKEY4</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaa4ca5b627931a03b02c1d4ac01e664d5" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>BACKKEY5</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga3076fe0bf30cde224dfb9c944d517de0" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>BACKKEY6</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gae3df2dcb7a5f33570f8cc15cc8126810" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>BACKKEY7</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gab8c86749c6e17e098c55c08aa58fb1c1" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>FDPROT</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gab0f3424deecc64d5eb53e21c4b98290a" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>FEPROT</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga4a588e9f6d971bfa0ec727d08935c72e" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>FOPT</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga060054d1f5f54bb8a55d0eeb7cd8ae29" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>FPROT0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gae00ef9e85bce41b17b8c85e226bfeadb" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>FPROT1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gae87543688ebb5c30285916eaa270c014" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>FPROT2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gae95f76fe298558644b1a5c8acc1cdf3a" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>FPROT3</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga9c289cf99054de8442c0847062613f18" prot="public" virt="non-virtual"><scope>NV_Type</scope><name>FSEC</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

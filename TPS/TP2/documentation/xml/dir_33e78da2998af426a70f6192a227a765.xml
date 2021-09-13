@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_33e78da2998af426a70f6192a227a765" kind="dir">
+    <compoundname>Release/SDK</compoundname>
+    <innerdir refid="dir_deaf5d5c220426d971bbba08025dd052">Release/SDK/startup</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Release/SDK/"/>
+  </compounddef>
+</doxygen>

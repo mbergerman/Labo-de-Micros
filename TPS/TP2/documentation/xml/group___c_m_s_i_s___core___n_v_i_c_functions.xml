@@ -1,0 +1,1016 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___c_m_s_i_s___core___n_v_i_c_functions" kind="group">
+    <compoundname>CMSIS_Core_NVICFunctions</compoundname>
+    <title>NVIC Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga71227e1376cde11eda03fcb62f1b33ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void __NVIC_EnableIRQ</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>__NVIC_EnableIRQ</name>
+        <param>
+          <type><ref refid="group___interrupt__vector__numbers_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Enable Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enables a device specific interrupt in the NVIC interrupt controller. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device specific interrupt number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>IRQn must not be negative. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1282" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1282" bodyend="1288"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gaaeb5e7cc0eaad4e2817272e7bf742083" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __NVIC_GetEnableIRQ</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>__NVIC_GetEnableIRQ</name>
+        <param>
+          <type><ref refid="group___interrupt__vector__numbers_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Get Interrupt Enable status. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns a device specific interrupt enable status from the NVIC interrupt controller. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device specific interrupt number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 Interrupt is not enabled. </para></simplesect>
+<simplesect kind="return"><para>1 Interrupt is enabled. </para></simplesect>
+<simplesect kind="note"><para>IRQn must not be negative. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1299" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1299" bodyend="1309"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gae016e4c1986312044ee768806537d52f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void __NVIC_DisableIRQ</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>__NVIC_DisableIRQ</name>
+        <param>
+          <type><ref refid="group___interrupt__vector__numbers_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Disable Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Disables a device specific interrupt in the NVIC interrupt controller. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device specific interrupt number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>IRQn must not be negative. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1318" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1318" bodyend="1326"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga5a92ca5fa801ad7adb92be7257ab9694" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __NVIC_GetPendingIRQ</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>__NVIC_GetPendingIRQ</name>
+        <param>
+          <type><ref refid="group___interrupt__vector__numbers_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Get Pending Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads the NVIC pending register and returns the pending bit for the specified device specific interrupt. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device specific interrupt number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 Interrupt status is not pending. </para></simplesect>
+<simplesect kind="return"><para>1 Interrupt status is pending. </para></simplesect>
+<simplesect kind="note"><para>IRQn must not be negative. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1337" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1337" bodyend="1347"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gaabefdd4b790b9a7308929938c0c1e1ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void __NVIC_SetPendingIRQ</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>__NVIC_SetPendingIRQ</name>
+        <param>
+          <type><ref refid="group___interrupt__vector__numbers_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Set Pending Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the pending bit of a device specific interrupt in the NVIC pending register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device specific interrupt number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>IRQn must not be negative. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1356" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1356" bodyend="1362"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga562a86dbdf14827d0fee8fdafb04d191" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void __NVIC_ClearPendingIRQ</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>__NVIC_ClearPendingIRQ</name>
+        <param>
+          <type><ref refid="group___interrupt__vector__numbers_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Clear Pending Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Clears the pending bit of a device specific interrupt in the NVIC pending register. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device specific interrupt number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>IRQn must not be negative. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1371" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1371" bodyend="1377"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gaa2837003c28c45abf193fe5e8d27f593" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __NVIC_GetActive</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>__NVIC_GetActive</name>
+        <param>
+          <type><ref refid="group___interrupt__vector__numbers_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Get Active Interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads the active register in the NVIC and returns the active bit for the device specific interrupt. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device specific interrupt number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 Interrupt status is not active. </para></simplesect>
+<simplesect kind="return"><para>1 Interrupt status is active. </para></simplesect>
+<simplesect kind="note"><para>IRQn must not be negative. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1388" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1388" bodyend="1398"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga505338e23563a9c074910fb14e7d45fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void __NVIC_SetPriority</definition>
+        <argsstring>(IRQn_Type IRQn, uint32_t priority)</argsstring>
+        <name>__NVIC_SetPriority</name>
+        <param>
+          <type><ref refid="group___interrupt__vector__numbers_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Set Interrupt Priority. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the priority of a device specific interrupt or a processor exception. The interrupt number can be positive to specify a device specific interrupt, or negative to specify a processor exception. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The priority cannot be set for every processor exception. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1477" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1477" bodyend="1489"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gaeb9dc99c8e7700668813144261b0bc73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __NVIC_GetPriority</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>__NVIC_GetPriority</name>
+        <param>
+          <type><ref refid="group___interrupt__vector__numbers_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Get Interrupt Priority. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads the priority of a device specific interrupt or a processor exception. The interrupt number can be positive to specify a device specific interrupt, or negative to specify a processor exception. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Interrupt Priority. Value is aligned automatically to the implemented priority bits of the microcontroller. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1501" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1501" bodyend="1512"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga0df355460bc1783d58f9d72ee4884208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void __NVIC_SetVector</definition>
+        <argsstring>(IRQn_Type IRQn, uint32_t vector)</argsstring>
+        <name>__NVIC_SetVector</name>
+        <param>
+          <type><ref refid="group___interrupt__vector__numbers_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+<para>Set Interrupt Vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets an interrupt vector in SRAM based interrupt vector table. The interrupt number can be positive to specify a device specific interrupt, or negative to specify a processor exception. VTOR must been relocated to SRAM before. If VTOR is not present address 0 must be mapped to SRAM. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of interrupt handler function</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Sets an interrupt vector in SRAM based interrupt vector table. The interrupt number can be positive to specify a device specific interrupt, or negative to specify a processor exception. VTOR must been relocated to SRAM before. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of interrupt handler function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1525" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1525" bodyend="1533"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga44b665d2afb708121d9b10c76ff00ee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __NVIC_GetVector</definition>
+        <argsstring>(IRQn_Type IRQn)</argsstring>
+        <name>__NVIC_GetVector</name>
+        <param>
+          <type><ref refid="group___interrupt__vector__numbers_1gac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref></type>
+          <declname>IRQn</declname>
+        </param>
+        <briefdescription>
+<para>Get Interrupt Vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads an interrupt vector from interrupt vector table. The interrupt number can be positive to specify a device specific interrupt, or negative to specify a processor exception. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Address of interrupt handler function </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1544" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1544" bodyend="1552"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga49f66a3782cbff3b821bd9802cd046f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void __NVIC_SystemReset</definition>
+        <argsstring>(void)</argsstring>
+        <name>__NVIC_SystemReset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>System Reset. </para>        </briefdescription>
+        <detaileddescription>
+<para>Initiates a system reset request to reset the MCU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1559" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1559" bodyend="1571"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gafc94dcbaee03e4746ade1f5bb9aaa56d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void __NVIC_SetPriorityGrouping</definition>
+        <argsstring>(uint32_t PriorityGroup)</argsstring>
+        <name>__NVIC_SetPriorityGrouping</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PriorityGroup</declname>
+        </param>
+        <briefdescription>
+<para>Set Priority Grouping. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sets the priority grouping field using the required unlock sequence. The parameter PriorityGroup is assigned to the field SCB-&gt;AIRCR [10:8] PRIGROUP field. Only values from 0..7 are used. In case of a conflict between priority grouping and available priority bits (__NVIC_PRIO_BITS), the smallest possible priority group is set. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">PriorityGroup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority grouping field. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2149" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2149" bodyend="2160"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga9b894af672df4373eb637f8288845c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t __NVIC_GetPriorityGrouping</definition>
+        <argsstring>(void)</argsstring>
+        <name>__NVIC_GetPriorityGrouping</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get Priority Grouping. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads the priority grouping field from the NVIC Interrupt Controller. <simplesect kind="return"><para>Priority grouping field (SCB-&gt;AIRCR [10:8] PRIGROUP field). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2168" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2168" bodyend="2171"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gadb94ac5d892b376e4f3555ae0418ebac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t NVIC_EncodePriority</definition>
+        <argsstring>(uint32_t PriorityGroup, uint32_t PreemptPriority, uint32_t SubPriority)</argsstring>
+        <name>NVIC_EncodePriority</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>PriorityGroup</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>PreemptPriority</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>SubPriority</declname>
+        </param>
+        <briefdescription>
+<para>Encode Priority. </para>        </briefdescription>
+        <detaileddescription>
+<para>Encodes the priority for an interrupt with the given priority group, preemptive priority value, and subpriority value. In case of a conflict between priority grouping and available priority bits (__NVIC_PRIO_BITS), the smallest possible priority group is set. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">PriorityGroup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Used priority group. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">PreemptPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Preemptive priority value (starting from 0). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">SubPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subpriority value (starting from 0). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Encoded priority. Value can be used in the function <ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gae0e9d0e2f7b6133828c71b57d4941c35" kindref="member">NVIC_SetPriority()</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2422" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2422" bodyend="2435"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga3387607fd8a1a32cccd77d2ac672dd96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void NVIC_DecodePriority</definition>
+        <argsstring>(uint32_t Priority, uint32_t PriorityGroup, uint32_t *const pPreemptPriority, uint32_t *const pSubPriority)</argsstring>
+        <name>NVIC_DecodePriority</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>Priority</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>PriorityGroup</declname>
+        </param>
+        <param>
+          <type>uint32_t *const</type>
+          <declname>pPreemptPriority</declname>
+        </param>
+        <param>
+          <type>uint32_t *const</type>
+          <declname>pSubPriority</declname>
+        </param>
+        <briefdescription>
+<para>Decode Priority. </para>        </briefdescription>
+        <detaileddescription>
+<para>Decodes an interrupt priority value with a given priority group to preemptive priority value and subpriority value. In case of a conflict between priority grouping and available priority bits (__NVIC_PRIO_BITS) the smallest possible priority group is set. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority value, which can be retrieved with the function <ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaf59b9d0a791d2157abb319753953eceb" kindref="member">NVIC_GetPriority()</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">PriorityGroup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Used priority group. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pPreemptPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Preemptive priority value (starting from 0). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pSubPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subpriority value (starting from 0). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2449" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2449" bodyend="2460"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga57b3064413dbc7459d9646020fdd8bef" prot="public" static="no">
+        <name>NVIC_EnableIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga71227e1376cde11eda03fcb62f1b33ea" kindref="member">__NVIC_EnableIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1244" column="11" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga857de13232ec65dd15087eaa15bc4a69" prot="public" static="no">
+        <name>NVIC_GetEnableIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaaeb5e7cc0eaad4e2817272e7bf742083" kindref="member">__NVIC_GetEnableIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1245" column="11" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga73b4e251f59cab4e9a5e234aac02ae57" prot="public" static="no">
+        <name>NVIC_DisableIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gae016e4c1986312044ee768806537d52f" kindref="member">__NVIC_DisableIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1246" column="11" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gac608957a239466e9e0cbc30aa64feb3b" prot="public" static="no">
+        <name>NVIC_GetPendingIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga5a92ca5fa801ad7adb92be7257ab9694" kindref="member">__NVIC_GetPendingIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1247" column="11" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga2b47e2e52cf5c48a5c3348636434b3ac" prot="public" static="no">
+        <name>NVIC_SetPendingIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaabefdd4b790b9a7308929938c0c1e1ad" kindref="member">__NVIC_SetPendingIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1248" column="11" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga590cf113000a079b1f0ea3dcd5b5316c" prot="public" static="no">
+        <name>NVIC_ClearPendingIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga562a86dbdf14827d0fee8fdafb04d191" kindref="member">__NVIC_ClearPendingIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1249" column="11" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga58ad3f352f832235ab3b192ff4745320" prot="public" static="no">
+        <name>NVIC_GetActive</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaa2837003c28c45abf193fe5e8d27f593" kindref="member">__NVIC_GetActive</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1250" column="11" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gae0e9d0e2f7b6133828c71b57d4941c35" prot="public" static="no">
+        <name>NVIC_SetPriority</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga505338e23563a9c074910fb14e7d45fd" kindref="member">__NVIC_SetPriority</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1251" column="11" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gaf59b9d0a791d2157abb319753953eceb" prot="public" static="no">
+        <name>NVIC_GetPriority</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaeb9dc99c8e7700668813144261b0bc73" kindref="member">__NVIC_GetPriority</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1252" column="11" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga6aa0367d3642575610476bf0366f0c48" prot="public" static="no">
+        <name>NVIC_SystemReset</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga49f66a3782cbff3b821bd9802cd046f5" kindref="member">__NVIC_SystemReset</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1253" column="11" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga804af63bb4c4c317387897431814775d" prot="public" static="no">
+        <name>NVIC_SetVector</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga0df355460bc1783d58f9d72ee4884208" kindref="member">__NVIC_SetVector</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1262" column="12" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga955eb1c33a3dcc62af11a8385e8c0fc8" prot="public" static="no">
+        <name>NVIC_GetVector</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga44b665d2afb708121d9b10c76ff00ee5" kindref="member">__NVIC_GetVector</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1263" column="11" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga8045d905a5ca57437d8e6f71ffcb6df5" prot="public" static="no">
+        <name>NVIC_USER_IRQ_OFFSET</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1266" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga53c75b28823441c6153269f0ecbed878" prot="public" static="no">
+        <name>_BIT_SHIFT</name>
+        <param><defname>IRQn</defname></param>
+        <initializer>(  ((((uint32_t)(int32_t)(<ref refid="group___interrupt__vector__numbers_1ga666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref>))         )      &amp;  0x03UL) * 8UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1271" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gaee4f7eb5d7e770ad51489dbceabb1755" prot="public" static="no">
+        <name>_SHP_IDX</name>
+        <param><defname>IRQn</defname></param>
+        <initializer>( (((((uint32_t)(int32_t)(<ref refid="group___interrupt__vector__numbers_1ga666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref>)) &amp; 0x0FUL)-8UL) &gt;&gt;    2UL)      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1272" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga370ec4b1751a6a889d849747df3763a9" prot="public" static="no">
+        <name>_IP_IDX</name>
+        <param><defname>IRQn</defname></param>
+        <initializer>(   (((uint32_t)(int32_t)(<ref refid="group___interrupt__vector__numbers_1ga666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref>))                &gt;&gt;    2UL)      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="1273" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="1273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga0e798d5aec68cdd8263db86a76df788f" prot="public" static="no">
+        <name>NVIC_SetPriorityGrouping</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gafc94dcbaee03e4746ade1f5bb9aaa56d" kindref="member">__NVIC_SetPriorityGrouping</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2112" column="12" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga4eeb9214f2264fc23c34ad5de2d3fa11" prot="public" static="no">
+        <name>NVIC_GetPriorityGrouping</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga9b894af672df4373eb637f8288845c05" kindref="member">__NVIC_GetPriorityGrouping</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2113" column="11" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga57b3064413dbc7459d9646020fdd8bef" prot="public" static="no">
+        <name>NVIC_EnableIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga71227e1376cde11eda03fcb62f1b33ea" kindref="member">__NVIC_EnableIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2114" column="11" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga857de13232ec65dd15087eaa15bc4a69" prot="public" static="no">
+        <name>NVIC_GetEnableIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaaeb5e7cc0eaad4e2817272e7bf742083" kindref="member">__NVIC_GetEnableIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2115" column="11" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga73b4e251f59cab4e9a5e234aac02ae57" prot="public" static="no">
+        <name>NVIC_DisableIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gae016e4c1986312044ee768806537d52f" kindref="member">__NVIC_DisableIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2116" column="11" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gac608957a239466e9e0cbc30aa64feb3b" prot="public" static="no">
+        <name>NVIC_GetPendingIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga5a92ca5fa801ad7adb92be7257ab9694" kindref="member">__NVIC_GetPendingIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2117" column="11" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga2b47e2e52cf5c48a5c3348636434b3ac" prot="public" static="no">
+        <name>NVIC_SetPendingIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaabefdd4b790b9a7308929938c0c1e1ad" kindref="member">__NVIC_SetPendingIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2118" column="11" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga590cf113000a079b1f0ea3dcd5b5316c" prot="public" static="no">
+        <name>NVIC_ClearPendingIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga562a86dbdf14827d0fee8fdafb04d191" kindref="member">__NVIC_ClearPendingIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2119" column="11" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga58ad3f352f832235ab3b192ff4745320" prot="public" static="no">
+        <name>NVIC_GetActive</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaa2837003c28c45abf193fe5e8d27f593" kindref="member">__NVIC_GetActive</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2120" column="11" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gae0e9d0e2f7b6133828c71b57d4941c35" prot="public" static="no">
+        <name>NVIC_SetPriority</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga505338e23563a9c074910fb14e7d45fd" kindref="member">__NVIC_SetPriority</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2121" column="11" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gaf59b9d0a791d2157abb319753953eceb" prot="public" static="no">
+        <name>NVIC_GetPriority</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaeb9dc99c8e7700668813144261b0bc73" kindref="member">__NVIC_GetPriority</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2122" column="11" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga6aa0367d3642575610476bf0366f0c48" prot="public" static="no">
+        <name>NVIC_SystemReset</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga49f66a3782cbff3b821bd9802cd046f5" kindref="member">__NVIC_SystemReset</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2123" column="11" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga804af63bb4c4c317387897431814775d" prot="public" static="no">
+        <name>NVIC_SetVector</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga0df355460bc1783d58f9d72ee4884208" kindref="member">__NVIC_SetVector</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2132" column="12" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga955eb1c33a3dcc62af11a8385e8c0fc8" prot="public" static="no">
+        <name>NVIC_GetVector</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga44b665d2afb708121d9b10c76ff00ee5" kindref="member">__NVIC_GetVector</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2133" column="11" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga8045d905a5ca57437d8e6f71ffcb6df5" prot="public" static="no">
+        <name>NVIC_USER_IRQ_OFFSET</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2136" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga0e798d5aec68cdd8263db86a76df788f" prot="public" static="no">
+        <name>NVIC_SetPriorityGrouping</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gafc94dcbaee03e4746ade1f5bb9aaa56d" kindref="member">__NVIC_SetPriorityGrouping</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1609" column="12" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1609" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga4eeb9214f2264fc23c34ad5de2d3fa11" prot="public" static="no">
+        <name>NVIC_GetPriorityGrouping</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga9b894af672df4373eb637f8288845c05" kindref="member">__NVIC_GetPriorityGrouping</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1610" column="11" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1610" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga57b3064413dbc7459d9646020fdd8bef" prot="public" static="no">
+        <name>NVIC_EnableIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga71227e1376cde11eda03fcb62f1b33ea" kindref="member">__NVIC_EnableIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1611" column="11" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1611" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga857de13232ec65dd15087eaa15bc4a69" prot="public" static="no">
+        <name>NVIC_GetEnableIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaaeb5e7cc0eaad4e2817272e7bf742083" kindref="member">__NVIC_GetEnableIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1612" column="11" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga73b4e251f59cab4e9a5e234aac02ae57" prot="public" static="no">
+        <name>NVIC_DisableIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gae016e4c1986312044ee768806537d52f" kindref="member">__NVIC_DisableIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1613" column="11" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gac608957a239466e9e0cbc30aa64feb3b" prot="public" static="no">
+        <name>NVIC_GetPendingIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga5a92ca5fa801ad7adb92be7257ab9694" kindref="member">__NVIC_GetPendingIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1614" column="11" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1614" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga2b47e2e52cf5c48a5c3348636434b3ac" prot="public" static="no">
+        <name>NVIC_SetPendingIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaabefdd4b790b9a7308929938c0c1e1ad" kindref="member">__NVIC_SetPendingIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1615" column="11" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga590cf113000a079b1f0ea3dcd5b5316c" prot="public" static="no">
+        <name>NVIC_ClearPendingIRQ</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga562a86dbdf14827d0fee8fdafb04d191" kindref="member">__NVIC_ClearPendingIRQ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1616" column="11" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga58ad3f352f832235ab3b192ff4745320" prot="public" static="no">
+        <name>NVIC_GetActive</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaa2837003c28c45abf193fe5e8d27f593" kindref="member">__NVIC_GetActive</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1617" column="11" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gae0e9d0e2f7b6133828c71b57d4941c35" prot="public" static="no">
+        <name>NVIC_SetPriority</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga505338e23563a9c074910fb14e7d45fd" kindref="member">__NVIC_SetPriority</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1618" column="11" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1gaf59b9d0a791d2157abb319753953eceb" prot="public" static="no">
+        <name>NVIC_GetPriority</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1gaeb9dc99c8e7700668813144261b0bc73" kindref="member">__NVIC_GetPriority</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1619" column="11" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga6aa0367d3642575610476bf0366f0c48" prot="public" static="no">
+        <name>NVIC_SystemReset</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga49f66a3782cbff3b821bd9802cd046f5" kindref="member">__NVIC_SystemReset</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1620" column="11" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1620" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga804af63bb4c4c317387897431814775d" prot="public" static="no">
+        <name>NVIC_SetVector</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga0df355460bc1783d58f9d72ee4884208" kindref="member">__NVIC_SetVector</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1629" column="12" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1629" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga955eb1c33a3dcc62af11a8385e8c0fc8" prot="public" static="no">
+        <name>NVIC_GetVector</name>
+        <initializer><ref refid="group___c_m_s_i_s___core___n_v_i_c_functions_1ga44b665d2afb708121d9b10c76ff00ee5" kindref="member">__NVIC_GetVector</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1630" column="11" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___core___n_v_i_c_functions_1ga8045d905a5ca57437d8e6f71ffcb6df5" prot="public" static="no">
+        <name>NVIC_USER_IRQ_OFFSET</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1633" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1633" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions that manage interrupts and exceptions via the NVIC. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

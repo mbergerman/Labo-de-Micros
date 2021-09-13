@@ -1,0 +1,2005 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___l_l_w_u___register___masks" kind="group">
+    <compoundname>LLWU_Register_Masks</compoundname>
+    <title>LLWU Register Masks</title>
+      <sectiondef kind="user-defined">
+      <header>PE1 - LLWU Pin Enable 1 register</header>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga6ed6c56a8797caa64d27eb915c164dad" prot="public" static="no">
+        <name>LLWU_PE1_WUPE0_MASK</name>
+        <initializer>(0x3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7616" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga234c02ee9c2b3e3e248c90473e922336" prot="public" static="no">
+        <name>LLWU_PE1_WUPE0_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7617" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga61f1d3c27404e82bdebb9627e83f35dd" prot="public" static="no">
+        <name>LLWU_PE1_WUPE0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga234c02ee9c2b3e3e248c90473e922336" kindref="member">LLWU_PE1_WUPE0_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga6ed6c56a8797caa64d27eb915c164dad" kindref="member">LLWU_PE1_WUPE0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7618" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gac0c417f78992f2ebaca7267ef06d888a" prot="public" static="no">
+        <name>LLWU_PE1_WUPE1_MASK</name>
+        <initializer>(0xCU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7619" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaa9b8224f389f9c3d4f13772d8e5fbeee" prot="public" static="no">
+        <name>LLWU_PE1_WUPE1_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7620" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7620" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gab35a751adac37592806af18a4f6e3837" prot="public" static="no">
+        <name>LLWU_PE1_WUPE1</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gaa9b8224f389f9c3d4f13772d8e5fbeee" kindref="member">LLWU_PE1_WUPE1_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gac0c417f78992f2ebaca7267ef06d888a" kindref="member">LLWU_PE1_WUPE1_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7621" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7621" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga97e8e2fc8ce673f6b4625d307bc94b4a" prot="public" static="no">
+        <name>LLWU_PE1_WUPE2_MASK</name>
+        <initializer>(0x30U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7622" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7622" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga0b1bb86eb31a82a18ad1491b0305000b" prot="public" static="no">
+        <name>LLWU_PE1_WUPE2_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7623" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7623" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gae6a462624a848afff074ae6e6da83cb0" prot="public" static="no">
+        <name>LLWU_PE1_WUPE2</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga0b1bb86eb31a82a18ad1491b0305000b" kindref="member">LLWU_PE1_WUPE2_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga97e8e2fc8ce673f6b4625d307bc94b4a" kindref="member">LLWU_PE1_WUPE2_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7624" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7624" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga44cae929b3178e210eb5e1346a4ce997" prot="public" static="no">
+        <name>LLWU_PE1_WUPE3_MASK</name>
+        <initializer>(0xC0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7625" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7625" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaceee1b1b6323ba4d33abf875718e885a" prot="public" static="no">
+        <name>LLWU_PE1_WUPE3_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7626" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7626" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga3dfb03917664cd276f352b77e95624b9" prot="public" static="no">
+        <name>LLWU_PE1_WUPE3</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gaceee1b1b6323ba4d33abf875718e885a" kindref="member">LLWU_PE1_WUPE3_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga44cae929b3178e210eb5e1346a4ce997" kindref="member">LLWU_PE1_WUPE3_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7627" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7627" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PE2 - LLWU Pin Enable 2 register</header>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga94128d26c60f13d22acf47200f4f37e0" prot="public" static="no">
+        <name>LLWU_PE2_WUPE4_MASK</name>
+        <initializer>(0x3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7630" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga12aa6ffb998e5273a8dd548ac434ad41" prot="public" static="no">
+        <name>LLWU_PE2_WUPE4_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7631" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gadd7ab2866ab9683237ee5d6c003cf2aa" prot="public" static="no">
+        <name>LLWU_PE2_WUPE4</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga12aa6ffb998e5273a8dd548ac434ad41" kindref="member">LLWU_PE2_WUPE4_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga94128d26c60f13d22acf47200f4f37e0" kindref="member">LLWU_PE2_WUPE4_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7632" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7632" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gacfb855231e7a1c11c64d8b4e951817be" prot="public" static="no">
+        <name>LLWU_PE2_WUPE5_MASK</name>
+        <initializer>(0xCU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7633" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7633" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga4e823ada9bfc21dca4729eedf4e63778" prot="public" static="no">
+        <name>LLWU_PE2_WUPE5_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7634" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7634" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga956b7d4a8e1a041de809612c0cad83e3" prot="public" static="no">
+        <name>LLWU_PE2_WUPE5</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga4e823ada9bfc21dca4729eedf4e63778" kindref="member">LLWU_PE2_WUPE5_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gacfb855231e7a1c11c64d8b4e951817be" kindref="member">LLWU_PE2_WUPE5_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7635" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7635" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga0db50e96153e1ca74874da97d1c22f41" prot="public" static="no">
+        <name>LLWU_PE2_WUPE6_MASK</name>
+        <initializer>(0x30U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7636" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7636" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaa7a0191eaf60166333a8bee953239c85" prot="public" static="no">
+        <name>LLWU_PE2_WUPE6_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7637" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaa96b35faf789a4b85552957c8227c1e0" prot="public" static="no">
+        <name>LLWU_PE2_WUPE6</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gaa7a0191eaf60166333a8bee953239c85" kindref="member">LLWU_PE2_WUPE6_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga0db50e96153e1ca74874da97d1c22f41" kindref="member">LLWU_PE2_WUPE6_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7638" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7638" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga39b30f51fdd7f83bb5aa29bf2bc87c26" prot="public" static="no">
+        <name>LLWU_PE2_WUPE7_MASK</name>
+        <initializer>(0xC0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7639" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7639" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga82bfb99732d7f90dacdc01ef5222a59a" prot="public" static="no">
+        <name>LLWU_PE2_WUPE7_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7640" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7640" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaecb28f5285444e1576a192260d5c3048" prot="public" static="no">
+        <name>LLWU_PE2_WUPE7</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga82bfb99732d7f90dacdc01ef5222a59a" kindref="member">LLWU_PE2_WUPE7_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga39b30f51fdd7f83bb5aa29bf2bc87c26" kindref="member">LLWU_PE2_WUPE7_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7641" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7641" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PE3 - LLWU Pin Enable 3 register</header>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gabe7fce492e2c0201c4bb5af893f5a63d" prot="public" static="no">
+        <name>LLWU_PE3_WUPE8_MASK</name>
+        <initializer>(0x3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7644" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaf02591badd7f37915120d0fd627cdf27" prot="public" static="no">
+        <name>LLWU_PE3_WUPE8_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7645" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7645" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gad6e40b93385848a0a6dc1177f884107a" prot="public" static="no">
+        <name>LLWU_PE3_WUPE8</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gaf02591badd7f37915120d0fd627cdf27" kindref="member">LLWU_PE3_WUPE8_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gabe7fce492e2c0201c4bb5af893f5a63d" kindref="member">LLWU_PE3_WUPE8_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7646" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7646" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gad03733955d18194da002aeceedc2edf5" prot="public" static="no">
+        <name>LLWU_PE3_WUPE9_MASK</name>
+        <initializer>(0xCU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7647" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7647" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga26cad28b7fe4fd2da53ece9d3744016c" prot="public" static="no">
+        <name>LLWU_PE3_WUPE9_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7648" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga644ab845edd61fbd851fca7254c6a3f0" prot="public" static="no">
+        <name>LLWU_PE3_WUPE9</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga26cad28b7fe4fd2da53ece9d3744016c" kindref="member">LLWU_PE3_WUPE9_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gad03733955d18194da002aeceedc2edf5" kindref="member">LLWU_PE3_WUPE9_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7649" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7649" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga6d8e812233df26a72459712117996efa" prot="public" static="no">
+        <name>LLWU_PE3_WUPE10_MASK</name>
+        <initializer>(0x30U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7650" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7650" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga1686c8515045158eeef3fc0c5df480d9" prot="public" static="no">
+        <name>LLWU_PE3_WUPE10_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7651" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7651" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga5ba778d142ba95753b9eec4e9c5e73f6" prot="public" static="no">
+        <name>LLWU_PE3_WUPE10</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga1686c8515045158eeef3fc0c5df480d9" kindref="member">LLWU_PE3_WUPE10_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga6d8e812233df26a72459712117996efa" kindref="member">LLWU_PE3_WUPE10_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7652" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7652" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gad46cfb926e4e6bbc0cba079fb07a2bfd" prot="public" static="no">
+        <name>LLWU_PE3_WUPE11_MASK</name>
+        <initializer>(0xC0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7653" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gad8a60b9eab4fe9a0c559bae94033ca1e" prot="public" static="no">
+        <name>LLWU_PE3_WUPE11_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7654" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7654" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga73485bbb713aeb9b283996279ffdea6c" prot="public" static="no">
+        <name>LLWU_PE3_WUPE11</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gad8a60b9eab4fe9a0c559bae94033ca1e" kindref="member">LLWU_PE3_WUPE11_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gad46cfb926e4e6bbc0cba079fb07a2bfd" kindref="member">LLWU_PE3_WUPE11_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7655" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7655" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PE4 - LLWU Pin Enable 4 register</header>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga0d1b6351b58cc9fbf3099dc653754205" prot="public" static="no">
+        <name>LLWU_PE4_WUPE12_MASK</name>
+        <initializer>(0x3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7658" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7658" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaddb0a17347a85705dc2c2975129a7942" prot="public" static="no">
+        <name>LLWU_PE4_WUPE12_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7659" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7659" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga433532e85a0db075b0e525c1483a27ad" prot="public" static="no">
+        <name>LLWU_PE4_WUPE12</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gaddb0a17347a85705dc2c2975129a7942" kindref="member">LLWU_PE4_WUPE12_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga0d1b6351b58cc9fbf3099dc653754205" kindref="member">LLWU_PE4_WUPE12_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7660" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7660" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga4d9218c37bd27ed586a5e73aa1b20a84" prot="public" static="no">
+        <name>LLWU_PE4_WUPE13_MASK</name>
+        <initializer>(0xCU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7661" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7661" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga176680468b0cf75fbccc4a8be5d45388" prot="public" static="no">
+        <name>LLWU_PE4_WUPE13_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7662" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7662" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga0f97d1fbb1fd4c3be4a4641755e8b7a9" prot="public" static="no">
+        <name>LLWU_PE4_WUPE13</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga176680468b0cf75fbccc4a8be5d45388" kindref="member">LLWU_PE4_WUPE13_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga4d9218c37bd27ed586a5e73aa1b20a84" kindref="member">LLWU_PE4_WUPE13_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7663" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gae3a1e7b7497f719cfebd559f31dc4d07" prot="public" static="no">
+        <name>LLWU_PE4_WUPE14_MASK</name>
+        <initializer>(0x30U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7664" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7664" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga1942d07f99eb5afb836650dcfb2185af" prot="public" static="no">
+        <name>LLWU_PE4_WUPE14_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7665" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7665" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga376a97009729f8dde435a783deb148d8" prot="public" static="no">
+        <name>LLWU_PE4_WUPE14</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga1942d07f99eb5afb836650dcfb2185af" kindref="member">LLWU_PE4_WUPE14_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gae3a1e7b7497f719cfebd559f31dc4d07" kindref="member">LLWU_PE4_WUPE14_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7666" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7666" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga53e48ffd153996ab89adb3c4df7511ee" prot="public" static="no">
+        <name>LLWU_PE4_WUPE15_MASK</name>
+        <initializer>(0xC0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7667" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaeaf1e05b8de75133c46d6f11b3346732" prot="public" static="no">
+        <name>LLWU_PE4_WUPE15_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7668" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gadd015539f974ee2820707b9abf3787ba" prot="public" static="no">
+        <name>LLWU_PE4_WUPE15</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gaeaf1e05b8de75133c46d6f11b3346732" kindref="member">LLWU_PE4_WUPE15_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga53e48ffd153996ab89adb3c4df7511ee" kindref="member">LLWU_PE4_WUPE15_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7669" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7669" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>ME - LLWU Module Enable register</header>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga5f1588218d510ac13093055708ceae49" prot="public" static="no">
+        <name>LLWU_ME_WUME0_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7672" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7672" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga7f653f4ce89c4512437c0114f4659502" prot="public" static="no">
+        <name>LLWU_ME_WUME0_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7673" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7673" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga57e76f009f14fc197aa6bf7ce0e56f22" prot="public" static="no">
+        <name>LLWU_ME_WUME0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga7f653f4ce89c4512437c0114f4659502" kindref="member">LLWU_ME_WUME0_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga5f1588218d510ac13093055708ceae49" kindref="member">LLWU_ME_WUME0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7674" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7674" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga99b29643134140d21a3d4259b7f64c86" prot="public" static="no">
+        <name>LLWU_ME_WUME1_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7675" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gac623d0db3076972370ee795830b555c1" prot="public" static="no">
+        <name>LLWU_ME_WUME1_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7676" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga7537345eb6a634652141bd92b6e1c029" prot="public" static="no">
+        <name>LLWU_ME_WUME1</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gac623d0db3076972370ee795830b555c1" kindref="member">LLWU_ME_WUME1_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga99b29643134140d21a3d4259b7f64c86" kindref="member">LLWU_ME_WUME1_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7677" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga9f19f501dd2ad4aa2f7b01ac8edf8056" prot="public" static="no">
+        <name>LLWU_ME_WUME2_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7678" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga383c567df0dbc9edf2773d29676a7b30" prot="public" static="no">
+        <name>LLWU_ME_WUME2_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7679" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaad5f38620081713700faa574d4756037" prot="public" static="no">
+        <name>LLWU_ME_WUME2</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga383c567df0dbc9edf2773d29676a7b30" kindref="member">LLWU_ME_WUME2_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga9f19f501dd2ad4aa2f7b01ac8edf8056" kindref="member">LLWU_ME_WUME2_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7680" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7680" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga6f6ea286130568de4df073a50fbdc282" prot="public" static="no">
+        <name>LLWU_ME_WUME3_MASK</name>
+        <initializer>(0x8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7681" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga394f6049d44881fafbc58b62e3ea8f44" prot="public" static="no">
+        <name>LLWU_ME_WUME3_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7682" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gafd25630d6da4e8bd90c95a1b534bfe26" prot="public" static="no">
+        <name>LLWU_ME_WUME3</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga394f6049d44881fafbc58b62e3ea8f44" kindref="member">LLWU_ME_WUME3_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga6f6ea286130568de4df073a50fbdc282" kindref="member">LLWU_ME_WUME3_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7683" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga4b7fa4566d64069e93d5bf9bf69efcf4" prot="public" static="no">
+        <name>LLWU_ME_WUME4_MASK</name>
+        <initializer>(0x10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7684" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gad162d87bd892f7bfcd34c74941168e64" prot="public" static="no">
+        <name>LLWU_ME_WUME4_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7685" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga4f426ee3d4121039991f556746934a66" prot="public" static="no">
+        <name>LLWU_ME_WUME4</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gad162d87bd892f7bfcd34c74941168e64" kindref="member">LLWU_ME_WUME4_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga4b7fa4566d64069e93d5bf9bf69efcf4" kindref="member">LLWU_ME_WUME4_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7686" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gadeab309cd88e84e94433398ea4656511" prot="public" static="no">
+        <name>LLWU_ME_WUME5_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7687" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga8eb531aa288bc7d32d75950b7bf9b1a5" prot="public" static="no">
+        <name>LLWU_ME_WUME5_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7688" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga57fe3b7c8697cae28d20ea2edd7502f6" prot="public" static="no">
+        <name>LLWU_ME_WUME5</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga8eb531aa288bc7d32d75950b7bf9b1a5" kindref="member">LLWU_ME_WUME5_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gadeab309cd88e84e94433398ea4656511" kindref="member">LLWU_ME_WUME5_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7689" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga4f4902c05f5e93174a1ef5afaa426d01" prot="public" static="no">
+        <name>LLWU_ME_WUME6_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7690" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaba71957dbca47b2dd3aaec44106b013e" prot="public" static="no">
+        <name>LLWU_ME_WUME6_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7691" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga92d72bda2b26242276060b869bae0fb4" prot="public" static="no">
+        <name>LLWU_ME_WUME6</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gaba71957dbca47b2dd3aaec44106b013e" kindref="member">LLWU_ME_WUME6_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga4f4902c05f5e93174a1ef5afaa426d01" kindref="member">LLWU_ME_WUME6_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7692" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga455f995ef197eea9796910ff1b7327a0" prot="public" static="no">
+        <name>LLWU_ME_WUME7_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7693" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga1676e95c4d2477005c4c37ee97b45db3" prot="public" static="no">
+        <name>LLWU_ME_WUME7_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7694" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga01fde478dc65d018fd0b6f70e6a5540f" prot="public" static="no">
+        <name>LLWU_ME_WUME7</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga1676e95c4d2477005c4c37ee97b45db3" kindref="member">LLWU_ME_WUME7_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga455f995ef197eea9796910ff1b7327a0" kindref="member">LLWU_ME_WUME7_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7695" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7695" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>F1 - LLWU Flag 1 register</header>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga1308a2e0d967a81b7fc32af6816cb532" prot="public" static="no">
+        <name>LLWU_F1_WUF0_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7698" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga6a004e1e5a54356cf5b70d9f17b96afc" prot="public" static="no">
+        <name>LLWU_F1_WUF0_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7699" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gadf947a1640b0c6ac4e501aec5b935154" prot="public" static="no">
+        <name>LLWU_F1_WUF0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga6a004e1e5a54356cf5b70d9f17b96afc" kindref="member">LLWU_F1_WUF0_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga1308a2e0d967a81b7fc32af6816cb532" kindref="member">LLWU_F1_WUF0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7700" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7700" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga3513d59cf672e1dfd8884672b57c879b" prot="public" static="no">
+        <name>LLWU_F1_WUF1_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7701" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gadfac3bafc6a624b27f059e3d9cf3a899" prot="public" static="no">
+        <name>LLWU_F1_WUF1_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7702" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga550c62884c90b1a85c2fa07d1bfdcd48" prot="public" static="no">
+        <name>LLWU_F1_WUF1</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gadfac3bafc6a624b27f059e3d9cf3a899" kindref="member">LLWU_F1_WUF1_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga3513d59cf672e1dfd8884672b57c879b" kindref="member">LLWU_F1_WUF1_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7703" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gabc46629018d0f2eb7a39896eb5225933" prot="public" static="no">
+        <name>LLWU_F1_WUF2_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7704" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gab99e1778fd26ccd69f31a56d94709e41" prot="public" static="no">
+        <name>LLWU_F1_WUF2_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7705" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga7baf252acb15c1af560212b69c4510b2" prot="public" static="no">
+        <name>LLWU_F1_WUF2</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gab99e1778fd26ccd69f31a56d94709e41" kindref="member">LLWU_F1_WUF2_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gabc46629018d0f2eb7a39896eb5225933" kindref="member">LLWU_F1_WUF2_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7706" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7706" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga7c81d1a3309d56f967355042ac08c299" prot="public" static="no">
+        <name>LLWU_F1_WUF3_MASK</name>
+        <initializer>(0x8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7707" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gada64305bc36dde8d293f511de2183d0c" prot="public" static="no">
+        <name>LLWU_F1_WUF3_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7708" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga239699d31d2e283bf2edce04eb6e4636" prot="public" static="no">
+        <name>LLWU_F1_WUF3</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gada64305bc36dde8d293f511de2183d0c" kindref="member">LLWU_F1_WUF3_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga7c81d1a3309d56f967355042ac08c299" kindref="member">LLWU_F1_WUF3_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7709" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga9dad2dc81874baa09dac37d10cc4781d" prot="public" static="no">
+        <name>LLWU_F1_WUF4_MASK</name>
+        <initializer>(0x10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7710" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga4ce65dd6db7f89bd5e6f0fb7df47a399" prot="public" static="no">
+        <name>LLWU_F1_WUF4_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7711" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga9c07a536d420eeb46f7a757d4449f2ac" prot="public" static="no">
+        <name>LLWU_F1_WUF4</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga4ce65dd6db7f89bd5e6f0fb7df47a399" kindref="member">LLWU_F1_WUF4_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga9dad2dc81874baa09dac37d10cc4781d" kindref="member">LLWU_F1_WUF4_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7712" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7712" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga2ba67283979e853e1601bd15a534523e" prot="public" static="no">
+        <name>LLWU_F1_WUF5_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7713" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga56f1fa2e4a277de750be421a3b35df87" prot="public" static="no">
+        <name>LLWU_F1_WUF5_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7714" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga6a35873aa92f990b636a663a5f773ca1" prot="public" static="no">
+        <name>LLWU_F1_WUF5</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga56f1fa2e4a277de750be421a3b35df87" kindref="member">LLWU_F1_WUF5_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga2ba67283979e853e1601bd15a534523e" kindref="member">LLWU_F1_WUF5_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7715" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7715" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga25c6fc1f914e4e6cdc9863e9910a7a18" prot="public" static="no">
+        <name>LLWU_F1_WUF6_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7716" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7716" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gadc6ba47e215a21859a0cdb07637e3720" prot="public" static="no">
+        <name>LLWU_F1_WUF6_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7717" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7717" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga4aa665fdd93a08b2f72e0b24c2e89ad9" prot="public" static="no">
+        <name>LLWU_F1_WUF6</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gadc6ba47e215a21859a0cdb07637e3720" kindref="member">LLWU_F1_WUF6_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga25c6fc1f914e4e6cdc9863e9910a7a18" kindref="member">LLWU_F1_WUF6_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7718" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga085396c6707e1233072318b9f791a179" prot="public" static="no">
+        <name>LLWU_F1_WUF7_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7719" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7719" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga6ec44402fb6f1879376fce39e4f48618" prot="public" static="no">
+        <name>LLWU_F1_WUF7_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7720" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7720" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga34f586b51974da9fe6ae867d38d48485" prot="public" static="no">
+        <name>LLWU_F1_WUF7</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga6ec44402fb6f1879376fce39e4f48618" kindref="member">LLWU_F1_WUF7_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga085396c6707e1233072318b9f791a179" kindref="member">LLWU_F1_WUF7_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7721" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7721" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>F2 - LLWU Flag 2 register</header>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga76228bf3593a9417e43e509166c07fad" prot="public" static="no">
+        <name>LLWU_F2_WUF8_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7724" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7724" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga88963ab5583725d163689b615ce5a638" prot="public" static="no">
+        <name>LLWU_F2_WUF8_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7725" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7725" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gab1a2b83044edbc6852ae049d8afdfbdd" prot="public" static="no">
+        <name>LLWU_F2_WUF8</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga88963ab5583725d163689b615ce5a638" kindref="member">LLWU_F2_WUF8_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga76228bf3593a9417e43e509166c07fad" kindref="member">LLWU_F2_WUF8_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7726" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7726" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga28d89e3d08f5a7db6ffbe56e9e35d771" prot="public" static="no">
+        <name>LLWU_F2_WUF9_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7727" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gabc3e93b75e1e8e95f392b59b5dbf6edf" prot="public" static="no">
+        <name>LLWU_F2_WUF9_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7728" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga5bf58a8c2a31c1ee83569d2cf4896d86" prot="public" static="no">
+        <name>LLWU_F2_WUF9</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gabc3e93b75e1e8e95f392b59b5dbf6edf" kindref="member">LLWU_F2_WUF9_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga28d89e3d08f5a7db6ffbe56e9e35d771" kindref="member">LLWU_F2_WUF9_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7729" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gae005607b6cb3ebf1a7def97cd8b2abc5" prot="public" static="no">
+        <name>LLWU_F2_WUF10_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7730" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7730" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga0ac579128aa08740377c46fd52be2bb5" prot="public" static="no">
+        <name>LLWU_F2_WUF10_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7731" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga1fbe79331ec3d400d836f9bb7de533a6" prot="public" static="no">
+        <name>LLWU_F2_WUF10</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga0ac579128aa08740377c46fd52be2bb5" kindref="member">LLWU_F2_WUF10_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gae005607b6cb3ebf1a7def97cd8b2abc5" kindref="member">LLWU_F2_WUF10_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7732" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7732" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga618834480f34a7997f2f4fab80d87400" prot="public" static="no">
+        <name>LLWU_F2_WUF11_MASK</name>
+        <initializer>(0x8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7733" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga37c17efe2e5332ad92f9a05d9a15a2f2" prot="public" static="no">
+        <name>LLWU_F2_WUF11_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7734" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga8cff952a35e87f71a4b24ef6feefee82" prot="public" static="no">
+        <name>LLWU_F2_WUF11</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga37c17efe2e5332ad92f9a05d9a15a2f2" kindref="member">LLWU_F2_WUF11_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga618834480f34a7997f2f4fab80d87400" kindref="member">LLWU_F2_WUF11_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7735" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga59dfa340c96f0c04fe3667e00dfb0575" prot="public" static="no">
+        <name>LLWU_F2_WUF12_MASK</name>
+        <initializer>(0x10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7736" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gae04234ed612320f80fe119820ae78e39" prot="public" static="no">
+        <name>LLWU_F2_WUF12_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7737" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7737" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga4b8f9110dc4fbd5597c179a2b819b946" prot="public" static="no">
+        <name>LLWU_F2_WUF12</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gae04234ed612320f80fe119820ae78e39" kindref="member">LLWU_F2_WUF12_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga59dfa340c96f0c04fe3667e00dfb0575" kindref="member">LLWU_F2_WUF12_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7738" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7738" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga6618b24b83e2e28d9268c1f5fac431af" prot="public" static="no">
+        <name>LLWU_F2_WUF13_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7739" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7739" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga6c8e71714d1a4c5e9b8dddb08d41679e" prot="public" static="no">
+        <name>LLWU_F2_WUF13_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7740" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7740" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga778553954826cc20c8bc34ffc0b32235" prot="public" static="no">
+        <name>LLWU_F2_WUF13</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga6c8e71714d1a4c5e9b8dddb08d41679e" kindref="member">LLWU_F2_WUF13_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga6618b24b83e2e28d9268c1f5fac431af" kindref="member">LLWU_F2_WUF13_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7741" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7741" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga5f6f604b22d249edf1101cd9aa087072" prot="public" static="no">
+        <name>LLWU_F2_WUF14_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7742" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7742" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga775751b74c858d4adf406ff063630bbf" prot="public" static="no">
+        <name>LLWU_F2_WUF14_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7743" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7743" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga61bc00dcda4ef8eef2f2ef7d1e0cad66" prot="public" static="no">
+        <name>LLWU_F2_WUF14</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga775751b74c858d4adf406ff063630bbf" kindref="member">LLWU_F2_WUF14_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga5f6f604b22d249edf1101cd9aa087072" kindref="member">LLWU_F2_WUF14_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7744" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7744" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaa56b2f78b177bd14e66b3863dbb14625" prot="public" static="no">
+        <name>LLWU_F2_WUF15_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7745" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7745" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaae1c32b7e20bbc817c4c5af4479e2a91" prot="public" static="no">
+        <name>LLWU_F2_WUF15_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7746" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7746" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaf8402c732164092041061917782b29ec" prot="public" static="no">
+        <name>LLWU_F2_WUF15</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gaae1c32b7e20bbc817c4c5af4479e2a91" kindref="member">LLWU_F2_WUF15_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gaa56b2f78b177bd14e66b3863dbb14625" kindref="member">LLWU_F2_WUF15_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7747" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7747" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>F3 - LLWU Flag 3 register</header>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga1bb6bf136de15f4cc67eee67d53361a9" prot="public" static="no">
+        <name>LLWU_F3_MWUF0_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7750" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7750" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga3b2c7982efa30073491d05e0dbc698e8" prot="public" static="no">
+        <name>LLWU_F3_MWUF0_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7751" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga3e088b69ca585116274b771ce4915311" prot="public" static="no">
+        <name>LLWU_F3_MWUF0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga3b2c7982efa30073491d05e0dbc698e8" kindref="member">LLWU_F3_MWUF0_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga1bb6bf136de15f4cc67eee67d53361a9" kindref="member">LLWU_F3_MWUF0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7752" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7752" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gafe847acbd5a46291dd05b8ab682efffe" prot="public" static="no">
+        <name>LLWU_F3_MWUF1_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7753" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7753" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga6de4a2380bde727b70758cd1c818c859" prot="public" static="no">
+        <name>LLWU_F3_MWUF1_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7754" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7754" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga0102aac1d58b1c1a89c197c845f832a6" prot="public" static="no">
+        <name>LLWU_F3_MWUF1</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga6de4a2380bde727b70758cd1c818c859" kindref="member">LLWU_F3_MWUF1_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gafe847acbd5a46291dd05b8ab682efffe" kindref="member">LLWU_F3_MWUF1_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7755" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7755" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga3414123c30550a3dea14d84f931e2a0c" prot="public" static="no">
+        <name>LLWU_F3_MWUF2_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7756" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7756" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gac83dee08de7a4bdce21d454a9cfab059" prot="public" static="no">
+        <name>LLWU_F3_MWUF2_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7757" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7757" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gac71e0c2b5effba209a76bdea4199dcc9" prot="public" static="no">
+        <name>LLWU_F3_MWUF2</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gac83dee08de7a4bdce21d454a9cfab059" kindref="member">LLWU_F3_MWUF2_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga3414123c30550a3dea14d84f931e2a0c" kindref="member">LLWU_F3_MWUF2_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7758" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7758" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gab85f671f2c6f2112c4e2e14845ef998b" prot="public" static="no">
+        <name>LLWU_F3_MWUF3_MASK</name>
+        <initializer>(0x8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7759" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7759" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga91a71ba06b95076252cd2594112da05d" prot="public" static="no">
+        <name>LLWU_F3_MWUF3_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7760" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7760" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaf456eb8a736c3ef4d9813e6c8929fa05" prot="public" static="no">
+        <name>LLWU_F3_MWUF3</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga91a71ba06b95076252cd2594112da05d" kindref="member">LLWU_F3_MWUF3_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gab85f671f2c6f2112c4e2e14845ef998b" kindref="member">LLWU_F3_MWUF3_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7761" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7761" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gabd85c849a3b177444a91aa37457252a8" prot="public" static="no">
+        <name>LLWU_F3_MWUF4_MASK</name>
+        <initializer>(0x10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7762" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gac1d2eb89a620cf503f11eecf9e8ece1f" prot="public" static="no">
+        <name>LLWU_F3_MWUF4_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7763" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gad93b6ad2aae5b9b2b211254f8734236e" prot="public" static="no">
+        <name>LLWU_F3_MWUF4</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gac1d2eb89a620cf503f11eecf9e8ece1f" kindref="member">LLWU_F3_MWUF4_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gabd85c849a3b177444a91aa37457252a8" kindref="member">LLWU_F3_MWUF4_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7764" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7764" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaeb14754fa2d5b4c1fd50b9df98f11b01" prot="public" static="no">
+        <name>LLWU_F3_MWUF5_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7765" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gac8a9d2de72a5034fae66714d25aa5f33" prot="public" static="no">
+        <name>LLWU_F3_MWUF5_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7766" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7766" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga71b5bd482fdc7f772f235112e9395140" prot="public" static="no">
+        <name>LLWU_F3_MWUF5</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gac8a9d2de72a5034fae66714d25aa5f33" kindref="member">LLWU_F3_MWUF5_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gaeb14754fa2d5b4c1fd50b9df98f11b01" kindref="member">LLWU_F3_MWUF5_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7767" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7767" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gabd1f915448c7918a8aabc74239d7e773" prot="public" static="no">
+        <name>LLWU_F3_MWUF6_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7768" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaab649d98d5d8eb9f2f272649ace225c4" prot="public" static="no">
+        <name>LLWU_F3_MWUF6_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7769" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga05d84dbe2b08378f0c3535e947cbf1c4" prot="public" static="no">
+        <name>LLWU_F3_MWUF6</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gaab649d98d5d8eb9f2f272649ace225c4" kindref="member">LLWU_F3_MWUF6_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gabd1f915448c7918a8aabc74239d7e773" kindref="member">LLWU_F3_MWUF6_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7770" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7770" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga2ddb11dc5e9f8a8404ccf99f10046b5a" prot="public" static="no">
+        <name>LLWU_F3_MWUF7_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7771" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7771" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaee31def5b074844cbf46f9d7e54d2d4f" prot="public" static="no">
+        <name>LLWU_F3_MWUF7_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7772" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7772" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga29b4a5a062eb04f5fb0326fcdfd6f5f5" prot="public" static="no">
+        <name>LLWU_F3_MWUF7</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gaee31def5b074844cbf46f9d7e54d2d4f" kindref="member">LLWU_F3_MWUF7_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga2ddb11dc5e9f8a8404ccf99f10046b5a" kindref="member">LLWU_F3_MWUF7_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7773" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7773" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>FILT1 - LLWU Pin Filter 1 register</header>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaa44e21d07f509d1f5d6cec9da32ab8ab" prot="public" static="no">
+        <name>LLWU_FILT1_FILTSEL_MASK</name>
+        <initializer>(0xFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7776" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaab2a7991b2b135f0557b1b41cc3528f7" prot="public" static="no">
+        <name>LLWU_FILT1_FILTSEL_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7777" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7777" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga9d7876a517542c2fa363b9f15d375d69" prot="public" static="no">
+        <name>LLWU_FILT1_FILTSEL</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gaab2a7991b2b135f0557b1b41cc3528f7" kindref="member">LLWU_FILT1_FILTSEL_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gaa44e21d07f509d1f5d6cec9da32ab8ab" kindref="member">LLWU_FILT1_FILTSEL_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7778" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gae449f984f9cfeec99ab8380e356b57c7" prot="public" static="no">
+        <name>LLWU_FILT1_FILTE_MASK</name>
+        <initializer>(0x60U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7779" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7779" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga0d4b7527c910e60bdf1f52e51b1c0932" prot="public" static="no">
+        <name>LLWU_FILT1_FILTE_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7780" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7780" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga2eb83c2856ca0d1d7ff09384809aed2f" prot="public" static="no">
+        <name>LLWU_FILT1_FILTE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga0d4b7527c910e60bdf1f52e51b1c0932" kindref="member">LLWU_FILT1_FILTE_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gae449f984f9cfeec99ab8380e356b57c7" kindref="member">LLWU_FILT1_FILTE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7781" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7781" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gabdb5ca902522996074a75ed08a7a8b03" prot="public" static="no">
+        <name>LLWU_FILT1_FILTF_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7782" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga359dd7a99c209dc7c2f26d79c061d11e" prot="public" static="no">
+        <name>LLWU_FILT1_FILTF_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7783" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga178c6ff91d71caeb12b9444cd028e09d" prot="public" static="no">
+        <name>LLWU_FILT1_FILTF</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga359dd7a99c209dc7c2f26d79c061d11e" kindref="member">LLWU_FILT1_FILTF_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gabdb5ca902522996074a75ed08a7a8b03" kindref="member">LLWU_FILT1_FILTF_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7784" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7784" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>FILT2 - LLWU Pin Filter 2 register</header>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gae610069172bf4a4b8f783d54faf97496" prot="public" static="no">
+        <name>LLWU_FILT2_FILTSEL_MASK</name>
+        <initializer>(0xFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7787" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7787" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga4589e4982f58847b133e9792fac931ac" prot="public" static="no">
+        <name>LLWU_FILT2_FILTSEL_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7788" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7788" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga158cb43770e2439838189522bb7696a3" prot="public" static="no">
+        <name>LLWU_FILT2_FILTSEL</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga4589e4982f58847b133e9792fac931ac" kindref="member">LLWU_FILT2_FILTSEL_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gae610069172bf4a4b8f783d54faf97496" kindref="member">LLWU_FILT2_FILTSEL_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7789" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7789" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga6c6d4145e30bdb324bc6b137b2f7aada" prot="public" static="no">
+        <name>LLWU_FILT2_FILTE_MASK</name>
+        <initializer>(0x60U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7790" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7790" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gac309ec1ef795572d048b09ac35847bf1" prot="public" static="no">
+        <name>LLWU_FILT2_FILTE_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7791" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7791" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga3c7ed2286e6f1a0041610a9b7de636ef" prot="public" static="no">
+        <name>LLWU_FILT2_FILTE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gac309ec1ef795572d048b09ac35847bf1" kindref="member">LLWU_FILT2_FILTE_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga6c6d4145e30bdb324bc6b137b2f7aada" kindref="member">LLWU_FILT2_FILTE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7792" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gab60be1393d84433fe44d4b332a77537c" prot="public" static="no">
+        <name>LLWU_FILT2_FILTF_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7793" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga20b3ccaef11cade3a0dc88b3a378b790" prot="public" static="no">
+        <name>LLWU_FILT2_FILTF_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7794" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7794" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaa36637f2a12654139ec6c8b76f313c8d" prot="public" static="no">
+        <name>LLWU_FILT2_FILTF</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1ga20b3ccaef11cade3a0dc88b3a378b790" kindref="member">LLWU_FILT2_FILTF_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1gab60be1393d84433fe44d4b332a77537c" kindref="member">LLWU_FILT2_FILTF_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7795" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7795" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>RST - LLWU Reset Enable register</header>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga6a909bf1d49bb4f85ad988396fe928f2" prot="public" static="no">
+        <name>LLWU_RST_RSTFILT_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7798" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7798" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaaa76fead204f735855760c2f071ac11f" prot="public" static="no">
+        <name>LLWU_RST_RSTFILT_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7799" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7799" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaa13d0a0ebfdd0939b1ba9ae0a8843dec" prot="public" static="no">
+        <name>LLWU_RST_RSTFILT</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gaaa76fead204f735855760c2f071ac11f" kindref="member">LLWU_RST_RSTFILT_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga6a909bf1d49bb4f85ad988396fe928f2" kindref="member">LLWU_RST_RSTFILT_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7800" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7800" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga9c57c7139b6659782c0a5e160b790c3e" prot="public" static="no">
+        <name>LLWU_RST_LLRSTE_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7801" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7801" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaf1c8b75e71d3086612da4e1e2f768d72" prot="public" static="no">
+        <name>LLWU_RST_LLRSTE_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7802" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7802" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gad8091af3da5e3220b82e3de8adc2a45e" prot="public" static="no">
+        <name>LLWU_RST_LLRSTE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___l_l_w_u___register___masks_1gaf1c8b75e71d3086612da4e1e2f768d72" kindref="member">LLWU_RST_LLRSTE_SHIFT</ref>)) &amp; <ref refid="group___l_l_w_u___register___masks_1ga9c57c7139b6659782c0a5e160b790c3e" kindref="member">LLWU_RST_LLRSTE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7803" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7803" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga5596067d46debe317ac368bfc5db21f8" prot="public" static="no">
+        <name>LLWU_BASE</name>
+        <initializer>(0x4007C000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral LLWU base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7813" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7813" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1gaed2d6ced03dff7739533096e53983dbe" prot="public" static="no">
+        <name>LLWU</name>
+        <initializer>((<ref refid="struct_l_l_w_u___type" kindref="compound">LLWU_Type</ref> *)<ref refid="group___l_l_w_u___register___masks_1ga5596067d46debe317ac368bfc5db21f8" kindref="member">LLWU_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral LLWU base pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7815" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7815" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga3d947ff94f2db32873659ceeeb8bc767" prot="public" static="no">
+        <name>LLWU_BASE_ADDRS</name>
+        <initializer>{ <ref refid="group___l_l_w_u___register___masks_1ga5596067d46debe317ac368bfc5db21f8" kindref="member">LLWU_BASE</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of LLWU peripheral base addresses </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7817" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7817" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga4826d688973513cc02a2f1d4f67c336b" prot="public" static="no">
+        <name>LLWU_BASE_PTRS</name>
+        <initializer>{ <ref refid="group___l_l_w_u___register___masks_1gaed2d6ced03dff7739533096e53983dbe" kindref="member">LLWU</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of LLWU peripheral base pointers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7819" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7819" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_l_w_u___register___masks_1ga00f85a14dffe324ff8e867f8b06f1461" prot="public" static="no">
+        <name>LLWU_IRQS</name>
+        <initializer>{ <ref refid="group___interrupt__vector__numbers_1gga666eb0caeb12ec0e281415592ae89083a8b7bac6898a42e6dadf89d7c8b07baaa" kindref="member">LLWU_IRQn</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt vectors for the LLWU peripheral type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7821" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7821" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

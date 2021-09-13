@@ -1,0 +1,204 @@
+.TH "DMA_Type" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DMA_Type
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MK64F12\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCR\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBES\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_0\fP [4]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBERQ\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_1\fP [4]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBEEI\fP"
+.br
+.ti -1c
+.RI "\fB__O\fP uint8_t \fBCEEI\fP"
+.br
+.ti -1c
+.RI "\fB__O\fP uint8_t \fBSEEI\fP"
+.br
+.ti -1c
+.RI "\fB__O\fP uint8_t \fBCERQ\fP"
+.br
+.ti -1c
+.RI "\fB__O\fP uint8_t \fBSERQ\fP"
+.br
+.ti -1c
+.RI "\fB__O\fP uint8_t \fBCDNE\fP"
+.br
+.ti -1c
+.RI "\fB__O\fP uint8_t \fBSSRT\fP"
+.br
+.ti -1c
+.RI "\fB__O\fP uint8_t \fBCERR\fP"
+.br
+.ti -1c
+.RI "\fB__O\fP uint8_t \fBCINT\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_2\fP [4]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBINT\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_3\fP [4]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBERR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_4\fP [4]"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBHRS\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_5\fP [200]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI3\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI2\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI1\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI0\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI7\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI6\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI5\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI4\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI11\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI10\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI9\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI8\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI15\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI14\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI13\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint8_t \fBDCHPRI12\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_6\fP [3824]"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint32_t \fBSADDR\fP"
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint16_t \fBSOFF\fP"
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint16_t \fBATTR\fP"
+.br
+.ti -1c
+.RI "   union {"
+.br
+.ti -1c
+.RI "      \fB__IO\fP uint32_t \fBNBYTES_MLNO\fP"
+.br
+.ti -1c
+.RI "      \fB__IO\fP uint32_t \fBNBYTES_MLOFFNO\fP"
+.br
+.ti -1c
+.RI "      \fB__IO\fP uint32_t \fBNBYTES_MLOFFYES\fP"
+.br
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint32_t \fBSLAST\fP"
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint32_t \fBDADDR\fP"
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint16_t \fBDOFF\fP"
+.br
+.ti -1c
+.RI "   union {"
+.br
+.ti -1c
+.RI "      \fB__IO\fP uint16_t \fBCITER_ELINKNO\fP"
+.br
+.ti -1c
+.RI "      \fB__IO\fP uint16_t \fBCITER_ELINKYES\fP"
+.br
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint32_t \fBDLAST_SGA\fP"
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint16_t \fBCSR\fP"
+.br
+.ti -1c
+.RI "   union {"
+.br
+.ti -1c
+.RI "      \fB__IO\fP uint16_t \fBBITER_ELINKNO\fP"
+.br
+.ti -1c
+.RI "      \fB__IO\fP uint16_t \fBBITER_ELINKYES\fP"
+.br
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "} \fBTCD\fP [16]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+DMA - Register Layout Typedef 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

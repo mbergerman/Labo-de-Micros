@@ -1,0 +1,678 @@
+.TH "FTFE_Register_Masks" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FTFE_Register_Masks
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_BASE\fP   (0x40020000u)"
+.br
+.ti -1c
+.RI "#define \fBFTFE\fP   ((\fBFTFE_Type\fP *)\fBFTFE_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_BASE_ADDRS\fP   { \fBFTFE_BASE\fP }"
+.br
+.ti -1c
+.RI "#define \fBFTFE_BASE_PTRS\fP   { \fBFTFE\fP }"
+.br
+.ti -1c
+.RI "#define \fBFTFE_COMMAND_COMPLETE_IRQS\fP   { \fBFTFE_IRQn\fP }"
+.br
+.ti -1c
+.RI "#define \fBFTFE_READ_COLLISION_IRQS\fP   { \fBRead_Collision_IRQn\fP }"
+.br
+.in -1c
+.SS "FSTAT - Flash Status Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_MGSTAT0_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_MGSTAT0_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_MGSTAT0\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSTAT_MGSTAT0_SHIFT\fP)) & \fBFTFE_FSTAT_MGSTAT0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_FPVIOL_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_FPVIOL_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_FPVIOL\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSTAT_FPVIOL_SHIFT\fP)) & \fBFTFE_FSTAT_FPVIOL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_ACCERR_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_ACCERR_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_ACCERR\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSTAT_ACCERR_SHIFT\fP)) & \fBFTFE_FSTAT_ACCERR_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_RDCOLERR_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_RDCOLERR_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_RDCOLERR\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSTAT_RDCOLERR_SHIFT\fP)) & \fBFTFE_FSTAT_RDCOLERR_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_CCIF_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_CCIF_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSTAT_CCIF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSTAT_CCIF_SHIFT\fP)) & \fBFTFE_FSTAT_CCIF_MASK\fP)"
+.br
+.in -1c
+.SS "FCNFG - Flash Configuration Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_EEERDY_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_EEERDY_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_EEERDY\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_EEERDY_SHIFT\fP)) & \fBFTFE_FCNFG_EEERDY_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_RAMRDY_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_RAMRDY_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_RAMRDY\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_RAMRDY_SHIFT\fP)) & \fBFTFE_FCNFG_RAMRDY_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_PFLSH_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_PFLSH_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_PFLSH\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_PFLSH_SHIFT\fP)) & \fBFTFE_FCNFG_PFLSH_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_SWAP_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_SWAP_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_SWAP\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_SWAP_SHIFT\fP)) & \fBFTFE_FCNFG_SWAP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_ERSSUSP_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_ERSSUSP_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_ERSSUSP\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_ERSSUSP_SHIFT\fP)) & \fBFTFE_FCNFG_ERSSUSP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_ERSAREQ_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_ERSAREQ_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_ERSAREQ\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_ERSAREQ_SHIFT\fP)) & \fBFTFE_FCNFG_ERSAREQ_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_RDCOLLIE_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_RDCOLLIE_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_RDCOLLIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_RDCOLLIE_SHIFT\fP)) & \fBFTFE_FCNFG_RDCOLLIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_CCIE_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_CCIE_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCNFG_CCIE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_CCIE_SHIFT\fP)) & \fBFTFE_FCNFG_CCIE_MASK\fP)"
+.br
+.in -1c
+.SS "FSEC - Flash Security Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FSEC_SEC_MASK\fP   (0x3U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSEC_SEC_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSEC_SEC\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSEC_SEC_SHIFT\fP)) & \fBFTFE_FSEC_SEC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSEC_FSLACC_MASK\fP   (0xCU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSEC_FSLACC_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSEC_FSLACC\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSEC_FSLACC_SHIFT\fP)) & \fBFTFE_FSEC_FSLACC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSEC_MEEN_MASK\fP   (0x30U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSEC_MEEN_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSEC_MEEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSEC_MEEN_SHIFT\fP)) & \fBFTFE_FSEC_MEEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSEC_KEYEN_MASK\fP   (0xC0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSEC_KEYEN_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FSEC_KEYEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSEC_KEYEN_SHIFT\fP)) & \fBFTFE_FSEC_KEYEN_MASK\fP)"
+.br
+.in -1c
+.SS "FOPT - Flash Option Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FOPT_OPT_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FOPT_OPT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FOPT_OPT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FOPT_OPT_SHIFT\fP)) & \fBFTFE_FOPT_OPT_MASK\fP)"
+.br
+.in -1c
+.SS "FCCOB3 - Flash Common Command Object Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FCCOB3_CCOBn_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB3_CCOBn_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB3_CCOBn\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB3_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB3_CCOBn_MASK\fP)"
+.br
+.in -1c
+.SS "FCCOB2 - Flash Common Command Object Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FCCOB2_CCOBn_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB2_CCOBn_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB2_CCOBn\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB2_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB2_CCOBn_MASK\fP)"
+.br
+.in -1c
+.SS "FCCOB1 - Flash Common Command Object Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FCCOB1_CCOBn_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB1_CCOBn_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB1_CCOBn\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB1_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB1_CCOBn_MASK\fP)"
+.br
+.in -1c
+.SS "FCCOB0 - Flash Common Command Object Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FCCOB0_CCOBn_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB0_CCOBn_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB0_CCOBn\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB0_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB0_CCOBn_MASK\fP)"
+.br
+.in -1c
+.SS "FCCOB7 - Flash Common Command Object Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FCCOB7_CCOBn_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB7_CCOBn_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB7_CCOBn\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB7_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB7_CCOBn_MASK\fP)"
+.br
+.in -1c
+.SS "FCCOB6 - Flash Common Command Object Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FCCOB6_CCOBn_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB6_CCOBn_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB6_CCOBn\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB6_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB6_CCOBn_MASK\fP)"
+.br
+.in -1c
+.SS "FCCOB5 - Flash Common Command Object Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FCCOB5_CCOBn_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB5_CCOBn_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB5_CCOBn\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB5_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB5_CCOBn_MASK\fP)"
+.br
+.in -1c
+.SS "FCCOB4 - Flash Common Command Object Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FCCOB4_CCOBn_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB4_CCOBn_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB4_CCOBn\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB4_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB4_CCOBn_MASK\fP)"
+.br
+.in -1c
+.SS "FCCOBB - Flash Common Command Object Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FCCOBB_CCOBn_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOBB_CCOBn_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOBB_CCOBn\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOBB_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOBB_CCOBn_MASK\fP)"
+.br
+.in -1c
+.SS "FCCOBA - Flash Common Command Object Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FCCOBA_CCOBn_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOBA_CCOBn_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOBA_CCOBn\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOBA_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOBA_CCOBn_MASK\fP)"
+.br
+.in -1c
+.SS "FCCOB9 - Flash Common Command Object Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FCCOB9_CCOBn_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB9_CCOBn_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB9_CCOBn\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB9_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB9_CCOBn_MASK\fP)"
+.br
+.in -1c
+.SS "FCCOB8 - Flash Common Command Object Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FCCOB8_CCOBn_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB8_CCOBn_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FCCOB8_CCOBn\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB8_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB8_CCOBn_MASK\fP)"
+.br
+.in -1c
+.SS "FPROT3 - Program Flash Protection Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FPROT3_PROT_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FPROT3_PROT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FPROT3_PROT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FPROT3_PROT_SHIFT\fP)) & \fBFTFE_FPROT3_PROT_MASK\fP)"
+.br
+.in -1c
+.SS "FPROT2 - Program Flash Protection Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FPROT2_PROT_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FPROT2_PROT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FPROT2_PROT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FPROT2_PROT_SHIFT\fP)) & \fBFTFE_FPROT2_PROT_MASK\fP)"
+.br
+.in -1c
+.SS "FPROT1 - Program Flash Protection Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FPROT1_PROT_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FPROT1_PROT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FPROT1_PROT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FPROT1_PROT_SHIFT\fP)) & \fBFTFE_FPROT1_PROT_MASK\fP)"
+.br
+.in -1c
+.SS "FPROT0 - Program Flash Protection Registers"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FPROT0_PROT_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FPROT0_PROT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FPROT0_PROT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FPROT0_PROT_SHIFT\fP)) & \fBFTFE_FPROT0_PROT_MASK\fP)"
+.br
+.in -1c
+.SS "FEPROT - EEPROM Protection Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FEPROT_EPROT_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FEPROT_EPROT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FEPROT_EPROT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FEPROT_EPROT_SHIFT\fP)) & \fBFTFE_FEPROT_EPROT_MASK\fP)"
+.br
+.in -1c
+.SS "FDPROT - Data Flash Protection Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFTFE_FDPROT_DPROT_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FDPROT_DPROT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFTFE_FDPROT_DPROT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FDPROT_DPROT_SHIFT\fP)) & \fBFTFE_FDPROT_DPROT_MASK\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FTFE   ((\fBFTFE_Type\fP *)\fBFTFE_BASE\fP)"
+Peripheral FTFE base pointer 
+.SS "#define FTFE_BASE   (0x40020000u)"
+Peripheral FTFE base address 
+.SS "#define FTFE_BASE_ADDRS   { \fBFTFE_BASE\fP }"
+Array initializer of FTFE peripheral base addresses 
+.SS "#define FTFE_BASE_PTRS   { \fBFTFE\fP }"
+Array initializer of FTFE peripheral base pointers 
+.SS "#define FTFE_COMMAND_COMPLETE_IRQS   { \fBFTFE_IRQn\fP }"
+Interrupt vectors for the FTFE peripheral type 
+.SS "#define FTFE_FCCOB0_CCOBn(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB0_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB0_CCOBn_MASK\fP)"
+
+.SS "#define FTFE_FCCOB0_CCOBn_MASK   (0xFFU)"
+
+.SS "#define FTFE_FCCOB0_CCOBn_SHIFT   (0U)"
+
+.SS "#define FTFE_FCCOB1_CCOBn(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB1_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB1_CCOBn_MASK\fP)"
+
+.SS "#define FTFE_FCCOB1_CCOBn_MASK   (0xFFU)"
+
+.SS "#define FTFE_FCCOB1_CCOBn_SHIFT   (0U)"
+
+.SS "#define FTFE_FCCOB2_CCOBn(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB2_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB2_CCOBn_MASK\fP)"
+
+.SS "#define FTFE_FCCOB2_CCOBn_MASK   (0xFFU)"
+
+.SS "#define FTFE_FCCOB2_CCOBn_SHIFT   (0U)"
+
+.SS "#define FTFE_FCCOB3_CCOBn(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB3_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB3_CCOBn_MASK\fP)"
+
+.SS "#define FTFE_FCCOB3_CCOBn_MASK   (0xFFU)"
+
+.SS "#define FTFE_FCCOB3_CCOBn_SHIFT   (0U)"
+
+.SS "#define FTFE_FCCOB4_CCOBn(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB4_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB4_CCOBn_MASK\fP)"
+
+.SS "#define FTFE_FCCOB4_CCOBn_MASK   (0xFFU)"
+
+.SS "#define FTFE_FCCOB4_CCOBn_SHIFT   (0U)"
+
+.SS "#define FTFE_FCCOB5_CCOBn(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB5_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB5_CCOBn_MASK\fP)"
+
+.SS "#define FTFE_FCCOB5_CCOBn_MASK   (0xFFU)"
+
+.SS "#define FTFE_FCCOB5_CCOBn_SHIFT   (0U)"
+
+.SS "#define FTFE_FCCOB6_CCOBn(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB6_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB6_CCOBn_MASK\fP)"
+
+.SS "#define FTFE_FCCOB6_CCOBn_MASK   (0xFFU)"
+
+.SS "#define FTFE_FCCOB6_CCOBn_SHIFT   (0U)"
+
+.SS "#define FTFE_FCCOB7_CCOBn(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB7_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB7_CCOBn_MASK\fP)"
+
+.SS "#define FTFE_FCCOB7_CCOBn_MASK   (0xFFU)"
+
+.SS "#define FTFE_FCCOB7_CCOBn_SHIFT   (0U)"
+
+.SS "#define FTFE_FCCOB8_CCOBn(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB8_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB8_CCOBn_MASK\fP)"
+
+.SS "#define FTFE_FCCOB8_CCOBn_MASK   (0xFFU)"
+
+.SS "#define FTFE_FCCOB8_CCOBn_SHIFT   (0U)"
+
+.SS "#define FTFE_FCCOB9_CCOBn(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOB9_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOB9_CCOBn_MASK\fP)"
+
+.SS "#define FTFE_FCCOB9_CCOBn_MASK   (0xFFU)"
+
+.SS "#define FTFE_FCCOB9_CCOBn_SHIFT   (0U)"
+
+.SS "#define FTFE_FCCOBA_CCOBn(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOBA_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOBA_CCOBn_MASK\fP)"
+
+.SS "#define FTFE_FCCOBA_CCOBn_MASK   (0xFFU)"
+
+.SS "#define FTFE_FCCOBA_CCOBn_SHIFT   (0U)"
+
+.SS "#define FTFE_FCCOBB_CCOBn(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCCOBB_CCOBn_SHIFT\fP)) & \fBFTFE_FCCOBB_CCOBn_MASK\fP)"
+
+.SS "#define FTFE_FCCOBB_CCOBn_MASK   (0xFFU)"
+
+.SS "#define FTFE_FCCOBB_CCOBn_SHIFT   (0U)"
+
+.SS "#define FTFE_FCNFG_CCIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_CCIE_SHIFT\fP)) & \fBFTFE_FCNFG_CCIE_MASK\fP)"
+
+.SS "#define FTFE_FCNFG_CCIE_MASK   (0x80U)"
+
+.SS "#define FTFE_FCNFG_CCIE_SHIFT   (7U)"
+
+.SS "#define FTFE_FCNFG_EEERDY(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_EEERDY_SHIFT\fP)) & \fBFTFE_FCNFG_EEERDY_MASK\fP)"
+
+.SS "#define FTFE_FCNFG_EEERDY_MASK   (0x1U)"
+
+.SS "#define FTFE_FCNFG_EEERDY_SHIFT   (0U)"
+
+.SS "#define FTFE_FCNFG_ERSAREQ(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_ERSAREQ_SHIFT\fP)) & \fBFTFE_FCNFG_ERSAREQ_MASK\fP)"
+
+.SS "#define FTFE_FCNFG_ERSAREQ_MASK   (0x20U)"
+
+.SS "#define FTFE_FCNFG_ERSAREQ_SHIFT   (5U)"
+
+.SS "#define FTFE_FCNFG_ERSSUSP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_ERSSUSP_SHIFT\fP)) & \fBFTFE_FCNFG_ERSSUSP_MASK\fP)"
+
+.SS "#define FTFE_FCNFG_ERSSUSP_MASK   (0x10U)"
+
+.SS "#define FTFE_FCNFG_ERSSUSP_SHIFT   (4U)"
+
+.SS "#define FTFE_FCNFG_PFLSH(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_PFLSH_SHIFT\fP)) & \fBFTFE_FCNFG_PFLSH_MASK\fP)"
+
+.SS "#define FTFE_FCNFG_PFLSH_MASK   (0x4U)"
+
+.SS "#define FTFE_FCNFG_PFLSH_SHIFT   (2U)"
+
+.SS "#define FTFE_FCNFG_RAMRDY(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_RAMRDY_SHIFT\fP)) & \fBFTFE_FCNFG_RAMRDY_MASK\fP)"
+
+.SS "#define FTFE_FCNFG_RAMRDY_MASK   (0x2U)"
+
+.SS "#define FTFE_FCNFG_RAMRDY_SHIFT   (1U)"
+
+.SS "#define FTFE_FCNFG_RDCOLLIE(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_RDCOLLIE_SHIFT\fP)) & \fBFTFE_FCNFG_RDCOLLIE_MASK\fP)"
+
+.SS "#define FTFE_FCNFG_RDCOLLIE_MASK   (0x40U)"
+
+.SS "#define FTFE_FCNFG_RDCOLLIE_SHIFT   (6U)"
+
+.SS "#define FTFE_FCNFG_SWAP(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FCNFG_SWAP_SHIFT\fP)) & \fBFTFE_FCNFG_SWAP_MASK\fP)"
+
+.SS "#define FTFE_FCNFG_SWAP_MASK   (0x8U)"
+
+.SS "#define FTFE_FCNFG_SWAP_SHIFT   (3U)"
+
+.SS "#define FTFE_FDPROT_DPROT(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FDPROT_DPROT_SHIFT\fP)) & \fBFTFE_FDPROT_DPROT_MASK\fP)"
+
+.SS "#define FTFE_FDPROT_DPROT_MASK   (0xFFU)"
+
+.SS "#define FTFE_FDPROT_DPROT_SHIFT   (0U)"
+
+.SS "#define FTFE_FEPROT_EPROT(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FEPROT_EPROT_SHIFT\fP)) & \fBFTFE_FEPROT_EPROT_MASK\fP)"
+
+.SS "#define FTFE_FEPROT_EPROT_MASK   (0xFFU)"
+
+.SS "#define FTFE_FEPROT_EPROT_SHIFT   (0U)"
+
+.SS "#define FTFE_FOPT_OPT(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FOPT_OPT_SHIFT\fP)) & \fBFTFE_FOPT_OPT_MASK\fP)"
+
+.SS "#define FTFE_FOPT_OPT_MASK   (0xFFU)"
+
+.SS "#define FTFE_FOPT_OPT_SHIFT   (0U)"
+
+.SS "#define FTFE_FPROT0_PROT(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FPROT0_PROT_SHIFT\fP)) & \fBFTFE_FPROT0_PROT_MASK\fP)"
+
+.SS "#define FTFE_FPROT0_PROT_MASK   (0xFFU)"
+
+.SS "#define FTFE_FPROT0_PROT_SHIFT   (0U)"
+
+.SS "#define FTFE_FPROT1_PROT(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FPROT1_PROT_SHIFT\fP)) & \fBFTFE_FPROT1_PROT_MASK\fP)"
+
+.SS "#define FTFE_FPROT1_PROT_MASK   (0xFFU)"
+
+.SS "#define FTFE_FPROT1_PROT_SHIFT   (0U)"
+
+.SS "#define FTFE_FPROT2_PROT(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FPROT2_PROT_SHIFT\fP)) & \fBFTFE_FPROT2_PROT_MASK\fP)"
+
+.SS "#define FTFE_FPROT2_PROT_MASK   (0xFFU)"
+
+.SS "#define FTFE_FPROT2_PROT_SHIFT   (0U)"
+
+.SS "#define FTFE_FPROT3_PROT(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FPROT3_PROT_SHIFT\fP)) & \fBFTFE_FPROT3_PROT_MASK\fP)"
+
+.SS "#define FTFE_FPROT3_PROT_MASK   (0xFFU)"
+
+.SS "#define FTFE_FPROT3_PROT_SHIFT   (0U)"
+
+.SS "#define FTFE_FSEC_FSLACC(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSEC_FSLACC_SHIFT\fP)) & \fBFTFE_FSEC_FSLACC_MASK\fP)"
+
+.SS "#define FTFE_FSEC_FSLACC_MASK   (0xCU)"
+
+.SS "#define FTFE_FSEC_FSLACC_SHIFT   (2U)"
+
+.SS "#define FTFE_FSEC_KEYEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSEC_KEYEN_SHIFT\fP)) & \fBFTFE_FSEC_KEYEN_MASK\fP)"
+
+.SS "#define FTFE_FSEC_KEYEN_MASK   (0xC0U)"
+
+.SS "#define FTFE_FSEC_KEYEN_SHIFT   (6U)"
+
+.SS "#define FTFE_FSEC_MEEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSEC_MEEN_SHIFT\fP)) & \fBFTFE_FSEC_MEEN_MASK\fP)"
+
+.SS "#define FTFE_FSEC_MEEN_MASK   (0x30U)"
+
+.SS "#define FTFE_FSEC_MEEN_SHIFT   (4U)"
+
+.SS "#define FTFE_FSEC_SEC(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSEC_SEC_SHIFT\fP)) & \fBFTFE_FSEC_SEC_MASK\fP)"
+
+.SS "#define FTFE_FSEC_SEC_MASK   (0x3U)"
+
+.SS "#define FTFE_FSEC_SEC_SHIFT   (0U)"
+
+.SS "#define FTFE_FSTAT_ACCERR(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSTAT_ACCERR_SHIFT\fP)) & \fBFTFE_FSTAT_ACCERR_MASK\fP)"
+
+.SS "#define FTFE_FSTAT_ACCERR_MASK   (0x20U)"
+
+.SS "#define FTFE_FSTAT_ACCERR_SHIFT   (5U)"
+
+.SS "#define FTFE_FSTAT_CCIF(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSTAT_CCIF_SHIFT\fP)) & \fBFTFE_FSTAT_CCIF_MASK\fP)"
+
+.SS "#define FTFE_FSTAT_CCIF_MASK   (0x80U)"
+
+.SS "#define FTFE_FSTAT_CCIF_SHIFT   (7U)"
+
+.SS "#define FTFE_FSTAT_FPVIOL(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSTAT_FPVIOL_SHIFT\fP)) & \fBFTFE_FSTAT_FPVIOL_MASK\fP)"
+
+.SS "#define FTFE_FSTAT_FPVIOL_MASK   (0x10U)"
+
+.SS "#define FTFE_FSTAT_FPVIOL_SHIFT   (4U)"
+
+.SS "#define FTFE_FSTAT_MGSTAT0(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSTAT_MGSTAT0_SHIFT\fP)) & \fBFTFE_FSTAT_MGSTAT0_MASK\fP)"
+
+.SS "#define FTFE_FSTAT_MGSTAT0_MASK   (0x1U)"
+
+.SS "#define FTFE_FSTAT_MGSTAT0_SHIFT   (0U)"
+
+.SS "#define FTFE_FSTAT_RDCOLERR(x)   (((uint8_t)(((uint8_t)(x)) << \fBFTFE_FSTAT_RDCOLERR_SHIFT\fP)) & \fBFTFE_FSTAT_RDCOLERR_MASK\fP)"
+
+.SS "#define FTFE_FSTAT_RDCOLERR_MASK   (0x40U)"
+
+.SS "#define FTFE_FSTAT_RDCOLERR_SHIFT   (6U)"
+
+.SS "#define FTFE_READ_COLLISION_IRQS   { \fBRead_Collision_IRQn\fP }"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

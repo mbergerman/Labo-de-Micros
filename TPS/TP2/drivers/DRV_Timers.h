@@ -1,7 +1,7 @@
 /***************************************************************************//**
-  @file     timer.h
-  @brief    Timer driver. Advance implementation
-  @author   Nicolás Magliola
+  @file     DRV_Timers.h
+  @brief    Timers driver
+  @author   Grupo 1
  ******************************************************************************/
 
 #ifndef _TIMER_H_

@@ -1,0 +1,363 @@
+.TH "ENET_Type" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ENET_Type
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MK64F12\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "uint8_t \fBRESERVED_0\fP [4]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBEIR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBEIMR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_1\fP [4]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRDAR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTDAR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_2\fP [12]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBECR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_3\fP [24]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMMFR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMSCR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_4\fP [28]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMIBC\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_5\fP [28]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRCR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_6\fP [60]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTCR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_7\fP [28]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPALR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBPAUR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBOPD\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_8\fP [40]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBIAUR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBIALR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBGAUR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBGALR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_9\fP [28]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTFWR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_10\fP [56]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRDSR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTDSR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMRBR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_11\fP [4]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRSFL\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRSEM\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRAEM\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRAFL\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTSEM\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTAEM\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTAFL\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTIPG\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBFTRL\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_12\fP [12]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTACC\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRACC\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_13\fP [60]"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_PACKETS\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_BC_PKT\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_MC_PKT\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_CRC_ALIGN\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_UNDERSIZE\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_OVERSIZE\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_FRAG\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_JAB\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_COL\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_P64\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_P65TO127\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_P128TO255\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_P256TO511\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_P512TO1023\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_P1024TO2047\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_P_GTE2048\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_T_OCTETS\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_14\fP [4]"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_T_FRAME_OK\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_T_1COL\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_T_MCOL\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_T_DEF\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_T_LCOL\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_T_EXCOL\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_T_MACERR\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_T_CSERR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_15\fP [4]"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_T_FDXFC\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_T_OCTETS_OK\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_16\fP [12]"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_PACKETS\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_BC_PKT\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_MC_PKT\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_CRC_ALIGN\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_UNDERSIZE\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_OVERSIZE\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_FRAG\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_JAB\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_17\fP [4]"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_P64\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_P65TO127\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_P128TO255\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_P256TO511\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_P512TO1023\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_P1024TO2047\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_P_GTE2048\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRMON_R_OCTETS\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_R_DROP\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_R_FRAME_OK\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_R_CRC\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_R_ALIGN\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_R_MACERR\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_R_FDXFC\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBIEEE_R_OCTETS_OK\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_18\fP [284]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBATCR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBATVR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBATOFF\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBATPER\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBATCOR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBATINC\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBATSTMP\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_19\fP [488]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTGSR\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint32_t \fBTCSR\fP"
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint32_t \fBTCCR\fP"
+.br
+.ti -1c
+.RI "} \fBCHANNEL\fP [4]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+ENET - Register Layout Typedef 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

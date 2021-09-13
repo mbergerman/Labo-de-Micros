@@ -1,0 +1,99 @@
+.TH "source/NumberEditor.h" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+source/NumberEditor.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdbool\&.h>\fP
+.br
+\fC#include <stdint\&.h>\fP
+.br
+
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBeditorEvent_t\fP { \fBEVENT_EDITOR_PREV\fP, \fBEVENT_EDITOR_NEXT\fP, \fBEVENT_EDITOR_NONE\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBstart_number_editor\fP (uint8_t editor_len, bool flag_next, bool flag_hidden)"
+.br
+.RI "TODO: completar descripcion\&. "
+.ti -1c
+.RI "void \fBset_number_editor_digit\fP (uint8_t n, uint8_t digit)"
+.br
+.ti -1c
+.RI "void \fBnumber_editor_left\fP ()"
+.br
+.ti -1c
+.RI "void \fBnumber_editor_right\fP ()"
+.br
+.ti -1c
+.RI "\fBeditorEvent_t\fP \fBnumber_editor_click\fP ()"
+.br
+.ti -1c
+.RI "void \fBinit_number_editor\fP ()"
+.br
+.ti -1c
+.RI "uint32_t \fBgetBufferNumber\fP ()"
+.br
+.ti -1c
+.RI "uint8_t \fBgetNumberLen\fP ()"
+.br
+.in -1c
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBeditorEvent_t\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIEVENT_EDITOR_PREV \fP\fP
+.TP
+\fB\fIEVENT_EDITOR_NEXT \fP\fP
+.TP
+\fB\fIEVENT_EDITOR_NONE \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "uint32_t getBufferNumber ()"
+
+.SS "uint8_t getNumberLen ()"
+
+.SS "void init_number_editor ()"
+
+.SS "\fBeditorEvent_t\fP number_editor_click ()"
+
+.SS "void number_editor_left ()"
+
+.SS "void number_editor_right ()"
+
+.SS "void set_number_editor_digit (uint8_t n, uint8_t digit)"
+
+.SS "void start_number_editor (uint8_t editor_len, bool flag_next, bool flag_hidden)"
+
+.PP
+TODO: completar descripcion\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparam1\fP Descripcion parametro 1 
+.br
+\fIparam2\fP Descripcion parametro 2 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Descripcion valor que devuelve 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

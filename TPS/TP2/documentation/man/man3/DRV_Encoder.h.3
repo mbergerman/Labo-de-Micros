@@ -1,0 +1,70 @@
+.TH "drivers/DRV_Encoder.h" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+drivers/DRV_Encoder.h \- Rotary encoder driver\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'PDRV_GPIO\&.h'\fP
+.br
+
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBencoderResult_t\fP { \fBENC_LEFT\fP, \fBENC_RIGHT\fP, \fBENC_CLICK\fP, \fBENC_NONE\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitEncoder\fP ()"
+.br
+.ti -1c
+.RI "bool \fBencoderGetStatus\fP ()"
+.br
+.ti -1c
+.RI "\fBencoderResult_t\fP \fBencoderGetEvent\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Rotary encoder driver\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Grupo 1 
+.RE
+.PP
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBencoderResult_t\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIENC_LEFT \fP\fP
+.TP
+\fB\fIENC_RIGHT \fP\fP
+.TP
+\fB\fIENC_CLICK \fP\fP
+.TP
+\fB\fIENC_NONE \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "\fBencoderResult_t\fP encoderGetEvent ()"
+
+.SS "bool encoderGetStatus ()"
+
+.SS "void initEncoder ()"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

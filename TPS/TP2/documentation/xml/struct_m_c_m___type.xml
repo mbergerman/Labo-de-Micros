@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_m_c_m___type" kind="struct" language="C++" prot="public">
+    <compoundname>MCM_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gab5b3e978eb3ceb8a2aadaeeab28db00b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_0[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>RESERVED_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8145" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga59d6723930c0cbfd56a7451ec569b598" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint16_t</type>
+        <definition>__I uint16_t PLASC</definition>
+        <argsstring></argsstring>
+        <name>PLASC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Crossbar Switch (AXBS) Slave Configuration, offset: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8146" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga951da47dda3dfe3452e96e494178fad4" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint16_t</type>
+        <definition>__I uint16_t PLAMC</definition>
+        <argsstring></argsstring>
+        <name>PLAMC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Crossbar Switch (AXBS) Master Configuration, offset: 0xA </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8147" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gab40c89c59391aaa9d9a8ec011dd0907a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control Register, offset: 0xC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8148" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga0e8f6d2b4768813502c16962a6c75e44" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ISCR</definition>
+        <argsstring></argsstring>
+        <name>ISCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt Status Register, offset: 0x10 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8149" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaedae6a32773e8626b678e67a1f6b13d6" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ETBCC</definition>
+        <argsstring></argsstring>
+        <name>ETBCC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ETB Counter Control register, offset: 0x14 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8150" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gace579fc1ab2fca46ff5f20200744c4f1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t ETBRL</definition>
+        <argsstring></argsstring>
+        <name>ETBRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ETB Reload register, offset: 0x18 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8151" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga97b3c7397055c35f026f3004ad845275" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint32_t</type>
+        <definition>__I uint32_t ETBCNT</definition>
+        <argsstring></argsstring>
+        <name>ETBCNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ETB Counter Value register, offset: 0x1C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8152" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga751eb9bad252d2a0d98a9d0f0c8ae7d4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_1[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>RESERVED_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8153" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga83109858f979abb8e707b989d88d54bf" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PID</definition>
+        <argsstring></argsstring>
+        <name>PID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Process ID register, offset: 0x30 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8154" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8154" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>MCM - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="8144" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8144" bodyend="8155"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gab40c89c59391aaa9d9a8ec011dd0907a" prot="public" virt="non-virtual"><scope>MCM_Type</scope><name>CR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaedae6a32773e8626b678e67a1f6b13d6" prot="public" virt="non-virtual"><scope>MCM_Type</scope><name>ETBCC</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga97b3c7397055c35f026f3004ad845275" prot="public" virt="non-virtual"><scope>MCM_Type</scope><name>ETBCNT</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gace579fc1ab2fca46ff5f20200744c4f1" prot="public" virt="non-virtual"><scope>MCM_Type</scope><name>ETBRL</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga0e8f6d2b4768813502c16962a6c75e44" prot="public" virt="non-virtual"><scope>MCM_Type</scope><name>ISCR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga83109858f979abb8e707b989d88d54bf" prot="public" virt="non-virtual"><scope>MCM_Type</scope><name>PID</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga951da47dda3dfe3452e96e494178fad4" prot="public" virt="non-virtual"><scope>MCM_Type</scope><name>PLAMC</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga59d6723930c0cbfd56a7451ec569b598" prot="public" virt="non-virtual"><scope>MCM_Type</scope><name>PLASC</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gab5b3e978eb3ceb8a2aadaeeab28db00b" prot="public" virt="non-virtual"><scope>MCM_Type</scope><name>RESERVED_0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga751eb9bad252d2a0d98a9d0f0c8ae7d4" prot="public" virt="non-virtual"><scope>MCM_Type</scope><name>RESERVED_1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

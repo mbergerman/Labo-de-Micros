@@ -1,0 +1,241 @@
+.TH "LPTMR_Register_Masks" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LPTMR_Register_Masks
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBLPTMR0_BASE\fP   (0x40040000u)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR0\fP   ((\fBLPTMR_Type\fP *)\fBLPTMR0_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_BASE_ADDRS\fP   { \fBLPTMR0_BASE\fP }"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_BASE_PTRS\fP   { \fBLPTMR0\fP }"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_IRQS\fP   { \fBLPTMR0_IRQn\fP }"
+.br
+.in -1c
+.SS "CSR - Low Power Timer Control Status Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TEN_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TEN_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TEN\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TEN_SHIFT\fP)) & \fBLPTMR_CSR_TEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TMS_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TMS_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TMS\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TMS_SHIFT\fP)) & \fBLPTMR_CSR_TMS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TFC_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TFC_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TFC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TFC_SHIFT\fP)) & \fBLPTMR_CSR_TFC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TPP_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TPP_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TPP\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TPP_SHIFT\fP)) & \fBLPTMR_CSR_TPP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TPS_MASK\fP   (0x30U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TPS_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TPS\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TPS_SHIFT\fP)) & \fBLPTMR_CSR_TPS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TIE_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TIE_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TIE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TIE_SHIFT\fP)) & \fBLPTMR_CSR_TIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TCF_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TCF_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CSR_TCF\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TCF_SHIFT\fP)) & \fBLPTMR_CSR_TCF_MASK\fP)"
+.br
+.in -1c
+.SS "PSR - Low Power Timer Prescale Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBLPTMR_PSR_PCS_MASK\fP   (0x3U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_PSR_PCS_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_PSR_PCS\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_PSR_PCS_SHIFT\fP)) & \fBLPTMR_PSR_PCS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_PSR_PBYP_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_PSR_PBYP_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_PSR_PBYP\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_PSR_PBYP_SHIFT\fP)) & \fBLPTMR_PSR_PBYP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_PSR_PRESCALE_MASK\fP   (0x78U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_PSR_PRESCALE_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_PSR_PRESCALE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_PSR_PRESCALE_SHIFT\fP)) & \fBLPTMR_PSR_PRESCALE_MASK\fP)"
+.br
+.in -1c
+.SS "CMR - Low Power Timer Compare Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBLPTMR_CMR_COMPARE_MASK\fP   (0xFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CMR_COMPARE_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CMR_COMPARE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CMR_COMPARE_SHIFT\fP)) & \fBLPTMR_CMR_COMPARE_MASK\fP)"
+.br
+.in -1c
+.SS "CNR - Low Power Timer Counter Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBLPTMR_CNR_COUNTER_MASK\fP   (0xFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CNR_COUNTER_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBLPTMR_CNR_COUNTER\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CNR_COUNTER_SHIFT\fP)) & \fBLPTMR_CNR_COUNTER_MASK\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define LPTMR0   ((\fBLPTMR_Type\fP *)\fBLPTMR0_BASE\fP)"
+Peripheral LPTMR0 base pointer 
+.SS "#define LPTMR0_BASE   (0x40040000u)"
+Peripheral LPTMR0 base address 
+.SS "#define LPTMR_BASE_ADDRS   { \fBLPTMR0_BASE\fP }"
+Array initializer of LPTMR peripheral base addresses 
+.SS "#define LPTMR_BASE_PTRS   { \fBLPTMR0\fP }"
+Array initializer of LPTMR peripheral base pointers 
+.SS "#define LPTMR_CMR_COMPARE(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CMR_COMPARE_SHIFT\fP)) & \fBLPTMR_CMR_COMPARE_MASK\fP)"
+
+.SS "#define LPTMR_CMR_COMPARE_MASK   (0xFFFFU)"
+
+.SS "#define LPTMR_CMR_COMPARE_SHIFT   (0U)"
+
+.SS "#define LPTMR_CNR_COUNTER(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CNR_COUNTER_SHIFT\fP)) & \fBLPTMR_CNR_COUNTER_MASK\fP)"
+
+.SS "#define LPTMR_CNR_COUNTER_MASK   (0xFFFFU)"
+
+.SS "#define LPTMR_CNR_COUNTER_SHIFT   (0U)"
+
+.SS "#define LPTMR_CSR_TCF(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TCF_SHIFT\fP)) & \fBLPTMR_CSR_TCF_MASK\fP)"
+
+.SS "#define LPTMR_CSR_TCF_MASK   (0x80U)"
+
+.SS "#define LPTMR_CSR_TCF_SHIFT   (7U)"
+
+.SS "#define LPTMR_CSR_TEN(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TEN_SHIFT\fP)) & \fBLPTMR_CSR_TEN_MASK\fP)"
+
+.SS "#define LPTMR_CSR_TEN_MASK   (0x1U)"
+
+.SS "#define LPTMR_CSR_TEN_SHIFT   (0U)"
+
+.SS "#define LPTMR_CSR_TFC(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TFC_SHIFT\fP)) & \fBLPTMR_CSR_TFC_MASK\fP)"
+
+.SS "#define LPTMR_CSR_TFC_MASK   (0x4U)"
+
+.SS "#define LPTMR_CSR_TFC_SHIFT   (2U)"
+
+.SS "#define LPTMR_CSR_TIE(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TIE_SHIFT\fP)) & \fBLPTMR_CSR_TIE_MASK\fP)"
+
+.SS "#define LPTMR_CSR_TIE_MASK   (0x40U)"
+
+.SS "#define LPTMR_CSR_TIE_SHIFT   (6U)"
+
+.SS "#define LPTMR_CSR_TMS(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TMS_SHIFT\fP)) & \fBLPTMR_CSR_TMS_MASK\fP)"
+
+.SS "#define LPTMR_CSR_TMS_MASK   (0x2U)"
+
+.SS "#define LPTMR_CSR_TMS_SHIFT   (1U)"
+
+.SS "#define LPTMR_CSR_TPP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TPP_SHIFT\fP)) & \fBLPTMR_CSR_TPP_MASK\fP)"
+
+.SS "#define LPTMR_CSR_TPP_MASK   (0x8U)"
+
+.SS "#define LPTMR_CSR_TPP_SHIFT   (3U)"
+
+.SS "#define LPTMR_CSR_TPS(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_CSR_TPS_SHIFT\fP)) & \fBLPTMR_CSR_TPS_MASK\fP)"
+
+.SS "#define LPTMR_CSR_TPS_MASK   (0x30U)"
+
+.SS "#define LPTMR_CSR_TPS_SHIFT   (4U)"
+
+.SS "#define LPTMR_IRQS   { \fBLPTMR0_IRQn\fP }"
+Interrupt vectors for the LPTMR peripheral type 
+.SS "#define LPTMR_PSR_PBYP(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_PSR_PBYP_SHIFT\fP)) & \fBLPTMR_PSR_PBYP_MASK\fP)"
+
+.SS "#define LPTMR_PSR_PBYP_MASK   (0x4U)"
+
+.SS "#define LPTMR_PSR_PBYP_SHIFT   (2U)"
+
+.SS "#define LPTMR_PSR_PCS(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_PSR_PCS_SHIFT\fP)) & \fBLPTMR_PSR_PCS_MASK\fP)"
+
+.SS "#define LPTMR_PSR_PCS_MASK   (0x3U)"
+
+.SS "#define LPTMR_PSR_PCS_SHIFT   (0U)"
+
+.SS "#define LPTMR_PSR_PRESCALE(x)   (((uint32_t)(((uint32_t)(x)) << \fBLPTMR_PSR_PRESCALE_SHIFT\fP)) & \fBLPTMR_PSR_PRESCALE_MASK\fP)"
+
+.SS "#define LPTMR_PSR_PRESCALE_MASK   (0x78U)"
+
+.SS "#define LPTMR_PSR_PRESCALE_SHIFT   (3U)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

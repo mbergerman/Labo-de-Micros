@@ -1,9 +1,8 @@
-/*
- * DRV_Display.h
- *
- *  Created on: 29 ago. 2021
- *      Author: matia
- */
+/***************************************************************************//**
+  @file     DRV_Display.h
+  @brief    7-segment display driver
+  @author   Grupo 1
+ ******************************************************************************/
 
 #ifndef DRV_DISPLAY_H_
 #define DRV_DISPLAY_H_
@@ -43,51 +42,105 @@ enum{
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
 
-// initDisplay() - Initialize display.
+/**
+ * @brief Initialize display
+ */
 void initDisplay();
-// clearDisplay() - Clears the display.
+
+/**
+ * @brief Clears the display buffer
+ */
 void dispClearBuffer();
-// dispClearChar() - Clears the character from position n from the buffer.
+
+/**
+ * @brief Clears the character from position n from the buffer
+ * @param n Index of char to clear
+ */
 void dispClearChar(int n);
-// dispSetChar() - sets character in position n of the buffer.
+
+/**
+ * @brief Sets character in position n of the buffer
+ * @param n Index of char to write
+ * @param character Value of char
+ */
 void dispWriteChar(int n, char character);
 
-// dispSetWord() - sets word of length c in the buffer.
+/**
+ * @brief Sets word of length c in the buffer
+ * @param c Length of word
+ * @param word Word to write
+ */
 void dispWriteBuffer(int c, const char* word);
 
-// dispUpdateRefreshRate() - Updates the refresh rate of the display.
+/**
+ * @brief Updates the refresh rate of the display
+ * @param refreshRate New refresh rate
+ */
 void dispUpdateRefreshRate(int refreshRate);
 
-// dispUpdateBrightness(int brightness) - Updates the brightness of the display - brightness: int between one and nine.
+/**
+ * @brief Updates the brightness of the display
+ * @param brightness brightness: int between one and nine
+ */
 void dispUpdateBrightness(int brightness);
 
+/**
+ * @brief Returns current display brightness
+ * @return brightness value
+ */
 int dispGetBrightness();
 
-// dispScrollLeft() - Scroll display to the left.
+/**
+ * @brief Scroll display to the left
+ */
 void dispScrollLeft();
-// dispScrollRight() - Scroll display to the right.
+
+/**
+ * @brief Scroll display to the right
+ */
 void dispScrollRight();
-// dispStartAutoScroll(int speed) - Initialize autoscroll with specified speed.
+
+/**
+ * @brief Initialize autoscroll with specified speed
+ * @param speed Scroll speed
+ */
 void dispStartAutoScroll(int speed);
-// dispStopAutoScroll() - Stop autoscroll.
+
+/**
+ * @brief Stop autoscroll
+ */
 void dispStopAutoScroll();
-//void resetScroll();
-// dispSetPosition(int n) - Sets n as the starting print position for the buffer.
+
+/**
+ * @brief Sets n as the starting print position for the buffer
+ * @param n New buffer position
+ */
 void dispSetBufferPos(int n);
-// dispGetPosition() - Get starting print position.
+
+/**
+ * @brief Get starting print position
+ */
 uint8_t dispGetBufferPos();
 
-// dispSetDP(int n) - Turns on the decimal point of the nth seven segment. n = 0, 1, 2, 3
+/**
+ * @brief Turns on the decimal point of the nth seven segment
+ * @param n DP index = 0, 1, 2, 3
+ */
 void dispSetDP(int n);
-// dispSetDP(int n) - Turns off the decimal point of the nth seven segment. n = 0, 1, 2, 3
-void dispClearDP(int n);
-// dispSetDP(int n) - Toggles the decimal point of the nth seven segment. n = 0, 1, 2, 3
-void dispToggleDP(int n);
 
+/**
+ * @brief Turns off the decimal point of the nth seven segment
+ * @param n DP index = 0, 1, 2, 3
+ */
+void dispClearDP(int n);
+
+/**
+ * @brief Toggles the decimal point of the nth seven segment
+ * @param n DP index = 0, 1, 2, 3
+ */
+void dispToggleDP(int n);
 
 /*******************************************************************************
  ******************************************************************************/
-
-
 
 #endif /* DRV_DISPLAY_H_ */

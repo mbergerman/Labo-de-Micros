@@ -1,0 +1,298 @@
+.TH "drivers/DRV_Display.h" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+drivers/DRV_Display.h \- 7-segment display driver  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'PDRV_GPIO\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDISP_CHARS_NUM\fP   4"
+.br
+.ti -1c
+.RI "#define \fBDISP_BUFFER_LEN\fP   32"
+.br
+.ti -1c
+.RI "#define \fBMIN_BRIGHT\fP   1"
+.br
+.ti -1c
+.RI "#define \fBMAX_BRIGHT\fP   9"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBDISP_SLOW\fP =750, \fBDISP_MEDIUM\fP =500, \fBDISP_FAST\fP =250, \fBDISP_SPEEDS_NUM\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitDisplay\fP ()"
+.br
+.RI "Initialize display\&. "
+.ti -1c
+.RI "void \fBdispClearBuffer\fP ()"
+.br
+.RI "Clears the display buffer\&. "
+.ti -1c
+.RI "void \fBdispClearChar\fP (int n)"
+.br
+.RI "Clears the character from position n from the buffer\&. "
+.ti -1c
+.RI "void \fBdispWriteChar\fP (int n, char character)"
+.br
+.RI "Sets character in position n of the buffer\&. "
+.ti -1c
+.RI "void \fBdispWriteBuffer\fP (int c, const char *word)"
+.br
+.RI "Sets word of length c in the buffer\&. "
+.ti -1c
+.RI "void \fBdispUpdateRefreshRate\fP (int refreshRate)"
+.br
+.RI "Updates the refresh rate of the display\&. "
+.ti -1c
+.RI "void \fBdispUpdateBrightness\fP (int brightness)"
+.br
+.RI "Updates the brightness of the display\&. "
+.ti -1c
+.RI "int \fBdispGetBrightness\fP ()"
+.br
+.RI "Returns current display brightness\&. "
+.ti -1c
+.RI "void \fBdispScrollLeft\fP ()"
+.br
+.RI "Scroll display to the left\&. "
+.ti -1c
+.RI "void \fBdispScrollRight\fP ()"
+.br
+.RI "Scroll display to the right\&. "
+.ti -1c
+.RI "void \fBdispStartAutoScroll\fP (int speed)"
+.br
+.RI "Initialize autoscroll with specified speed\&. "
+.ti -1c
+.RI "void \fBdispStopAutoScroll\fP ()"
+.br
+.RI "Stop autoscroll\&. "
+.ti -1c
+.RI "void \fBdispSetBufferPos\fP (int n)"
+.br
+.RI "Sets n as the starting print position for the buffer\&. "
+.ti -1c
+.RI "uint8_t \fBdispGetBufferPos\fP ()"
+.br
+.RI "Get starting print position\&. "
+.ti -1c
+.RI "void \fBdispSetDP\fP (int n)"
+.br
+.RI "Turns on the decimal point of the nth seven segment\&. "
+.ti -1c
+.RI "void \fBdispClearDP\fP (int n)"
+.br
+.RI "Turns off the decimal point of the nth seven segment\&. "
+.ti -1c
+.RI "void \fBdispToggleDP\fP (int n)"
+.br
+.RI "Toggles the decimal point of the nth seven segment\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+7-segment display driver 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Grupo 1 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DISP_BUFFER_LEN   32"
+
+.SS "#define DISP_CHARS_NUM   4"
+
+.SS "#define MAX_BRIGHT   9"
+
+.SS "#define MIN_BRIGHT   1"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "anonymous enum"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIDISP_SLOW \fP\fP
+.TP
+\fB\fIDISP_MEDIUM \fP\fP
+.TP
+\fB\fIDISP_FAST \fP\fP
+.TP
+\fB\fIDISP_SPEEDS_NUM \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "void dispClearBuffer ()"
+
+.PP
+Clears the display buffer\&. 
+.SS "void dispClearChar (int n)"
+
+.PP
+Clears the character from position n from the buffer\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP Index of char to clear 
+.RE
+.PP
+
+.SS "void dispClearDP (int n)"
+
+.PP
+Turns off the decimal point of the nth seven segment\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP DP index = 0, 1, 2, 3 
+.RE
+.PP
+
+.SS "int dispGetBrightness ()"
+
+.PP
+Returns current display brightness\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+brightness value 
+.RE
+.PP
+
+.SS "uint8_t dispGetBufferPos ()"
+
+.PP
+Get starting print position\&. 
+.SS "void dispScrollLeft ()"
+
+.PP
+Scroll display to the left\&. 
+.SS "void dispScrollRight ()"
+
+.PP
+Scroll display to the right\&. 
+.SS "void dispSetBufferPos (int n)"
+
+.PP
+Sets n as the starting print position for the buffer\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP New buffer position 
+.RE
+.PP
+
+.SS "void dispSetDP (int n)"
+
+.PP
+Turns on the decimal point of the nth seven segment\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP DP index = 0, 1, 2, 3 
+.RE
+.PP
+
+.SS "void dispStartAutoScroll (int speed)"
+
+.PP
+Initialize autoscroll with specified speed\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIspeed\fP Scroll speed 
+.RE
+.PP
+
+.SS "void dispStopAutoScroll ()"
+
+.PP
+Stop autoscroll\&. 
+.SS "void dispToggleDP (int n)"
+
+.PP
+Toggles the decimal point of the nth seven segment\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP DP index = 0, 1, 2, 3 
+.RE
+.PP
+
+.SS "void dispUpdateBrightness (int brightness)"
+
+.PP
+Updates the brightness of the display\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbrightness\fP brightness: int between one and nine 
+.RE
+.PP
+
+.SS "void dispUpdateRefreshRate (int refreshRate)"
+
+.PP
+Updates the refresh rate of the display\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrefreshRate\fP New refresh rate 
+.RE
+.PP
+
+.SS "void dispWriteBuffer (int c, const char * word)"
+
+.PP
+Sets word of length c in the buffer\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIc\fP Length of word 
+.br
+\fIword\fP Word to write 
+.RE
+.PP
+
+.SS "void dispWriteChar (int n, char character)"
+
+.PP
+Sets character in position n of the buffer\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP Index of char to write 
+.br
+\fIcharacter\fP Value of char 
+.RE
+.PP
+
+.SS "void initDisplay ()"
+
+.PP
+Initialize display\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

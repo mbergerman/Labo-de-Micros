@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_p_d_b___type" kind="struct" language="C++" prot="public">
+    <compoundname>PDB_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga71c139861c5c28b6a6e81b2b1c72946a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SC</definition>
+        <argsstring></argsstring>
+        <name>SC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Status and Control register, offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8518" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8518" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaa35a6713b1e2aafa0749f986730795cb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t MOD</definition>
+        <argsstring></argsstring>
+        <name>MOD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modulus register, offset: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8519" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga5a2def14363813fcf6287e3edd1104bf" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint32_t</type>
+        <definition>__I uint32_t CNT</definition>
+        <argsstring></argsstring>
+        <name>CNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Counter register, offset: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8520" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8520" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga84172a8f32e3e8ab454c186f973d63be" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t IDLY</definition>
+        <argsstring></argsstring>
+        <name>IDLY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt Delay register, offset: 0xC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8521" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga7bf92f3ccb47d979d85a1c09ca148024" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t C1</definition>
+        <argsstring></argsstring>
+        <name>C1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel n Control register 1, array offset: 0x10, array step: 0x28 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8523" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gababb54850c6689ddd1ac5723d7551f6a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t S</definition>
+        <argsstring></argsstring>
+        <name>S</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel n Status register, array offset: 0x14, array step: 0x28 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8524" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga826415186f68fa272f4659ba9af7c392" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t DLY[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>DLY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Channel n Delay 0 register..Channel n Delay 1 register, array offset: 0x18, array step: index*0x28, index2*0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8525" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaac9256575be36cd190e28da6992eb9b3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_0</definition>
+        <argsstring>[24]</argsstring>
+        <name>RESERVED_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8526" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga09a3b25c72456dc274d97bd2c30e8c09" prot="public" static="no" mutable="no">
+        <type>struct PDB_Type::@45</type>
+        <definition>struct PDB_Type::@45  CH[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>CH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8527" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga1d2660ebf6d20840dfeb986ccf7af4f3" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t INTC</definition>
+        <argsstring></argsstring>
+        <name>INTC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DAC Interval Trigger n Control register, array offset: 0x150, array step: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8530" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8530" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gafab15a0b540bc4e09cc8b0dcabe8791f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t INT</definition>
+        <argsstring></argsstring>
+        <name>INT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DAC Interval n register, array offset: 0x154, array step: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8531" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gae118976c5526888e4385d2b45e4ca8ac" prot="public" static="no" mutable="no">
+        <type>struct PDB_Type::@46</type>
+        <definition>struct PDB_Type::@46  DAC[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>DAC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8532" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gad8a834e9c0be4b8a1f57679868c10f2d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_1[48]</definition>
+        <argsstring>[48]</argsstring>
+        <name>RESERVED_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8533" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gafd7953396f7b3622bc91168b9cfd6aae" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t POEN</definition>
+        <argsstring></argsstring>
+        <name>POEN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pulse-Out n Enable register, offset: 0x190 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8534" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gae44cca13adf17daf17265abea2edb710" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PODLY[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>PODLY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pulse-Out n Delay register, array offset: 0x194, array step: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8535" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8535" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>PDB - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="8517" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8517" bodyend="8536"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga7bf92f3ccb47d979d85a1c09ca148024" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>C1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga09a3b25c72456dc274d97bd2c30e8c09" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>CH</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga5a2def14363813fcf6287e3edd1104bf" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>CNT</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gae118976c5526888e4385d2b45e4ca8ac" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>DAC</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga826415186f68fa272f4659ba9af7c392" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>DLY</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga84172a8f32e3e8ab454c186f973d63be" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>IDLY</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gafab15a0b540bc4e09cc8b0dcabe8791f" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>INT</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga1d2660ebf6d20840dfeb986ccf7af4f3" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>INTC</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaa35a6713b1e2aafa0749f986730795cb" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>MOD</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gae44cca13adf17daf17265abea2edb710" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>PODLY</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gafd7953396f7b3622bc91168b9cfd6aae" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>POEN</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaac9256575be36cd190e28da6992eb9b3" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>RESERVED_0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gad8a834e9c0be4b8a1f57679868c10f2d" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>RESERVED_1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gababb54850c6689ddd1ac5723d7551f6a" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>S</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga71c139861c5c28b6a6e81b2b1c72946a" prot="public" virt="non-virtual"><scope>PDB_Type</scope><name>SC</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

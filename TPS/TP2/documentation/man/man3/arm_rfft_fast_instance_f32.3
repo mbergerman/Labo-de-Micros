@@ -1,0 +1,39 @@
+.TH "arm_rfft_fast_instance_f32" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arm_rfft_fast_instance_f32 \- Instance structure for the floating-point RFFT/RIFFT function\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arm_math\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBarm_cfft_instance_f32\fP \fBSint\fP"
+.br
+.ti -1c
+.RI "uint16_t \fBfftLenRFFT\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP * \fBpTwiddleRFFT\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Instance structure for the floating-point RFFT/RIFFT function\&. 
+.SH "Field Documentation"
+.PP 
+.SS "uint16_t fftLenRFFT"
+length of the real sequence 
+.SS "\fBfloat32_t\fP* pTwiddleRFFT"
+Twiddle factors real stage 
+.SS "\fBarm_cfft_instance_f32\fP Sint"
+Internal CFFT structure\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

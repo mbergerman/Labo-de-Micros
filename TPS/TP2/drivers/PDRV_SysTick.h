@@ -1,7 +1,7 @@
 /***************************************************************************//**
-  @file     SysTick.h
+  @file     PDRV_SysTick.h
   @brief    SysTick driver
-  @author   Nicolás Magliola
+  @author   Grupo 1
  ******************************************************************************/
 
 #ifndef _SYSTICK_H_

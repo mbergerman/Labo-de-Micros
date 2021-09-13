@@ -1,0 +1,308 @@
+\hypertarget{_p_d_r_v___g_p_i_o_8h}{}\section{drivers/\+P\+D\+R\+V\+\_\+\+G\+P\+IO.h File Reference}
+\label{_p_d_r_v___g_p_i_o_8h}\index{drivers/\+P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{drivers/\+P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+
+
+G\+P\+IO driver.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(p,  n)~(((p)$<$$<$5) + (n))
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_ae544ad185baf9bec7774fd7a09268e9d}{P\+I\+N2\+P\+O\+RT}}(p)~(((p)$>$$>$5) \& 0x07)
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_ac10b3b1cdf332ee460d4ed0a8b85bb45}{P\+I\+N2\+N\+UM}}(p)~((p) \& 0x1\+F)
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a1bb283bd7893b9855e2f23013891fc82}{I\+N\+P\+UT}}~0
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a61a3c9a18380aafb6e430e79bf596557}{O\+U\+T\+P\+UT}}~1
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a6295096662a20dd56186396e535fbe92}{I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+UP}}~2
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_acc2f64df093104e4b029d86930fa4b8b}{I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+D\+O\+WN}}~3
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_ab811d8c6ff3a505312d3276590444289}{L\+OW}}~0
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a5bb885982ff66a2e0a0a45a8ee9c35e2}{H\+I\+GH}}~1
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint8\+\_\+t \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a393f57a2cb0a6d68e52055655b75e6c5}{pin\+Irq\+Fun\+\_\+t}}) (void)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06cae3d8a811f3bf7196f361be4104db68db}{PA}}, 
+\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06ca8b7dd81ba2f0d15957795457d92ce139}{PB}}, 
+\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46}{PC}}, 
+\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caefbc069e0ac4cd293f3ba527bec2befe}{PD}}, 
+\newline
+\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06ca84a0e8421125bc6ef85e43bab494f68c}{PE}}
+ \}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea03d5a4eb216235e8364c1ab57b01c019}{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+S\+A\+B\+LE}}, 
+\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea02691ee8b93be24de9b7af19e3eeffe7}{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+L\+O\+G\+I\+C\+\_\+0}}, 
+\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea0c9928d00d28a04d73b7e6d89ecb2c47}{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+R\+I\+S\+I\+N\+G\+\_\+\+E\+D\+GE}}, 
+\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea3f8b1185a53dd65d562e0a62f9f2594e}{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+F\+A\+L\+L\+I\+N\+G\+\_\+\+E\+D\+GE}}, 
+\newline
+\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9eae5772bdbe5b2a118f9f6f5597b045792}{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+B\+O\+T\+H\+\_\+\+E\+D\+G\+ES}}, 
+\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea14dfabbdacc179013e9731404680defb}{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+L\+O\+G\+I\+C\+\_\+1}}, 
+\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea4cabd2f47e5f82599e5a44614f7fbe5c}{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+C\+A\+N\+T\+\_\+\+M\+O\+D\+ES}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_ab34efe1e7a4661cb63c09374414169d6}{gpio\+Mode}} (\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}} pin, uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Configures the specified pin to behave either as an input or an output. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a7dfc26dc60c3056b0cbe99bfaedab27f}{gpio\+I\+RQ}} (\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}} pin, uint8\+\_\+t irq\+Mode, \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a393f57a2cb0a6d68e52055655b75e6c5}{pin\+Irq\+Fun\+\_\+t}} irq\+Fun)
+\begin{DoxyCompactList}\small\item\em Configures how the pin reacts when an I\+RQ event ocurrs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_ad68eec4f70f9f1fa38ae48c138c0d82f}{gpio\+Write}} (\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}} pin, bool value)
+\begin{DoxyCompactList}\small\item\em Write a H\+I\+GH or a L\+OW value to a digital pin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a87cc22913db98be1ef1dadb20cda7831}{gpio\+Toggle}} (\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}} pin)
+\begin{DoxyCompactList}\small\item\em Toggle the value of a digital pin (H\+I\+GH$<$-\/$>$L\+OW) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a59ce7b278cd2032a644766fd87e2e61a}{gpio\+Read}} (\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}} pin)
+\begin{DoxyCompactList}\small\item\em Reads the value from a specified digital pin, either H\+I\+GH or L\+OW. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+G\+P\+IO driver. 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a5bb885982ff66a2e0a0a45a8ee9c35e2}\label{_p_d_r_v___g_p_i_o_8h_a5bb885982ff66a2e0a0a45a8ee9c35e2}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!H\+I\+GH@{H\+I\+GH}}
+\index{H\+I\+GH@{H\+I\+GH}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{H\+I\+GH}{HIGH}}
+{\footnotesize\ttfamily \#define H\+I\+GH~1}
+
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a1bb283bd7893b9855e2f23013891fc82}\label{_p_d_r_v___g_p_i_o_8h_a1bb283bd7893b9855e2f23013891fc82}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!I\+N\+P\+UT@{I\+N\+P\+UT}}
+\index{I\+N\+P\+UT@{I\+N\+P\+UT}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+P\+UT}{INPUT}}
+{\footnotesize\ttfamily \#define I\+N\+P\+UT~0}
+
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_acc2f64df093104e4b029d86930fa4b8b}\label{_p_d_r_v___g_p_i_o_8h_acc2f64df093104e4b029d86930fa4b8b}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+D\+O\+WN@{I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+D\+O\+WN}}
+\index{I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+D\+O\+WN@{I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+D\+O\+WN}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+D\+O\+WN}{INPUT\_PULLDOWN}}
+{\footnotesize\ttfamily \#define I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+D\+O\+WN~3}
+
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a6295096662a20dd56186396e535fbe92}\label{_p_d_r_v___g_p_i_o_8h_a6295096662a20dd56186396e535fbe92}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+UP@{I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+UP}}
+\index{I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+UP@{I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+UP}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+UP}{INPUT\_PULLUP}}
+{\footnotesize\ttfamily \#define I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+UP~2}
+
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_ab811d8c6ff3a505312d3276590444289}\label{_p_d_r_v___g_p_i_o_8h_ab811d8c6ff3a505312d3276590444289}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!L\+OW@{L\+OW}}
+\index{L\+OW@{L\+OW}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{L\+OW}{LOW}}
+{\footnotesize\ttfamily \#define L\+OW~0}
+
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a61a3c9a18380aafb6e430e79bf596557}\label{_p_d_r_v___g_p_i_o_8h_a61a3c9a18380aafb6e430e79bf596557}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!O\+U\+T\+P\+UT@{O\+U\+T\+P\+UT}}
+\index{O\+U\+T\+P\+UT@{O\+U\+T\+P\+UT}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{O\+U\+T\+P\+UT}{OUTPUT}}
+{\footnotesize\ttfamily \#define O\+U\+T\+P\+UT~1}
+
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_ac10b3b1cdf332ee460d4ed0a8b85bb45}\label{_p_d_r_v___g_p_i_o_8h_ac10b3b1cdf332ee460d4ed0a8b85bb45}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!P\+I\+N2\+N\+UM@{P\+I\+N2\+N\+UM}}
+\index{P\+I\+N2\+N\+UM@{P\+I\+N2\+N\+UM}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{P\+I\+N2\+N\+UM}{PIN2NUM}}
+{\footnotesize\ttfamily \#define P\+I\+N2\+N\+UM(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~((p) \& 0x1\+F)}
+
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_ae544ad185baf9bec7774fd7a09268e9d}\label{_p_d_r_v___g_p_i_o_8h_ae544ad185baf9bec7774fd7a09268e9d}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!P\+I\+N2\+P\+O\+RT@{P\+I\+N2\+P\+O\+RT}}
+\index{P\+I\+N2\+P\+O\+RT@{P\+I\+N2\+P\+O\+RT}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{P\+I\+N2\+P\+O\+RT}{PIN2PORT}}
+{\footnotesize\ttfamily \#define P\+I\+N2\+P\+O\+RT(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~(((p)$>$$>$5) \& 0x07)}
+
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}\label{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!P\+O\+R\+T\+N\+U\+M2\+P\+IN@{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}
+\index{P\+O\+R\+T\+N\+U\+M2\+P\+IN@{P\+O\+R\+T\+N\+U\+M2\+P\+IN}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{P\+O\+R\+T\+N\+U\+M2\+P\+IN}{PORTNUM2PIN}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+N\+U\+M2\+P\+IN(\begin{DoxyParamCaption}\item[{}]{p,  }\item[{}]{n }\end{DoxyParamCaption})~(((p)$<$$<$5) + (n))}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}\label{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!pin\+\_\+t@{pin\+\_\+t}}
+\index{pin\+\_\+t@{pin\+\_\+t}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{pin\+\_\+t}{pin\_t}}
+{\footnotesize\ttfamily typedef uint8\+\_\+t \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}}}
+
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a393f57a2cb0a6d68e52055655b75e6c5}\label{_p_d_r_v___g_p_i_o_8h_a393f57a2cb0a6d68e52055655b75e6c5}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!pin\+Irq\+Fun\+\_\+t@{pin\+Irq\+Fun\+\_\+t}}
+\index{pin\+Irq\+Fun\+\_\+t@{pin\+Irq\+Fun\+\_\+t}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{pin\+Irq\+Fun\+\_\+t}{pinIrqFun\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ pin\+Irq\+Fun\+\_\+t) (void)}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06c}\label{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06c}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PA@{PA}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!PA@{PA}}}\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06cae3d8a811f3bf7196f361be4104db68db}\label{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06cae3d8a811f3bf7196f361be4104db68db}} 
+PA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PB@{PB}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!PB@{PB}}}\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06ca8b7dd81ba2f0d15957795457d92ce139}\label{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06ca8b7dd81ba2f0d15957795457d92ce139}} 
+PB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PC@{PC}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!PC@{PC}}}\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46}\label{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46}} 
+PC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PD@{PD}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!PD@{PD}}}\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caefbc069e0ac4cd293f3ba527bec2befe}\label{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06caefbc069e0ac4cd293f3ba527bec2befe}} 
+PD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PE@{PE}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!PE@{PE}}}\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06ca84a0e8421125bc6ef85e43bab494f68c}\label{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06ca84a0e8421125bc6ef85e43bab494f68c}} 
+PE&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9e}\label{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9e}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+S\+A\+B\+LE@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+S\+A\+B\+LE}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+S\+A\+B\+LE@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+S\+A\+B\+LE}}}\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea03d5a4eb216235e8364c1ab57b01c019}\label{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea03d5a4eb216235e8364c1ab57b01c019}} 
+G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+S\+A\+B\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+L\+O\+G\+I\+C\+\_\+0@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+L\+O\+G\+I\+C\+\_\+0}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+L\+O\+G\+I\+C\+\_\+0@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+L\+O\+G\+I\+C\+\_\+0}}}\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea02691ee8b93be24de9b7af19e3eeffe7}\label{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea02691ee8b93be24de9b7af19e3eeffe7}} 
+G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+L\+O\+G\+I\+C\+\_\+0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+R\+I\+S\+I\+N\+G\+\_\+\+E\+D\+GE@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+R\+I\+S\+I\+N\+G\+\_\+\+E\+D\+GE}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+R\+I\+S\+I\+N\+G\+\_\+\+E\+D\+GE@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+R\+I\+S\+I\+N\+G\+\_\+\+E\+D\+GE}}}\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea0c9928d00d28a04d73b7e6d89ecb2c47}\label{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea0c9928d00d28a04d73b7e6d89ecb2c47}} 
+G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+R\+I\+S\+I\+N\+G\+\_\+\+E\+D\+GE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+F\+A\+L\+L\+I\+N\+G\+\_\+\+E\+D\+GE@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+F\+A\+L\+L\+I\+N\+G\+\_\+\+E\+D\+GE}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+F\+A\+L\+L\+I\+N\+G\+\_\+\+E\+D\+GE@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+F\+A\+L\+L\+I\+N\+G\+\_\+\+E\+D\+GE}}}\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea3f8b1185a53dd65d562e0a62f9f2594e}\label{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea3f8b1185a53dd65d562e0a62f9f2594e}} 
+G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+F\+A\+L\+L\+I\+N\+G\+\_\+\+E\+D\+GE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+B\+O\+T\+H\+\_\+\+E\+D\+G\+ES@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+B\+O\+T\+H\+\_\+\+E\+D\+G\+ES}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+B\+O\+T\+H\+\_\+\+E\+D\+G\+ES@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+B\+O\+T\+H\+\_\+\+E\+D\+G\+ES}}}\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9eae5772bdbe5b2a118f9f6f5597b045792}\label{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9eae5772bdbe5b2a118f9f6f5597b045792}} 
+G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+B\+O\+T\+H\+\_\+\+E\+D\+G\+ES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+L\+O\+G\+I\+C\+\_\+1@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+L\+O\+G\+I\+C\+\_\+1}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+L\+O\+G\+I\+C\+\_\+1@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+L\+O\+G\+I\+C\+\_\+1}}}\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea14dfabbdacc179013e9731404680defb}\label{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea14dfabbdacc179013e9731404680defb}} 
+G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+M\+O\+D\+E\+\_\+\+L\+O\+G\+I\+C\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+C\+A\+N\+T\+\_\+\+M\+O\+D\+ES@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+C\+A\+N\+T\+\_\+\+M\+O\+D\+ES}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+C\+A\+N\+T\+\_\+\+M\+O\+D\+ES@{G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+C\+A\+N\+T\+\_\+\+M\+O\+D\+ES}}}\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea4cabd2f47e5f82599e5a44614f7fbe5c}\label{_p_d_r_v___g_p_i_o_8h_a61dadd085c1777f559549e05962b2c9ea4cabd2f47e5f82599e5a44614f7fbe5c}} 
+G\+P\+I\+O\+\_\+\+I\+R\+Q\+\_\+\+C\+A\+N\+T\+\_\+\+M\+O\+D\+ES&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a7dfc26dc60c3056b0cbe99bfaedab27f}\label{_p_d_r_v___g_p_i_o_8h_a7dfc26dc60c3056b0cbe99bfaedab27f}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!gpio\+I\+RQ@{gpio\+I\+RQ}}
+\index{gpio\+I\+RQ@{gpio\+I\+RQ}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{gpio\+I\+R\+Q()}{gpioIRQ()}}
+{\footnotesize\ttfamily bool gpio\+I\+RQ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}}}]{pin,  }\item[{uint8\+\_\+t}]{irq\+Mode,  }\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a393f57a2cb0a6d68e52055655b75e6c5}{pin\+Irq\+Fun\+\_\+t}}}]{irq\+Fun }\end{DoxyParamCaption})}
+
+
+
+Configures how the pin reacts when an I\+RQ event ocurrs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & the pin whose I\+RQ mode you wish to set (according P\+O\+R\+T\+N\+U\+M2\+P\+IN) \\
+\hline
+{\em irq\+Mode} & disable, rising\+Edge, falling\+Edge or both\+Edges \\
+\hline
+{\em irq\+Fun} & function to call on pin event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Registration succeed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_ab34efe1e7a4661cb63c09374414169d6}\label{_p_d_r_v___g_p_i_o_8h_ab34efe1e7a4661cb63c09374414169d6}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!gpio\+Mode@{gpio\+Mode}}
+\index{gpio\+Mode@{gpio\+Mode}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{gpio\+Mode()}{gpioMode()}}
+{\footnotesize\ttfamily void gpio\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}}}]{pin,  }\item[{uint8\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Configures the specified pin to behave either as an input or an output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & the pin whose mode you wish to set (according P\+O\+R\+T\+N\+U\+M2\+P\+IN) \\
+\hline
+{\em mode} & I\+N\+P\+UT, O\+U\+T\+P\+UT, I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+UP or I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+D\+O\+WN. \\
+\hline
+\end{DoxyParams}
+!! \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a59ce7b278cd2032a644766fd87e2e61a}\label{_p_d_r_v___g_p_i_o_8h_a59ce7b278cd2032a644766fd87e2e61a}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!gpio\+Read@{gpio\+Read}}
+\index{gpio\+Read@{gpio\+Read}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{gpio\+Read()}{gpioRead()}}
+{\footnotesize\ttfamily bool gpio\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}}}]{pin }\end{DoxyParamCaption})}
+
+
+
+Reads the value from a specified digital pin, either H\+I\+GH or L\+OW. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & the pin to read (according P\+O\+R\+T\+N\+U\+M2\+P\+IN) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+H\+I\+GH or L\+OW 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_a87cc22913db98be1ef1dadb20cda7831}\label{_p_d_r_v___g_p_i_o_8h_a87cc22913db98be1ef1dadb20cda7831}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!gpio\+Toggle@{gpio\+Toggle}}
+\index{gpio\+Toggle@{gpio\+Toggle}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{gpio\+Toggle()}{gpioToggle()}}
+{\footnotesize\ttfamily void gpio\+Toggle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}}}]{pin }\end{DoxyParamCaption})}
+
+
+
+Toggle the value of a digital pin (H\+I\+GH$<$-\/$>$L\+OW) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & the pin to toggle (according P\+O\+R\+T\+N\+U\+M2\+P\+IN) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8h_ad68eec4f70f9f1fa38ae48c138c0d82f}\label{_p_d_r_v___g_p_i_o_8h_ad68eec4f70f9f1fa38ae48c138c0d82f}} 
+\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}!gpio\+Write@{gpio\+Write}}
+\index{gpio\+Write@{gpio\+Write}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h}}
+\subsubsection{\texorpdfstring{gpio\+Write()}{gpioWrite()}}
+{\footnotesize\ttfamily void gpio\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}}}]{pin,  }\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Write a H\+I\+GH or a L\+OW value to a digital pin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & the pin to write (according P\+O\+R\+T\+N\+U\+M2\+P\+IN) \\
+\hline
+{\em val} & Desired value (H\+I\+GH or L\+OW) \\
+\hline
+\end{DoxyParams}

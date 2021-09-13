@@ -1,0 +1,163 @@
+.TH "PID" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PID
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "CMSIS_INLINE \fB__STATIC_INLINE\fP \fBfloat32_t\fP \fBarm_pid_f32\fP (\fBarm_pid_instance_f32\fP *S, \fBfloat32_t\fP in)"
+.br
+.RI "Process function for the floating-point PID Control\&. "
+.ti -1c
+.RI "CMSIS_INLINE \fB__STATIC_INLINE\fP \fBq31_t\fP \fBarm_pid_q31\fP (\fBarm_pid_instance_q31\fP *S, \fBq31_t\fP in)"
+.br
+.RI "Process function for the Q31 PID Control\&. "
+.ti -1c
+.RI "CMSIS_INLINE \fB__STATIC_INLINE\fP \fBq15_t\fP \fBarm_pid_q15\fP (\fBarm_pid_instance_q15\fP *S, \fBq15_t\fP in)"
+.br
+.RI "Process function for the Q15 PID Control\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A Proportional Integral Derivative (PID) controller is a generic feedback control loop mechanism widely used in industrial control systems\&. A PID controller is the most commonly used type of feedback controller\&.
+.PP
+This set of functions implements (PID) controllers for Q15, Q31, and floating-point data types\&. The functions operate on a single sample of data and each call to the function returns a single processed value\&. \fCS\fP points to an instance of the PID control data structure\&. \fCin\fP is the input sample value\&. The functions return the output value\&.
+.PP
+\fBAlgorithm:\fP
+.RS 4
+
+.PP
+.nf
+
+   y[n] = y[n-1] + A0 * x[n] + A1 * x[n-1] + A2 * x[n-2]
+   A0 = Kp + Ki + Kd
+   A1 = (-Kp ) - (2 * Kd )
+   A2 = Kd  
+.fi
+.PP
+.RE
+.PP
+\fB\fP
+.RS 4
+where \fCKp\fP is proportional constant, \fCKi\fP is Integral constant and \fCKd\fP is Derivative constant
+.RE
+.PP
+\fB\fP
+.RS 4
+Proportional Integral Derivative Controller 
+.RE
+.PP
+\fB\fP
+.RS 4
+The PID controller calculates an 'error' value as the difference between the measured output and the reference input\&. The controller attempts to minimize the error by adjusting the process control inputs\&. The proportional value determines the reaction to the current error, the integral value determines the reaction based on the sum of recent errors, and the derivative value determines the reaction based on the rate at which the error has been changing\&.
+.RE
+.PP
+\fBInstance Structure\fP
+.RS 4
+The Gains A0, A1, A2 and state variables for a PID controller are stored together in an instance data structure\&. A separate instance structure must be defined for each PID Controller\&. There are separate instance structure declarations for each of the 3 supported data types\&.
+.RE
+.PP
+\fBReset Functions\fP
+.RS 4
+There is also an associated reset function for each data type which clears the state array\&.
+.RE
+.PP
+\fBInitialization Functions\fP
+.RS 4
+There is also an associated initialization function for each data type\&. The initialization function performs the following operations:
+.IP "\(bu" 2
+Initializes the Gains A0, A1, A2 from Kp,Ki, Kd gains\&.
+.IP "\(bu" 2
+Zeros out the values in the state buffer\&.
+.PP
+.RE
+.PP
+\fB\fP
+.RS 4
+Instance structure cannot be placed into a const data section and it is recommended to use the initialization function\&.
+.RE
+.PP
+\fBFixed-Point Behavior\fP
+.RS 4
+Care must be taken when using the fixed-point versions of the PID Controller functions\&. In particular, the overflow and saturation behavior of the accumulator used in each function must be considered\&. Refer to the function specific documentation below for usage guidelines\&. 
+.RE
+.PP
+
+.SH "Function Documentation"
+.PP 
+.SS "CMSIS_INLINE \fB__STATIC_INLINE\fP \fBfloat32_t\fP arm_pid_f32 (\fBarm_pid_instance_f32\fP * S, \fBfloat32_t\fP in)"
+
+.PP
+Process function for the floating-point PID Control\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIS\fP is an instance of the floating-point PID Control structure 
+.br
+\fIin\fP input sample to process 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+out processed output sample\&. 
+.RE
+.PP
+
+.SS "CMSIS_INLINE \fB__STATIC_INLINE\fP \fBq15_t\fP arm_pid_q15 (\fBarm_pid_instance_q15\fP * S, \fBq15_t\fP in)"
+
+.PP
+Process function for the Q15 PID Control\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIS\fP points to an instance of the Q15 PID Control structure 
+.br
+\fIin\fP input sample to process 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+out processed output sample\&.
+.RE
+.PP
+\fBScaling and Overflow Behavior:\fP 
+.PP
+\fB\fP
+.RS 4
+The function is implemented using a 64-bit internal accumulator\&. Both Gains and state variables are represented in 1\&.15 format and multiplications yield a 2\&.30 result\&. The 2\&.30 intermediate results are accumulated in a 64-bit accumulator in 34\&.30 format\&. There is no risk of internal overflow with this approach and the full precision of intermediate multiplications is preserved\&. After all additions have been performed, the accumulator is truncated to 34\&.15 format by discarding low 15 bits\&. Lastly, the accumulator is saturated to yield a result in 1\&.15 format\&. 
+.RE
+.PP
+
+.SS "CMSIS_INLINE \fB__STATIC_INLINE\fP \fBq31_t\fP arm_pid_q31 (\fBarm_pid_instance_q31\fP * S, \fBq31_t\fP in)"
+
+.PP
+Process function for the Q31 PID Control\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIS\fP points to an instance of the Q31 PID Control structure 
+.br
+\fIin\fP input sample to process 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+out processed output sample\&.
+.RE
+.PP
+\fBScaling and Overflow Behavior:\fP 
+.PP
+\fB\fP
+.RS 4
+The function is implemented using an internal 64-bit accumulator\&. The accumulator has a 2\&.62 format and maintains full precision of the intermediate multiplication results but provides only a single guard bit\&. Thus, if the accumulator result overflows it wraps around rather than clip\&. In order to avoid overflows completely the input signal must be scaled down by 2 bits as there are four additions\&. After all multiply-accumulates are performed, the 2\&.62 accumulator is truncated to 1\&.32 format and then saturated to 1\&.31 format\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

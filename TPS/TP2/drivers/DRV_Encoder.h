@@ -1,9 +1,8 @@
-/*
- * DRV_Encoder.h
- *
- *  Created on: 29 ago. 2021
- *      Author: matia
- */
+/***************************************************************************//**
+  @file     DRV_Encoder.h
+  @brief    Rotary encoder driver
+  @author   Grupo 1
+ ******************************************************************************/
 
 #ifndef DRV_ENCODER_H_
 #define DRV_ENCODER_H_

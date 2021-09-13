@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_s_m_c___type" kind="struct" language="C++" prot="public">
+    <compoundname>SMC_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gab80b0e0bb4c1aa3e20de93cee5828603" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t PMPROT</definition>
+        <argsstring></argsstring>
+        <name>PMPROT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power Mode Protection register, offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="10649" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="10649" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga96fa5644eba54c5bf0a4c5c16ad4f6f7" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t PMCTRL</definition>
+        <argsstring></argsstring>
+        <name>PMCTRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power Mode Control register, offset: 0x1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="10650" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="10650" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga813a3036c963ab3498eca297988777f8" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t VLLSCTRL</definition>
+        <argsstring></argsstring>
+        <name>VLLSCTRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>VLLS Control register, offset: 0x2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="10651" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="10651" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gad38d8d9691e23bb395d7b9030040693a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint8_t</type>
+        <definition>__I uint8_t PMSTAT</definition>
+        <argsstring></argsstring>
+        <name>PMSTAT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Power Mode Status register, offset: 0x3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="10652" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="10652" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>SMC - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="10648" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="10648" bodyend="10653"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga96fa5644eba54c5bf0a4c5c16ad4f6f7" prot="public" virt="non-virtual"><scope>SMC_Type</scope><name>PMCTRL</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gab80b0e0bb4c1aa3e20de93cee5828603" prot="public" virt="non-virtual"><scope>SMC_Type</scope><name>PMPROT</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gad38d8d9691e23bb395d7b9030040693a" prot="public" virt="non-virtual"><scope>SMC_Type</scope><name>PMSTAT</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga813a3036c963ab3498eca297988777f8" prot="public" virt="non-virtual"><scope>SMC_Type</scope><name>VLLSCTRL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structarm__matrix__instance__q15" kind="struct" language="C++" prot="public">
+    <compoundname>arm_matrix_instance_q15</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__matrix__instance__q15_1a1bcf80ccdc2acc29198f1592ae300390" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t numRows</definition>
+        <argsstring></argsstring>
+        <name>numRows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of rows of the matrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1373" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__matrix__instance__q15_1a4bb5ec0d13eb4c9cf887aa8366a44117" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t numCols</definition>
+        <argsstring></argsstring>
+        <name>numCols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of columns of the matrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1374" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__matrix__instance__q15_1a817ede38365e63e561a12069c6c5c087" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref> *</type>
+        <definition>q15_t* pData</definition>
+        <argsstring></argsstring>
+        <name>pData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the data of the matrix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1375" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1375" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Q15 matrix structure. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/arm_math.h" line="1372" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1371" bodyend="1376"/>
+    <listofallmembers>
+      <member refid="structarm__matrix__instance__q15_1a4bb5ec0d13eb4c9cf887aa8366a44117" prot="public" virt="non-virtual"><scope>arm_matrix_instance_q15</scope><name>numCols</name></member>
+      <member refid="structarm__matrix__instance__q15_1a1bcf80ccdc2acc29198f1592ae300390" prot="public" virt="non-virtual"><scope>arm_matrix_instance_q15</scope><name>numRows</name></member>
+      <member refid="structarm__matrix__instance__q15_1a817ede38365e63e561a12069c6c5c087" prot="public" virt="non-virtual"><scope>arm_matrix_instance_q15</scope><name>pData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

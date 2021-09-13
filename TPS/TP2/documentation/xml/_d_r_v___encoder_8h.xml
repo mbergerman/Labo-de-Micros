@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_d_r_v___encoder_8h" kind="file" language="C++">
+    <compoundname>DRV_Encoder.h</compoundname>
+    <includes refid="_p_d_r_v___g_p_i_o_8h" local="yes">PDRV_GPIO.h</includes>
+    <includedby refid="_d_r_v___encoder_8c" local="yes">drivers/DRV_Encoder.c</includedby>
+    <includedby refid="_d_r_v___stub___encoder_8c" local="yes">drivers/DRV_Stub_Encoder.c</includedby>
+    <includedby refid="_app_8c" local="yes">source/App.c</includedby>
+    <incdepgraph>
+      <node id="80">
+        <label>stdbool.h</label>
+      </node>
+      <node id="79">
+        <label>stdint.h</label>
+      </node>
+      <node id="78">
+        <label>PDRV_GPIO.h</label>
+        <link refid="_p_d_r_v___g_p_i_o_8h"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>drivers/DRV_Encoder.h</label>
+        <link refid="_d_r_v___encoder_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="84">
+        <label>source/App.c</label>
+        <link refid="_app_8c"/>
+      </node>
+      <node id="82">
+        <label>drivers/DRV_Encoder.c</label>
+        <link refid="_d_r_v___encoder_8c"/>
+      </node>
+      <node id="81">
+        <label>drivers/DRV_Encoder.h</label>
+        <link refid="_d_r_v___encoder_8h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>drivers/DRV_Stub_Encoder.c</label>
+        <link refid="_d_r_v___stub___encoder_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854" prot="public" static="no" strong="no">
+        <type></type>
+        <name>encoderResult_t</name>
+        <enumvalue id="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854a608106e9cbd2d91398622a32a1f1200c" prot="public">
+          <name>ENC_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854aff234397c02c3402b7c19b49a1b30793" prot="public">
+          <name>ENC_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854a2933086c938f9d3b6bd3a370199411d3" prot="public">
+          <name>ENC_CLICK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854aa606c88585aef66d517064307840dc78" prot="public">
+          <name>ENC_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Encoder.h" line="26" column="1" bodyfile="drivers/DRV_Encoder.h" bodystart="26" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_d_r_v___encoder_8h_1a816b22a073a30b233d6afdf983c27e8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initEncoder</definition>
+        <argsstring>()</argsstring>
+        <name>initEncoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Encoder.h" line="41" column="1" bodyfile="drivers/DRV_Encoder.c" bodystart="158" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___encoder_8h_1aeecebb19c73c7d96e9bff0d2e2dac31f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool encoderGetStatus</definition>
+        <argsstring>()</argsstring>
+        <name>encoderGetStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Encoder.h" line="44" column="1" bodyfile="drivers/DRV_Encoder.c" bodystart="145" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___encoder_8h_1a997ecbb0db39175331354fa59dbb08a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854" kindref="member">encoderResult_t</ref></type>
+        <definition>encoderResult_t encoderGetEvent</definition>
+        <argsstring>()</argsstring>
+        <name>encoderGetEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Encoder.h" line="47" column="1" bodyfile="drivers/DRV_Encoder.c" bodystart="154" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Rotary encoder driver. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Grupo 1 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>DRV_ENCODER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRV_ENCODER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>INCLUDE<sp/>HEADER<sp/>FILES</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_p_d_r_v___g_p_i_o_8h" kindref="compound">PDRV_GPIO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>CONSTANT<sp/>AND<sp/>MACRO<sp/>DEFINITIONS<sp/>USING<sp/>#DEFINE</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>ENUMERATIONS<sp/>AND<sp/>STRUCTURES<sp/>AND<sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27" refid="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854a608106e9cbd2d91398622a32a1f1200c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854a608106e9cbd2d91398622a32a1f1200c" kindref="member">ENC_LEFT</ref>,</highlight></codeline>
+<codeline lineno="28" refid="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854aff234397c02c3402b7c19b49a1b30793" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854aff234397c02c3402b7c19b49a1b30793" kindref="member">ENC_RIGHT</ref>,</highlight></codeline>
+<codeline lineno="29" refid="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854a2933086c938f9d3b6bd3a370199411d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854a2933086c938f9d3b6bd3a370199411d3" kindref="member">ENC_CLICK</ref>,</highlight></codeline>
+<codeline lineno="30" refid="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854aa606c88585aef66d517064307840dc78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854aa606c88585aef66d517064307840dc78" kindref="member">ENC_NONE</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<ref refid="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854" kindref="member">encoderResult_t</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>VARIABLE<sp/>PROTOTYPES<sp/>WITH<sp/>GLOBAL<sp/>SCOPE</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>FUNCTION<sp/>PROTOTYPES<sp/>WITH<sp/>GLOBAL<sp/>SCOPE</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___encoder_8h_1a816b22a073a30b233d6afdf983c27e8d" kindref="member">initEncoder</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//Devuelve<sp/>true<sp/>si<sp/>hubo<sp/>movimiento</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___encoder_8h_1aeecebb19c73c7d96e9bff0d2e2dac31f" kindref="member">encoderGetStatus</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//Devuelve<sp/>la<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="_d_r_v___encoder_8h_1a30a1a4fd7b6a6ed6a023e586c82ac854" kindref="member">encoderResult_t</ref><sp/><ref refid="_d_r_v___encoder_8h_1a997ecbb0db39175331354fa59dbb08a9" kindref="member">encoderGetEvent</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DRV_ENCODER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="drivers/DRV_Encoder.h"/>
+  </compounddef>
+</doxygen>

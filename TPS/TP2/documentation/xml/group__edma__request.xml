@@ -1,0 +1,567 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__edma__request" kind="group">
+    <compoundname>edma_request</compoundname>
+    <title>Edma_request</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__edma__request_1gafd16b7227cfdebb996c941d293ddd600" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_dma_request_source</name>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600aadd4a4e2b949beeb891c555e14334928" prot="public">
+          <name>kDmaRequestMux0Disable</name>
+          <initializer>= 0|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMAMUX TriggerDisabled. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a85eeff0b46973f2b0ae4daf813462d5a" prot="public">
+          <name>kDmaRequestMux0Reserved1</name>
+          <initializer>= 1|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Reserved1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600ae12cb8e7c6f1ec42dff54837478c5745" prot="public">
+          <name>kDmaRequestMux0UART0Rx</name>
+          <initializer>= 2|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UART0 Receive. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600af4effe58ce7b318da63b03f48eb2db01" prot="public">
+          <name>kDmaRequestMux0UART0Tx</name>
+          <initializer>= 3|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UART0 Transmit. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a693902c6070f2a2563efce11cf0ebe2c" prot="public">
+          <name>kDmaRequestMux0UART1Rx</name>
+          <initializer>= 4|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UART1 Receive. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a4df502e8d2b2fd8e2758f0446a6672be" prot="public">
+          <name>kDmaRequestMux0UART1Tx</name>
+          <initializer>= 5|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UART1 Transmit. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600abdb66898880cb33791cb9fe05a21cd7e" prot="public">
+          <name>kDmaRequestMux0UART2Rx</name>
+          <initializer>= 6|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UART2 Receive. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a099e0ce02e437caea2491898886f0905" prot="public">
+          <name>kDmaRequestMux0UART2Tx</name>
+          <initializer>= 7|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UART2 Transmit. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a5a7484eb06d46da5d93aea6a832b613a" prot="public">
+          <name>kDmaRequestMux0UART3Rx</name>
+          <initializer>= 8|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UART3 Receive. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a1406a7c15a97b9687ae5b083bc8e4802" prot="public">
+          <name>kDmaRequestMux0UART3Tx</name>
+          <initializer>= 9|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UART3 Transmit. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a57bc5b64b222baf0f896ae78d659683d" prot="public">
+          <name>kDmaRequestMux0UART4</name>
+          <initializer>= 10|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UART4 Transmit or Receive. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a51bf3aaa8f7ca497c92afb21ca5c668c" prot="public">
+          <name>kDmaRequestMux0UART5</name>
+          <initializer>= 11|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UART5 Transmit or Receive. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a9a39af91e43d5245a6826165c901a26b" prot="public">
+          <name>kDmaRequestMux0I2S0Rx</name>
+          <initializer>= 12|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2S0 Receive. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a340ec9f93829b46dda85d027b513981a" prot="public">
+          <name>kDmaRequestMux0I2S0Tx</name>
+          <initializer>= 13|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2S0 Transmit. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600af7806931af78c9954e619a03910cb437" prot="public">
+          <name>kDmaRequestMux0SPI0Rx</name>
+          <initializer>= 14|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SPI0 Receive. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a425450b4b111b0bf901f495066659d3b" prot="public">
+          <name>kDmaRequestMux0SPI0Tx</name>
+          <initializer>= 15|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SPI0 Transmit. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a5722da20496fdc260bec65f0071d0937" prot="public">
+          <name>kDmaRequestMux0SPI1</name>
+          <initializer>= 16|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SPI1 Transmit or Receive. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a2639fad58b4bfd3a6a5b54ecc7b7e243" prot="public">
+          <name>kDmaRequestMux0SPI2</name>
+          <initializer>= 17|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SPI2 Transmit or Receive. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a0d2407c5984f2a6f57d085f67f6e4aa8" prot="public">
+          <name>kDmaRequestMux0I2C0</name>
+          <initializer>= 18|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2C0. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600aa76071c07dc8884d52acf4566498e487" prot="public">
+          <name>kDmaRequestMux0I2C1I2C2</name>
+          <initializer>= 19|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2C1 and I2C2. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600afaba8c07617eb1550602256ada05f289" prot="public">
+          <name>kDmaRequestMux0I2C1</name>
+          <initializer>= 19|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2C1 and I2C2. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a45f364cfa7ebad76d78cff85ac5340c8" prot="public">
+          <name>kDmaRequestMux0I2C2</name>
+          <initializer>= 19|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2C1 and I2C2. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600ae25847fd02340b9d49dd75772a386deb" prot="public">
+          <name>kDmaRequestMux0FTM0Channel0</name>
+          <initializer>= 20|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM0 C0V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a43f4c8d873f81973f63607f96849509c" prot="public">
+          <name>kDmaRequestMux0FTM0Channel1</name>
+          <initializer>= 21|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM0 C1V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600af23f20f142fe7e8b18c5ac48a2c7cedf" prot="public">
+          <name>kDmaRequestMux0FTM0Channel2</name>
+          <initializer>= 22|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM0 C2V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600ad24a551120015a3b371e3e220195854c" prot="public">
+          <name>kDmaRequestMux0FTM0Channel3</name>
+          <initializer>= 23|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM0 C3V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a91c05e0d6e60a97aeef05d3f52dd5632" prot="public">
+          <name>kDmaRequestMux0FTM0Channel4</name>
+          <initializer>= 24|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM0 C4V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a4566bb3d75b76cf8f79af3d992dc8c34" prot="public">
+          <name>kDmaRequestMux0FTM0Channel5</name>
+          <initializer>= 25|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM0 C5V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a591429707e95ff6d5e6f7475f1a0571f" prot="public">
+          <name>kDmaRequestMux0FTM0Channel6</name>
+          <initializer>= 26|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM0 C6V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a0903714722a6d7795c345cf31e94daae" prot="public">
+          <name>kDmaRequestMux0FTM0Channel7</name>
+          <initializer>= 27|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM0 C7V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a018ef50313908851b9a894b56d1d1603" prot="public">
+          <name>kDmaRequestMux0FTM1Channel0</name>
+          <initializer>= 28|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM1 C0V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a83824bef9b587fd6151d9d47267b8b06" prot="public">
+          <name>kDmaRequestMux0FTM1Channel1</name>
+          <initializer>= 29|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM1 C1V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a45c3cda814787b13ee82091626114017" prot="public">
+          <name>kDmaRequestMux0FTM2Channel0</name>
+          <initializer>= 30|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM2 C0V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a30a837b0c36db096996565d81f5cc554" prot="public">
+          <name>kDmaRequestMux0FTM2Channel1</name>
+          <initializer>= 31|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM2 C1V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a7dd71f7ba5ed37e671433c367a229d70" prot="public">
+          <name>kDmaRequestMux0FTM3Channel0</name>
+          <initializer>= 32|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM3 C0V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a140e6e55adc18ab81946a2a32ac149cf" prot="public">
+          <name>kDmaRequestMux0FTM3Channel1</name>
+          <initializer>= 33|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM3 C1V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a9fab39b7b0d971128380420378663a49" prot="public">
+          <name>kDmaRequestMux0FTM3Channel2</name>
+          <initializer>= 34|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM3 C2V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600acfaa94f8eeb5e21f2dcfd8d3c5c7e1b8" prot="public">
+          <name>kDmaRequestMux0FTM3Channel3</name>
+          <initializer>= 35|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM3 C3V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600aab4dc53084855c7f0c4f1895e37d60e2" prot="public">
+          <name>kDmaRequestMux0FTM3Channel4</name>
+          <initializer>= 36|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM3 C4V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600aab4de321ffd25071c6b0848e6ba3758d" prot="public">
+          <name>kDmaRequestMux0FTM3Channel5</name>
+          <initializer>= 37|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM3 C5V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600ae2b2eb025a367c10cee8dd25da9a1a7b" prot="public">
+          <name>kDmaRequestMux0FTM3Channel6</name>
+          <initializer>= 38|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM3 C6V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a2b06774cc489e0a09a75827263817db8" prot="public">
+          <name>kDmaRequestMux0FTM3Channel7</name>
+          <initializer>= 39|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FTM3 C7V. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600ac608dd2030ddde3872954f70388515fc" prot="public">
+          <name>kDmaRequestMux0ADC0</name>
+          <initializer>= 40|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ADC0. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a7901f49c487ca7b24dd5e790ec4abf3f" prot="public">
+          <name>kDmaRequestMux0ADC1</name>
+          <initializer>= 41|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ADC1. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a117290db51ae59bde5e61e257131bcb4" prot="public">
+          <name>kDmaRequestMux0CMP0</name>
+          <initializer>= 42|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CMP0. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a29ec420da84853fbb7fd5b9174472f54" prot="public">
+          <name>kDmaRequestMux0CMP1</name>
+          <initializer>= 43|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CMP1. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a8408e83e4700a6a9a1a1559e9fb20811" prot="public">
+          <name>kDmaRequestMux0CMP2</name>
+          <initializer>= 44|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CMP2. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a081076276c196654085b03d81f790384" prot="public">
+          <name>kDmaRequestMux0DAC0</name>
+          <initializer>= 45|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DAC0. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a1251e66311ad0607ee0a3e8b2d26ec4e" prot="public">
+          <name>kDmaRequestMux0DAC1</name>
+          <initializer>= 46|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DAC1. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a969ffc6e693b998a372e82f225013b3a" prot="public">
+          <name>kDmaRequestMux0CMT</name>
+          <initializer>= 47|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CMT. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600afabb290a20f7f955bee2123986f56248" prot="public">
+          <name>kDmaRequestMux0PDB</name>
+          <initializer>= 48|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PDB0. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600ab57d03e322108baff00a77653ee62e0f" prot="public">
+          <name>kDmaRequestMux0PortA</name>
+          <initializer>= 49|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PTA. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a7242cd84029e5842520502cf5b4eab7c" prot="public">
+          <name>kDmaRequestMux0PortB</name>
+          <initializer>= 50|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PTB. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a7d8715b985d5915993e66b4813d3394f" prot="public">
+          <name>kDmaRequestMux0PortC</name>
+          <initializer>= 51|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PTC. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600ab5f5c3039f89912eb31521df5e5adfda" prot="public">
+          <name>kDmaRequestMux0PortD</name>
+          <initializer>= 52|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PTD. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a37cfb9ae499b266999b94aeaab41f40b" prot="public">
+          <name>kDmaRequestMux0PortE</name>
+          <initializer>= 53|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PTE. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600aa4c0b2a515805edb620dad2c1d258b6b" prot="public">
+          <name>kDmaRequestMux0IEEE1588Timer0</name>
+          <initializer>= 54|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ENET IEEE 1588 timer 0. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a2e2e82d15daa49be878e27857c425b72" prot="public">
+          <name>kDmaRequestMux0IEEE1588Timer1</name>
+          <initializer>= 55|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ENET IEEE 1588 timer 1. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600ada56f09371c0bdc6b1c4970c63d36edd" prot="public">
+          <name>kDmaRequestMux0IEEE1588Timer2</name>
+          <initializer>= 56|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ENET IEEE 1588 timer 2. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a3e441b3a8bba0fee5514e905af081bd7" prot="public">
+          <name>kDmaRequestMux0IEEE1588Timer3</name>
+          <initializer>= 57|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ENET IEEE 1588 timer 3. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a9fcca8fa9bd20379f291d9f97129c6a2" prot="public">
+          <name>kDmaRequestMux0AlwaysOn58</name>
+          <initializer>= 58|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMAMUX Always Enabled slot. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600ae23bc92f3686df7c3ed576e6be5dc84a" prot="public">
+          <name>kDmaRequestMux0AlwaysOn59</name>
+          <initializer>= 59|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMAMUX Always Enabled slot. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a9c0feedbdd307e2ecf1b118f9aa29b44" prot="public">
+          <name>kDmaRequestMux0AlwaysOn60</name>
+          <initializer>= 60|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMAMUX Always Enabled slot. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a47ed5bdb2a57ea0b87fbf4ead12e6513" prot="public">
+          <name>kDmaRequestMux0AlwaysOn61</name>
+          <initializer>= 61|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMAMUX Always Enabled slot. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600aecd9228b52a4bf0f713213ce67d2610c" prot="public">
+          <name>kDmaRequestMux0AlwaysOn62</name>
+          <initializer>= 62|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMAMUX Always Enabled slot. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__edma__request_1ggafd16b7227cfdebb996c941d293ddd600a38ed8923b04a5e9c07be7bac63a168cb" prot="public">
+          <name>kDmaRequestMux0AlwaysOn63</name>
+          <initializer>= 63|0x100U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMAMUX Always Enabled slot. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Structure for the DMA hardware request. </para>        </briefdescription>
+        <detaileddescription>
+<para>Defines the structure for the DMA hardware request collections. The user can configure the hardware request into DMAMUX to trigger the DMA transfer accordingly. The index of the hardware request varies according to the to SoC. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="328" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="327" bodyend="395"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__edma__request_1ga87fac76863c6c941e6363236dde6f58e" prot="public" static="no">
+        <type>enum <ref refid="group__edma__request_1gafd16b7227cfdebb996c941d293ddd600" kindref="member">_dma_request_source</ref></type>
+        <definition>typedef enum _dma_request_source  dma_request_source_t</definition>
+        <argsstring></argsstring>
+        <name>dma_request_source_t</name>
+        <briefdescription>
+<para>Structure for the DMA hardware request. </para>        </briefdescription>
+        <detaileddescription>
+<para>Defines the structure for the DMA hardware request collections. The user can configure the hardware request into DMAMUX to trigger the DMA transfer accordingly. The index of the hardware request varies according to the to SoC. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="395" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Mapping Information </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

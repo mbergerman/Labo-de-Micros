@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_p_m_c___type" kind="struct" language="C++" prot="public">
+    <compoundname>PMC_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga183606de7c919c44520d5625860eaebd" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t LVDSC1</definition>
+        <argsstring></argsstring>
+        <name>LVDSC1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Low Voltage Detect Status And Control 1 register, offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8804" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8804" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga22e5df8ec02f6f9fb1aae7aab10f7ac6" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t LVDSC2</definition>
+        <argsstring></argsstring>
+        <name>LVDSC2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Low Voltage Detect Status And Control 2 register, offset: 0x1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8805" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8805" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gac2fc2acedfe2248d41dfbaaccd2a582e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t REGSC</definition>
+        <argsstring></argsstring>
+        <name>REGSC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Regulator Status And Control register, offset: 0x2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8806" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8806" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>PMC - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="8803" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8803" bodyend="8807"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga183606de7c919c44520d5625860eaebd" prot="public" virt="non-virtual"><scope>PMC_Type</scope><name>LVDSC1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga22e5df8ec02f6f9fb1aae7aab10f7ac6" prot="public" virt="non-virtual"><scope>PMC_Type</scope><name>LVDSC2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gac2fc2acedfe2248d41dfbaaccd2a582e" prot="public" virt="non-virtual"><scope>PMC_Type</scope><name>REGSC</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

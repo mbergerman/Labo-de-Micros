@@ -1,0 +1,315 @@
+.TH "RCM_Register_Masks" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RCM_Register_Masks
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCM_BASE\fP   (0x4007F000u)"
+.br
+.ti -1c
+.RI "#define \fBRCM\fP   ((\fBRCM_Type\fP *)\fBRCM_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCM_BASE_ADDRS\fP   { \fBRCM_BASE\fP }"
+.br
+.ti -1c
+.RI "#define \fBRCM_BASE_PTRS\fP   { \fBRCM\fP }"
+.br
+.in -1c
+.SS "SRS0 - System Reset Status Register 0"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCM_SRS0_WAKEUP_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_WAKEUP_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_WAKEUP\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_WAKEUP_SHIFT\fP)) & \fBRCM_SRS0_WAKEUP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_LVD_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_LVD_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_LVD\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_LVD_SHIFT\fP)) & \fBRCM_SRS0_LVD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_LOC_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_LOC_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_LOC\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_LOC_SHIFT\fP)) & \fBRCM_SRS0_LOC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_LOL_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_LOL_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_LOL\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_LOL_SHIFT\fP)) & \fBRCM_SRS0_LOL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_WDOG_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_WDOG_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_WDOG\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_WDOG_SHIFT\fP)) & \fBRCM_SRS0_WDOG_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_PIN_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_PIN_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_PIN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_PIN_SHIFT\fP)) & \fBRCM_SRS0_PIN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_POR_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_POR_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS0_POR\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_POR_SHIFT\fP)) & \fBRCM_SRS0_POR_MASK\fP)"
+.br
+.in -1c
+.SS "SRS1 - System Reset Status Register 1"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCM_SRS1_JTAG_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_JTAG_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_JTAG\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS1_JTAG_SHIFT\fP)) & \fBRCM_SRS1_JTAG_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_LOCKUP_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_LOCKUP_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_LOCKUP\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS1_LOCKUP_SHIFT\fP)) & \fBRCM_SRS1_LOCKUP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_SW_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_SW_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_SW\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS1_SW_SHIFT\fP)) & \fBRCM_SRS1_SW_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_MDM_AP_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_MDM_AP_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_MDM_AP\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS1_MDM_AP_SHIFT\fP)) & \fBRCM_SRS1_MDM_AP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_EZPT_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_EZPT_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_EZPT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS1_EZPT_SHIFT\fP)) & \fBRCM_SRS1_EZPT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_SACKERR_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_SACKERR_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_SRS1_SACKERR\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS1_SACKERR_SHIFT\fP)) & \fBRCM_SRS1_SACKERR_MASK\fP)"
+.br
+.in -1c
+.SS "RPFC - Reset Pin Filter Control register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCM_RPFC_RSTFLTSRW_MASK\fP   (0x3U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_RPFC_RSTFLTSRW_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_RPFC_RSTFLTSRW\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_RPFC_RSTFLTSRW_SHIFT\fP)) & \fBRCM_RPFC_RSTFLTSRW_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBRCM_RPFC_RSTFLTSS_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_RPFC_RSTFLTSS_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_RPFC_RSTFLTSS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_RPFC_RSTFLTSS_SHIFT\fP)) & \fBRCM_RPFC_RSTFLTSS_MASK\fP)"
+.br
+.in -1c
+.SS "RPFW - Reset Pin Filter Width register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCM_RPFW_RSTFLTSEL_MASK\fP   (0x1FU)"
+.br
+.ti -1c
+.RI "#define \fBRCM_RPFW_RSTFLTSEL_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_RPFW_RSTFLTSEL\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_RPFW_RSTFLTSEL_SHIFT\fP)) & \fBRCM_RPFW_RSTFLTSEL_MASK\fP)"
+.br
+.in -1c
+.SS "MR - Mode Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRCM_MR_EZP_MS_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_MR_EZP_MS_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBRCM_MR_EZP_MS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_MR_EZP_MS_SHIFT\fP)) & \fBRCM_MR_EZP_MS_MASK\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCM   ((\fBRCM_Type\fP *)\fBRCM_BASE\fP)"
+Peripheral RCM base pointer 
+.SS "#define RCM_BASE   (0x4007F000u)"
+Peripheral RCM base address 
+.SS "#define RCM_BASE_ADDRS   { \fBRCM_BASE\fP }"
+Array initializer of RCM peripheral base addresses 
+.SS "#define RCM_BASE_PTRS   { \fBRCM\fP }"
+Array initializer of RCM peripheral base pointers 
+.SS "#define RCM_MR_EZP_MS(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_MR_EZP_MS_SHIFT\fP)) & \fBRCM_MR_EZP_MS_MASK\fP)"
+
+.SS "#define RCM_MR_EZP_MS_MASK   (0x2U)"
+
+.SS "#define RCM_MR_EZP_MS_SHIFT   (1U)"
+
+.SS "#define RCM_RPFC_RSTFLTSRW(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_RPFC_RSTFLTSRW_SHIFT\fP)) & \fBRCM_RPFC_RSTFLTSRW_MASK\fP)"
+
+.SS "#define RCM_RPFC_RSTFLTSRW_MASK   (0x3U)"
+
+.SS "#define RCM_RPFC_RSTFLTSRW_SHIFT   (0U)"
+
+.SS "#define RCM_RPFC_RSTFLTSS(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_RPFC_RSTFLTSS_SHIFT\fP)) & \fBRCM_RPFC_RSTFLTSS_MASK\fP)"
+
+.SS "#define RCM_RPFC_RSTFLTSS_MASK   (0x4U)"
+
+.SS "#define RCM_RPFC_RSTFLTSS_SHIFT   (2U)"
+
+.SS "#define RCM_RPFW_RSTFLTSEL(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_RPFW_RSTFLTSEL_SHIFT\fP)) & \fBRCM_RPFW_RSTFLTSEL_MASK\fP)"
+
+.SS "#define RCM_RPFW_RSTFLTSEL_MASK   (0x1FU)"
+
+.SS "#define RCM_RPFW_RSTFLTSEL_SHIFT   (0U)"
+
+.SS "#define RCM_SRS0_LOC(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_LOC_SHIFT\fP)) & \fBRCM_SRS0_LOC_MASK\fP)"
+
+.SS "#define RCM_SRS0_LOC_MASK   (0x4U)"
+
+.SS "#define RCM_SRS0_LOC_SHIFT   (2U)"
+
+.SS "#define RCM_SRS0_LOL(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_LOL_SHIFT\fP)) & \fBRCM_SRS0_LOL_MASK\fP)"
+
+.SS "#define RCM_SRS0_LOL_MASK   (0x8U)"
+
+.SS "#define RCM_SRS0_LOL_SHIFT   (3U)"
+
+.SS "#define RCM_SRS0_LVD(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_LVD_SHIFT\fP)) & \fBRCM_SRS0_LVD_MASK\fP)"
+
+.SS "#define RCM_SRS0_LVD_MASK   (0x2U)"
+
+.SS "#define RCM_SRS0_LVD_SHIFT   (1U)"
+
+.SS "#define RCM_SRS0_PIN(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_PIN_SHIFT\fP)) & \fBRCM_SRS0_PIN_MASK\fP)"
+
+.SS "#define RCM_SRS0_PIN_MASK   (0x40U)"
+
+.SS "#define RCM_SRS0_PIN_SHIFT   (6U)"
+
+.SS "#define RCM_SRS0_POR(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_POR_SHIFT\fP)) & \fBRCM_SRS0_POR_MASK\fP)"
+
+.SS "#define RCM_SRS0_POR_MASK   (0x80U)"
+
+.SS "#define RCM_SRS0_POR_SHIFT   (7U)"
+
+.SS "#define RCM_SRS0_WAKEUP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_WAKEUP_SHIFT\fP)) & \fBRCM_SRS0_WAKEUP_MASK\fP)"
+
+.SS "#define RCM_SRS0_WAKEUP_MASK   (0x1U)"
+
+.SS "#define RCM_SRS0_WAKEUP_SHIFT   (0U)"
+
+.SS "#define RCM_SRS0_WDOG(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS0_WDOG_SHIFT\fP)) & \fBRCM_SRS0_WDOG_MASK\fP)"
+
+.SS "#define RCM_SRS0_WDOG_MASK   (0x20U)"
+
+.SS "#define RCM_SRS0_WDOG_SHIFT   (5U)"
+
+.SS "#define RCM_SRS1_EZPT(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS1_EZPT_SHIFT\fP)) & \fBRCM_SRS1_EZPT_MASK\fP)"
+
+.SS "#define RCM_SRS1_EZPT_MASK   (0x10U)"
+
+.SS "#define RCM_SRS1_EZPT_SHIFT   (4U)"
+
+.SS "#define RCM_SRS1_JTAG(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS1_JTAG_SHIFT\fP)) & \fBRCM_SRS1_JTAG_MASK\fP)"
+
+.SS "#define RCM_SRS1_JTAG_MASK   (0x1U)"
+
+.SS "#define RCM_SRS1_JTAG_SHIFT   (0U)"
+
+.SS "#define RCM_SRS1_LOCKUP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS1_LOCKUP_SHIFT\fP)) & \fBRCM_SRS1_LOCKUP_MASK\fP)"
+
+.SS "#define RCM_SRS1_LOCKUP_MASK   (0x2U)"
+
+.SS "#define RCM_SRS1_LOCKUP_SHIFT   (1U)"
+
+.SS "#define RCM_SRS1_MDM_AP(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS1_MDM_AP_SHIFT\fP)) & \fBRCM_SRS1_MDM_AP_MASK\fP)"
+
+.SS "#define RCM_SRS1_MDM_AP_MASK   (0x8U)"
+
+.SS "#define RCM_SRS1_MDM_AP_SHIFT   (3U)"
+
+.SS "#define RCM_SRS1_SACKERR(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS1_SACKERR_SHIFT\fP)) & \fBRCM_SRS1_SACKERR_MASK\fP)"
+
+.SS "#define RCM_SRS1_SACKERR_MASK   (0x20U)"
+
+.SS "#define RCM_SRS1_SACKERR_SHIFT   (5U)"
+
+.SS "#define RCM_SRS1_SW(x)   (((uint8_t)(((uint8_t)(x)) << \fBRCM_SRS1_SW_SHIFT\fP)) & \fBRCM_SRS1_SW_MASK\fP)"
+
+.SS "#define RCM_SRS1_SW_MASK   (0x4U)"
+
+.SS "#define RCM_SRS1_SW_SHIFT   (2U)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

@@ -1,7 +1,7 @@
 /***************************************************************************//**
-  @file     gpio.h
-  @brief    Simple GPIO Pin services, similar to Arduino
-  @author   Nicolás Magliola
+  @file     PDRV_GPIO.h
+  @brief    GPIO driver
+  @author   Grupo 1
  ******************************************************************************/
 
 #ifndef _GPIO_H_

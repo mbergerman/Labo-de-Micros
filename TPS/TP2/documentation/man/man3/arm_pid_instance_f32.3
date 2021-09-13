@@ -1,0 +1,59 @@
+.TH "arm_pid_instance_f32" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arm_pid_instance_f32 \- Instance structure for the floating-point PID Control\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arm_math\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBfloat32_t\fP \fBA0\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP \fBA1\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP \fBA2\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP \fBstate\fP [3]"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP \fBKp\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP \fBKi\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP \fBKd\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Instance structure for the floating-point PID Control\&. 
+.SH "Field Documentation"
+.PP 
+.SS "\fBfloat32_t\fP A0"
+The derived gain, A0 = Kp + Ki + Kd \&. 
+.SS "\fBfloat32_t\fP A1"
+The derived gain, A1 = -Kp - 2Kd\&. 
+.SS "\fBfloat32_t\fP A2"
+The derived gain, A2 = Kd \&. 
+.SS "\fBfloat32_t\fP Kd"
+The derivative gain\&. 
+.SS "\fBfloat32_t\fP Ki"
+The integral gain\&. 
+.SS "\fBfloat32_t\fP Kp"
+The proportional gain\&. 
+.SS "\fBfloat32_t\fP state[3]"
+The state array of length 3\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

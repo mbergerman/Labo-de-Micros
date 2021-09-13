@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="hardware_8c" kind="file" language="C++">
+    <compoundname>hardware.c</compoundname>
+    <includes refid="hardware_8h" local="yes">hardware.h</includes>
+    <incdepgraph>
+      <node id="305">
+        <label>stdbool.h</label>
+      </node>
+      <node id="302">
+        <label>SDK/startup/hardware.c</label>
+        <link refid="hardware_8c"/>
+        <childnode refid="303" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>hardware.h</label>
+        <link refid="hardware_8h"/>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>cmsis_version.h</label>
+        <link refid="cmsis__version_8h"/>
+      </node>
+      <node id="306">
+        <label>fsl_device_registers.h</label>
+        <link refid="fsl__device__registers_8h"/>
+      </node>
+      <node id="304">
+        <label>stdint.h</label>
+      </node>
+      <node id="307">
+        <label>core_cm4.h</label>
+        <link refid="core__cm4_8h"/>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>cmsis_compiler.h</label>
+        <link refid="cmsis__compiler_8h"/>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="hardware_8c_1ae8dd834efebeb79d6c13beeb5c8e6281" prot="public" static="yes" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t __LDM_interruptDisableCount</definition>
+        <argsstring></argsstring>
+        <name>__LDM_interruptDisableCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/startup/hardware.c" line="10" column="1" bodyfile="SDK/startup/hardware.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="hardware_8c_1afb18d946ab7a803c5bce6037c6267d95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hw_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>hw_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/startup/hardware.c" line="12" column="1" bodyfile="SDK/startup/hardware.c" bodystart="12" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="hardware_8c_1a923031fe812af11c75e713fb134023ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hw_EnableInterrupts</definition>
+        <argsstring>(void)</argsstring>
+        <name>hw_EnableInterrupts</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/startup/hardware.c" line="42" column="1" bodyfile="SDK/startup/hardware.c" bodystart="42" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="hardware_8c_1a9be7f02fe94da034fd06e7a79b69abb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hw_DisableInterrupts</definition>
+        <argsstring>(void)</argsstring>
+        <name>hw_DisableInterrupts</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/startup/hardware.c" line="52" column="1" bodyfile="SDK/startup/hardware.c" bodystart="52" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>system.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>May<sp/>1,<sp/>2015</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>Juan<sp/>Pablo<sp/>VEGA<sp/>-<sp/>Laboratorio<sp/>de<sp/>Microprocesadores</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="hardware_8h" kindref="compound">hardware.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>__LDM_interruptDisableCount<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hardware_8c_1afb18d946ab7a803c5bce6037c6267d95" kindref="member">hw_Init</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" kindref="member">SCB</ref>-&gt;CPACR<sp/>|=<sp/>((3UL<sp/>&lt;&lt;<sp/>10*2)<sp/>|<sp/>(3UL<sp/>&lt;&lt;<sp/>11*2));<sp/></highlight><highlight class="comment">/*<sp/>set<sp/>CP10,<sp/>CP11<sp/>for<sp/>Full<sp/>Access<sp/>to<sp/>the<sp/>FPU*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___w_d_o_g___register___masks_1gab938901a5fa5443253fc293ebd0399e3" kindref="member">WDOG</ref>-&gt;UNLOCK<sp/><sp/>=<sp/><ref refid="group___w_d_o_g___register___masks_1gad96dca67e74ad54ec68edec38214cbc6" kindref="member">WDOG_UNLOCK_WDOGUNLOCK</ref>(0xC520);<sp/></highlight><highlight class="comment">/*<sp/>Key<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___w_d_o_g___register___masks_1gab938901a5fa5443253fc293ebd0399e3" kindref="member">WDOG</ref>-&gt;UNLOCK<sp/><sp/>=<sp/><ref refid="group___w_d_o_g___register___masks_1gad96dca67e74ad54ec68edec38214cbc6" kindref="member">WDOG_UNLOCK_WDOGUNLOCK</ref>(0xD928);<sp/></highlight><highlight class="comment">/*<sp/>Key<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___w_d_o_g___register___masks_1gab938901a5fa5443253fc293ebd0399e3" kindref="member">WDOG</ref>-&gt;STCTRLH<sp/>=<sp/><ref refid="group___w_d_o_g___register___masks_1gaf524a1ad1f811741b27f29836d6137ee" kindref="member">WDOG_STCTRLH_ALLOWUPDATE_MASK</ref><sp/>|<sp/><ref refid="group___w_d_o_g___register___masks_1gaf3ab71b185905c077887baa062ad6664" kindref="member">WDOG_STCTRLH_CLKSRC_MASK</ref><sp/>|<sp/>0x0100U;<sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>WDOG<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___p_m_c___register___masks_1ga979c6d379c67bc2f3e8eb6efcb509f69" kindref="member">PMC</ref>-&gt;REGSC<sp/>|=<sp/><ref refid="group___p_m_c___register___masks_1ga35ced6f0f133b2d5892bdcba3e0b2832" kindref="member">PMC_REGSC_ACKISO_MASK</ref>;<sp/></highlight><highlight class="comment">/*<sp/>Release<sp/>hold<sp/>with<sp/>ACKISO:<sp/><sp/>Only<sp/>has<sp/>an<sp/>effect<sp/>if<sp/>recovering<sp/>from<sp/>VLLSx.*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_i_m___register___masks_1ga3dd2f4c4bfb41778902b4b5350143d9e" kindref="member">SIM</ref>-&gt;CLKDIV1<sp/>=<sp/><ref refid="group___s_i_m___register___masks_1ga288f4756a2240c6242f28335cc21a0a8" kindref="member">SIM_CLKDIV1_OUTDIV1</ref>(0x00)<sp/>|<sp/><ref refid="group___s_i_m___register___masks_1gacf3906094a4539818d91cfda55ae2141" kindref="member">SIM_CLKDIV1_OUTDIV2</ref>(0x01)<sp/>|<sp/><ref refid="group___s_i_m___register___masks_1gaeccf89240795d88d055b49719b820c14" kindref="member">SIM_CLKDIV1_OUTDIV3</ref>(0x01)<sp/>|<sp/><ref refid="group___s_i_m___register___masks_1ga4e380b274f15fdde19e4fbd5c341a728" kindref="member">SIM_CLKDIV1_OUTDIV4</ref>(0x03);<sp/></highlight><highlight class="comment">/*<sp/>Core-System<sp/>=<sp/>100MHz,<sp/>Bus<sp/>=<sp/>50MHz,<sp/>FlexBus<sp/>=<sp/>50MHz,<sp/>Flash<sp/>=<sp/>25MHz<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_i_m___register___masks_1ga3dd2f4c4bfb41778902b4b5350143d9e" kindref="member">SIM</ref>-&gt;SOPT1<sp/>|=<sp/><ref refid="group___s_i_m___register___masks_1gaf89520e7506a3dec707983ab729aef08" kindref="member">SIM_SOPT1_OSC32KSEL</ref>(0x03);<sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>32<sp/>kHz<sp/>clock<sp/>source<sp/>(ERCLK32K)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_i_m___register___masks_1ga3dd2f4c4bfb41778902b4b5350143d9e" kindref="member">SIM</ref>-&gt;SOPT2<sp/>=<sp/><ref refid="group___s_i_m___register___masks_1gaa14141a225f9778babacbf3b90d0bae2" kindref="member">SIM_SOPT2_PLLFLLSEL_MASK</ref>;<sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>high<sp/>frequency<sp/>clock<sp/>source<sp/>(PLL)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_i_m___register___masks_1ga3dd2f4c4bfb41778902b4b5350143d9e" kindref="member">SIM</ref>-&gt;SCGC5<sp/>|=<sp/><ref refid="group___s_i_m___register___masks_1ga9c4853233394870202cccd7844fc8a56" kindref="member">SIM_SCGC5_PORTA_MASK</ref><sp/>|<sp/><ref refid="group___s_i_m___register___masks_1ga5509cf72c7508dd77f0a1a9e631943e8" kindref="member">SIM_SCGC5_PORTB_MASK</ref><sp/>|<sp/><ref refid="group___s_i_m___register___masks_1gaac31449d101ad0d05f2bed682571be35" kindref="member">SIM_SCGC5_PORTC_MASK</ref><sp/>|<sp/><ref refid="group___s_i_m___register___masks_1ga723a55222eb5f8fd25da5c956aa50e7b" kindref="member">SIM_SCGC5_PORTD_MASK</ref><sp/>|<sp/><ref refid="group___s_i_m___register___masks_1ga3d5e3e51d345fe424a4f24aa9ae73dc1" kindref="member">SIM_SCGC5_PORTE_MASK</ref>;<sp/></highlight><highlight class="comment">/*<sp/>All<sp/>PORTs<sp/>enabled<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___m_c_g___register___masks_1gad7ea2d93cafdbe9298ef1dd52be44f88" kindref="member">MCG</ref>-&gt;SC<sp/>=<sp/><ref refid="group___m_c_g___register___masks_1ga50a0225002267599fa7a2fc341fa783a" kindref="member">MCG_SC_FCRDIV</ref>(0x02);<sp/></highlight><highlight class="comment">/*<sp/>Fast<sp/>clock<sp/>internal<sp/>reference<sp/>divider<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___m_c_g___register___masks_1gad7ea2d93cafdbe9298ef1dd52be44f88" kindref="member">MCG</ref>-&gt;C2<sp/>=<sp/><ref refid="group___m_c_g___register___masks_1gaaca8c6b60b8c40403204e606565281d2" kindref="member">MCG_C2_RANGE</ref>(0x02);<sp/></highlight><highlight class="comment">/*<sp/>High<sp/>frequency<sp/>range<sp/>external<sp/>reference<sp/>selection<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___o_s_c___register___masks_1gac9fd21467d416baa7f6aa4c175f8c6b5" kindref="member">OSC</ref>-&gt;CR<sp/>=<sp/><ref refid="group___o_s_c___register___masks_1gab96140627de270278cbdfc81fbef63fc" kindref="member">OSC_CR_ERCLKEN_MASK</ref>;<sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>external<sp/>reference<sp/>clock<sp/>(OSCERCLK)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___m_c_g___register___masks_1gad7ea2d93cafdbe9298ef1dd52be44f88" kindref="member">MCG</ref>-&gt;C7<sp/>=<sp/><ref refid="group___m_c_g___register___masks_1gac1a1e06d2189b74b5587b53d3104cb4a" kindref="member">MCG_C7_OSCSEL</ref>(0x00);<sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>FLL<sp/>external<sp/>reference<sp/>clock<sp/>(OSCCLK0)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___m_c_g___register___masks_1gad7ea2d93cafdbe9298ef1dd52be44f88" kindref="member">MCG</ref>-&gt;C1<sp/>=<sp/><ref refid="group___m_c_g___register___masks_1gaffe61ac58c90dfaebbd4748c0dea558c" kindref="member">MCG_C1_CLKS</ref>(0x02)<sp/>|<sp/><ref refid="group___m_c_g___register___masks_1ga39519f6e6a3b433988eca107d0e7d460" kindref="member">MCG_C1_FRDIV</ref>(0x07);<sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>external<sp/>reference<sp/>as<sp/>source,<sp/>FLL<sp/>external<sp/>reference<sp/>divider<sp/>(PBE<sp/>mode)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((<ref refid="group___m_c_g___register___masks_1gad7ea2d93cafdbe9298ef1dd52be44f88" kindref="member">MCG</ref>-&gt;S<sp/>&amp;<sp/><ref refid="group___m_c_g___register___masks_1ga5bf822a90d9c1e67d5297420157e1dd0" kindref="member">MCG_S_IREFST_MASK</ref>)<sp/>!=<sp/>0x00U);<sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>external<sp/>reference<sp/>validation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___m_c_g___register___masks_1gad7ea2d93cafdbe9298ef1dd52be44f88" kindref="member">MCG</ref>-&gt;C5<sp/>=<sp/><ref refid="group___m_c_g___register___masks_1gaff29a787086eaba9ef46f4e873d83a54" kindref="member">MCG_C5_PRDIV0</ref>(0x0F);<sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>PLL<sp/>divider<sp/>while<sp/>PLL<sp/>turned<sp/>off<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___m_c_g___register___masks_1gad7ea2d93cafdbe9298ef1dd52be44f88" kindref="member">MCG</ref>-&gt;C6<sp/>=<sp/><ref refid="group___m_c_g___register___masks_1ga66a1dfdde86a9c165d7bdec17c77578f" kindref="member">MCG_C6_PLLS_MASK</ref><sp/>|<sp/><ref refid="group___m_c_g___register___masks_1ga50b2068270153c3013b4e0ac2256fbfd" kindref="member">MCG_C6_VDIV0</ref>(0x08);<sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>PLL<sp/>multiplier<sp/>and<sp/>PLL<sp/>select<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((<ref refid="group___m_c_g___register___masks_1gad7ea2d93cafdbe9298ef1dd52be44f88" kindref="member">MCG</ref>-&gt;S<sp/>&amp;<sp/><ref refid="group___m_c_g___register___masks_1ga6cb486757d45c5211baa3b130e720b97" kindref="member">MCG_S_LOCK0_MASK</ref>)<sp/>==<sp/>0x00U);<sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>until<sp/>PLL<sp/>is<sp/>locked*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___m_c_g___register___masks_1gad7ea2d93cafdbe9298ef1dd52be44f88" kindref="member">MCG</ref>-&gt;C1<sp/>&amp;=<sp/>~<ref refid="group___m_c_g___register___masks_1gae9a1db29d56ef219e4df3dc9d945b08e" kindref="member">MCG_C1_CLKS_MASK</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((<ref refid="group___m_c_g___register___masks_1gad7ea2d93cafdbe9298ef1dd52be44f88" kindref="member">MCG</ref>-&gt;S<sp/>&amp;<sp/><ref refid="group___m_c_g___register___masks_1gaf43507c78cdda211a04b5ae0509edb2e" kindref="member">MCG_S_CLKST_MASK</ref>)<sp/>!=<sp/>0x0CU);<sp/></highlight><highlight class="comment">/*<sp/>Wait<sp/>until<sp/>output<sp/>of<sp/>the<sp/>PLL<sp/>is<sp/>selected<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hardware_8c_1a923031fe812af11c75e713fb134023ac" kindref="member">hw_EnableInterrupts</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(__LDM_interruptDisableCount<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__LDM_interruptDisableCount--;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(__LDM_interruptDisableCount<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1gae84bf4e95944e61937f4ed2453e5ef23" kindref="member">__enable_irq</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hardware_8c_1a9be7f02fe94da034fd06e7a79b69abb4" kindref="member">hw_DisableInterrupts</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___c_m_s_i_s___core___reg_acc_functions_1ga2299877e4ba3e162ca9dbabd6e0abef6" kindref="member">__disable_irq</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>__LDM_interruptDisableCount++;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="SDK/startup/hardware.c"/>
+  </compounddef>
+</doxygen>

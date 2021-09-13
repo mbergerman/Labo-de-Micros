@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___d_m_a_m_u_x___peripheral___access___layer" kind="group">
+    <compoundname>DMAMUX_Peripheral_Access_Layer</compoundname>
+    <title>DMAMUX Peripheral Access Layer</title>
+    <innerclass refid="struct_d_m_a_m_u_x___type" prot="public">DMAMUX_Type</innerclass>
+    <innergroup refid="group___d_m_a_m_u_x___register___masks">DMAMUX Register Masks</innergroup>
+    <innergroup refid="group___e_n_e_t___peripheral___access___layer">ENET Peripheral Access Layer</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

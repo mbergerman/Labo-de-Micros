@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___e_w_m___peripheral___access___layer" kind="group">
+    <compoundname>EWM_Peripheral_Access_Layer</compoundname>
+    <title>EWM Peripheral Access Layer</title>
+    <innerclass refid="struct_e_w_m___type" prot="public">EWM_Type</innerclass>
+    <innergroup refid="group___e_w_m___register___masks">EWM Register Masks</innergroup>
+    <innergroup refid="group___f_b___peripheral___access___layer">FB Peripheral Access Layer</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

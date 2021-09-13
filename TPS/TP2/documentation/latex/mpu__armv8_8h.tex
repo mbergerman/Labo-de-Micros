@@ -1,0 +1,421 @@
+\hypertarget{mpu__armv8_8h}{}\section{S\+D\+K/\+C\+M\+S\+I\+S/mpu\+\_\+armv8.h File Reference}
+\label{mpu__armv8_8h}\index{S\+D\+K/\+C\+M\+S\+I\+S/mpu\+\_\+armv8.\+h@{S\+D\+K/\+C\+M\+S\+I\+S/mpu\+\_\+armv8.\+h}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Region\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_a0b51a6c9e4d60a1d2f0d80ddd43e790c}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+R\+M\+V8\+\_\+H}}
+\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_ab4bfac6284dc050dc6fa6aeb8e954c2c}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+CE}}~( 0\+U )
+\begin{DoxyCompactList}\small\item\em Attribute for device memory (outer only) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_a03266f9660485693eb1baec6ba255ab2}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+N\+\_\+\+C\+A\+C\+H\+E\+A\+B\+LE}}~( 4\+U )
+\begin{DoxyCompactList}\small\item\em Attribute for non-\/cacheable, normal memory. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_ac2f1c567950e3785d75773362b525390}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+}}(NT,  WB,  RA,  WA)~(((NT \& 1\+U) $<$$<$ 3\+U) $\vert$ ((\+W\+B \& 1\+U) $<$$<$ 2\+U) $\vert$ ((\+R\+A \& 1\+U) $<$$<$ 1\+U) $\vert$ (\+W\+A \& 1\+U))
+\begin{DoxyCompactList}\small\item\em Attribute for normal memory (outer and inner) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_abfa9ae279357044cf5b74e77af22a686}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RnE}}~(0\+U)
+\begin{DoxyCompactList}\small\item\em Device memory type non Gathering, non Re-\/ordering, non Early Write Acknowledgement. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_a6e08ae44fab85e03fea96ae6a5fcdfb0}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RE}}~(1\+U)
+\begin{DoxyCompactList}\small\item\em Device memory type non Gathering, non Re-\/ordering, Early Write Acknowledgement. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_adcc9977aabb4dc7177d30cbbac1b53d1}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+G\+RE}}~(2\+U)
+\begin{DoxyCompactList}\small\item\em Device memory type non Gathering, Re-\/ordering, Early Write Acknowledgement. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_a496bcd6a2bbd038d8935049fec9d0fda}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+G\+RE}}~(3\+U)
+\begin{DoxyCompactList}\small\item\em Device memory type Gathering, Re-\/ordering, Early Write Acknowledgement. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_a2c465cc9429b8233bcb9cd7cbef0e54c}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+TR}}(O,  I)~(((O \& 0x\+F\+U) $<$$<$ 4\+U) $\vert$ (((\+O \& 0x\+F\+U) != 0\+U) ? (\+I \& 0x\+F\+U) \+: ((\+I \& 0x3\+U) $<$$<$ 2\+U)))
+\begin{DoxyCompactList}\small\item\em Memory Attribute. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_a3d0f688198289f72264f73cf72a742e8}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+N\+ON}}~(0\+U)
+\begin{DoxyCompactList}\small\item\em Normal memory non-\/shareable. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_ac4fddbdb9e1350bce6906de33c1fd500}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+O\+U\+T\+ER}}~(2\+U)
+\begin{DoxyCompactList}\small\item\em Normal memory outer shareable. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_a73c70127f24f34781ad463cbe51d8f6b}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+I\+N\+N\+ER}}~(3\+U)
+\begin{DoxyCompactList}\small\item\em Normal memory inner shareable. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_a81b2aa3fb55cdd5feadff02da10d391b}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+P\+\_\+}}(RO,  NP)~(((RO \& 1\+U) $<$$<$ 1\+U) $\vert$ (\+N\+P \& 1\+U))
+\begin{DoxyCompactList}\small\item\em Memory access permissions. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_afe39c2f98058bcac7e7e0501e64e7a9d}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+B\+AR}}(B\+A\+SE,  SH,  RO,  NP,  XN)
+\begin{DoxyCompactList}\small\item\em Region Base Address Register value. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mpu__armv8_8h_aeaaa071276ba7956944e6c3dc05d677e}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+L\+AR}}(L\+I\+M\+IT,  I\+DX)
+\begin{DoxyCompactList}\small\item\em Region Limit Address Register value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void \mbox{\hyperlink{mpu__armv8_8h_a5a3f40314553baccdeea551f86d9a997}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Enable}} (uint32\+\_\+t M\+P\+U\+\_\+\+Control)
+\item 
+\mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void \mbox{\hyperlink{mpu__armv8_8h_a61814eba4652a0fdfb76bbe222086327}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Disable}} (void)
+\item 
+\mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void \mbox{\hyperlink{mpu__armv8_8h_a1799413f08a157d636a1491371c15ce2}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr\+Ex}} (M\+P\+U\+\_\+\+Type $\ast$mpu, uint8\+\_\+t idx, uint8\+\_\+t attr)
+\item 
+\mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void \mbox{\hyperlink{mpu__armv8_8h_ab5b3c0a53d19c09a5550f1d9071ae65c}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr}} (uint8\+\_\+t idx, uint8\+\_\+t attr)
+\item 
+\mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void \mbox{\hyperlink{mpu__armv8_8h_a01fa1151c9ec0ba5de76f908c0999316}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region\+Ex}} (M\+P\+U\+\_\+\+Type $\ast$mpu, uint32\+\_\+t rnr)
+\item 
+\mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void \mbox{\hyperlink{mpu__armv8_8h_a9dcb0afddf4ac351f33f3c7a5169c62c}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region}} (uint32\+\_\+t rnr)
+\item 
+\mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void \mbox{\hyperlink{mpu__armv8_8h_a3d50ba8546252bea959e45c8fdf16993}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region\+Ex}} (M\+P\+U\+\_\+\+Type $\ast$mpu, uint32\+\_\+t rnr, uint32\+\_\+t rbar, uint32\+\_\+t rlar)
+\item 
+\mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void \mbox{\hyperlink{mpu__armv8_8h_a6d7f220015c070c0e469948c1775ee3d}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region}} (uint32\+\_\+t rnr, uint32\+\_\+t rbar, uint32\+\_\+t rlar)
+\item 
+\mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void \mbox{\hyperlink{mpu__armv8_8h_a71ca7368cfeccb262823726de9985aa2}{ordered\+Cpy}} (volatile uint32\+\_\+t $\ast$dst, const uint32\+\_\+t $\ast$\mbox{\hyperlink{cmsis__iccarm_8h_a378ac21329d33f561f90265eef89f564}{\+\_\+\+\_\+\+R\+E\+S\+T\+R\+I\+CT}} src, uint32\+\_\+t len)
+\item 
+\mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void \mbox{\hyperlink{mpu__armv8_8h_ab6094419f2abd678f1f3b121cd115049}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load\+Ex}} (M\+P\+U\+\_\+\+Type $\ast$mpu, uint32\+\_\+t rnr, \mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Region\+\_\+t}} const $\ast$table, uint32\+\_\+t cnt)
+\item 
+\mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void \mbox{\hyperlink{mpu__armv8_8h_aca76614e3091c7324aa9d60e634621bf}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load}} (uint32\+\_\+t rnr, \mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Region\+\_\+t}} const $\ast$table, uint32\+\_\+t cnt)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mpu__armv8_8h_a81b2aa3fb55cdd5feadff02da10d391b}\label{mpu__armv8_8h_a81b2aa3fb55cdd5feadff02da10d391b}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+P\+\_\+@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+P\+\_\+}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+P\+\_\+@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+P\+\_\+}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+P\+\_\+}{ARM\_MPU\_AP\_}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+P\+\_\+(\begin{DoxyParamCaption}\item[{}]{RO,  }\item[{}]{NP }\end{DoxyParamCaption})~(((RO \& 1\+U) $<$$<$ 1\+U) $\vert$ (\+N\+P \& 1\+U))}
+
+
+
+Memory access permissions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em RO} & Read-\/\+Only\+: Set to 1 for read-\/only memory. \\
+\hline
+{\em NP} & Non-\/\+Privileged\+: Set to 1 for non-\/privileged memory. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_a0b51a6c9e4d60a1d2f0d80ddd43e790c}\label{mpu__armv8_8h_a0b51a6c9e4d60a1d2f0d80ddd43e790c}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+R\+M\+V8\+\_\+H@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+R\+M\+V8\+\_\+H}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+R\+M\+V8\+\_\+H@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+R\+M\+V8\+\_\+H}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+R\+M\+V8\+\_\+H}{ARM\_MPU\_ARMV8\_H}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+R\+M\+V8\+\_\+H}
+
+\mbox{\Hypertarget{mpu__armv8_8h_a2c465cc9429b8233bcb9cd7cbef0e54c}\label{mpu__armv8_8h_a2c465cc9429b8233bcb9cd7cbef0e54c}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+TR@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+TR}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+TR@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+TR}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+TR}{ARM\_MPU\_ATTR}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+TR(\begin{DoxyParamCaption}\item[{}]{O,  }\item[{}]{I }\end{DoxyParamCaption})~(((O \& 0x\+F\+U) $<$$<$ 4\+U) $\vert$ (((\+O \& 0x\+F\+U) != 0\+U) ? (\+I \& 0x\+F\+U) \+: ((\+I \& 0x3\+U) $<$$<$ 2\+U)))}
+
+
+
+Memory Attribute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em O} & Outer memory attributes \\
+\hline
+{\em I} & O == A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+CE\+: Device memory attributes, else\+: Inner memory attributes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_ab4bfac6284dc050dc6fa6aeb8e954c2c}\label{mpu__armv8_8h_ab4bfac6284dc050dc6fa6aeb8e954c2c}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+CE@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+CE}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+CE@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+CE}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+CE}{ARM\_MPU\_ATTR\_DEVICE}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+CE~( 0\+U )}
+
+
+
+Attribute for device memory (outer only) 
+
+\mbox{\Hypertarget{mpu__armv8_8h_a496bcd6a2bbd038d8935049fec9d0fda}\label{mpu__armv8_8h_a496bcd6a2bbd038d8935049fec9d0fda}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+G\+RE@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+G\+RE}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+G\+RE@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+G\+RE}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+G\+RE}{ARM\_MPU\_ATTR\_DEVICE\_GRE}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+G\+RE~(3\+U)}
+
+
+
+Device memory type Gathering, Re-\/ordering, Early Write Acknowledgement. 
+
+\mbox{\Hypertarget{mpu__armv8_8h_a6e08ae44fab85e03fea96ae6a5fcdfb0}\label{mpu__armv8_8h_a6e08ae44fab85e03fea96ae6a5fcdfb0}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RE@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RE}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RE@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RE}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RE}{ARM\_MPU\_ATTR\_DEVICE\_nGnRE}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RE~(1\+U)}
+
+
+
+Device memory type non Gathering, non Re-\/ordering, Early Write Acknowledgement. 
+
+\mbox{\Hypertarget{mpu__armv8_8h_abfa9ae279357044cf5b74e77af22a686}\label{mpu__armv8_8h_abfa9ae279357044cf5b74e77af22a686}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RnE@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RnE}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RnE@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RnE}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RnE}{ARM\_MPU\_ATTR\_DEVICE\_nGnRnE}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+Gn\+RnE~(0\+U)}
+
+
+
+Device memory type non Gathering, non Re-\/ordering, non Early Write Acknowledgement. 
+
+\mbox{\Hypertarget{mpu__armv8_8h_adcc9977aabb4dc7177d30cbbac1b53d1}\label{mpu__armv8_8h_adcc9977aabb4dc7177d30cbbac1b53d1}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+G\+RE@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+G\+RE}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+G\+RE@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+G\+RE}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+G\+RE}{ARM\_MPU\_ATTR\_DEVICE\_nGRE}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+n\+G\+RE~(2\+U)}
+
+
+
+Device memory type non Gathering, Re-\/ordering, Early Write Acknowledgement. 
+
+\mbox{\Hypertarget{mpu__armv8_8h_ac2f1c567950e3785d75773362b525390}\label{mpu__armv8_8h_ac2f1c567950e3785d75773362b525390}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+}{ARM\_MPU\_ATTR\_MEMORY\_}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+(\begin{DoxyParamCaption}\item[{}]{NT,  }\item[{}]{WB,  }\item[{}]{RA,  }\item[{}]{WA }\end{DoxyParamCaption})~(((NT \& 1\+U) $<$$<$ 3\+U) $\vert$ ((\+W\+B \& 1\+U) $<$$<$ 2\+U) $\vert$ ((\+R\+A \& 1\+U) $<$$<$ 1\+U) $\vert$ (\+W\+A \& 1\+U))}
+
+
+
+Attribute for normal memory (outer and inner) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NT} & Non-\/\+Transient\+: Set to 1 for non-\/transient data. \\
+\hline
+{\em WB} & Write-\/\+Back\+: Set to 1 to use write-\/back update policy. \\
+\hline
+{\em RA} & Read Allocation\+: Set to 1 to use cache allocation on read miss. \\
+\hline
+{\em WA} & Write Allocation\+: Set to 1 to use cache allocation on write miss. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_a03266f9660485693eb1baec6ba255ab2}\label{mpu__armv8_8h_a03266f9660485693eb1baec6ba255ab2}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+N\+\_\+\+C\+A\+C\+H\+E\+A\+B\+LE@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+N\+\_\+\+C\+A\+C\+H\+E\+A\+B\+LE}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+N\+\_\+\+C\+A\+C\+H\+E\+A\+B\+LE@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+N\+\_\+\+C\+A\+C\+H\+E\+A\+B\+LE}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+N\+\_\+\+C\+A\+C\+H\+E\+A\+B\+LE}{ARM\_MPU\_ATTR\_NON\_CACHEABLE}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+A\+T\+T\+R\+\_\+\+N\+O\+N\+\_\+\+C\+A\+C\+H\+E\+A\+B\+LE~( 4\+U )}
+
+
+
+Attribute for non-\/cacheable, normal memory. 
+
+\mbox{\Hypertarget{mpu__armv8_8h_afe39c2f98058bcac7e7e0501e64e7a9d}\label{mpu__armv8_8h_afe39c2f98058bcac7e7e0501e64e7a9d}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+B\+AR@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+B\+AR}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+B\+AR@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+B\+AR}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+B\+AR}{ARM\_MPU\_RBAR}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+B\+AR(\begin{DoxyParamCaption}\item[{}]{B\+A\+SE,  }\item[{}]{SH,  }\item[{}]{RO,  }\item[{}]{NP,  }\item[{}]{XN }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((BASE & MPU\_RBAR\_BASE\_Pos) | \(\backslash\)
+  ((SH << MPU\_RBAR\_SH\_Pos) & MPU\_RBAR\_SH\_Msk) | \(\backslash\)
+  ((\mbox{\hyperlink{mpu__armv8_8h_a81b2aa3fb55cdd5feadff02da10d391b}{ARM\_MPU\_AP\_}}(RO, NP) << MPU\_RBAR\_AP\_Pos) & MPU\_RBAR\_AP\_Msk) | \(\backslash\)
+  ((XN << MPU\_RBAR\_XN\_Pos) & MPU\_RBAR\_XN\_Msk))
+\end{DoxyCode}
+
+
+Region Base Address Register value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em B\+A\+SE} & The base address bits \mbox{[}31\+:5\mbox{]} of a memory region. The value is zero extended. Effective address gets 32 byte aligned. \\
+\hline
+{\em SH} & Defines the Shareability domain for this memory region. \\
+\hline
+{\em RO} & Read-\/\+Only\+: Set to 1 for a read-\/only memory region. \\
+\hline
+{\em NP} & Non-\/\+Privileged\+: Set to 1 for a non-\/privileged memory region.  XN e\+Xecute Never\+: Set to 1 for a non-\/executable memory region. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_aeaaa071276ba7956944e6c3dc05d677e}\label{mpu__armv8_8h_aeaaa071276ba7956944e6c3dc05d677e}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+L\+AR@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+L\+AR}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+L\+AR@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+L\+AR}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+L\+AR}{ARM\_MPU\_RLAR}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+R\+L\+AR(\begin{DoxyParamCaption}\item[{}]{L\+I\+M\+IT,  }\item[{}]{I\+DX }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((LIMIT & MPU\_RLAR\_LIMIT\_Msk) | \(\backslash\)
+  ((IDX << MPU\_RLAR\_AttrIndx\_Pos) & MPU\_RLAR\_AttrIndx\_Msk) | \(\backslash\)
+  (MPU\_RLAR\_EN\_Msk))
+\end{DoxyCode}
+
+
+Region Limit Address Register value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em L\+I\+M\+IT} & The limit address bits \mbox{[}31\+:5\mbox{]} for this memory region. The value is one extended. \\
+\hline
+{\em I\+DX} & The attribute index to be associated with this memory region. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_a73c70127f24f34781ad463cbe51d8f6b}\label{mpu__armv8_8h_a73c70127f24f34781ad463cbe51d8f6b}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+I\+N\+N\+ER@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+I\+N\+N\+ER}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+I\+N\+N\+ER@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+I\+N\+N\+ER}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+I\+N\+N\+ER}{ARM\_MPU\_SH\_INNER}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+I\+N\+N\+ER~(3\+U)}
+
+
+
+Normal memory inner shareable. 
+
+\mbox{\Hypertarget{mpu__armv8_8h_a3d0f688198289f72264f73cf72a742e8}\label{mpu__armv8_8h_a3d0f688198289f72264f73cf72a742e8}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+N\+ON@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+N\+ON}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+N\+ON@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+N\+ON}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+N\+ON}{ARM\_MPU\_SH\_NON}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+N\+ON~(0\+U)}
+
+
+
+Normal memory non-\/shareable. 
+
+\mbox{\Hypertarget{mpu__armv8_8h_ac4fddbdb9e1350bce6906de33c1fd500}\label{mpu__armv8_8h_ac4fddbdb9e1350bce6906de33c1fd500}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+O\+U\+T\+ER@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+O\+U\+T\+ER}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+O\+U\+T\+ER@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+O\+U\+T\+ER}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+O\+U\+T\+ER}{ARM\_MPU\_SH\_OUTER}}
+{\footnotesize\ttfamily \#define A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+S\+H\+\_\+\+O\+U\+T\+ER~(2\+U)}
+
+
+
+Normal memory outer shareable. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{mpu__armv8_8h_a9dcb0afddf4ac351f33f3c7a5169c62c}\label{mpu__armv8_8h_a9dcb0afddf4ac351f33f3c7a5169c62c}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region()}{ARM\_MPU\_ClrRegion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{rnr }\end{DoxyParamCaption})}
+
+Clear and disable the given M\+PU region. 
+\begin{DoxyParams}{Parameters}
+{\em rnr} & Region number to be cleared. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_a01fa1151c9ec0ba5de76f908c0999316}\label{mpu__armv8_8h_a01fa1151c9ec0ba5de76f908c0999316}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region\+Ex@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region\+Ex}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region\+Ex@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region\+Ex}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region\+Ex()}{ARM\_MPU\_ClrRegionEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Clr\+Region\+Ex (\begin{DoxyParamCaption}\item[{M\+P\+U\+\_\+\+Type $\ast$}]{mpu,  }\item[{uint32\+\_\+t}]{rnr }\end{DoxyParamCaption})}
+
+Clear and disable the given M\+PU region of the given M\+PU. 
+\begin{DoxyParams}{Parameters}
+{\em mpu} & Pointer to M\+PU to be used. \\
+\hline
+{\em rnr} & Region number to be cleared. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_a61814eba4652a0fdfb76bbe222086327}\label{mpu__armv8_8h_a61814eba4652a0fdfb76bbe222086327}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Disable@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Disable}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Disable@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Disable}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Disable()}{ARM\_MPU\_Disable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Disable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Disable the M\+PU. \mbox{\Hypertarget{mpu__armv8_8h_a5a3f40314553baccdeea551f86d9a997}\label{mpu__armv8_8h_a5a3f40314553baccdeea551f86d9a997}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Enable@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Enable}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Enable@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Enable}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Enable()}{ARM\_MPU\_Enable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Enable (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{M\+P\+U\+\_\+\+Control }\end{DoxyParamCaption})}
+
+Enable the M\+PU. 
+\begin{DoxyParams}{Parameters}
+{\em M\+P\+U\+\_\+\+Control} & Default access permissions for unconfigured regions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_aca76614e3091c7324aa9d60e634621bf}\label{mpu__armv8_8h_aca76614e3091c7324aa9d60e634621bf}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load()}{ARM\_MPU\_Load()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{rnr,  }\item[{\mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Region\+\_\+t}} const $\ast$}]{table,  }\item[{uint32\+\_\+t}]{cnt }\end{DoxyParamCaption})}
+
+Load the given number of M\+PU regions from a table. 
+\begin{DoxyParams}{Parameters}
+{\em rnr} & First region number to be configured. \\
+\hline
+{\em table} & Pointer to the M\+PU configuration table. \\
+\hline
+{\em cnt} & Amount of regions to be configured. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_ab6094419f2abd678f1f3b121cd115049}\label{mpu__armv8_8h_ab6094419f2abd678f1f3b121cd115049}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load\+Ex@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load\+Ex}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load\+Ex@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load\+Ex}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load\+Ex()}{ARM\_MPU\_LoadEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Load\+Ex (\begin{DoxyParamCaption}\item[{M\+P\+U\+\_\+\+Type $\ast$}]{mpu,  }\item[{uint32\+\_\+t}]{rnr,  }\item[{\mbox{\hyperlink{struct_a_r_m___m_p_u___region__t}{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Region\+\_\+t}} const $\ast$}]{table,  }\item[{uint32\+\_\+t}]{cnt }\end{DoxyParamCaption})}
+
+Load the given number of M\+PU regions from a table to the given M\+PU. 
+\begin{DoxyParams}{Parameters}
+{\em mpu} & Pointer to the M\+PU registers to be used. \\
+\hline
+{\em rnr} & First region number to be configured. \\
+\hline
+{\em table} & Pointer to the M\+PU configuration table. \\
+\hline
+{\em cnt} & Amount of regions to be configured. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_ab5b3c0a53d19c09a5550f1d9071ae65c}\label{mpu__armv8_8h_ab5b3c0a53d19c09a5550f1d9071ae65c}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr()}{ARM\_MPU\_SetMemAttr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{idx,  }\item[{uint8\+\_\+t}]{attr }\end{DoxyParamCaption})}
+
+Set the memory attribute encoding. 
+\begin{DoxyParams}{Parameters}
+{\em idx} & The attribute index to be set \mbox{[}0-\/7\mbox{]} \\
+\hline
+{\em attr} & The attribute value to be set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_a1799413f08a157d636a1491371c15ce2}\label{mpu__armv8_8h_a1799413f08a157d636a1491371c15ce2}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr\+Ex@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr\+Ex}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr\+Ex@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr\+Ex}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr\+Ex()}{ARM\_MPU\_SetMemAttrEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Mem\+Attr\+Ex (\begin{DoxyParamCaption}\item[{M\+P\+U\+\_\+\+Type $\ast$}]{mpu,  }\item[{uint8\+\_\+t}]{idx,  }\item[{uint8\+\_\+t}]{attr }\end{DoxyParamCaption})}
+
+Set the memory attribute encoding to the given M\+PU. 
+\begin{DoxyParams}{Parameters}
+{\em mpu} & Pointer to the M\+PU to be configured. \\
+\hline
+{\em idx} & The attribute index to be set \mbox{[}0-\/7\mbox{]} \\
+\hline
+{\em attr} & The attribute value to be set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_a6d7f220015c070c0e469948c1775ee3d}\label{mpu__armv8_8h_a6d7f220015c070c0e469948c1775ee3d}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region()}{ARM\_MPU\_SetRegion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{rnr,  }\item[{uint32\+\_\+t}]{rbar,  }\item[{uint32\+\_\+t}]{rlar }\end{DoxyParamCaption})}
+
+Configure the given M\+PU region. 
+\begin{DoxyParams}{Parameters}
+{\em rnr} & Region number to be configured. \\
+\hline
+{\em rbar} & Value for R\+B\+AR register. \\
+\hline
+{\em rlar} & Value for R\+L\+AR register. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_a3d50ba8546252bea959e45c8fdf16993}\label{mpu__armv8_8h_a3d50ba8546252bea959e45c8fdf16993}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region\+Ex@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region\+Ex}}
+\index{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region\+Ex@{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region\+Ex}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region\+Ex()}{ARM\_MPU\_SetRegionEx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void A\+R\+M\+\_\+\+M\+P\+U\+\_\+\+Set\+Region\+Ex (\begin{DoxyParamCaption}\item[{M\+P\+U\+\_\+\+Type $\ast$}]{mpu,  }\item[{uint32\+\_\+t}]{rnr,  }\item[{uint32\+\_\+t}]{rbar,  }\item[{uint32\+\_\+t}]{rlar }\end{DoxyParamCaption})}
+
+Configure the given M\+PU region of the given M\+PU. 
+\begin{DoxyParams}{Parameters}
+{\em mpu} & Pointer to M\+PU to be used. \\
+\hline
+{\em rnr} & Region number to be configured. \\
+\hline
+{\em rbar} & Value for R\+B\+AR register. \\
+\hline
+{\em rlar} & Value for R\+L\+AR register. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mpu__armv8_8h_a71ca7368cfeccb262823726de9985aa2}\label{mpu__armv8_8h_a71ca7368cfeccb262823726de9985aa2}} 
+\index{mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}!ordered\+Cpy@{ordered\+Cpy}}
+\index{ordered\+Cpy@{ordered\+Cpy}!mpu\+\_\+armv8.\+h@{mpu\+\_\+armv8.\+h}}
+\subsubsection{\texorpdfstring{ordered\+Cpy()}{orderedCpy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}{\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE}} void ordered\+Cpy (\begin{DoxyParamCaption}\item[{volatile uint32\+\_\+t $\ast$}]{dst,  }\item[{const uint32\+\_\+t $\ast$\mbox{\hyperlink{cmsis__iccarm_8h_a378ac21329d33f561f90265eef89f564}{\+\_\+\+\_\+\+R\+E\+S\+T\+R\+I\+CT}}}]{src,  }\item[{uint32\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+Memcopy with strictly ordered memory access, e.\+g. for register targets. 
+\begin{DoxyParams}{Parameters}
+{\em dst} & Destination data is copied to. \\
+\hline
+{\em src} & Source data is copied from. \\
+\hline
+{\em len} & Amount of data words to be copied. \\
+\hline
+\end{DoxyParams}

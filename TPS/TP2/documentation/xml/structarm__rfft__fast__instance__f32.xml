@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structarm__rfft__fast__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_rfft_fast_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__rfft__fast__instance__f32_1aa8a05a9fabc3852e5d476152a5067e53" prot="public" static="no" mutable="no">
+        <type><ref refid="structarm__cfft__instance__f32" kindref="compound">arm_cfft_instance_f32</ref></type>
+        <definition>arm_cfft_instance_f32 Sint</definition>
+        <argsstring></argsstring>
+        <name>Sint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal CFFT structure. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2218" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__fast__instance__f32_1a174f8c72d545034e19ba4ced52b31353" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t fftLenRFFT</definition>
+        <argsstring></argsstring>
+        <name>fftLenRFFT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the real sequence </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2219" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__rfft__fast__instance__f32_1a43370fe848d06993faf834da07ca91ce" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* pTwiddleRFFT</definition>
+        <argsstring></argsstring>
+        <name>pTwiddleRFFT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Twiddle factors real stage </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2220" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2220" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point RFFT/RIFFT function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="134">
+        <label>arm_cfft_instance_f32</label>
+        <link refid="structarm__cfft__instance__f32"/>
+      </node>
+      <node id="133">
+        <label>arm_rfft_fast_instance_f32</label>
+        <link refid="structarm__rfft__fast__instance__f32"/>
+        <childnode refid="134" relation="usage">
+          <edgelabel>Sint</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="SDK/CMSIS/arm_math.h" line="2217" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2216" bodyend="2221"/>
+    <listofallmembers>
+      <member refid="structarm__rfft__fast__instance__f32_1a174f8c72d545034e19ba4ced52b31353" prot="public" virt="non-virtual"><scope>arm_rfft_fast_instance_f32</scope><name>fftLenRFFT</name></member>
+      <member refid="structarm__rfft__fast__instance__f32_1a43370fe848d06993faf834da07ca91ce" prot="public" virt="non-virtual"><scope>arm_rfft_fast_instance_f32</scope><name>pTwiddleRFFT</name></member>
+      <member refid="structarm__rfft__fast__instance__f32_1aa8a05a9fabc3852e5d476152a5067e53" prot="public" virt="non-virtual"><scope>arm_rfft_fast_instance_f32</scope><name>Sint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

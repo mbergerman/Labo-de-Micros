@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_e_w_m___type" kind="struct" language="C++" prot="public">
+    <compoundname>EWM_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga80bef1f8e65ba67e749bdee702aceb9a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t CTRL</definition>
+        <argsstring></argsstring>
+        <name>CTRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control Register, offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5548" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga47ffbf57d1749471af68be10a93828bf" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a7e25d9380f9ef903923964322e71f2f6" kindref="member">__O</ref> uint8_t</type>
+        <definition>__O uint8_t SERV</definition>
+        <argsstring></argsstring>
+        <name>SERV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Service Register, offset: 0x1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5549" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gac44f3913c6ac3424ee9b0c8a2d907df8" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t CMPL</definition>
+        <argsstring></argsstring>
+        <name>CMPL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare Low Register, offset: 0x2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5550" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gab53d2f0bf05dd3c526364b7df09fb906" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t CMPH</definition>
+        <argsstring></argsstring>
+        <name>CMPH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare High Register, offset: 0x3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5551" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5551" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>EWM - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="5547" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5547" bodyend="5552"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gab53d2f0bf05dd3c526364b7df09fb906" prot="public" virt="non-virtual"><scope>EWM_Type</scope><name>CMPH</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gac44f3913c6ac3424ee9b0c8a2d907df8" prot="public" virt="non-virtual"><scope>EWM_Type</scope><name>CMPL</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga80bef1f8e65ba67e749bdee702aceb9a" prot="public" virt="non-virtual"><scope>EWM_Type</scope><name>CTRL</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga47ffbf57d1749471af68be10a93828bf" prot="public" virt="non-virtual"><scope>EWM_Type</scope><name>SERV</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,155 @@
+\hypertarget{_d_r_v___board_8h}{}\section{drivers/\+D\+R\+V\+\_\+\+Board.h File Reference}
+\label{_d_r_v___board_8h}\index{drivers/\+D\+R\+V\+\_\+\+Board.\+h@{drivers/\+D\+R\+V\+\_\+\+Board.\+h}}
+
+
+F\+R\+DM Board management.  
+
+
+{\ttfamily \#include $<$P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h$>$}\newline
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{L\+E\+D\+\_\+t}} \{ \mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5af80f9a890089d211842d59625e561f88}{R\+ED}}, 
+\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5aa60bd322f93178d68184e30e162571ca}{G\+R\+E\+EN}}, 
+\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5a35d6719cb4d7577c031b3d79057a1b79}{B\+L\+UE}}
+ \}
+\item 
+enum \mbox{\hyperlink{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90e}{S\+W\+\_\+t}} \{ \mbox{\hyperlink{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90ea2d2a1277b6d4e00a23812eba450647ea}{S\+W2}}, 
+\mbox{\hyperlink{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90ea74a947b9c744abf2bfeea79e4345adc7}{S\+W3}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_r_v___board_8h_acf15165e08940e0b050e6c739de8d349}{init\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Initialize F\+R\+DM Board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___board_8h_a4918dd09074f898b0dd8247689490185}{set\+L\+ED}} (\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{L\+E\+D\+\_\+t}} led, bool value)
+\begin{DoxyCompactList}\small\item\em Sets value of L\+ED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___board_8h_ad1fcdaa55f41faa32d79c6304042fe96}{clear\+L\+ED}} (\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{L\+E\+D\+\_\+t}} led)
+\begin{DoxyCompactList}\small\item\em Turn off L\+ED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___board_8h_abf6e71ba8041ab4865bf37e3a8af87e7}{toggle\+L\+ED}} (\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{L\+E\+D\+\_\+t}} led)
+\begin{DoxyCompactList}\small\item\em Toggle L\+ED. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_d_r_v___board_8h_a0371fe5f560339c593a8bdb6973756bf}{get\+SW}} (\mbox{\hyperlink{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90e}{S\+W\+\_\+t}} sw)
+\begin{DoxyCompactList}\small\item\em Read value of switch. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+R\+DM Board management. 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}\label{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}} 
+\index{D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}!L\+E\+D\+\_\+t@{L\+E\+D\+\_\+t}}
+\index{L\+E\+D\+\_\+t@{L\+E\+D\+\_\+t}!D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}}
+\subsubsection{\texorpdfstring{L\+E\+D\+\_\+t}{LED\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{L\+E\+D\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+ED@{R\+ED}!D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}}\index{D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}!R\+ED@{R\+ED}}}\mbox{\Hypertarget{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5af80f9a890089d211842d59625e561f88}\label{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5af80f9a890089d211842d59625e561f88}} 
+R\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+R\+E\+EN@{G\+R\+E\+EN}!D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}}\index{D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}!G\+R\+E\+EN@{G\+R\+E\+EN}}}\mbox{\Hypertarget{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5aa60bd322f93178d68184e30e162571ca}\label{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5aa60bd322f93178d68184e30e162571ca}} 
+G\+R\+E\+EN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+L\+UE@{B\+L\+UE}!D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}}\index{D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}!B\+L\+UE@{B\+L\+UE}}}\mbox{\Hypertarget{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5a35d6719cb4d7577c031b3d79057a1b79}\label{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5a35d6719cb4d7577c031b3d79057a1b79}} 
+B\+L\+UE&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90e}\label{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90e}} 
+\index{D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}!S\+W\+\_\+t@{S\+W\+\_\+t}}
+\index{S\+W\+\_\+t@{S\+W\+\_\+t}!D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}}
+\subsubsection{\texorpdfstring{S\+W\+\_\+t}{SW\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90e}{S\+W\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+W2@{S\+W2}!D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}}\index{D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}!S\+W2@{S\+W2}}}\mbox{\Hypertarget{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90ea2d2a1277b6d4e00a23812eba450647ea}\label{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90ea2d2a1277b6d4e00a23812eba450647ea}} 
+S\+W2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+W3@{S\+W3}!D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}}\index{D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}!S\+W3@{S\+W3}}}\mbox{\Hypertarget{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90ea74a947b9c744abf2bfeea79e4345adc7}\label{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90ea74a947b9c744abf2bfeea79e4345adc7}} 
+S\+W3&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_d_r_v___board_8h_ad1fcdaa55f41faa32d79c6304042fe96}\label{_d_r_v___board_8h_ad1fcdaa55f41faa32d79c6304042fe96}} 
+\index{D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}!clear\+L\+ED@{clear\+L\+ED}}
+\index{clear\+L\+ED@{clear\+L\+ED}!D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}}
+\subsubsection{\texorpdfstring{clear\+L\+E\+D()}{clearLED()}}
+{\footnotesize\ttfamily void clear\+L\+ED (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{L\+E\+D\+\_\+t}}}]{led }\end{DoxyParamCaption})}
+
+
+
+Turn off L\+ED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & led\+: R\+ED, G\+R\+E\+EN, B\+L\+UE \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___board_8h_a0371fe5f560339c593a8bdb6973756bf}\label{_d_r_v___board_8h_a0371fe5f560339c593a8bdb6973756bf}} 
+\index{D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}!get\+SW@{get\+SW}}
+\index{get\+SW@{get\+SW}!D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}}
+\subsubsection{\texorpdfstring{get\+S\+W()}{getSW()}}
+{\footnotesize\ttfamily bool get\+SW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90e}{S\+W\+\_\+t}}}]{sw }\end{DoxyParamCaption})}
+
+
+
+Read value of switch. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sw} & sw\+: S\+W2, S\+W3 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___board_8h_acf15165e08940e0b050e6c739de8d349}\label{_d_r_v___board_8h_acf15165e08940e0b050e6c739de8d349}} 
+\index{D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}!init\+Board@{init\+Board}}
+\index{init\+Board@{init\+Board}!D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}}
+\subsubsection{\texorpdfstring{init\+Board()}{initBoard()}}
+{\footnotesize\ttfamily void init\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize F\+R\+DM Board. 
+
+\mbox{\Hypertarget{_d_r_v___board_8h_a4918dd09074f898b0dd8247689490185}\label{_d_r_v___board_8h_a4918dd09074f898b0dd8247689490185}} 
+\index{D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}!set\+L\+ED@{set\+L\+ED}}
+\index{set\+L\+ED@{set\+L\+ED}!D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}}
+\subsubsection{\texorpdfstring{set\+L\+E\+D()}{setLED()}}
+{\footnotesize\ttfamily void set\+L\+ED (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{L\+E\+D\+\_\+t}}}]{led,  }\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets value of L\+ED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & led\+: R\+ED, G\+R\+E\+EN, B\+L\+UE \\
+\hline
+{\em value} & value\+: true or false \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___board_8h_abf6e71ba8041ab4865bf37e3a8af87e7}\label{_d_r_v___board_8h_abf6e71ba8041ab4865bf37e3a8af87e7}} 
+\index{D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}!toggle\+L\+ED@{toggle\+L\+ED}}
+\index{toggle\+L\+ED@{toggle\+L\+ED}!D\+R\+V\+\_\+\+Board.\+h@{D\+R\+V\+\_\+\+Board.\+h}}
+\subsubsection{\texorpdfstring{toggle\+L\+E\+D()}{toggleLED()}}
+{\footnotesize\ttfamily void toggle\+L\+ED (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{L\+E\+D\+\_\+t}}}]{led }\end{DoxyParamCaption})}
+
+
+
+Toggle L\+ED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & led\+: R\+ED, G\+R\+E\+EN, B\+L\+UE \\
+\hline
+\end{DoxyParams}

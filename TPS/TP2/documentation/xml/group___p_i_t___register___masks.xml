@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___p_i_t___register___masks" kind="group">
+    <compoundname>PIT_Register_Masks</compoundname>
+    <title>PIT Register Masks</title>
+      <sectiondef kind="user-defined">
+      <header>MCR - PIT Module Control Register</header>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga8149a0bb21843632dd4528b540480ba7" prot="public" static="no">
+        <name>PIT_MCR_FRZ_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8725" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8725" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga500ccd29eaebc20aa853e7bbb23e3c0c" prot="public" static="no">
+        <name>PIT_MCR_FRZ_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8726" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8726" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1gab52ff9f5a1c18eee41b58100aa415dfe" prot="public" static="no">
+        <name>PIT_MCR_FRZ</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_i_t___register___masks_1ga500ccd29eaebc20aa853e7bbb23e3c0c" kindref="member">PIT_MCR_FRZ_SHIFT</ref>)) &amp; <ref refid="group___p_i_t___register___masks_1ga8149a0bb21843632dd4528b540480ba7" kindref="member">PIT_MCR_FRZ_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8727" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga024258b2c23ff75f3e161e56adbbe733" prot="public" static="no">
+        <name>PIT_MCR_MDIS_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8728" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga7ddcd16550ff71e4ee5ac48022ae6fb6" prot="public" static="no">
+        <name>PIT_MCR_MDIS_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8729" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1gafae73f01b87a4e133c1289e0d09f8de2" prot="public" static="no">
+        <name>PIT_MCR_MDIS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_i_t___register___masks_1ga7ddcd16550ff71e4ee5ac48022ae6fb6" kindref="member">PIT_MCR_MDIS_SHIFT</ref>)) &amp; <ref refid="group___p_i_t___register___masks_1ga024258b2c23ff75f3e161e56adbbe733" kindref="member">PIT_MCR_MDIS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8730" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8730" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>LDVAL - Timer Load Value Register</header>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1gab7929b3b8a0c170a50f57d97face5365" prot="public" static="no">
+        <name>PIT_LDVAL_TSV_MASK</name>
+        <initializer>(0xFFFFFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8733" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga463855d2b42de901bad9bea868f4f48b" prot="public" static="no">
+        <name>PIT_LDVAL_TSV_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8734" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga1aa1b498b2c8f1a14d095370a7ddf9a6" prot="public" static="no">
+        <name>PIT_LDVAL_TSV</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_i_t___register___masks_1ga463855d2b42de901bad9bea868f4f48b" kindref="member">PIT_LDVAL_TSV_SHIFT</ref>)) &amp; <ref refid="group___p_i_t___register___masks_1gab7929b3b8a0c170a50f57d97face5365" kindref="member">PIT_LDVAL_TSV_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8735" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga3d2d70f366f2b214ae060c0cb0abb202" prot="public" static="no">
+        <name>PIT_LDVAL_COUNT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8738" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8738" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>CVAL - Current Timer Value Register</header>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga2810b877338372cb9b9d944b206c08d3" prot="public" static="no">
+        <name>PIT_CVAL_TVL_MASK</name>
+        <initializer>(0xFFFFFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8741" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8741" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga28753a1a45034ccd34e052faa3e02ff0" prot="public" static="no">
+        <name>PIT_CVAL_TVL_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8742" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8742" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga00291ae8d045c0b0f199d8950c7e453a" prot="public" static="no">
+        <name>PIT_CVAL_TVL</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_i_t___register___masks_1ga28753a1a45034ccd34e052faa3e02ff0" kindref="member">PIT_CVAL_TVL_SHIFT</ref>)) &amp; <ref refid="group___p_i_t___register___masks_1ga2810b877338372cb9b9d944b206c08d3" kindref="member">PIT_CVAL_TVL_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8743" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8743" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga8620fe2fb28dc11a864333f6ef51b9bd" prot="public" static="no">
+        <name>PIT_CVAL_COUNT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8746" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8746" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>TCTRL - Timer Control Register</header>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga1099670711f996f5fa84e33bbfe794b2" prot="public" static="no">
+        <name>PIT_TCTRL_TEN_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8749" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8749" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga0080137ff0378087f08cc12fd10b3e1f" prot="public" static="no">
+        <name>PIT_TCTRL_TEN_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8750" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8750" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1gaecd36aa22b2758d6c39b6b2df234e3a8" prot="public" static="no">
+        <name>PIT_TCTRL_TEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_i_t___register___masks_1ga0080137ff0378087f08cc12fd10b3e1f" kindref="member">PIT_TCTRL_TEN_SHIFT</ref>)) &amp; <ref refid="group___p_i_t___register___masks_1ga1099670711f996f5fa84e33bbfe794b2" kindref="member">PIT_TCTRL_TEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8751" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga99639aabcac1d6042d14e7893d00bf67" prot="public" static="no">
+        <name>PIT_TCTRL_TIE_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8752" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8752" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1gae21aee9e81741a924c9f2824fbc5775b" prot="public" static="no">
+        <name>PIT_TCTRL_TIE_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8753" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8753" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1gaa39036db7a5f8baae6f986b5809d054c" prot="public" static="no">
+        <name>PIT_TCTRL_TIE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_i_t___register___masks_1gae21aee9e81741a924c9f2824fbc5775b" kindref="member">PIT_TCTRL_TIE_SHIFT</ref>)) &amp; <ref refid="group___p_i_t___register___masks_1ga99639aabcac1d6042d14e7893d00bf67" kindref="member">PIT_TCTRL_TIE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8754" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8754" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga734e2e947c649d50b9ca46405e451c2b" prot="public" static="no">
+        <name>PIT_TCTRL_CHN_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8755" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8755" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga9a1c8aa25a05c9b2c9503a003fa8d24d" prot="public" static="no">
+        <name>PIT_TCTRL_CHN_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8756" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8756" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1gaeab3c9394c0312620a55449b2daeeaf8" prot="public" static="no">
+        <name>PIT_TCTRL_CHN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_i_t___register___masks_1ga9a1c8aa25a05c9b2c9503a003fa8d24d" kindref="member">PIT_TCTRL_CHN_SHIFT</ref>)) &amp; <ref refid="group___p_i_t___register___masks_1ga734e2e947c649d50b9ca46405e451c2b" kindref="member">PIT_TCTRL_CHN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8757" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8757" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1gaf5d79447f057663c2cf041cb472bd2b3" prot="public" static="no">
+        <name>PIT_TCTRL_COUNT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8760" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8760" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>TFLG - Timer Flag Register</header>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga9de8d708b43c9ca35df26c7b43f09769" prot="public" static="no">
+        <name>PIT_TFLG_TIF_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8763" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1gaf6f5ddca2193ed04bc61bc3e899f5ced" prot="public" static="no">
+        <name>PIT_TFLG_TIF_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8764" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8764" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1gae5a66a0689241a2d1f52b5c989c81b6b" prot="public" static="no">
+        <name>PIT_TFLG_TIF</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_i_t___register___masks_1gaf6f5ddca2193ed04bc61bc3e899f5ced" kindref="member">PIT_TFLG_TIF_SHIFT</ref>)) &amp; <ref refid="group___p_i_t___register___masks_1ga9de8d708b43c9ca35df26c7b43f09769" kindref="member">PIT_TFLG_TIF_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8765" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga7d2129ae649e32ec8c7e6804ba6b6551" prot="public" static="no">
+        <name>PIT_TFLG_COUNT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8768" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8768" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_i_t___register___masks_1gaf00b86ba33a2cfe7bb100b4f01905f41" prot="public" static="no">
+        <name>PIT_BASE</name>
+        <initializer>(0x40037000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral PIT base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8778" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1gaf181c9e6602b6432a0bf1a9243808968" prot="public" static="no">
+        <name>PIT</name>
+        <initializer>((<ref refid="struct_p_i_t___type" kindref="compound">PIT_Type</ref> *)<ref refid="group___p_i_t___register___masks_1gaf00b86ba33a2cfe7bb100b4f01905f41" kindref="member">PIT_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral PIT base pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8780" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8780" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga79085fa95893e4423661373b7be2f0a7" prot="public" static="no">
+        <name>PIT_BASE_ADDRS</name>
+        <initializer>{ <ref refid="group___p_i_t___register___masks_1gaf00b86ba33a2cfe7bb100b4f01905f41" kindref="member">PIT_BASE</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of PIT peripheral base addresses </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8782" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga403e0ed71b80cfe3e085fe6b56b5eff0" prot="public" static="no">
+        <name>PIT_BASE_PTRS</name>
+        <initializer>{ <ref refid="group___p_i_t___register___masks_1gaf181c9e6602b6432a0bf1a9243808968" kindref="member">PIT</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of PIT peripheral base pointers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8784" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8784" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_i_t___register___masks_1ga5f0ae6317a2c8c12e46e49c6e2e29dda" prot="public" static="no">
+        <name>PIT_IRQS</name>
+        <initializer>{ { <ref refid="group___interrupt__vector__numbers_1gga666eb0caeb12ec0e281415592ae89083ab3bc681f165a0965ac922a33bcc466c3" kindref="member">PIT0_IRQn</ref>, <ref refid="group___interrupt__vector__numbers_1gga666eb0caeb12ec0e281415592ae89083aebde56c1a0c87a74c43fc8b35309d429" kindref="member">PIT1_IRQn</ref>, <ref refid="group___interrupt__vector__numbers_1gga666eb0caeb12ec0e281415592ae89083afdef24d623050c63c2c35eb54dd35caf" kindref="member">PIT2_IRQn</ref>, <ref refid="group___interrupt__vector__numbers_1gga666eb0caeb12ec0e281415592ae89083aa6195cc174d28b297fe7652bf1663311" kindref="member">PIT3_IRQn</ref> } }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt vectors for the PIT peripheral type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8786" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8786" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

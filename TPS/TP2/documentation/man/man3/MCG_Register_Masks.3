@@ -1,0 +1,748 @@
+.TH "MCG_Register_Masks" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MCG_Register_Masks
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCG_BASE\fP   (0x40064000u)"
+.br
+.ti -1c
+.RI "#define \fBMCG\fP   ((\fBMCG_Type\fP *)\fBMCG_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_BASE_ADDRS\fP   { \fBMCG_BASE\fP }"
+.br
+.ti -1c
+.RI "#define \fBMCG_BASE_PTRS\fP   { \fBMCG\fP }"
+.br
+.in -1c
+.SS "C1 - MCG Control 1 Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCG_C1_IREFSTEN_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_IREFSTEN_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_IREFSTEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C1_IREFSTEN_SHIFT\fP)) & \fBMCG_C1_IREFSTEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_IRCLKEN_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_IRCLKEN_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_IRCLKEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C1_IRCLKEN_SHIFT\fP)) & \fBMCG_C1_IRCLKEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_IREFS_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_IREFS_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_IREFS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C1_IREFS_SHIFT\fP)) & \fBMCG_C1_IREFS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_FRDIV_MASK\fP   (0x38U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_FRDIV_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_FRDIV\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C1_FRDIV_SHIFT\fP)) & \fBMCG_C1_FRDIV_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_CLKS_MASK\fP   (0xC0U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_CLKS_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C1_CLKS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C1_CLKS_SHIFT\fP)) & \fBMCG_C1_CLKS_MASK\fP)"
+.br
+.in -1c
+.SS "C2 - MCG Control 2 Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCG_C2_IRCS_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_IRCS_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_IRCS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_IRCS_SHIFT\fP)) & \fBMCG_C2_IRCS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_LP_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_LP_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_LP\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_LP_SHIFT\fP)) & \fBMCG_C2_LP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_EREFS_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_EREFS_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_EREFS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_EREFS_SHIFT\fP)) & \fBMCG_C2_EREFS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_HGO_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_HGO_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_HGO\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_HGO_SHIFT\fP)) & \fBMCG_C2_HGO_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_RANGE_MASK\fP   (0x30U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_RANGE_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_RANGE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_RANGE_SHIFT\fP)) & \fBMCG_C2_RANGE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_FCFTRIM_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_FCFTRIM_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_FCFTRIM\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_FCFTRIM_SHIFT\fP)) & \fBMCG_C2_FCFTRIM_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_LOCRE0_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_LOCRE0_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C2_LOCRE0\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_LOCRE0_SHIFT\fP)) & \fBMCG_C2_LOCRE0_MASK\fP)"
+.br
+.in -1c
+.SS "C3 - MCG Control 3 Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCG_C3_SCTRIM_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C3_SCTRIM_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C3_SCTRIM\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C3_SCTRIM_SHIFT\fP)) & \fBMCG_C3_SCTRIM_MASK\fP)"
+.br
+.in -1c
+.SS "C4 - MCG Control 4 Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCG_C4_SCFTRIM_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C4_SCFTRIM_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C4_SCFTRIM\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C4_SCFTRIM_SHIFT\fP)) & \fBMCG_C4_SCFTRIM_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C4_FCTRIM_MASK\fP   (0x1EU)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C4_FCTRIM_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C4_FCTRIM\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C4_FCTRIM_SHIFT\fP)) & \fBMCG_C4_FCTRIM_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C4_DRST_DRS_MASK\fP   (0x60U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C4_DRST_DRS_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C4_DRST_DRS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C4_DRST_DRS_SHIFT\fP)) & \fBMCG_C4_DRST_DRS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C4_DMX32_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C4_DMX32_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C4_DMX32\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C4_DMX32_SHIFT\fP)) & \fBMCG_C4_DMX32_MASK\fP)"
+.br
+.in -1c
+.SS "C5 - MCG Control 5 Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCG_C5_PRDIV0_MASK\fP   (0x1FU)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C5_PRDIV0_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C5_PRDIV0\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C5_PRDIV0_SHIFT\fP)) & \fBMCG_C5_PRDIV0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C5_PLLSTEN0_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C5_PLLSTEN0_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C5_PLLSTEN0\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C5_PLLSTEN0_SHIFT\fP)) & \fBMCG_C5_PLLSTEN0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C5_PLLCLKEN0_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C5_PLLCLKEN0_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C5_PLLCLKEN0\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C5_PLLCLKEN0_SHIFT\fP)) & \fBMCG_C5_PLLCLKEN0_MASK\fP)"
+.br
+.in -1c
+.SS "C6 - MCG Control 6 Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCG_C6_VDIV0_MASK\fP   (0x1FU)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C6_VDIV0_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C6_VDIV0\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C6_VDIV0_SHIFT\fP)) & \fBMCG_C6_VDIV0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C6_CME0_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C6_CME0_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C6_CME0\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C6_CME0_SHIFT\fP)) & \fBMCG_C6_CME0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C6_PLLS_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C6_PLLS_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C6_PLLS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C6_PLLS_SHIFT\fP)) & \fBMCG_C6_PLLS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C6_LOLIE0_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C6_LOLIE0_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C6_LOLIE0\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C6_LOLIE0_SHIFT\fP)) & \fBMCG_C6_LOLIE0_MASK\fP)"
+.br
+.in -1c
+.SS "S - MCG Status Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCG_S_IRCST_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_IRCST_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_IRCST\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_IRCST_SHIFT\fP)) & \fBMCG_S_IRCST_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_OSCINIT0_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_OSCINIT0_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_OSCINIT0\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_OSCINIT0_SHIFT\fP)) & \fBMCG_S_OSCINIT0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_CLKST_MASK\fP   (0xCU)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_CLKST_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_CLKST\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_CLKST_SHIFT\fP)) & \fBMCG_S_CLKST_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_IREFST_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_IREFST_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_IREFST\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_IREFST_SHIFT\fP)) & \fBMCG_S_IREFST_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_PLLST_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_PLLST_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_PLLST\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_PLLST_SHIFT\fP)) & \fBMCG_S_PLLST_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_LOCK0_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_LOCK0_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_LOCK0\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_LOCK0_SHIFT\fP)) & \fBMCG_S_LOCK0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_LOLS0_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_LOLS0_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_S_LOLS0\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_LOLS0_SHIFT\fP)) & \fBMCG_S_LOLS0_MASK\fP)"
+.br
+.in -1c
+.SS "SC - MCG Status and Control Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCG_SC_LOCS0_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_LOCS0_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_LOCS0\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_SC_LOCS0_SHIFT\fP)) & \fBMCG_SC_LOCS0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_FCRDIV_MASK\fP   (0xEU)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_FCRDIV_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_FCRDIV\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_SC_FCRDIV_SHIFT\fP)) & \fBMCG_SC_FCRDIV_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_FLTPRSRV_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_FLTPRSRV_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_FLTPRSRV\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_SC_FLTPRSRV_SHIFT\fP)) & \fBMCG_SC_FLTPRSRV_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_ATMF_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_ATMF_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_ATMF\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_SC_ATMF_SHIFT\fP)) & \fBMCG_SC_ATMF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_ATMS_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_ATMS_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_ATMS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_SC_ATMS_SHIFT\fP)) & \fBMCG_SC_ATMS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_ATME_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_ATME_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_SC_ATME\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_SC_ATME_SHIFT\fP)) & \fBMCG_SC_ATME_MASK\fP)"
+.br
+.in -1c
+.SS "ATCVH - MCG Auto Trim Compare Value High Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCG_ATCVH_ATCVH_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBMCG_ATCVH_ATCVH_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_ATCVH_ATCVH\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_ATCVH_ATCVH_SHIFT\fP)) & \fBMCG_ATCVH_ATCVH_MASK\fP)"
+.br
+.in -1c
+.SS "ATCVL - MCG Auto Trim Compare Value Low Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCG_ATCVL_ATCVL_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBMCG_ATCVL_ATCVL_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_ATCVL_ATCVL\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_ATCVL_ATCVL_SHIFT\fP)) & \fBMCG_ATCVL_ATCVL_MASK\fP)"
+.br
+.in -1c
+.SS "C7 - MCG Control 7 Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCG_C7_OSCSEL_MASK\fP   (0x3U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C7_OSCSEL_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C7_OSCSEL\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C7_OSCSEL_SHIFT\fP)) & \fBMCG_C7_OSCSEL_MASK\fP)"
+.br
+.in -1c
+.SS "C8 - MCG Control 8 Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMCG_C8_LOCS1_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C8_LOCS1_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C8_LOCS1\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C8_LOCS1_SHIFT\fP)) & \fBMCG_C8_LOCS1_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C8_CME1_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C8_CME1_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C8_CME1\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C8_CME1_SHIFT\fP)) & \fBMCG_C8_CME1_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C8_LOLRE_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C8_LOLRE_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C8_LOLRE\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C8_LOLRE_SHIFT\fP)) & \fBMCG_C8_LOLRE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C8_LOCRE1_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C8_LOCRE1_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBMCG_C8_LOCRE1\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C8_LOCRE1_SHIFT\fP)) & \fBMCG_C8_LOCRE1_MASK\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define MCG   ((\fBMCG_Type\fP *)\fBMCG_BASE\fP)"
+Peripheral MCG base pointer 
+.SS "#define MCG_ATCVH_ATCVH(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_ATCVH_ATCVH_SHIFT\fP)) & \fBMCG_ATCVH_ATCVH_MASK\fP)"
+
+.SS "#define MCG_ATCVH_ATCVH_MASK   (0xFFU)"
+
+.SS "#define MCG_ATCVH_ATCVH_SHIFT   (0U)"
+
+.SS "#define MCG_ATCVL_ATCVL(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_ATCVL_ATCVL_SHIFT\fP)) & \fBMCG_ATCVL_ATCVL_MASK\fP)"
+
+.SS "#define MCG_ATCVL_ATCVL_MASK   (0xFFU)"
+
+.SS "#define MCG_ATCVL_ATCVL_SHIFT   (0U)"
+
+.SS "#define MCG_BASE   (0x40064000u)"
+Peripheral MCG base address 
+.SS "#define MCG_BASE_ADDRS   { \fBMCG_BASE\fP }"
+Array initializer of MCG peripheral base addresses 
+.SS "#define MCG_BASE_PTRS   { \fBMCG\fP }"
+Array initializer of MCG peripheral base pointers 
+.SS "#define MCG_C1_CLKS(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C1_CLKS_SHIFT\fP)) & \fBMCG_C1_CLKS_MASK\fP)"
+
+.SS "#define MCG_C1_CLKS_MASK   (0xC0U)"
+
+.SS "#define MCG_C1_CLKS_SHIFT   (6U)"
+
+.SS "#define MCG_C1_FRDIV(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C1_FRDIV_SHIFT\fP)) & \fBMCG_C1_FRDIV_MASK\fP)"
+
+.SS "#define MCG_C1_FRDIV_MASK   (0x38U)"
+
+.SS "#define MCG_C1_FRDIV_SHIFT   (3U)"
+
+.SS "#define MCG_C1_IRCLKEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C1_IRCLKEN_SHIFT\fP)) & \fBMCG_C1_IRCLKEN_MASK\fP)"
+
+.SS "#define MCG_C1_IRCLKEN_MASK   (0x2U)"
+
+.SS "#define MCG_C1_IRCLKEN_SHIFT   (1U)"
+
+.SS "#define MCG_C1_IREFS(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C1_IREFS_SHIFT\fP)) & \fBMCG_C1_IREFS_MASK\fP)"
+
+.SS "#define MCG_C1_IREFS_MASK   (0x4U)"
+
+.SS "#define MCG_C1_IREFS_SHIFT   (2U)"
+
+.SS "#define MCG_C1_IREFSTEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C1_IREFSTEN_SHIFT\fP)) & \fBMCG_C1_IREFSTEN_MASK\fP)"
+
+.SS "#define MCG_C1_IREFSTEN_MASK   (0x1U)"
+
+.SS "#define MCG_C1_IREFSTEN_SHIFT   (0U)"
+
+.SS "#define MCG_C2_EREFS(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_EREFS_SHIFT\fP)) & \fBMCG_C2_EREFS_MASK\fP)"
+
+.SS "#define MCG_C2_EREFS_MASK   (0x4U)"
+
+.SS "#define MCG_C2_EREFS_SHIFT   (2U)"
+
+.SS "#define MCG_C2_FCFTRIM(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_FCFTRIM_SHIFT\fP)) & \fBMCG_C2_FCFTRIM_MASK\fP)"
+
+.SS "#define MCG_C2_FCFTRIM_MASK   (0x40U)"
+
+.SS "#define MCG_C2_FCFTRIM_SHIFT   (6U)"
+
+.SS "#define MCG_C2_HGO(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_HGO_SHIFT\fP)) & \fBMCG_C2_HGO_MASK\fP)"
+
+.SS "#define MCG_C2_HGO_MASK   (0x8U)"
+
+.SS "#define MCG_C2_HGO_SHIFT   (3U)"
+
+.SS "#define MCG_C2_IRCS(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_IRCS_SHIFT\fP)) & \fBMCG_C2_IRCS_MASK\fP)"
+
+.SS "#define MCG_C2_IRCS_MASK   (0x1U)"
+
+.SS "#define MCG_C2_IRCS_SHIFT   (0U)"
+
+.SS "#define MCG_C2_LOCRE0(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_LOCRE0_SHIFT\fP)) & \fBMCG_C2_LOCRE0_MASK\fP)"
+
+.SS "#define MCG_C2_LOCRE0_MASK   (0x80U)"
+
+.SS "#define MCG_C2_LOCRE0_SHIFT   (7U)"
+
+.SS "#define MCG_C2_LP(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_LP_SHIFT\fP)) & \fBMCG_C2_LP_MASK\fP)"
+
+.SS "#define MCG_C2_LP_MASK   (0x2U)"
+
+.SS "#define MCG_C2_LP_SHIFT   (1U)"
+
+.SS "#define MCG_C2_RANGE(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C2_RANGE_SHIFT\fP)) & \fBMCG_C2_RANGE_MASK\fP)"
+
+.SS "#define MCG_C2_RANGE_MASK   (0x30U)"
+
+.SS "#define MCG_C2_RANGE_SHIFT   (4U)"
+
+.SS "#define MCG_C3_SCTRIM(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C3_SCTRIM_SHIFT\fP)) & \fBMCG_C3_SCTRIM_MASK\fP)"
+
+.SS "#define MCG_C3_SCTRIM_MASK   (0xFFU)"
+
+.SS "#define MCG_C3_SCTRIM_SHIFT   (0U)"
+
+.SS "#define MCG_C4_DMX32(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C4_DMX32_SHIFT\fP)) & \fBMCG_C4_DMX32_MASK\fP)"
+
+.SS "#define MCG_C4_DMX32_MASK   (0x80U)"
+
+.SS "#define MCG_C4_DMX32_SHIFT   (7U)"
+
+.SS "#define MCG_C4_DRST_DRS(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C4_DRST_DRS_SHIFT\fP)) & \fBMCG_C4_DRST_DRS_MASK\fP)"
+
+.SS "#define MCG_C4_DRST_DRS_MASK   (0x60U)"
+
+.SS "#define MCG_C4_DRST_DRS_SHIFT   (5U)"
+
+.SS "#define MCG_C4_FCTRIM(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C4_FCTRIM_SHIFT\fP)) & \fBMCG_C4_FCTRIM_MASK\fP)"
+
+.SS "#define MCG_C4_FCTRIM_MASK   (0x1EU)"
+
+.SS "#define MCG_C4_FCTRIM_SHIFT   (1U)"
+
+.SS "#define MCG_C4_SCFTRIM(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C4_SCFTRIM_SHIFT\fP)) & \fBMCG_C4_SCFTRIM_MASK\fP)"
+
+.SS "#define MCG_C4_SCFTRIM_MASK   (0x1U)"
+
+.SS "#define MCG_C4_SCFTRIM_SHIFT   (0U)"
+
+.SS "#define MCG_C5_PLLCLKEN0(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C5_PLLCLKEN0_SHIFT\fP)) & \fBMCG_C5_PLLCLKEN0_MASK\fP)"
+
+.SS "#define MCG_C5_PLLCLKEN0_MASK   (0x40U)"
+
+.SS "#define MCG_C5_PLLCLKEN0_SHIFT   (6U)"
+
+.SS "#define MCG_C5_PLLSTEN0(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C5_PLLSTEN0_SHIFT\fP)) & \fBMCG_C5_PLLSTEN0_MASK\fP)"
+
+.SS "#define MCG_C5_PLLSTEN0_MASK   (0x20U)"
+
+.SS "#define MCG_C5_PLLSTEN0_SHIFT   (5U)"
+
+.SS "#define MCG_C5_PRDIV0(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C5_PRDIV0_SHIFT\fP)) & \fBMCG_C5_PRDIV0_MASK\fP)"
+
+.SS "#define MCG_C5_PRDIV0_MASK   (0x1FU)"
+
+.SS "#define MCG_C5_PRDIV0_SHIFT   (0U)"
+
+.SS "#define MCG_C6_CME0(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C6_CME0_SHIFT\fP)) & \fBMCG_C6_CME0_MASK\fP)"
+
+.SS "#define MCG_C6_CME0_MASK   (0x20U)"
+
+.SS "#define MCG_C6_CME0_SHIFT   (5U)"
+
+.SS "#define MCG_C6_LOLIE0(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C6_LOLIE0_SHIFT\fP)) & \fBMCG_C6_LOLIE0_MASK\fP)"
+
+.SS "#define MCG_C6_LOLIE0_MASK   (0x80U)"
+
+.SS "#define MCG_C6_LOLIE0_SHIFT   (7U)"
+
+.SS "#define MCG_C6_PLLS(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C6_PLLS_SHIFT\fP)) & \fBMCG_C6_PLLS_MASK\fP)"
+
+.SS "#define MCG_C6_PLLS_MASK   (0x40U)"
+
+.SS "#define MCG_C6_PLLS_SHIFT   (6U)"
+
+.SS "#define MCG_C6_VDIV0(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C6_VDIV0_SHIFT\fP)) & \fBMCG_C6_VDIV0_MASK\fP)"
+
+.SS "#define MCG_C6_VDIV0_MASK   (0x1FU)"
+
+.SS "#define MCG_C6_VDIV0_SHIFT   (0U)"
+
+.SS "#define MCG_C7_OSCSEL(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C7_OSCSEL_SHIFT\fP)) & \fBMCG_C7_OSCSEL_MASK\fP)"
+
+.SS "#define MCG_C7_OSCSEL_MASK   (0x3U)"
+
+.SS "#define MCG_C7_OSCSEL_SHIFT   (0U)"
+
+.SS "#define MCG_C8_CME1(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C8_CME1_SHIFT\fP)) & \fBMCG_C8_CME1_MASK\fP)"
+
+.SS "#define MCG_C8_CME1_MASK   (0x20U)"
+
+.SS "#define MCG_C8_CME1_SHIFT   (5U)"
+
+.SS "#define MCG_C8_LOCRE1(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C8_LOCRE1_SHIFT\fP)) & \fBMCG_C8_LOCRE1_MASK\fP)"
+
+.SS "#define MCG_C8_LOCRE1_MASK   (0x80U)"
+
+.SS "#define MCG_C8_LOCRE1_SHIFT   (7U)"
+
+.SS "#define MCG_C8_LOCS1(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C8_LOCS1_SHIFT\fP)) & \fBMCG_C8_LOCS1_MASK\fP)"
+
+.SS "#define MCG_C8_LOCS1_MASK   (0x1U)"
+
+.SS "#define MCG_C8_LOCS1_SHIFT   (0U)"
+
+.SS "#define MCG_C8_LOLRE(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_C8_LOLRE_SHIFT\fP)) & \fBMCG_C8_LOLRE_MASK\fP)"
+
+.SS "#define MCG_C8_LOLRE_MASK   (0x40U)"
+
+.SS "#define MCG_C8_LOLRE_SHIFT   (6U)"
+
+.SS "#define MCG_S_CLKST(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_CLKST_SHIFT\fP)) & \fBMCG_S_CLKST_MASK\fP)"
+
+.SS "#define MCG_S_CLKST_MASK   (0xCU)"
+
+.SS "#define MCG_S_CLKST_SHIFT   (2U)"
+
+.SS "#define MCG_S_IRCST(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_IRCST_SHIFT\fP)) & \fBMCG_S_IRCST_MASK\fP)"
+
+.SS "#define MCG_S_IRCST_MASK   (0x1U)"
+
+.SS "#define MCG_S_IRCST_SHIFT   (0U)"
+
+.SS "#define MCG_S_IREFST(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_IREFST_SHIFT\fP)) & \fBMCG_S_IREFST_MASK\fP)"
+
+.SS "#define MCG_S_IREFST_MASK   (0x10U)"
+
+.SS "#define MCG_S_IREFST_SHIFT   (4U)"
+
+.SS "#define MCG_S_LOCK0(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_LOCK0_SHIFT\fP)) & \fBMCG_S_LOCK0_MASK\fP)"
+
+.SS "#define MCG_S_LOCK0_MASK   (0x40U)"
+
+.SS "#define MCG_S_LOCK0_SHIFT   (6U)"
+
+.SS "#define MCG_S_LOLS0(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_LOLS0_SHIFT\fP)) & \fBMCG_S_LOLS0_MASK\fP)"
+
+.SS "#define MCG_S_LOLS0_MASK   (0x80U)"
+
+.SS "#define MCG_S_LOLS0_SHIFT   (7U)"
+
+.SS "#define MCG_S_OSCINIT0(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_OSCINIT0_SHIFT\fP)) & \fBMCG_S_OSCINIT0_MASK\fP)"
+
+.SS "#define MCG_S_OSCINIT0_MASK   (0x2U)"
+
+.SS "#define MCG_S_OSCINIT0_SHIFT   (1U)"
+
+.SS "#define MCG_S_PLLST(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_S_PLLST_SHIFT\fP)) & \fBMCG_S_PLLST_MASK\fP)"
+
+.SS "#define MCG_S_PLLST_MASK   (0x20U)"
+
+.SS "#define MCG_S_PLLST_SHIFT   (5U)"
+
+.SS "#define MCG_SC_ATME(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_SC_ATME_SHIFT\fP)) & \fBMCG_SC_ATME_MASK\fP)"
+
+.SS "#define MCG_SC_ATME_MASK   (0x80U)"
+
+.SS "#define MCG_SC_ATME_SHIFT   (7U)"
+
+.SS "#define MCG_SC_ATMF(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_SC_ATMF_SHIFT\fP)) & \fBMCG_SC_ATMF_MASK\fP)"
+
+.SS "#define MCG_SC_ATMF_MASK   (0x20U)"
+
+.SS "#define MCG_SC_ATMF_SHIFT   (5U)"
+
+.SS "#define MCG_SC_ATMS(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_SC_ATMS_SHIFT\fP)) & \fBMCG_SC_ATMS_MASK\fP)"
+
+.SS "#define MCG_SC_ATMS_MASK   (0x40U)"
+
+.SS "#define MCG_SC_ATMS_SHIFT   (6U)"
+
+.SS "#define MCG_SC_FCRDIV(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_SC_FCRDIV_SHIFT\fP)) & \fBMCG_SC_FCRDIV_MASK\fP)"
+
+.SS "#define MCG_SC_FCRDIV_MASK   (0xEU)"
+
+.SS "#define MCG_SC_FCRDIV_SHIFT   (1U)"
+
+.SS "#define MCG_SC_FLTPRSRV(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_SC_FLTPRSRV_SHIFT\fP)) & \fBMCG_SC_FLTPRSRV_MASK\fP)"
+
+.SS "#define MCG_SC_FLTPRSRV_MASK   (0x10U)"
+
+.SS "#define MCG_SC_FLTPRSRV_SHIFT   (4U)"
+
+.SS "#define MCG_SC_LOCS0(x)   (((uint8_t)(((uint8_t)(x)) << \fBMCG_SC_LOCS0_SHIFT\fP)) & \fBMCG_SC_LOCS0_MASK\fP)"
+
+.SS "#define MCG_SC_LOCS0_MASK   (0x1U)"
+
+.SS "#define MCG_SC_LOCS0_SHIFT   (0U)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

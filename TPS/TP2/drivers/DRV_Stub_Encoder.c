@@ -1,3 +1,9 @@
+/***************************************************************************//**
+  @file     DRV_Stub_Encoder.c
+  @brief    Rotary Encoder stub driver
+  @author   Grupo 1
+ ******************************************************************************/
+
 #include <stdio.h>
 #include "DRV_Encoder.h"
 #include "DRV_Board.h"

@@ -1,0 +1,139 @@
+\hypertarget{_d_r_v___encoder_8c}{}\section{drivers/\+D\+R\+V\+\_\+\+Encoder.c File Reference}
+\label{_d_r_v___encoder_8c}\index{drivers/\+D\+R\+V\+\_\+\+Encoder.\+c@{drivers/\+D\+R\+V\+\_\+\+Encoder.\+c}}
+
+
+Rotary encoder driver.  
+
+
+{\ttfamily \#include \char`\"{}D\+R\+V\+\_\+\+Board.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}D\+R\+V\+\_\+\+Encoder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}D\+R\+V\+\_\+\+Timers.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___encoder_8c_ad7c0c16486a5a3e1579cc8e384d7f96a}{P\+I\+N\+\_\+A}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06cae3d8a811f3bf7196f361be4104db68db}{PA}},1)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___encoder_8c_a9fda21ec50fc75d0fa9bbcb33bf560ff}{P\+I\+N\+\_\+B}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06ca8b7dd81ba2f0d15957795457d92ce139}{PB}},23)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___encoder_8c_af0bbce43e84c5c35ff422da2a3278b88}{P\+I\+N\+\_\+\+S\+WA}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06cae3d8a811f3bf7196f361be4104db68db}{PA}},2)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___encoder_8c_a4f5376783549da38da34aefaaafc7e57}{S\+W\+\_\+\+A\+C\+T\+I\+VE}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_ab811d8c6ff3a505312d3276590444289}{L\+OW}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677}{states}} \{ \newline
+\mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a13d000b4d7dc70d90239b7430d1eb6b2}{S\+T\+A\+RT}}, 
+\mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a93d7c90f5d8b891553e209dacde24540}{C\+W1}}, 
+\mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a5c930f1fdddb45dc12abf7ec15a2e4fa}{C\+W2}}, 
+\mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a262e0e464f8d83f40df739c158e3fac6}{C\+W3}}, 
+\newline
+\mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677aeb32b85d12e3066e7de9b1ac51aba196}{A\+C\+W1}}, 
+\mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a26612c012ef14832248441517eb78b88}{A\+C\+W2}}, 
+\mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a4376e2bd7deff1c3c5f9115c28c584c8}{A\+C\+W3}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_d_r_v___encoder_8c_aeecebb19c73c7d96e9bff0d2e2dac31f}{encoder\+Get\+Status}} ()
+\item 
+\mbox{\hyperlink{_d_r_v___encoder_8h_a30a1a4fd7b6a6ed6a023e586c82ac854}{encoder\+Result\+\_\+t}} \mbox{\hyperlink{_d_r_v___encoder_8c_a997ecbb0db39175331354fa59dbb08a9}{encoder\+Get\+Event}} ()
+\item 
+void \mbox{\hyperlink{_d_r_v___encoder_8c_a816b22a073a30b233d6afdf983c27e8d}{init\+Encoder}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Rotary encoder driver. 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_d_r_v___encoder_8c_ad7c0c16486a5a3e1579cc8e384d7f96a}\label{_d_r_v___encoder_8c_ad7c0c16486a5a3e1579cc8e384d7f96a}} 
+\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!P\+I\+N\+\_\+A@{P\+I\+N\+\_\+A}}
+\index{P\+I\+N\+\_\+A@{P\+I\+N\+\_\+A}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}
+\subsubsection{\texorpdfstring{P\+I\+N\+\_\+A}{PIN\_A}}
+{\footnotesize\ttfamily \#define P\+I\+N\+\_\+A~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06cae3d8a811f3bf7196f361be4104db68db}{PA}},1)}
+
+\mbox{\Hypertarget{_d_r_v___encoder_8c_a9fda21ec50fc75d0fa9bbcb33bf560ff}\label{_d_r_v___encoder_8c_a9fda21ec50fc75d0fa9bbcb33bf560ff}} 
+\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!P\+I\+N\+\_\+B@{P\+I\+N\+\_\+B}}
+\index{P\+I\+N\+\_\+B@{P\+I\+N\+\_\+B}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}
+\subsubsection{\texorpdfstring{P\+I\+N\+\_\+B}{PIN\_B}}
+{\footnotesize\ttfamily \#define P\+I\+N\+\_\+B~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06ca8b7dd81ba2f0d15957795457d92ce139}{PB}},23)}
+
+\mbox{\Hypertarget{_d_r_v___encoder_8c_af0bbce43e84c5c35ff422da2a3278b88}\label{_d_r_v___encoder_8c_af0bbce43e84c5c35ff422da2a3278b88}} 
+\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!P\+I\+N\+\_\+\+S\+WA@{P\+I\+N\+\_\+\+S\+WA}}
+\index{P\+I\+N\+\_\+\+S\+WA@{P\+I\+N\+\_\+\+S\+WA}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}
+\subsubsection{\texorpdfstring{P\+I\+N\+\_\+\+S\+WA}{PIN\_SWA}}
+{\footnotesize\ttfamily \#define P\+I\+N\+\_\+\+S\+WA~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{P\+O\+R\+T\+N\+U\+M2\+P\+IN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_adc29c2ff13d900c2f185ee95427fb06cae3d8a811f3bf7196f361be4104db68db}{PA}},2)}
+
+\mbox{\Hypertarget{_d_r_v___encoder_8c_a4f5376783549da38da34aefaaafc7e57}\label{_d_r_v___encoder_8c_a4f5376783549da38da34aefaaafc7e57}} 
+\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!S\+W\+\_\+\+A\+C\+T\+I\+VE@{S\+W\+\_\+\+A\+C\+T\+I\+VE}}
+\index{S\+W\+\_\+\+A\+C\+T\+I\+VE@{S\+W\+\_\+\+A\+C\+T\+I\+VE}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}
+\subsubsection{\texorpdfstring{S\+W\+\_\+\+A\+C\+T\+I\+VE}{SW\_ACTIVE}}
+{\footnotesize\ttfamily \#define S\+W\+\_\+\+A\+C\+T\+I\+VE~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_ab811d8c6ff3a505312d3276590444289}{L\+OW}}}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677}} 
+\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!states@{states}}
+\index{states@{states}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}
+\subsubsection{\texorpdfstring{states}{states}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677}{states}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+RT@{S\+T\+A\+RT}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!S\+T\+A\+RT@{S\+T\+A\+RT}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a13d000b4d7dc70d90239b7430d1eb6b2}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a13d000b4d7dc70d90239b7430d1eb6b2}} 
+S\+T\+A\+RT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+W1@{C\+W1}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!C\+W1@{C\+W1}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a93d7c90f5d8b891553e209dacde24540}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a93d7c90f5d8b891553e209dacde24540}} 
+C\+W1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+W2@{C\+W2}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!C\+W2@{C\+W2}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a5c930f1fdddb45dc12abf7ec15a2e4fa}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a5c930f1fdddb45dc12abf7ec15a2e4fa}} 
+C\+W2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+W3@{C\+W3}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!C\+W3@{C\+W3}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a262e0e464f8d83f40df739c158e3fac6}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a262e0e464f8d83f40df739c158e3fac6}} 
+C\+W3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+C\+W1@{A\+C\+W1}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!A\+C\+W1@{A\+C\+W1}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677aeb32b85d12e3066e7de9b1ac51aba196}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677aeb32b85d12e3066e7de9b1ac51aba196}} 
+A\+C\+W1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+C\+W2@{A\+C\+W2}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!A\+C\+W2@{A\+C\+W2}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a26612c012ef14832248441517eb78b88}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a26612c012ef14832248441517eb78b88}} 
+A\+C\+W2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+C\+W3@{A\+C\+W3}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!A\+C\+W3@{A\+C\+W3}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a4376e2bd7deff1c3c5f9115c28c584c8}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a4376e2bd7deff1c3c5f9115c28c584c8}} 
+A\+C\+W3&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_d_r_v___encoder_8c_a997ecbb0db39175331354fa59dbb08a9}\label{_d_r_v___encoder_8c_a997ecbb0db39175331354fa59dbb08a9}} 
+\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!encoder\+Get\+Event@{encoder\+Get\+Event}}
+\index{encoder\+Get\+Event@{encoder\+Get\+Event}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}
+\subsubsection{\texorpdfstring{encoder\+Get\+Event()}{encoderGetEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_d_r_v___encoder_8h_a30a1a4fd7b6a6ed6a023e586c82ac854}{encoder\+Result\+\_\+t}} encoder\+Get\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_r_v___encoder_8c_aeecebb19c73c7d96e9bff0d2e2dac31f}\label{_d_r_v___encoder_8c_aeecebb19c73c7d96e9bff0d2e2dac31f}} 
+\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!encoder\+Get\+Status@{encoder\+Get\+Status}}
+\index{encoder\+Get\+Status@{encoder\+Get\+Status}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}
+\subsubsection{\texorpdfstring{encoder\+Get\+Status()}{encoderGetStatus()}}
+{\footnotesize\ttfamily bool encoder\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_r_v___encoder_8c_a816b22a073a30b233d6afdf983c27e8d}\label{_d_r_v___encoder_8c_a816b22a073a30b233d6afdf983c27e8d}} 
+\index{D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}!init\+Encoder@{init\+Encoder}}
+\index{init\+Encoder@{init\+Encoder}!D\+R\+V\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Encoder.\+c}}
+\subsubsection{\texorpdfstring{init\+Encoder()}{initEncoder()}}
+{\footnotesize\ttfamily void init\+Encoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

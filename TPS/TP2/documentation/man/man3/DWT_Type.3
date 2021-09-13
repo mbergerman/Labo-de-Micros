@@ -1,0 +1,424 @@
+.TH "DWT_Type" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DWT_Type \- Structure type to access the Data Watchpoint and Trace Register (DWT)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <core_armv8mbl\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCTRL\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP [6U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBPCSR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP0\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED1\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION0\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED2\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP1\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION1\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED4\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP2\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED5\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION2\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED6\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP3\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED7\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION3\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED8\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP4\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED9\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION4\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED10\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP5\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED11\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION5\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED12\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP6\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED13\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION6\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED14\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP7\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED15\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION7\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED16\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP8\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED17\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION8\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED18\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP9\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED19\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION9\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED20\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP10\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED21\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION10\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED22\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP11\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED23\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION11\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED24\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP12\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED25\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION12\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED26\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP13\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED27\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION13\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED28\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP14\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED29\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION14\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED30\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCOMP15\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED31\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFUNCTION15\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCYCCNT\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBCPICNT\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBEXCCNT\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBSLEEPCNT\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBLSUCNT\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBFOLDCNT\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED32\fP [934U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBLSR\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED33\fP [1U]"
+.br
+.ti -1c
+.RI "\fB__IM\fP uint32_t \fBDEVARCH\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBMASK0\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBMASK1\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBMASK2\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBMASK3\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure type to access the Data Watchpoint and Trace Register (DWT)\&. 
+.SH "Field Documentation"
+.PP 
+.SS "\fB__IOM\fP uint32_t COMP0"
+Offset: 0x020 (R/W) Comparator Register 0 
+.SS "\fB__IOM\fP uint32_t COMP1"
+Offset: 0x030 (R/W) Comparator Register 1 
+.SS "\fB__IOM\fP uint32_t COMP10"
+Offset: 0x0C0 (R/W) Comparator Register 10 
+.SS "\fB__IOM\fP uint32_t COMP11"
+Offset: 0x0D0 (R/W) Comparator Register 11 
+.SS "\fB__IOM\fP uint32_t COMP12"
+Offset: 0x0E0 (R/W) Comparator Register 12 
+.SS "\fB__IOM\fP uint32_t COMP13"
+Offset: 0x0F0 (R/W) Comparator Register 13 
+.SS "\fB__IOM\fP uint32_t COMP14"
+Offset: 0x100 (R/W) Comparator Register 14 
+.SS "\fB__IOM\fP uint32_t COMP15"
+Offset: 0x110 (R/W) Comparator Register 15 
+.SS "\fB__IOM\fP uint32_t COMP2"
+Offset: 0x040 (R/W) Comparator Register 2 
+.SS "\fB__IOM\fP uint32_t COMP3"
+Offset: 0x050 (R/W) Comparator Register 3 
+.SS "\fB__IOM\fP uint32_t COMP4"
+Offset: 0x060 (R/W) Comparator Register 4 
+.SS "\fB__IOM\fP uint32_t COMP5"
+Offset: 0x070 (R/W) Comparator Register 5 
+.SS "\fB__IOM\fP uint32_t COMP6"
+Offset: 0x080 (R/W) Comparator Register 6 
+.SS "\fB__IOM\fP uint32_t COMP7"
+Offset: 0x090 (R/W) Comparator Register 7 
+.SS "\fB__IOM\fP uint32_t COMP8"
+Offset: 0x0A0 (R/W) Comparator Register 8 
+.SS "\fB__IOM\fP uint32_t COMP9"
+Offset: 0x0B0 (R/W) Comparator Register 9 
+.SS "\fB__IOM\fP uint32_t CPICNT"
+Offset: 0x008 (R/W) CPI Count Register 
+.SS "\fB__IOM\fP uint32_t CTRL"
+Offset: 0x000 (R/W) Control Register 
+.SS "\fB__IOM\fP uint32_t CYCCNT"
+Offset: 0x004 (R/W) Cycle Count Register 
+.SS "\fB__IM\fP uint32_t DEVARCH"
+Offset: 0xFBC (R/ ) Device Architecture Register 
+.SS "\fB__IOM\fP uint32_t EXCCNT"
+Offset: 0x00C (R/W) Exception Overhead Count Register 
+.SS "\fB__IOM\fP uint32_t FOLDCNT"
+Offset: 0x018 (R/W) Folded-instruction Count Register 
+.SS "\fB__IOM\fP uint32_t FUNCTION0"
+Offset: 0x028 (R/W) Function Register 0 
+.SS "\fB__IOM\fP uint32_t FUNCTION1"
+Offset: 0x038 (R/W) Function Register 1 
+.SS "\fB__IOM\fP uint32_t FUNCTION10"
+Offset: 0x0C8 (R/W) Function Register 10 
+.SS "\fB__IOM\fP uint32_t FUNCTION11"
+Offset: 0x0D8 (R/W) Function Register 11 
+.SS "\fB__IOM\fP uint32_t FUNCTION12"
+Offset: 0x0E8 (R/W) Function Register 12 
+.SS "\fB__IOM\fP uint32_t FUNCTION13"
+Offset: 0x0F8 (R/W) Function Register 13 
+.SS "\fB__IOM\fP uint32_t FUNCTION14"
+Offset: 0x108 (R/W) Function Register 14 
+.SS "\fB__IOM\fP uint32_t FUNCTION15"
+Offset: 0x118 (R/W) Function Register 15 
+.SS "\fB__IOM\fP uint32_t FUNCTION2"
+Offset: 0x048 (R/W) Function Register 2 
+.SS "\fB__IOM\fP uint32_t FUNCTION3"
+Offset: 0x058 (R/W) Function Register 3 
+.SS "\fB__IOM\fP uint32_t FUNCTION4"
+Offset: 0x068 (R/W) Function Register 4 
+.SS "\fB__IOM\fP uint32_t FUNCTION5"
+Offset: 0x078 (R/W) Function Register 5 
+.SS "\fB__IOM\fP uint32_t FUNCTION6"
+Offset: 0x088 (R/W) Function Register 6 
+.SS "\fB__IOM\fP uint32_t FUNCTION7"
+Offset: 0x098 (R/W) Function Register 7 
+.SS "\fB__IOM\fP uint32_t FUNCTION8"
+Offset: 0x0A8 (R/W) Function Register 8 
+.SS "\fB__IOM\fP uint32_t FUNCTION9"
+Offset: 0x0B8 (R/W) Function Register 9 
+.SS "\fB__IM\fP uint32_t LSR"
+Offset: 0xFB4 (R ) Lock Status Register 
+.SS "\fB__IOM\fP uint32_t LSUCNT"
+Offset: 0x014 (R/W) LSU Count Register 
+.SS "\fB__IOM\fP uint32_t MASK0"
+Offset: 0x024 (R/W) Mask Register 0 
+.SS "\fB__IOM\fP uint32_t MASK1"
+Offset: 0x034 (R/W) Mask Register 1 
+.SS "\fB__IOM\fP uint32_t MASK2"
+Offset: 0x044 (R/W) Mask Register 2 
+.SS "\fB__IOM\fP uint32_t MASK3"
+Offset: 0x054 (R/W) Mask Register 3 
+.SS "\fB__IM\fP uint32_t PCSR"
+Offset: 0x01C (R/ ) Program Counter Sample Register 
+.SS "uint32_t RESERVED0"
+
+.SS "uint32_t RESERVED1"
+
+.SS "uint32_t RESERVED10"
+
+.SS "uint32_t RESERVED11"
+
+.SS "uint32_t RESERVED12"
+
+.SS "uint32_t RESERVED13"
+
+.SS "uint32_t RESERVED14"
+
+.SS "uint32_t RESERVED15"
+
+.SS "uint32_t RESERVED16"
+
+.SS "uint32_t RESERVED17"
+
+.SS "uint32_t RESERVED18"
+
+.SS "uint32_t RESERVED19"
+
+.SS "uint32_t RESERVED2"
+
+.SS "uint32_t RESERVED20"
+
+.SS "uint32_t RESERVED21"
+
+.SS "uint32_t RESERVED22"
+
+.SS "uint32_t RESERVED23"
+
+.SS "uint32_t RESERVED24"
+
+.SS "uint32_t RESERVED25"
+
+.SS "uint32_t RESERVED26"
+
+.SS "uint32_t RESERVED27"
+
+.SS "uint32_t RESERVED28"
+
+.SS "uint32_t RESERVED29"
+
+.SS "uint32_t RESERVED3"
+
+.SS "uint32_t RESERVED30"
+
+.SS "uint32_t RESERVED31"
+
+.SS "uint32_t RESERVED32[934U]"
+
+.SS "uint32_t RESERVED33[1U]"
+
+.SS "uint32_t RESERVED4"
+
+.SS "uint32_t RESERVED5"
+
+.SS "uint32_t RESERVED6"
+
+.SS "uint32_t RESERVED7"
+
+.SS "uint32_t RESERVED8"
+
+.SS "uint32_t RESERVED9"
+
+.SS "\fB__IOM\fP uint32_t SLEEPCNT"
+Offset: 0x010 (R/W) Sleep Count Register 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

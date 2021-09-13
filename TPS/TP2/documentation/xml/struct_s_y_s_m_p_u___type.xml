@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_s_y_s_m_p_u___type" kind="struct" language="C++" prot="public">
+    <compoundname>SYSMPU_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gafb421388460a6f91dc5a6a192d886912" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CESR</definition>
+        <argsstring></argsstring>
+        <name>CESR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control/Error Status Register, offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="11067" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="11067" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaf18bafaac3b2ce682652a0ce35d863c5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_0[12]</definition>
+        <argsstring>[12]</argsstring>
+        <name>RESERVED_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="11068" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="11068" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaaafc8f097baa38e6a29b751eb0b97316" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint32_t</type>
+        <definition>__I uint32_t EAR</definition>
+        <argsstring></argsstring>
+        <name>EAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error Address Register, slave port n, array offset: 0x10, array step: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="11070" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="11070" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaaec2dafc0fa1bdd2c7bd75d2eb12dbef" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint32_t</type>
+        <definition>__I uint32_t EDR</definition>
+        <argsstring></argsstring>
+        <name>EDR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error Detail Register, slave port n, array offset: 0x14, array step: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="11071" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="11071" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga580a2c7b622f8b50342faed2cfcd9fbb" prot="public" static="no" mutable="no">
+        <type>struct SYSMPU_Type::@52</type>
+        <definition>struct SYSMPU_Type::@52  SP[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>SP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="11072" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaed973faccea151edaf3bdaa2664da441" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_1[968]</definition>
+        <argsstring>[968]</argsstring>
+        <name>RESERVED_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="11073" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="11073" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaa052a52bc368d47899920f359ba10ce6" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t WORD[12][4]</definition>
+        <argsstring>[12][4]</argsstring>
+        <name>WORD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Region Descriptor n, Word 0..Region Descriptor n, Word 3, array offset: 0x400, array step: index*0x10, index2*0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="11074" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="11074" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga91ced9af85b6245589cbf0d6688d5ad8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_2[832]</definition>
+        <argsstring>[832]</argsstring>
+        <name>RESERVED_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="11075" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="11075" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga361969cc7784783c8fabc39826ef8afb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t RGDAAC[12]</definition>
+        <argsstring>[12]</argsstring>
+        <name>RGDAAC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Region Descriptor Alternate Access Control n, array offset: 0x800, array step: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="11076" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="11076" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>SYSMPU - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="11066" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="11066" bodyend="11077"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gafb421388460a6f91dc5a6a192d886912" prot="public" virt="non-virtual"><scope>SYSMPU_Type</scope><name>CESR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaaafc8f097baa38e6a29b751eb0b97316" prot="public" virt="non-virtual"><scope>SYSMPU_Type</scope><name>EAR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaaec2dafc0fa1bdd2c7bd75d2eb12dbef" prot="public" virt="non-virtual"><scope>SYSMPU_Type</scope><name>EDR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaf18bafaac3b2ce682652a0ce35d863c5" prot="public" virt="non-virtual"><scope>SYSMPU_Type</scope><name>RESERVED_0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaed973faccea151edaf3bdaa2664da441" prot="public" virt="non-virtual"><scope>SYSMPU_Type</scope><name>RESERVED_1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga91ced9af85b6245589cbf0d6688d5ad8" prot="public" virt="non-virtual"><scope>SYSMPU_Type</scope><name>RESERVED_2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga361969cc7784783c8fabc39826ef8afb" prot="public" virt="non-virtual"><scope>SYSMPU_Type</scope><name>RGDAAC</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga580a2c7b622f8b50342faed2cfcd9fbb" prot="public" virt="non-virtual"><scope>SYSMPU_Type</scope><name>SP</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaa052a52bc368d47899920f359ba10ce6" prot="public" virt="non-virtual"><scope>SYSMPU_Type</scope><name>WORD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

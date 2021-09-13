@@ -1,0 +1,51 @@
+.TH "SYSMPU_Type" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SYSMPU_Type
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MK64F12\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBCESR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_0\fP [12]"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   \fB__I\fP uint32_t \fBEAR\fP"
+.br
+.ti -1c
+.RI "   \fB__I\fP uint32_t \fBEDR\fP"
+.br
+.ti -1c
+.RI "} \fBSP\fP [5]"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_1\fP [968]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBWORD\fP [12][4]"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_2\fP [832]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRGDAAC\fP [12]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+SYSMPU - Register Layout Typedef 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

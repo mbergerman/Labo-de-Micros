@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___c_m_s_i_s__core___debug_functions" kind="group">
+    <compoundname>CMSIS_core_DebugFunctions</compoundname>
+    <title>ITM Functions</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>volatile int32_t ITM_RxBuffer</definition>
+        <argsstring></argsstring>
+        <name>ITM_RxBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External variable to receive characters. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2883" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>volatile int32_t ITM_RxBuffer</definition>
+        <argsstring></argsstring>
+        <name>ITM_RxBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>External variable to receive characters. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="2041" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_m_s_i_s__core___debug_functions_1gac90a497bd64286b84552c2c553d3419e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> uint32_t</type>
+        <definition>__STATIC_INLINE uint32_t ITM_SendChar</definition>
+        <argsstring>(uint32_t ch)</argsstring>
+        <name>ITM_SendChar</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>ITM Send Character. </para>        </briefdescription>
+        <detaileddescription>
+<para>Transmits a character via the ITM channel 0, and <itemizedlist>
+<listitem><para>Just returns when no debugger is connected that has booked the output. </para></listitem>
+<listitem><para>Is blocking when a debugger is connected, but the previous character sent has not been transmitted. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Character to transmit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Character to transmit. </para></simplesect>
+</para></listitem>
+</itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2895" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2895" bodyend="2907"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s__core___debug_functions_1gac3ee2c30a1ac4ed34c8a866a17decd53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> int32_t</type>
+        <definition>__STATIC_INLINE int32_t ITM_ReceiveChar</definition>
+        <argsstring>(void)</argsstring>
+        <name>ITM_ReceiveChar</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>ITM Receive Character. </para>        </briefdescription>
+        <detaileddescription>
+<para>Inputs a character via the external variable <ref refid="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" kindref="member">ITM_RxBuffer</ref>. <simplesect kind="return"><para>Received character. </para></simplesect>
+<simplesect kind="return"><para>-1 No character pending. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2916" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2916" bodyend="2927"/>
+      </memberdef>
+      <memberdef kind="function" id="group___c_m_s_i_s__core___debug_functions_1gae61ce9ca5917735325cd93b0fb21dd29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> int32_t</type>
+        <definition>__STATIC_INLINE int32_t ITM_CheckChar</definition>
+        <argsstring>(void)</argsstring>
+        <name>ITM_CheckChar</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>ITM Check Character. </para>        </briefdescription>
+        <detaileddescription>
+<para>Checks whether a character is pending for reading in the variable <ref refid="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" kindref="member">ITM_RxBuffer</ref>. <simplesect kind="return"><para>0 No character available. </para></simplesect>
+<simplesect kind="return"><para>1 Character available. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2936" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2936" bodyend="2947"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s__core___debug_functions_1gaa822cb398ee022b59e9e6c5d7bbb228a" prot="public" static="no">
+        <name>ITM_RXBUFFER_EMPTY</name>
+        <initializer>((int32_t)0x5AA55AA5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value identifying <ref refid="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" kindref="member">ITM_RxBuffer</ref> is ready for next character. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="2884" column="25" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="2884" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s__core___debug_functions_1gaa822cb398ee022b59e9e6c5d7bbb228a" prot="public" static="no">
+        <name>ITM_RXBUFFER_EMPTY</name>
+        <initializer>((int32_t)0x5AA55AA5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value identifying <ref refid="group___c_m_s_i_s__core___debug_functions_1ga12e68e55a7badc271b948d6c7230b2a8" kindref="member">ITM_RxBuffer</ref> is ready for next character. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="2042" column="25" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="2042" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions that access the ITM debug interface. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

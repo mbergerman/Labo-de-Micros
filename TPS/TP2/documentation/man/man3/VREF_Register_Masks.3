@@ -1,0 +1,153 @@
+.TH "VREF_Register_Masks" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+VREF_Register_Masks
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBVREF_BASE\fP   (0x40074000u)"
+.br
+.ti -1c
+.RI "#define \fBVREF\fP   ((\fBVREF_Type\fP *)\fBVREF_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBVREF_BASE_ADDRS\fP   { \fBVREF_BASE\fP }"
+.br
+.ti -1c
+.RI "#define \fBVREF_BASE_PTRS\fP   { \fBVREF\fP }"
+.br
+.in -1c
+.SS "TRM - VREF Trim Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBVREF_TRM_TRIM_MASK\fP   (0x3FU)"
+.br
+.ti -1c
+.RI "#define \fBVREF_TRM_TRIM_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBVREF_TRM_TRIM\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_TRM_TRIM_SHIFT\fP)) & \fBVREF_TRM_TRIM_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBVREF_TRM_CHOPEN_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBVREF_TRM_CHOPEN_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBVREF_TRM_CHOPEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_TRM_CHOPEN_SHIFT\fP)) & \fBVREF_TRM_CHOPEN_MASK\fP)"
+.br
+.in -1c
+.SS "SC - VREF Status and Control Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBVREF_SC_MODE_LV_MASK\fP   (0x3U)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_MODE_LV_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_MODE_LV\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_SC_MODE_LV_SHIFT\fP)) & \fBVREF_SC_MODE_LV_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_VREFST_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_VREFST_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_VREFST\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_SC_VREFST_SHIFT\fP)) & \fBVREF_SC_VREFST_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_ICOMPEN_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_ICOMPEN_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_ICOMPEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_SC_ICOMPEN_SHIFT\fP)) & \fBVREF_SC_ICOMPEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_REGEN_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_REGEN_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_REGEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_SC_REGEN_SHIFT\fP)) & \fBVREF_SC_REGEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_VREFEN_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_VREFEN_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBVREF_SC_VREFEN\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_SC_VREFEN_SHIFT\fP)) & \fBVREF_SC_VREFEN_MASK\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define VREF   ((\fBVREF_Type\fP *)\fBVREF_BASE\fP)"
+Peripheral VREF base pointer 
+.SS "#define VREF_BASE   (0x40074000u)"
+Peripheral VREF base address 
+.SS "#define VREF_BASE_ADDRS   { \fBVREF_BASE\fP }"
+Array initializer of VREF peripheral base addresses 
+.SS "#define VREF_BASE_PTRS   { \fBVREF\fP }"
+Array initializer of VREF peripheral base pointers 
+.SS "#define VREF_SC_ICOMPEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_SC_ICOMPEN_SHIFT\fP)) & \fBVREF_SC_ICOMPEN_MASK\fP)"
+
+.SS "#define VREF_SC_ICOMPEN_MASK   (0x20U)"
+
+.SS "#define VREF_SC_ICOMPEN_SHIFT   (5U)"
+
+.SS "#define VREF_SC_MODE_LV(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_SC_MODE_LV_SHIFT\fP)) & \fBVREF_SC_MODE_LV_MASK\fP)"
+
+.SS "#define VREF_SC_MODE_LV_MASK   (0x3U)"
+
+.SS "#define VREF_SC_MODE_LV_SHIFT   (0U)"
+
+.SS "#define VREF_SC_REGEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_SC_REGEN_SHIFT\fP)) & \fBVREF_SC_REGEN_MASK\fP)"
+
+.SS "#define VREF_SC_REGEN_MASK   (0x40U)"
+
+.SS "#define VREF_SC_REGEN_SHIFT   (6U)"
+
+.SS "#define VREF_SC_VREFEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_SC_VREFEN_SHIFT\fP)) & \fBVREF_SC_VREFEN_MASK\fP)"
+
+.SS "#define VREF_SC_VREFEN_MASK   (0x80U)"
+
+.SS "#define VREF_SC_VREFEN_SHIFT   (7U)"
+
+.SS "#define VREF_SC_VREFST(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_SC_VREFST_SHIFT\fP)) & \fBVREF_SC_VREFST_MASK\fP)"
+
+.SS "#define VREF_SC_VREFST_MASK   (0x4U)"
+
+.SS "#define VREF_SC_VREFST_SHIFT   (2U)"
+
+.SS "#define VREF_TRM_CHOPEN(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_TRM_CHOPEN_SHIFT\fP)) & \fBVREF_TRM_CHOPEN_MASK\fP)"
+
+.SS "#define VREF_TRM_CHOPEN_MASK   (0x40U)"
+
+.SS "#define VREF_TRM_CHOPEN_SHIFT   (6U)"
+
+.SS "#define VREF_TRM_TRIM(x)   (((uint8_t)(((uint8_t)(x)) << \fBVREF_TRM_TRIM_SHIFT\fP)) & \fBVREF_TRM_TRIM_MASK\fP)"
+
+.SS "#define VREF_TRM_TRIM_MASK   (0x3FU)"
+
+.SS "#define VREF_TRM_TRIM_SHIFT   (0U)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

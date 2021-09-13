@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_r_n_g___type" kind="struct" language="C++" prot="public">
+    <compoundname>RNG_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gab40c89c59391aaa9d9a8ec011dd0907a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RNGA Control Register, offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9271" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaa4e5f09c578d8d5c138b41a1e740df3f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint32_t</type>
+        <definition>__I uint32_t SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RNGA Status Register, offset: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9272" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gab8002a02f2493e5718814fb1b0b0f4e8" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a7e25d9380f9ef903923964322e71f2f6" kindref="member">__O</ref> uint32_t</type>
+        <definition>__O uint32_t ER</definition>
+        <argsstring></argsstring>
+        <name>ER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RNGA Entropy Register, offset: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9273" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga14a5329da9f87f50c64cc56e21bdd562" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint32_t</type>
+        <definition>__I uint32_t OR</definition>
+        <argsstring></argsstring>
+        <name>OR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RNGA Output Register, offset: 0xC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9274" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9274" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>RNG - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="9270" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9270" bodyend="9275"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gab40c89c59391aaa9d9a8ec011dd0907a" prot="public" virt="non-virtual"><scope>RNG_Type</scope><name>CR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gab8002a02f2493e5718814fb1b0b0f4e8" prot="public" virt="non-virtual"><scope>RNG_Type</scope><name>ER</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga14a5329da9f87f50c64cc56e21bdd562" prot="public" virt="non-virtual"><scope>RNG_Type</scope><name>OR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaa4e5f09c578d8d5c138b41a1e740df3f" prot="public" virt="non-virtual"><scope>RNG_Type</scope><name>SR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

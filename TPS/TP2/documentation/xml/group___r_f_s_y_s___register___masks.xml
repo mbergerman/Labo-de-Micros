@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___r_f_s_y_s___register___masks" kind="group">
+    <compoundname>RFSYS_Register_Masks</compoundname>
+    <title>RFSYS Register Masks</title>
+      <sectiondef kind="user-defined">
+      <header>REG - Register file register</header>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1ga2fe64579aaef18ce266e3d6c316d3241" prot="public" static="no">
+        <name>RFSYS_REG_LL_MASK</name>
+        <initializer>(0xFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9162" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1gaab45c60c0a8e5edb59537ee2bcb2bbcf" prot="public" static="no">
+        <name>RFSYS_REG_LL_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9163" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1gaf197b94e2d03011c483dee604724cfda" prot="public" static="no">
+        <name>RFSYS_REG_LL</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_f_s_y_s___register___masks_1gaab45c60c0a8e5edb59537ee2bcb2bbcf" kindref="member">RFSYS_REG_LL_SHIFT</ref>)) &amp; <ref refid="group___r_f_s_y_s___register___masks_1ga2fe64579aaef18ce266e3d6c316d3241" kindref="member">RFSYS_REG_LL_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9164" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1ga9f8ddcb45324c34fd2d19417b8b13d11" prot="public" static="no">
+        <name>RFSYS_REG_LH_MASK</name>
+        <initializer>(0xFF00U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9165" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1gabe96c857aab7668805c1fb3ea46693bf" prot="public" static="no">
+        <name>RFSYS_REG_LH_SHIFT</name>
+        <initializer>(8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9166" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1ga9b8cd1814fd5957849b91bfd1bdf6ac6" prot="public" static="no">
+        <name>RFSYS_REG_LH</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_f_s_y_s___register___masks_1gabe96c857aab7668805c1fb3ea46693bf" kindref="member">RFSYS_REG_LH_SHIFT</ref>)) &amp; <ref refid="group___r_f_s_y_s___register___masks_1ga9f8ddcb45324c34fd2d19417b8b13d11" kindref="member">RFSYS_REG_LH_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9167" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1ga063f595b6c7267627c96048590611cc1" prot="public" static="no">
+        <name>RFSYS_REG_HL_MASK</name>
+        <initializer>(0xFF0000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9168" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1gabc34a2d1963a697d1a773a8981a063f5" prot="public" static="no">
+        <name>RFSYS_REG_HL_SHIFT</name>
+        <initializer>(16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9169" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1gaea8beedf47675b6b2c630526a03d90e5" prot="public" static="no">
+        <name>RFSYS_REG_HL</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_f_s_y_s___register___masks_1gabc34a2d1963a697d1a773a8981a063f5" kindref="member">RFSYS_REG_HL_SHIFT</ref>)) &amp; <ref refid="group___r_f_s_y_s___register___masks_1ga063f595b6c7267627c96048590611cc1" kindref="member">RFSYS_REG_HL_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9170" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1gae1fb55483b3d79a2e74d0c1ad4e57d51" prot="public" static="no">
+        <name>RFSYS_REG_HH_MASK</name>
+        <initializer>(0xFF000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9171" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1gae78b067bd28db1d0ff57015f300312fb" prot="public" static="no">
+        <name>RFSYS_REG_HH_SHIFT</name>
+        <initializer>(24U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9172" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1ga9724177c60594bb3a22f13e9ef7de07c" prot="public" static="no">
+        <name>RFSYS_REG_HH</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_f_s_y_s___register___masks_1gae78b067bd28db1d0ff57015f300312fb" kindref="member">RFSYS_REG_HH_SHIFT</ref>)) &amp; <ref refid="group___r_f_s_y_s___register___masks_1gae1fb55483b3d79a2e74d0c1ad4e57d51" kindref="member">RFSYS_REG_HH_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9173" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1gafacec8fbd6ebad90fb7b4ac0e45b7e9a" prot="public" static="no">
+        <name>RFSYS_REG_COUNT</name>
+        <initializer>(8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9176" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1ga742dcff49e1d900ccc5fb6d716dac969" prot="public" static="no">
+        <name>RFSYS_BASE</name>
+        <initializer>(0x40041000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral RFSYS base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9186" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1ga83a5a75f5421c69ce93437b8be3c1144" prot="public" static="no">
+        <name>RFSYS</name>
+        <initializer>((<ref refid="struct_r_f_s_y_s___type" kindref="compound">RFSYS_Type</ref> *)<ref refid="group___r_f_s_y_s___register___masks_1ga742dcff49e1d900ccc5fb6d716dac969" kindref="member">RFSYS_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral RFSYS base pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9188" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1ga65742e072e59ddefb5bc976bbd6f517b" prot="public" static="no">
+        <name>RFSYS_BASE_ADDRS</name>
+        <initializer>{ <ref refid="group___r_f_s_y_s___register___masks_1ga742dcff49e1d900ccc5fb6d716dac969" kindref="member">RFSYS_BASE</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of RFSYS peripheral base addresses </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9190" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_f_s_y_s___register___masks_1ga59f6caa8732744ac3a9f91828ec2daa1" prot="public" static="no">
+        <name>RFSYS_BASE_PTRS</name>
+        <initializer>{ <ref refid="group___r_f_s_y_s___register___masks_1ga83a5a75f5421c69ce93437b8be3c1144" kindref="member">RFSYS</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of RFSYS peripheral base pointers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9192" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9192" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

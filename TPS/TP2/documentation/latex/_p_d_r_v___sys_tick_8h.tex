@@ -1,0 +1,56 @@
+\hypertarget{_p_d_r_v___sys_tick_8h}{}\section{drivers/\+P\+D\+R\+V\+\_\+\+Sys\+Tick.h File Reference}
+\label{_p_d_r_v___sys_tick_8h}\index{drivers/\+P\+D\+R\+V\+\_\+\+Sys\+Tick.\+h@{drivers/\+P\+D\+R\+V\+\_\+\+Sys\+Tick.\+h}}
+
+
+Sys\+Tick driver.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8h_ac352ac5d53364dc4e115af3949592001}{S\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+S\+R\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ}}~1000U
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_p_d_r_v___sys_tick_8h_ab2a8b988c01547bab2f66998dedf990e}{Sys\+Tick\+\_\+\+Init}} (void($\ast$funcallback)(void))
+\begin{DoxyCompactList}\small\item\em Initialize Sys\+Tic driver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Sys\+Tick driver. 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_p_d_r_v___sys_tick_8h_ac352ac5d53364dc4e115af3949592001}\label{_p_d_r_v___sys_tick_8h_ac352ac5d53364dc4e115af3949592001}} 
+\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+h@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+h}!S\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+S\+R\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ@{S\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+S\+R\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ}}
+\index{S\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+S\+R\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ@{S\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+S\+R\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+h@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+h}}
+\subsubsection{\texorpdfstring{S\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+S\+R\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ}{SYSTICK\_ISR\_FREQUENCY\_HZ}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+S\+R\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ~1000U}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_p_d_r_v___sys_tick_8h_ab2a8b988c01547bab2f66998dedf990e}\label{_p_d_r_v___sys_tick_8h_ab2a8b988c01547bab2f66998dedf990e}} 
+\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+h@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+h}!Sys\+Tick\+\_\+\+Init@{Sys\+Tick\+\_\+\+Init}}
+\index{Sys\+Tick\+\_\+\+Init@{Sys\+Tick\+\_\+\+Init}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+h@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+h}}
+\subsubsection{\texorpdfstring{Sys\+Tick\+\_\+\+Init()}{SysTick\_Init()}}
+{\footnotesize\ttfamily bool Sys\+Tick\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{funcallback }\end{DoxyParamCaption})}
+
+
+
+Initialize Sys\+Tic driver. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em funcallback} & Function to be call every Sys\+Tick \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Initialization and registration succeed 
+\end{DoxyReturn}

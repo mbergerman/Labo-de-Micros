@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___linear_interpolate" kind="group">
+    <compoundname>LinearInterpolate</compoundname>
+    <title>Linear Interpolation</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___linear_interpolate_1ga790bbc697724ee432f840cfebbbae1f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CMSIS_INLINE <ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> <ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>CMSIS_INLINE __STATIC_INLINE float32_t arm_linear_interp_f32</definition>
+        <argsstring>(arm_linear_interp_instance_f32 *S, float32_t x)</argsstring>
+        <name>arm_linear_interp_f32</name>
+        <param>
+          <type><ref refid="structarm__linear__interp__instance__f32" kindref="compound">arm_linear_interp_instance_f32</ref> *</type>
+          <declname>S</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Process function for the floating-point Linear Interpolation Function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">S</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is an instance of the floating-point Linear Interpolation structure </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input sample to process </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>y processed output sample. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="5414" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="5414" bodyend="5455"/>
+      </memberdef>
+      <memberdef kind="function" id="group___linear_interpolate_1gaad59cea673ab358888075b040bacc71f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CMSIS_INLINE <ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> <ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>CMSIS_INLINE __STATIC_INLINE q31_t arm_linear_interp_q31</definition>
+        <argsstring>(q31_t *pYData, q31_t x, uint32_t nValues)</argsstring>
+        <name>arm_linear_interp_q31</name>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+          <declname>pYData</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>nValues</declname>
+        </param>
+        <briefdescription>
+<para>Process function for the Q31 Linear Interpolation Function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pYData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to Q31 Linear Interpolation table </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input sample to process </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nValues</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of table values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>y processed output sample.</para></simplesect>
+<simplesect kind="par"><title></title><para>Input sample <computeroutput>x</computeroutput> is in 12.20 format which contains 12 bits for table index and 20 bits for fractional part. This function can support maximum of table size 2^12. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="5471" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="5471" bodyend="5513"/>
+      </memberdef>
+      <memberdef kind="function" id="group___linear_interpolate_1ga7e5d633c26edd82e009517cd2347fb00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CMSIS_INLINE <ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> <ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref></type>
+        <definition>CMSIS_INLINE __STATIC_INLINE q15_t arm_linear_interp_q15</definition>
+        <argsstring>(q15_t *pYData, q31_t x, uint32_t nValues)</argsstring>
+        <name>arm_linear_interp_q15</name>
+        <param>
+          <type><ref refid="arm__math_8h_1ab5a8fb21a5b3b983d5f54f31614052ea" kindref="member">q15_t</ref> *</type>
+          <declname>pYData</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>nValues</declname>
+        </param>
+        <briefdescription>
+<para>Process function for the Q15 Linear Interpolation Function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pYData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to Q15 Linear Interpolation table </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input sample to process </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nValues</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of table values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>y processed output sample.</para></simplesect>
+<simplesect kind="par"><title></title><para>Input sample <computeroutput>x</computeroutput> is in 12.20 format which contains 12 bits for table index and 20 bits for fractional part. This function can support maximum of table size 2^12. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="5529" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="5529" bodyend="5571"/>
+      </memberdef>
+      <memberdef kind="function" id="group___linear_interpolate_1gaab750789ec9230e65c3bf544029d246f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CMSIS_INLINE <ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> <ref refid="arm__math_8h_1ae541b6f232c305361e9b416fc9eed263" kindref="member">q7_t</ref></type>
+        <definition>CMSIS_INLINE __STATIC_INLINE q7_t arm_linear_interp_q7</definition>
+        <argsstring>(q7_t *pYData, q31_t x, uint32_t nValues)</argsstring>
+        <name>arm_linear_interp_q7</name>
+        <param>
+          <type><ref refid="arm__math_8h_1ae541b6f232c305361e9b416fc9eed263" kindref="member">q7_t</ref> *</type>
+          <declname>pYData</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>nValues</declname>
+        </param>
+        <briefdescription>
+<para>Process function for the Q7 Linear Interpolation Function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pYData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to Q7 Linear Interpolation table </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input sample to process </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nValues</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of table values </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>y processed output sample.</para></simplesect>
+<simplesect kind="par"><title></title><para>Input sample <computeroutput>x</computeroutput> is in 12.20 format which contains 12 bits for table index and 20 bits for fractional part. This function can support maximum of table size 2^12. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="5586" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="5586" bodyend="5628"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Linear interpolation is a method of curve fitting using linear polynomials. Linear interpolation works by effectively drawing a straight line between two neighboring samples and returning the appropriate point along that line</para><para><simplesect kind="par"><title></title><para><image type="html" name="LinearInterp.gif">Linear interpolation</image>
+ </para></simplesect>
+<simplesect kind="par"><title></title><para>A Linear Interpolate function calculates an output value(y), for the input(x) using linear interpolation of the input values x0, x1( nearest input values) and the output values y0 and y1(nearest output values)</para></simplesect>
+<simplesect kind="par"><title>Algorithm:</title><para><preformatted>
+      y = y0 + (x - x0) * ((y1 - y0)/(x1-x0))
+      where x0, x1 are nearest values of input x
+            y0, y1 are nearest values to output y
+</preformatted></para></simplesect>
+<simplesect kind="par"><title></title><para>This set of functions implements Linear interpolation process for Q7, Q15, Q31, and floating-point data types. The functions operate on a single sample of data and each call to the function returns a single processed value. <computeroutput>S</computeroutput> points to an instance of the Linear Interpolate function data structure. <computeroutput>x</computeroutput> is the input sample value. The functions returns the output value.</para></simplesect>
+<simplesect kind="par"><title></title><para>if x is outside of the table boundary, Linear interpolation returns first value of the table if x is below input range and returns last value of table if x is above range. </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

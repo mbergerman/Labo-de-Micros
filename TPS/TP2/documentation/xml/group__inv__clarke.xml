@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__inv__clarke" kind="group">
+    <compoundname>inv_clarke</compoundname>
+    <title>Vector Inverse Clarke Transform</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__inv__clarke_1ga945eb24e625a57c7c3be8a6e655646e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CMSIS_INLINE <ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>CMSIS_INLINE __STATIC_INLINE void arm_inv_clarke_f32</definition>
+        <argsstring>(float32_t Ialpha, float32_t Ibeta, float32_t *pIa, float32_t *pIb)</argsstring>
+        <name>arm_inv_clarke_f32</name>
+        <param>
+          <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+          <declname>Ialpha</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+          <declname>Ibeta</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+          <declname>pIa</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+          <declname>pIb</declname>
+        </param>
+        <briefdescription>
+<para>Floating-point Inverse Clarke transform. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Ialpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input two-phase orthogonal vector axis alpha </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Ibeta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input two-phase orthogonal vector axis beta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pIa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to output three-phase coordinate <computeroutput>a</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pIb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to output three-phase coordinate <computeroutput>b</computeroutput> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="5065" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="5065" bodyend="5076"/>
+      </memberdef>
+      <memberdef kind="function" id="group__inv__clarke_1ga50768ebd8b71e8988dbb804cc03a742d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CMSIS_INLINE <ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>CMSIS_INLINE __STATIC_INLINE void arm_inv_clarke_q31</definition>
+        <argsstring>(q31_t Ialpha, q31_t Ibeta, q31_t *pIa, q31_t *pIb)</argsstring>
+        <name>arm_inv_clarke_q31</name>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+          <declname>Ialpha</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+          <declname>Ibeta</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+          <declname>pIa</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+          <declname>pIb</declname>
+        </param>
+        <briefdescription>
+<para>Inverse Clarke transform for Q31 version. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Ialpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input two-phase orthogonal vector axis alpha </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Ibeta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input two-phase orthogonal vector axis beta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pIa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to output three-phase coordinate <computeroutput>a</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pIb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to output three-phase coordinate <computeroutput>b</computeroutput></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<bold>Scaling and Overflow Behavior:</bold> <simplesect kind="par"><title></title><para>The function is implemented using an internal 32-bit accumulator. The accumulator maintains 1.31 format by truncating lower 31 bits of the intermediate multiplication in 2.62 format. There is saturation on the subtraction, hence there is no risk of overflow. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="5092" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="5092" bodyend="5111"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Inverse Clarke transform converts the two-coordinate time invariant vector into instantaneous stator phases.</para><para>The function operates on a single sample of data and each call to the function returns the processed output. The library provides separate functions for Q31 and floating-point data types. <simplesect kind="par"><title>Algorithm</title><para><image type="html" name="clarkeInvFormula.gif"></image>
+ where <computeroutput>pIa</computeroutput> and <computeroutput>pIb</computeroutput> are the instantaneous stator phases and <computeroutput>Ialpha</computeroutput> and <computeroutput>Ibeta</computeroutput> are the two coordinates of time invariant vector. </para></simplesect>
+<simplesect kind="par"><title>Fixed-Point Behavior</title><para>Care must be taken when using the Q31 version of the Clarke transform. In particular, the overflow and saturation behavior of the accumulator used must be considered. Refer to the function specific documentation below for usage guidelines. </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,121 @@
+.TH "drivers/DRV_Reader.h" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+drivers/DRV_Reader.h \- Card Reader driver\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'PDRV_GPIO\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTERMINATOR_CHAR\fP   '\\0'"
+.br
+.ti -1c
+.RI "#define \fBREADER_TIMEOUT\fP   500"
+.br
+.ti -1c
+.RI "#define \fBREADER_NUM_MAX_LEN\fP   19"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef void(* \fBreaderCallback_t\fP) (char *, uint8_t)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitReader\fP (void)"
+.br
+.RI "Initialize Card Reader\&. "
+.ti -1c
+.RI "void \fBenableReader\fP (void)"
+.br
+.RI "Enable card Reader interruptions\&. "
+.ti -1c
+.RI "void \fBdisableReader\fP (void)"
+.br
+.RI "Disable Card Reader interruptions\&. "
+.ti -1c
+.RI "bool \fBreaderIsReady\fP ()"
+.br
+.RI "Check if card has been correctly swiped\&. "
+.ti -1c
+.RI "void \fBgetValueReader\fP (char *result_number_ptr, uint8_t *result_len_ptr)"
+.br
+.RI "Get card number value\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Card Reader driver\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Grupo 1 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define READER_NUM_MAX_LEN   19"
+
+.SS "#define READER_TIMEOUT   500"
+
+.SS "#define TERMINATOR_CHAR   '\\0'"
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef void(* readerCallback_t) (char *, uint8_t)"
+
+.SH "Function Documentation"
+.PP 
+.SS "void disableReader (void)"
+
+.PP
+Disable Card Reader interruptions\&. 
+.SS "void enableReader (void)"
+
+.PP
+Enable card Reader interruptions\&. 
+.SS "void getValueReader (char * result_number_ptr, uint8_t * result_len_ptr)"
+
+.PP
+Get card number value\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIresult_number_ptr\fP Pointer to result array 
+.br
+\fIresult_len_ptr\fP Pointer to result length variable 
+.RE
+.PP
+
+.SS "void initReader (void)"
+
+.PP
+Initialize Card Reader\&. 
+.SS "bool readerIsReady ()"
+
+.PP
+Check if card has been correctly swiped\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+reading ready 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

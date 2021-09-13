@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_a_i_p_s___type" kind="struct" language="C++" prot="public">
+    <compoundname>AIPS_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga896a4a1f7862550beba46cd8e2e2317b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t MPRA</definition>
+        <argsstring></argsstring>
+        <name>MPRA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master Privilege Register A, offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="714" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gabc36545658b11a98b00c51de3a3c5d42" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_0[28]</definition>
+        <argsstring>[28]</argsstring>
+        <name>RESERVED_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="715" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="715" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gae1b74145d956e4f06a59881f23aaa7a3" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRA</definition>
+        <argsstring></argsstring>
+        <name>PACRA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x20 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="716" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="716" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga2c740e89a51c22d18560a674a92e4f1e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRB</definition>
+        <argsstring></argsstring>
+        <name>PACRB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x24 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="717" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="717" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaf32727b5e3b99080e4b185bed4835743" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRC</definition>
+        <argsstring></argsstring>
+        <name>PACRC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x28 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="718" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga230a8f141b20cdb4e7f0f2ac13661be1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRD</definition>
+        <argsstring></argsstring>
+        <name>PACRD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x2C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="719" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="719" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga751eb9bad252d2a0d98a9d0f0c8ae7d4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_1[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>RESERVED_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="720" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="720" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga35e81b01702e22944b8e8f2258f2aacd" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRE</definition>
+        <argsstring></argsstring>
+        <name>PACRE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x40 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="721" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="721" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga38dc2ff796c83d514ae1391433b32588" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRF</definition>
+        <argsstring></argsstring>
+        <name>PACRF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x44 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="722" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga9c85664a10990daaa8847dadc54328e1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRG</definition>
+        <argsstring></argsstring>
+        <name>PACRG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x48 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="723" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="723" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gad8bf363a362293354ef7a817bfe12c31" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRH</definition>
+        <argsstring></argsstring>
+        <name>PACRH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x4C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="724" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="724" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga779efcab301c5794b68c0e944333aaa0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRI</definition>
+        <argsstring></argsstring>
+        <name>PACRI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x50 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="725" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="725" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gabf3acdc13e6a9a11571b02268fc654ce" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRJ</definition>
+        <argsstring></argsstring>
+        <name>PACRJ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x54 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="726" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="726" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga2bb3a7433a2660b6f14f8e71eadd5cce" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRK</definition>
+        <argsstring></argsstring>
+        <name>PACRK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x58 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="727" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gadb41dc5d16380be9e11e3205bd7da1a7" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRL</definition>
+        <argsstring></argsstring>
+        <name>PACRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x5C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="728" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gadf5e18b2976aaa78636616eab3dec674" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRM</definition>
+        <argsstring></argsstring>
+        <name>PACRM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x60 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="729" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga161b9fba03bbe07ba7f7a8d50da97a51" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRN</definition>
+        <argsstring></argsstring>
+        <name>PACRN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x64 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="730" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="730" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gabd939951c6073a0ecb5d56aed0b1f942" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRO</definition>
+        <argsstring></argsstring>
+        <name>PACRO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x68 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="731" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga3b51b9ee44617dedea460d1a531db9fe" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRP</definition>
+        <argsstring></argsstring>
+        <name>PACRP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x6C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="732" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="732" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga290262cc4edb96ebeefaae3da3cda0d7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_2[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>RESERVED_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="733" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga8f7f8d13e89ff056716554def249398b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PACRU</definition>
+        <argsstring></argsstring>
+        <name>PACRU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral Access Control Register, offset: 0x80 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="734" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="734" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>AIPS - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="713" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="713" bodyend="735"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga896a4a1f7862550beba46cd8e2e2317b" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>MPRA</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gae1b74145d956e4f06a59881f23aaa7a3" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRA</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga2c740e89a51c22d18560a674a92e4f1e" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRB</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaf32727b5e3b99080e4b185bed4835743" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRC</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga230a8f141b20cdb4e7f0f2ac13661be1" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRD</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga35e81b01702e22944b8e8f2258f2aacd" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRE</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga38dc2ff796c83d514ae1391433b32588" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRF</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga9c85664a10990daaa8847dadc54328e1" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRG</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gad8bf363a362293354ef7a817bfe12c31" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRH</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga779efcab301c5794b68c0e944333aaa0" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRI</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gabf3acdc13e6a9a11571b02268fc654ce" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRJ</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga2bb3a7433a2660b6f14f8e71eadd5cce" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRK</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gadb41dc5d16380be9e11e3205bd7da1a7" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRL</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gadf5e18b2976aaa78636616eab3dec674" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRM</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga161b9fba03bbe07ba7f7a8d50da97a51" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRN</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gabd939951c6073a0ecb5d56aed0b1f942" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRO</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga3b51b9ee44617dedea460d1a531db9fe" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRP</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga8f7f8d13e89ff056716554def249398b" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>PACRU</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gabc36545658b11a98b00c51de3a3c5d42" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>RESERVED_0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga751eb9bad252d2a0d98a9d0f0c8ae7d4" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>RESERVED_1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga290262cc4edb96ebeefaae3da3cda0d7" prot="public" virt="non-virtual"><scope>AIPS_Type</scope><name>RESERVED_2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

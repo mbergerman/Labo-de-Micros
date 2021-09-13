@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structarm__fir__instance__q31" kind="struct" language="C++" prot="public">
+    <compoundname>arm_fir_instance_q31</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__fir__instance__q31_1a751941891e47f522a7f5375fe8990aac" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t numTaps</definition>
+        <argsstring></argsstring>
+        <name>numTaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of filter coefficients in the filter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1032" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1032" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__instance__q31_1adee4ba3ee8869865af7d8fa08ca913d6" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the state variable array. The array is of length numTaps+blockSize-1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1033" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1033" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__instance__q31_1a68888e36167d81cb7836db10367a1682" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* pCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the coefficient array. The array is of length numTaps. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1034" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1034" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Q31 FIR filter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/arm_math.h" line="1031" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1030" bodyend="1035"/>
+    <listofallmembers>
+      <member refid="structarm__fir__instance__q31_1a751941891e47f522a7f5375fe8990aac" prot="public" virt="non-virtual"><scope>arm_fir_instance_q31</scope><name>numTaps</name></member>
+      <member refid="structarm__fir__instance__q31_1a68888e36167d81cb7836db10367a1682" prot="public" virt="non-virtual"><scope>arm_fir_instance_q31</scope><name>pCoeffs</name></member>
+      <member refid="structarm__fir__instance__q31_1adee4ba3ee8869865af7d8fa08ca913d6" prot="public" virt="non-virtual"><scope>arm_fir_instance_q31</scope><name>pState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

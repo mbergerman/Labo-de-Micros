@@ -1,0 +1,927 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_d_r_v___reader_8c" kind="file" language="C++">
+    <compoundname>DRV_Reader.c</compoundname>
+    <includes refid="_d_r_v___reader_8h" local="yes">DRV_Reader.h</includes>
+    <includes refid="_d_r_v___timers_8h" local="yes">DRV_Timers.h</includes>
+    <includes refid="_p_d_r_v___g_p_i_o_8h" local="yes">PDRV_GPIO.h</includes>
+    <incdepgraph>
+      <node id="104">
+        <label>stdbool.h</label>
+      </node>
+      <node id="103">
+        <label>stdint.h</label>
+      </node>
+      <node id="106">
+        <label>stdlib.h</label>
+      </node>
+      <node id="105">
+        <label>DRV_Timers.h</label>
+        <link refid="_d_r_v___timers_8h"/>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>PDRV_GPIO.h</label>
+        <link refid="_p_d_r_v___g_p_i_o_8h"/>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>drivers/DRV_Reader.c</label>
+        <link refid="_d_r_v___reader_8c"/>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>DRV_Reader.h</label>
+        <link refid="_d_r_v___reader_8h"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_d_r_v___reader_8c_1a28159f70aebcb3b21df0120d594e1939" prot="public" static="no">
+        <name>READER_EN_PIN</name>
+        <initializer><ref refid="_p_d_r_v___g_p_i_o_8h_1a282f03f9d8560d495e180e7e1703ef0b" kindref="member">PORTNUM2PIN</ref>(<ref refid="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06caefbc069e0ac4cd293f3ba527bec2befe" kindref="member">PD</ref>, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="19" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1a7168ccc01afed197832116ec978ba63a" prot="public" static="no">
+        <name>READER_CLK_PIN</name>
+        <initializer><ref refid="_p_d_r_v___g_p_i_o_8h_1a282f03f9d8560d495e180e7e1703ef0b" kindref="member">PORTNUM2PIN</ref>(<ref refid="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46" kindref="member">PC</ref>, 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="20" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1affad0f95379bff37886b116b51bf8b0d" prot="public" static="no">
+        <name>READER_DATA_PIN</name>
+        <initializer><ref refid="_p_d_r_v___g_p_i_o_8h_1a282f03f9d8560d495e180e7e1703ef0b" kindref="member">PORTNUM2PIN</ref>(<ref refid="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46" kindref="member">PC</ref>, 12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="21" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1aa719023469aabec46d4dadd666d9f209" prot="public" static="no">
+        <name>EN_ACTIVE</name>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="23" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1a993b4fb67e3437103133ed87460a4532" prot="public" static="no">
+        <name>DATA_ONE</name>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="24" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1a6757469e1915383ea7fc7343fe496452" prot="public" static="no">
+        <name>DATA_ZERO</name>
+        <initializer>(!<ref refid="_d_r_v___reader_8c_1a993b4fb67e3437103133ed87460a4532" kindref="member">DATA_ONE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="25" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1ad49a288461a55d7886b997cdf802eb4c" prot="public" static="no">
+        <name>CHAR_BITS</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="27" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1a46130dc86f2322714bba26960b64e7bb" prot="public" static="no">
+        <name>BUFFER_LEN</name>
+        <initializer>40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="28" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1af27cdd7d86a39cdc58fac232a2722f59" prot="public" static="no">
+        <name>PAN_MAX_LEN</name>
+        <initializer><ref refid="_d_r_v___reader_8h_1a273974a97c208115303726fba17f353a" kindref="member">READER_NUM_MAX_LEN</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="29" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1a5bbe679437d50ba51d08134a57e1076b" prot="public" static="no">
+        <name>ADD_CHARS_MIN</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="30" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1a187ee748ebe6331b05836f8046b3564c" prot="public" static="no">
+        <name>NUM_DATA_LEN</name>
+        <initializer>37</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="31" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1ae9c987690f7203f4de165caa0f9b0b2c" prot="public" static="no">
+        <name>FS_LEN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="32" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1af65d8899dad9889cd9807bc893109a1f" prot="public" static="no">
+        <name>SS_CHAR</name>
+        <initializer>&apos;;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="34" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1a1bf20da49202b479833dc11d48a46816" prot="public" static="no">
+        <name>FS_CHAR</name>
+        <initializer>&apos;=&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="35" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1a59f85504422ee376edc566e322b61059" prot="public" static="no">
+        <name>ES_CHAR</name>
+        <initializer>&apos;?&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="36" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1a1452476a5d1d19e5cc2ff6019b246196" prot="public" static="no">
+        <name>ES_BITS</name>
+        <initializer>0b11111</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="38" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1a5cab2c25d7665ad88929a668e4618881" prot="public" static="no">
+        <name>BITS2CHAR</name>
+        <param><defname>b</defname></param>
+        <initializer>((b == 0b10000) ? &apos;0&apos; : \
+						((b == 0b00001) ? &apos;1&apos; : \
+						((b == 0b00010) ? &apos;2&apos; : \
+						((b == 0b10011) ? &apos;3&apos; : \
+						((b == 0b00100) ? &apos;4&apos; : \
+						((b == 0b10101) ? &apos;5&apos; : \
+						((b == 0b10110) ? &apos;6&apos; : \
+						((b == 0b00111) ? &apos;7&apos; : \
+						((b == 0b01000) ? &apos;8&apos; : \
+						((b == 0b11001) ? &apos;9&apos; : \
+						((b == 0b11010) ? &apos;:&apos; : \
+						((b == 0b01011) ? &apos;;&apos; : \
+						((b == 0b11100) ? &apos;&lt;&apos; : \
+						((b == 0b01101) ? &apos;=&apos; : \
+						((b == 0b01110) ? &apos;&gt;&apos; : \
+						((b == 0b11111) ? &apos;?&apos; : &apos;X&apos; \
+						))))))))))))))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="41" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_r_v___reader_8c_1a576acc9d81faf889a7fa391bc0efa52e" prot="public" static="no">
+        <name>BITPARITY4</name>
+        <param><defname>b</defname></param>
+        <initializer>((b &amp; 0b1) ^ (b&gt;&gt;1 &amp; 0b1) ^ (b&gt;&gt;2 &amp; 0b1) ^ (b&gt;&gt;3 &amp; 0b1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="59" column="9" bodyfile="drivers/DRV_Reader.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@1</name>
+        <enumvalue id="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7a13d000b4d7dc70d90239b7430d1eb6b2" prot="public">
+          <name>START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7a4618cf21306b3c647741afa7ebefcab8" prot="public">
+          <name>CHAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7adc6f24fd6915a3f2786a1b7045406924" prot="public">
+          <name>END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="65" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="65" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="enum" id="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@2</name>
+        <enumvalue id="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5acc878d90418c98b0b3a20258310c0f52" prot="public">
+          <name>SS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5a1fea4799e7e5d4fd82b3df6813ce0e71" prot="public">
+          <name>PAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5ae63d77c61a2a5b9777024af082a36719" prot="public">
+          <name>AD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5aaf30f40fd895faed3d20bf98ad054e7c" prot="public">
+          <name>LRC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5ac7f69f7c9e5aea9b8f54cf02870e2bf8" prot="public">
+          <name>SUCCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="71" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="71" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_d_r_v___reader_8c_1ab19cca0751fd577e91cc768d3c9cc6c9" prot="public" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char reading_buffer[BUFFER_LEN]</definition>
+        <argsstring>[BUFFER_LEN]</argsstring>
+        <name>reading_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="103" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_d_r_v___reader_8c_1aa8990394a385a83e1a7f0022b3b831f1" prot="public" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t reading_buffer_pos</definition>
+        <argsstring></argsstring>
+        <name>reading_buffer_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="104" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_d_r_v___reader_8c_1accc242d1864a02be0c9705cb058087ba" prot="public" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t lrc_check</definition>
+        <argsstring></argsstring>
+        <name>lrc_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="105" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_d_r_v___reader_8c_1a5717b361b07c72e1528cb1ac0baddeba" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool bit_buffer_flag</definition>
+        <argsstring></argsstring>
+        <name>bit_buffer_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="106" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_d_r_v___reader_8c_1acb75da634f3044283f3da276fb2315ca" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool reader_running</definition>
+        <argsstring></argsstring>
+        <name>reader_running</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="107" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_d_r_v___reader_8c_1ac2c32933070618ed1419ca16c38ec611" prot="public" static="yes" mutable="no">
+        <type><ref refid="_d_r_v___timers_8h_1a196e96c7c2523d4d6c9d3e0c47e8c582" kindref="member">tim_id_t</ref></type>
+        <definition>tim_id_t reader_tim_id</definition>
+        <argsstring></argsstring>
+        <name>reader_tim_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="108" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_d_r_v___reader_8c_1ab0b921d33e766b63760f69e0877e48e7" prot="public" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char result_buffer[PAN_MAX_LEN]</definition>
+        <argsstring>[PAN_MAX_LEN]</argsstring>
+        <name>result_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="110" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_d_r_v___reader_8c_1a93b9a439c7ffdacf46350685e611ccae" prot="public" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t result_buffer_len</definition>
+        <argsstring></argsstring>
+        <name>result_buffer_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="111" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_d_r_v___reader_8c_1a466fcc592ff391c7cb164d9d94707871" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool is_ready</definition>
+        <argsstring></argsstring>
+        <name>is_ready</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="112" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_d_r_v___reader_8c_1ab09acf874b6734d551e6ddf260228812" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void reader_enable_irq</definition>
+        <argsstring>()</argsstring>
+        <name>reader_enable_irq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="88" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="161" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___reader_8c_1acb5c9249184a02833a510fd91f4ac8c1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void reader_clock_irq</definition>
+        <argsstring>()</argsstring>
+        <name>reader_clock_irq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="89" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="179" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___reader_8c_1a54bafb2cc9dc6f0d5605d37d6680ac3c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void parse_buffer</definition>
+        <argsstring>(char *, uint8_t *)</argsstring>
+        <name>parse_buffer</name>
+        <param>
+          <type>char *</type>
+          <defname>result_buffer_ptr</defname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <defname>result_buffer_len_ptr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="90" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="230" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___reader_8c_1aa094477f14d92e06f252728564c7b8fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void reader_timeout_callback</definition>
+        <argsstring>()</argsstring>
+        <name>reader_timeout_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="91" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="276" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___reader_8c_1a1edc5658ebaaaed4ec5b1b520bc5cf71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initReader</definition>
+        <argsstring>(void)</argsstring>
+        <name>initReader</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize Card Reader. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="119" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="119" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___reader_8c_1a23a56b75cca671151b013d1464a3bf2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableReader</definition>
+        <argsstring>()</argsstring>
+        <name>enableReader</name>
+        <briefdescription>
+<para>Enable card Reader interruptions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="127" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="127" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___reader_8c_1a4160776125d798e39060872637a4b597" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void disableReader</definition>
+        <argsstring>()</argsstring>
+        <name>disableReader</name>
+        <briefdescription>
+<para>Disable Card Reader interruptions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="131" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="131" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___reader_8c_1adb8a350345065d17d49f01b9f3bd01b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool readerRunning</definition>
+        <argsstring>()</argsstring>
+        <name>readerRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="137" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="137" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___reader_8c_1a9062773cd482afcd89e2de039c2ea172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool readerIsReady</definition>
+        <argsstring>()</argsstring>
+        <name>readerIsReady</name>
+        <briefdescription>
+<para>Check if card has been correctly swiped. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>reading ready </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="141" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="_d_r_v___reader_8c_1aea291c8cddfc6d9987a2a94fbe3fd3ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void getValueReader</definition>
+        <argsstring>(char *result_number_ptr, uint8_t *result_len_ptr)</argsstring>
+        <name>getValueReader</name>
+        <param>
+          <type>char *</type>
+          <declname>result_number_ptr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>result_len_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Get card number value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result_number_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to result array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result_len_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to result length variable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/DRV_Reader.c" line="145" column="1" bodyfile="drivers/DRV_Reader.c" bodystart="145" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Card Reader driver. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Grupo 1 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>INCLUDE<sp/>HEADER<sp/>FILES</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_d_r_v___reader_8h" kindref="compound">DRV_Reader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_d_r_v___timers_8h" kindref="compound">DRV_Timers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_p_d_r_v___g_p_i_o_8h" kindref="compound">PDRV_GPIO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>CONSTANT<sp/>AND<sp/>MACRO<sp/>DEFINITIONS<sp/>USING<sp/>#DEFINE</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READER_EN_PIN<sp/><sp/><sp/>PORTNUM2PIN(PD,<sp/>0)<sp/><sp/>//<sp/>PTD0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READER_CLK_PIN<sp/><sp/>PORTNUM2PIN(PC,<sp/>4)<sp/><sp/>//<sp/>PTC4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READER_DATA_PIN<sp/>PORTNUM2PIN(PC,<sp/>12)<sp/>//<sp/>PTC12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EN_ACTIVE<sp/><sp/><sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATA_ONE<sp/><sp/><sp/><sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATA_ZERO<sp/><sp/><sp/>(!DATA_ONE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHAR_BITS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUFFER_LEN<sp/><sp/><sp/><sp/><sp/><sp/>40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAN_MAX_LEN<sp/><sp/><sp/><sp/><sp/>READER_NUM_MAX_LEN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADD_CHARS_MIN<sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_DATA_LEN<sp/><sp/><sp/><sp/>37</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FS_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SS_CHAR<sp/>&apos;;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FS_CHAR<sp/>&apos;=&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ES_CHAR<sp/>&apos;?&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ES_BITS<sp/>0b11111</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Hacer<sp/>una<sp/>tabla<sp/>en<sp/>vez<sp/>de<sp/>una<sp/>macro?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BITS2CHAR(b)<sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b10000)<sp/>?<sp/>&apos;0&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b00001)<sp/>?<sp/>&apos;1&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b00010)<sp/>?<sp/>&apos;2&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b10011)<sp/>?<sp/>&apos;3&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b00100)<sp/>?<sp/>&apos;4&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b10101)<sp/>?<sp/>&apos;5&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b10110)<sp/>?<sp/>&apos;6&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b00111)<sp/>?<sp/>&apos;7&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b01000)<sp/>?<sp/>&apos;8&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b11001)<sp/>?<sp/>&apos;9&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b11010)<sp/>?<sp/>&apos;:&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b01011)<sp/>?<sp/>&apos;;&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b11100)<sp/>?<sp/>&apos;&lt;&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b01101)<sp/>?<sp/>&apos;=&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b01110)<sp/>?<sp/>&apos;&gt;&apos;<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((b<sp/>==<sp/>0b11111)<sp/>?<sp/>&apos;?&apos;<sp/>:<sp/>&apos;X&apos;<sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>))))))))))))))))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BITPARITY4(b)<sp/><sp/><sp/>((b<sp/>&amp;<sp/>0b1)<sp/>^<sp/>(b&gt;&gt;1<sp/>&amp;<sp/>0b1)<sp/>^<sp/>(b&gt;&gt;2<sp/>&amp;<sp/>0b1)<sp/>^<sp/>(b&gt;&gt;3<sp/>&amp;<sp/>0b1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/>ENUMERATIONS<sp/>AND<sp/>STRUCTURES<sp/>AND<sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7a13d000b4d7dc70d90239b7430d1eb6b2" kindref="member">START</ref>,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7a4618cf21306b3c647741afa7ebefcab8" kindref="member">CHAR</ref>,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7adc6f24fd6915a3f2786a1b7045406924" kindref="member">END</ref></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5acc878d90418c98b0b3a20258310c0f52" kindref="member">SS</ref>,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5a1fea4799e7e5d4fd82b3df6813ce0e71" kindref="member">PAN</ref>,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5ae63d77c61a2a5b9777024af082a36719" kindref="member">AD</ref>,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5aaf30f40fd895faed3d20bf98ad054e7c" kindref="member">LRC</ref>,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5ac7f69f7c9e5aea9b8f54cf02870e2bf8" kindref="member">SUCCESS</ref></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>VARIABLES<sp/>WITH<sp/>GLOBAL<sp/>SCOPE</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*<sp/>FUNCTION<sp/>PROTOTYPES<sp/>FOR<sp/>PRIVATE<sp/>FUNCTIONS<sp/>WITH<sp/>FILE<sp/>LEVEL<sp/>SCOPE</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reader_enable_irq();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reader_clock_irq();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>parse_buffer(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/>uint8_t*);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reader_timeout_callback();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/>*<sp/>ROM<sp/>CONST<sp/>VARIABLES<sp/>WITH<sp/>FILE<sp/>LEVEL<sp/>SCOPE</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/>STATIC<sp/>VARIABLES<sp/>AND<sp/>CONST<sp/>VARIABLES<sp/>WITH<sp/>FILE<sp/>LEVEL<sp/>SCOPE</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reading_buffer[<ref refid="_d_r_v___reader_8c_1a46130dc86f2322714bba26960b64e7bb" kindref="member">BUFFER_LEN</ref>];</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>reading_buffer_pos;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>lrc_check;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bit_buffer_flag;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>reader_running;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___timers_8h_1a196e96c7c2523d4d6c9d3e0c47e8c582" kindref="member">tim_id_t</ref><sp/>reader_tim_id;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>result_buffer[<ref refid="_d_r_v___reader_8c_1af27cdd7d86a39cdc58fac232a2722f59" kindref="member">PAN_MAX_LEN</ref>];<sp/></highlight><highlight class="comment">//número<sp/>de<sp/>la<sp/>tarjeta</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>result_buffer_len;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_ready<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//hubo<sp/>un<sp/>input<sp/>que<sp/>todavía<sp/>no<sp/>fue<sp/>parseado.<sp/>Se<sp/>puede<sp/>leer<sp/>con<sp/>getValue()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>*******************************************************************************</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GLOBAL<sp/>FUNCTION<sp/>DEFINITIONS</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*******************************************************************************</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1a1edc5658ebaaaed4ec5b1b520bc5cf71" kindref="member">initReader</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8c_1ab34efe1e7a4661cb63c09374414169d6" kindref="member">gpioMode</ref>(<ref refid="_d_r_v___reader_8c_1a28159f70aebcb3b21df0120d594e1939" kindref="member">READER_EN_PIN</ref>,<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a1bb283bd7893b9855e2f23013891fc82" kindref="member">INPUT</ref>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8c_1ab34efe1e7a4661cb63c09374414169d6" kindref="member">gpioMode</ref>(<ref refid="_d_r_v___reader_8c_1a7168ccc01afed197832116ec978ba63a" kindref="member">READER_CLK_PIN</ref>,<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a1bb283bd7893b9855e2f23013891fc82" kindref="member">INPUT</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8c_1ab34efe1e7a4661cb63c09374414169d6" kindref="member">gpioMode</ref>(<ref refid="_d_r_v___reader_8c_1affad0f95379bff37886b116b51bf8b0d" kindref="member">READER_DATA_PIN</ref>,<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a1bb283bd7893b9855e2f23013891fc82" kindref="member">INPUT</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>reader_tim_id<sp/>=<sp/><ref refid="_d_r_v___timers_8c_1a482d96c2dea661ebf999865b82f776b8" kindref="member">timerGetId</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1a23a56b75cca671151b013d1464a3bf2a" kindref="member">enableReader</ref>(){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8c_1a7dfc26dc60c3056b0cbe99bfaedab27f" kindref="member">gpioIRQ</ref>(<ref refid="_d_r_v___reader_8c_1a28159f70aebcb3b21df0120d594e1939" kindref="member">READER_EN_PIN</ref>,<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9eae5772bdbe5b2a118f9f6f5597b045792" kindref="member">GPIO_IRQ_MODE_BOTH_EDGES</ref>,<sp/>reader_enable_irq);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1a4160776125d798e39060872637a4b597" kindref="member">disableReader</ref>(){</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8c_1a7dfc26dc60c3056b0cbe99bfaedab27f" kindref="member">gpioIRQ</ref>(<ref refid="_d_r_v___reader_8c_1a28159f70aebcb3b21df0120d594e1939" kindref="member">READER_EN_PIN</ref>,<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea03d5a4eb216235e8364c1ab57b01c019" kindref="member">GPIO_IRQ_MODE_DISABLE</ref>,<sp/>reader_enable_irq);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_r_v___timers_8c_1a1d8fc7435aca9180251cd17ee1f61cb4" kindref="member">timerStop</ref>(reader_tim_id);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>is_ready<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1adb8a350345065d17d49f01b9f3bd01b2" kindref="member">readerRunning</ref>(){</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reader_running;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1a9062773cd482afcd89e2de039c2ea172" kindref="member">readerIsReady</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is_ready;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1aea291c8cddfc6d9987a2a94fbe3fd3ea" kindref="member">getValueReader</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>result_number_ptr,<sp/>uint8_t*<sp/>result_len_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>parse_buffer(result_buffer,<sp/>&amp;result_buffer_len);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>result_buffer_len;<sp/>i++){</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result_number_ptr[i]<sp/>=<sp/>result_buffer[i];</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>*result_len_ptr<sp/>=<sp/>result_buffer_len;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>is_ready<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="155"><highlight class="comment"><sp/>*******************************************************************************</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOCAL<sp/>FUNCTION<sp/>DEFINITIONS</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/>*******************************************************************************</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//<sp/>sacar<sp/>la<sp/>interrupcion<sp/>por<sp/>enable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reader_enable_irq(){</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="_p_d_r_v___g_p_i_o_8c_1a59ce7b278cd2032a644766fd87e2e61a" kindref="member">gpioRead</ref>(<ref refid="_d_r_v___reader_8c_1a28159f70aebcb3b21df0120d594e1939" kindref="member">READER_EN_PIN</ref>)<sp/>==<sp/><ref refid="_d_r_v___reader_8c_1aa719023469aabec46d4dadd666d9f209" kindref="member">EN_ACTIVE</ref>){</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bit_buffer_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reader_running<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_d_r_v___timers_8c_1a03e4dcebc46bc9c08d903d44fbb8f834" kindref="member">timerStart</ref>(reader_tim_id,<sp/><ref refid="_d_r_v___timers_8h_1a5147d9123bc0ebde61d4a207e27e07a1" kindref="member">TIMER_MS2TICKS</ref>(<ref refid="_d_r_v___reader_8h_1a35c73144737f61f43bd2ea22be423a2e" kindref="member">READER_TIMEOUT</ref>),<sp/><ref refid="_d_r_v___timers_8h_1abc6126af1d45847bc59afa0aa3216b04a6155e9404d43a8e6efa4063c86efcfaf" kindref="member">TIM_MODE_SINGLESHOT</ref>,<sp/>reader_timeout_callback);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8c_1a7dfc26dc60c3056b0cbe99bfaedab27f" kindref="member">gpioIRQ</ref>(<ref refid="_d_r_v___reader_8c_1a7168ccc01afed197832116ec978ba63a" kindref="member">READER_CLK_PIN</ref>,<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea3f8b1185a53dd65d562e0a62f9f2594e" kindref="member">GPIO_IRQ_MODE_FALLING_EDGE</ref>,<sp/>reader_clock_irq);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(reader_running){</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_d_r_v___timers_8c_1a1d8fc7435aca9180251cd17ee1f61cb4" kindref="member">timerStop</ref>(reader_tim_id);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reader_running<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8c_1a7dfc26dc60c3056b0cbe99bfaedab27f" kindref="member">gpioIRQ</ref>(<ref refid="_d_r_v___reader_8c_1a7168ccc01afed197832116ec978ba63a" kindref="member">READER_CLK_PIN</ref>,<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea03d5a4eb216235e8364c1ab57b01c019" kindref="member">GPIO_IRQ_MODE_DISABLE</ref>,<sp/>reader_clock_irq);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is_ready<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reader_clock_irq(){</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>state<sp/>=<sp/><ref refid="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7a13d000b4d7dc70d90239b7430d1eb6b2" kindref="member">START</ref>;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bit_buffer[<ref refid="_d_r_v___reader_8c_1ad49a288461a55d7886b997cdf802eb4c" kindref="member">CHAR_BITS</ref>];</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>bit_buffer_pos<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>lrc_flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bit_buffer_flag){</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>=<sp/><ref refid="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7a13d000b4d7dc70d90239b7430d1eb6b2" kindref="member">START</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bit_buffer_pos<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reading_buffer_pos<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bit_buffer_flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>data<sp/>=<sp/>(<ref refid="_p_d_r_v___g_p_i_o_8c_1a59ce7b278cd2032a644766fd87e2e61a" kindref="member">gpioRead</ref>(<ref refid="_d_r_v___reader_8c_1affad0f95379bff37886b116b51bf8b0d" kindref="member">READER_DATA_PIN</ref>)<sp/>==<sp/><ref refid="_d_r_v___reader_8c_1a993b4fb67e3437103133ed87460a4532" kindref="member">DATA_ONE</ref>);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(state){</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7a13d000b4d7dc70d90239b7430d1eb6b2" kindref="member">START</ref>:</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(data){</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>=<sp/><ref refid="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7a4618cf21306b3c647741afa7ebefcab8" kindref="member">CHAR</ref>;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bit_buffer[0]<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bit_buffer_pos<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lrc_check<sp/>=<sp/>0b00000;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lrc_flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7a4618cf21306b3c647741afa7ebefcab8" kindref="member">CHAR</ref>:</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bit_buffer[bit_buffer_pos]<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bit_buffer_pos<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bit_buffer_pos<sp/>==<sp/><ref refid="_d_r_v___reader_8c_1ad49a288461a55d7886b997cdf802eb4c" kindref="member">CHAR_BITS</ref>){</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>new_char<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="_d_r_v___reader_8c_1ad49a288461a55d7886b997cdf802eb4c" kindref="member">CHAR_BITS</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>new_char<sp/>=<sp/>(new_char&lt;&lt;1)<sp/>|<sp/>(bit_buffer[<ref refid="_d_r_v___reader_8c_1ad49a288461a55d7886b997cdf802eb4c" kindref="member">CHAR_BITS</ref><sp/>-<sp/>1<sp/>-<sp/>i]);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bit_buffer_pos<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reading_buffer[reading_buffer_pos]<sp/>=<sp/><ref refid="_d_r_v___reader_8c_1a5cab2c25d7665ad88929a668e4618881" kindref="member">BITS2CHAR</ref>(new_char);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reading_buffer_pos<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lrc_flag<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/><sp/><sp/>lrc_check<sp/>^=<sp/>new_char;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(new_char<sp/>==<sp/><ref refid="_d_r_v___reader_8c_1a1452476a5d1d19e5cc2ff6019b246196" kindref="member">ES_BITS</ref>)<sp/>lrc_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(reading_buffer_pos<sp/>==<sp/><ref refid="_d_r_v___reader_8c_1a46130dc86f2322714bba26960b64e7bb" kindref="member">BUFFER_LEN</ref>){</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>=<sp/><ref refid="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7adc6f24fd6915a3f2786a1b7045406924" kindref="member">END</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1adf764cbdea00d65edcd07bb9953ad2b7adc6f24fd6915a3f2786a1b7045406924" kindref="member">END</ref>:</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>parse_buffer(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>result_buffer_ptr,<sp/>uint8_t*<sp/>result_buffer_len_ptr){</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>state<sp/>=<sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5acc878d90418c98b0b3a20258310c0f52" kindref="member">SS</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>*result_buffer_len_ptr<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>additional_chars<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>reading_buffer_pos;<sp/>i++){</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(state){</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5acc878d90418c98b0b3a20258310c0f52" kindref="member">SS</ref>:</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(reading_buffer[i]<sp/>!=<sp/><ref refid="_d_r_v___reader_8c_1af65d8899dad9889cd9807bc893109a1f" kindref="member">SS_CHAR</ref>)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>breakParseLoop;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>=<sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5a1fea4799e7e5d4fd82b3df6813ce0e71" kindref="member">PAN</ref>;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5a1fea4799e7e5d4fd82b3df6813ce0e71" kindref="member">PAN</ref>:</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(reading_buffer[i]<sp/>!=<sp/><ref refid="_d_r_v___reader_8c_1a1bf20da49202b479833dc11d48a46816" kindref="member">FS_CHAR</ref>){</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*result_buffer_len_ptr<sp/>&gt;=<sp/><ref refid="_d_r_v___reader_8c_1af27cdd7d86a39cdc58fac232a2722f59" kindref="member">PAN_MAX_LEN</ref>)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>breakParseLoop;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(reading_buffer[i]<sp/>&lt;<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>||<sp/>reading_buffer[i]<sp/>&gt;<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>breakParseLoop;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result_buffer_ptr[*result_buffer_len_ptr]<sp/>=<sp/>reading_buffer[i];</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*result_buffer_len_ptr)++;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result_buffer_ptr[*result_buffer_len_ptr]<sp/>=<sp/><ref refid="_d_r_v___reader_8h_1a98ad0f2618729f7191c80e873db8f1a4" kindref="member">TERMINATOR_CHAR</ref>;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>=<sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5ae63d77c61a2a5b9777024af082a36719" kindref="member">AD</ref>;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5ae63d77c61a2a5b9777024af082a36719" kindref="member">AD</ref>:</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(reading_buffer[i]<sp/>==<sp/><ref refid="_d_r_v___reader_8c_1a59f85504422ee376edc566e322b61059" kindref="member">ES_CHAR</ref>){</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(additional_chars<sp/>&lt;<sp/><ref refid="_d_r_v___reader_8c_1a5bbe679437d50ba51d08134a57e1076b" kindref="member">ADD_CHARS_MIN</ref>)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>breakParseLoop;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(additional_chars<sp/>&gt;<sp/>(<ref refid="_d_r_v___reader_8c_1a187ee748ebe6331b05836f8046b3564c" kindref="member">NUM_DATA_LEN</ref>-<ref refid="_d_r_v___reader_8c_1ae9c987690f7203f4de165caa0f9b0b2c" kindref="member">FS_LEN</ref>-(*result_buffer_len_ptr)))<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>breakParseLoop;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>=<sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5aaf30f40fd895faed3d20bf98ad054e7c" kindref="member">LRC</ref>;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>additional_chars++;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5aaf30f40fd895faed3d20bf98ad054e7c" kindref="member">LRC</ref>:</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(reading_buffer[i]<sp/>!=<sp/><ref refid="_d_r_v___reader_8c_1a5cab2c25d7665ad88929a668e4618881" kindref="member">BITS2CHAR</ref>(lrc_check))<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>breakParseLoop;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>=<sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5ac7f69f7c9e5aea9b8f54cf02870e2bf8" kindref="member">SUCCESS</ref>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5ac7f69f7c9e5aea9b8f54cf02870e2bf8" kindref="member">SUCCESS</ref>:</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>breakParseLoop;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal">breakParseLoop:</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(state<sp/>!=<sp/><ref refid="_d_r_v___reader_8c_1a99fb83031ce9923c84392b4e92f956b5ac7f69f7c9e5aea9b8f54cf02870e2bf8" kindref="member">SUCCESS</ref>)<sp/>*result_buffer_len_ptr<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reader_timeout_callback(){</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(reader_running){</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_d_r_v___timers_8c_1a1d8fc7435aca9180251cd17ee1f61cb4" kindref="member">timerStop</ref>(reader_tim_id);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reader_running<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8c_1a7dfc26dc60c3056b0cbe99bfaedab27f" kindref="member">gpioIRQ</ref>(<ref refid="_d_r_v___reader_8c_1a7168ccc01afed197832116ec978ba63a" kindref="member">READER_CLK_PIN</ref>,<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea03d5a4eb216235e8364c1ab57b01c019" kindref="member">GPIO_IRQ_MODE_DISABLE</ref>,<sp/>reader_clock_irq);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="drivers/DRV_Reader.c"/>
+  </compounddef>
+</doxygen>

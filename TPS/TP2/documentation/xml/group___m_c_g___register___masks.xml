@@ -1,0 +1,1589 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___m_c_g___register___masks" kind="group">
+    <compoundname>MCG_Register_Masks</compoundname>
+    <title>MCG Register Masks</title>
+      <sectiondef kind="user-defined">
+      <header>C1 - MCG Control 1 Register</header>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga275f9145f8c55ff4c836cbd20ab06139" prot="public" static="no">
+        <name>MCG_C1_IREFSTEN_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7958" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7958" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga10e0a80bfe715350aba6d5f5212617bc" prot="public" static="no">
+        <name>MCG_C1_IREFSTEN_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7959" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7959" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gae9002ca9879cd655f9e39f1829b40a03" prot="public" static="no">
+        <name>MCG_C1_IREFSTEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga10e0a80bfe715350aba6d5f5212617bc" kindref="member">MCG_C1_IREFSTEN_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga275f9145f8c55ff4c836cbd20ab06139" kindref="member">MCG_C1_IREFSTEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7960" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7960" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga50398d9dc80a3016fddc6a2aef3df994" prot="public" static="no">
+        <name>MCG_C1_IRCLKEN_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7961" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7961" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga2c4305645e7c2b3977dcd0d35c7eaab9" prot="public" static="no">
+        <name>MCG_C1_IRCLKEN_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7962" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7962" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga9fc55b990e5876cb6fbeef0bf7caa040" prot="public" static="no">
+        <name>MCG_C1_IRCLKEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga2c4305645e7c2b3977dcd0d35c7eaab9" kindref="member">MCG_C1_IRCLKEN_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga50398d9dc80a3016fddc6a2aef3df994" kindref="member">MCG_C1_IRCLKEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7963" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7963" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gadc14970d17e8ee736a16805a412a87fe" prot="public" static="no">
+        <name>MCG_C1_IREFS_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7964" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7964" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gada376a938782b95d20788418a2564476" prot="public" static="no">
+        <name>MCG_C1_IREFS_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7965" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7965" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gadebea24932568e50a064507270a209c8" prot="public" static="no">
+        <name>MCG_C1_IREFS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1gada376a938782b95d20788418a2564476" kindref="member">MCG_C1_IREFS_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gadc14970d17e8ee736a16805a412a87fe" kindref="member">MCG_C1_IREFS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7966" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7966" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gac7762b84f41121882f4d1fbcaa839aeb" prot="public" static="no">
+        <name>MCG_C1_FRDIV_MASK</name>
+        <initializer>(0x38U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7967" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7967" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaee124d0ce81f6e815dbbcac62440708b" prot="public" static="no">
+        <name>MCG_C1_FRDIV_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7968" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7968" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga39519f6e6a3b433988eca107d0e7d460" prot="public" static="no">
+        <name>MCG_C1_FRDIV</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1gaee124d0ce81f6e815dbbcac62440708b" kindref="member">MCG_C1_FRDIV_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gac7762b84f41121882f4d1fbcaa839aeb" kindref="member">MCG_C1_FRDIV_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7969" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7969" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gae9a1db29d56ef219e4df3dc9d945b08e" prot="public" static="no">
+        <name>MCG_C1_CLKS_MASK</name>
+        <initializer>(0xC0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7970" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7970" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga9ca1068f336097a94984ba4bba0798d6" prot="public" static="no">
+        <name>MCG_C1_CLKS_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7971" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7971" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaffe61ac58c90dfaebbd4748c0dea558c" prot="public" static="no">
+        <name>MCG_C1_CLKS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga9ca1068f336097a94984ba4bba0798d6" kindref="member">MCG_C1_CLKS_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gae9a1db29d56ef219e4df3dc9d945b08e" kindref="member">MCG_C1_CLKS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7972" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7972" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>C2 - MCG Control 2 Register</header>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaef3ef9fc35df3b7d404dd2b7279051cb" prot="public" static="no">
+        <name>MCG_C2_IRCS_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7975" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7975" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga9a364696151f81b7a671bafd25cf16d1" prot="public" static="no">
+        <name>MCG_C2_IRCS_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7976" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7976" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gad8f801bcc07391ec8060d0d2249a81be" prot="public" static="no">
+        <name>MCG_C2_IRCS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga9a364696151f81b7a671bafd25cf16d1" kindref="member">MCG_C2_IRCS_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gaef3ef9fc35df3b7d404dd2b7279051cb" kindref="member">MCG_C2_IRCS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7977" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7977" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga204f588f13f46a9ae20bc7aecfdf4f37" prot="public" static="no">
+        <name>MCG_C2_LP_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7978" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7978" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga2c16a5396267a83c2059741d31c3af1a" prot="public" static="no">
+        <name>MCG_C2_LP_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7979" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7979" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga85aee53b6f4960d870b9f3f890c208ec" prot="public" static="no">
+        <name>MCG_C2_LP</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga2c16a5396267a83c2059741d31c3af1a" kindref="member">MCG_C2_LP_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga204f588f13f46a9ae20bc7aecfdf4f37" kindref="member">MCG_C2_LP_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7980" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7980" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga2c7a64bac24e9840a1b38fd20f45ee32" prot="public" static="no">
+        <name>MCG_C2_EREFS_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7981" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7981" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaf8a3c1b95c6c95b6b86dd47ee3e8df8d" prot="public" static="no">
+        <name>MCG_C2_EREFS_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7982" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7982" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga80da2b67760170594286bd856e76019b" prot="public" static="no">
+        <name>MCG_C2_EREFS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1gaf8a3c1b95c6c95b6b86dd47ee3e8df8d" kindref="member">MCG_C2_EREFS_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga2c7a64bac24e9840a1b38fd20f45ee32" kindref="member">MCG_C2_EREFS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7983" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7983" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaebd354dd4b68914ead6f2604e4aaf6f0" prot="public" static="no">
+        <name>MCG_C2_HGO_MASK</name>
+        <initializer>(0x8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7984" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7984" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga803a8ad30224642fcf09f8d738a21e52" prot="public" static="no">
+        <name>MCG_C2_HGO_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7985" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7985" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga321fa7e0b6a6ac3c13a42c03b5ea1194" prot="public" static="no">
+        <name>MCG_C2_HGO</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga803a8ad30224642fcf09f8d738a21e52" kindref="member">MCG_C2_HGO_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gaebd354dd4b68914ead6f2604e4aaf6f0" kindref="member">MCG_C2_HGO_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7986" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7986" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga265bc5e03a60b515a2f554807c106c53" prot="public" static="no">
+        <name>MCG_C2_RANGE_MASK</name>
+        <initializer>(0x30U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7987" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7987" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga0198b0ee825233bd73c2681c2072e5d6" prot="public" static="no">
+        <name>MCG_C2_RANGE_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7988" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7988" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaaca8c6b60b8c40403204e606565281d2" prot="public" static="no">
+        <name>MCG_C2_RANGE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga0198b0ee825233bd73c2681c2072e5d6" kindref="member">MCG_C2_RANGE_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga265bc5e03a60b515a2f554807c106c53" kindref="member">MCG_C2_RANGE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7989" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7989" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga45707a93b3c20e13c76dfda9ba5ff622" prot="public" static="no">
+        <name>MCG_C2_FCFTRIM_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7990" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7990" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga59a90f18817b5c06e8d77879105becda" prot="public" static="no">
+        <name>MCG_C2_FCFTRIM_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7991" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga71f85b9ed46280e8c33a5fe91799483a" prot="public" static="no">
+        <name>MCG_C2_FCFTRIM</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga59a90f18817b5c06e8d77879105becda" kindref="member">MCG_C2_FCFTRIM_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga45707a93b3c20e13c76dfda9ba5ff622" kindref="member">MCG_C2_FCFTRIM_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7992" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7992" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gae89f2e48b02a39563115d1a60dc8f16f" prot="public" static="no">
+        <name>MCG_C2_LOCRE0_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7993" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7993" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gabc900505d9a12bd7a33c2a5e3cfdf02a" prot="public" static="no">
+        <name>MCG_C2_LOCRE0_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7994" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7994" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga3d3b107b5048c654be690911ae09feff" prot="public" static="no">
+        <name>MCG_C2_LOCRE0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1gabc900505d9a12bd7a33c2a5e3cfdf02a" kindref="member">MCG_C2_LOCRE0_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gae89f2e48b02a39563115d1a60dc8f16f" kindref="member">MCG_C2_LOCRE0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7995" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7995" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>C3 - MCG Control 3 Register</header>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga44433c6372539508fbf3090b591f3d89" prot="public" static="no">
+        <name>MCG_C3_SCTRIM_MASK</name>
+        <initializer>(0xFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7998" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7998" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga8b5c3c55be188745fefec24b945110b7" prot="public" static="no">
+        <name>MCG_C3_SCTRIM_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7999" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7999" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga66a74a75c9244dad3298474a2bf04de8" prot="public" static="no">
+        <name>MCG_C3_SCTRIM</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga8b5c3c55be188745fefec24b945110b7" kindref="member">MCG_C3_SCTRIM_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga44433c6372539508fbf3090b591f3d89" kindref="member">MCG_C3_SCTRIM_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8000" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8000" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>C4 - MCG Control 4 Register</header>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga7386e83fdee774ec5d6ec402bae1e432" prot="public" static="no">
+        <name>MCG_C4_SCFTRIM_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8003" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8003" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga1114052674119b01137ef4b4885ab757" prot="public" static="no">
+        <name>MCG_C4_SCFTRIM_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8004" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8004" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga4dc087a188bd21971ad0867f4af9330c" prot="public" static="no">
+        <name>MCG_C4_SCFTRIM</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga1114052674119b01137ef4b4885ab757" kindref="member">MCG_C4_SCFTRIM_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga7386e83fdee774ec5d6ec402bae1e432" kindref="member">MCG_C4_SCFTRIM_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8005" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8005" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga91610035649d14c5027419db0bfa3231" prot="public" static="no">
+        <name>MCG_C4_FCTRIM_MASK</name>
+        <initializer>(0x1EU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8006" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8006" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga0a1b1f2be0b8e9afc3ff91ab11d71a1e" prot="public" static="no">
+        <name>MCG_C4_FCTRIM_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8007" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8007" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga7ffe6f164c3d7440b9911c8de59b7171" prot="public" static="no">
+        <name>MCG_C4_FCTRIM</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga0a1b1f2be0b8e9afc3ff91ab11d71a1e" kindref="member">MCG_C4_FCTRIM_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga91610035649d14c5027419db0bfa3231" kindref="member">MCG_C4_FCTRIM_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8008" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8008" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga7f6629e8d17efb2cec3d2f63d09ede5a" prot="public" static="no">
+        <name>MCG_C4_DRST_DRS_MASK</name>
+        <initializer>(0x60U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8009" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8009" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga27d4baa0c8a770f1f67ab47e6407e948" prot="public" static="no">
+        <name>MCG_C4_DRST_DRS_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8010" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8010" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaf074d694a596e6e92614fd435c9ccb35" prot="public" static="no">
+        <name>MCG_C4_DRST_DRS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga27d4baa0c8a770f1f67ab47e6407e948" kindref="member">MCG_C4_DRST_DRS_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga7f6629e8d17efb2cec3d2f63d09ede5a" kindref="member">MCG_C4_DRST_DRS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8011" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8011" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga5d16ac35cf87b3cdeeefca1c16a0eda0" prot="public" static="no">
+        <name>MCG_C4_DMX32_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8012" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8012" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga12d73b2d4a4fd1f2fb21a1cbe87aaa83" prot="public" static="no">
+        <name>MCG_C4_DMX32_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8013" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8013" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga10fd0030b4d3fcb34503269a2a5796c0" prot="public" static="no">
+        <name>MCG_C4_DMX32</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga12d73b2d4a4fd1f2fb21a1cbe87aaa83" kindref="member">MCG_C4_DMX32_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga5d16ac35cf87b3cdeeefca1c16a0eda0" kindref="member">MCG_C4_DMX32_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8014" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8014" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>C5 - MCG Control 5 Register</header>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga28ab0b9007f9941707395660db088172" prot="public" static="no">
+        <name>MCG_C5_PRDIV0_MASK</name>
+        <initializer>(0x1FU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8017" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8017" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga452026beec3bec5a580d151e15d83f30" prot="public" static="no">
+        <name>MCG_C5_PRDIV0_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8018" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8018" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaff29a787086eaba9ef46f4e873d83a54" prot="public" static="no">
+        <name>MCG_C5_PRDIV0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga452026beec3bec5a580d151e15d83f30" kindref="member">MCG_C5_PRDIV0_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga28ab0b9007f9941707395660db088172" kindref="member">MCG_C5_PRDIV0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8019" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8019" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga9bec4ed23caf6a431b506e944d928080" prot="public" static="no">
+        <name>MCG_C5_PLLSTEN0_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8020" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8020" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga486796db598fbf2f07f39d71453f49b6" prot="public" static="no">
+        <name>MCG_C5_PLLSTEN0_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8021" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8021" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga75551114843366d40dd54e1c05fd2002" prot="public" static="no">
+        <name>MCG_C5_PLLSTEN0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga486796db598fbf2f07f39d71453f49b6" kindref="member">MCG_C5_PLLSTEN0_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga9bec4ed23caf6a431b506e944d928080" kindref="member">MCG_C5_PLLSTEN0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8022" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8022" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga73671453b8f8804784e5b7e67551726d" prot="public" static="no">
+        <name>MCG_C5_PLLCLKEN0_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8023" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8023" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaa66ceed70e1055a31e46c60a502b8eb7" prot="public" static="no">
+        <name>MCG_C5_PLLCLKEN0_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8024" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8024" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gac3faf5c909bfee8fa6b28d1c1e1face7" prot="public" static="no">
+        <name>MCG_C5_PLLCLKEN0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1gaa66ceed70e1055a31e46c60a502b8eb7" kindref="member">MCG_C5_PLLCLKEN0_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga73671453b8f8804784e5b7e67551726d" kindref="member">MCG_C5_PLLCLKEN0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8025" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8025" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>C6 - MCG Control 6 Register</header>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gacf93ac207865bd372d9148f10dce7267" prot="public" static="no">
+        <name>MCG_C6_VDIV0_MASK</name>
+        <initializer>(0x1FU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8028" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8028" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga92208f56fc7ce68a0a8ff14ab5c3b2f6" prot="public" static="no">
+        <name>MCG_C6_VDIV0_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8029" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8029" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga50b2068270153c3013b4e0ac2256fbfd" prot="public" static="no">
+        <name>MCG_C6_VDIV0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga92208f56fc7ce68a0a8ff14ab5c3b2f6" kindref="member">MCG_C6_VDIV0_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gacf93ac207865bd372d9148f10dce7267" kindref="member">MCG_C6_VDIV0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8030" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8030" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga2e0daa102ec3f225ed9297f7bc9f8239" prot="public" static="no">
+        <name>MCG_C6_CME0_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8031" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8031" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga096e62e71f69f5b749999d671d800090" prot="public" static="no">
+        <name>MCG_C6_CME0_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8032" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8032" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga70d94d0060b62ceb42672a91ebe51c73" prot="public" static="no">
+        <name>MCG_C6_CME0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga096e62e71f69f5b749999d671d800090" kindref="member">MCG_C6_CME0_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga2e0daa102ec3f225ed9297f7bc9f8239" kindref="member">MCG_C6_CME0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8033" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8033" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga66a1dfdde86a9c165d7bdec17c77578f" prot="public" static="no">
+        <name>MCG_C6_PLLS_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8034" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8034" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga690a1869788f450cfa53d73f983a1c05" prot="public" static="no">
+        <name>MCG_C6_PLLS_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8035" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8035" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga0b971886e3f30b9fecbf46971a45ede3" prot="public" static="no">
+        <name>MCG_C6_PLLS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga690a1869788f450cfa53d73f983a1c05" kindref="member">MCG_C6_PLLS_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga66a1dfdde86a9c165d7bdec17c77578f" kindref="member">MCG_C6_PLLS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8036" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8036" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga0b0e7ca112d81e86d413c014d144fd8d" prot="public" static="no">
+        <name>MCG_C6_LOLIE0_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8037" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8037" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaf62eb94fa38802a5950bd616b539a69c" prot="public" static="no">
+        <name>MCG_C6_LOLIE0_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8038" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8038" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga40c69a7a688af5b94cb89b84e1afa446" prot="public" static="no">
+        <name>MCG_C6_LOLIE0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1gaf62eb94fa38802a5950bd616b539a69c" kindref="member">MCG_C6_LOLIE0_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga0b0e7ca112d81e86d413c014d144fd8d" kindref="member">MCG_C6_LOLIE0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8039" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8039" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>S - MCG Status Register</header>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga1c693472984fb69650b117ffe5b76da5" prot="public" static="no">
+        <name>MCG_S_IRCST_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8042" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8042" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga9abb1ad8f00a085572bb58ab815b7afd" prot="public" static="no">
+        <name>MCG_S_IRCST_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8043" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8043" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga9b7e5d9af38c4290a57311569d1e99f8" prot="public" static="no">
+        <name>MCG_S_IRCST</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga9abb1ad8f00a085572bb58ab815b7afd" kindref="member">MCG_S_IRCST_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga1c693472984fb69650b117ffe5b76da5" kindref="member">MCG_S_IRCST_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8044" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8044" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga75a97c37fbe3689889ea81fd04f13805" prot="public" static="no">
+        <name>MCG_S_OSCINIT0_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8045" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8045" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga3680bc3a628991bb5279d9d6b938b374" prot="public" static="no">
+        <name>MCG_S_OSCINIT0_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8046" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8046" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga98c936496f313b82960d9de69a28ea69" prot="public" static="no">
+        <name>MCG_S_OSCINIT0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga3680bc3a628991bb5279d9d6b938b374" kindref="member">MCG_S_OSCINIT0_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga75a97c37fbe3689889ea81fd04f13805" kindref="member">MCG_S_OSCINIT0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8047" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8047" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaf43507c78cdda211a04b5ae0509edb2e" prot="public" static="no">
+        <name>MCG_S_CLKST_MASK</name>
+        <initializer>(0xCU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8048" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8048" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gab0768a667adb2dc2e1fb7972f9fd85a4" prot="public" static="no">
+        <name>MCG_S_CLKST_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8049" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8049" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga891e8f2d733bebc7ab21cf49e0473b24" prot="public" static="no">
+        <name>MCG_S_CLKST</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1gab0768a667adb2dc2e1fb7972f9fd85a4" kindref="member">MCG_S_CLKST_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gaf43507c78cdda211a04b5ae0509edb2e" kindref="member">MCG_S_CLKST_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8050" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8050" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga5bf822a90d9c1e67d5297420157e1dd0" prot="public" static="no">
+        <name>MCG_S_IREFST_MASK</name>
+        <initializer>(0x10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8051" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8051" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga4a2727883c339845e709dacc0c2fd71a" prot="public" static="no">
+        <name>MCG_S_IREFST_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8052" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8052" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gac86daa0998b4659fc37cb083d61a3171" prot="public" static="no">
+        <name>MCG_S_IREFST</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga4a2727883c339845e709dacc0c2fd71a" kindref="member">MCG_S_IREFST_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga5bf822a90d9c1e67d5297420157e1dd0" kindref="member">MCG_S_IREFST_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8053" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8053" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga6f176d95968a5b7b1af67ae81734c854" prot="public" static="no">
+        <name>MCG_S_PLLST_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8054" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8054" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gafddddab311f8f0cb58e7b7941f6d9a8d" prot="public" static="no">
+        <name>MCG_S_PLLST_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8055" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8055" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga58d3f6ca3f2ccd588d0751b02c6dd0ab" prot="public" static="no">
+        <name>MCG_S_PLLST</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1gafddddab311f8f0cb58e7b7941f6d9a8d" kindref="member">MCG_S_PLLST_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga6f176d95968a5b7b1af67ae81734c854" kindref="member">MCG_S_PLLST_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8056" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8056" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga6cb486757d45c5211baa3b130e720b97" prot="public" static="no">
+        <name>MCG_S_LOCK0_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8057" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8057" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga5022e367019ecb07d0afbc3279e60b02" prot="public" static="no">
+        <name>MCG_S_LOCK0_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8058" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8058" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gacaa583a26c3b35ebae840eb9b816d681" prot="public" static="no">
+        <name>MCG_S_LOCK0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga5022e367019ecb07d0afbc3279e60b02" kindref="member">MCG_S_LOCK0_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga6cb486757d45c5211baa3b130e720b97" kindref="member">MCG_S_LOCK0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8059" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8059" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gae5967720d747b4d6f9fa748c94570c6d" prot="public" static="no">
+        <name>MCG_S_LOLS0_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8060" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8060" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga5cddd795823b73d50830e628cee24644" prot="public" static="no">
+        <name>MCG_S_LOLS0_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8061" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8061" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gafd37e33b55e768b966c8740b3c9f694f" prot="public" static="no">
+        <name>MCG_S_LOLS0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga5cddd795823b73d50830e628cee24644" kindref="member">MCG_S_LOLS0_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gae5967720d747b4d6f9fa748c94570c6d" kindref="member">MCG_S_LOLS0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8062" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8062" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>SC - MCG Status and Control Register</header>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga9a57acb821c7622eb2b25e6c7daf7e16" prot="public" static="no">
+        <name>MCG_SC_LOCS0_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8065" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8065" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga2a80b0f354602d5da8426e9d2b51ea12" prot="public" static="no">
+        <name>MCG_SC_LOCS0_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8066" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8066" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gab831af7e9fb430b45af114e428c811c3" prot="public" static="no">
+        <name>MCG_SC_LOCS0</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga2a80b0f354602d5da8426e9d2b51ea12" kindref="member">MCG_SC_LOCS0_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga9a57acb821c7622eb2b25e6c7daf7e16" kindref="member">MCG_SC_LOCS0_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8067" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8067" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga9b5d58f2f0a68eabe93f088dc2f81d2b" prot="public" static="no">
+        <name>MCG_SC_FCRDIV_MASK</name>
+        <initializer>(0xEU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8068" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8068" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gacc99cc05a01e5807395bfe11518b26e3" prot="public" static="no">
+        <name>MCG_SC_FCRDIV_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8069" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8069" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga50a0225002267599fa7a2fc341fa783a" prot="public" static="no">
+        <name>MCG_SC_FCRDIV</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1gacc99cc05a01e5807395bfe11518b26e3" kindref="member">MCG_SC_FCRDIV_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga9b5d58f2f0a68eabe93f088dc2f81d2b" kindref="member">MCG_SC_FCRDIV_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8070" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8070" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga1eea80f4646116c2ca2a68aa3469436a" prot="public" static="no">
+        <name>MCG_SC_FLTPRSRV_MASK</name>
+        <initializer>(0x10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8071" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8071" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gac75a3cb915913ba4acc64a098bba4eb5" prot="public" static="no">
+        <name>MCG_SC_FLTPRSRV_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8072" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8072" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga0cfb3c172fe06a1ef6421e4ef2d446e4" prot="public" static="no">
+        <name>MCG_SC_FLTPRSRV</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1gac75a3cb915913ba4acc64a098bba4eb5" kindref="member">MCG_SC_FLTPRSRV_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga1eea80f4646116c2ca2a68aa3469436a" kindref="member">MCG_SC_FLTPRSRV_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8073" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8073" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga15326687d7d214b4847a3cae6e6cdfaa" prot="public" static="no">
+        <name>MCG_SC_ATMF_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8074" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8074" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gac7fd1ff91fc1de6800a18f875398d966" prot="public" static="no">
+        <name>MCG_SC_ATMF_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8075" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8075" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga23e47c874463e34ac6ba3cbff56243b1" prot="public" static="no">
+        <name>MCG_SC_ATMF</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1gac7fd1ff91fc1de6800a18f875398d966" kindref="member">MCG_SC_ATMF_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga15326687d7d214b4847a3cae6e6cdfaa" kindref="member">MCG_SC_ATMF_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8076" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8076" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaf5a12b51cc62a0ce10f3fbecdebd0222" prot="public" static="no">
+        <name>MCG_SC_ATMS_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8077" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8077" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga9a8ce406d5868276e9c3b37190ab89b1" prot="public" static="no">
+        <name>MCG_SC_ATMS_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8078" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8078" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga3e28d781058567f53900eb505140e797" prot="public" static="no">
+        <name>MCG_SC_ATMS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga9a8ce406d5868276e9c3b37190ab89b1" kindref="member">MCG_SC_ATMS_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gaf5a12b51cc62a0ce10f3fbecdebd0222" kindref="member">MCG_SC_ATMS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8079" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8079" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaf9545e815c86bd04d8513af024cb8617" prot="public" static="no">
+        <name>MCG_SC_ATME_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8080" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8080" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga146594251d4266d02fecc44c1f0dd6ae" prot="public" static="no">
+        <name>MCG_SC_ATME_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8081" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8081" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaa955a357cb65dadc3366c4a3ed691e7d" prot="public" static="no">
+        <name>MCG_SC_ATME</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga146594251d4266d02fecc44c1f0dd6ae" kindref="member">MCG_SC_ATME_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gaf9545e815c86bd04d8513af024cb8617" kindref="member">MCG_SC_ATME_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8082" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8082" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>ATCVH - MCG Auto Trim Compare Value High Register</header>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaf989f84acb1a8c91c7c98c2255651b00" prot="public" static="no">
+        <name>MCG_ATCVH_ATCVH_MASK</name>
+        <initializer>(0xFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8085" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8085" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga0fec2d450a98ab78dc7a2e4e9e33dbc6" prot="public" static="no">
+        <name>MCG_ATCVH_ATCVH_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8086" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8086" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gab382a7e152cca964b5cd64708384c608" prot="public" static="no">
+        <name>MCG_ATCVH_ATCVH</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga0fec2d450a98ab78dc7a2e4e9e33dbc6" kindref="member">MCG_ATCVH_ATCVH_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gaf989f84acb1a8c91c7c98c2255651b00" kindref="member">MCG_ATCVH_ATCVH_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8087" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8087" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>ATCVL - MCG Auto Trim Compare Value Low Register</header>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga48750526150212b524f731e303a7e3cf" prot="public" static="no">
+        <name>MCG_ATCVL_ATCVL_MASK</name>
+        <initializer>(0xFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8090" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8090" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga9e3e0eab24aaf1bf2905ae0cf4803eb3" prot="public" static="no">
+        <name>MCG_ATCVL_ATCVL_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8091" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8091" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga124aa7c8cc26cfd1c06a278add1a0d21" prot="public" static="no">
+        <name>MCG_ATCVL_ATCVL</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga9e3e0eab24aaf1bf2905ae0cf4803eb3" kindref="member">MCG_ATCVL_ATCVL_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga48750526150212b524f731e303a7e3cf" kindref="member">MCG_ATCVL_ATCVL_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8092" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8092" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>C7 - MCG Control 7 Register</header>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga8f29d6e2e3ddd8725de2ea86d8f0548f" prot="public" static="no">
+        <name>MCG_C7_OSCSEL_MASK</name>
+        <initializer>(0x3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8095" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8095" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga36e349718cb5e8af96efea408f059dcb" prot="public" static="no">
+        <name>MCG_C7_OSCSEL_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8096" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8096" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gac1a1e06d2189b74b5587b53d3104cb4a" prot="public" static="no">
+        <name>MCG_C7_OSCSEL</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga36e349718cb5e8af96efea408f059dcb" kindref="member">MCG_C7_OSCSEL_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga8f29d6e2e3ddd8725de2ea86d8f0548f" kindref="member">MCG_C7_OSCSEL_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8097" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8097" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>C8 - MCG Control 8 Register</header>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga1417ca27a647ced3cdfc504a604f8dc8" prot="public" static="no">
+        <name>MCG_C8_LOCS1_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8100" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga648e426b4d1f976cca5229505a26d9a8" prot="public" static="no">
+        <name>MCG_C8_LOCS1_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8101" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga8bbb08b76cef66c7b8dd85f944284815" prot="public" static="no">
+        <name>MCG_C8_LOCS1</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga648e426b4d1f976cca5229505a26d9a8" kindref="member">MCG_C8_LOCS1_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga1417ca27a647ced3cdfc504a604f8dc8" kindref="member">MCG_C8_LOCS1_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8102" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga9e0e0db74d7e18fffad7b4f08eb74524" prot="public" static="no">
+        <name>MCG_C8_CME1_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8103" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga00dc55bd1e2197897d59597dd57592ba" prot="public" static="no">
+        <name>MCG_C8_CME1_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8104" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gacfd4bf40d2ff518561d54938851479ef" prot="public" static="no">
+        <name>MCG_C8_CME1</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga00dc55bd1e2197897d59597dd57592ba" kindref="member">MCG_C8_CME1_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1ga9e0e0db74d7e18fffad7b4f08eb74524" kindref="member">MCG_C8_CME1_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8105" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaeab391a933aec2eeb1ffdbc772f714e2" prot="public" static="no">
+        <name>MCG_C8_LOLRE_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8106" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga247e347342c951c4b8044bece01311fb" prot="public" static="no">
+        <name>MCG_C8_LOLRE_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8107" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga882f76d0b8c7e3045f2df6369cc794d1" prot="public" static="no">
+        <name>MCG_C8_LOLRE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1ga247e347342c951c4b8044bece01311fb" kindref="member">MCG_C8_LOLRE_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gaeab391a933aec2eeb1ffdbc772f714e2" kindref="member">MCG_C8_LOLRE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8108" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gad7fe66acc8b6391ccfe2c53b61a9b119" prot="public" static="no">
+        <name>MCG_C8_LOCRE1_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8109" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gad97e280f47539832dda56a845055c921" prot="public" static="no">
+        <name>MCG_C8_LOCRE1_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8110" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga737fe26be9d82a9b0e2b841216f469dc" prot="public" static="no">
+        <name>MCG_C8_LOCRE1</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___m_c_g___register___masks_1gad97e280f47539832dda56a845055c921" kindref="member">MCG_C8_LOCRE1_SHIFT</ref>)) &amp; <ref refid="group___m_c_g___register___masks_1gad7fe66acc8b6391ccfe2c53b61a9b119" kindref="member">MCG_C8_LOCRE1_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8111" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gaad20a4618a24bbbb2edab9643eb6db29" prot="public" static="no">
+        <name>MCG_BASE</name>
+        <initializer>(0x40064000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral MCG base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8121" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gad7ea2d93cafdbe9298ef1dd52be44f88" prot="public" static="no">
+        <name>MCG</name>
+        <initializer>((<ref refid="struct_m_c_g___type" kindref="compound">MCG_Type</ref> *)<ref refid="group___m_c_g___register___masks_1gaad20a4618a24bbbb2edab9643eb6db29" kindref="member">MCG_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral MCG base pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8123" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1gab7ba0907fd63f1e70dddac601e4f9dd9" prot="public" static="no">
+        <name>MCG_BASE_ADDRS</name>
+        <initializer>{ <ref refid="group___m_c_g___register___masks_1gaad20a4618a24bbbb2edab9643eb6db29" kindref="member">MCG_BASE</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of MCG peripheral base addresses </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8125" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_g___register___masks_1ga3e6aec328b7327acc1f7bff70bec388c" prot="public" static="no">
+        <name>MCG_BASE_PTRS</name>
+        <initializer>{ <ref refid="group___m_c_g___register___masks_1gad7ea2d93cafdbe9298ef1dd52be44f88" kindref="member">MCG</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of MCG peripheral base pointers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8127" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

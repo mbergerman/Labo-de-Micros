@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_r_f_s_y_s___type" kind="struct" language="C++" prot="public">
+    <compoundname>RFSYS_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gad1d411f494430b8bfb7e89e78efd49be" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t REG[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>REG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register file register, array offset: 0x0, array step: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9149" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>RFSYS - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="9148" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9148" bodyend="9150"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gad1d411f494430b8bfb7e89e78efd49be" prot="public" virt="non-virtual"><scope>RFSYS_Type</scope><name>REG</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

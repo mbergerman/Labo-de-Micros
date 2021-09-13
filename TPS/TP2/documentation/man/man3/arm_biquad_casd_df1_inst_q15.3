@@ -1,0 +1,44 @@
+.TH "arm_biquad_casd_df1_inst_q15" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arm_biquad_casd_df1_inst_q15 \- Instance structure for the Q15 Biquad cascade filter\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arm_math\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "int8_t \fBnumStages\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP * \fBpState\fP"
+.br
+.ti -1c
+.RI "\fBq15_t\fP * \fBpCoeffs\fP"
+.br
+.ti -1c
+.RI "int8_t \fBpostShift\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Instance structure for the Q15 Biquad cascade filter\&. 
+.SH "Field Documentation"
+.PP 
+.SS "int8_t numStages"
+number of 2nd order stages in the filter\&. Overall order is 2*numStages\&. 
+.SS "\fBq15_t\fP* pCoeffs"
+Points to the array of coefficients\&. The array is of length 5*numStages\&. 
+.SS "int8_t postShift"
+Additional shift, in bits, applied to each output sample\&. 
+.SS "\fBq15_t\fP* pState"
+Points to the array of state coefficients\&. The array is of length 4*numStages\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

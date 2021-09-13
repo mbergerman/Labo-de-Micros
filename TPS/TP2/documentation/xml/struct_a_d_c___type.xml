@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_a_d_c___type" kind="struct" language="C++" prot="public">
+    <compoundname>ADC_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gac2f336dedf67a3b6dc792098c25f1197" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SC1[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>SC1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Status and Control Registers 1, array offset: 0x0, array step: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="448" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gabecccecd01b0d465123a2dc166db4141" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CFG1</definition>
+        <argsstring></argsstring>
+        <name>CFG1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Configuration Register 1, offset: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="449" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga722c7bd03a5d7b185bf43bdb5f846d43" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CFG2</definition>
+        <argsstring></argsstring>
+        <name>CFG2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Configuration Register 2, offset: 0xC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="450" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga2d5ff162ed91ca88f1f5ce93926a28a8" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint32_t</type>
+        <definition>__I uint32_t R[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>R</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Data Result Register, array offset: 0x10, array step: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="451" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gab69f073a5103823855dfa98e8b75ec9c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CV1</definition>
+        <argsstring></argsstring>
+        <name>CV1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare Value Registers, offset: 0x18 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="452" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaa6d0c2c2ba809736fd08737b76334280" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CV2</definition>
+        <argsstring></argsstring>
+        <name>CV2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare Value Registers, offset: 0x1C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="453" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gab3540714d43d0b62818c72e8dc20d90a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SC2</definition>
+        <argsstring></argsstring>
+        <name>SC2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Status and Control Register 2, offset: 0x20 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="454" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gac9553a6641fb9da34cb7a0b63c7b2d4e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t SC3</definition>
+        <argsstring></argsstring>
+        <name>SC3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Status and Control Register 3, offset: 0x24 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="455" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga9c229965c5de3a76f0f694f7f008bd27" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t OFS</definition>
+        <argsstring></argsstring>
+        <name>OFS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Offset Correction Register, offset: 0x28 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="456" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gac25efaaa034049fd39719cfe5b8ef3a0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PG</definition>
+        <argsstring></argsstring>
+        <name>PG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Plus-Side Gain Register, offset: 0x2C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="457" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga986be295f88a5b585ac89b5ae6a75f57" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t MG</definition>
+        <argsstring></argsstring>
+        <name>MG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Minus-Side Gain Register, offset: 0x30 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="458" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga1ac68ed297fff3a0b27ccd90a55b2f28" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLPD</definition>
+        <argsstring></argsstring>
+        <name>CLPD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Plus-Side General Calibration Value Register, offset: 0x34 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="459" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gae959a34b13cf9ea0076fda72fcf4cf70" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLPS</definition>
+        <argsstring></argsstring>
+        <name>CLPS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Plus-Side General Calibration Value Register, offset: 0x38 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="460" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaf8205d2a8f6f433a429ad72e094d617e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLP4</definition>
+        <argsstring></argsstring>
+        <name>CLP4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Plus-Side General Calibration Value Register, offset: 0x3C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="461" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gacc34fda0519e96304c90539eaa110979" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLP3</definition>
+        <argsstring></argsstring>
+        <name>CLP3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Plus-Side General Calibration Value Register, offset: 0x40 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="462" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga07deba1a9895548e459d751b6d4a9a9b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLP2</definition>
+        <argsstring></argsstring>
+        <name>CLP2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Plus-Side General Calibration Value Register, offset: 0x44 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="463" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaa7869ef75cfd5cd705846e5ab901e275" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLP1</definition>
+        <argsstring></argsstring>
+        <name>CLP1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Plus-Side General Calibration Value Register, offset: 0x48 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="464" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga01995af9e111222e08476c9aee76677c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLP0</definition>
+        <argsstring></argsstring>
+        <name>CLP0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Plus-Side General Calibration Value Register, offset: 0x4C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="465" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga71277aaa40be4473ac2521981f273bd3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_0[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>RESERVED_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="466" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaddad8cc46860498791a191bb20eaabee" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLMD</definition>
+        <argsstring></argsstring>
+        <name>CLMD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Minus-Side General Calibration Value Register, offset: 0x54 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="467" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga58148ff5ccf31e3492e95fefe99ada53" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLMS</definition>
+        <argsstring></argsstring>
+        <name>CLMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Minus-Side General Calibration Value Register, offset: 0x58 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="468" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gae20cd4616d206938dcbdd0d89294a1c5" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLM4</definition>
+        <argsstring></argsstring>
+        <name>CLM4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Minus-Side General Calibration Value Register, offset: 0x5C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="469" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga1cc2d6954ca002237cf69c29c4c8fdaf" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLM3</definition>
+        <argsstring></argsstring>
+        <name>CLM3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Minus-Side General Calibration Value Register, offset: 0x60 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="470" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga4711a30f2fd22f8aeab7f895a48e23e5" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLM2</definition>
+        <argsstring></argsstring>
+        <name>CLM2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Minus-Side General Calibration Value Register, offset: 0x64 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="471" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaf1f1f4e8be5d496b5ee572702254ca97" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLM1</definition>
+        <argsstring></argsstring>
+        <name>CLM1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Minus-Side General Calibration Value Register, offset: 0x68 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="472" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga387c7f0803d309215cb3a8e950a3306e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CLM0</definition>
+        <argsstring></argsstring>
+        <name>CLM0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ADC Minus-Side General Calibration Value Register, offset: 0x6C </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="473" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>ADC - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="447" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="447" bodyend="474"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gabecccecd01b0d465123a2dc166db4141" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CFG1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga722c7bd03a5d7b185bf43bdb5f846d43" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CFG2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga387c7f0803d309215cb3a8e950a3306e" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLM0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaf1f1f4e8be5d496b5ee572702254ca97" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLM1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga4711a30f2fd22f8aeab7f895a48e23e5" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLM2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga1cc2d6954ca002237cf69c29c4c8fdaf" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLM3</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gae20cd4616d206938dcbdd0d89294a1c5" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLM4</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaddad8cc46860498791a191bb20eaabee" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLMD</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga58148ff5ccf31e3492e95fefe99ada53" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLMS</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga01995af9e111222e08476c9aee76677c" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLP0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaa7869ef75cfd5cd705846e5ab901e275" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLP1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga07deba1a9895548e459d751b6d4a9a9b" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLP2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gacc34fda0519e96304c90539eaa110979" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLP3</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaf8205d2a8f6f433a429ad72e094d617e" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLP4</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga1ac68ed297fff3a0b27ccd90a55b2f28" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLPD</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gae959a34b13cf9ea0076fda72fcf4cf70" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CLPS</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gab69f073a5103823855dfa98e8b75ec9c" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CV1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaa6d0c2c2ba809736fd08737b76334280" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>CV2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga986be295f88a5b585ac89b5ae6a75f57" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>MG</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga9c229965c5de3a76f0f694f7f008bd27" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>OFS</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gac25efaaa034049fd39719cfe5b8ef3a0" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>PG</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga2d5ff162ed91ca88f1f5ce93926a28a8" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>R</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga71277aaa40be4473ac2521981f273bd3" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>RESERVED_0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gac2f336dedf67a3b6dc792098c25f1197" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>SC1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gab3540714d43d0b62818c72e8dc20d90a" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>SC2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gac9553a6641fb9da34cb7a0b63c7b2d4e" prot="public" virt="non-virtual"><scope>ADC_Type</scope><name>SC3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

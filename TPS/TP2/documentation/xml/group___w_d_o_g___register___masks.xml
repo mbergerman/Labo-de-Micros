@@ -1,0 +1,886 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___w_d_o_g___register___masks" kind="group">
+    <compoundname>WDOG_Register_Masks</compoundname>
+    <title>WDOG Register Masks</title>
+      <sectiondef kind="user-defined">
+      <header>STCTRLH - Watchdog Status and Control Register High</header>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga4ca33884d6a6fed2670ba04150fbff3a" prot="public" static="no">
+        <name>WDOG_STCTRLH_WDOGEN_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12515" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga7d9c369fd8fe12905d3e4b2d94bfe9be" prot="public" static="no">
+        <name>WDOG_STCTRLH_WDOGEN_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12516" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gafb8eba17e7e2a718fbd11d13204ce95a" prot="public" static="no">
+        <name>WDOG_STCTRLH_WDOGEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga7d9c369fd8fe12905d3e4b2d94bfe9be" kindref="member">WDOG_STCTRLH_WDOGEN_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1ga4ca33884d6a6fed2670ba04150fbff3a" kindref="member">WDOG_STCTRLH_WDOGEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12517" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12517" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gaf3ab71b185905c077887baa062ad6664" prot="public" static="no">
+        <name>WDOG_STCTRLH_CLKSRC_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12518" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12518" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gaa437494e2c4bb2952986b89d4a52f2bf" prot="public" static="no">
+        <name>WDOG_STCTRLH_CLKSRC_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12519" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga224fd323c11ba49b464f7caf2721af63" prot="public" static="no">
+        <name>WDOG_STCTRLH_CLKSRC</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1gaa437494e2c4bb2952986b89d4a52f2bf" kindref="member">WDOG_STCTRLH_CLKSRC_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1gaf3ab71b185905c077887baa062ad6664" kindref="member">WDOG_STCTRLH_CLKSRC_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12520" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12520" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga64ebb40c66318cac7631c3fd467c846a" prot="public" static="no">
+        <name>WDOG_STCTRLH_IRQRSTEN_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12521" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga0b519bf4ae17a11b51878819d4249e00" prot="public" static="no">
+        <name>WDOG_STCTRLH_IRQRSTEN_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12522" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gaa041a01bbc0a93451123273829f622cc" prot="public" static="no">
+        <name>WDOG_STCTRLH_IRQRSTEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga0b519bf4ae17a11b51878819d4249e00" kindref="member">WDOG_STCTRLH_IRQRSTEN_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1ga64ebb40c66318cac7631c3fd467c846a" kindref="member">WDOG_STCTRLH_IRQRSTEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12523" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga74edc83d2a673f012aeff6410a8be861" prot="public" static="no">
+        <name>WDOG_STCTRLH_WINEN_MASK</name>
+        <initializer>(0x8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12524" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gae0770ee0a74441bd3d2e0d3c291ca4b6" prot="public" static="no">
+        <name>WDOG_STCTRLH_WINEN_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12525" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga6e8b1ce8d5dee4ce41dc4dcea04711e7" prot="public" static="no">
+        <name>WDOG_STCTRLH_WINEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1gae0770ee0a74441bd3d2e0d3c291ca4b6" kindref="member">WDOG_STCTRLH_WINEN_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1ga74edc83d2a673f012aeff6410a8be861" kindref="member">WDOG_STCTRLH_WINEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12526" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gaf524a1ad1f811741b27f29836d6137ee" prot="public" static="no">
+        <name>WDOG_STCTRLH_ALLOWUPDATE_MASK</name>
+        <initializer>(0x10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12527" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gaf2ae60bccb334321f860b2480d916604" prot="public" static="no">
+        <name>WDOG_STCTRLH_ALLOWUPDATE_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12528" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gae83021f9bb1b47ec182a39e3badb563a" prot="public" static="no">
+        <name>WDOG_STCTRLH_ALLOWUPDATE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1gaf2ae60bccb334321f860b2480d916604" kindref="member">WDOG_STCTRLH_ALLOWUPDATE_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1gaf524a1ad1f811741b27f29836d6137ee" kindref="member">WDOG_STCTRLH_ALLOWUPDATE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12529" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga837911a61f223e74ea90cca76f08a787" prot="public" static="no">
+        <name>WDOG_STCTRLH_DBGEN_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12530" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12530" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga9fdcaa733bd0393d4bce730c1d2c90c5" prot="public" static="no">
+        <name>WDOG_STCTRLH_DBGEN_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12531" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gab07c0d3aeb49c991a2d1bdc467b13c9a" prot="public" static="no">
+        <name>WDOG_STCTRLH_DBGEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga9fdcaa733bd0393d4bce730c1d2c90c5" kindref="member">WDOG_STCTRLH_DBGEN_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1ga837911a61f223e74ea90cca76f08a787" kindref="member">WDOG_STCTRLH_DBGEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12532" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gab78af949041ea10c257c8276c8e2782a" prot="public" static="no">
+        <name>WDOG_STCTRLH_STOPEN_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12533" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga46b2b7b0c6a5938cfa26d96ba332d5d0" prot="public" static="no">
+        <name>WDOG_STCTRLH_STOPEN_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12534" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gacfafcc8c77275da3856822ecafb820db" prot="public" static="no">
+        <name>WDOG_STCTRLH_STOPEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga46b2b7b0c6a5938cfa26d96ba332d5d0" kindref="member">WDOG_STCTRLH_STOPEN_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1gab78af949041ea10c257c8276c8e2782a" kindref="member">WDOG_STCTRLH_STOPEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12535" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gad6e2dd88be51a78f133085bb0df3a5f9" prot="public" static="no">
+        <name>WDOG_STCTRLH_WAITEN_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12536" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gad224b313777fd019f8ec46f1791a52b7" prot="public" static="no">
+        <name>WDOG_STCTRLH_WAITEN_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12537" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12537" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gadd3e7de487cbaa13737a4cf0b74fd518" prot="public" static="no">
+        <name>WDOG_STCTRLH_WAITEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1gad224b313777fd019f8ec46f1791a52b7" kindref="member">WDOG_STCTRLH_WAITEN_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1gad6e2dd88be51a78f133085bb0df3a5f9" kindref="member">WDOG_STCTRLH_WAITEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12538" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12538" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga155c6ba1a6269c937ad8a1e1500686aa" prot="public" static="no">
+        <name>WDOG_STCTRLH_TESTWDOG_MASK</name>
+        <initializer>(0x400U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12539" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga3b923179c1bd41abe9fbab0ee57740c0" prot="public" static="no">
+        <name>WDOG_STCTRLH_TESTWDOG_SHIFT</name>
+        <initializer>(10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12540" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12540" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga9937cce09abe0d970364f52b175300b4" prot="public" static="no">
+        <name>WDOG_STCTRLH_TESTWDOG</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga3b923179c1bd41abe9fbab0ee57740c0" kindref="member">WDOG_STCTRLH_TESTWDOG_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1ga155c6ba1a6269c937ad8a1e1500686aa" kindref="member">WDOG_STCTRLH_TESTWDOG_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12541" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12541" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gad8ac03c1a9c77ee59f938c243db30a42" prot="public" static="no">
+        <name>WDOG_STCTRLH_TESTSEL_MASK</name>
+        <initializer>(0x800U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12542" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12542" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gaf41cdd95d386a6b663fa3adea03699e1" prot="public" static="no">
+        <name>WDOG_STCTRLH_TESTSEL_SHIFT</name>
+        <initializer>(11U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12543" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12543" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga3907686d0e251e7a497d69650b825aeb" prot="public" static="no">
+        <name>WDOG_STCTRLH_TESTSEL</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1gaf41cdd95d386a6b663fa3adea03699e1" kindref="member">WDOG_STCTRLH_TESTSEL_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1gad8ac03c1a9c77ee59f938c243db30a42" kindref="member">WDOG_STCTRLH_TESTSEL_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12544" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga20d3012eda5935f73ec4a9e24720fdc2" prot="public" static="no">
+        <name>WDOG_STCTRLH_BYTESEL_MASK</name>
+        <initializer>(0x3000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12545" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12545" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga0f73c2f0d56eac9caafc8a0337f95cc8" prot="public" static="no">
+        <name>WDOG_STCTRLH_BYTESEL_SHIFT</name>
+        <initializer>(12U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12546" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga13958aa7d857b661998e304c5b3b4ea7" prot="public" static="no">
+        <name>WDOG_STCTRLH_BYTESEL</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga0f73c2f0d56eac9caafc8a0337f95cc8" kindref="member">WDOG_STCTRLH_BYTESEL_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1ga20d3012eda5935f73ec4a9e24720fdc2" kindref="member">WDOG_STCTRLH_BYTESEL_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12547" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gadc235bcbd7644d445d3ca5cb682cdc57" prot="public" static="no">
+        <name>WDOG_STCTRLH_DISTESTWDOG_MASK</name>
+        <initializer>(0x4000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12548" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gabc176648bbc119e959823d20c38d3ece" prot="public" static="no">
+        <name>WDOG_STCTRLH_DISTESTWDOG_SHIFT</name>
+        <initializer>(14U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12549" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga2a15bc2d029a46c255e400c878caf95d" prot="public" static="no">
+        <name>WDOG_STCTRLH_DISTESTWDOG</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1gabc176648bbc119e959823d20c38d3ece" kindref="member">WDOG_STCTRLH_DISTESTWDOG_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1gadc235bcbd7644d445d3ca5cb682cdc57" kindref="member">WDOG_STCTRLH_DISTESTWDOG_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12550" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12550" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>STCTRLL - Watchdog Status and Control Register Low</header>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga28985249246b9ad12b7f4e50d5d1ee46" prot="public" static="no">
+        <name>WDOG_STCTRLL_INTFLG_MASK</name>
+        <initializer>(0x8000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12553" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga672e303cca0aaea64e48b5e632a2e666" prot="public" static="no">
+        <name>WDOG_STCTRLL_INTFLG_SHIFT</name>
+        <initializer>(15U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12554" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gaf2526424e72389c3136332c8e8c68514" prot="public" static="no">
+        <name>WDOG_STCTRLL_INTFLG</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga672e303cca0aaea64e48b5e632a2e666" kindref="member">WDOG_STCTRLL_INTFLG_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1ga28985249246b9ad12b7f4e50d5d1ee46" kindref="member">WDOG_STCTRLL_INTFLG_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12555" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12555" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>TOVALH - Watchdog Time-out Value Register High</header>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga3b934300a204f2b11fefc7961dc25f55" prot="public" static="no">
+        <name>WDOG_TOVALH_TOVALHIGH_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12558" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga6729532c2b047c0d3327ffcf7357825c" prot="public" static="no">
+        <name>WDOG_TOVALH_TOVALHIGH_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12559" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga10c7007564832595b6bd8de07770a9fa" prot="public" static="no">
+        <name>WDOG_TOVALH_TOVALHIGH</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga6729532c2b047c0d3327ffcf7357825c" kindref="member">WDOG_TOVALH_TOVALHIGH_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1ga3b934300a204f2b11fefc7961dc25f55" kindref="member">WDOG_TOVALH_TOVALHIGH_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12560" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12560" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>TOVALL - Watchdog Time-out Value Register Low</header>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga71c3913b6be99b211a3c3031caf8ac66" prot="public" static="no">
+        <name>WDOG_TOVALL_TOVALLOW_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12563" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga57ba2617b2855cd4b3d1eb0b3c878f52" prot="public" static="no">
+        <name>WDOG_TOVALL_TOVALLOW_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12564" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gae42e2ff7aef835ab2b6fa0d6f7a33476" prot="public" static="no">
+        <name>WDOG_TOVALL_TOVALLOW</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga57ba2617b2855cd4b3d1eb0b3c878f52" kindref="member">WDOG_TOVALL_TOVALLOW_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1ga71c3913b6be99b211a3c3031caf8ac66" kindref="member">WDOG_TOVALL_TOVALLOW_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12565" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12565" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>WINH - Watchdog Window Register High</header>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga6efef6fddbc8b8600a8dee5a24659068" prot="public" static="no">
+        <name>WDOG_WINH_WINHIGH_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12568" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12568" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga362e7a13b632027b940135991c9d169b" prot="public" static="no">
+        <name>WDOG_WINH_WINHIGH_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12569" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gaf5dc50c489d2700bf95ffdfa849f9e24" prot="public" static="no">
+        <name>WDOG_WINH_WINHIGH</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga362e7a13b632027b940135991c9d169b" kindref="member">WDOG_WINH_WINHIGH_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1ga6efef6fddbc8b8600a8dee5a24659068" kindref="member">WDOG_WINH_WINHIGH_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12570" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12570" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>WINL - Watchdog Window Register Low</header>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gadc36bfdccd5e9c14d063a5b36b6a3f6a" prot="public" static="no">
+        <name>WDOG_WINL_WINLOW_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12573" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12573" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga7f2baf848e4bfe9b0143d073467d1c1a" prot="public" static="no">
+        <name>WDOG_WINL_WINLOW_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12574" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12574" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gab55f3f4203f758c69ed8ab7e41db69fd" prot="public" static="no">
+        <name>WDOG_WINL_WINLOW</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga7f2baf848e4bfe9b0143d073467d1c1a" kindref="member">WDOG_WINL_WINLOW_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1gadc36bfdccd5e9c14d063a5b36b6a3f6a" kindref="member">WDOG_WINL_WINLOW_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12575" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12575" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>REFRESH - Watchdog Refresh register</header>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga59e560838a4c519b514c0def0d6034fa" prot="public" static="no">
+        <name>WDOG_REFRESH_WDOGREFRESH_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12578" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga526acc27150ff67f1f026bdcc1bb364c" prot="public" static="no">
+        <name>WDOG_REFRESH_WDOGREFRESH_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12579" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga08d4fbad4e65e50bf94e1fbf5f48e065" prot="public" static="no">
+        <name>WDOG_REFRESH_WDOGREFRESH</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga526acc27150ff67f1f026bdcc1bb364c" kindref="member">WDOG_REFRESH_WDOGREFRESH_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1ga59e560838a4c519b514c0def0d6034fa" kindref="member">WDOG_REFRESH_WDOGREFRESH_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12580" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12580" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>UNLOCK - Watchdog Unlock register</header>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gadcf9026f6f2730a765e504ec4c7126a8" prot="public" static="no">
+        <name>WDOG_UNLOCK_WDOGUNLOCK_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12583" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga07ed92839744d67e4c393b00bc293246" prot="public" static="no">
+        <name>WDOG_UNLOCK_WDOGUNLOCK_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12584" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gad96dca67e74ad54ec68edec38214cbc6" prot="public" static="no">
+        <name>WDOG_UNLOCK_WDOGUNLOCK</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga07ed92839744d67e4c393b00bc293246" kindref="member">WDOG_UNLOCK_WDOGUNLOCK_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1gadcf9026f6f2730a765e504ec4c7126a8" kindref="member">WDOG_UNLOCK_WDOGUNLOCK_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12585" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12585" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>TMROUTH - Watchdog Timer Output Register High</header>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga4c46affdc0cd5ed2cde734812f783d31" prot="public" static="no">
+        <name>WDOG_TMROUTH_TIMEROUTHIGH_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12588" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga6565e44e33822cee4835856bfb88431e" prot="public" static="no">
+        <name>WDOG_TMROUTH_TIMEROUTHIGH_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12589" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga6d47e0fbb5b3a15c1bec6418031960a0" prot="public" static="no">
+        <name>WDOG_TMROUTH_TIMEROUTHIGH</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1ga6565e44e33822cee4835856bfb88431e" kindref="member">WDOG_TMROUTH_TIMEROUTHIGH_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1ga4c46affdc0cd5ed2cde734812f783d31" kindref="member">WDOG_TMROUTH_TIMEROUTHIGH_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12590" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12590" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>TMROUTL - Watchdog Timer Output Register Low</header>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gaf33faad844e2af36af7af5c6bf49a361" prot="public" static="no">
+        <name>WDOG_TMROUTL_TIMEROUTLOW_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12593" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12593" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gae4a9f52d3b15e28932d287dee4128e8a" prot="public" static="no">
+        <name>WDOG_TMROUTL_TIMEROUTLOW_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12594" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12594" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gac3d8acaa47ae35b724e29dcd0ed62ac3" prot="public" static="no">
+        <name>WDOG_TMROUTL_TIMEROUTLOW</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1gae4a9f52d3b15e28932d287dee4128e8a" kindref="member">WDOG_TMROUTL_TIMEROUTLOW_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1gaf33faad844e2af36af7af5c6bf49a361" kindref="member">WDOG_TMROUTL_TIMEROUTLOW_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12595" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12595" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>RSTCNT - Watchdog Reset Count register</header>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga1cb55a509947b315d216ed9d822a4967" prot="public" static="no">
+        <name>WDOG_RSTCNT_RSTCNT_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12598" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12598" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gaf2ecbd74ca7b1ba60bc7b89de17b97a6" prot="public" static="no">
+        <name>WDOG_RSTCNT_RSTCNT_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12599" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga7ca7ac27fe2491ac993344daf567aadf" prot="public" static="no">
+        <name>WDOG_RSTCNT_RSTCNT</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1gaf2ecbd74ca7b1ba60bc7b89de17b97a6" kindref="member">WDOG_RSTCNT_RSTCNT_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1ga1cb55a509947b315d216ed9d822a4967" kindref="member">WDOG_RSTCNT_RSTCNT_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12600" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12600" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PRESC - Watchdog Prescaler register</header>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gaeadae4c65653a3302e69526730af1596" prot="public" static="no">
+        <name>WDOG_PRESC_PRESCVAL_MASK</name>
+        <initializer>(0x700U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12603" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12603" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gaa93b6acb20a8e20b687f05b8ced452c1" prot="public" static="no">
+        <name>WDOG_PRESC_PRESCVAL_SHIFT</name>
+        <initializer>(8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12604" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12604" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga13265fa90a567f7d142cd9cf3a5c0118" prot="public" static="no">
+        <name>WDOG_PRESC_PRESCVAL</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___w_d_o_g___register___masks_1gaa93b6acb20a8e20b687f05b8ced452c1" kindref="member">WDOG_PRESC_PRESCVAL_SHIFT</ref>)) &amp; <ref refid="group___w_d_o_g___register___masks_1gaeadae4c65653a3302e69526730af1596" kindref="member">WDOG_PRESC_PRESCVAL_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12605" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12605" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga0c092d77d4599871d1ebda1a3a28e887" prot="public" static="no">
+        <name>WDOG_BASE</name>
+        <initializer>(0x40052000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral WDOG base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12615" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gab938901a5fa5443253fc293ebd0399e3" prot="public" static="no">
+        <name>WDOG</name>
+        <initializer>((<ref refid="struct_w_d_o_g___type" kindref="compound">WDOG_Type</ref> *)<ref refid="group___w_d_o_g___register___masks_1ga0c092d77d4599871d1ebda1a3a28e887" kindref="member">WDOG_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral WDOG base pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12617" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gaa48c10a6a132d044b0d2a7b495b303da" prot="public" static="no">
+        <name>WDOG_BASE_ADDRS</name>
+        <initializer>{ <ref refid="group___w_d_o_g___register___masks_1ga0c092d77d4599871d1ebda1a3a28e887" kindref="member">WDOG_BASE</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of WDOG peripheral base addresses </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12619" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1ga8d50dba3756857eed1783b3d726d40d8" prot="public" static="no">
+        <name>WDOG_BASE_PTRS</name>
+        <initializer>{ <ref refid="group___w_d_o_g___register___masks_1gab938901a5fa5443253fc293ebd0399e3" kindref="member">WDOG</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of WDOG peripheral base pointers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12621" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12621" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___w_d_o_g___register___masks_1gad44cf9ab5d5c2116869c5570758d4eeb" prot="public" static="no">
+        <name>WDOG_IRQS</name>
+        <initializer>{ <ref refid="group___interrupt__vector__numbers_1gga666eb0caeb12ec0e281415592ae89083a0bff68ffa0f6a24e0103f156f26487b3" kindref="member">WDOG_EWM_IRQn</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt vectors for the WDOG peripheral type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12623" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12623" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

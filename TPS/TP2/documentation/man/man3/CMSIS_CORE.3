@@ -1,0 +1,573 @@
+.TH "CMSIS_CORE" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_CORE \- Core Register type definitions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "union \fBAPSR_Type\fP"
+.br
+.RI "Union type to access the Application Program Status Register (APSR)\&. "
+.ti -1c
+.RI "union \fBIPSR_Type\fP"
+.br
+.RI "Union type to access the Interrupt Program Status Register (IPSR)\&. "
+.ti -1c
+.RI "union \fBxPSR_Type\fP"
+.br
+.RI "Union type to access the Special-Purpose Program Status Registers (xPSR)\&. "
+.ti -1c
+.RI "union \fBCONTROL_Type\fP"
+.br
+.RI "Union type to access the Control Registers (CONTROL)\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBAPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Msk\fP   (1UL << APSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Msk\fP   (1UL << APSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Msk\fP   (1UL << APSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Msk\fP   (1UL << APSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Msk\fP   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Msk\fP   (1UL << xPSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Msk\fP   (1UL << xPSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Msk\fP   (1UL << xPSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Msk\fP   (1UL << xPSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Msk\fP   (1UL << xPSR_T_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Msk\fP   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Msk\fP   (1UL << CONTROL_SPSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Msk\fP   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Msk\fP   (1UL << APSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Msk\fP   (1UL << APSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Msk\fP   (1UL << APSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Msk\fP   (1UL << APSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Q_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Q_Msk\fP   (1UL << APSR_Q_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_GE_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_GE_Msk\fP   (0xFUL << APSR_GE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Msk\fP   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Msk\fP   (1UL << xPSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Msk\fP   (1UL << xPSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Msk\fP   (1UL << xPSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Msk\fP   (1UL << xPSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Q_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Q_Msk\fP   (1UL << xPSR_Q_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_IT_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_IT_Msk\fP   (3UL << xPSR_IT_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Msk\fP   (1UL << xPSR_T_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_GE_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_GE_Msk\fP   (0xFUL << xPSR_GE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Msk\fP   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SFPA_Pos\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SFPA_Msk\fP   (1UL << CONTROL_SFPA_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_FPCA_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_FPCA_Msk\fP   (1UL << CONTROL_FPCA_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Msk\fP   (1UL << CONTROL_SPSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Msk\fP   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_N_Msk\fP   (1UL << APSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Z_Msk\fP   (1UL << APSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_C_Msk\fP   (1UL << APSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_V_Msk\fP   (1UL << APSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Q_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_Q_Msk\fP   (1UL << APSR_Q_Pos)"
+.br
+.ti -1c
+.RI "#define \fBAPSR_GE_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBAPSR_GE_Msk\fP   (0xFUL << APSR_GE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBIPSR_ISR_Msk\fP   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Pos\fP   31U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_N_Msk\fP   (1UL << xPSR_N_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Pos\fP   30U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Z_Msk\fP   (1UL << xPSR_Z_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Pos\fP   29U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_C_Msk\fP   (1UL << xPSR_C_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Pos\fP   28U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_V_Msk\fP   (1UL << xPSR_V_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Q_Pos\fP   27U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_Q_Msk\fP   (1UL << xPSR_Q_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ICI_IT_2_Pos\fP   25U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ICI_IT_2_Msk\fP   (3UL << xPSR_ICI_IT_2_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Pos\fP   24U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_T_Msk\fP   (1UL << xPSR_T_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_GE_Pos\fP   16U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_GE_Msk\fP   (0xFUL << xPSR_GE_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ICI_IT_1_Pos\fP   10U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ICI_IT_1_Msk\fP   (0x3FUL << xPSR_ICI_IT_1_Pos)"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBxPSR_ISR_Msk\fP   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_FPCA_Pos\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_FPCA_Msk\fP   (1UL << CONTROL_FPCA_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Pos\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_SPSEL_Msk\fP   (1UL << CONTROL_SPSEL_Pos)"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Pos\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBCONTROL_nPRIV_Msk\fP   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Core Register type definitions\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define APSR_C_Msk   (1UL << APSR_C_Pos)"
+APSR: C Mask 
+.SS "#define APSR_C_Msk   (1UL << APSR_C_Pos)"
+APSR: C Mask 
+.SS "#define APSR_C_Msk   (1UL << APSR_C_Pos)"
+APSR: C Mask 
+.SS "#define APSR_C_Pos   29U"
+APSR: C Position 
+.SS "#define APSR_C_Pos   29U"
+APSR: C Position 
+.SS "#define APSR_C_Pos   29U"
+APSR: C Position 
+.SS "#define APSR_GE_Msk   (0xFUL << APSR_GE_Pos)"
+APSR: GE Mask 
+.SS "#define APSR_GE_Msk   (0xFUL << APSR_GE_Pos)"
+APSR: GE Mask 
+.SS "#define APSR_GE_Pos   16U"
+APSR: GE Position 
+.SS "#define APSR_GE_Pos   16U"
+APSR: GE Position 
+.SS "#define APSR_N_Msk   (1UL << APSR_N_Pos)"
+APSR: N Mask 
+.SS "#define APSR_N_Msk   (1UL << APSR_N_Pos)"
+APSR: N Mask 
+.SS "#define APSR_N_Msk   (1UL << APSR_N_Pos)"
+APSR: N Mask 
+.SS "#define APSR_N_Pos   31U"
+APSR: N Position 
+.SS "#define APSR_N_Pos   31U"
+APSR: N Position 
+.SS "#define APSR_N_Pos   31U"
+APSR: N Position 
+.SS "#define APSR_Q_Msk   (1UL << APSR_Q_Pos)"
+APSR: Q Mask 
+.SS "#define APSR_Q_Msk   (1UL << APSR_Q_Pos)"
+APSR: Q Mask 
+.SS "#define APSR_Q_Pos   27U"
+APSR: Q Position 
+.SS "#define APSR_Q_Pos   27U"
+APSR: Q Position 
+.SS "#define APSR_V_Msk   (1UL << APSR_V_Pos)"
+APSR: V Mask 
+.SS "#define APSR_V_Msk   (1UL << APSR_V_Pos)"
+APSR: V Mask 
+.SS "#define APSR_V_Msk   (1UL << APSR_V_Pos)"
+APSR: V Mask 
+.SS "#define APSR_V_Pos   28U"
+APSR: V Position 
+.SS "#define APSR_V_Pos   28U"
+APSR: V Position 
+.SS "#define APSR_V_Pos   28U"
+APSR: V Position 
+.SS "#define APSR_Z_Msk   (1UL << APSR_Z_Pos)"
+APSR: Z Mask 
+.SS "#define APSR_Z_Msk   (1UL << APSR_Z_Pos)"
+APSR: Z Mask 
+.SS "#define APSR_Z_Msk   (1UL << APSR_Z_Pos)"
+APSR: Z Mask 
+.SS "#define APSR_Z_Pos   30U"
+APSR: Z Position 
+.SS "#define APSR_Z_Pos   30U"
+APSR: Z Position 
+.SS "#define APSR_Z_Pos   30U"
+APSR: Z Position 
+.SS "#define CONTROL_FPCA_Msk   (1UL << CONTROL_FPCA_Pos)"
+CONTROL: FPCA Mask 
+.SS "#define CONTROL_FPCA_Msk   (1UL << CONTROL_FPCA_Pos)"
+CONTROL: FPCA Mask 
+.SS "#define CONTROL_FPCA_Pos   2U"
+CONTROL: FPCA Position 
+.SS "#define CONTROL_FPCA_Pos   2U"
+CONTROL: FPCA Position 
+.SS "#define CONTROL_nPRIV_Msk   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+CONTROL: nPRIV Mask 
+.SS "#define CONTROL_nPRIV_Msk   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+CONTROL: nPRIV Mask 
+.SS "#define CONTROL_nPRIV_Msk   (1UL /*<< CONTROL_nPRIV_Pos*/)"
+CONTROL: nPRIV Mask 
+.SS "#define CONTROL_nPRIV_Pos   0U"
+CONTROL: nPRIV Position 
+.SS "#define CONTROL_nPRIV_Pos   0U"
+CONTROL: nPRIV Position 
+.SS "#define CONTROL_nPRIV_Pos   0U"
+CONTROL: nPRIV Position 
+.SS "#define CONTROL_SFPA_Msk   (1UL << CONTROL_SFPA_Pos)"
+CONTROL: SFPA Mask 
+.SS "#define CONTROL_SFPA_Pos   3U"
+CONTROL: SFPA Position 
+.SS "#define CONTROL_SPSEL_Msk   (1UL << CONTROL_SPSEL_Pos)"
+CONTROL: SPSEL Mask 
+.SS "#define CONTROL_SPSEL_Msk   (1UL << CONTROL_SPSEL_Pos)"
+CONTROL: SPSEL Mask 
+.SS "#define CONTROL_SPSEL_Msk   (1UL << CONTROL_SPSEL_Pos)"
+CONTROL: SPSEL Mask 
+.SS "#define CONTROL_SPSEL_Pos   1U"
+CONTROL: SPSEL Position 
+.SS "#define CONTROL_SPSEL_Pos   1U"
+CONTROL: SPSEL Position 
+.SS "#define CONTROL_SPSEL_Pos   1U"
+CONTROL: SPSEL Position 
+.SS "#define IPSR_ISR_Msk   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+IPSR: ISR Mask 
+.SS "#define IPSR_ISR_Msk   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+IPSR: ISR Mask 
+.SS "#define IPSR_ISR_Msk   (0x1FFUL /*<< IPSR_ISR_Pos*/)"
+IPSR: ISR Mask 
+.SS "#define IPSR_ISR_Pos   0U"
+IPSR: ISR Position 
+.SS "#define IPSR_ISR_Pos   0U"
+IPSR: ISR Position 
+.SS "#define IPSR_ISR_Pos   0U"
+IPSR: ISR Position 
+.SS "#define xPSR_C_Msk   (1UL << xPSR_C_Pos)"
+xPSR: C Mask 
+.SS "#define xPSR_C_Msk   (1UL << xPSR_C_Pos)"
+xPSR: C Mask 
+.SS "#define xPSR_C_Msk   (1UL << xPSR_C_Pos)"
+xPSR: C Mask 
+.SS "#define xPSR_C_Pos   29U"
+xPSR: C Position 
+.SS "#define xPSR_C_Pos   29U"
+xPSR: C Position 
+.SS "#define xPSR_C_Pos   29U"
+xPSR: C Position 
+.SS "#define xPSR_GE_Msk   (0xFUL << xPSR_GE_Pos)"
+xPSR: GE Mask 
+.SS "#define xPSR_GE_Msk   (0xFUL << xPSR_GE_Pos)"
+xPSR: GE Mask 
+.SS "#define xPSR_GE_Pos   16U"
+xPSR: GE Position 
+.SS "#define xPSR_GE_Pos   16U"
+xPSR: GE Position 
+.SS "#define xPSR_ICI_IT_1_Msk   (0x3FUL << xPSR_ICI_IT_1_Pos)"
+xPSR: ICI/IT part 1 Mask 
+.SS "#define xPSR_ICI_IT_1_Pos   10U"
+xPSR: ICI/IT part 1 Position 
+.SS "#define xPSR_ICI_IT_2_Msk   (3UL << xPSR_ICI_IT_2_Pos)"
+xPSR: ICI/IT part 2 Mask 
+.SS "#define xPSR_ICI_IT_2_Pos   25U"
+xPSR: ICI/IT part 2 Position 
+.SS "#define xPSR_ISR_Msk   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+xPSR: ISR Mask 
+.SS "#define xPSR_ISR_Msk   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+xPSR: ISR Mask 
+.SS "#define xPSR_ISR_Msk   (0x1FFUL /*<< xPSR_ISR_Pos*/)"
+xPSR: ISR Mask 
+.SS "#define xPSR_ISR_Pos   0U"
+xPSR: ISR Position 
+.SS "#define xPSR_ISR_Pos   0U"
+xPSR: ISR Position 
+.SS "#define xPSR_ISR_Pos   0U"
+xPSR: ISR Position 
+.SS "#define xPSR_IT_Msk   (3UL << xPSR_IT_Pos)"
+xPSR: IT Mask 
+.SS "#define xPSR_IT_Pos   25U"
+xPSR: IT Position 
+.SS "#define xPSR_N_Msk   (1UL << xPSR_N_Pos)"
+xPSR: N Mask 
+.SS "#define xPSR_N_Msk   (1UL << xPSR_N_Pos)"
+xPSR: N Mask 
+.SS "#define xPSR_N_Msk   (1UL << xPSR_N_Pos)"
+xPSR: N Mask 
+.SS "#define xPSR_N_Pos   31U"
+xPSR: N Position 
+.SS "#define xPSR_N_Pos   31U"
+xPSR: N Position 
+.SS "#define xPSR_N_Pos   31U"
+xPSR: N Position 
+.SS "#define xPSR_Q_Msk   (1UL << xPSR_Q_Pos)"
+xPSR: Q Mask 
+.SS "#define xPSR_Q_Msk   (1UL << xPSR_Q_Pos)"
+xPSR: Q Mask 
+.SS "#define xPSR_Q_Pos   27U"
+xPSR: Q Position 
+.SS "#define xPSR_Q_Pos   27U"
+xPSR: Q Position 
+.SS "#define xPSR_T_Msk   (1UL << xPSR_T_Pos)"
+xPSR: T Mask 
+.SS "#define xPSR_T_Msk   (1UL << xPSR_T_Pos)"
+xPSR: T Mask 
+.SS "#define xPSR_T_Msk   (1UL << xPSR_T_Pos)"
+xPSR: T Mask 
+.SS "#define xPSR_T_Pos   24U"
+xPSR: T Position 
+.SS "#define xPSR_T_Pos   24U"
+xPSR: T Position 
+.SS "#define xPSR_T_Pos   24U"
+xPSR: T Position 
+.SS "#define xPSR_V_Msk   (1UL << xPSR_V_Pos)"
+xPSR: V Mask 
+.SS "#define xPSR_V_Msk   (1UL << xPSR_V_Pos)"
+xPSR: V Mask 
+.SS "#define xPSR_V_Msk   (1UL << xPSR_V_Pos)"
+xPSR: V Mask 
+.SS "#define xPSR_V_Pos   28U"
+xPSR: V Position 
+.SS "#define xPSR_V_Pos   28U"
+xPSR: V Position 
+.SS "#define xPSR_V_Pos   28U"
+xPSR: V Position 
+.SS "#define xPSR_Z_Msk   (1UL << xPSR_Z_Pos)"
+xPSR: Z Mask 
+.SS "#define xPSR_Z_Msk   (1UL << xPSR_Z_Pos)"
+xPSR: Z Mask 
+.SS "#define xPSR_Z_Msk   (1UL << xPSR_Z_Pos)"
+xPSR: Z Mask 
+.SS "#define xPSR_Z_Pos   30U"
+xPSR: Z Position 
+.SS "#define xPSR_Z_Pos   30U"
+xPSR: Z Position 
+.SS "#define xPSR_Z_Pos   30U"
+xPSR: Z Position 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

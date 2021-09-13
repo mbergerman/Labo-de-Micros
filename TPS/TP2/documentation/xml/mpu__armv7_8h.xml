@@ -1,0 +1,899 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="mpu__armv7_8h" kind="file" language="C++">
+    <compoundname>mpu_armv7.h</compoundname>
+    <innerclass refid="struct_a_r_m___m_p_u___region__t" prot="public">ARM_MPU_Region_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mpu__armv7_8h_1a6b829bed5f3be4a67d25f5963b61fa6e" prot="public" static="no">
+        <name>ARM_MPU_ARMV7_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="32" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a4a775008228aa58703c12d203a70fcdb" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_32B</name>
+        <initializer>((uint8_t)0x04U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="34" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1ab329562fb195f702f3c746d5f37e8998" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_64B</name>
+        <initializer>((uint8_t)0x05U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="35" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1ab600272e6ef9505f8737860a2c3dd576" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_128B</name>
+        <initializer>((uint8_t)0x06U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="36" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1ad9d8775a432b076a44a93cbf725e8619" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_256B</name>
+        <initializer>((uint8_t)0x07U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="37" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a79a3000f14a4d30b77e513c4db53cbe5" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_512B</name>
+        <initializer>((uint8_t)0x08U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="38" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1ae5bf2b5255a76ff6b62dfaed01580e9d" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_1KB</name>
+        <initializer>((uint8_t)0x09U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="39" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1ad4d916f22b3737207c55b8d0d165caee" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_2KB</name>
+        <initializer>((uint8_t)0x0AU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="40" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a0612fe51de2b25b49692290d072d829c" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_4KB</name>
+        <initializer>((uint8_t)0x0BU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="41" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a4ce38a1ed6641648a2d2a66f48dbcb24" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_8KB</name>
+        <initializer>((uint8_t)0x0CU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="42" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1af7a1b511ea419cb40777e0eaf32cc7e2" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_16KB</name>
+        <initializer>((uint8_t)0x0DU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="43" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a4d0d0ebcc97c9f24618808b66847056a" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_32KB</name>
+        <initializer>((uint8_t)0x0EU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="44" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1ad0c79b123d9c7954c48fda30ef25b609" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_64KB</name>
+        <initializer>((uint8_t)0x0FU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="45" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a362c22f584b2822b8f451e356cba39d4" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_128KB</name>
+        <initializer>((uint8_t)0x10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="46" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1ac489a9c4e5b9cdf9acd7748c9616499b" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_256KB</name>
+        <initializer>((uint8_t)0x11U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="47" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a074f11c22a2c6e4deaf1e8f78717730d" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_512KB</name>
+        <initializer>((uint8_t)0x12U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="48" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1aa2f3cf8222d50742ff33c94b7c8b3612" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_1MB</name>
+        <initializer>((uint8_t)0x13U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="49" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a2109105e7e283d5a5cf88772b776e441" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_2MB</name>
+        <initializer>((uint8_t)0x14U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="50" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a5d38b84546726a09a19c28f8de770b11" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_4MB</name>
+        <initializer>((uint8_t)0x15U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="51" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a62bebf6281c66f54f1d35ca43429c631" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_8MB</name>
+        <initializer>((uint8_t)0x16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="52" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1af3f56fa6ceeede9a0106d7f98b27a31e" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_16MB</name>
+        <initializer>((uint8_t)0x17U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="53" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a8b5fabd9bb7508e14e1bae69529a5853" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_32MB</name>
+        <initializer>((uint8_t)0x18U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="54" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a8fb3e1bb94b66387331a84c5c488286a" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_64MB</name>
+        <initializer>((uint8_t)0x19U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="55" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1ae8fd2daf98ba641d02ff7ca3978a3ad9" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_128MB</name>
+        <initializer>((uint8_t)0x1AU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="56" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1acce8e377f172943311b6268118bfcfdf" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_256MB</name>
+        <initializer>((uint8_t)0x1BU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="57" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a55ee4d5868b59de98bad7107243c2a95" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_512MB</name>
+        <initializer>((uint8_t)0x1CU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="58" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1ac8d05ede24fdfca60537ca47f86dce1d" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_1GB</name>
+        <initializer>((uint8_t)0x1DU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="59" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a8f5d28ac5a55d84a4d0cf271e06bbb19" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_2GB</name>
+        <initializer>((uint8_t)0x1EU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="60" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1ace58a7f0428b94180b8e61e29564f408" prot="public" static="no">
+        <name>ARM_MPU_REGION_SIZE_4GB</name>
+        <initializer>((uint8_t)0x1FU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="61" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a119d3b75afe2f0b541d7fe348d6c6753" prot="public" static="no">
+        <name>ARM_MPU_AP_NONE</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="63" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a451d4d8a51682793cd17fa1e0c6bfac0" prot="public" static="no">
+        <name>ARM_MPU_AP_PRIV</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="64" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a827544a2fe4aaf34ff06cc120f107ef7" prot="public" static="no">
+        <name>ARM_MPU_AP_URO</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="65" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a7602141f21093b49b066fbf00c1404de" prot="public" static="no">
+        <name>ARM_MPU_AP_FULL</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="66" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1aedf924cae01b2e697f67f3edc7113a3d" prot="public" static="no">
+        <name>ARM_MPU_AP_PRO</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="67" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a64e249c7c678144b52493a4b6f8f6b3c" prot="public" static="no">
+        <name>ARM_MPU_AP_RO</name>
+        <initializer>6U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="68" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a3fead12dc24a6d00ad53f55a042486ca" prot="public" static="no">
+        <name>ARM_MPU_RBAR</name>
+        <param><defname>Region</defname></param>
+        <param><defname>BaseAddress</defname></param>
+        <initializer>(((BaseAddress) &amp; MPU_RBAR_ADDR_Msk) |  \
+   ((Region) &amp; MPU_RBAR_REGION_Msk)    |  \
+   (MPU_RBAR_VALID_Msk))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MPU Region Base Address Register Value</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Region</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The region to be configured, number 0 to 15. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BaseAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base address for the region. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="75" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__armv7_8h_1a96b93785c92e2dbcb3a2356c25bf2adc" prot="public" static="no">
+        <name>ARM_MPU_RASR</name>
+        <param><defname>DisableExec</defname></param>
+        <param><defname>AccessPermission</defname></param>
+        <param><defname>TypeExtField</defname></param>
+        <param><defname>IsShareable</defname></param>
+        <param><defname>IsCacheable</defname></param>
+        <param><defname>IsBufferable</defname></param>
+        <param><defname>SubRegionDisable</defname></param>
+        <param><defname>Size</defname></param>
+        <initializer>((((DisableExec     ) &lt;&lt; MPU_RASR_XN_Pos)     &amp; MPU_RASR_XN_Msk)     | \
+   (((AccessPermission) &lt;&lt; MPU_RASR_AP_Pos)     &amp; MPU_RASR_AP_Msk)     | \
+   (((TypeExtField    ) &lt;&lt; MPU_RASR_TEX_Pos)    &amp; MPU_RASR_TEX_Msk)    | \
+   (((IsShareable     ) &lt;&lt; MPU_RASR_S_Pos)      &amp; MPU_RASR_S_Msk)      | \
+   (((IsCacheable     ) &lt;&lt; MPU_RASR_C_Pos)      &amp; MPU_RASR_C_Msk)      | \
+   (((IsBufferable    ) &lt;&lt; MPU_RASR_B_Pos)      &amp; MPU_RASR_B_Msk)      | \
+   (((SubRegionDisable) &lt;&lt; MPU_RASR_SRD_Pos)    &amp; MPU_RASR_SRD_Msk)    | \
+   (((Size            ) &lt;&lt; MPU_RASR_SIZE_Pos)   &amp; MPU_RASR_SIZE_Msk)   | \
+   (MPU_RASR_ENABLE_Msk))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MPU Region Attribute and Size Register Value</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DisableExec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instruction access disable bit, 1= disable instruction fetches. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>AccessPermission</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data access permissions, allows you to configure read/write access for User and Privileged mode. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TypeExtField</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type extension field, allows you to configure memory access type, for example strongly ordered, peripheral. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IsShareable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Region is shareable between multiple bus masters. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IsCacheable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Region is cacheable, i.e. its value may be kept in cache. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IsBufferable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Region is bufferable, i.e. using write-back caching. Cacheable but non-bufferable regions use write-through policy. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SubRegionDisable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sub-region disable field. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Region size of the region to be configured, for example 4K, 8K. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="92" column="9" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="mpu__armv7_8h_1a5a3f40314553baccdeea551f86d9a997" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void ARM_MPU_Enable</definition>
+        <argsstring>(uint32_t MPU_Control)</argsstring>
+        <name>ARM_MPU_Enable</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>MPU_Control</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable the MPU. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MPU_Control</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default access permissions for unconfigured regions. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="115" column="1" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="115" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="mpu__armv7_8h_1a61814eba4652a0fdfb76bbe222086327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void ARM_MPU_Disable</definition>
+        <argsstring>(void)</argsstring>
+        <name>ARM_MPU_Disable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disable the MPU. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="127" column="1" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="127" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="mpu__armv7_8h_1a9dcb0afddf4ac351f33f3c7a5169c62c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void ARM_MPU_ClrRegion</definition>
+        <argsstring>(uint32_t rnr)</argsstring>
+        <name>ARM_MPU_ClrRegion</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>rnr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear and disable the given MPU region. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rnr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Region number to be cleared. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="140" column="1" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="140" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="mpu__armv7_8h_1a16931f9ad84d7289e8218e169ae6db5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void ARM_MPU_SetRegion</definition>
+        <argsstring>(uint32_t rbar, uint32_t rasr)</argsstring>
+        <name>ARM_MPU_SetRegion</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>rbar</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>rasr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure an MPU region. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rbar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value for RBAR register. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rsar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value for RSAR register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="150" column="1" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="150" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="mpu__armv7_8h_1a042ba1a6a1a58795231459ac0410b809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void ARM_MPU_SetRegionEx</definition>
+        <argsstring>(uint32_t rnr, uint32_t rbar, uint32_t rasr)</argsstring>
+        <name>ARM_MPU_SetRegionEx</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>rnr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>rbar</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>rasr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configure the given MPU region. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rnr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Region number to be configured. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rbar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value for RBAR register. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rsar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value for RSAR register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="161" column="1" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="161" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="mpu__armv7_8h_1a71ca7368cfeccb262823726de9985aa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void orderedCpy</definition>
+        <argsstring>(volatile uint32_t *dst, const uint32_t *__RESTRICT src, uint32_t len)</argsstring>
+        <name>orderedCpy</name>
+        <param>
+          <type>volatile uint32_t *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const uint32_t *<ref refid="cmsis__iccarm_8h_1a378ac21329d33f561f90265eef89f564" kindref="member">__RESTRICT</ref></type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Memcopy with strictly ordered memory access, e.g. for register targets. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination data is copied to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source data is copied from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of data words to be copied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="173" column="1" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="173" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="mpu__armv7_8h_1a39ae99f1599699474fd39328cd082c92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>__STATIC_INLINE void ARM_MPU_Load</definition>
+        <argsstring>(ARM_MPU_Region_t const *table, uint32_t cnt)</argsstring>
+        <name>ARM_MPU_Load</name>
+        <param>
+          <type><ref refid="struct_a_r_m___m_p_u___region__t" kindref="compound">ARM_MPU_Region_t</ref> const *</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>cnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load the given number of MPU regions from a table. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the MPU configuration table. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cnt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of regions to be configured. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/mpu_armv7.h" line="186" column="1" bodyfile="SDK/CMSIS/mpu_armv7.h" bodystart="186" bodyend="195"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>@file<sp/><sp/><sp/><sp/><sp/>mpu_armv7.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>@brief<sp/><sp/><sp/><sp/>CMSIS<sp/>MPU<sp/>API<sp/>for<sp/>Armv7-M<sp/>MPU</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>@version<sp/><sp/>V5.0.4</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>@date<sp/><sp/><sp/><sp/><sp/>10.<sp/>January<sp/>2018</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017-2018<sp/>Arm<sp/>Limited.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>Apache-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>License);<sp/>you<sp/>may</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>AS<sp/>IS<sp/>BASIS,<sp/>WITHOUT</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/><sp/><sp/>defined<sp/>(<sp/>__ICCARM__<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#pragma<sp/>system_include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>treat<sp/>file<sp/>as<sp/>system<sp/>include<sp/>file<sp/>for<sp/>MISRA<sp/>check<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>(__clang__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#pragma<sp/>clang<sp/>system_header<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>treat<sp/>file<sp/>as<sp/>system<sp/>include<sp/>file<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ARM_MPU_ARMV7_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="mpu__armv7_8h_1a6b829bed5f3be4a67d25f5963b61fa6e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_ARMV7_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="mpu__armv7_8h_1a4a775008228aa58703c12d203a70fcdb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_32B<sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x04U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="mpu__armv7_8h_1ab329562fb195f702f3c746d5f37e8998" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_64B<sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x05U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="mpu__armv7_8h_1ab600272e6ef9505f8737860a2c3dd576" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_128B<sp/><sp/><sp/><sp/><sp/>((uint8_t)0x06U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="mpu__armv7_8h_1ad9d8775a432b076a44a93cbf725e8619" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_256B<sp/><sp/><sp/><sp/><sp/>((uint8_t)0x07U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="mpu__armv7_8h_1a79a3000f14a4d30b77e513c4db53cbe5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_512B<sp/><sp/><sp/><sp/><sp/>((uint8_t)0x08U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="mpu__armv7_8h_1ae5bf2b5255a76ff6b62dfaed01580e9d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_1KB<sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x09U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="mpu__armv7_8h_1ad4d916f22b3737207c55b8d0d165caee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_2KB<sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x0AU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="mpu__armv7_8h_1a0612fe51de2b25b49692290d072d829c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_4KB<sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x0BU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="mpu__armv7_8h_1a4ce38a1ed6641648a2d2a66f48dbcb24" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_8KB<sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x0CU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="mpu__armv7_8h_1af7a1b511ea419cb40777e0eaf32cc7e2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_16KB<sp/><sp/><sp/><sp/><sp/>((uint8_t)0x0DU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="mpu__armv7_8h_1a4d0d0ebcc97c9f24618808b66847056a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_32KB<sp/><sp/><sp/><sp/><sp/>((uint8_t)0x0EU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="mpu__armv7_8h_1ad0c79b123d9c7954c48fda30ef25b609" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_64KB<sp/><sp/><sp/><sp/><sp/>((uint8_t)0x0FU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="mpu__armv7_8h_1a362c22f584b2822b8f451e356cba39d4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_128KB<sp/><sp/><sp/><sp/>((uint8_t)0x10U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="mpu__armv7_8h_1ac489a9c4e5b9cdf9acd7748c9616499b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_256KB<sp/><sp/><sp/><sp/>((uint8_t)0x11U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="mpu__armv7_8h_1a074f11c22a2c6e4deaf1e8f78717730d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_512KB<sp/><sp/><sp/><sp/>((uint8_t)0x12U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="mpu__armv7_8h_1aa2f3cf8222d50742ff33c94b7c8b3612" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_1MB<sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x13U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="mpu__armv7_8h_1a2109105e7e283d5a5cf88772b776e441" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_2MB<sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x14U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="mpu__armv7_8h_1a5d38b84546726a09a19c28f8de770b11" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_4MB<sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x15U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="mpu__armv7_8h_1a62bebf6281c66f54f1d35ca43429c631" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_8MB<sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x16U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="mpu__armv7_8h_1af3f56fa6ceeede9a0106d7f98b27a31e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_16MB<sp/><sp/><sp/><sp/><sp/>((uint8_t)0x17U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="mpu__armv7_8h_1a8b5fabd9bb7508e14e1bae69529a5853" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_32MB<sp/><sp/><sp/><sp/><sp/>((uint8_t)0x18U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="mpu__armv7_8h_1a8fb3e1bb94b66387331a84c5c488286a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_64MB<sp/><sp/><sp/><sp/><sp/>((uint8_t)0x19U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="mpu__armv7_8h_1ae8fd2daf98ba641d02ff7ca3978a3ad9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_128MB<sp/><sp/><sp/><sp/>((uint8_t)0x1AU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="mpu__armv7_8h_1acce8e377f172943311b6268118bfcfdf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_256MB<sp/><sp/><sp/><sp/>((uint8_t)0x1BU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="mpu__armv7_8h_1a55ee4d5868b59de98bad7107243c2a95" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_512MB<sp/><sp/><sp/><sp/>((uint8_t)0x1CU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="mpu__armv7_8h_1ac8d05ede24fdfca60537ca47f86dce1d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_1GB<sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x1DU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="mpu__armv7_8h_1a8f5d28ac5a55d84a4d0cf271e06bbb19" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_2GB<sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x1EU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="mpu__armv7_8h_1ace58a7f0428b94180b8e61e29564f408" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_REGION_SIZE_4GB<sp/><sp/><sp/><sp/><sp/><sp/>((uint8_t)0x1FU)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="mpu__armv7_8h_1a119d3b75afe2f0b541d7fe348d6c6753" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_AP_NONE<sp/>0U<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="mpu__armv7_8h_1a451d4d8a51682793cd17fa1e0c6bfac0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_AP_PRIV<sp/>1U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="mpu__armv7_8h_1a827544a2fe4aaf34ff06cc120f107ef7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_AP_URO<sp/><sp/>2U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="mpu__armv7_8h_1a7602141f21093b49b066fbf00c1404de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_AP_FULL<sp/>3U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="mpu__armv7_8h_1aedf924cae01b2e697f67f3edc7113a3d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_AP_PRO<sp/><sp/>5U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="mpu__armv7_8h_1a64e249c7c678144b52493a4b6f8f6b3c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_MPU_AP_RO<sp/><sp/><sp/>6U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="mpu__armv7_8h_1a3fead12dc24a6d00ad53f55a042486ca" refkind="member"><highlight class="preprocessor">#define<sp/>ARM_MPU_RBAR(Region,<sp/>BaseAddress)<sp/>\</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/>(((BaseAddress)<sp/>&amp;<sp/>MPU_RBAR_ADDR_Msk)<sp/>|<sp/><sp/>\</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"><sp/><sp/><sp/>((Region)<sp/>&amp;<sp/>MPU_RBAR_REGION_Msk)<sp/><sp/><sp/><sp/>|<sp/><sp/>\</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"><sp/><sp/><sp/>(MPU_RBAR_VALID_Msk))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="mpu__armv7_8h_1a96b93785c92e2dbcb3a2356c25bf2adc" refkind="member"><highlight class="preprocessor">#define<sp/>ARM_MPU_RASR(DisableExec,<sp/>AccessPermission,<sp/>TypeExtField,<sp/>IsShareable,<sp/>IsCacheable,<sp/>IsBufferable,<sp/>SubRegionDisable,<sp/>Size)<sp/>\</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"><sp/><sp/>((((DisableExec<sp/><sp/><sp/><sp/><sp/>)<sp/>&lt;&lt;<sp/>MPU_RASR_XN_Pos)<sp/><sp/><sp/><sp/><sp/>&amp;<sp/>MPU_RASR_XN_Msk)<sp/><sp/><sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"><sp/><sp/><sp/>(((AccessPermission)<sp/>&lt;&lt;<sp/>MPU_RASR_AP_Pos)<sp/><sp/><sp/><sp/><sp/>&amp;<sp/>MPU_RASR_AP_Msk)<sp/><sp/><sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"><sp/><sp/><sp/>(((TypeExtField<sp/><sp/><sp/><sp/>)<sp/>&lt;&lt;<sp/>MPU_RASR_TEX_Pos)<sp/><sp/><sp/><sp/>&amp;<sp/>MPU_RASR_TEX_Msk)<sp/><sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"><sp/><sp/><sp/>(((IsShareable<sp/><sp/><sp/><sp/><sp/>)<sp/>&lt;&lt;<sp/>MPU_RASR_S_Pos)<sp/><sp/><sp/><sp/><sp/><sp/>&amp;<sp/>MPU_RASR_S_Msk)<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"><sp/><sp/><sp/>(((IsCacheable<sp/><sp/><sp/><sp/><sp/>)<sp/>&lt;&lt;<sp/>MPU_RASR_C_Pos)<sp/><sp/><sp/><sp/><sp/><sp/>&amp;<sp/>MPU_RASR_C_Msk)<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"><sp/><sp/><sp/>(((IsBufferable<sp/><sp/><sp/><sp/>)<sp/>&lt;&lt;<sp/>MPU_RASR_B_Pos)<sp/><sp/><sp/><sp/><sp/><sp/>&amp;<sp/>MPU_RASR_B_Msk)<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"><sp/><sp/><sp/>(((SubRegionDisable)<sp/>&lt;&lt;<sp/>MPU_RASR_SRD_Pos)<sp/><sp/><sp/><sp/>&amp;<sp/>MPU_RASR_SRD_Msk)<sp/><sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"><sp/><sp/><sp/>(((Size<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)<sp/>&lt;&lt;<sp/>MPU_RASR_SIZE_Pos)<sp/><sp/><sp/>&amp;<sp/>MPU_RASR_SIZE_Msk)<sp/><sp/><sp/>|<sp/>\</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"><sp/><sp/><sp/>(MPU_RASR_ENABLE_Msk))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="struct_a_r_m___m_p_u___region__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108" refid="struct_a_r_m___m_p_u___region__t_1a0b30f076910cb037e031563046dd5e10" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_a_r_m___m_p_u___region__t_1a0b30f076910cb037e031563046dd5e10" kindref="member">RBAR</ref>;<sp/></highlight></codeline>
+<codeline lineno="109" refid="struct_a_r_m___m_p_u___region__t_1a868291e1acbf1ce869f6e98a7c68718a" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_a_r_m___m_p_u___region__t_1a868291e1acbf1ce869f6e98a7c68718a" kindref="member">RASR</ref>;<sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}<sp/><ref refid="struct_a_r_m___m_p_u___region__t" kindref="compound">ARM_MPU_Region_t</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="mpu__armv7_8h_1a5a3f40314553baccdeea551f86d9a997" refkind="member"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpu__armv7_8h_1a5a3f40314553baccdeea551f86d9a997" kindref="member">ARM_MPU_Enable</ref>(uint32_t<sp/>MPU_Control)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___core___instruction_interface_1ga7fe277f5385d23b9c44b2cbda1577ce9" kindref="member">__DSB</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___core___instruction_interface_1gae26c2b3961e702aeabc24d4984ebd369" kindref="member">__ISB</ref>();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>MPU-&gt;CTRL<sp/>=<sp/>MPU_Control<sp/>|<sp/>MPU_CTRL_ENABLE_Msk;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SCB_SHCSR_MEMFAULTENA_Msk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" kindref="member">SCB</ref>-&gt;SHCSR<sp/>|=<sp/><ref refid="group___c_m_s_i_s___s_c_b_1gaf084424fa1f69bea36a1c44899d83d17" kindref="member">SCB_SHCSR_MEMFAULTENA_Msk</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="mpu__armv7_8h_1a61814eba4652a0fdfb76bbe222086327" refkind="member"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpu__armv7_8h_1a61814eba4652a0fdfb76bbe222086327" kindref="member">ARM_MPU_Disable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___core___instruction_interface_1ga7fe277f5385d23b9c44b2cbda1577ce9" kindref="member">__DSB</ref>();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s___core___instruction_interface_1gae26c2b3961e702aeabc24d4984ebd369" kindref="member">__ISB</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SCB_SHCSR_MEMFAULTENA_Msk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><ref refid="group___c_m_s_i_s__core__base_1gaaaf6477c2bde2f00f99e3c2fd1060b01" kindref="member">SCB</ref>-&gt;SHCSR<sp/>&amp;=<sp/>~<ref refid="group___c_m_s_i_s___s_c_b_1gaf084424fa1f69bea36a1c44899d83d17" kindref="member">SCB_SHCSR_MEMFAULTENA_Msk</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>MPU-&gt;CTRL<sp/><sp/>&amp;=<sp/>~MPU_CTRL_ENABLE_Msk;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="mpu__armv7_8h_1a9dcb0afddf4ac351f33f3c7a5169c62c" refkind="member"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpu__armv7_8h_1a9dcb0afddf4ac351f33f3c7a5169c62c" kindref="member">ARM_MPU_ClrRegion</ref>(uint32_t<sp/>rnr)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>MPU-&gt;RNR<sp/>=<sp/>rnr;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>MPU-&gt;RASR<sp/>=<sp/>0U;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="mpu__armv7_8h_1a16931f9ad84d7289e8218e169ae6db5d" refkind="member"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpu__armv7_8h_1a16931f9ad84d7289e8218e169ae6db5d" kindref="member">ARM_MPU_SetRegion</ref>(uint32_t<sp/>rbar,<sp/>uint32_t<sp/>rasr)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>MPU-&gt;RBAR<sp/>=<sp/>rbar;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>MPU-&gt;RASR<sp/>=<sp/>rasr;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="mpu__armv7_8h_1a042ba1a6a1a58795231459ac0410b809" refkind="member"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpu__armv7_8h_1a042ba1a6a1a58795231459ac0410b809" kindref="member">ARM_MPU_SetRegionEx</ref>(uint32_t<sp/>rnr,<sp/>uint32_t<sp/>rbar,<sp/>uint32_t<sp/>rasr)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>MPU-&gt;RNR<sp/>=<sp/>rnr;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>MPU-&gt;RBAR<sp/>=<sp/>rbar;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>MPU-&gt;RASR<sp/>=<sp/>rasr;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="mpu__armv7_8h_1a71ca7368cfeccb262823726de9985aa2" refkind="member"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpu__armv7_8h_1a71ca7368cfeccb262823726de9985aa2" kindref="member">orderedCpy</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t*<sp/>dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t*<sp/><ref refid="cmsis__armcc_8h_1a378ac21329d33f561f90265eef89f564" kindref="member">__RESTRICT</ref><sp/>src,<sp/>uint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>uint32_t<sp/>i;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0U;<sp/>i<sp/>&lt;<sp/>len;<sp/>++i)<sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>dst[i]<sp/>=<sp/>src[i];</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="mpu__armv7_8h_1a39ae99f1599699474fd39328cd082c92" refkind="member"><highlight class="normal"><ref refid="cmsis__armcc_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpu__armv7_8h_1a39ae99f1599699474fd39328cd082c92" kindref="member">ARM_MPU_Load</ref>(<ref refid="struct_a_r_m___m_p_u___region__t" kindref="compound">ARM_MPU_Region_t</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>table,<sp/>uint32_t<sp/>cnt)<sp/></highlight></codeline>
+<codeline lineno="187"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>rowWordSize<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_a_r_m___m_p_u___region__t" kindref="compound">ARM_MPU_Region_t</ref>)/4U;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(cnt<sp/>&gt;<sp/>MPU_TYPE_RALIASES)<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mpu__armv7_8h_1a71ca7368cfeccb262823726de9985aa2" kindref="member">orderedCpy</ref>(&amp;(MPU-&gt;RBAR),<sp/>&amp;(table-&gt;<ref refid="struct_a_r_m___m_p_u___region__t_1a0b30f076910cb037e031563046dd5e10" kindref="member">RBAR</ref>),<sp/>MPU_TYPE_RALIASES*rowWordSize);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>table<sp/>+=<sp/>MPU_TYPE_RALIASES;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>cnt<sp/>-=<sp/>MPU_TYPE_RALIASES;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><ref refid="mpu__armv7_8h_1a71ca7368cfeccb262823726de9985aa2" kindref="member">orderedCpy</ref>(&amp;(MPU-&gt;RBAR),<sp/>&amp;(table-&gt;<ref refid="struct_a_r_m___m_p_u___region__t_1a0b30f076910cb037e031563046dd5e10" kindref="member">RBAR</ref>),<sp/>cnt*rowWordSize);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="SDK/CMSIS/mpu_armv7.h"/>
+  </compounddef>
+</doxygen>

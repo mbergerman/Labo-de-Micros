@@ -1,0 +1,399 @@
+\hypertarget{group___r_n_g___register___masks}{}\section{R\+NG Register Masks}
+\label{group___r_n_g___register___masks}\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gab92662976cfe62457141e5b4f83d541c}{R\+N\+G\+\_\+\+B\+A\+SE}}~(0x40029000u)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga5b0885b8b55bbc13691092b704d9309f}{R\+NG}}~((\mbox{\hyperlink{struct_r_n_g___type}{R\+N\+G\+\_\+\+Type}} $\ast$)\mbox{\hyperlink{group___r_n_g___register___masks_gab92662976cfe62457141e5b4f83d541c}{R\+N\+G\+\_\+\+B\+A\+SE}})
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga794b814e7cc50a77c3e540fb88945326}{R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+RS}}~\{ \mbox{\hyperlink{group___r_n_g___register___masks_gab92662976cfe62457141e5b4f83d541c}{R\+N\+G\+\_\+\+B\+A\+SE}} \}
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gafe29fd84164c78d03c9a7a2128caf361}{R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+P\+T\+RS}}~\{ \mbox{\hyperlink{group___r_n_g___register___masks_ga5b0885b8b55bbc13691092b704d9309f}{R\+NG}} \}
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga2ad5ec19e225454d775bec0771e14615}{R\+N\+G\+\_\+\+I\+R\+QS}}~\{ \mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083a90c4647e57cff99fac635c532802c4b5}{R\+N\+G\+\_\+\+I\+R\+Qn}} \}
+\end{DoxyCompactItemize}
+\subsection*{CR -\/ R\+N\+GA Control Register}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga2aebfd44952b9acb9854f17cbb241dc3}{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+M\+A\+SK}}~(0x1\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga33164b67927c62a20a5cc0ebf24a6dec}{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+S\+H\+I\+FT}}~(0\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga179fde31f28a4cd70ad1513eb466a0ee}{R\+N\+G\+\_\+\+C\+R\+\_\+\+GO}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga33164b67927c62a20a5cc0ebf24a6dec}{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga2aebfd44952b9acb9854f17cbb241dc3}{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+M\+A\+SK}})
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga771a9a36a3856ec15886952dd5881e67}{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+M\+A\+SK}}~(0x2\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga003221e3c2c56d155f0144d99b9daa28}{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+S\+H\+I\+FT}}~(1\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga229f4a80160cd677797326cee5eb8588}{R\+N\+G\+\_\+\+C\+R\+\_\+\+HA}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga003221e3c2c56d155f0144d99b9daa28}{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga771a9a36a3856ec15886952dd5881e67}{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+M\+A\+SK}})
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gaeb6ea10a08f7c854d7a2d566afbc509a}{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+M\+A\+SK}}~(0x4\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga3e492e16a9a75e903cc108e526b51d7f}{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+S\+H\+I\+FT}}~(2\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga47b93c0137c2e27e1cbcc64146f72816}{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+TM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga3e492e16a9a75e903cc108e526b51d7f}{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_gaeb6ea10a08f7c854d7a2d566afbc509a}{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+M\+A\+SK}})
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gabe50fd44817cb9fbdf15fc9f832bfafa}{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+M\+A\+SK}}~(0x8\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga68edca922e22c3c3f052b3d5b6d825ec}{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+S\+H\+I\+FT}}~(3\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga5d98cb5b775c3f09def7800b7c4c6b4f}{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+RI}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga68edca922e22c3c3f052b3d5b6d825ec}{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_gabe50fd44817cb9fbdf15fc9f832bfafa}{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+M\+A\+SK}})
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gaee432efec0674dd00de32b4a038fa4f2}{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK}}~(0x10\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga72aad942e73c5264eeb1785dffabd3e9}{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT}}~(4\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga3a5ee93a41dae17db5b21a0535ed6a92}{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+LP}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga72aad942e73c5264eeb1785dffabd3e9}{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_gaee432efec0674dd00de32b4a038fa4f2}{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK}})
+\end{DoxyCompactItemize}
+\subsection*{SR -\/ R\+N\+GA Status Register}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga7fde61b3578eb7d529405f7090a36e28}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+M\+A\+SK}}~(0x1\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gad37b495266223189729bdaa62c9deb5f}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+S\+H\+I\+FT}}~(0\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gad4572970c029ce5f45f9f71d3e259790}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+CV}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_gad37b495266223189729bdaa62c9deb5f}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga7fde61b3578eb7d529405f7090a36e28}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+M\+A\+SK}})
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gacba2db7d02686b0737b4b47ba765d063}{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+M\+A\+SK}}~(0x2\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga13e9b834adced475b1d075eb159655fd}{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+S\+H\+I\+FT}}~(1\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga4b718e1de32f8695910d76d593bf200e}{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+RS}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga13e9b834adced475b1d075eb159655fd}{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_gacba2db7d02686b0737b4b47ba765d063}{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+M\+A\+SK}})
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga3584aefed1802fa0dc97f56ee7ceb292}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+M\+A\+SK}}~(0x4\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga6b0320c0b7ca685c61880f0240959cc8}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+S\+H\+I\+FT}}~(2\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gaf467e3533c442a735c1742474cf4dffc}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+RU}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga6b0320c0b7ca685c61880f0240959cc8}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga3584aefed1802fa0dc97f56ee7ceb292}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+M\+A\+SK}})
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga3c85bd2671168b6c4deb3d24f258e994}{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+M\+A\+SK}}~(0x8\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga83b4268bad929f74a99f2e7df81d7334}{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+S\+H\+I\+FT}}~(3\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga65db02ced3c609548955eb5fcb6ab7f4}{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+RI}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga83b4268bad929f74a99f2e7df81d7334}{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga3c85bd2671168b6c4deb3d24f258e994}{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+M\+A\+SK}})
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga1a51652171cedf780e82c20ff41119f8}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK}}~(0x10\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga07a631716ed84be9e6c0fb94308ac55f}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT}}~(4\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga90609c7981750fd2318da77a1e192f0b}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+LP}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga07a631716ed84be9e6c0fb94308ac55f}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga1a51652171cedf780e82c20ff41119f8}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK}})
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga5ba45a08f2c283764e959f185747e549}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+M\+A\+SK}}~(0x\+F\+F00\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga2e38a684aa9e1b164fb2a00db509ccf9}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+S\+H\+I\+FT}}~(8\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gae7ebdc9ef90b73144e40809d7b8108fc}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+VL}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga2e38a684aa9e1b164fb2a00db509ccf9}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga5ba45a08f2c283764e959f185747e549}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+M\+A\+SK}})
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga2f35d6883145b930c34d949640694a6f}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+A\+SK}}~(0x\+F\+F0000\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga7bd0f51640dd8184fdc95b687473e7d6}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT}}~(16\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga8fe3b65a512da2f37a4a9ae03b4e4f40}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+ZE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga7bd0f51640dd8184fdc95b687473e7d6}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga2f35d6883145b930c34d949640694a6f}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+A\+SK}})
+\end{DoxyCompactItemize}
+\subsection*{ER -\/ R\+N\+GA Entropy Register}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gab27d57cff82acd0615707b3a53c7cce0}{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+M\+A\+SK}}~(0x\+F\+F\+F\+F\+F\+F\+F\+F\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gae01cc719557411c3218c33e4b855b790}{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+S\+H\+I\+FT}}~(0\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga308a2ffad2128aec4f7883f9f1289940}{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+NT}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_gae01cc719557411c3218c33e4b855b790}{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_gab27d57cff82acd0615707b3a53c7cce0}{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+M\+A\+SK}})
+\end{DoxyCompactItemize}
+\subsection*{OR -\/ R\+N\+GA Output Register}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gaa29938490b0cc9d23a54a137c62ba64a}{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+M\+A\+SK}}~(0x\+F\+F\+F\+F\+F\+F\+F\+F\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_ga3f7e8e180fafb10fbbe34e9dced30b87}{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+S\+H\+I\+FT}}~(0\+U)
+\item 
+\#define \mbox{\hyperlink{group___r_n_g___register___masks_gadee84e83028dd2a869b62f046e20f795}{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+UT}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga3f7e8e180fafb10fbbe34e9dced30b87}{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_gaa29938490b0cc9d23a54a137c62ba64a}{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+M\+A\+SK}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga5b0885b8b55bbc13691092b704d9309f}\label{group___r_n_g___register___masks_ga5b0885b8b55bbc13691092b704d9309f}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+NG@{R\+NG}}
+\index{R\+NG@{R\+NG}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+NG}{RNG}}
+{\footnotesize\ttfamily \#define R\+NG~((\mbox{\hyperlink{struct_r_n_g___type}{R\+N\+G\+\_\+\+Type}} $\ast$)\mbox{\hyperlink{group___r_n_g___register___masks_gab92662976cfe62457141e5b4f83d541c}{R\+N\+G\+\_\+\+B\+A\+SE}})}
+
+Peripheral R\+NG base pointer \mbox{\Hypertarget{group___r_n_g___register___masks_gab92662976cfe62457141e5b4f83d541c}\label{group___r_n_g___register___masks_gab92662976cfe62457141e5b4f83d541c}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+B\+A\+SE@{R\+N\+G\+\_\+\+B\+A\+SE}}
+\index{R\+N\+G\+\_\+\+B\+A\+SE@{R\+N\+G\+\_\+\+B\+A\+SE}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+B\+A\+SE}{RNG\_BASE}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+B\+A\+SE~(0x40029000u)}
+
+Peripheral R\+NG base address \mbox{\Hypertarget{group___r_n_g___register___masks_ga794b814e7cc50a77c3e540fb88945326}\label{group___r_n_g___register___masks_ga794b814e7cc50a77c3e540fb88945326}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+RS@{R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+RS}}
+\index{R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+RS@{R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+RS}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+RS}{RNG\_BASE\_ADDRS}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+RS~\{ \mbox{\hyperlink{group___r_n_g___register___masks_gab92662976cfe62457141e5b4f83d541c}{R\+N\+G\+\_\+\+B\+A\+SE}} \}}
+
+Array initializer of R\+NG peripheral base addresses \mbox{\Hypertarget{group___r_n_g___register___masks_gafe29fd84164c78d03c9a7a2128caf361}\label{group___r_n_g___register___masks_gafe29fd84164c78d03c9a7a2128caf361}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+P\+T\+RS@{R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+P\+T\+RS}}
+\index{R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+P\+T\+RS@{R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+P\+T\+RS}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+P\+T\+RS}{RNG\_BASE\_PTRS}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+B\+A\+S\+E\+\_\+\+P\+T\+RS~\{ \mbox{\hyperlink{group___r_n_g___register___masks_ga5b0885b8b55bbc13691092b704d9309f}{R\+NG}} \}}
+
+Array initializer of R\+NG peripheral base pointers \mbox{\Hypertarget{group___r_n_g___register___masks_ga5d98cb5b775c3f09def7800b7c4c6b4f}\label{group___r_n_g___register___masks_ga5d98cb5b775c3f09def7800b7c4c6b4f}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+RI@{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+RI}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+RI@{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+RI}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+RI}{RNG\_CR\_CLRI}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+RI(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga68edca922e22c3c3f052b3d5b6d825ec}{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_gabe50fd44817cb9fbdf15fc9f832bfafa}{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_gabe50fd44817cb9fbdf15fc9f832bfafa}\label{group___r_n_g___register___masks_gabe50fd44817cb9fbdf15fc9f832bfafa}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+M\+A\+SK}{RNG\_CR\_CLRI\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+M\+A\+SK~(0x8\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga68edca922e22c3c3f052b3d5b6d825ec}\label{group___r_n_g___register___masks_ga68edca922e22c3c3f052b3d5b6d825ec}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+S\+H\+I\+FT}{RNG\_CR\_CLRI\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+C\+L\+R\+I\+\_\+\+S\+H\+I\+FT~(3\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga179fde31f28a4cd70ad1513eb466a0ee}\label{group___r_n_g___register___masks_ga179fde31f28a4cd70ad1513eb466a0ee}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+GO@{R\+N\+G\+\_\+\+C\+R\+\_\+\+GO}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+GO@{R\+N\+G\+\_\+\+C\+R\+\_\+\+GO}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+GO}{RNG\_CR\_GO}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+GO(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga33164b67927c62a20a5cc0ebf24a6dec}{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga2aebfd44952b9acb9854f17cbb241dc3}{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga2aebfd44952b9acb9854f17cbb241dc3}\label{group___r_n_g___register___masks_ga2aebfd44952b9acb9854f17cbb241dc3}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+M\+A\+SK}{RNG\_CR\_GO\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+M\+A\+SK~(0x1\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga33164b67927c62a20a5cc0ebf24a6dec}\label{group___r_n_g___register___masks_ga33164b67927c62a20a5cc0ebf24a6dec}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+S\+H\+I\+FT}{RNG\_CR\_GO\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+G\+O\+\_\+\+S\+H\+I\+FT~(0\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga229f4a80160cd677797326cee5eb8588}\label{group___r_n_g___register___masks_ga229f4a80160cd677797326cee5eb8588}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+HA@{R\+N\+G\+\_\+\+C\+R\+\_\+\+HA}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+HA@{R\+N\+G\+\_\+\+C\+R\+\_\+\+HA}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+HA}{RNG\_CR\_HA}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+HA(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga003221e3c2c56d155f0144d99b9daa28}{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga771a9a36a3856ec15886952dd5881e67}{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga771a9a36a3856ec15886952dd5881e67}\label{group___r_n_g___register___masks_ga771a9a36a3856ec15886952dd5881e67}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+M\+A\+SK}{RNG\_CR\_HA\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+M\+A\+SK~(0x2\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga003221e3c2c56d155f0144d99b9daa28}\label{group___r_n_g___register___masks_ga003221e3c2c56d155f0144d99b9daa28}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+S\+H\+I\+FT}{RNG\_CR\_HA\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+H\+A\+\_\+\+S\+H\+I\+FT~(1\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga47b93c0137c2e27e1cbcc64146f72816}\label{group___r_n_g___register___masks_ga47b93c0137c2e27e1cbcc64146f72816}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+TM@{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+TM}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+TM@{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+TM}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+TM}{RNG\_CR\_INTM}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+TM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga3e492e16a9a75e903cc108e526b51d7f}{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_gaeb6ea10a08f7c854d7a2d566afbc509a}{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_gaeb6ea10a08f7c854d7a2d566afbc509a}\label{group___r_n_g___register___masks_gaeb6ea10a08f7c854d7a2d566afbc509a}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+M\+A\+SK}{RNG\_CR\_INTM\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+M\+A\+SK~(0x4\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga3e492e16a9a75e903cc108e526b51d7f}\label{group___r_n_g___register___masks_ga3e492e16a9a75e903cc108e526b51d7f}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+S\+H\+I\+FT}{RNG\_CR\_INTM\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+I\+N\+T\+M\+\_\+\+S\+H\+I\+FT~(2\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga3a5ee93a41dae17db5b21a0535ed6a92}\label{group___r_n_g___register___masks_ga3a5ee93a41dae17db5b21a0535ed6a92}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+LP@{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+LP}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+LP@{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+LP}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+LP}{RNG\_CR\_SLP}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+LP(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga72aad942e73c5264eeb1785dffabd3e9}{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_gaee432efec0674dd00de32b4a038fa4f2}{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_gaee432efec0674dd00de32b4a038fa4f2}\label{group___r_n_g___register___masks_gaee432efec0674dd00de32b4a038fa4f2}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK}{RNG\_CR\_SLP\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK~(0x10\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga72aad942e73c5264eeb1785dffabd3e9}\label{group___r_n_g___register___masks_ga72aad942e73c5264eeb1785dffabd3e9}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT}{RNG\_CR\_SLP\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+C\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT~(4\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga308a2ffad2128aec4f7883f9f1289940}\label{group___r_n_g___register___masks_ga308a2ffad2128aec4f7883f9f1289940}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+NT@{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+NT}}
+\index{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+NT@{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+NT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+NT}{RNG\_ER\_EXT\_ENT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+NT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_gae01cc719557411c3218c33e4b855b790}{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_gab27d57cff82acd0615707b3a53c7cce0}{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_gab27d57cff82acd0615707b3a53c7cce0}\label{group___r_n_g___register___masks_gab27d57cff82acd0615707b3a53c7cce0}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+M\+A\+SK}{RNG\_ER\_EXT\_ENT\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+M\+A\+SK~(0x\+F\+F\+F\+F\+F\+F\+F\+F\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_gae01cc719557411c3218c33e4b855b790}\label{group___r_n_g___register___masks_gae01cc719557411c3218c33e4b855b790}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+S\+H\+I\+FT}{RNG\_ER\_EXT\_ENT\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+E\+R\+\_\+\+E\+X\+T\+\_\+\+E\+N\+T\+\_\+\+S\+H\+I\+FT~(0\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga2ad5ec19e225454d775bec0771e14615}\label{group___r_n_g___register___masks_ga2ad5ec19e225454d775bec0771e14615}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+I\+R\+QS@{R\+N\+G\+\_\+\+I\+R\+QS}}
+\index{R\+N\+G\+\_\+\+I\+R\+QS@{R\+N\+G\+\_\+\+I\+R\+QS}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+I\+R\+QS}{RNG\_IRQS}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+I\+R\+QS~\{ \mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083a90c4647e57cff99fac635c532802c4b5}{R\+N\+G\+\_\+\+I\+R\+Qn}} \}}
+
+Interrupt vectors for the R\+NG peripheral type \mbox{\Hypertarget{group___r_n_g___register___masks_gadee84e83028dd2a869b62f046e20f795}\label{group___r_n_g___register___masks_gadee84e83028dd2a869b62f046e20f795}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+UT@{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+UT}}
+\index{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+UT@{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+UT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+UT}{RNG\_OR\_RANDOUT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+UT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga3f7e8e180fafb10fbbe34e9dced30b87}{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_gaa29938490b0cc9d23a54a137c62ba64a}{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_gaa29938490b0cc9d23a54a137c62ba64a}\label{group___r_n_g___register___masks_gaa29938490b0cc9d23a54a137c62ba64a}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+M\+A\+SK}{RNG\_OR\_RANDOUT\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+M\+A\+SK~(0x\+F\+F\+F\+F\+F\+F\+F\+F\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga3f7e8e180fafb10fbbe34e9dced30b87}\label{group___r_n_g___register___masks_ga3f7e8e180fafb10fbbe34e9dced30b87}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+S\+H\+I\+FT}{RNG\_OR\_RANDOUT\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+O\+R\+\_\+\+R\+A\+N\+D\+O\+U\+T\+\_\+\+S\+H\+I\+FT~(0\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga65db02ced3c609548955eb5fcb6ab7f4}\label{group___r_n_g___register___masks_ga65db02ced3c609548955eb5fcb6ab7f4}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+RI@{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+RI}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+RI@{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+RI}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+RI}{RNG\_SR\_ERRI}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+RI(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga83b4268bad929f74a99f2e7df81d7334}{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga3c85bd2671168b6c4deb3d24f258e994}{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga3c85bd2671168b6c4deb3d24f258e994}\label{group___r_n_g___register___masks_ga3c85bd2671168b6c4deb3d24f258e994}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+M\+A\+SK}{RNG\_SR\_ERRI\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+M\+A\+SK~(0x8\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga83b4268bad929f74a99f2e7df81d7334}\label{group___r_n_g___register___masks_ga83b4268bad929f74a99f2e7df81d7334}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+S\+H\+I\+FT}{RNG\_SR\_ERRI\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+E\+R\+R\+I\+\_\+\+S\+H\+I\+FT~(3\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga4b718e1de32f8695910d76d593bf200e}\label{group___r_n_g___register___masks_ga4b718e1de32f8695910d76d593bf200e}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+RS@{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+RS}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+RS@{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+RS}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+RS}{RNG\_SR\_LRS}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+RS(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga13e9b834adced475b1d075eb159655fd}{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_gacba2db7d02686b0737b4b47ba765d063}{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_gacba2db7d02686b0737b4b47ba765d063}\label{group___r_n_g___register___masks_gacba2db7d02686b0737b4b47ba765d063}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+M\+A\+SK}{RNG\_SR\_LRS\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+M\+A\+SK~(0x2\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga13e9b834adced475b1d075eb159655fd}\label{group___r_n_g___register___masks_ga13e9b834adced475b1d075eb159655fd}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+S\+H\+I\+FT}{RNG\_SR\_LRS\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+L\+R\+S\+\_\+\+S\+H\+I\+FT~(1\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_gae7ebdc9ef90b73144e40809d7b8108fc}\label{group___r_n_g___register___masks_gae7ebdc9ef90b73144e40809d7b8108fc}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+VL@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+VL}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+VL@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+VL}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+VL}{RNG\_SR\_OREG\_LVL}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+VL(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga2e38a684aa9e1b164fb2a00db509ccf9}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga5ba45a08f2c283764e959f185747e549}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga5ba45a08f2c283764e959f185747e549}\label{group___r_n_g___register___masks_ga5ba45a08f2c283764e959f185747e549}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+M\+A\+SK}{RNG\_SR\_OREG\_LVL\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+M\+A\+SK~(0x\+F\+F00\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga2e38a684aa9e1b164fb2a00db509ccf9}\label{group___r_n_g___register___masks_ga2e38a684aa9e1b164fb2a00db509ccf9}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+S\+H\+I\+FT}{RNG\_SR\_OREG\_LVL\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+L\+V\+L\+\_\+\+S\+H\+I\+FT~(8\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga8fe3b65a512da2f37a4a9ae03b4e4f40}\label{group___r_n_g___register___masks_ga8fe3b65a512da2f37a4a9ae03b4e4f40}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+ZE@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+ZE}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+ZE@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+ZE}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+ZE}{RNG\_SR\_OREG\_SIZE}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+ZE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga7bd0f51640dd8184fdc95b687473e7d6}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga2f35d6883145b930c34d949640694a6f}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga2f35d6883145b930c34d949640694a6f}\label{group___r_n_g___register___masks_ga2f35d6883145b930c34d949640694a6f}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+A\+SK}{RNG\_SR\_OREG\_SIZE\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+A\+SK~(0x\+F\+F0000\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga7bd0f51640dd8184fdc95b687473e7d6}\label{group___r_n_g___register___masks_ga7bd0f51640dd8184fdc95b687473e7d6}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT}{RNG\_SR\_OREG\_SIZE\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+E\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+S\+H\+I\+FT~(16\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_gaf467e3533c442a735c1742474cf4dffc}\label{group___r_n_g___register___masks_gaf467e3533c442a735c1742474cf4dffc}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+RU@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+RU}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+RU@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+RU}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+RU}{RNG\_SR\_ORU}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+RU(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga6b0320c0b7ca685c61880f0240959cc8}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga3584aefed1802fa0dc97f56ee7ceb292}{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga3584aefed1802fa0dc97f56ee7ceb292}\label{group___r_n_g___register___masks_ga3584aefed1802fa0dc97f56ee7ceb292}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+M\+A\+SK}{RNG\_SR\_ORU\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+M\+A\+SK~(0x4\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga6b0320c0b7ca685c61880f0240959cc8}\label{group___r_n_g___register___masks_ga6b0320c0b7ca685c61880f0240959cc8}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+S\+H\+I\+FT}{RNG\_SR\_ORU\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+O\+R\+U\+\_\+\+S\+H\+I\+FT~(2\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_gad4572970c029ce5f45f9f71d3e259790}\label{group___r_n_g___register___masks_gad4572970c029ce5f45f9f71d3e259790}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+CV@{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+CV}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+CV@{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+CV}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+CV}{RNG\_SR\_SECV}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+CV(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_gad37b495266223189729bdaa62c9deb5f}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga7fde61b3578eb7d529405f7090a36e28}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga7fde61b3578eb7d529405f7090a36e28}\label{group___r_n_g___register___masks_ga7fde61b3578eb7d529405f7090a36e28}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+M\+A\+SK}{RNG\_SR\_SECV\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+M\+A\+SK~(0x1\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_gad37b495266223189729bdaa62c9deb5f}\label{group___r_n_g___register___masks_gad37b495266223189729bdaa62c9deb5f}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+S\+H\+I\+FT}{RNG\_SR\_SECV\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+E\+C\+V\+\_\+\+S\+H\+I\+FT~(0\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga90609c7981750fd2318da77a1e192f0b}\label{group___r_n_g___register___masks_ga90609c7981750fd2318da77a1e192f0b}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+LP@{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+LP}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+LP@{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+LP}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+LP}{RNG\_SR\_SLP}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+LP(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___r_n_g___register___masks_ga07a631716ed84be9e6c0fb94308ac55f}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT}})) \& \mbox{\hyperlink{group___r_n_g___register___masks_ga1a51652171cedf780e82c20ff41119f8}{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK}})}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga1a51652171cedf780e82c20ff41119f8}\label{group___r_n_g___register___masks_ga1a51652171cedf780e82c20ff41119f8}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK@{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK}{RNG\_SR\_SLP\_MASK}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+M\+A\+SK~(0x10\+U)}
+
+\mbox{\Hypertarget{group___r_n_g___register___masks_ga07a631716ed84be9e6c0fb94308ac55f}\label{group___r_n_g___register___masks_ga07a631716ed84be9e6c0fb94308ac55f}} 
+\index{R\+N\+G Register Masks@{R\+N\+G Register Masks}!R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT}}
+\index{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT@{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT}!R\+N\+G Register Masks@{R\+N\+G Register Masks}}
+\subsubsection{\texorpdfstring{R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT}{RNG\_SR\_SLP\_SHIFT}}
+{\footnotesize\ttfamily \#define R\+N\+G\+\_\+\+S\+R\+\_\+\+S\+L\+P\+\_\+\+S\+H\+I\+FT~(4\+U)}
+

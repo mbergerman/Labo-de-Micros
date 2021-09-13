@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_c_m_t___type" kind="struct" language="C++" prot="public">
+    <compoundname>CMT_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga309b886425c6fe607ddc0ea652f9b194" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t CGH1</definition>
+        <argsstring></argsstring>
+        <name>CGH1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CMT Carrier Generator High Data Register 1, offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="3250" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="3250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga11bdc2466acff90f1374d817bc1ed866" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t CGL1</definition>
+        <argsstring></argsstring>
+        <name>CGL1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CMT Carrier Generator Low Data Register 1, offset: 0x1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="3251" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="3251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga84d40ea282f57da8f5fae00f40398a5b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t CGH2</definition>
+        <argsstring></argsstring>
+        <name>CGH2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CMT Carrier Generator High Data Register 2, offset: 0x2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="3252" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="3252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga5b34f67e8f631ee467ef7bb5807928af" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t CGL2</definition>
+        <argsstring></argsstring>
+        <name>CGL2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CMT Carrier Generator Low Data Register 2, offset: 0x3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="3253" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="3253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga84eb9eb3539cff16c79647ab05ac460a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t OC</definition>
+        <argsstring></argsstring>
+        <name>OC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CMT Output Control Register, offset: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="3254" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="3254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga63059b18d3d1ea9d10b88744c30e6f20" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t MSC</definition>
+        <argsstring></argsstring>
+        <name>MSC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CMT Modulator Status and Control Register, offset: 0x5 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="3255" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="3255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaadbb65d4dd1c34987caf4632f7674dd1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t CMD1</definition>
+        <argsstring></argsstring>
+        <name>CMD1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CMT Modulator Data Register Mark High, offset: 0x6 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="3256" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="3256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga9c388250948760641b6e24886ebfd605" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t CMD2</definition>
+        <argsstring></argsstring>
+        <name>CMD2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CMT Modulator Data Register Mark Low, offset: 0x7 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="3257" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="3257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga63eadd8e8284c674163c9a0c7e33182e" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t CMD3</definition>
+        <argsstring></argsstring>
+        <name>CMD3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CMT Modulator Data Register Space High, offset: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="3258" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="3258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gadac134f6fa860ce95fa218a286ea09ef" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t CMD4</definition>
+        <argsstring></argsstring>
+        <name>CMD4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CMT Modulator Data Register Space Low, offset: 0x9 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="3259" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="3259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gae086b2bc67d37e48e34f64d9bc6ba5a2" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t PPS</definition>
+        <argsstring></argsstring>
+        <name>PPS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CMT Primary Prescaler Register, offset: 0xA </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="3260" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="3260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga87df1a716c395b3f3474710e434e41dc" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t DMA</definition>
+        <argsstring></argsstring>
+        <name>DMA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CMT Direct Memory Access Register, offset: 0xB </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="3261" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="3261" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>CMT - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="3249" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="3249" bodyend="3262"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga309b886425c6fe607ddc0ea652f9b194" prot="public" virt="non-virtual"><scope>CMT_Type</scope><name>CGH1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga84d40ea282f57da8f5fae00f40398a5b" prot="public" virt="non-virtual"><scope>CMT_Type</scope><name>CGH2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga11bdc2466acff90f1374d817bc1ed866" prot="public" virt="non-virtual"><scope>CMT_Type</scope><name>CGL1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga5b34f67e8f631ee467ef7bb5807928af" prot="public" virt="non-virtual"><scope>CMT_Type</scope><name>CGL2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaadbb65d4dd1c34987caf4632f7674dd1" prot="public" virt="non-virtual"><scope>CMT_Type</scope><name>CMD1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga9c388250948760641b6e24886ebfd605" prot="public" virt="non-virtual"><scope>CMT_Type</scope><name>CMD2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga63eadd8e8284c674163c9a0c7e33182e" prot="public" virt="non-virtual"><scope>CMT_Type</scope><name>CMD3</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gadac134f6fa860ce95fa218a286ea09ef" prot="public" virt="non-virtual"><scope>CMT_Type</scope><name>CMD4</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga87df1a716c395b3f3474710e434e41dc" prot="public" virt="non-virtual"><scope>CMT_Type</scope><name>DMA</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga63059b18d3d1ea9d10b88744c30e6f20" prot="public" virt="non-virtual"><scope>CMT_Type</scope><name>MSC</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga84eb9eb3539cff16c79647ab05ac460a" prot="public" virt="non-virtual"><scope>CMT_Type</scope><name>OC</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gae086b2bc67d37e48e34f64d9bc6ba5a2" prot="public" virt="non-virtual"><scope>CMT_Type</scope><name>PPS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

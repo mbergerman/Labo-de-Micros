@@ -1,0 +1,154 @@
+\hypertarget{_d_r_v___timers_8c}{}\section{drivers/\+D\+R\+V\+\_\+\+Timers.c File Reference}
+\label{_d_r_v___timers_8c}\index{drivers/\+D\+R\+V\+\_\+\+Timers.\+c@{drivers/\+D\+R\+V\+\_\+\+Timers.\+c}}
+
+
+Timers driver.  
+
+
+{\ttfamily \#include \char`\"{}D\+R\+V\+\_\+\+Timers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}P\+D\+R\+V\+\_\+\+Sys\+Tick.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtimer__t}{timer\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___timers_8c_a407b249f8f53dc7fcf5ce862e1922e2e}{T\+I\+M\+E\+R\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE}}~1
+\item 
+\#define \mbox{\hyperlink{_d_r_v___timers_8c_ad6b06c871709a54592b54c2f63426eaf}{T\+I\+M\+E\+R\+\_\+\+I\+D\+\_\+\+I\+N\+T\+E\+R\+N\+AL}}~0
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_r_v___timers_8c_a9e737e3249388fb2e50d868bad69c688}{init\+Timers}} (void)
+\begin{DoxyCompactList}\small\item\em Initialice timer and corresponding peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\+\_\+id\+\_\+t}} \mbox{\hyperlink{_d_r_v___timers_8c_a482d96c2dea661ebf999865b82f776b8}{timer\+Get\+Id}} (void)
+\begin{DoxyCompactList}\small\item\em Request an timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___timers_8c_a03e4dcebc46bc9c08d903d44fbb8f834}{timer\+Start}} (\mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\+\_\+id\+\_\+t}} id, \mbox{\hyperlink{_d_r_v___timers_8h_a21588d564d58c0716d3901da569691db}{ttick\+\_\+t}} ticks, uint8\+\_\+t mode, \mbox{\hyperlink{_d_r_v___timers_8h_a0b70e2941dede906fc97d15b026a16e1}{tim\+\_\+callback\+\_\+t}} callback)
+\begin{DoxyCompactList}\small\item\em Begin to run a new timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___timers_8c_a1d8fc7435aca9180251cd17ee1f61cb4}{timer\+Stop}} (\mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\+\_\+id\+\_\+t}} id)
+\begin{DoxyCompactList}\small\item\em Finish to run a timer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_d_r_v___timers_8c_a9d870bec105107f492485b93d20867da}{timer\+Expired}} (\mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\+\_\+id\+\_\+t}} id)
+\begin{DoxyCompactList}\small\item\em Verify if a timer has run timeout. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___timers_8c_a367713eae4c0901efd5b7336f20ddefa}{timer\+Delay}} (\mbox{\hyperlink{_d_r_v___timers_8h_a21588d564d58c0716d3901da569691db}{ttick\+\_\+t}} ticks)
+\begin{DoxyCompactList}\small\item\em Wait the specified time. Use internal timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Timers driver. 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_d_r_v___timers_8c_a407b249f8f53dc7fcf5ce862e1922e2e}\label{_d_r_v___timers_8c_a407b249f8f53dc7fcf5ce862e1922e2e}} 
+\index{D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}!T\+I\+M\+E\+R\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE@{T\+I\+M\+E\+R\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE}}
+\index{T\+I\+M\+E\+R\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE@{T\+I\+M\+E\+R\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE}!D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+R\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE}{TIMER\_DEVELOPMENT\_MODE}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE~1}
+
+\mbox{\Hypertarget{_d_r_v___timers_8c_ad6b06c871709a54592b54c2f63426eaf}\label{_d_r_v___timers_8c_ad6b06c871709a54592b54c2f63426eaf}} 
+\index{D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}!T\+I\+M\+E\+R\+\_\+\+I\+D\+\_\+\+I\+N\+T\+E\+R\+N\+AL@{T\+I\+M\+E\+R\+\_\+\+I\+D\+\_\+\+I\+N\+T\+E\+R\+N\+AL}}
+\index{T\+I\+M\+E\+R\+\_\+\+I\+D\+\_\+\+I\+N\+T\+E\+R\+N\+AL@{T\+I\+M\+E\+R\+\_\+\+I\+D\+\_\+\+I\+N\+T\+E\+R\+N\+AL}!D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+R\+\_\+\+I\+D\+\_\+\+I\+N\+T\+E\+R\+N\+AL}{TIMER\_ID\_INTERNAL}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+I\+D\+\_\+\+I\+N\+T\+E\+R\+N\+AL~0}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_d_r_v___timers_8c_a9e737e3249388fb2e50d868bad69c688}\label{_d_r_v___timers_8c_a9e737e3249388fb2e50d868bad69c688}} 
+\index{D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}!init\+Timers@{init\+Timers}}
+\index{init\+Timers@{init\+Timers}!D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}}
+\subsubsection{\texorpdfstring{init\+Timers()}{initTimers()}}
+{\footnotesize\ttfamily void init\+Timers (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialice timer and corresponding peripheral. 
+
+\mbox{\Hypertarget{_d_r_v___timers_8c_a367713eae4c0901efd5b7336f20ddefa}\label{_d_r_v___timers_8c_a367713eae4c0901efd5b7336f20ddefa}} 
+\index{D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}!timer\+Delay@{timer\+Delay}}
+\index{timer\+Delay@{timer\+Delay}!D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}}
+\subsubsection{\texorpdfstring{timer\+Delay()}{timerDelay()}}
+{\footnotesize\ttfamily void timer\+Delay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___timers_8h_a21588d564d58c0716d3901da569691db}{ttick\+\_\+t}}}]{ticks }\end{DoxyParamCaption})}
+
+
+
+Wait the specified time. Use internal timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticks} & time to wait in ticks \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___timers_8c_a9d870bec105107f492485b93d20867da}\label{_d_r_v___timers_8c_a9d870bec105107f492485b93d20867da}} 
+\index{D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}!timer\+Expired@{timer\+Expired}}
+\index{timer\+Expired@{timer\+Expired}!D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}}
+\subsubsection{\texorpdfstring{timer\+Expired()}{timerExpired()}}
+{\footnotesize\ttfamily bool timer\+Expired (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\+\_\+id\+\_\+t}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Verify if a timer has run timeout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID of the timer to check for expiration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 = timer expired 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_r_v___timers_8c_a482d96c2dea661ebf999865b82f776b8}\label{_d_r_v___timers_8c_a482d96c2dea661ebf999865b82f776b8}} 
+\index{D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}!timer\+Get\+Id@{timer\+Get\+Id}}
+\index{timer\+Get\+Id@{timer\+Get\+Id}!D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}}
+\subsubsection{\texorpdfstring{timer\+Get\+Id()}{timerGetId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\+\_\+id\+\_\+t}} timer\+Get\+Id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Request an timer. 
+
+\begin{DoxyReturn}{Returns}
+ID of the timer to use 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_r_v___timers_8c_a03e4dcebc46bc9c08d903d44fbb8f834}\label{_d_r_v___timers_8c_a03e4dcebc46bc9c08d903d44fbb8f834}} 
+\index{D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}!timer\+Start@{timer\+Start}}
+\index{timer\+Start@{timer\+Start}!D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}}
+\subsubsection{\texorpdfstring{timer\+Start()}{timerStart()}}
+{\footnotesize\ttfamily void timer\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\+\_\+id\+\_\+t}}}]{id,  }\item[{\mbox{\hyperlink{_d_r_v___timers_8h_a21588d564d58c0716d3901da569691db}{ttick\+\_\+t}}}]{ticks,  }\item[{uint8\+\_\+t}]{mode,  }\item[{\mbox{\hyperlink{_d_r_v___timers_8h_a0b70e2941dede906fc97d15b026a16e1}{tim\+\_\+callback\+\_\+t}}}]{callback }\end{DoxyParamCaption})}
+
+
+
+Begin to run a new timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID of the timer to start \\
+\hline
+{\em ticks} & time until timer expires, in ticks \\
+\hline
+{\em mode} & S\+I\+N\+G\+L\+E\+S\+H\+OT or P\+E\+R\+I\+O\+D\+IC \\
+\hline
+{\em callback} & Function to be call when timer expires \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___timers_8c_a1d8fc7435aca9180251cd17ee1f61cb4}\label{_d_r_v___timers_8c_a1d8fc7435aca9180251cd17ee1f61cb4}} 
+\index{D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}!timer\+Stop@{timer\+Stop}}
+\index{timer\+Stop@{timer\+Stop}!D\+R\+V\+\_\+\+Timers.\+c@{D\+R\+V\+\_\+\+Timers.\+c}}
+\subsubsection{\texorpdfstring{timer\+Stop()}{timerStop()}}
+{\footnotesize\ttfamily void timer\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\+\_\+id\+\_\+t}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Finish to run a timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID of the timer to stop \\
+\hline
+\end{DoxyParams}

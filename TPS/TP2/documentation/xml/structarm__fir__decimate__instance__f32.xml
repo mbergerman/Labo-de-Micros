@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structarm__fir__decimate__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_fir_decimate_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__fir__decimate__instance__f32_1ae2c8107d00d3c9942e7a20fc598edecf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>decimation factor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="3274" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="3274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__decimate__instance__f32_1a751941891e47f522a7f5375fe8990aac" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t numTaps</definition>
+        <argsstring></argsstring>
+        <name>numTaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of coefficients in the filter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="3275" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="3275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__decimate__instance__f32_1aacbb8dd8eeba4b21fc2bb40076405ee3" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* pCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the coefficient array. The array is of length numTaps. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="3276" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="3276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__decimate__instance__f32_1a335c87e6fdc4b96601d95a5de8b9c463" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the state variable array. The array is of length numTaps+blockSize-1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="3277" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="3277" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point FIR decimator. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/arm_math.h" line="3273" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="3272" bodyend="3278"/>
+    <listofallmembers>
+      <member refid="structarm__fir__decimate__instance__f32_1ae2c8107d00d3c9942e7a20fc598edecf" prot="public" virt="non-virtual"><scope>arm_fir_decimate_instance_f32</scope><name>M</name></member>
+      <member refid="structarm__fir__decimate__instance__f32_1a751941891e47f522a7f5375fe8990aac" prot="public" virt="non-virtual"><scope>arm_fir_decimate_instance_f32</scope><name>numTaps</name></member>
+      <member refid="structarm__fir__decimate__instance__f32_1aacbb8dd8eeba4b21fc2bb40076405ee3" prot="public" virt="non-virtual"><scope>arm_fir_decimate_instance_f32</scope><name>pCoeffs</name></member>
+      <member refid="structarm__fir__decimate__instance__f32_1a335c87e6fdc4b96601d95a5de8b9c463" prot="public" virt="non-virtual"><scope>arm_fir_decimate_instance_f32</scope><name>pState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

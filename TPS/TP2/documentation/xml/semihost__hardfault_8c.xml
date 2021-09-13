@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="semihost__hardfault_8c" kind="file" language="C++">
+    <compoundname>semihost_hardfault.c</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="semihost__hardfault_8c_1a2804a023941a956288c32ad08b2cf59e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__</definition>
+        <argsstring>((naked))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(naked)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/startup/semihost_hardfault.c" line="70" column="1" bodyfile="SDK/startup/semihost_hardfault.c" bodystart="70" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>****************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>semihost_hardfault.c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Provides<sp/>hard<sp/>fault<sp/>handler<sp/>to<sp/>allow<sp/>semihosting<sp/>code<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>hang<sp/>application<sp/>when<sp/>debugger<sp/>not<sp/>connected.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>****************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright(C)<sp/>NXP<sp/>Semiconductors,<sp/>2017-2018</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Software<sp/>that<sp/>is<sp/>described<sp/>herein<sp/>is<sp/>for<sp/>illustrative<sp/>purposes<sp/>only</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>which<sp/>provides<sp/>customers<sp/>with<sp/>programming<sp/>information<sp/>regarding<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NXP<sp/>Cortex-M<sp/>based<sp/>MCUs.<sp/>This<sp/>software<sp/>is<sp/>supplied<sp/>&quot;AS<sp/>IS&quot;<sp/>without<sp/>any</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>warranties<sp/>of<sp/>any<sp/>kind,<sp/>and<sp/>NXP<sp/>Semiconductors<sp/>and<sp/>its<sp/>licensor<sp/>disclaim<sp/>any</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>all<sp/>warranties,<sp/>express<sp/>or<sp/>implied,<sp/>including<sp/>all<sp/>implied<sp/>warranties<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>merchantability,<sp/>fitness<sp/>for<sp/>a<sp/>particular<sp/>purpose<sp/>and<sp/>non-infringement<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>intellectual<sp/>property<sp/>rights.<sp/><sp/>NXP<sp/>Semiconductors<sp/>assumes<sp/>no<sp/>responsibility</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>or<sp/>liability<sp/>for<sp/>the<sp/>use<sp/>of<sp/>the<sp/>software,<sp/>conveys<sp/>no<sp/>license<sp/>or<sp/>rights<sp/>under</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>any<sp/>patent,<sp/>copyright,<sp/>mask<sp/>work<sp/>right,<sp/>or<sp/>any<sp/>other<sp/>intellectual<sp/>property</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>rights<sp/>in<sp/>or<sp/>to<sp/>any<sp/>products.<sp/>NXP<sp/>Semiconductors<sp/>reserves<sp/>the<sp/>right<sp/>to<sp/>make</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>changes<sp/>in<sp/>the<sp/>software<sp/>without<sp/>notification.<sp/>NXP<sp/>Semiconductors<sp/>also<sp/>makes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>no<sp/>representation<sp/>or<sp/>warranty<sp/>that<sp/>such<sp/>application<sp/>will<sp/>be<sp/>suitable<sp/>for<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>specified<sp/>use<sp/>without<sp/>further<sp/>testing<sp/>or<sp/>modification.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Permission<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>and<sp/>distribute<sp/>this<sp/>software<sp/>and<sp/>its</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>documentation<sp/>is<sp/>hereby<sp/>granted,<sp/>under<sp/>NXP<sp/>Semiconductors&apos;<sp/>and<sp/>its</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>licensor&apos;s<sp/>relevant<sp/>copyrights<sp/>in<sp/>the<sp/>software,<sp/>without<sp/>fee,<sp/>provided<sp/>that<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>is<sp/>used<sp/>in<sp/>conjunction<sp/>with<sp/>NXP<sp/>Semiconductors<sp/>microcontrollers.<sp/><sp/>This</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copyright,<sp/>permission,<sp/>and<sp/>disclaimer<sp/>notice<sp/>must<sp/>appear<sp/>in<sp/>all<sp/>copies<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>****************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=====<sp/>DESCRIPTION<sp/>=====</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>One<sp/>of<sp/>the<sp/>issues<sp/>with<sp/>applications<sp/>that<sp/>make<sp/>use<sp/>of<sp/>semihosting<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(such<sp/>as<sp/>printf<sp/>calls)<sp/>is<sp/>that<sp/>the<sp/>code<sp/>will<sp/>not<sp/>execute<sp/>correctly<sp/>when<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>debugger<sp/>is<sp/>not<sp/>connected.<sp/>Generally<sp/>this<sp/>will<sp/>show<sp/>up<sp/>with<sp/>the<sp/>application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appearing<sp/>to<sp/>just<sp/>hang.<sp/>This<sp/>may<sp/>include<sp/>the<sp/>application<sp/>running<sp/>from<sp/>reset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>or<sp/>powering<sp/>up<sp/>the<sp/>board<sp/>(with<sp/>the<sp/>application<sp/>already<sp/>in<sp/>FLASH),<sp/>and<sp/>also</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>as<sp/>the<sp/>application<sp/>failing<sp/>to<sp/>continue<sp/>to<sp/>execute<sp/>after<sp/>a<sp/>debug<sp/>session<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>terminated.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>problem<sp/>here<sp/>is<sp/>that<sp/>the<sp/>&quot;bottom<sp/>layer&quot;<sp/>of<sp/>the<sp/>semihosted<sp/>variants<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>C<sp/>library,<sp/>semihosting<sp/>is<sp/>implemented<sp/>by<sp/>a<sp/>&quot;BKPT<sp/>0xAB&quot;<sp/>instruction.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>When<sp/>the<sp/>debug<sp/>tools<sp/>are<sp/>not<sp/>connected,<sp/>this<sp/>instruction<sp/>triggers<sp/>a<sp/>hard</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>fault<sp/>-<sp/>and<sp/>the<sp/>default<sp/>hard<sp/>fault<sp/>handler<sp/>within<sp/>an<sp/>application<sp/>will</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>typically<sp/>just<sp/>contains<sp/>an<sp/>infinite<sp/>loop<sp/>-<sp/>causing<sp/>the<sp/>application<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>appear<sp/>to<sp/>have<sp/>hang<sp/>when<sp/>no<sp/>debugger<sp/>is<sp/>connected.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>below<sp/>code<sp/>provides<sp/>an<sp/>example<sp/>hard<sp/>fault<sp/>handler<sp/>which<sp/>instead<sp/>looks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>see<sp/>what<sp/>the<sp/>instruction<sp/>that<sp/>caused<sp/>the<sp/>hard<sp/>fault<sp/>was<sp/>-<sp/>and<sp/>if<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>was<sp/>a<sp/>&quot;BKPT<sp/>0xAB&quot;,<sp/>then<sp/>it<sp/>instead<sp/>returns<sp/>back<sp/>to<sp/>the<sp/>user<sp/>application.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/>In<sp/>most<sp/>cases<sp/>this<sp/>will<sp/>allow<sp/>applications<sp/>containing<sp/>semihosting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>operations<sp/>to<sp/>execute<sp/>(to<sp/>some<sp/>degree)<sp/>when<sp/>the<sp/>debugger<sp/>is<sp/>not<sp/>connected.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==<sp/>NOTE<sp/>==</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Correct<sp/>execution<sp/>of<sp/>the<sp/>application<sp/>containing<sp/>semihosted<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>which<sp/>are<sp/>vectored<sp/>onto<sp/>this<sp/>hard<sp/>fault<sp/>handler<sp/>cannot<sp/>be<sp/>guaranteed.<sp/>This</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/>is<sp/>because<sp/>the<sp/>handler<sp/>may<sp/>not<sp/>return<sp/>data<sp/>or<sp/>return<sp/>codes<sp/>that<sp/>the<sp/>higher</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>level<sp/>C<sp/>library<sp/>code<sp/>or<sp/>application<sp/>code<sp/>expects.<sp/>This<sp/>hard<sp/>fault<sp/>handler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>is<sp/>meant<sp/>as<sp/>a<sp/>development<sp/>aid,<sp/>and<sp/>it<sp/>is<sp/>not<sp/>recommended<sp/>to<sp/>leave</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>semihosted<sp/>code<sp/>in<sp/>a<sp/>production<sp/>build<sp/>of<sp/>your<sp/>application!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>****************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Allow<sp/>handler<sp/>to<sp/>be<sp/>removed<sp/>by<sp/>setting<sp/>a<sp/>define<sp/>(via<sp/>command<sp/>line)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined<sp/>(__SEMIHOST_HARDFAULT_DISABLE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><ref refid="semihost__hardfault_8c_1a2804a023941a956288c32ad08b2cf59e" kindref="member">__attribute__</ref>((naked))</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="startup__mk64f12_8c_1a172f0965a57ea939967be2f492fea89e" kindref="member">HardFault_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>__asm(<sp/><sp/></highlight><highlight class="stringliteral">&quot;.syntax<sp/>unified\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>which<sp/>stack<sp/>is<sp/>in<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MOVS<sp/><sp/><sp/>R0,<sp/>#4<sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MOV<sp/><sp/><sp/><sp/>R1,<sp/>LR<sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;TST<sp/><sp/><sp/><sp/>R0,<sp/>R1<sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;BEQ<sp/><sp/><sp/><sp/>_MSP<sp/><sp/><sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MRS<sp/><sp/><sp/><sp/>R0,<sp/>PSP<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;B<sp/><sp/>_process<sp/><sp/><sp/><sp/><sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;_MSP:<sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MRS<sp/><sp/><sp/><sp/>R0,<sp/>MSP<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Load<sp/>the<sp/>instruction<sp/>that<sp/>triggered<sp/>hard<sp/>fault</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;_process:<sp/><sp/><sp/><sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;LDR<sp/><sp/><sp/><sp/>R1,[R0,#24]<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;LDRH<sp/><sp/><sp/><sp/>R2,[r1]<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Semihosting<sp/>instruction<sp/>is<sp/>&quot;BKPT<sp/>0xAB&quot;<sp/>(0xBEAB)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;LDR<sp/><sp/><sp/><sp/>R3,=0xBEAB<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CMP<sp/><sp/><sp/><sp/><sp/>R2,R3<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;BEQ<sp/><sp/><sp/><sp/>_semihost_return<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wasn&apos;t<sp/>semihosting<sp/>instruction<sp/>so<sp/>enter<sp/>infinite<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;B<sp/>.<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Was<sp/>semihosting<sp/>instruction,<sp/>so<sp/>adjust<sp/>location<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>to<sp/>by<sp/>1<sp/>instruction<sp/>(2<sp/>bytes),<sp/>then<sp/>exit<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;_semihost_return:<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ADDS<sp/><sp/><sp/><sp/>R1,#2<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;STR<sp/><sp/><sp/><sp/>R1,[R0,#24]<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>a<sp/>return<sp/>value<sp/>from<sp/>semihosting<sp/>operation.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>32<sp/>is<sp/>slightly<sp/>arbitrary,<sp/>but<sp/>appears<sp/>to<sp/>allow<sp/>most</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>C<sp/>Library<sp/>IO<sp/>functions<sp/>sitting<sp/>on<sp/>top<sp/>of<sp/>semihosting<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>continue<sp/>to<sp/>operate<sp/>to<sp/>some<sp/>degree</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MOVS<sp/><sp/><sp/>R1,#32<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;STR<sp/>R1,[<sp/>R0,#0<sp/>]<sp/>\n&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>R0<sp/>is<sp/>at<sp/>location<sp/>0<sp/>on<sp/>stack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>from<sp/>hard<sp/>fault<sp/>handler<sp/>to<sp/>application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;BX<sp/>LR<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;.syntax<sp/>divided\n&quot;</highlight><highlight class="normal">)<sp/>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="SDK/startup/semihost_hardfault.c"/>
+  </compounddef>
+</doxygen>

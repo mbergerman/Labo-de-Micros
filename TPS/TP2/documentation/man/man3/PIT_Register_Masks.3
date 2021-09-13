@@ -1,0 +1,205 @@
+.TH "PIT_Register_Masks" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PIT_Register_Masks
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPIT_BASE\fP   (0x40037000u)"
+.br
+.ti -1c
+.RI "#define \fBPIT\fP   ((\fBPIT_Type\fP *)\fBPIT_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBPIT_BASE_ADDRS\fP   { \fBPIT_BASE\fP }"
+.br
+.ti -1c
+.RI "#define \fBPIT_BASE_PTRS\fP   { \fBPIT\fP }"
+.br
+.ti -1c
+.RI "#define \fBPIT_IRQS\fP   { { \fBPIT0_IRQn\fP, \fBPIT1_IRQn\fP, \fBPIT2_IRQn\fP, \fBPIT3_IRQn\fP } }"
+.br
+.in -1c
+.SS "MCR - PIT Module Control Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPIT_MCR_FRZ_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_MCR_FRZ_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_MCR_FRZ\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_MCR_FRZ_SHIFT\fP)) & \fBPIT_MCR_FRZ_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPIT_MCR_MDIS_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_MCR_MDIS_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_MCR_MDIS\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_MCR_MDIS_SHIFT\fP)) & \fBPIT_MCR_MDIS_MASK\fP)"
+.br
+.in -1c
+.SS "LDVAL - Timer Load Value Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPIT_LDVAL_TSV_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBPIT_LDVAL_TSV_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_LDVAL_TSV\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_LDVAL_TSV_SHIFT\fP)) & \fBPIT_LDVAL_TSV_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPIT_LDVAL_COUNT\fP   (4U)"
+.br
+.in -1c
+.SS "CVAL - Current Timer Value Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPIT_CVAL_TVL_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBPIT_CVAL_TVL_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_CVAL_TVL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_CVAL_TVL_SHIFT\fP)) & \fBPIT_CVAL_TVL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPIT_CVAL_COUNT\fP   (4U)"
+.br
+.in -1c
+.SS "TCTRL - Timer Control Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPIT_TCTRL_TEN_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_TCTRL_TEN_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_TCTRL_TEN\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_TCTRL_TEN_SHIFT\fP)) & \fBPIT_TCTRL_TEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPIT_TCTRL_TIE_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_TCTRL_TIE_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_TCTRL_TIE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_TCTRL_TIE_SHIFT\fP)) & \fBPIT_TCTRL_TIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPIT_TCTRL_CHN_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_TCTRL_CHN_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_TCTRL_CHN\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_TCTRL_CHN_SHIFT\fP)) & \fBPIT_TCTRL_CHN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPIT_TCTRL_COUNT\fP   (4U)"
+.br
+.in -1c
+.SS "TFLG - Timer Flag Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPIT_TFLG_TIF_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_TFLG_TIF_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPIT_TFLG_TIF\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_TFLG_TIF_SHIFT\fP)) & \fBPIT_TFLG_TIF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPIT_TFLG_COUNT\fP   (4U)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define PIT   ((\fBPIT_Type\fP *)\fBPIT_BASE\fP)"
+Peripheral PIT base pointer 
+.SS "#define PIT_BASE   (0x40037000u)"
+Peripheral PIT base address 
+.SS "#define PIT_BASE_ADDRS   { \fBPIT_BASE\fP }"
+Array initializer of PIT peripheral base addresses 
+.SS "#define PIT_BASE_PTRS   { \fBPIT\fP }"
+Array initializer of PIT peripheral base pointers 
+.SS "#define PIT_CVAL_COUNT   (4U)"
+
+.SS "#define PIT_CVAL_TVL(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_CVAL_TVL_SHIFT\fP)) & \fBPIT_CVAL_TVL_MASK\fP)"
+
+.SS "#define PIT_CVAL_TVL_MASK   (0xFFFFFFFFU)"
+
+.SS "#define PIT_CVAL_TVL_SHIFT   (0U)"
+
+.SS "#define PIT_IRQS   { { \fBPIT0_IRQn\fP, \fBPIT1_IRQn\fP, \fBPIT2_IRQn\fP, \fBPIT3_IRQn\fP } }"
+Interrupt vectors for the PIT peripheral type 
+.SS "#define PIT_LDVAL_COUNT   (4U)"
+
+.SS "#define PIT_LDVAL_TSV(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_LDVAL_TSV_SHIFT\fP)) & \fBPIT_LDVAL_TSV_MASK\fP)"
+
+.SS "#define PIT_LDVAL_TSV_MASK   (0xFFFFFFFFU)"
+
+.SS "#define PIT_LDVAL_TSV_SHIFT   (0U)"
+
+.SS "#define PIT_MCR_FRZ(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_MCR_FRZ_SHIFT\fP)) & \fBPIT_MCR_FRZ_MASK\fP)"
+
+.SS "#define PIT_MCR_FRZ_MASK   (0x1U)"
+
+.SS "#define PIT_MCR_FRZ_SHIFT   (0U)"
+
+.SS "#define PIT_MCR_MDIS(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_MCR_MDIS_SHIFT\fP)) & \fBPIT_MCR_MDIS_MASK\fP)"
+
+.SS "#define PIT_MCR_MDIS_MASK   (0x2U)"
+
+.SS "#define PIT_MCR_MDIS_SHIFT   (1U)"
+
+.SS "#define PIT_TCTRL_CHN(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_TCTRL_CHN_SHIFT\fP)) & \fBPIT_TCTRL_CHN_MASK\fP)"
+
+.SS "#define PIT_TCTRL_CHN_MASK   (0x4U)"
+
+.SS "#define PIT_TCTRL_CHN_SHIFT   (2U)"
+
+.SS "#define PIT_TCTRL_COUNT   (4U)"
+
+.SS "#define PIT_TCTRL_TEN(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_TCTRL_TEN_SHIFT\fP)) & \fBPIT_TCTRL_TEN_MASK\fP)"
+
+.SS "#define PIT_TCTRL_TEN_MASK   (0x1U)"
+
+.SS "#define PIT_TCTRL_TEN_SHIFT   (0U)"
+
+.SS "#define PIT_TCTRL_TIE(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_TCTRL_TIE_SHIFT\fP)) & \fBPIT_TCTRL_TIE_MASK\fP)"
+
+.SS "#define PIT_TCTRL_TIE_MASK   (0x2U)"
+
+.SS "#define PIT_TCTRL_TIE_SHIFT   (1U)"
+
+.SS "#define PIT_TFLG_COUNT   (4U)"
+
+.SS "#define PIT_TFLG_TIF(x)   (((uint32_t)(((uint32_t)(x)) << \fBPIT_TFLG_TIF_SHIFT\fP)) & \fBPIT_TFLG_TIF_MASK\fP)"
+
+.SS "#define PIT_TFLG_TIF_MASK   (0x1U)"
+
+.SS "#define PIT_TFLG_TIF_SHIFT   (0U)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

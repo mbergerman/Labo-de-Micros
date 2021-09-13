@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="hardware_8h" kind="file" language="C++">
+    <compoundname>hardware.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="fsl__device__registers_8h" local="yes">fsl_device_registers.h</includes>
+    <includes refid="core__cm4_8h" local="yes">core_cm4.h</includes>
+    <includedby refid="_p_d_r_v___g_p_i_o_8c" local="yes">drivers/PDRV_GPIO.c</includedby>
+    <includedby refid="_p_d_r_v___sys_tick_8c" local="yes">drivers/PDRV_SysTick.c</includedby>
+    <includedby refid="hardware_8c" local="yes">SDK/startup/hardware.c</includedby>
+    <includedby refid="main_8c" local="yes">SDK/startup/main.c</includedby>
+    <incdepgraph>
+      <node id="313">
+        <label>stdbool.h</label>
+      </node>
+      <node id="311">
+        <label>SDK/startup/hardware.h</label>
+        <link refid="hardware_8h"/>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>cmsis_version.h</label>
+        <link refid="cmsis__version_8h"/>
+      </node>
+      <node id="314">
+        <label>fsl_device_registers.h</label>
+        <link refid="fsl__device__registers_8h"/>
+      </node>
+      <node id="312">
+        <label>stdint.h</label>
+      </node>
+      <node id="315">
+        <label>core_cm4.h</label>
+        <link refid="core__cm4_8h"/>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>cmsis_compiler.h</label>
+        <link refid="cmsis__compiler_8h"/>
+        <childnode refid="312" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="321">
+        <label>SDK/startup/hardware.c</label>
+        <link refid="hardware_8c"/>
+      </node>
+      <node id="318">
+        <label>SDK/startup/hardware.h</label>
+        <link refid="hardware_8h"/>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+      </node>
+      <node id="322">
+        <label>SDK/startup/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="319">
+        <label>drivers/PDRV_GPIO.c</label>
+        <link refid="_p_d_r_v___g_p_i_o_8c"/>
+      </node>
+      <node id="320">
+        <label>drivers/PDRV_SysTick.c</label>
+        <link refid="_p_d_r_v___sys_tick_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="hardware_8h_1a2bb871b713df2e72306bcd1dc28faefc" prot="public" static="no">
+        <name>__CORE_CLOCK__</name>
+        <initializer>100000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/startup/hardware.h" line="27" column="9" bodyfile="SDK/startup/hardware.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hardware_8h_1aecf0bb1ada130dd6d302c7d801985a3a" prot="public" static="no">
+        <name>__FOREVER__</name>
+        <initializer>for(;;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/startup/hardware.h" line="28" column="9" bodyfile="SDK/startup/hardware.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hardware_8h_1a27a122170c1b7feec6fa7247a91ac899" prot="public" static="no">
+        <name>__ISR__</name>
+        <initializer>void <ref refid="startup__mk64f12_8c_1ad780ed16da2fdff5eff0d9bc7236b9f2" kindref="member">__attribute__</ref> ((interrupt))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/startup/hardware.h" line="29" column="9" bodyfile="SDK/startup/hardware.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="hardware_8h_1afb18d946ab7a803c5bce6037c6267d95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hw_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>hw_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/startup/hardware.h" line="31" column="1" bodyfile="SDK/startup/hardware.c" bodystart="12" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="hardware_8h_1a923031fe812af11c75e713fb134023ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hw_EnableInterrupts</definition>
+        <argsstring>(void)</argsstring>
+        <name>hw_EnableInterrupts</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/startup/hardware.h" line="33" column="1" bodyfile="SDK/startup/hardware.c" bodystart="42" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="hardware_8h_1a9be7f02fe94da034fd06e7a79b69abb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hw_DisableInterrupts</definition>
+        <argsstring>(void)</argsstring>
+        <name>hw_DisableInterrupts</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/startup/hardware.h" line="34" column="1" bodyfile="SDK/startup/hardware.c" bodystart="52" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Nicolás Magliola </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>_HARDWARE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_HARDWARE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>INCLUDE<sp/>HEADER<sp/>FILES</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>ENUMERATIONS<sp/>AND<sp/>STRUCTURES<sp/>AND<sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="fsl__device__registers_8h" kindref="compound">fsl_device_registers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="core__cm4_8h" kindref="compound">core_cm4.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="hardware_8h_1a2bb871b713df2e72306bcd1dc28faefc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__CORE_CLOCK__<sp/><sp/>100000000U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="hardware_8h_1aecf0bb1ada130dd6d302c7d801985a3a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__FOREVER__<sp/><sp/><sp/><sp/><sp/>for(;;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="hardware_8h_1a27a122170c1b7feec6fa7247a91ac899" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__ISR__<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>__attribute__<sp/>((interrupt))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hardware_8h_1afb18d946ab7a803c5bce6037c6267d95" kindref="member">hw_Init</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hardware_8h_1a923031fe812af11c75e713fb134023ac" kindref="member">hw_EnableInterrupts</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hardware_8h_1a9be7f02fe94da034fd06e7a79b69abb4" kindref="member">hw_DisableInterrupts</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>See<sp/>IRQn_Type<sp/>for<sp/>IRQn<sp/>definitions</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>Example:<sp/>NVIC_EnableIRQ(SysTick_IRQn);</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>Example:<sp/>NVIC_DisableIRQ(SysTick_IRQn);</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>See<sp/>this<sp/>list<sp/>for<sp/>ISR<sp/>definitions<sp/>(ISR<sp/>~<sp/>Handler/IRQHandler)</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>Example:<sp/>__ISR__<sp/>SysTick_Handler<sp/>(void);</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>NMI_Handler</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>HardFault_Handler</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>MemManage_Handler</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>BusFault_Handler</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UsageFault_Handler</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>SVC_Handler</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DebugMon_Handler</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>PendSV_Handler</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>SysTick_Handler</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA0_IRQHandler</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA1_IRQHandler</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA2_IRQHandler</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA3_IRQHandler</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA4_IRQHandler</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA5_IRQHandler</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA6_IRQHandler</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA7_IRQHandler</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA8_IRQHandler</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA9_IRQHandler</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA10_IRQHandler</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA11_IRQHandler</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA12_IRQHandler</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA13_IRQHandler</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA14_IRQHandler</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA15_IRQHandler</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DMA_Error_IRQHandler</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>MCM_IRQHandler</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>FTFE_IRQHandler</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Read_Collision_IRQHandler</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>LVD_LVW_IRQHandler</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>LLWU_IRQHandler</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>WDOG_EWM_IRQHandler</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>RNG_IRQHandler</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>I2C0_IRQHandler</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>I2C1_IRQHandler</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>SPI0_IRQHandler</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>SPI1_IRQHandler</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>I2S0_Tx_IRQHandler</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>I2S0_Rx_IRQHandler</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UART0_LON_IRQHandler</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UART0_RX_TX_IRQHandler</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UART0_ERR_IRQHandler</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UART1_RX_TX_IRQHandler</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UART1_ERR_IRQHandler</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UART2_RX_TX_IRQHandler</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UART2_ERR_IRQHandler</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UART3_RX_TX_IRQHandler</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UART3_ERR_IRQHandler</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>ADC0_IRQHandler</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>CMP0_IRQHandler</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>CMP1_IRQHandler</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>FTM0_IRQHandler</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>FTM1_IRQHandler</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>FTM2_IRQHandler</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>CMT_IRQHandler</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>RTC_IRQHandler</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>RTC_Seconds_IRQHandler</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>PIT0_IRQHandler</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>PIT1_IRQHandler</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>PIT2_IRQHandler</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>PIT3_IRQHandler</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>PDB0_IRQHandler</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>USB0_IRQHandler</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>USBDCD_IRQHandler</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Reserved71_IRQHandler</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DAC0_IRQHandler</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>MCG_IRQHandler</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>LPTMR0_IRQHandler</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>PORTA_IRQHandler</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>PORTB_IRQHandler</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>PORTC_IRQHandler</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>PORTD_IRQHandler</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>PORTE_IRQHandler</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>SWI_IRQHandler</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>SPI2_IRQHandler</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UART4_RX_TX_IRQHandler</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UART4_ERR_IRQHandler</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UART5_RX_TX_IRQHandler</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>UART5_ERR_IRQHandler</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>CMP2_IRQHandler</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>FTM3_IRQHandler</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>DAC1_IRQHandler</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>ADC1_IRQHandler</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>I2C2_IRQHandler</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>CAN0_ORed_Message_buffer_IRQHandler</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>CAN0_Bus_Off_IRQHandler</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>CAN0_Error_IRQHandler</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>CAN0_Tx_Warning_IRQHandler</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>CAN0_Rx_Warning_IRQHandler</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>CAN0_Wake_Up_IRQHandler</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>SDHC_IRQHandler</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>ENET_1588_Timer_IRQHandler</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>ENET_Transmit_IRQHandler</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>ENET_Receive_IRQHandler</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>ENET_Error_IRQHandler</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_HARDWARE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="SDK/startup/hardware.h"/>
+  </compounddef>
+</doxygen>

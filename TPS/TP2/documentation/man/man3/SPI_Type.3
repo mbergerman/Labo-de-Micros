@@ -1,0 +1,93 @@
+.TH "SPI_Type" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SPI_Type
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MK64F12\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBMCR\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_0\fP [4]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBTCR\fP"
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint32_t \fBCTAR\fP [2]"
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint32_t \fBCTAR_SLAVE\fP [1]"
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_1\fP [24]"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBSR\fP"
+.br
+.ti -1c
+.RI "\fB__IO\fP uint32_t \fBRSER\fP"
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint32_t \fBPUSHR\fP"
+.br
+.ti -1c
+.RI "   \fB__IO\fP uint32_t \fBPUSHR_SLAVE\fP"
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBPOPR\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBTXFR0\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBTXFR1\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBTXFR2\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBTXFR3\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRESERVED_2\fP [48]"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRXFR0\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRXFR1\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRXFR2\fP"
+.br
+.ti -1c
+.RI "\fB__I\fP uint32_t \fBRXFR3\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+SPI - Register Layout Typedef 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

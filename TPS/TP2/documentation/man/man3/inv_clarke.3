@@ -1,0 +1,83 @@
+.TH "inv_clarke" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+inv_clarke
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "CMSIS_INLINE \fB__STATIC_INLINE\fP void \fBarm_inv_clarke_f32\fP (\fBfloat32_t\fP Ialpha, \fBfloat32_t\fP Ibeta, \fBfloat32_t\fP *pIa, \fBfloat32_t\fP *pIb)"
+.br
+.RI "Floating-point Inverse Clarke transform\&. "
+.ti -1c
+.RI "CMSIS_INLINE \fB__STATIC_INLINE\fP void \fBarm_inv_clarke_q31\fP (\fBq31_t\fP Ialpha, \fBq31_t\fP Ibeta, \fBq31_t\fP *pIa, \fBq31_t\fP *pIb)"
+.br
+.RI "Inverse Clarke transform for Q31 version\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Inverse Clarke transform converts the two-coordinate time invariant vector into instantaneous stator phases\&.
+.PP
+The function operates on a single sample of data and each call to the function returns the processed output\&. The library provides separate functions for Q31 and floating-point data types\&. 
+.PP
+\fBAlgorithm\fP
+.RS 4
+ where \fCpIa\fP and \fCpIb\fP are the instantaneous stator phases and \fCIalpha\fP and \fCIbeta\fP are the two coordinates of time invariant vector\&. 
+.RE
+.PP
+\fBFixed-Point Behavior\fP
+.RS 4
+Care must be taken when using the Q31 version of the Clarke transform\&. In particular, the overflow and saturation behavior of the accumulator used must be considered\&. Refer to the function specific documentation below for usage guidelines\&. 
+.RE
+.PP
+
+.SH "Function Documentation"
+.PP 
+.SS "CMSIS_INLINE \fB__STATIC_INLINE\fP void arm_inv_clarke_f32 (\fBfloat32_t\fP Ialpha, \fBfloat32_t\fP Ibeta, \fBfloat32_t\fP * pIa, \fBfloat32_t\fP * pIb)"
+
+.PP
+Floating-point Inverse Clarke transform\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIIalpha\fP input two-phase orthogonal vector axis alpha 
+.br
+\fIIbeta\fP input two-phase orthogonal vector axis beta 
+.br
+\fIpIa\fP points to output three-phase coordinate \fCa\fP 
+.br
+\fIpIb\fP points to output three-phase coordinate \fCb\fP 
+.RE
+.PP
+
+.SS "CMSIS_INLINE \fB__STATIC_INLINE\fP void arm_inv_clarke_q31 (\fBq31_t\fP Ialpha, \fBq31_t\fP Ibeta, \fBq31_t\fP * pIa, \fBq31_t\fP * pIb)"
+
+.PP
+Inverse Clarke transform for Q31 version\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIIalpha\fP input two-phase orthogonal vector axis alpha 
+.br
+\fIIbeta\fP input two-phase orthogonal vector axis beta 
+.br
+\fIpIa\fP points to output three-phase coordinate \fCa\fP 
+.br
+\fIpIb\fP points to output three-phase coordinate \fCb\fP
+.RE
+.PP
+\fBScaling and Overflow Behavior:\fP 
+.PP
+\fB\fP
+.RS 4
+The function is implemented using an internal 32-bit accumulator\&. The accumulator maintains 1\&.31 format by truncating lower 31 bits of the intermediate multiplication in 2\&.62 format\&. There is saturation on the subtraction, hence there is no risk of overflow\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

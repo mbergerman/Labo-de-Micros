@@ -1,0 +1,45 @@
+.TH "CMSIS_Core_FpuFunctions" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMSIS_Core_FpuFunctions \- Function that provides FPU type\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP uint32_t \fBSCB_GetFPUType\fP (void)"
+.br
+.RI "get FPU type "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Function that provides FPU type\&. 
+
+
+.SH "Function Documentation"
+.PP 
+.SS "\fB__STATIC_INLINE\fP uint32_t SCB_GetFPUType (void)"
+
+.PP
+get FPU type returns the FPU type 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.IP "\(bu" 2
+\fB0\fP: No FPU
+.IP "\(bu" 2
+\fB1\fP: Single precision FPU
+.IP "\(bu" 2
+\fB2\fP: Double + Single precision FPU 
+.PP
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

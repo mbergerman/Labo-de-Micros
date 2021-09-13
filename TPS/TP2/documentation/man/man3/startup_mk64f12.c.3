@@ -1,0 +1,579 @@
+.TH "SDK/startup/startup_mk64f12.c" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDK/startup/startup_mk64f12.c
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBWEAK\fP   \fB__attribute__\fP ((weak))"
+.br
+.ti -1c
+.RI "#define \fBWEAK_AV\fP   \fB__attribute__\fP ((weak, section('\&.after_vectors')))"
+.br
+.ti -1c
+.RI "#define \fBALIAS\fP(f)   \fB__attribute__\fP ((weak, alias (#f)))"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__attribute__\fP ((used, section('\&.FlashConfig'))) const"
+.br
+.ti -1c
+.RI "void \fBResetISR\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBNMI_Handler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBHardFault_Handler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBMemManage_Handler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBBusFault_Handler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUsageFault_Handler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBSVC_Handler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDebugMon_Handler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBPendSV_Handler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBSysTick_Handler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBIntDefaultHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA0_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA1_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA2_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA3_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA4_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA5_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA6_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA7_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA8_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA9_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA10_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA11_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA12_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA13_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA14_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA15_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDMA_Error_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBMCM_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBFTFE_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBRead_Collision_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBLVD_LVW_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBLLWU_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBWDOG_EWM_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBRNG_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBI2C0_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBI2C1_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBSPI0_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBSPI1_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBI2S0_Tx_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBI2S0_Rx_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUART0_LON_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUART0_RX_TX_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUART0_ERR_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUART1_RX_TX_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUART1_ERR_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUART2_RX_TX_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUART2_ERR_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUART3_RX_TX_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUART3_ERR_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBADC0_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBCMP0_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBCMP1_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBFTM0_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBFTM1_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBFTM2_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBCMT_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBRTC_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBRTC_Seconds_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBPIT0_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBPIT1_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBPIT2_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBPIT3_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBPDB0_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUSB0_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUSBDCD_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBReserved71_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDAC0_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBMCG_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBLPTMR0_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBPORTA_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBPORTB_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBPORTC_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBPORTD_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBPORTE_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBSWI_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBSPI2_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUART4_RX_TX_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUART4_ERR_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUART5_RX_TX_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBUART5_ERR_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBCMP2_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBFTM3_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBDAC1_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBADC1_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBI2C2_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBCAN0_ORed_Message_buffer_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBCAN0_Bus_Off_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBCAN0_Error_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBCAN0_Tx_Warning_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBCAN0_Rx_Warning_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBCAN0_Wake_Up_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBSDHC_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBENET_1588_Timer_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBENET_Transmit_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBENET_Receive_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "\fBWEAK\fP void \fBENET_Error_IRQHandler\fP (void)"
+.br
+.ti -1c
+.RI "void \fBDMA0_DriverIRQHandler\fP (void DMA1_DriverIRQHandler() \fBALIAS\fP(\fBIntDefaultHandler\fP) void)"
+.br
+.ti -1c
+.RI "\fB__attribute__\fP ((section('\&.after_vectors\&.init_data')))"
+.br
+.ti -1c
+.RI "\fB__attribute__\fP ((section('\&.after_vectors\&.init_bss')))"
+.br
+.ti -1c
+.RI "\fB__attribute__\fP ((section('\&.after_vectors\&.reset')))"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBFlash_Config\fP = {0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFE}"
+.br
+.ti -1c
+.RI "unsigned int \fB__data_section_table\fP"
+.br
+.ti -1c
+.RI "unsigned int \fB__data_section_table_end\fP"
+.br
+.ti -1c
+.RI "unsigned int \fB__bss_section_table\fP"
+.br
+.ti -1c
+.RI "unsigned int \fB__bss_section_table_end\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ALIAS(f)   \fB__attribute__\fP ((weak, alias (#f)))"
+
+.SS "#define WEAK   \fB__attribute__\fP ((weak))"
+
+.SS "#define WEAK_AV   \fB__attribute__\fP ((weak, section('\&.after_vectors')))"
+
+.SH "Function Documentation"
+.PP 
+.SS "__attribute__ ((used, section('\&.FlashConfig'))) const"
+
+.SS "__attribute__ ((section('\&.after_vectors\&.init_data')))"
+
+.SS "__attribute__ ((section('\&.after_vectors\&.init_bss')))"
+
+.SS "__attribute__ ((section('\&.after_vectors\&.reset')))"
+
+.SS "\fBWEAK\fP void ADC0_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void ADC1_IRQHandler (void)"
+
+.SS "\fBWEAK_AV\fP void BusFault_Handler (void)"
+
+.SS "\fBWEAK\fP void CAN0_Bus_Off_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void CAN0_Error_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void CAN0_ORed_Message_buffer_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void CAN0_Rx_Warning_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void CAN0_Tx_Warning_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void CAN0_Wake_Up_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void CMP0_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void CMP1_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void CMP2_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void CMT_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DAC0_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DAC1_IRQHandler (void)"
+
+.SS "\fBWEAK_AV\fP void DebugMon_Handler (void)"
+
+.SS "void DMA0_DriverIRQHandler (void DMA1_DriverIRQHandler() \fBALIAS\fP(\fBIntDefaultHandler\fP) void)"
+
+.SS "\fBWEAK\fP void DMA0_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA10_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA11_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA12_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA13_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA14_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA15_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA1_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA2_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA3_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA4_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA5_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA6_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA7_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA8_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA9_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void DMA_Error_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void ENET_1588_Timer_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void ENET_Error_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void ENET_Receive_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void ENET_Transmit_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void FTFE_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void FTM0_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void FTM1_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void FTM2_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void FTM3_IRQHandler (void)"
+
+.SS "\fBWEAK_AV\fP void HardFault_Handler (void)"
+
+.SS "\fBWEAK\fP void I2C0_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void I2C1_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void I2C2_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void I2S0_Rx_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void I2S0_Tx_IRQHandler (void)"
+
+.SS "\fBWEAK_AV\fP void IntDefaultHandler (void)"
+
+.SS "\fBWEAK\fP void LLWU_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void LPTMR0_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void LVD_LVW_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void MCG_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void MCM_IRQHandler (void)"
+
+.SS "\fBWEAK_AV\fP void MemManage_Handler (void)"
+
+.SS "\fBWEAK_AV\fP void NMI_Handler (void)"
+
+.SS "\fBWEAK\fP void PDB0_IRQHandler (void)"
+
+.SS "\fBWEAK_AV\fP void PendSV_Handler (void)"
+
+.SS "\fBWEAK\fP void PIT0_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void PIT1_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void PIT2_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void PIT3_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void PORTA_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void PORTB_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void PORTC_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void PORTD_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void PORTE_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void Read_Collision_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void Reserved71_IRQHandler (void)"
+
+.SS "void ResetISR (void)"
+
+.SS "\fBWEAK\fP void RNG_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void RTC_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void RTC_Seconds_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void SDHC_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void SPI0_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void SPI1_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void SPI2_IRQHandler (void)"
+
+.SS "\fBWEAK_AV\fP void SVC_Handler (void)"
+
+.SS "\fBWEAK\fP void SWI_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void SysTick_Handler (void)"
+
+.SS "\fBWEAK\fP void UART0_ERR_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void UART0_LON_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void UART0_RX_TX_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void UART1_ERR_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void UART1_RX_TX_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void UART2_ERR_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void UART2_RX_TX_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void UART3_ERR_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void UART3_RX_TX_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void UART4_ERR_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void UART4_RX_TX_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void UART5_ERR_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void UART5_RX_TX_IRQHandler (void)"
+
+.SS "\fBWEAK_AV\fP void UsageFault_Handler (void)"
+
+.SS "\fBWEAK\fP void USB0_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void USBDCD_IRQHandler (void)"
+
+.SS "\fBWEAK\fP void WDOG_EWM_IRQHandler (void)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "unsigned int __bss_section_table"
+
+.SS "unsigned int __bss_section_table_end"
+
+.SS "unsigned int __data_section_table"
+
+.SS "unsigned int __data_section_table_end"
+
+.SS "Flash_Config = {0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFE}"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

@@ -1,0 +1,206 @@
+.TH "SMC_Register_Masks" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SMC_Register_Masks
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSMC_BASE\fP   (0x4007E000u)"
+.br
+.ti -1c
+.RI "#define \fBSMC\fP   ((\fBSMC_Type\fP *)\fBSMC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBSMC_BASE_ADDRS\fP   { \fBSMC_BASE\fP }"
+.br
+.ti -1c
+.RI "#define \fBSMC_BASE_PTRS\fP   { \fBSMC\fP }"
+.br
+.in -1c
+.SS "PMPROT - Power Mode Protection register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSMC_PMPROT_AVLLS_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMPROT_AVLLS_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMPROT_AVLLS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMPROT_AVLLS_SHIFT\fP)) & \fBSMC_PMPROT_AVLLS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMPROT_ALLS_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMPROT_ALLS_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMPROT_ALLS\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMPROT_ALLS_SHIFT\fP)) & \fBSMC_PMPROT_ALLS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMPROT_AVLP_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMPROT_AVLP_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMPROT_AVLP\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMPROT_AVLP_SHIFT\fP)) & \fBSMC_PMPROT_AVLP_MASK\fP)"
+.br
+.in -1c
+.SS "PMCTRL - Power Mode Control register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSMC_PMCTRL_STOPM_MASK\fP   (0x7U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMCTRL_STOPM_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMCTRL_STOPM\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMCTRL_STOPM_SHIFT\fP)) & \fBSMC_PMCTRL_STOPM_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMCTRL_STOPA_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMCTRL_STOPA_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMCTRL_STOPA\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMCTRL_STOPA_SHIFT\fP)) & \fBSMC_PMCTRL_STOPA_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMCTRL_RUNM_MASK\fP   (0x60U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMCTRL_RUNM_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMCTRL_RUNM\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMCTRL_RUNM_SHIFT\fP)) & \fBSMC_PMCTRL_RUNM_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMCTRL_LPWUI_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMCTRL_LPWUI_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMCTRL_LPWUI\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMCTRL_LPWUI_SHIFT\fP)) & \fBSMC_PMCTRL_LPWUI_MASK\fP)"
+.br
+.in -1c
+.SS "VLLSCTRL - VLLS Control register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSMC_VLLSCTRL_VLLSM_MASK\fP   (0x7U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_VLLSCTRL_VLLSM_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_VLLSCTRL_VLLSM\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_VLLSCTRL_VLLSM_SHIFT\fP)) & \fBSMC_VLLSCTRL_VLLSM_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSMC_VLLSCTRL_PORPO_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_VLLSCTRL_PORPO_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_VLLSCTRL_PORPO\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_VLLSCTRL_PORPO_SHIFT\fP)) & \fBSMC_VLLSCTRL_PORPO_MASK\fP)"
+.br
+.in -1c
+.SS "PMSTAT - Power Mode Status register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSMC_PMSTAT_PMSTAT_MASK\fP   (0x7FU)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMSTAT_PMSTAT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSMC_PMSTAT_PMSTAT\fP(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMSTAT_PMSTAT_SHIFT\fP)) & \fBSMC_PMSTAT_PMSTAT_MASK\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define SMC   ((\fBSMC_Type\fP *)\fBSMC_BASE\fP)"
+Peripheral SMC base pointer 
+.SS "#define SMC_BASE   (0x4007E000u)"
+Peripheral SMC base address 
+.SS "#define SMC_BASE_ADDRS   { \fBSMC_BASE\fP }"
+Array initializer of SMC peripheral base addresses 
+.SS "#define SMC_BASE_PTRS   { \fBSMC\fP }"
+Array initializer of SMC peripheral base pointers 
+.SS "#define SMC_PMCTRL_LPWUI(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMCTRL_LPWUI_SHIFT\fP)) & \fBSMC_PMCTRL_LPWUI_MASK\fP)"
+
+.SS "#define SMC_PMCTRL_LPWUI_MASK   (0x80U)"
+
+.SS "#define SMC_PMCTRL_LPWUI_SHIFT   (7U)"
+
+.SS "#define SMC_PMCTRL_RUNM(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMCTRL_RUNM_SHIFT\fP)) & \fBSMC_PMCTRL_RUNM_MASK\fP)"
+
+.SS "#define SMC_PMCTRL_RUNM_MASK   (0x60U)"
+
+.SS "#define SMC_PMCTRL_RUNM_SHIFT   (5U)"
+
+.SS "#define SMC_PMCTRL_STOPA(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMCTRL_STOPA_SHIFT\fP)) & \fBSMC_PMCTRL_STOPA_MASK\fP)"
+
+.SS "#define SMC_PMCTRL_STOPA_MASK   (0x8U)"
+
+.SS "#define SMC_PMCTRL_STOPA_SHIFT   (3U)"
+
+.SS "#define SMC_PMCTRL_STOPM(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMCTRL_STOPM_SHIFT\fP)) & \fBSMC_PMCTRL_STOPM_MASK\fP)"
+
+.SS "#define SMC_PMCTRL_STOPM_MASK   (0x7U)"
+
+.SS "#define SMC_PMCTRL_STOPM_SHIFT   (0U)"
+
+.SS "#define SMC_PMPROT_ALLS(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMPROT_ALLS_SHIFT\fP)) & \fBSMC_PMPROT_ALLS_MASK\fP)"
+
+.SS "#define SMC_PMPROT_ALLS_MASK   (0x8U)"
+
+.SS "#define SMC_PMPROT_ALLS_SHIFT   (3U)"
+
+.SS "#define SMC_PMPROT_AVLLS(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMPROT_AVLLS_SHIFT\fP)) & \fBSMC_PMPROT_AVLLS_MASK\fP)"
+
+.SS "#define SMC_PMPROT_AVLLS_MASK   (0x2U)"
+
+.SS "#define SMC_PMPROT_AVLLS_SHIFT   (1U)"
+
+.SS "#define SMC_PMPROT_AVLP(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMPROT_AVLP_SHIFT\fP)) & \fBSMC_PMPROT_AVLP_MASK\fP)"
+
+.SS "#define SMC_PMPROT_AVLP_MASK   (0x20U)"
+
+.SS "#define SMC_PMPROT_AVLP_SHIFT   (5U)"
+
+.SS "#define SMC_PMSTAT_PMSTAT(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_PMSTAT_PMSTAT_SHIFT\fP)) & \fBSMC_PMSTAT_PMSTAT_MASK\fP)"
+
+.SS "#define SMC_PMSTAT_PMSTAT_MASK   (0x7FU)"
+
+.SS "#define SMC_PMSTAT_PMSTAT_SHIFT   (0U)"
+
+.SS "#define SMC_VLLSCTRL_PORPO(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_VLLSCTRL_PORPO_SHIFT\fP)) & \fBSMC_VLLSCTRL_PORPO_MASK\fP)"
+
+.SS "#define SMC_VLLSCTRL_PORPO_MASK   (0x20U)"
+
+.SS "#define SMC_VLLSCTRL_PORPO_SHIFT   (5U)"
+
+.SS "#define SMC_VLLSCTRL_VLLSM(x)   (((uint8_t)(((uint8_t)(x)) << \fBSMC_VLLSCTRL_VLLSM_SHIFT\fP)) & \fBSMC_VLLSCTRL_VLLSM_MASK\fP)"
+
+.SS "#define SMC_VLLSCTRL_VLLSM_MASK   (0x7U)"
+
+.SS "#define SMC_VLLSCTRL_VLLSM_SHIFT   (0U)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

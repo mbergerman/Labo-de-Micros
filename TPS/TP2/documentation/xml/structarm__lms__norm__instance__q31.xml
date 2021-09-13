@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structarm__lms__norm__instance__q31" kind="struct" language="C++" prot="public">
+    <compoundname>arm_lms_norm_instance_q31</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1a751941891e47f522a7f5375fe8990aac" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t numTaps</definition>
+        <argsstring></argsstring>
+        <name>numTaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of coefficients in the filter. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="4151" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="4151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1adee4ba3ee8869865af7d8fa08ca913d6" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the state variable array. The array is of length numTaps+blockSize-1. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="4152" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="4152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1a68888e36167d81cb7836db10367a1682" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* pCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the coefficient array. The array is of length numTaps. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="4153" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="4153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1a21ab4237a726ea7751f5026d89d2e577" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>q31_t mu</definition>
+        <argsstring></argsstring>
+        <name>mu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>step size that controls filter coefficient updates. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="4154" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="4154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1a74050e9f36542bd56f4052381a82ae8f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t postShift</definition>
+        <argsstring></argsstring>
+        <name>postShift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit shift applied to coefficients. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="4155" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="4155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1aec8a88dd688519b6b1e3c8d2e24bb775" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* recipTable</definition>
+        <argsstring></argsstring>
+        <name>recipTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the reciprocal initial value table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="4156" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="4156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1a012fee0f71095d2557bb633e73ef7355" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>q31_t energy</definition>
+        <argsstring></argsstring>
+        <name>energy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>saves previous frame energy. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="4157" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="4157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__lms__norm__instance__q31_1a973b8350a0c7b113a5f002bc0b86bf76" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+        <definition>q31_t x0</definition>
+        <argsstring></argsstring>
+        <name>x0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>saves previous input sample. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="4158" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="4158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Q31 normalized LMS filter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/arm_math.h" line="4150" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="4149" bodyend="4159"/>
+    <listofallmembers>
+      <member refid="structarm__lms__norm__instance__q31_1a012fee0f71095d2557bb633e73ef7355" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>energy</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1a21ab4237a726ea7751f5026d89d2e577" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>mu</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1a751941891e47f522a7f5375fe8990aac" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>numTaps</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1a68888e36167d81cb7836db10367a1682" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>pCoeffs</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1a74050e9f36542bd56f4052381a82ae8f" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>postShift</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1adee4ba3ee8869865af7d8fa08ca913d6" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>pState</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1aec8a88dd688519b6b1e3c8d2e24bb775" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>recipTable</name></member>
+      <member refid="structarm__lms__norm__instance__q31_1a973b8350a0c7b113a5f002bc0b86bf76" prot="public" virt="non-virtual"><scope>arm_lms_norm_instance_q31</scope><name>x0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

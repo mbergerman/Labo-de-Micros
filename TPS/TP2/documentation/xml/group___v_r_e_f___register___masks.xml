@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___v_r_e_f___register___masks" kind="group">
+    <compoundname>VREF_Register_Masks</compoundname>
+    <title>VREF Register Masks</title>
+      <sectiondef kind="user-defined">
+      <header>TRM - VREF Trim Register</header>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1gaf233ddf56401003ec721b808d3910978" prot="public" static="no">
+        <name>VREF_TRM_TRIM_MASK</name>
+        <initializer>(0x3FU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12435" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1ga7738b4edb18c8c9dcb36d6be564c80e6" prot="public" static="no">
+        <name>VREF_TRM_TRIM_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12436" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1ga7b200f282af693ea614c6bb380a5bfb8" prot="public" static="no">
+        <name>VREF_TRM_TRIM</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___v_r_e_f___register___masks_1ga7738b4edb18c8c9dcb36d6be564c80e6" kindref="member">VREF_TRM_TRIM_SHIFT</ref>)) &amp; <ref refid="group___v_r_e_f___register___masks_1gaf233ddf56401003ec721b808d3910978" kindref="member">VREF_TRM_TRIM_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12437" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1gaca90564d0247d6637d487fa045dbe328" prot="public" static="no">
+        <name>VREF_TRM_CHOPEN_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12438" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1gad66c35e7a2372a16a0ef1042ad0d029a" prot="public" static="no">
+        <name>VREF_TRM_CHOPEN_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12439" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1gaaa2d50a050e401275bb8db441075a60c" prot="public" static="no">
+        <name>VREF_TRM_CHOPEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___v_r_e_f___register___masks_1gad66c35e7a2372a16a0ef1042ad0d029a" kindref="member">VREF_TRM_CHOPEN_SHIFT</ref>)) &amp; <ref refid="group___v_r_e_f___register___masks_1gaca90564d0247d6637d487fa045dbe328" kindref="member">VREF_TRM_CHOPEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12440" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12440" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>SC - VREF Status and Control Register</header>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1ga7eb8ab4b25ed9f93b23d7199c50e7181" prot="public" static="no">
+        <name>VREF_SC_MODE_LV_MASK</name>
+        <initializer>(0x3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12443" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1ga3130891ca865a042a784a2c3bc7141b0" prot="public" static="no">
+        <name>VREF_SC_MODE_LV_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12444" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1ga2bd98e877f61a410c3226d6472365b5e" prot="public" static="no">
+        <name>VREF_SC_MODE_LV</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___v_r_e_f___register___masks_1ga3130891ca865a042a784a2c3bc7141b0" kindref="member">VREF_SC_MODE_LV_SHIFT</ref>)) &amp; <ref refid="group___v_r_e_f___register___masks_1ga7eb8ab4b25ed9f93b23d7199c50e7181" kindref="member">VREF_SC_MODE_LV_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12445" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1gadc4f84c737775ee82f350149ade8f5bf" prot="public" static="no">
+        <name>VREF_SC_VREFST_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12446" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1ga88b36251362ceabbeeb2302dae65000d" prot="public" static="no">
+        <name>VREF_SC_VREFST_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12447" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1ga30537740fce6d9a373359c63805e11e8" prot="public" static="no">
+        <name>VREF_SC_VREFST</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___v_r_e_f___register___masks_1ga88b36251362ceabbeeb2302dae65000d" kindref="member">VREF_SC_VREFST_SHIFT</ref>)) &amp; <ref refid="group___v_r_e_f___register___masks_1gadc4f84c737775ee82f350149ade8f5bf" kindref="member">VREF_SC_VREFST_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12448" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1gaeb737c0b08409b6e7ea8de3bf7a90732" prot="public" static="no">
+        <name>VREF_SC_ICOMPEN_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12449" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1gab4b6bb1062b8e67c9224814d85df2a2c" prot="public" static="no">
+        <name>VREF_SC_ICOMPEN_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12450" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1gab383d7f445ab9bf9266da50107d30f7f" prot="public" static="no">
+        <name>VREF_SC_ICOMPEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___v_r_e_f___register___masks_1gab4b6bb1062b8e67c9224814d85df2a2c" kindref="member">VREF_SC_ICOMPEN_SHIFT</ref>)) &amp; <ref refid="group___v_r_e_f___register___masks_1gaeb737c0b08409b6e7ea8de3bf7a90732" kindref="member">VREF_SC_ICOMPEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12451" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1ga1396c56eb73d89394a57b1f83f20c9ea" prot="public" static="no">
+        <name>VREF_SC_REGEN_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12452" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1gacfe64ba6f4a76a4aef274f2fedb95a90" prot="public" static="no">
+        <name>VREF_SC_REGEN_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12453" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1gac93682ccff6c6c12d1929940d197020a" prot="public" static="no">
+        <name>VREF_SC_REGEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___v_r_e_f___register___masks_1gacfe64ba6f4a76a4aef274f2fedb95a90" kindref="member">VREF_SC_REGEN_SHIFT</ref>)) &amp; <ref refid="group___v_r_e_f___register___masks_1ga1396c56eb73d89394a57b1f83f20c9ea" kindref="member">VREF_SC_REGEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12454" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1ga2df8186aa60a77e25e67589bc50ce539" prot="public" static="no">
+        <name>VREF_SC_VREFEN_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12455" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1gaca5e397ea8b43f55854f4a6b80ec479b" prot="public" static="no">
+        <name>VREF_SC_VREFEN_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12456" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1ga7a5994dbf9e379f63aea014ab33e4822" prot="public" static="no">
+        <name>VREF_SC_VREFEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint8_t)(((uint8_t)(x)) &lt;&lt; <ref refid="group___v_r_e_f___register___masks_1gaca5e397ea8b43f55854f4a6b80ec479b" kindref="member">VREF_SC_VREFEN_SHIFT</ref>)) &amp; <ref refid="group___v_r_e_f___register___masks_1ga2df8186aa60a77e25e67589bc50ce539" kindref="member">VREF_SC_VREFEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12457" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12457" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1ga4a13ce72546505561e4a780677ec0375" prot="public" static="no">
+        <name>VREF_BASE</name>
+        <initializer>(0x40074000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral VREF base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12467" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1ga2c9e85d22a9ba37ea589b1747af46307" prot="public" static="no">
+        <name>VREF</name>
+        <initializer>((<ref refid="struct_v_r_e_f___type" kindref="compound">VREF_Type</ref> *)<ref refid="group___v_r_e_f___register___masks_1ga4a13ce72546505561e4a780677ec0375" kindref="member">VREF_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral VREF base pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12469" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1gac0ccacace16937d7109589180bb2650b" prot="public" static="no">
+        <name>VREF_BASE_ADDRS</name>
+        <initializer>{ <ref refid="group___v_r_e_f___register___masks_1ga4a13ce72546505561e4a780677ec0375" kindref="member">VREF_BASE</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of VREF peripheral base addresses </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12471" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___v_r_e_f___register___masks_1ga3eb17aee5de4a519ee18fe763e43865b" prot="public" static="no">
+        <name>VREF_BASE_PTRS</name>
+        <initializer>{ <ref refid="group___v_r_e_f___register___masks_1ga2c9e85d22a9ba37ea589b1747af46307" kindref="member">VREF</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of VREF peripheral base pointers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12473" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12473" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

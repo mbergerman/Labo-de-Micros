@@ -1,0 +1,1334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___c_m_s_i_s___f_p_u" kind="group">
+    <compoundname>CMSIS_FPU</compoundname>
+    <title>Floating Point Unit (FPU)</title>
+    <innerclass refid="struct_f_p_u___type" prot="public">FPU_Type</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga4228a923ddf665f868e56b4b9e9bff7b" prot="public" static="no">
+        <name>FPU_FPCCR_ASPEN_Pos</name>
+        <initializer>31U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: ASPEN bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1750" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1750" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga309886ff6bbd25cb13c061c6683c6c0c" prot="public" static="no">
+        <name>FPU_FPCCR_ASPEN_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_ASPEN_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: ASPEN bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1751" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gac7d70e051fe759ad8fed83bf5b5aebc1" prot="public" static="no">
+        <name>FPU_FPCCR_LSPEN_Pos</name>
+        <initializer>30U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: LSPEN Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1753" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1753" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaf4ab19de45df6522dd882bc116f938e9" prot="public" static="no">
+        <name>FPU_FPCCR_LSPEN_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_LSPEN_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: LSPEN bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1754" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1754" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga705368bf3c52b5bb4edfbcb3e2631e1c" prot="public" static="no">
+        <name>FPU_FPCCR_LSPENS_Pos</name>
+        <initializer>29U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: LSPENS Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1756" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1756" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga73afcf0fe09c69e9625e11035cabb1c0" prot="public" static="no">
+        <name>FPU_FPCCR_LSPENS_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_LSPENS_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: LSPENS bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1757" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1757" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga0b97b2fdac794f4fddab1e4342e0c104" prot="public" static="no">
+        <name>FPU_FPCCR_CLRONRET_Pos</name>
+        <initializer>28U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: CLRONRET Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1759" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1759" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gadedc12ec237657721a613c6f47abed6f" prot="public" static="no">
+        <name>FPU_FPCCR_CLRONRET_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_CLRONRET_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: CLRONRET bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1760" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1760" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gabb18ccf9d1b0a4bef3b0823f18eb96ba" prot="public" static="no">
+        <name>FPU_FPCCR_CLRONRETS_Pos</name>
+        <initializer>27U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: CLRONRETS Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1762" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga103d932807c15250d96711952878eeb2" prot="public" static="no">
+        <name>FPU_FPCCR_CLRONRETS_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_CLRONRETS_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: CLRONRETS bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1763" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga624474f408fde177df519460775a74a1" prot="public" static="no">
+        <name>FPU_FPCCR_TS_Pos</name>
+        <initializer>26U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: TS Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1765" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga1377a5dfb4b9c6b18e379ac15e0dc23e" prot="public" static="no">
+        <name>FPU_FPCCR_TS_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_TS_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: TS bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1766" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1766" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gac48b42e143b93411977dcb9086a5e4e4" prot="public" static="no">
+        <name>FPU_FPCCR_UFRDY_Pos</name>
+        <initializer>10U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: UFRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1768" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga97c610927aab580cac3fb166f080b6a6" prot="public" static="no">
+        <name>FPU_FPCCR_UFRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_UFRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: UFRDY bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1769" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gac90e551e3cfda27c089bf381acba5aa0" prot="public" static="no">
+        <name>FPU_FPCCR_SPLIMVIOL_Pos</name>
+        <initializer>9U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: SPLIMVIOL Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1771" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1771" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaa5e511cae62f922a9a91af0972f7a5e6" prot="public" static="no">
+        <name>FPU_FPCCR_SPLIMVIOL_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_SPLIMVIOL_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: SPLIMVIOL bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1772" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1772" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gae0a4effc79209d821ded517c2be326ba" prot="public" static="no">
+        <name>FPU_FPCCR_MONRDY_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: MONRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1774" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1774" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga42067729a887081cf56b8fe1029be7a1" prot="public" static="no">
+        <name>FPU_FPCCR_MONRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_MONRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: MONRDY bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1775" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1775" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga571354f040a9372c0ad0cb87e296ea7d" prot="public" static="no">
+        <name>FPU_FPCCR_SFRDY_Pos</name>
+        <initializer>7U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: SFRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1777" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1777" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga419a1e5609bbedf94f518c72214bddbc" prot="public" static="no">
+        <name>FPU_FPCCR_SFRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_SFRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: SFRDY bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1778" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga6d633920f92c3ce4133d769701619b17" prot="public" static="no">
+        <name>FPU_FPCCR_BFRDY_Pos</name>
+        <initializer>6U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: BFRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1780" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1780" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gad349eb1323d8399d54a04c0bfd520cb2" prot="public" static="no">
+        <name>FPU_FPCCR_BFRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_BFRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: BFRDY bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1781" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1781" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaccdb481211629f9440431439231187f1" prot="public" static="no">
+        <name>FPU_FPCCR_MMRDY_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: MMRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1783" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gadedfaec9fdd07261573e823a4dcfb5c4" prot="public" static="no">
+        <name>FPU_FPCCR_MMRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_MMRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: MMRDY bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1784" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1784" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gab12733991487acc2da41ca300fe36fb6" prot="public" static="no">
+        <name>FPU_FPCCR_HFRDY_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: HFRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1786" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaf4beaa279abff34828344bd594fff8a1" prot="public" static="no">
+        <name>FPU_FPCCR_HFRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_HFRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: HFRDY bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1787" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1787" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga0937d64c42374200af44b22e5b49fd26" prot="public" static="no">
+        <name>FPU_FPCCR_THREAD_Pos</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: processor mode bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1789" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1789" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga8d18cd88336d63d4b1810383aa8da700" prot="public" static="no">
+        <name>FPU_FPCCR_THREAD_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_THREAD_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: processor mode active bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1790" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1790" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga4123d3881e5342251f559cec19e23b4e" prot="public" static="no">
+        <name>FPU_FPCCR_S_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: Security status of the FP context bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1792" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga47d3d3b29514c7d7581cfcc304368cea" prot="public" static="no">
+        <name>FPU_FPCCR_S_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_S_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: Security status of the FP context bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1793" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaea663104375ce6be15470e3db294c92d" prot="public" static="no">
+        <name>FPU_FPCCR_USER_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: privilege level bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1795" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga2eb70427eeaa7344196219cf5a8620a4" prot="public" static="no">
+        <name>FPU_FPCCR_USER_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_USER_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: privilege level bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1796" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga803bf3f6d15b04deaad0801bee5b35ed" prot="public" static="no">
+        <name>FPU_FPCCR_LSPACT_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: Lazy state preservation active bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1798" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1798" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga86e7c2fa52ba65c3b535dfa33f2586eb" prot="public" static="no">
+        <name>FPU_FPCCR_LSPACT_Msk</name>
+        <initializer>(1UL /*&lt;&lt; FPU_FPCCR_LSPACT_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: Lazy state preservation active bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1799" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1799" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaf45377b7e45be8517ddbcf2028b80ae7" prot="public" static="no">
+        <name>FPU_FPCAR_ADDRESS_Pos</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCAR: ADDRESS bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1802" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1802" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga517d89370c81325c5387b9c3085ac554" prot="public" static="no">
+        <name>FPU_FPCAR_ADDRESS_Msk</name>
+        <initializer>(0x1FFFFFFFUL &lt;&lt; FPU_FPCAR_ADDRESS_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCAR: ADDRESS bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1803" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1803" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga138f54bc002629ab3e4de814c58abb29" prot="public" static="no">
+        <name>FPU_FPDSCR_AHP_Pos</name>
+        <initializer>26U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: AHP bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1806" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1806" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gab2789cebebda5fda8c4e9d87e24f32be" prot="public" static="no">
+        <name>FPU_FPDSCR_AHP_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPDSCR_AHP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: AHP bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1807" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1807" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga41776b80fa450ef2ea6d3fee89aa35f2" prot="public" static="no">
+        <name>FPU_FPDSCR_DN_Pos</name>
+        <initializer>25U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: DN bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1809" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1809" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga40c2d4a297ca2ceffe174703a4ad17f6" prot="public" static="no">
+        <name>FPU_FPDSCR_DN_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPDSCR_DN_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: DN bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1810" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1810" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gab3c2fc96e312ba47b902d5f80d9b8575" prot="public" static="no">
+        <name>FPU_FPDSCR_FZ_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: FZ bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1812" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1812" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaae7d901442d4af97c6d22939cffc8ad9" prot="public" static="no">
+        <name>FPU_FPDSCR_FZ_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPDSCR_FZ_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: FZ bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1813" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1813" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga7aeedf36be8f170dd3e276028e8e29ed" prot="public" static="no">
+        <name>FPU_FPDSCR_RMode_Pos</name>
+        <initializer>22U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: RMode bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1815" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1815" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga449beb50211f8e97df6b2640c82c4741" prot="public" static="no">
+        <name>FPU_FPDSCR_RMode_Msk</name>
+        <initializer>(3UL &lt;&lt; FPU_FPDSCR_RMode_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: RMode bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1816" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1816" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga1ebcc9076f08013f0ea814540df03e82" prot="public" static="no">
+        <name>FPU_MVFR0_FP_rounding_modes_Pos</name>
+        <initializer>28U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: FP rounding modes bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1819" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1819" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gae6dc9339ac72227d5d54360bb9fbef1b" prot="public" static="no">
+        <name>FPU_MVFR0_FP_rounding_modes_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_FP_rounding_modes_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: FP rounding modes bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1820" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1820" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gabbf83a918536ebf10889cee71a0404c7" prot="public" static="no">
+        <name>FPU_MVFR0_Short_vectors_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Short vectors bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1822" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1822" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gabf261a72023fdfc64f32c6b21d55c5b9" prot="public" static="no">
+        <name>FPU_MVFR0_Short_vectors_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_Short_vectors_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Short vectors bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1823" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1823" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga176c85453ba03257bf263adec05f7344" prot="public" static="no">
+        <name>FPU_MVFR0_Square_root_Pos</name>
+        <initializer>20U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Square root bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1825" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1825" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga3ec0bfec1640bdaf9dff027f275b446d" prot="public" static="no">
+        <name>FPU_MVFR0_Square_root_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_Square_root_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Square root bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1826" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1826" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga167be203091e6cc7d00ad40ca48c4396" prot="public" static="no">
+        <name>FPU_MVFR0_Divide_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Divide bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1828" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1828" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaeb7370768c6cdf06f8a15c86c6102ed2" prot="public" static="no">
+        <name>FPU_MVFR0_Divide_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_Divide_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Divide bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1829" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1829" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga5c0715c41c4470f8bb0b6dcd34707f1c" prot="public" static="no">
+        <name>FPU_MVFR0_FP_excep_trapping_Pos</name>
+        <initializer>12U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: FP exception trapping bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1831" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1831" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga29bbddd679e821e050699fda23e6c85e" prot="public" static="no">
+        <name>FPU_MVFR0_FP_excep_trapping_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_FP_excep_trapping_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: FP exception trapping bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1832" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1832" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga461e26147be0c39402a78cb6249e8f84" prot="public" static="no">
+        <name>FPU_MVFR0_Double_precision_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Double-precision bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1834" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1834" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga3f2c8c6c759ffe70f548a165602ea901" prot="public" static="no">
+        <name>FPU_MVFR0_Double_precision_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_Double_precision_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Double-precision bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1835" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1835" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga1b4e9fe31992b1495c7a158747d42571" prot="public" static="no">
+        <name>FPU_MVFR0_Single_precision_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Single-precision bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1837" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1837" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga95008f205c9d25e4ffebdbdc50d5ae44" prot="public" static="no">
+        <name>FPU_MVFR0_Single_precision_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_Single_precision_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Single-precision bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1838" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1838" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaa1de44af3e3162c8c176a57564611618" prot="public" static="no">
+        <name>FPU_MVFR0_A_SIMD_registers_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: A_SIMD registers bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1840" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1840" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga118f13f9562805356e92b5ad52573021" prot="public" static="no">
+        <name>FPU_MVFR0_A_SIMD_registers_Msk</name>
+        <initializer>(0xFUL /*&lt;&lt; FPU_MVFR0_A_SIMD_registers_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: A_SIMD registers bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1841" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1841" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga68c53771f02f4c73122a7b40796549cc" prot="public" static="no">
+        <name>FPU_MVFR1_FP_fused_MAC_Pos</name>
+        <initializer>28U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: FP fused MAC bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1844" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1844" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaf5129ab18948ff573a1ab29f0be47bc2" prot="public" static="no">
+        <name>FPU_MVFR1_FP_fused_MAC_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR1_FP_fused_MAC_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: FP fused MAC bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1845" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1845" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga02ceac0abcbdc8670633056bec005bfd" prot="public" static="no">
+        <name>FPU_MVFR1_FP_HPFP_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: FP HPFP bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1847" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1847" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gafe29dd327ed3b723b3f01759568e116d" prot="public" static="no">
+        <name>FPU_MVFR1_FP_HPFP_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR1_FP_HPFP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: FP HPFP bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1848" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gae34d7ce42e50e2f1ea3e654fd3ba690a" prot="public" static="no">
+        <name>FPU_MVFR1_D_NaN_mode_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: D_NaN mode bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1850" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1850" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gad6af7c4632dba5a417307d456fe9b8a7" prot="public" static="no">
+        <name>FPU_MVFR1_D_NaN_mode_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR1_D_NaN_mode_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: D_NaN mode bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1851" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1851" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga7faa5bfa85036f8511793234cbbc2409" prot="public" static="no">
+        <name>FPU_MVFR1_FtZ_mode_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: FtZ mode bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1853" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gac566bde39a7afcceffbb21d830c269c1" prot="public" static="no">
+        <name>FPU_MVFR1_FtZ_mode_Msk</name>
+        <initializer>(0xFUL /*&lt;&lt; FPU_MVFR1_FtZ_mode_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: FtZ mode bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1854" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga4228a923ddf665f868e56b4b9e9bff7b" prot="public" static="no">
+        <name>FPU_FPCCR_ASPEN_Pos</name>
+        <initializer>31U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: ASPEN bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1327" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga309886ff6bbd25cb13c061c6683c6c0c" prot="public" static="no">
+        <name>FPU_FPCCR_ASPEN_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_ASPEN_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: ASPEN bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1328" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gac7d70e051fe759ad8fed83bf5b5aebc1" prot="public" static="no">
+        <name>FPU_FPCCR_LSPEN_Pos</name>
+        <initializer>30U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: LSPEN Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1330" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaf4ab19de45df6522dd882bc116f938e9" prot="public" static="no">
+        <name>FPU_FPCCR_LSPEN_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_LSPEN_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: LSPEN bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1331" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gae0a4effc79209d821ded517c2be326ba" prot="public" static="no">
+        <name>FPU_FPCCR_MONRDY_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: MONRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1333" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga42067729a887081cf56b8fe1029be7a1" prot="public" static="no">
+        <name>FPU_FPCCR_MONRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_MONRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: MONRDY bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1334" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga6d633920f92c3ce4133d769701619b17" prot="public" static="no">
+        <name>FPU_FPCCR_BFRDY_Pos</name>
+        <initializer>6U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: BFRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1336" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gad349eb1323d8399d54a04c0bfd520cb2" prot="public" static="no">
+        <name>FPU_FPCCR_BFRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_BFRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: BFRDY bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1337" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaccdb481211629f9440431439231187f1" prot="public" static="no">
+        <name>FPU_FPCCR_MMRDY_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: MMRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1339" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gadedfaec9fdd07261573e823a4dcfb5c4" prot="public" static="no">
+        <name>FPU_FPCCR_MMRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_MMRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: MMRDY bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1340" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gab12733991487acc2da41ca300fe36fb6" prot="public" static="no">
+        <name>FPU_FPCCR_HFRDY_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: HFRDY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1342" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaf4beaa279abff34828344bd594fff8a1" prot="public" static="no">
+        <name>FPU_FPCCR_HFRDY_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_HFRDY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: HFRDY bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1343" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga0937d64c42374200af44b22e5b49fd26" prot="public" static="no">
+        <name>FPU_FPCCR_THREAD_Pos</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: processor mode bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1345" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga8d18cd88336d63d4b1810383aa8da700" prot="public" static="no">
+        <name>FPU_FPCCR_THREAD_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_THREAD_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: processor mode active bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1346" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaea663104375ce6be15470e3db294c92d" prot="public" static="no">
+        <name>FPU_FPCCR_USER_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: privilege level bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1348" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga2eb70427eeaa7344196219cf5a8620a4" prot="public" static="no">
+        <name>FPU_FPCCR_USER_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPCCR_USER_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: privilege level bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1349" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga803bf3f6d15b04deaad0801bee5b35ed" prot="public" static="no">
+        <name>FPU_FPCCR_LSPACT_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: Lazy state preservation active bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1351" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga86e7c2fa52ba65c3b535dfa33f2586eb" prot="public" static="no">
+        <name>FPU_FPCCR_LSPACT_Msk</name>
+        <initializer>(1UL /*&lt;&lt; FPU_FPCCR_LSPACT_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCCR: Lazy state preservation active bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1352" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaf45377b7e45be8517ddbcf2028b80ae7" prot="public" static="no">
+        <name>FPU_FPCAR_ADDRESS_Pos</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCAR: ADDRESS bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1355" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga517d89370c81325c5387b9c3085ac554" prot="public" static="no">
+        <name>FPU_FPCAR_ADDRESS_Msk</name>
+        <initializer>(0x1FFFFFFFUL &lt;&lt; FPU_FPCAR_ADDRESS_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPCAR: ADDRESS bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1356" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga138f54bc002629ab3e4de814c58abb29" prot="public" static="no">
+        <name>FPU_FPDSCR_AHP_Pos</name>
+        <initializer>26U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: AHP bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1359" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gab2789cebebda5fda8c4e9d87e24f32be" prot="public" static="no">
+        <name>FPU_FPDSCR_AHP_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPDSCR_AHP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: AHP bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1360" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga41776b80fa450ef2ea6d3fee89aa35f2" prot="public" static="no">
+        <name>FPU_FPDSCR_DN_Pos</name>
+        <initializer>25U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: DN bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1362" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga40c2d4a297ca2ceffe174703a4ad17f6" prot="public" static="no">
+        <name>FPU_FPDSCR_DN_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPDSCR_DN_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: DN bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1363" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gab3c2fc96e312ba47b902d5f80d9b8575" prot="public" static="no">
+        <name>FPU_FPDSCR_FZ_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: FZ bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1365" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaae7d901442d4af97c6d22939cffc8ad9" prot="public" static="no">
+        <name>FPU_FPDSCR_FZ_Msk</name>
+        <initializer>(1UL &lt;&lt; FPU_FPDSCR_FZ_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: FZ bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1366" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga7aeedf36be8f170dd3e276028e8e29ed" prot="public" static="no">
+        <name>FPU_FPDSCR_RMode_Pos</name>
+        <initializer>22U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: RMode bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1368" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga449beb50211f8e97df6b2640c82c4741" prot="public" static="no">
+        <name>FPU_FPDSCR_RMode_Msk</name>
+        <initializer>(3UL &lt;&lt; FPU_FPDSCR_RMode_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FPDSCR: RMode bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1369" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga1ebcc9076f08013f0ea814540df03e82" prot="public" static="no">
+        <name>FPU_MVFR0_FP_rounding_modes_Pos</name>
+        <initializer>28U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: FP rounding modes bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1372" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gae6dc9339ac72227d5d54360bb9fbef1b" prot="public" static="no">
+        <name>FPU_MVFR0_FP_rounding_modes_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_FP_rounding_modes_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: FP rounding modes bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1373" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gabbf83a918536ebf10889cee71a0404c7" prot="public" static="no">
+        <name>FPU_MVFR0_Short_vectors_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Short vectors bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1375" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gabf261a72023fdfc64f32c6b21d55c5b9" prot="public" static="no">
+        <name>FPU_MVFR0_Short_vectors_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_Short_vectors_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Short vectors bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1376" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga176c85453ba03257bf263adec05f7344" prot="public" static="no">
+        <name>FPU_MVFR0_Square_root_Pos</name>
+        <initializer>20U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Square root bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1378" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga3ec0bfec1640bdaf9dff027f275b446d" prot="public" static="no">
+        <name>FPU_MVFR0_Square_root_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_Square_root_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Square root bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1379" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga167be203091e6cc7d00ad40ca48c4396" prot="public" static="no">
+        <name>FPU_MVFR0_Divide_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Divide bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1381" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaeb7370768c6cdf06f8a15c86c6102ed2" prot="public" static="no">
+        <name>FPU_MVFR0_Divide_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_Divide_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Divide bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1382" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga5c0715c41c4470f8bb0b6dcd34707f1c" prot="public" static="no">
+        <name>FPU_MVFR0_FP_excep_trapping_Pos</name>
+        <initializer>12U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: FP exception trapping bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1384" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga29bbddd679e821e050699fda23e6c85e" prot="public" static="no">
+        <name>FPU_MVFR0_FP_excep_trapping_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_FP_excep_trapping_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: FP exception trapping bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1385" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga461e26147be0c39402a78cb6249e8f84" prot="public" static="no">
+        <name>FPU_MVFR0_Double_precision_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Double-precision bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1387" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga3f2c8c6c759ffe70f548a165602ea901" prot="public" static="no">
+        <name>FPU_MVFR0_Double_precision_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_Double_precision_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Double-precision bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1388" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga1b4e9fe31992b1495c7a158747d42571" prot="public" static="no">
+        <name>FPU_MVFR0_Single_precision_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Single-precision bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1390" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga95008f205c9d25e4ffebdbdc50d5ae44" prot="public" static="no">
+        <name>FPU_MVFR0_Single_precision_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR0_Single_precision_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: Single-precision bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1391" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaa1de44af3e3162c8c176a57564611618" prot="public" static="no">
+        <name>FPU_MVFR0_A_SIMD_registers_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: A_SIMD registers bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1393" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga118f13f9562805356e92b5ad52573021" prot="public" static="no">
+        <name>FPU_MVFR0_A_SIMD_registers_Msk</name>
+        <initializer>(0xFUL /*&lt;&lt; FPU_MVFR0_A_SIMD_registers_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR0: A_SIMD registers bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1394" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga68c53771f02f4c73122a7b40796549cc" prot="public" static="no">
+        <name>FPU_MVFR1_FP_fused_MAC_Pos</name>
+        <initializer>28U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: FP fused MAC bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1397" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gaf5129ab18948ff573a1ab29f0be47bc2" prot="public" static="no">
+        <name>FPU_MVFR1_FP_fused_MAC_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR1_FP_fused_MAC_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: FP fused MAC bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1398" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga02ceac0abcbdc8670633056bec005bfd" prot="public" static="no">
+        <name>FPU_MVFR1_FP_HPFP_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: FP HPFP bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1400" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gafe29dd327ed3b723b3f01759568e116d" prot="public" static="no">
+        <name>FPU_MVFR1_FP_HPFP_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR1_FP_HPFP_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: FP HPFP bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1401" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gae34d7ce42e50e2f1ea3e654fd3ba690a" prot="public" static="no">
+        <name>FPU_MVFR1_D_NaN_mode_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: D_NaN mode bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1403" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gad6af7c4632dba5a417307d456fe9b8a7" prot="public" static="no">
+        <name>FPU_MVFR1_D_NaN_mode_Msk</name>
+        <initializer>(0xFUL &lt;&lt; FPU_MVFR1_D_NaN_mode_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: D_NaN mode bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1404" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1ga7faa5bfa85036f8511793234cbbc2409" prot="public" static="no">
+        <name>FPU_MVFR1_FtZ_mode_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: FtZ mode bits Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1406" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___f_p_u_1gac566bde39a7afcceffbb21d830c269c1" prot="public" static="no">
+        <name>FPU_MVFR1_FtZ_mode_Msk</name>
+        <initializer>(0xFUL /*&lt;&lt; FPU_MVFR1_FtZ_mode_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MVFR1: FtZ mode bits Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1407" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1407" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Type definitions for the Floating Point Unit (FPU) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

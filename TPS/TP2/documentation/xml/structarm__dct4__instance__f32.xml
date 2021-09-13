@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structarm__dct4__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_dct4_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1a37d49571fe35012087153c093705cd11" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the DCT4. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2237" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1afa64b1618089e35c2b55cff71cb29715" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Nby2</definition>
+        <argsstring></argsstring>
+        <name>Nby2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>half of the length of the DCT4. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2238" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1a1bf2ed86ef2c3dd83af606bb3f520f2a" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>float32_t normalize</definition>
+        <argsstring></argsstring>
+        <name>normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>normalizing factor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2239" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1aca581481fccdff0f557f54a3ef20d967" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* pTwiddle</definition>
+        <argsstring></argsstring>
+        <name>pTwiddle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2240" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1abd73b9d7fb4951ba086e4820c2a48eb0" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* pCosFactor</definition>
+        <argsstring></argsstring>
+        <name>pCosFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the cosFactor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2241" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1ad4cd7c85eea3f7c5fff4630bbd979e6a" prot="public" static="no" mutable="no">
+        <type><ref refid="structarm__rfft__instance__f32" kindref="compound">arm_rfft_instance_f32</ref> *</type>
+        <definition>arm_rfft_instance_f32* pRfft</definition>
+        <argsstring></argsstring>
+        <name>pRfft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the real FFT instance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2242" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__dct4__instance__f32_1ab7bd4d374a1780dea50efd3e7ac220be" prot="public" static="no" mutable="no">
+        <type><ref refid="structarm__cfft__radix4__instance__f32" kindref="compound">arm_cfft_radix4_instance_f32</ref> *</type>
+        <definition>arm_cfft_radix4_instance_f32* pCfft</definition>
+        <argsstring></argsstring>
+        <name>pCfft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the complex FFT instance. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="2243" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2243" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point DCT4/IDCT4 function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="51">
+        <label>arm_rfft_instance_f32</label>
+        <link refid="structarm__rfft__instance__f32"/>
+        <childnode refid="50" relation="usage">
+          <edgelabel>pCfft</edgelabel>
+        </childnode>
+      </node>
+      <node id="49">
+        <label>arm_dct4_instance_f32</label>
+        <link refid="structarm__dct4__instance__f32"/>
+        <childnode refid="50" relation="usage">
+          <edgelabel>pCfft</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>pRfft</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>arm_cfft_radix4_instance_f32</label>
+        <link refid="structarm__cfft__radix4__instance__f32"/>
+      </node>
+    </collaborationgraph>
+    <location file="SDK/CMSIS/arm_math.h" line="2236" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="2235" bodyend="2244"/>
+    <listofallmembers>
+      <member refid="structarm__dct4__instance__f32_1a37d49571fe35012087153c093705cd11" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>N</name></member>
+      <member refid="structarm__dct4__instance__f32_1afa64b1618089e35c2b55cff71cb29715" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>Nby2</name></member>
+      <member refid="structarm__dct4__instance__f32_1a1bf2ed86ef2c3dd83af606bb3f520f2a" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>normalize</name></member>
+      <member refid="structarm__dct4__instance__f32_1ab7bd4d374a1780dea50efd3e7ac220be" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>pCfft</name></member>
+      <member refid="structarm__dct4__instance__f32_1abd73b9d7fb4951ba086e4820c2a48eb0" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>pCosFactor</name></member>
+      <member refid="structarm__dct4__instance__f32_1ad4cd7c85eea3f7c5fff4630bbd979e6a" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>pRfft</name></member>
+      <member refid="structarm__dct4__instance__f32_1aca581481fccdff0f557f54a3ef20d967" prot="public" virt="non-virtual"><scope>arm_dct4_instance_f32</scope><name>pTwiddle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

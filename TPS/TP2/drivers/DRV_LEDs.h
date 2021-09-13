@@ -1,9 +1,8 @@
-/*
- * DRV_LEDs.h
- *
- *  Created on: 29 ago. 2021
- *      Author: LM1
- */
+/***************************************************************************//**
+  @file     DRV_LEDs.h
+  @brief    LEDs driver
+  @author   Grupo 1
+ ******************************************************************************/
 
 #ifndef DRV_LEDS_H_
 #define DRV_LEDS_H_
@@ -32,19 +31,33 @@
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
 
-// initLEDs() - Initializes the LEDs.
+/**
+ * @brief Initializes the LEDs.
+ */
 void initLEDs();
-// dispClearLED(int n) - Turns LED n off. n = 0, 1, 2
+
+/**
+ * @brief Turn off a LED
+ * @param n Index of LED to turn off
+ */
 void dispClearLED(int n);
-// dispSetLED(int n) - Turns LED n on. n = 0, 1, 2
+
+/**
+ * @brief Turn on a LED
+ * @param n Index of LED to turn on
+ */
 void dispSetLED(int n);
-// dispToggleLED(int n) - Toggles LED n. n = 0, 1, 2
+
+/**
+ * @brief Toggle a LED
+ * @param n Index of LED to toggle
+ * @return 1 = timer expired
+ */
 void dispToggleLED(int n);
 
 
 /*******************************************************************************
  ******************************************************************************/
-
 
 
 #endif /* DRV_LEDS_H_ */

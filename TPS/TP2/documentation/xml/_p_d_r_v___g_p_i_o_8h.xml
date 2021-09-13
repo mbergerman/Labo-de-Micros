@@ -1,0 +1,656 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_p_d_r_v___g_p_i_o_8h" kind="file" language="C++">
+    <compoundname>PDRV_GPIO.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includedby refid="_d_r_v___board_8h" local="no">drivers/DRV_Board.h</includedby>
+    <includedby refid="_d_r_v___board_8c" local="yes">drivers/DRV_Board.c</includedby>
+    <includedby refid="_d_r_v___display_8h" local="yes">drivers/DRV_Display.h</includedby>
+    <includedby refid="_d_r_v___encoder_8h" local="yes">drivers/DRV_Encoder.h</includedby>
+    <includedby refid="_d_r_v___l_e_ds_8h" local="yes">drivers/DRV_LEDs.h</includedby>
+    <includedby refid="_d_r_v___reader_8h" local="yes">drivers/DRV_Reader.h</includedby>
+    <includedby refid="_d_r_v___reader_8c" local="yes">drivers/DRV_Reader.c</includedby>
+    <includedby refid="_d_r_v___stub___encoder_8c" local="yes">drivers/DRV_Stub_Encoder.c</includedby>
+    <includedby refid="_p_d_r_v___g_p_i_o_8c" local="yes">drivers/PDRV_GPIO.c</includedby>
+    <incdepgraph>
+      <node id="163">
+        <label>stdbool.h</label>
+      </node>
+      <node id="162">
+        <label>stdint.h</label>
+      </node>
+      <node id="161">
+        <label>drivers/PDRV_GPIO.h</label>
+        <link refid="_p_d_r_v___g_p_i_o_8h"/>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="171">
+        <label>drivers/DRV_Display.c</label>
+        <link refid="_d_r_v___display_8c"/>
+      </node>
+      <node id="170">
+        <label>drivers/DRV_Display.h</label>
+        <link refid="_d_r_v___display_8h"/>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>drivers/DRV_LEDs.c</label>
+        <link refid="_d_r_v___l_e_ds_8c"/>
+      </node>
+      <node id="175">
+        <label>drivers/DRV_LEDs.h</label>
+        <link refid="_d_r_v___l_e_ds_8h"/>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>source/App.c</label>
+        <link refid="_app_8c"/>
+      </node>
+      <node id="179">
+        <label>drivers/PDRV_GPIO.c</label>
+        <link refid="_p_d_r_v___g_p_i_o_8c"/>
+      </node>
+      <node id="167">
+        <label>drivers/DRV_Encoder.c</label>
+        <link refid="_d_r_v___encoder_8c"/>
+      </node>
+      <node id="174">
+        <label>drivers/DRV_Encoder.h</label>
+        <link refid="_d_r_v___encoder_8h"/>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>drivers/PDRV_GPIO.h</label>
+        <link refid="_p_d_r_v___g_p_i_o_8h"/>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>drivers/DRV_Reader.c</label>
+        <link refid="_d_r_v___reader_8c"/>
+      </node>
+      <node id="177">
+        <label>drivers/DRV_Reader.h</label>
+        <link refid="_d_r_v___reader_8h"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>source/NumberEditor.c</label>
+        <link refid="_number_editor_8c"/>
+      </node>
+      <node id="172">
+        <label>drivers/DRV_Stub_Display.c</label>
+        <link refid="_d_r_v___stub___display_8c"/>
+      </node>
+      <node id="166">
+        <label>drivers/DRV_Board.c</label>
+        <link refid="_d_r_v___board_8c"/>
+      </node>
+      <node id="165">
+        <label>drivers/DRV_Board.h</label>
+        <link refid="_d_r_v___board_8h"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>drivers/DRV_Stub_Encoder.c</label>
+        <link refid="_d_r_v___stub___encoder_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_p_d_r_v___g_p_i_o_8h_1a282f03f9d8560d495e180e7e1703ef0b" prot="public" static="no">
+        <name>PORTNUM2PIN</name>
+        <param><defname>p</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>(((p)&lt;&lt;5) + (n))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="28" column="9" bodyfile="drivers/PDRV_GPIO.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_p_d_r_v___g_p_i_o_8h_1ae544ad185baf9bec7774fd7a09268e9d" prot="public" static="no">
+        <name>PIN2PORT</name>
+        <param><defname>p</defname></param>
+        <initializer>(((p)&gt;&gt;5) &amp; 0x07)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="29" column="9" bodyfile="drivers/PDRV_GPIO.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_p_d_r_v___g_p_i_o_8h_1ac10b3b1cdf332ee460d4ed0a8b85bb45" prot="public" static="no">
+        <name>PIN2NUM</name>
+        <param><defname>p</defname></param>
+        <initializer>((p) &amp; 0x1F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="30" column="9" bodyfile="drivers/PDRV_GPIO.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_p_d_r_v___g_p_i_o_8h_1a1bb283bd7893b9855e2f23013891fc82" prot="public" static="no">
+        <name>INPUT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="35" column="9" bodyfile="drivers/PDRV_GPIO.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_p_d_r_v___g_p_i_o_8h_1a61a3c9a18380aafb6e430e79bf596557" prot="public" static="no">
+        <name>OUTPUT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="36" column="9" bodyfile="drivers/PDRV_GPIO.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_p_d_r_v___g_p_i_o_8h_1a6295096662a20dd56186396e535fbe92" prot="public" static="no">
+        <name>INPUT_PULLUP</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="37" column="9" bodyfile="drivers/PDRV_GPIO.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_p_d_r_v___g_p_i_o_8h_1acc2f64df093104e4b029d86930fa4b8b" prot="public" static="no">
+        <name>INPUT_PULLDOWN</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="38" column="9" bodyfile="drivers/PDRV_GPIO.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_p_d_r_v___g_p_i_o_8h_1ab811d8c6ff3a505312d3276590444289" prot="public" static="no">
+        <name>LOW</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="44" column="9" bodyfile="drivers/PDRV_GPIO.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_p_d_r_v___g_p_i_o_8h_1a5bb885982ff66a2e0a0a45a8ee9c35e2" prot="public" static="no">
+        <name>HIGH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="45" column="9" bodyfile="drivers/PDRV_GPIO.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@4</name>
+        <enumvalue id="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06cae3d8a811f3bf7196f361be4104db68db" prot="public">
+          <name>PA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06ca8b7dd81ba2f0d15957795457d92ce139" prot="public">
+          <name>PB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46" prot="public">
+          <name>PC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06caefbc069e0ac4cd293f3ba527bec2befe" prot="public">
+          <name>PD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06ca84a0e8421125bc6ef85e43bab494f68c" prot="public">
+          <name>PE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="23" column="1" bodyfile="drivers/PDRV_GPIO.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="enum" id="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@5</name>
+        <enumvalue id="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea03d5a4eb216235e8364c1ab57b01c019" prot="public">
+          <name>GPIO_IRQ_MODE_DISABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea02691ee8b93be24de9b7af19e3eeffe7" prot="public">
+          <name>GPIO_IRQ_MODE_LOGIC_0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea0c9928d00d28a04d73b7e6d89ecb2c47" prot="public">
+          <name>GPIO_IRQ_MODE_RISING_EDGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea3f8b1185a53dd65d562e0a62f9f2594e" prot="public">
+          <name>GPIO_IRQ_MODE_FALLING_EDGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9eae5772bdbe5b2a118f9f6f5597b045792" prot="public">
+          <name>GPIO_IRQ_MODE_BOTH_EDGES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea14dfabbdacc179013e9731404680defb" prot="public">
+          <name>GPIO_IRQ_MODE_LOGIC_1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea4cabd2f47e5f82599e5a44614f7fbe5c" prot="public">
+          <name>GPIO_IRQ_CANT_MODES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="54" column="1" bodyfile="drivers/PDRV_GPIO.h" bodystart="54" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_p_d_r_v___g_p_i_o_8h_1aede467d93ddeb5fdeff6023236aa4ad6" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t pin_t</definition>
+        <argsstring></argsstring>
+        <name>pin_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="65" column="1" bodyfile="drivers/PDRV_GPIO.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_p_d_r_v___g_p_i_o_8h_1a393f57a2cb0a6d68e52055655b75e6c5" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* pinIrqFun_t) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>pinIrqFun_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="67" column="1" bodyfile="drivers/PDRV_GPIO.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_p_d_r_v___g_p_i_o_8h_1ab34efe1e7a4661cb63c09374414169d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpioMode</definition>
+        <argsstring>(pin_t pin, uint8_t mode)</argsstring>
+        <name>gpioMode</name>
+        <param>
+          <type><ref refid="_p_d_r_v___g_p_i_o_8h_1aede467d93ddeb5fdeff6023236aa4ad6" kindref="member">pin_t</ref></type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Configures the specified pin to behave either as an input or an output. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pin whose mode you wish to set (according PORTNUM2PIN) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>INPUT, OUTPUT, INPUT_PULLUP or INPUT_PULLDOWN. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>!! </para>        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="83" column="1" bodyfile="drivers/PDRV_GPIO.c" bodystart="42" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="_p_d_r_v___g_p_i_o_8h_1a7dfc26dc60c3056b0cbe99bfaedab27f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gpioIRQ</definition>
+        <argsstring>(pin_t pin, uint8_t irqMode, pinIrqFun_t irqFun)</argsstring>
+        <name>gpioIRQ</name>
+        <param>
+          <type><ref refid="_p_d_r_v___g_p_i_o_8h_1aede467d93ddeb5fdeff6023236aa4ad6" kindref="member">pin_t</ref></type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>irqMode</declname>
+        </param>
+        <param>
+          <type><ref refid="_p_d_r_v___g_p_i_o_8h_1a393f57a2cb0a6d68e52055655b75e6c5" kindref="member">pinIrqFun_t</ref></type>
+          <declname>irqFun</declname>
+        </param>
+        <briefdescription>
+<para>Configures how the pin reacts when an IRQ event ocurrs. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pin whose IRQ mode you wish to set (according PORTNUM2PIN) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>irqMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>disable, risingEdge, fallingEdge or bothEdges </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>irqFun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function to call on pin event </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Registration succeed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="92" column="1" bodyfile="drivers/PDRV_GPIO.c" bodystart="69" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="_p_d_r_v___g_p_i_o_8h_1ad68eec4f70f9f1fa38ae48c138c0d82f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpioWrite</definition>
+        <argsstring>(pin_t pin, bool value)</argsstring>
+        <name>gpioWrite</name>
+        <param>
+          <type><ref refid="_p_d_r_v___g_p_i_o_8h_1aede467d93ddeb5fdeff6023236aa4ad6" kindref="member">pin_t</ref></type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a HIGH or a LOW value to a digital pin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pin to write (according PORTNUM2PIN) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired value (HIGH or LOW) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="99" column="1" bodyfile="drivers/PDRV_GPIO.c" bodystart="89" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="_p_d_r_v___g_p_i_o_8h_1a87cc22913db98be1ef1dadb20cda7831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpioToggle</definition>
+        <argsstring>(pin_t pin)</argsstring>
+        <name>gpioToggle</name>
+        <param>
+          <type><ref refid="_p_d_r_v___g_p_i_o_8h_1aede467d93ddeb5fdeff6023236aa4ad6" kindref="member">pin_t</ref></type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>Toggle the value of a digital pin (HIGH&lt;-&gt;LOW) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pin to toggle (according PORTNUM2PIN) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="105" column="1" bodyfile="drivers/PDRV_GPIO.c" bodystart="101" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="_p_d_r_v___g_p_i_o_8h_1a59ce7b278cd2032a644766fd87e2e61a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gpioRead</definition>
+        <argsstring>(pin_t pin)</argsstring>
+        <name>gpioRead</name>
+        <param>
+          <type><ref refid="_p_d_r_v___g_p_i_o_8h_1aede467d93ddeb5fdeff6023236aa4ad6" kindref="member">pin_t</ref></type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>Reads the value from a specified digital pin, either HIGH or LOW. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pin to read (according PORTNUM2PIN) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HIGH or LOW </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="drivers/PDRV_GPIO.h" line="112" column="1" bodyfile="drivers/PDRV_GPIO.c" bodystart="108" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>GPIO driver. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Grupo 1 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************/</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>_GPIO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_GPIO_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>INCLUDE<sp/>HEADER<sp/>FILES</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>CONSTANT<sp/>AND<sp/>MACRO<sp/>DEFINITIONS<sp/>USING<sp/>#DEFINE</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Ports</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06ca84a0e8421125bc6ef85e43bab494f68c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06cae3d8a811f3bf7196f361be4104db68db" kindref="member">PA</ref>,<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06ca8b7dd81ba2f0d15957795457d92ce139" kindref="member">PB</ref>,<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06caa2c62b62b658ac45e83749e9e9c1cb46" kindref="member">PC</ref>,<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06caefbc069e0ac4cd293f3ba527bec2befe" kindref="member">PD</ref>,<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1adc29c2ff13d900c2f185ee95427fb06ca84a0e8421125bc6ef85e43bab494f68c" kindref="member">PE</ref><sp/>};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Convert<sp/>port<sp/>and<sp/>number<sp/>into<sp/>pin<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Ex:<sp/>PTB5<sp/><sp/>-&gt;<sp/>PORTNUM2PIN(PB,5)<sp/><sp/>-&gt;<sp/>0x25</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>PTC22<sp/>-&gt;<sp/>PORTNUM2PIN(PC,22)<sp/>-&gt;<sp/>0x56</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="_p_d_r_v___g_p_i_o_8h_1a282f03f9d8560d495e180e7e1703ef0b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PORTNUM2PIN(p,n)<sp/><sp/><sp/><sp/>(((p)&lt;&lt;5)<sp/>+<sp/>(n))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_p_d_r_v___g_p_i_o_8h_1ae544ad185baf9bec7774fd7a09268e9d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN2PORT(p)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((p)&gt;&gt;5)<sp/>&amp;<sp/>0x07)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_p_d_r_v___g_p_i_o_8h_1ac10b3b1cdf332ee460d4ed0a8b85bb45" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN2NUM(p)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((p)<sp/>&amp;<sp/>0x1F)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Modes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INPUT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="_p_d_r_v___g_p_i_o_8h_1a1bb283bd7893b9855e2f23013891fc82" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_p_d_r_v___g_p_i_o_8h_1a61a3c9a18380aafb6e430e79bf596557" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_p_d_r_v___g_p_i_o_8h_1a6295096662a20dd56186396e535fbe92" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INPUT_PULLUP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_p_d_r_v___g_p_i_o_8h_1acc2f64df093104e4b029d86930fa4b8b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INPUT_PULLDOWN<sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>INPUT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Digital<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_p_d_r_v___g_p_i_o_8h_1ab811d8c6ff3a505312d3276590444289" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOW<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_p_d_r_v___g_p_i_o_8h_1a5bb885982ff66a2e0a0a45a8ee9c35e2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HIGH<sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>ENUMERATIONS<sp/>AND<sp/>STRUCTURES<sp/>AND<sp/>TYPEDEFS</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IRQ<sp/>modes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="55" refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea03d5a4eb216235e8364c1ab57b01c019" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea03d5a4eb216235e8364c1ab57b01c019" kindref="member">GPIO_IRQ_MODE_DISABLE</ref>,</highlight></codeline>
+<codeline lineno="56" refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea02691ee8b93be24de9b7af19e3eeffe7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea02691ee8b93be24de9b7af19e3eeffe7" kindref="member">GPIO_IRQ_MODE_LOGIC_0</ref>,</highlight></codeline>
+<codeline lineno="57" refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea0c9928d00d28a04d73b7e6d89ecb2c47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea0c9928d00d28a04d73b7e6d89ecb2c47" kindref="member">GPIO_IRQ_MODE_RISING_EDGE</ref>,</highlight></codeline>
+<codeline lineno="58" refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea3f8b1185a53dd65d562e0a62f9f2594e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea3f8b1185a53dd65d562e0a62f9f2594e" kindref="member">GPIO_IRQ_MODE_FALLING_EDGE</ref>,</highlight></codeline>
+<codeline lineno="59" refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9eae5772bdbe5b2a118f9f6f5597b045792" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9eae5772bdbe5b2a118f9f6f5597b045792" kindref="member">GPIO_IRQ_MODE_BOTH_EDGES</ref>,</highlight></codeline>
+<codeline lineno="60" refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea14dfabbdacc179013e9731404680defb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea14dfabbdacc179013e9731404680defb" kindref="member">GPIO_IRQ_MODE_LOGIC_1</ref>,</highlight></codeline>
+<codeline lineno="61" refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea4cabd2f47e5f82599e5a44614f7fbe5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a61dadd085c1777f559549e05962b2c9ea4cabd2f47e5f82599e5a44614f7fbe5c" kindref="member">GPIO_IRQ_CANT_MODES</ref></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_p_d_r_v___g_p_i_o_8h_1aede467d93ddeb5fdeff6023236aa4ad6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1aede467d93ddeb5fdeff6023236aa4ad6" kindref="member">pin_t</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_p_d_r_v___g_p_i_o_8h_1a393f57a2cb0a6d68e52055655b75e6c5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="_p_d_r_v___g_p_i_o_8h_1a393f57a2cb0a6d68e52055655b75e6c5" kindref="member">pinIrqFun_t</ref>)(void);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/>VARIABLE<sp/>PROTOTYPES<sp/>WITH<sp/>GLOBAL<sp/>SCOPE</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*<sp/>FUNCTION<sp/>PROTOTYPES<sp/>WITH<sp/>GLOBAL<sp/>SCOPE</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1ab34efe1e7a4661cb63c09374414169d6" kindref="member">gpioMode</ref><sp/>(<ref refid="_p_d_r_v___g_p_i_o_8h_1aede467d93ddeb5fdeff6023236aa4ad6" kindref="member">pin_t</ref><sp/>pin,<sp/>uint8_t<sp/>mode);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a7dfc26dc60c3056b0cbe99bfaedab27f" kindref="member">gpioIRQ</ref><sp/>(<ref refid="_p_d_r_v___g_p_i_o_8h_1aede467d93ddeb5fdeff6023236aa4ad6" kindref="member">pin_t</ref><sp/>pin,<sp/>uint8_t<sp/>irqMode,<sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a393f57a2cb0a6d68e52055655b75e6c5" kindref="member">pinIrqFun_t</ref><sp/>irqFun);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1ad68eec4f70f9f1fa38ae48c138c0d82f" kindref="member">gpioWrite</ref><sp/>(<ref refid="_p_d_r_v___g_p_i_o_8h_1aede467d93ddeb5fdeff6023236aa4ad6" kindref="member">pin_t</ref><sp/>pin,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a87cc22913db98be1ef1dadb20cda7831" kindref="member">gpioToggle</ref><sp/>(<ref refid="_p_d_r_v___g_p_i_o_8h_1aede467d93ddeb5fdeff6023236aa4ad6" kindref="member">pin_t</ref><sp/>pin);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_p_d_r_v___g_p_i_o_8h_1a59ce7b278cd2032a644766fd87e2e61a" kindref="member">gpioRead</ref><sp/>(<ref refid="_p_d_r_v___g_p_i_o_8h_1aede467d93ddeb5fdeff6023236aa4ad6" kindref="member">pin_t</ref><sp/>pin);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_GPIO_H_</highlight></codeline>
+    </programlisting>
+    <location file="drivers/PDRV_GPIO.h"/>
+  </compounddef>
+</doxygen>

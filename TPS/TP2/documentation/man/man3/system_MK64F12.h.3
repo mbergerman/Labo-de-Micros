@@ -1,0 +1,114 @@
+.TH "SDK/CMSIS/system_MK64F12.h" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDK/CMSIS/system_MK64F12.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdint\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_SYSTEM_MK64F12_H_\fP"
+.br
+.ti -1c
+.RI "#define \fBDISABLE_WDOG\fP   1"
+.br
+.ti -1c
+.RI "#define \fBCPU_XTAL_CLK_HZ\fP   50000000u           /* Value of the external crystal or oscillator clock frequency in Hz */"
+.br
+.ti -1c
+.RI "#define \fBCPU_XTAL32k_CLK_HZ\fP   32768u              /* Value of the external 32k crystal or oscillator clock frequency in Hz */"
+.br
+.ti -1c
+.RI "#define \fBCPU_INT_SLOW_CLK_HZ\fP   32768u              /* Value of the slow internal oscillator clock frequency in Hz  */"
+.br
+.ti -1c
+.RI "#define \fBCPU_INT_FAST_CLK_HZ\fP   4000000u            /* Value of the fast internal oscillator clock frequency in Hz  */"
+.br
+.ti -1c
+.RI "#define \fBCPU_INT_IRC_CLK_HZ\fP   48000000u           /* Value of the 48M internal oscillator clock frequency in Hz  */"
+.br
+.ti -1c
+.RI "#define \fBSYSTEM_RTC_CR_VALUE\fP   0x0300U             /* RTC_CR */"
+.br
+.ti -1c
+.RI "#define \fBSYSTEM_SMC_PMPROT_VALUE\fP   0x2AU               /* SMC_PMPROT */"
+.br
+.ti -1c
+.RI "#define \fBDEFAULT_SYSTEM_CLOCK\fP   20971520u           /* Default System clock value */"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSystemInit\fP (void)"
+.br
+.RI "Setup the microcontroller system\&. "
+.ti -1c
+.RI "void \fBSystemCoreClockUpdate\fP (void)"
+.br
+.RI "Updates the SystemCoreClock variable\&. "
+.ti -1c
+.RI "void \fBSystemInitHook\fP (void)"
+.br
+.RI "SystemInit function hook\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBSystemCoreClock\fP"
+.br
+.RI "System clock frequency (core clock) "
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define _SYSTEM_MK64F12_H_"
+Symbol preventing repeated inclusion 
+.SS "#define CPU_INT_FAST_CLK_HZ   4000000u            /* Value of the fast internal oscillator clock frequency in Hz  */"
+
+.SS "#define CPU_INT_IRC_CLK_HZ   48000000u           /* Value of the 48M internal oscillator clock frequency in Hz  */"
+
+.SS "#define CPU_INT_SLOW_CLK_HZ   32768u              /* Value of the slow internal oscillator clock frequency in Hz  */"
+
+.SS "#define CPU_XTAL32k_CLK_HZ   32768u              /* Value of the external 32k crystal or oscillator clock frequency in Hz */"
+
+.SS "#define CPU_XTAL_CLK_HZ   50000000u           /* Value of the external crystal or oscillator clock frequency in Hz */"
+
+.SS "#define DEFAULT_SYSTEM_CLOCK   20971520u           /* Default System clock value */"
+
+.SS "#define DISABLE_WDOG   1"
+
+.SS "#define SYSTEM_RTC_CR_VALUE   0x0300U             /* RTC_CR */"
+
+.SS "#define SYSTEM_SMC_PMPROT_VALUE   0x2AU               /* SMC_PMPROT */"
+
+.SH "Function Documentation"
+.PP 
+.SS "void SystemCoreClockUpdate (void)"
+
+.PP
+Updates the SystemCoreClock variable\&. It must be called whenever the core clock is changed during program execution\&. \fBSystemCoreClockUpdate()\fP evaluates the clock register settings and calculates the current core clock\&. 
+.SS "void SystemInit (void)"
+
+.PP
+Setup the microcontroller system\&. Typically this function configures the oscillator (PLL) that is part of the microcontroller device\&. For systems with variable clock speed it also updates the variable SystemCoreClock\&. SystemInit is called from startup_device file\&. 
+.SS "void SystemInitHook (void)"
+
+.PP
+SystemInit function hook\&. This weak function allows to call specific initialization code during the \fBSystemInit()\fP execution\&.This can be used when an application specific code needs to be called as close to the reset entry as possible (for example the Multicore Manager MCMGR_EarlyInit() function call)\&. NOTE: No global r/w variables can be used in this hook function because the initialization of these variables happens after this function\&. 
+.SH "Variable Documentation"
+.PP 
+.SS "uint32_t SystemCoreClock"
+
+.PP
+System clock frequency (core clock) The system clock frequency supplied to the SysTick timer and the processor core clock\&. This variable can be used by the user application to setup the SysTick timer or configure other parameters\&. It may also be used by debugger to query the frequency of the debug timer or configure the trace clock speed SystemCoreClock is initialized with a correct predefined value\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

@@ -1,0 +1,73 @@
+\hypertarget{_account_manager_8c}{}\section{source/\+Account\+Manager.c File Reference}
+\label{_account_manager_8c}\index{source/\+Account\+Manager.\+c@{source/\+Account\+Manager.\+c}}
+{\ttfamily \#include \char`\"{}Account\+Manager.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_account_manager_8c_a5d2815bc5b836e61e1ae8dcfc17b6d94}{init\+\_\+data\+\_\+base}} ()
+\item 
+bool \mbox{\hyperlink{_account_manager_8c_a96e7122e62f667a55492a25afe545bf6}{id\+\_\+check}} (uint32\+\_\+t I\+D\+\_\+buffered)
+\item 
+\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}} \mbox{\hyperlink{_account_manager_8c_aaddd3153e2bc1669037e6a778ad1b6a0}{user\+\_\+search}} (uint32\+\_\+t I\+D\+\_\+to\+\_\+search)
+\item 
+bool \mbox{\hyperlink{_account_manager_8c_a3e86716fd7c838e5dfda6fdf09cba007}{add\+\_\+to\+\_\+data\+\_\+base}} (\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}} admin\+\_\+user, uint32\+\_\+t I\+D\+\_\+u, uint32\+\_\+t P\+I\+N\+\_\+u, bool admin\+\_\+u)
+\item 
+bool \mbox{\hyperlink{_account_manager_8c_a3037a158bf4cbf78b42d8fc2486f23e9}{delete\+\_\+from\+\_\+data\+\_\+base}} (\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}} admin\+\_\+user, uint32\+\_\+t I\+D\+\_\+u)
+\item 
+bool \mbox{\hyperlink{_account_manager_8c_a20575793163cba949089ee24aad7200e}{edit\+\_\+\+P\+IN}} (uint32\+\_\+t user\+\_\+to\+\_\+change, uint32\+\_\+t new\+\_\+\+P\+IN)
+\item 
+void \mbox{\hyperlink{_account_manager_8c_a94492add454898020cc4c16d2a41d4e6}{unblock\+\_\+user}} (\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}} u)
+\item 
+bool \mbox{\hyperlink{_account_manager_8c_ab24bda9cc9e8484bcfb43065d9622b41}{is\+\_\+blocked}} (\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}} u)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_account_manager_8c_a3e86716fd7c838e5dfda6fdf09cba007}\label{_account_manager_8c_a3e86716fd7c838e5dfda6fdf09cba007}} 
+\index{Account\+Manager.\+c@{Account\+Manager.\+c}!add\+\_\+to\+\_\+data\+\_\+base@{add\+\_\+to\+\_\+data\+\_\+base}}
+\index{add\+\_\+to\+\_\+data\+\_\+base@{add\+\_\+to\+\_\+data\+\_\+base}!Account\+Manager.\+c@{Account\+Manager.\+c}}
+\subsubsection{\texorpdfstring{add\+\_\+to\+\_\+data\+\_\+base()}{add\_to\_data\_base()}}
+{\footnotesize\ttfamily bool add\+\_\+to\+\_\+data\+\_\+base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}}}]{admin\+\_\+user,  }\item[{uint32\+\_\+t}]{I\+D\+\_\+u,  }\item[{uint32\+\_\+t}]{P\+I\+N\+\_\+u,  }\item[{bool}]{admin\+\_\+u }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_account_manager_8c_a3037a158bf4cbf78b42d8fc2486f23e9}\label{_account_manager_8c_a3037a158bf4cbf78b42d8fc2486f23e9}} 
+\index{Account\+Manager.\+c@{Account\+Manager.\+c}!delete\+\_\+from\+\_\+data\+\_\+base@{delete\+\_\+from\+\_\+data\+\_\+base}}
+\index{delete\+\_\+from\+\_\+data\+\_\+base@{delete\+\_\+from\+\_\+data\+\_\+base}!Account\+Manager.\+c@{Account\+Manager.\+c}}
+\subsubsection{\texorpdfstring{delete\+\_\+from\+\_\+data\+\_\+base()}{delete\_from\_data\_base()}}
+{\footnotesize\ttfamily bool delete\+\_\+from\+\_\+data\+\_\+base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}}}]{admin\+\_\+user,  }\item[{uint32\+\_\+t}]{I\+D\+\_\+u }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_account_manager_8c_a20575793163cba949089ee24aad7200e}\label{_account_manager_8c_a20575793163cba949089ee24aad7200e}} 
+\index{Account\+Manager.\+c@{Account\+Manager.\+c}!edit\+\_\+\+P\+IN@{edit\+\_\+\+P\+IN}}
+\index{edit\+\_\+\+P\+IN@{edit\+\_\+\+P\+IN}!Account\+Manager.\+c@{Account\+Manager.\+c}}
+\subsubsection{\texorpdfstring{edit\+\_\+\+P\+I\+N()}{edit\_PIN()}}
+{\footnotesize\ttfamily bool edit\+\_\+\+P\+IN (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{user\+\_\+to\+\_\+change,  }\item[{uint32\+\_\+t}]{new\+\_\+\+P\+IN }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_account_manager_8c_a96e7122e62f667a55492a25afe545bf6}\label{_account_manager_8c_a96e7122e62f667a55492a25afe545bf6}} 
+\index{Account\+Manager.\+c@{Account\+Manager.\+c}!id\+\_\+check@{id\+\_\+check}}
+\index{id\+\_\+check@{id\+\_\+check}!Account\+Manager.\+c@{Account\+Manager.\+c}}
+\subsubsection{\texorpdfstring{id\+\_\+check()}{id\_check()}}
+{\footnotesize\ttfamily bool id\+\_\+check (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{I\+D\+\_\+buffered }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_account_manager_8c_a5d2815bc5b836e61e1ae8dcfc17b6d94}\label{_account_manager_8c_a5d2815bc5b836e61e1ae8dcfc17b6d94}} 
+\index{Account\+Manager.\+c@{Account\+Manager.\+c}!init\+\_\+data\+\_\+base@{init\+\_\+data\+\_\+base}}
+\index{init\+\_\+data\+\_\+base@{init\+\_\+data\+\_\+base}!Account\+Manager.\+c@{Account\+Manager.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+data\+\_\+base()}{init\_data\_base()}}
+{\footnotesize\ttfamily void init\+\_\+data\+\_\+base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_account_manager_8c_ab24bda9cc9e8484bcfb43065d9622b41}\label{_account_manager_8c_ab24bda9cc9e8484bcfb43065d9622b41}} 
+\index{Account\+Manager.\+c@{Account\+Manager.\+c}!is\+\_\+blocked@{is\+\_\+blocked}}
+\index{is\+\_\+blocked@{is\+\_\+blocked}!Account\+Manager.\+c@{Account\+Manager.\+c}}
+\subsubsection{\texorpdfstring{is\+\_\+blocked()}{is\_blocked()}}
+{\footnotesize\ttfamily bool is\+\_\+blocked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}}}]{u }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_account_manager_8c_a94492add454898020cc4c16d2a41d4e6}\label{_account_manager_8c_a94492add454898020cc4c16d2a41d4e6}} 
+\index{Account\+Manager.\+c@{Account\+Manager.\+c}!unblock\+\_\+user@{unblock\+\_\+user}}
+\index{unblock\+\_\+user@{unblock\+\_\+user}!Account\+Manager.\+c@{Account\+Manager.\+c}}
+\subsubsection{\texorpdfstring{unblock\+\_\+user()}{unblock\_user()}}
+{\footnotesize\ttfamily void unblock\+\_\+user (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}}}]{u }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_account_manager_8c_aaddd3153e2bc1669037e6a778ad1b6a0}\label{_account_manager_8c_aaddd3153e2bc1669037e6a778ad1b6a0}} 
+\index{Account\+Manager.\+c@{Account\+Manager.\+c}!user\+\_\+search@{user\+\_\+search}}
+\index{user\+\_\+search@{user\+\_\+search}!Account\+Manager.\+c@{Account\+Manager.\+c}}
+\subsubsection{\texorpdfstring{user\+\_\+search()}{user\_search()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}} user\+\_\+search (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{I\+D\+\_\+to\+\_\+search }\end{DoxyParamCaption})}
+

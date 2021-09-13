@@ -1,0 +1,150 @@
+\hypertarget{system___m_k64_f12_8h}{}\section{S\+D\+K/\+C\+M\+S\+I\+S/system\+\_\+\+M\+K64\+F12.h File Reference}
+\label{system___m_k64_f12_8h}\index{S\+D\+K/\+C\+M\+S\+I\+S/system\+\_\+\+M\+K64\+F12.\+h@{S\+D\+K/\+C\+M\+S\+I\+S/system\+\_\+\+M\+K64\+F12.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{system___m_k64_f12_8h_a39879cab55de5855c9b48a91551690da}{\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+M\+K64\+F12\+\_\+\+H\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{system___m_k64_f12_8h_a93c87c5f0e67ed3de661632f8b54d803}{D\+I\+S\+A\+B\+L\+E\+\_\+\+W\+D\+OG}}~1
+\item 
+\#define \mbox{\hyperlink{system___m_k64_f12_8h_acf80ae1c70da6f1932185345fb089ce2}{C\+P\+U\+\_\+\+X\+T\+A\+L\+\_\+\+C\+L\+K\+\_\+\+HZ}}~50000000u           /$\ast$ Value of the external crystal or oscillator clock frequency in Hz $\ast$/
+\item 
+\#define \mbox{\hyperlink{system___m_k64_f12_8h_ab701f4ea593c322e0f7a3ee5f0572834}{C\+P\+U\+\_\+\+X\+T\+A\+L32k\+\_\+\+C\+L\+K\+\_\+\+HZ}}~32768u              /$\ast$ Value of the external 32k crystal or oscillator clock frequency in Hz $\ast$/
+\item 
+\#define \mbox{\hyperlink{system___m_k64_f12_8h_a925e4835a9fdb52f03bd354d62d6ba0a}{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+S\+L\+O\+W\+\_\+\+C\+L\+K\+\_\+\+HZ}}~32768u              /$\ast$ Value of the slow internal oscillator clock frequency in Hz  $\ast$/
+\item 
+\#define \mbox{\hyperlink{system___m_k64_f12_8h_a741ad9275688de8051f4bebd98a682bc}{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+F\+A\+S\+T\+\_\+\+C\+L\+K\+\_\+\+HZ}}~4000000u            /$\ast$ Value of the fast internal oscillator clock frequency in Hz  $\ast$/
+\item 
+\#define \mbox{\hyperlink{system___m_k64_f12_8h_adf2999382b610afc85c9958015d46832}{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+I\+R\+C\+\_\+\+C\+L\+K\+\_\+\+HZ}}~48000000u           /$\ast$ Value of the 48\+M internal oscillator clock frequency in Hz  $\ast$/
+\item 
+\#define \mbox{\hyperlink{system___m_k64_f12_8h_a8336a25a984300c07fa6e2bab183879a}{S\+Y\+S\+T\+E\+M\+\_\+\+R\+T\+C\+\_\+\+C\+R\+\_\+\+V\+A\+L\+UE}}~0x0300\+U             /$\ast$ R\+T\+C\+\_\+\+C\+R $\ast$/
+\item 
+\#define \mbox{\hyperlink{system___m_k64_f12_8h_af2ba7a98da10e4e5ac052dc485113517}{S\+Y\+S\+T\+E\+M\+\_\+\+S\+M\+C\+\_\+\+P\+M\+P\+R\+O\+T\+\_\+\+V\+A\+L\+UE}}~0x2\+A\+U               /$\ast$ S\+M\+C\+\_\+\+P\+M\+P\+R\+O\+T $\ast$/
+\item 
+\#define \mbox{\hyperlink{system___m_k64_f12_8h_a87431195115b66c4874dc05a6eae554f}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+CK}}~20971520u           /$\ast$ Default System clock value $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{system___m_k64_f12_8h_a93f514700ccf00d08dbdcff7f1224eb2}{System\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Setup the microcontroller system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{system___m_k64_f12_8h_ae0c36a9591fe6e9c45ecb21a794f0f0f}{System\+Core\+Clock\+Update}} (void)
+\begin{DoxyCompactList}\small\item\em Updates the System\+Core\+Clock variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{system___m_k64_f12_8h_a1e7778affa458b40eb905a9df371516c}{System\+Init\+Hook}} (void)
+\begin{DoxyCompactList}\small\item\em System\+Init function hook. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{system___m_k64_f12_8h_aa3cd3e43291e81e795d642b79b6088e6}{System\+Core\+Clock}}
+\begin{DoxyCompactList}\small\item\em System clock frequency (core clock) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{system___m_k64_f12_8h_a39879cab55de5855c9b48a91551690da}\label{system___m_k64_f12_8h_a39879cab55de5855c9b48a91551690da}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+M\+K64\+F12\+\_\+\+H\+\_\+@{\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+M\+K64\+F12\+\_\+\+H\+\_\+}}
+\index{\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+M\+K64\+F12\+\_\+\+H\+\_\+@{\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+M\+K64\+F12\+\_\+\+H\+\_\+}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+M\+K64\+F12\+\_\+\+H\+\_\+}{\_SYSTEM\_MK64F12\_H\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+M\+K64\+F12\+\_\+\+H\+\_\+}
+
+Symbol preventing repeated inclusion \mbox{\Hypertarget{system___m_k64_f12_8h_a741ad9275688de8051f4bebd98a682bc}\label{system___m_k64_f12_8h_a741ad9275688de8051f4bebd98a682bc}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+F\+A\+S\+T\+\_\+\+C\+L\+K\+\_\+\+HZ@{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+F\+A\+S\+T\+\_\+\+C\+L\+K\+\_\+\+HZ}}
+\index{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+F\+A\+S\+T\+\_\+\+C\+L\+K\+\_\+\+HZ@{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+F\+A\+S\+T\+\_\+\+C\+L\+K\+\_\+\+HZ}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+F\+A\+S\+T\+\_\+\+C\+L\+K\+\_\+\+HZ}{CPU\_INT\_FAST\_CLK\_HZ}}
+{\footnotesize\ttfamily \#define C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+F\+A\+S\+T\+\_\+\+C\+L\+K\+\_\+\+HZ~4000000u            /$\ast$ Value of the fast internal oscillator clock frequency in Hz  $\ast$/}
+
+\mbox{\Hypertarget{system___m_k64_f12_8h_adf2999382b610afc85c9958015d46832}\label{system___m_k64_f12_8h_adf2999382b610afc85c9958015d46832}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+I\+R\+C\+\_\+\+C\+L\+K\+\_\+\+HZ@{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+I\+R\+C\+\_\+\+C\+L\+K\+\_\+\+HZ}}
+\index{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+I\+R\+C\+\_\+\+C\+L\+K\+\_\+\+HZ@{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+I\+R\+C\+\_\+\+C\+L\+K\+\_\+\+HZ}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+I\+R\+C\+\_\+\+C\+L\+K\+\_\+\+HZ}{CPU\_INT\_IRC\_CLK\_HZ}}
+{\footnotesize\ttfamily \#define C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+I\+R\+C\+\_\+\+C\+L\+K\+\_\+\+HZ~48000000u           /$\ast$ Value of the 48\+M internal oscillator clock frequency in Hz  $\ast$/}
+
+\mbox{\Hypertarget{system___m_k64_f12_8h_a925e4835a9fdb52f03bd354d62d6ba0a}\label{system___m_k64_f12_8h_a925e4835a9fdb52f03bd354d62d6ba0a}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+S\+L\+O\+W\+\_\+\+C\+L\+K\+\_\+\+HZ@{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+S\+L\+O\+W\+\_\+\+C\+L\+K\+\_\+\+HZ}}
+\index{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+S\+L\+O\+W\+\_\+\+C\+L\+K\+\_\+\+HZ@{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+S\+L\+O\+W\+\_\+\+C\+L\+K\+\_\+\+HZ}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+S\+L\+O\+W\+\_\+\+C\+L\+K\+\_\+\+HZ}{CPU\_INT\_SLOW\_CLK\_HZ}}
+{\footnotesize\ttfamily \#define C\+P\+U\+\_\+\+I\+N\+T\+\_\+\+S\+L\+O\+W\+\_\+\+C\+L\+K\+\_\+\+HZ~32768u              /$\ast$ Value of the slow internal oscillator clock frequency in Hz  $\ast$/}
+
+\mbox{\Hypertarget{system___m_k64_f12_8h_ab701f4ea593c322e0f7a3ee5f0572834}\label{system___m_k64_f12_8h_ab701f4ea593c322e0f7a3ee5f0572834}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!C\+P\+U\+\_\+\+X\+T\+A\+L32k\+\_\+\+C\+L\+K\+\_\+\+HZ@{C\+P\+U\+\_\+\+X\+T\+A\+L32k\+\_\+\+C\+L\+K\+\_\+\+HZ}}
+\index{C\+P\+U\+\_\+\+X\+T\+A\+L32k\+\_\+\+C\+L\+K\+\_\+\+HZ@{C\+P\+U\+\_\+\+X\+T\+A\+L32k\+\_\+\+C\+L\+K\+\_\+\+HZ}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{C\+P\+U\+\_\+\+X\+T\+A\+L32k\+\_\+\+C\+L\+K\+\_\+\+HZ}{CPU\_XTAL32k\_CLK\_HZ}}
+{\footnotesize\ttfamily \#define C\+P\+U\+\_\+\+X\+T\+A\+L32k\+\_\+\+C\+L\+K\+\_\+\+HZ~32768u              /$\ast$ Value of the external 32k crystal or oscillator clock frequency in Hz $\ast$/}
+
+\mbox{\Hypertarget{system___m_k64_f12_8h_acf80ae1c70da6f1932185345fb089ce2}\label{system___m_k64_f12_8h_acf80ae1c70da6f1932185345fb089ce2}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!C\+P\+U\+\_\+\+X\+T\+A\+L\+\_\+\+C\+L\+K\+\_\+\+HZ@{C\+P\+U\+\_\+\+X\+T\+A\+L\+\_\+\+C\+L\+K\+\_\+\+HZ}}
+\index{C\+P\+U\+\_\+\+X\+T\+A\+L\+\_\+\+C\+L\+K\+\_\+\+HZ@{C\+P\+U\+\_\+\+X\+T\+A\+L\+\_\+\+C\+L\+K\+\_\+\+HZ}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{C\+P\+U\+\_\+\+X\+T\+A\+L\+\_\+\+C\+L\+K\+\_\+\+HZ}{CPU\_XTAL\_CLK\_HZ}}
+{\footnotesize\ttfamily \#define C\+P\+U\+\_\+\+X\+T\+A\+L\+\_\+\+C\+L\+K\+\_\+\+HZ~50000000u           /$\ast$ Value of the external crystal or oscillator clock frequency in Hz $\ast$/}
+
+\mbox{\Hypertarget{system___m_k64_f12_8h_a87431195115b66c4874dc05a6eae554f}\label{system___m_k64_f12_8h_a87431195115b66c4874dc05a6eae554f}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+CK@{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+CK}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+CK@{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+CK}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+CK}{DEFAULT\_SYSTEM\_CLOCK}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+CK~20971520u           /$\ast$ Default System clock value $\ast$/}
+
+\mbox{\Hypertarget{system___m_k64_f12_8h_a93c87c5f0e67ed3de661632f8b54d803}\label{system___m_k64_f12_8h_a93c87c5f0e67ed3de661632f8b54d803}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!D\+I\+S\+A\+B\+L\+E\+\_\+\+W\+D\+OG@{D\+I\+S\+A\+B\+L\+E\+\_\+\+W\+D\+OG}}
+\index{D\+I\+S\+A\+B\+L\+E\+\_\+\+W\+D\+OG@{D\+I\+S\+A\+B\+L\+E\+\_\+\+W\+D\+OG}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+S\+A\+B\+L\+E\+\_\+\+W\+D\+OG}{DISABLE\_WDOG}}
+{\footnotesize\ttfamily \#define D\+I\+S\+A\+B\+L\+E\+\_\+\+W\+D\+OG~1}
+
+\mbox{\Hypertarget{system___m_k64_f12_8h_a8336a25a984300c07fa6e2bab183879a}\label{system___m_k64_f12_8h_a8336a25a984300c07fa6e2bab183879a}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!S\+Y\+S\+T\+E\+M\+\_\+\+R\+T\+C\+\_\+\+C\+R\+\_\+\+V\+A\+L\+UE@{S\+Y\+S\+T\+E\+M\+\_\+\+R\+T\+C\+\_\+\+C\+R\+\_\+\+V\+A\+L\+UE}}
+\index{S\+Y\+S\+T\+E\+M\+\_\+\+R\+T\+C\+\_\+\+C\+R\+\_\+\+V\+A\+L\+UE@{S\+Y\+S\+T\+E\+M\+\_\+\+R\+T\+C\+\_\+\+C\+R\+\_\+\+V\+A\+L\+UE}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{S\+Y\+S\+T\+E\+M\+\_\+\+R\+T\+C\+\_\+\+C\+R\+\_\+\+V\+A\+L\+UE}{SYSTEM\_RTC\_CR\_VALUE}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+T\+E\+M\+\_\+\+R\+T\+C\+\_\+\+C\+R\+\_\+\+V\+A\+L\+UE~0x0300\+U             /$\ast$ R\+T\+C\+\_\+\+C\+R $\ast$/}
+
+\mbox{\Hypertarget{system___m_k64_f12_8h_af2ba7a98da10e4e5ac052dc485113517}\label{system___m_k64_f12_8h_af2ba7a98da10e4e5ac052dc485113517}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!S\+Y\+S\+T\+E\+M\+\_\+\+S\+M\+C\+\_\+\+P\+M\+P\+R\+O\+T\+\_\+\+V\+A\+L\+UE@{S\+Y\+S\+T\+E\+M\+\_\+\+S\+M\+C\+\_\+\+P\+M\+P\+R\+O\+T\+\_\+\+V\+A\+L\+UE}}
+\index{S\+Y\+S\+T\+E\+M\+\_\+\+S\+M\+C\+\_\+\+P\+M\+P\+R\+O\+T\+\_\+\+V\+A\+L\+UE@{S\+Y\+S\+T\+E\+M\+\_\+\+S\+M\+C\+\_\+\+P\+M\+P\+R\+O\+T\+\_\+\+V\+A\+L\+UE}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{S\+Y\+S\+T\+E\+M\+\_\+\+S\+M\+C\+\_\+\+P\+M\+P\+R\+O\+T\+\_\+\+V\+A\+L\+UE}{SYSTEM\_SMC\_PMPROT\_VALUE}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+T\+E\+M\+\_\+\+S\+M\+C\+\_\+\+P\+M\+P\+R\+O\+T\+\_\+\+V\+A\+L\+UE~0x2\+A\+U               /$\ast$ S\+M\+C\+\_\+\+P\+M\+P\+R\+O\+T $\ast$/}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{system___m_k64_f12_8h_ae0c36a9591fe6e9c45ecb21a794f0f0f}\label{system___m_k64_f12_8h_ae0c36a9591fe6e9c45ecb21a794f0f0f}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!System\+Core\+Clock\+Update@{System\+Core\+Clock\+Update}}
+\index{System\+Core\+Clock\+Update@{System\+Core\+Clock\+Update}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{System\+Core\+Clock\+Update()}{SystemCoreClockUpdate()}}
+{\footnotesize\ttfamily void System\+Core\+Clock\+Update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Updates the System\+Core\+Clock variable. 
+
+It must be called whenever the core clock is changed during program execution. \mbox{\hyperlink{system___m_k64_f12_8h_ae0c36a9591fe6e9c45ecb21a794f0f0f}{System\+Core\+Clock\+Update()}} evaluates the clock register settings and calculates the current core clock. \mbox{\Hypertarget{system___m_k64_f12_8h_a93f514700ccf00d08dbdcff7f1224eb2}\label{system___m_k64_f12_8h_a93f514700ccf00d08dbdcff7f1224eb2}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!System\+Init@{System\+Init}}
+\index{System\+Init@{System\+Init}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{System\+Init()}{SystemInit()}}
+{\footnotesize\ttfamily void System\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Setup the microcontroller system. 
+
+Typically this function configures the oscillator (P\+LL) that is part of the microcontroller device. For systems with variable clock speed it also updates the variable System\+Core\+Clock. System\+Init is called from startup\+\_\+device file. \mbox{\Hypertarget{system___m_k64_f12_8h_a1e7778affa458b40eb905a9df371516c}\label{system___m_k64_f12_8h_a1e7778affa458b40eb905a9df371516c}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!System\+Init\+Hook@{System\+Init\+Hook}}
+\index{System\+Init\+Hook@{System\+Init\+Hook}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{System\+Init\+Hook()}{SystemInitHook()}}
+{\footnotesize\ttfamily void System\+Init\+Hook (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+System\+Init function hook. 
+
+This weak function allows to call specific initialization code during the \mbox{\hyperlink{system___m_k64_f12_8h_a93f514700ccf00d08dbdcff7f1224eb2}{System\+Init()}} execution.\+This can be used when an application specific code needs to be called as close to the reset entry as possible (for example the Multicore Manager M\+C\+M\+G\+R\+\_\+\+Early\+Init() function call). N\+O\+TE\+: No global r/w variables can be used in this hook function because the initialization of these variables happens after this function. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{system___m_k64_f12_8h_aa3cd3e43291e81e795d642b79b6088e6}\label{system___m_k64_f12_8h_aa3cd3e43291e81e795d642b79b6088e6}} 
+\index{system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}!System\+Core\+Clock@{System\+Core\+Clock}}
+\index{System\+Core\+Clock@{System\+Core\+Clock}!system\+\_\+\+M\+K64\+F12.\+h@{system\+\_\+\+M\+K64\+F12.\+h}}
+\subsubsection{\texorpdfstring{System\+Core\+Clock}{SystemCoreClock}}
+{\footnotesize\ttfamily uint32\+\_\+t System\+Core\+Clock}
+
+
+
+System clock frequency (core clock) 
+
+The system clock frequency supplied to the Sys\+Tick timer and the processor core clock. This variable can be used by the user application to setup the Sys\+Tick timer or configure other parameters. It may also be used by debugger to query the frequency of the debug timer or configure the trace clock speed System\+Core\+Clock is initialized with a correct predefined value. 

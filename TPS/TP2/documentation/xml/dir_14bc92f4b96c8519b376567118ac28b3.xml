@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_14bc92f4b96c8519b376567118ac28b3" kind="dir">
+    <compoundname>drivers</compoundname>
+    <innerfile refid="_d_r_v___board_8c">DRV_Board.c</innerfile>
+    <innerfile refid="_d_r_v___board_8h">DRV_Board.h</innerfile>
+    <innerfile refid="_d_r_v___display_8c">DRV_Display.c</innerfile>
+    <innerfile refid="_d_r_v___display_8h">DRV_Display.h</innerfile>
+    <innerfile refid="_d_r_v___encoder_8c">DRV_Encoder.c</innerfile>
+    <innerfile refid="_d_r_v___encoder_8h">DRV_Encoder.h</innerfile>
+    <innerfile refid="_d_r_v___l_e_ds_8c">DRV_LEDs.c</innerfile>
+    <innerfile refid="_d_r_v___l_e_ds_8h">DRV_LEDs.h</innerfile>
+    <innerfile refid="_d_r_v___reader_8c">DRV_Reader.c</innerfile>
+    <innerfile refid="_d_r_v___reader_8h">DRV_Reader.h</innerfile>
+    <innerfile refid="_d_r_v___stub___display_8c">DRV_Stub_Display.c</innerfile>
+    <innerfile refid="_d_r_v___stub___encoder_8c">DRV_Stub_Encoder.c</innerfile>
+    <innerfile refid="_d_r_v___timers_8c">DRV_Timers.c</innerfile>
+    <innerfile refid="_d_r_v___timers_8h">DRV_Timers.h</innerfile>
+    <innerfile refid="_p_d_r_v___g_p_i_o_8c">PDRV_GPIO.c</innerfile>
+    <innerfile refid="_p_d_r_v___g_p_i_o_8h">PDRV_GPIO.h</innerfile>
+    <innerfile refid="_p_d_r_v___sys_tick_8c">PDRV_SysTick.c</innerfile>
+    <innerfile refid="_p_d_r_v___sys_tick_8h">PDRV_SysTick.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="drivers/"/>
+  </compounddef>
+</doxygen>

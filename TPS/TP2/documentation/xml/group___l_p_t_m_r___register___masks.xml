@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___l_p_t_m_r___register___masks" kind="group">
+    <compoundname>LPTMR_Register_Masks</compoundname>
+    <title>LPTMR Register Masks</title>
+      <sectiondef kind="user-defined">
+      <header>CSR - Low Power Timer Control Status Register</header>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga4ed197f1cb8d0e954324b4854ff14a83" prot="public" static="no">
+        <name>LPTMR_CSR_TEN_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7855" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gada00f24f79b11a91e8404b4531d66733" prot="public" static="no">
+        <name>LPTMR_CSR_TEN_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7856" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7856" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gae18358081bf10e96a1307612264a31fd" prot="public" static="no">
+        <name>LPTMR_CSR_TEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___l_p_t_m_r___register___masks_1gada00f24f79b11a91e8404b4531d66733" kindref="member">LPTMR_CSR_TEN_SHIFT</ref>)) &amp; <ref refid="group___l_p_t_m_r___register___masks_1ga4ed197f1cb8d0e954324b4854ff14a83" kindref="member">LPTMR_CSR_TEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7857" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7857" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga57ee593a57d844d7bb4b87c127765558" prot="public" static="no">
+        <name>LPTMR_CSR_TMS_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7858" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gaeac406c6a48e15c6ec5784fb891b51b6" prot="public" static="no">
+        <name>LPTMR_CSR_TMS_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7859" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7859" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gae8af700b27a8e6aad5c035eb9181766c" prot="public" static="no">
+        <name>LPTMR_CSR_TMS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___l_p_t_m_r___register___masks_1gaeac406c6a48e15c6ec5784fb891b51b6" kindref="member">LPTMR_CSR_TMS_SHIFT</ref>)) &amp; <ref refid="group___l_p_t_m_r___register___masks_1ga57ee593a57d844d7bb4b87c127765558" kindref="member">LPTMR_CSR_TMS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7860" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7860" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gaca581598c0f319b0002deda730479842" prot="public" static="no">
+        <name>LPTMR_CSR_TFC_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7861" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7861" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gaee3d1b59f30f6217f1f74b18cf973c4a" prot="public" static="no">
+        <name>LPTMR_CSR_TFC_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7862" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7862" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga9f9f9658cf9a8a4d04923d1487adae6a" prot="public" static="no">
+        <name>LPTMR_CSR_TFC</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___l_p_t_m_r___register___masks_1gaee3d1b59f30f6217f1f74b18cf973c4a" kindref="member">LPTMR_CSR_TFC_SHIFT</ref>)) &amp; <ref refid="group___l_p_t_m_r___register___masks_1gaca581598c0f319b0002deda730479842" kindref="member">LPTMR_CSR_TFC_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7863" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7863" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga020eee1550f2943c10d51f8b56930e62" prot="public" static="no">
+        <name>LPTMR_CSR_TPP_MASK</name>
+        <initializer>(0x8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7864" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7864" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga62be70d70bd4e88e26e5cc8437f6fd55" prot="public" static="no">
+        <name>LPTMR_CSR_TPP_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7865" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7865" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga1e706f8fb1de17fa05f83c3a8928a91c" prot="public" static="no">
+        <name>LPTMR_CSR_TPP</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___l_p_t_m_r___register___masks_1ga62be70d70bd4e88e26e5cc8437f6fd55" kindref="member">LPTMR_CSR_TPP_SHIFT</ref>)) &amp; <ref refid="group___l_p_t_m_r___register___masks_1ga020eee1550f2943c10d51f8b56930e62" kindref="member">LPTMR_CSR_TPP_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7866" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7866" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga3502ccff1cbdb70bb99b73c035ab1e19" prot="public" static="no">
+        <name>LPTMR_CSR_TPS_MASK</name>
+        <initializer>(0x30U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7867" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7867" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga7759d842742bfedd91788d41ef12fb8d" prot="public" static="no">
+        <name>LPTMR_CSR_TPS_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7868" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7868" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga21ce2f3d05c087f7f46dcb9b7035e4f2" prot="public" static="no">
+        <name>LPTMR_CSR_TPS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___l_p_t_m_r___register___masks_1ga7759d842742bfedd91788d41ef12fb8d" kindref="member">LPTMR_CSR_TPS_SHIFT</ref>)) &amp; <ref refid="group___l_p_t_m_r___register___masks_1ga3502ccff1cbdb70bb99b73c035ab1e19" kindref="member">LPTMR_CSR_TPS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7869" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7869" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gabb726cb43d5f6ee38339048c69a5f086" prot="public" static="no">
+        <name>LPTMR_CSR_TIE_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7870" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7870" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gaaedba0195b3abfcae6e8669f84f39d5d" prot="public" static="no">
+        <name>LPTMR_CSR_TIE_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7871" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7871" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga1b3ffe4be02efef291da12ce9e097a9d" prot="public" static="no">
+        <name>LPTMR_CSR_TIE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___l_p_t_m_r___register___masks_1gaaedba0195b3abfcae6e8669f84f39d5d" kindref="member">LPTMR_CSR_TIE_SHIFT</ref>)) &amp; <ref refid="group___l_p_t_m_r___register___masks_1gabb726cb43d5f6ee38339048c69a5f086" kindref="member">LPTMR_CSR_TIE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7872" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7872" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga13b5dd6085ca2a8cf0f06550b7557b6b" prot="public" static="no">
+        <name>LPTMR_CSR_TCF_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7873" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7873" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga0ffa48fac670327deffc2e17ef1dea68" prot="public" static="no">
+        <name>LPTMR_CSR_TCF_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7874" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7874" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga4a71110198e9becb2fe277e270c7499d" prot="public" static="no">
+        <name>LPTMR_CSR_TCF</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___l_p_t_m_r___register___masks_1ga0ffa48fac670327deffc2e17ef1dea68" kindref="member">LPTMR_CSR_TCF_SHIFT</ref>)) &amp; <ref refid="group___l_p_t_m_r___register___masks_1ga13b5dd6085ca2a8cf0f06550b7557b6b" kindref="member">LPTMR_CSR_TCF_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7875" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7875" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PSR - Low Power Timer Prescale Register</header>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga40daa10db43ec0c0a1944e6289ca29cc" prot="public" static="no">
+        <name>LPTMR_PSR_PCS_MASK</name>
+        <initializer>(0x3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7878" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7878" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gaf258bce874ad60601d6d76cefc72c52e" prot="public" static="no">
+        <name>LPTMR_PSR_PCS_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7879" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7879" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gabeba0b705770f53c56a569a5ee74536b" prot="public" static="no">
+        <name>LPTMR_PSR_PCS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___l_p_t_m_r___register___masks_1gaf258bce874ad60601d6d76cefc72c52e" kindref="member">LPTMR_PSR_PCS_SHIFT</ref>)) &amp; <ref refid="group___l_p_t_m_r___register___masks_1ga40daa10db43ec0c0a1944e6289ca29cc" kindref="member">LPTMR_PSR_PCS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7880" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7880" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gab3daae6085cf702b31db5be78fe03872" prot="public" static="no">
+        <name>LPTMR_PSR_PBYP_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7881" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7881" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga4bb5021e396db697f5e597fdcdc222e3" prot="public" static="no">
+        <name>LPTMR_PSR_PBYP_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7882" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7882" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga3d7c49e91df0f310a5dcf2effef9ae25" prot="public" static="no">
+        <name>LPTMR_PSR_PBYP</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___l_p_t_m_r___register___masks_1ga4bb5021e396db697f5e597fdcdc222e3" kindref="member">LPTMR_PSR_PBYP_SHIFT</ref>)) &amp; <ref refid="group___l_p_t_m_r___register___masks_1gab3daae6085cf702b31db5be78fe03872" kindref="member">LPTMR_PSR_PBYP_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7883" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7883" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga93a6fe3fb169a73716a837cedb92dbef" prot="public" static="no">
+        <name>LPTMR_PSR_PRESCALE_MASK</name>
+        <initializer>(0x78U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7884" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7884" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga7ed76902e13634d0c543ade3ef47525a" prot="public" static="no">
+        <name>LPTMR_PSR_PRESCALE_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7885" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7885" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga37d8f4b0de3a75590548d8f3b6686b95" prot="public" static="no">
+        <name>LPTMR_PSR_PRESCALE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___l_p_t_m_r___register___masks_1ga7ed76902e13634d0c543ade3ef47525a" kindref="member">LPTMR_PSR_PRESCALE_SHIFT</ref>)) &amp; <ref refid="group___l_p_t_m_r___register___masks_1ga93a6fe3fb169a73716a837cedb92dbef" kindref="member">LPTMR_PSR_PRESCALE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7886" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7886" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>CMR - Low Power Timer Compare Register</header>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga55cc95c022500b353f1724f2cbfe7a8f" prot="public" static="no">
+        <name>LPTMR_CMR_COMPARE_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7889" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7889" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gae1a525e22dc8b9c6960ae2e859a64232" prot="public" static="no">
+        <name>LPTMR_CMR_COMPARE_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7890" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7890" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gad61ee0ea43ca3e503c2c16ed1b7b1696" prot="public" static="no">
+        <name>LPTMR_CMR_COMPARE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___l_p_t_m_r___register___masks_1gae1a525e22dc8b9c6960ae2e859a64232" kindref="member">LPTMR_CMR_COMPARE_SHIFT</ref>)) &amp; <ref refid="group___l_p_t_m_r___register___masks_1ga55cc95c022500b353f1724f2cbfe7a8f" kindref="member">LPTMR_CMR_COMPARE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7891" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7891" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>CNR - Low Power Timer Counter Register</header>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga134708aff0fe3bd31d703e32966c08fc" prot="public" static="no">
+        <name>LPTMR_CNR_COUNTER_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7894" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7894" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga3769a974a3d95250e32bb154fa134c3f" prot="public" static="no">
+        <name>LPTMR_CNR_COUNTER_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7895" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7895" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga8732990b7f3af802120a5e95000c963f" prot="public" static="no">
+        <name>LPTMR_CNR_COUNTER</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___l_p_t_m_r___register___masks_1ga3769a974a3d95250e32bb154fa134c3f" kindref="member">LPTMR_CNR_COUNTER_SHIFT</ref>)) &amp; <ref refid="group___l_p_t_m_r___register___masks_1ga134708aff0fe3bd31d703e32966c08fc" kindref="member">LPTMR_CNR_COUNTER_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7896" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7896" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga024f362857a8b928d96cf3b3f5106793" prot="public" static="no">
+        <name>LPTMR0_BASE</name>
+        <initializer>(0x40040000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral LPTMR0 base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7906" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7906" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gaba0c3bc8a32ad5a884c99e019dbdef85" prot="public" static="no">
+        <name>LPTMR0</name>
+        <initializer>((<ref refid="struct_l_p_t_m_r___type" kindref="compound">LPTMR_Type</ref> *)<ref refid="group___l_p_t_m_r___register___masks_1ga024f362857a8b928d96cf3b3f5106793" kindref="member">LPTMR0_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral LPTMR0 base pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7908" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7908" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga62b4c0fde534c2c09ef0c30b3c4bb0e3" prot="public" static="no">
+        <name>LPTMR_BASE_ADDRS</name>
+        <initializer>{ <ref refid="group___l_p_t_m_r___register___masks_1ga024f362857a8b928d96cf3b3f5106793" kindref="member">LPTMR0_BASE</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of LPTMR peripheral base addresses </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7910" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7910" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1gac92660dedc63be48d689d43efc9f2c82" prot="public" static="no">
+        <name>LPTMR_BASE_PTRS</name>
+        <initializer>{ <ref refid="group___l_p_t_m_r___register___masks_1gaba0c3bc8a32ad5a884c99e019dbdef85" kindref="member">LPTMR0</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of LPTMR peripheral base pointers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7912" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7912" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___l_p_t_m_r___register___masks_1ga5bf0032641d320fc7d486d703800c729" prot="public" static="no">
+        <name>LPTMR_IRQS</name>
+        <initializer>{ <ref refid="group___interrupt__vector__numbers_1gga666eb0caeb12ec0e281415592ae89083a93853a8a41060ac37aa92ae9ee472c6e" kindref="member">LPTMR0_IRQn</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt vectors for the LPTMR peripheral type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7914" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7914" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

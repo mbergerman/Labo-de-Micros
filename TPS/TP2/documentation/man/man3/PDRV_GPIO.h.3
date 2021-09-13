@@ -1,0 +1,241 @@
+.TH "drivers/PDRV_GPIO.h" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+drivers/PDRV_GPIO.h \- GPIO driver\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdint\&.h>\fP
+.br
+\fC#include <stdbool\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPORTNUM2PIN\fP(p,  n)   (((p)<<5) + (n))"
+.br
+.ti -1c
+.RI "#define \fBPIN2PORT\fP(p)   (((p)>>5) & 0x07)"
+.br
+.ti -1c
+.RI "#define \fBPIN2NUM\fP(p)   ((p) & 0x1F)"
+.br
+.ti -1c
+.RI "#define \fBINPUT\fP   0"
+.br
+.ti -1c
+.RI "#define \fBOUTPUT\fP   1"
+.br
+.ti -1c
+.RI "#define \fBINPUT_PULLUP\fP   2"
+.br
+.ti -1c
+.RI "#define \fBINPUT_PULLDOWN\fP   3"
+.br
+.ti -1c
+.RI "#define \fBLOW\fP   0"
+.br
+.ti -1c
+.RI "#define \fBHIGH\fP   1"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef uint8_t \fBpin_t\fP"
+.br
+.ti -1c
+.RI "typedef void(* \fBpinIrqFun_t\fP) (void)"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBPA\fP, \fBPB\fP, \fBPC\fP, \fBPD\fP, \fBPE\fP }"
+.br
+.ti -1c
+.RI "enum { \fBGPIO_IRQ_MODE_DISABLE\fP, \fBGPIO_IRQ_MODE_LOGIC_0\fP, \fBGPIO_IRQ_MODE_RISING_EDGE\fP, \fBGPIO_IRQ_MODE_FALLING_EDGE\fP, \fBGPIO_IRQ_MODE_BOTH_EDGES\fP, \fBGPIO_IRQ_MODE_LOGIC_1\fP, \fBGPIO_IRQ_CANT_MODES\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBgpioMode\fP (\fBpin_t\fP pin, uint8_t mode)"
+.br
+.RI "Configures the specified pin to behave either as an input or an output\&. "
+.ti -1c
+.RI "bool \fBgpioIRQ\fP (\fBpin_t\fP pin, uint8_t irqMode, \fBpinIrqFun_t\fP irqFun)"
+.br
+.RI "Configures how the pin reacts when an IRQ event ocurrs\&. "
+.ti -1c
+.RI "void \fBgpioWrite\fP (\fBpin_t\fP pin, bool value)"
+.br
+.RI "Write a HIGH or a LOW value to a digital pin\&. "
+.ti -1c
+.RI "void \fBgpioToggle\fP (\fBpin_t\fP pin)"
+.br
+.RI "Toggle the value of a digital pin (HIGH<->LOW) "
+.ti -1c
+.RI "bool \fBgpioRead\fP (\fBpin_t\fP pin)"
+.br
+.RI "Reads the value from a specified digital pin, either HIGH or LOW\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+GPIO driver\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Grupo 1 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define HIGH   1"
+
+.SS "#define INPUT   0"
+
+.SS "#define INPUT_PULLDOWN   3"
+
+.SS "#define INPUT_PULLUP   2"
+
+.SS "#define LOW   0"
+
+.SS "#define OUTPUT   1"
+
+.SS "#define PIN2NUM(p)   ((p) & 0x1F)"
+
+.SS "#define PIN2PORT(p)   (((p)>>5) & 0x07)"
+
+.SS "#define PORTNUM2PIN(p, n)   (((p)<<5) + (n))"
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef uint8_t \fBpin_t\fP"
+
+.SS "typedef void(* pinIrqFun_t) (void)"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "anonymous enum"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIPA \fP\fP
+.TP
+\fB\fIPB \fP\fP
+.TP
+\fB\fIPC \fP\fP
+.TP
+\fB\fIPD \fP\fP
+.TP
+\fB\fIPE \fP\fP
+.SS "anonymous enum"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIGPIO_IRQ_MODE_DISABLE \fP\fP
+.TP
+\fB\fIGPIO_IRQ_MODE_LOGIC_0 \fP\fP
+.TP
+\fB\fIGPIO_IRQ_MODE_RISING_EDGE \fP\fP
+.TP
+\fB\fIGPIO_IRQ_MODE_FALLING_EDGE \fP\fP
+.TP
+\fB\fIGPIO_IRQ_MODE_BOTH_EDGES \fP\fP
+.TP
+\fB\fIGPIO_IRQ_MODE_LOGIC_1 \fP\fP
+.TP
+\fB\fIGPIO_IRQ_CANT_MODES \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "bool gpioIRQ (\fBpin_t\fP pin, uint8_t irqMode, \fBpinIrqFun_t\fP irqFun)"
+
+.PP
+Configures how the pin reacts when an IRQ event ocurrs\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpin\fP the pin whose IRQ mode you wish to set (according PORTNUM2PIN) 
+.br
+\fIirqMode\fP disable, risingEdge, fallingEdge or bothEdges 
+.br
+\fIirqFun\fP function to call on pin event 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Registration succeed 
+.RE
+.PP
+
+.SS "void gpioMode (\fBpin_t\fP pin, uint8_t mode)"
+
+.PP
+Configures the specified pin to behave either as an input or an output\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpin\fP the pin whose mode you wish to set (according PORTNUM2PIN) 
+.br
+\fImode\fP INPUT, OUTPUT, INPUT_PULLUP or INPUT_PULLDOWN\&. 
+.RE
+.PP
+!! 
+.SS "bool gpioRead (\fBpin_t\fP pin)"
+
+.PP
+Reads the value from a specified digital pin, either HIGH or LOW\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpin\fP the pin to read (according PORTNUM2PIN) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+HIGH or LOW 
+.RE
+.PP
+
+.SS "void gpioToggle (\fBpin_t\fP pin)"
+
+.PP
+Toggle the value of a digital pin (HIGH<->LOW) 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpin\fP the pin to toggle (according PORTNUM2PIN) 
+.RE
+.PP
+
+.SS "void gpioWrite (\fBpin_t\fP pin, bool value)"
+
+.PP
+Write a HIGH or a LOW value to a digital pin\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpin\fP the pin to write (according PORTNUM2PIN) 
+.br
+\fIval\fP Desired value (HIGH or LOW) 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

@@ -1,0 +1,109 @@
+.TH "NVIC_Type" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+NVIC_Type \- Structure type to access the Nested Vectored Interrupt Controller (NVIC)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <core_armv8mbl\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBISER\fP [16U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED0\fP [16U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBICER\fP [16U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRSERVED1\fP [16U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBISPR\fP [16U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED2\fP [16U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBICPR\fP [16U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED3\fP [16U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBIABR\fP [16U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED4\fP [16U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBITNS\fP [16U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED5\fP [16U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint32_t \fBIPR\fP [124U]"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint8_t \fBIPR\fP [496U]"
+.br
+.ti -1c
+.RI "uint32_t \fBRESERVED6\fP [580U]"
+.br
+.ti -1c
+.RI "\fB__OM\fP uint32_t \fBSTIR\fP"
+.br
+.ti -1c
+.RI "\fB__IOM\fP uint8_t \fBIP\fP [240U]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure type to access the Nested Vectored Interrupt Controller (NVIC)\&. 
+.SH "Field Documentation"
+.PP 
+.SS "\fB__IOM\fP uint32_t IABR"
+Offset: 0x200 (R/W) Interrupt Active bit Register 
+.SS "\fB__IOM\fP uint32_t ICER"
+Offset: 0x080 (R/W) Interrupt Clear Enable Register 
+.SS "\fB__IOM\fP uint32_t ICPR"
+Offset: 0x180 (R/W) Interrupt Clear Pending Register 
+.SS "\fB__IOM\fP uint8_t IP[240U]"
+Offset: 0x300 (R/W) Interrupt Priority Register (8Bit wide) 
+.SS "\fB__IOM\fP uint32_t IPR[124U]"
+Offset: 0x300 (R/W) Interrupt Priority Register 
+.SS "\fB__IOM\fP uint8_t IPR[496U]"
+Offset: 0x300 (R/W) Interrupt Priority Register (8Bit wide) 
+.SS "\fB__IOM\fP uint32_t ISER"
+Offset: 0x000 (R/W) Interrupt Set Enable Register 
+.SS "\fB__IOM\fP uint32_t ISPR"
+Offset: 0x100 (R/W) Interrupt Set Pending Register 
+.SS "\fB__IOM\fP uint32_t ITNS"
+Offset: 0x280 (R/W) Interrupt Non-Secure State Register 
+.SS "uint32_t RESERVED0"
+
+.SS "uint32_t RESERVED2"
+
+.SS "uint32_t RESERVED3"
+
+.SS "uint32_t RESERVED4"
+
+.SS "uint32_t RESERVED5"
+
+.SS "uint32_t RESERVED6[580U]"
+
+.SS "uint32_t RSERVED1"
+
+.SS "\fB__OM\fP uint32_t STIR"
+Offset: 0xE00 ( /W) Software Trigger Interrupt Register 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_f_m_c___type" kind="struct" language="C++" prot="public">
+    <compoundname>FMC_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga78f7ac1c9cc55542d3350387c83c5f37" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PFAPR</definition>
+        <argsstring></argsstring>
+        <name>PFAPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flash Access Protection Register, offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5759" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5759" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga49876565828348d94752e398239ca0b3" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PFB0CR</definition>
+        <argsstring></argsstring>
+        <name>PFB0CR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flash Bank 0 Control Register, offset: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5760" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5760" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga71e702d9f9449e9be78f586aa1f86974" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PFB1CR</definition>
+        <argsstring></argsstring>
+        <name>PFB1CR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flash Bank 1 Control Register, offset: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5761" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5761" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaf4371fac6e68ff762b0c76c55ade6b91" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_0[244]</definition>
+        <argsstring>[244]</argsstring>
+        <name>RESERVED_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5762" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gafbef7be4132f76a31f1a0e0311c2fc92" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t TAGVDW0S[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>TAGVDW0S</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cache Tag Storage, array offset: 0x100, array step: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5763" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga283e3e05f6df99bb519c742e82b9780d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t TAGVDW1S[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>TAGVDW1S</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cache Tag Storage, array offset: 0x110, array step: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5764" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5764" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gac6ab468a5fa5f4676e320650f42acb51" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t TAGVDW2S[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>TAGVDW2S</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cache Tag Storage, array offset: 0x120, array step: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5765" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga35dd309b49b2d2e1092a1ada9beece08" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t TAGVDW3S[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>TAGVDW3S</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cache Tag Storage, array offset: 0x130, array step: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5766" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5766" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga2b49646d4f332d1141142fea1e0bd93a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_1[192]</definition>
+        <argsstring>[192]</argsstring>
+        <name>RESERVED_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5767" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5767" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga00388e078eb17507e099f6d133a40b86" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t DATA_U</definition>
+        <argsstring></argsstring>
+        <name>DATA_U</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cache Data Storage (upper word), array offset: 0x200, array step: index*0x20, index2*0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5769" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gab7bcabc6d40839653e0a8be3b502df61" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t DATA_L</definition>
+        <argsstring></argsstring>
+        <name>DATA_L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cache Data Storage (lower word), array offset: 0x204, array step: index*0x20, index2*0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5770" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5770" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga43f41cb15ff955816cb40f46ca2000f6" prot="public" static="no" mutable="no">
+        <type>struct FMC_Type::@43</type>
+        <definition>struct FMC_Type::@43  SET[4][4]</definition>
+        <argsstring>[4][4]</argsstring>
+        <name>SET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5771" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>FMC - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="5758" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5758" bodyend="5772"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gab7bcabc6d40839653e0a8be3b502df61" prot="public" virt="non-virtual"><scope>FMC_Type</scope><name>DATA_L</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga00388e078eb17507e099f6d133a40b86" prot="public" virt="non-virtual"><scope>FMC_Type</scope><name>DATA_U</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga78f7ac1c9cc55542d3350387c83c5f37" prot="public" virt="non-virtual"><scope>FMC_Type</scope><name>PFAPR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga49876565828348d94752e398239ca0b3" prot="public" virt="non-virtual"><scope>FMC_Type</scope><name>PFB0CR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga71e702d9f9449e9be78f586aa1f86974" prot="public" virt="non-virtual"><scope>FMC_Type</scope><name>PFB1CR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaf4371fac6e68ff762b0c76c55ade6b91" prot="public" virt="non-virtual"><scope>FMC_Type</scope><name>RESERVED_0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga2b49646d4f332d1141142fea1e0bd93a" prot="public" virt="non-virtual"><scope>FMC_Type</scope><name>RESERVED_1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga43f41cb15ff955816cb40f46ca2000f6" prot="public" virt="non-virtual"><scope>FMC_Type</scope><name>SET</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gafbef7be4132f76a31f1a0e0311c2fc92" prot="public" virt="non-virtual"><scope>FMC_Type</scope><name>TAGVDW0S</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga283e3e05f6df99bb519c742e82b9780d" prot="public" virt="non-virtual"><scope>FMC_Type</scope><name>TAGVDW1S</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gac6ab468a5fa5f4676e320650f42acb51" prot="public" virt="non-virtual"><scope>FMC_Type</scope><name>TAGVDW2S</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga35dd309b49b2d2e1092a1ada9beece08" prot="public" virt="non-virtual"><scope>FMC_Type</scope><name>TAGVDW3S</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

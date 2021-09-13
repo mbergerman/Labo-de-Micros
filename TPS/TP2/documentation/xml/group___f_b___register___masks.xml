@@ -1,0 +1,850 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___f_b___register___masks" kind="group">
+    <compoundname>FB_Register_Masks</compoundname>
+    <title>FB Register Masks</title>
+      <sectiondef kind="user-defined">
+      <header>CSAR - Chip Select Address Register</header>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga917335c957f6472faf91ae0b244db487" prot="public" static="no">
+        <name>FB_CSAR_BA_MASK</name>
+        <initializer>(0xFFFF0000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5645" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5645" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga098f6109a1dcc8cc007bca53c312810f" prot="public" static="no">
+        <name>FB_CSAR_BA_SHIFT</name>
+        <initializer>(16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5646" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5646" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga711f226d59ad769fe5112524c7dc7b66" prot="public" static="no">
+        <name>FB_CSAR_BA</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga098f6109a1dcc8cc007bca53c312810f" kindref="member">FB_CSAR_BA_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1ga917335c957f6472faf91ae0b244db487" kindref="member">FB_CSAR_BA_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5647" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5647" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaf434a36fdfbada5626b96348a75fdd8a" prot="public" static="no">
+        <name>FB_CSAR_COUNT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5650" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5650" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>CSMR - Chip Select Mask Register</header>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga746554e800a78e64f18c333f8b3dbd2c" prot="public" static="no">
+        <name>FB_CSMR_V_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5653" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga62bde86e3e74e677b6cb555c806d1dc3" prot="public" static="no">
+        <name>FB_CSMR_V_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5654" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5654" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaa8113c48a7ae3cf63030cc2195f3f4d1" prot="public" static="no">
+        <name>FB_CSMR_V</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga62bde86e3e74e677b6cb555c806d1dc3" kindref="member">FB_CSMR_V_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1ga746554e800a78e64f18c333f8b3dbd2c" kindref="member">FB_CSMR_V_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5655" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5655" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga40725292274706aa0a0c013201498f4b" prot="public" static="no">
+        <name>FB_CSMR_WP_MASK</name>
+        <initializer>(0x100U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5656" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5656" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga6d49da1d3aabbb8619673ac0fba95dd1" prot="public" static="no">
+        <name>FB_CSMR_WP_SHIFT</name>
+        <initializer>(8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5657" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5657" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga4b5ef11d1e22fa6d0f789f05e075b353" prot="public" static="no">
+        <name>FB_CSMR_WP</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga6d49da1d3aabbb8619673ac0fba95dd1" kindref="member">FB_CSMR_WP_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1ga40725292274706aa0a0c013201498f4b" kindref="member">FB_CSMR_WP_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5658" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5658" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga9f7361c70716e7a39579b6418ae2c20c" prot="public" static="no">
+        <name>FB_CSMR_BAM_MASK</name>
+        <initializer>(0xFFFF0000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5659" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5659" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga6a99aa1f2614f6287dfa8a83a2ceead4" prot="public" static="no">
+        <name>FB_CSMR_BAM_SHIFT</name>
+        <initializer>(16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5660" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5660" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga2ef6f66f3c2595772b2fc4e841fc834e" prot="public" static="no">
+        <name>FB_CSMR_BAM</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga6a99aa1f2614f6287dfa8a83a2ceead4" kindref="member">FB_CSMR_BAM_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1ga9f7361c70716e7a39579b6418ae2c20c" kindref="member">FB_CSMR_BAM_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5661" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5661" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga861785aecc93d0e0824eb96ecc78322f" prot="public" static="no">
+        <name>FB_CSMR_COUNT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5664" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5664" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>CSCR - Chip Select Control Register</header>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaee04052f66392a6242d45c0598b8606a" prot="public" static="no">
+        <name>FB_CSCR_BSTW_MASK</name>
+        <initializer>(0x8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5667" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga34341b855043b3fbffcad2811084fec8" prot="public" static="no">
+        <name>FB_CSCR_BSTW_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5668" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gac65009507b4362e43f7b7d112c8a1eec" prot="public" static="no">
+        <name>FB_CSCR_BSTW</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga34341b855043b3fbffcad2811084fec8" kindref="member">FB_CSCR_BSTW_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1gaee04052f66392a6242d45c0598b8606a" kindref="member">FB_CSCR_BSTW_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5669" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5669" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gac577e626a579979985c559866c940018" prot="public" static="no">
+        <name>FB_CSCR_BSTR_MASK</name>
+        <initializer>(0x10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5670" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5670" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga161827d21e9f36d9dc4a42a3fc287dd7" prot="public" static="no">
+        <name>FB_CSCR_BSTR_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5671" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5671" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga19c778185979823e7dd42d969d095d37" prot="public" static="no">
+        <name>FB_CSCR_BSTR</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga161827d21e9f36d9dc4a42a3fc287dd7" kindref="member">FB_CSCR_BSTR_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1gac577e626a579979985c559866c940018" kindref="member">FB_CSCR_BSTR_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5672" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5672" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaef7f70f7c6d39c8e1de2a16ccb4b3ccb" prot="public" static="no">
+        <name>FB_CSCR_BEM_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5673" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5673" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga2dd3f47a9401af7ae8838b7dc7c379f8" prot="public" static="no">
+        <name>FB_CSCR_BEM_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5674" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5674" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaf525cd59a21b651ef524c1ca5773342f" prot="public" static="no">
+        <name>FB_CSCR_BEM</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga2dd3f47a9401af7ae8838b7dc7c379f8" kindref="member">FB_CSCR_BEM_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1gaef7f70f7c6d39c8e1de2a16ccb4b3ccb" kindref="member">FB_CSCR_BEM_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5675" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga07623c4ea4b4dfdc64c7dc0431719350" prot="public" static="no">
+        <name>FB_CSCR_PS_MASK</name>
+        <initializer>(0xC0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5676" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga2cd33266c104fc645dcadaea7e659aa8" prot="public" static="no">
+        <name>FB_CSCR_PS_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5677" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga2268294cb3a73b4f9643e72aba119dec" prot="public" static="no">
+        <name>FB_CSCR_PS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga2cd33266c104fc645dcadaea7e659aa8" kindref="member">FB_CSCR_PS_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1ga07623c4ea4b4dfdc64c7dc0431719350" kindref="member">FB_CSCR_PS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5678" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gae26d2b6451432c0000d30a23e541020f" prot="public" static="no">
+        <name>FB_CSCR_AA_MASK</name>
+        <initializer>(0x100U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5679" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaf3d9d750b7dddf0d1df65c98d7ecc7e1" prot="public" static="no">
+        <name>FB_CSCR_AA_SHIFT</name>
+        <initializer>(8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5680" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5680" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gac43bc0dc493b248de98c2e39808baf57" prot="public" static="no">
+        <name>FB_CSCR_AA</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1gaf3d9d750b7dddf0d1df65c98d7ecc7e1" kindref="member">FB_CSCR_AA_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1gae26d2b6451432c0000d30a23e541020f" kindref="member">FB_CSCR_AA_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5681" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gac8f4e3d4dba2c5e902c51e82cd870d9f" prot="public" static="no">
+        <name>FB_CSCR_BLS_MASK</name>
+        <initializer>(0x200U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5682" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gabbdaea319c238ce8fc0ba6d79e29b411" prot="public" static="no">
+        <name>FB_CSCR_BLS_SHIFT</name>
+        <initializer>(9U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5683" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga8d0b15c30385fd8cb33734e715050891" prot="public" static="no">
+        <name>FB_CSCR_BLS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1gabbdaea319c238ce8fc0ba6d79e29b411" kindref="member">FB_CSCR_BLS_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1gac8f4e3d4dba2c5e902c51e82cd870d9f" kindref="member">FB_CSCR_BLS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5684" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaf6ddd3e9e267951e4af3886b8bf0c54e" prot="public" static="no">
+        <name>FB_CSCR_WS_MASK</name>
+        <initializer>(0xFC00U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5685" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga32c1c45a903fe04d1a3ffc5c2f95254f" prot="public" static="no">
+        <name>FB_CSCR_WS_SHIFT</name>
+        <initializer>(10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5686" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga1841831455a8eb60266de1720338fca6" prot="public" static="no">
+        <name>FB_CSCR_WS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga32c1c45a903fe04d1a3ffc5c2f95254f" kindref="member">FB_CSCR_WS_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1gaf6ddd3e9e267951e4af3886b8bf0c54e" kindref="member">FB_CSCR_WS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5687" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga2843fc1784996e04d8a936a38da538af" prot="public" static="no">
+        <name>FB_CSCR_WRAH_MASK</name>
+        <initializer>(0x30000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5688" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gac68c032af50701cb3bbc1f1448b5ba2c" prot="public" static="no">
+        <name>FB_CSCR_WRAH_SHIFT</name>
+        <initializer>(16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5689" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaa98e7dddfbb686316efe80b91c74f4ef" prot="public" static="no">
+        <name>FB_CSCR_WRAH</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1gac68c032af50701cb3bbc1f1448b5ba2c" kindref="member">FB_CSCR_WRAH_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1ga2843fc1784996e04d8a936a38da538af" kindref="member">FB_CSCR_WRAH_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5690" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga31adeea4793143604b28e1ca000b19df" prot="public" static="no">
+        <name>FB_CSCR_RDAH_MASK</name>
+        <initializer>(0xC0000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5691" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaade1cbb82ddd98295330c376eabcca7e" prot="public" static="no">
+        <name>FB_CSCR_RDAH_SHIFT</name>
+        <initializer>(18U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5692" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga54849fb23896ad9ddd312de4bb8d0a09" prot="public" static="no">
+        <name>FB_CSCR_RDAH</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1gaade1cbb82ddd98295330c376eabcca7e" kindref="member">FB_CSCR_RDAH_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1ga31adeea4793143604b28e1ca000b19df" kindref="member">FB_CSCR_RDAH_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5693" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaef9bac6317316a7b6d4e2df3526b206f" prot="public" static="no">
+        <name>FB_CSCR_ASET_MASK</name>
+        <initializer>(0x300000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5694" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga287d608bea3c47b85bdd3d707460da64" prot="public" static="no">
+        <name>FB_CSCR_ASET_SHIFT</name>
+        <initializer>(20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5695" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaa264e82012f6dff6f57409006aeb7f81" prot="public" static="no">
+        <name>FB_CSCR_ASET</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga287d608bea3c47b85bdd3d707460da64" kindref="member">FB_CSCR_ASET_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1gaef9bac6317316a7b6d4e2df3526b206f" kindref="member">FB_CSCR_ASET_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5696" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5696" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga1bc7960fd554faa076ba6e34fddaf081" prot="public" static="no">
+        <name>FB_CSCR_EXTS_MASK</name>
+        <initializer>(0x400000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5697" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga095a10ba51cbcdf10aca9bf9d5692613" prot="public" static="no">
+        <name>FB_CSCR_EXTS_SHIFT</name>
+        <initializer>(22U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5698" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga1b685e064ec1ee2a23c9f772a3394604" prot="public" static="no">
+        <name>FB_CSCR_EXTS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga095a10ba51cbcdf10aca9bf9d5692613" kindref="member">FB_CSCR_EXTS_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1ga1bc7960fd554faa076ba6e34fddaf081" kindref="member">FB_CSCR_EXTS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5699" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga38d5806081b68b58dff2b73abcab4d1a" prot="public" static="no">
+        <name>FB_CSCR_SWSEN_MASK</name>
+        <initializer>(0x800000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5700" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5700" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gad89987be24118d73c55bf5e97ab5e8d7" prot="public" static="no">
+        <name>FB_CSCR_SWSEN_SHIFT</name>
+        <initializer>(23U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5701" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga316fab86a9bb07abe285a386dafca818" prot="public" static="no">
+        <name>FB_CSCR_SWSEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1gad89987be24118d73c55bf5e97ab5e8d7" kindref="member">FB_CSCR_SWSEN_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1ga38d5806081b68b58dff2b73abcab4d1a" kindref="member">FB_CSCR_SWSEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5702" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga1036d22baaa692a66480d3ef93bc9729" prot="public" static="no">
+        <name>FB_CSCR_SWS_MASK</name>
+        <initializer>(0xFC000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5703" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga1ba720e1700a6ddc15457b55d8fbb376" prot="public" static="no">
+        <name>FB_CSCR_SWS_SHIFT</name>
+        <initializer>(26U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5704" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga8c204c94806499d2bbc6acc6e829e80a" prot="public" static="no">
+        <name>FB_CSCR_SWS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga1ba720e1700a6ddc15457b55d8fbb376" kindref="member">FB_CSCR_SWS_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1ga1036d22baaa692a66480d3ef93bc9729" kindref="member">FB_CSCR_SWS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5705" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga3016e1cdce48dbf408cea2f24ce34a7d" prot="public" static="no">
+        <name>FB_CSCR_COUNT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5708" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5708" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>CSPMCR - Chip Select port Multiplexing Control Register</header>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga2c198cc055fa5fd82f9f9441613af96d" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP5_MASK</name>
+        <initializer>(0xF000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5711" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaa406022bcdd78d1d96d379efcf539ca7" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP5_SHIFT</name>
+        <initializer>(12U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5712" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5712" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga61aeb8bb9251b57140fde249ce7670fa" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP5</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1gaa406022bcdd78d1d96d379efcf539ca7" kindref="member">FB_CSPMCR_GROUP5_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1ga2c198cc055fa5fd82f9f9441613af96d" kindref="member">FB_CSPMCR_GROUP5_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5713" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaa24d34ff345a0131f93f71c38e20b7a5" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP4_MASK</name>
+        <initializer>(0xF0000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5714" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga53fde1abc71ae9149418ea7fb6e53fba" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP4_SHIFT</name>
+        <initializer>(16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5715" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5715" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga5bc5cb1164507be89f7cf0324491d5f1" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP4</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga53fde1abc71ae9149418ea7fb6e53fba" kindref="member">FB_CSPMCR_GROUP4_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1gaa24d34ff345a0131f93f71c38e20b7a5" kindref="member">FB_CSPMCR_GROUP4_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5716" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5716" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gac53d0fcbc3464725ceda1d20147fe98c" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP3_MASK</name>
+        <initializer>(0xF00000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5717" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5717" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga9f0b849b6cb1a2f629dcd23a0a0a4306" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP3_SHIFT</name>
+        <initializer>(20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5718" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga5f46c89a4298c3b2b367d829487dcb4b" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP3</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga9f0b849b6cb1a2f629dcd23a0a0a4306" kindref="member">FB_CSPMCR_GROUP3_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1gac53d0fcbc3464725ceda1d20147fe98c" kindref="member">FB_CSPMCR_GROUP3_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5719" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5719" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga594596b281baba23e03cb37fbf0a05db" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP2_MASK</name>
+        <initializer>(0xF000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5720" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5720" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga332a2c4e7103b2f21af54da036518928" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP2_SHIFT</name>
+        <initializer>(24U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5721" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5721" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga90ca2c9ade016544de01e8ff18906bdc" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP2</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga332a2c4e7103b2f21af54da036518928" kindref="member">FB_CSPMCR_GROUP2_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1ga594596b281baba23e03cb37fbf0a05db" kindref="member">FB_CSPMCR_GROUP2_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5722" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga735fd2a0040e9ad1122a3c3fc8e28193" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP1_MASK</name>
+        <initializer>(0xF0000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5723" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5723" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga9c83850dcb3efe92a0404101e5afbdca" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP1_SHIFT</name>
+        <initializer>(28U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5724" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5724" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gad8cfbe8c479a928d91e215283db376af" prot="public" static="no">
+        <name>FB_CSPMCR_GROUP1</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___f_b___register___masks_1ga9c83850dcb3efe92a0404101e5afbdca" kindref="member">FB_CSPMCR_GROUP1_SHIFT</ref>)) &amp; <ref refid="group___f_b___register___masks_1ga735fd2a0040e9ad1122a3c3fc8e28193" kindref="member">FB_CSPMCR_GROUP1_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5725" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5725" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_b___register___masks_1ga0d4d1f953f53702b3ffbbc10fb7ec30d" prot="public" static="no">
+        <name>FB_BASE</name>
+        <initializer>(0x4000C000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral FB base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5735" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gafa56f653aa38688ca538ba26fcde993c" prot="public" static="no">
+        <name>FB</name>
+        <initializer>((<ref refid="struct_f_b___type" kindref="compound">FB_Type</ref> *)<ref refid="group___f_b___register___masks_1ga0d4d1f953f53702b3ffbbc10fb7ec30d" kindref="member">FB_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral FB base pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5737" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5737" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1gaaf7a0f4fce443d227db43982f175a3fb" prot="public" static="no">
+        <name>FB_BASE_ADDRS</name>
+        <initializer>{ <ref refid="group___f_b___register___masks_1ga0d4d1f953f53702b3ffbbc10fb7ec30d" kindref="member">FB_BASE</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of FB peripheral base addresses </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5739" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5739" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___f_b___register___masks_1ga0aa36a3189de1e68b58234782768941a" prot="public" static="no">
+        <name>FB_BASE_PTRS</name>
+        <initializer>{ <ref refid="group___f_b___register___masks_1gafa56f653aa38688ca538ba26fcde993c" kindref="member">FB</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of FB peripheral base pointers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="5741" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="5741" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

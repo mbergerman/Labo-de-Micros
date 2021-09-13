@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_a_x_b_s___type" kind="struct" language="C++" prot="public">
+    <compoundname>AXBS_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga8d30f22766bc0456616fa4f22e3620e1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PRS</definition>
+        <argsstring></argsstring>
+        <name>PRS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Priority Registers Slave, array offset: 0x0, array step: 0x100 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2043" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2043" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga144e7a888c9f93089fd78220bc77af8b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_0</definition>
+        <argsstring>[12]</argsstring>
+        <name>RESERVED_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2044" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2044" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga95ba78b551cc36ed4649ad3693aa9978" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t CRS</definition>
+        <argsstring></argsstring>
+        <name>CRS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control Register, array offset: 0x10, array step: 0x100 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2045" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2045" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gabc2dc38106b6ab2d3320e9269cd05504" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_1</definition>
+        <argsstring>[236]</argsstring>
+        <name>RESERVED_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2046" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2046" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga289303c4d837180d3b16b684f80f0ba0" prot="public" static="no" mutable="no">
+        <type>struct AXBS_Type::@20</type>
+        <definition>struct AXBS_Type::@20  SLAVE[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>SLAVE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2047" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga95040200b47ad000d4d10a0a3cc26328" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t MGPCR0</definition>
+        <argsstring></argsstring>
+        <name>MGPCR0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master General Purpose Control Register, offset: 0x800 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2049" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2049" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga27bab6401c5712f0f544475a30c7f228" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t MGPCR1</definition>
+        <argsstring></argsstring>
+        <name>MGPCR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master General Purpose Control Register, offset: 0x900 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2051" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2051" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga6f91643603313549f066d2f445fbe58b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_2[252]</definition>
+        <argsstring>[252]</argsstring>
+        <name>RESERVED_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2052" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2052" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga7565ef72e26c5097db4bea3ec5fa9e14" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t MGPCR2</definition>
+        <argsstring></argsstring>
+        <name>MGPCR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master General Purpose Control Register, offset: 0xA00 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2053" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2053" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gae6f7bcb4c19541862a0ea955208a38f2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_3[252]</definition>
+        <argsstring>[252]</argsstring>
+        <name>RESERVED_3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2054" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2054" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaf1901496c3e52eee108a21efaa7a4e17" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t MGPCR3</definition>
+        <argsstring></argsstring>
+        <name>MGPCR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master General Purpose Control Register, offset: 0xB00 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2055" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2055" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga269f43b5f47b1d3dadb76a9bb547eb2c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_4[252]</definition>
+        <argsstring>[252]</argsstring>
+        <name>RESERVED_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2056" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2056" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga30337708f5ac98f037caf0dbc449801b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t MGPCR4</definition>
+        <argsstring></argsstring>
+        <name>MGPCR4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master General Purpose Control Register, offset: 0xC00 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2057" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2057" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gac434c3049fc8beb09dd04d55973be5a5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_5[252]</definition>
+        <argsstring>[252]</argsstring>
+        <name>RESERVED_5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2058" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2058" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gade0f01dbebdaf29c21c507b7acf1ae33" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t MGPCR5</definition>
+        <argsstring></argsstring>
+        <name>MGPCR5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Master General Purpose Control Register, offset: 0xD00 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="2059" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2059" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>AXBS - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="2041" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="2041" bodyend="2060"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga95ba78b551cc36ed4649ad3693aa9978" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>CRS</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga95040200b47ad000d4d10a0a3cc26328" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>MGPCR0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga27bab6401c5712f0f544475a30c7f228" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>MGPCR1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga7565ef72e26c5097db4bea3ec5fa9e14" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>MGPCR2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaf1901496c3e52eee108a21efaa7a4e17" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>MGPCR3</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga30337708f5ac98f037caf0dbc449801b" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>MGPCR4</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gade0f01dbebdaf29c21c507b7acf1ae33" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>MGPCR5</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga8d30f22766bc0456616fa4f22e3620e1" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>PRS</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga144e7a888c9f93089fd78220bc77af8b" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>RESERVED_0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gabc2dc38106b6ab2d3320e9269cd05504" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>RESERVED_1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga6f91643603313549f066d2f445fbe58b" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>RESERVED_2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gae6f7bcb4c19541862a0ea955208a38f2" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>RESERVED_3</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga269f43b5f47b1d3dadb76a9bb547eb2c" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>RESERVED_4</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gac434c3049fc8beb09dd04d55973be5a5" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>RESERVED_5</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga289303c4d837180d3b16b684f80f0ba0" prot="public" virt="non-virtual"><scope>AXBS_Type</scope><name>SLAVE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

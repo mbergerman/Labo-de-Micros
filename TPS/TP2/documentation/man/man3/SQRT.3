@@ -1,0 +1,101 @@
+.TH "SQRT" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SQRT
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "CMSIS_INLINE \fB__STATIC_INLINE\fP \fBarm_status\fP \fBarm_sqrt_f32\fP (\fBfloat32_t\fP in, \fBfloat32_t\fP *pOut)"
+.br
+.RI "Floating-point square root function\&. "
+.ti -1c
+.RI "\fBarm_status\fP \fBarm_sqrt_q31\fP (\fBq31_t\fP in, \fBq31_t\fP *pOut)"
+.br
+.RI "Q31 square root function\&. "
+.ti -1c
+.RI "\fBarm_status\fP \fBarm_sqrt_q15\fP (\fBq15_t\fP in, \fBq15_t\fP *pOut)"
+.br
+.RI "Q15 square root function\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Computes the square root of a number\&. There are separate functions for Q15, Q31, and floating-point data types\&. The square root function is computed using the Newton-Raphson algorithm\&. This is an iterative algorithm of the form: 
+.PP
+.nf
+
+     x1 = x0 - f(x0)/f'(x0)
+.fi
+.PP
+ where \fCx1\fP is the current estimate, \fCx0\fP is the previous estimate, and \fCf'(x0)\fP is the derivative of \fCf()\fP evaluated at \fCx0\fP\&. For the square root function, the algorithm reduces to: 
+.PP
+.nf
+
+    x0 = in/2                         [initial guess]
+    x1 = 1/2 * ( x0 + in / x0)        [each iteration]
+.fi
+.PP
+ 
+.SH "Function Documentation"
+.PP 
+.SS "CMSIS_INLINE \fB__STATIC_INLINE\fP \fBarm_status\fP arm_sqrt_f32 (\fBfloat32_t\fP in, \fBfloat32_t\fP * pOut)"
+
+.PP
+Floating-point square root function\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIin\fP input value\&. 
+.br
+\fIpOut\fP square root of input value\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The function returns ARM_MATH_SUCCESS if input value is positive value or ARM_MATH_ARGUMENT_ERROR if \fCin\fP is negative value and returns zero output for negative values\&. 
+.RE
+.PP
+
+.SS "\fBarm_status\fP arm_sqrt_q15 (\fBq15_t\fP in, \fBq15_t\fP * pOut)"
+
+.PP
+Q15 square root function\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIin\fP input value\&. The range of the input value is [0 +1) or 0x0000 to 0x7FFF\&. 
+.br
+\fIpOut\fP square root of input value\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The function returns ARM_MATH_SUCCESS if input value is positive value or ARM_MATH_ARGUMENT_ERROR if \fCin\fP is negative value and returns zero output for negative values\&. 
+.RE
+.PP
+
+.SS "\fBarm_status\fP arm_sqrt_q31 (\fBq31_t\fP in, \fBq31_t\fP * pOut)"
+
+.PP
+Q31 square root function\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIin\fP input value\&. The range of the input value is [0 +1) or 0x00000000 to 0x7FFFFFFF\&. 
+.br
+\fIpOut\fP square root of input value\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The function returns ARM_MATH_SUCCESS if input value is positive value or ARM_MATH_ARGUMENT_ERROR if \fCin\fP is negative value and returns zero output for negative values\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

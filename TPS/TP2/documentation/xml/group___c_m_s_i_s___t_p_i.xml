@@ -1,0 +1,2280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___c_m_s_i_s___t_p_i" kind="group">
+    <compoundname>CMSIS_TPI</compoundname>
+    <title>Trace Port Interface (TPI)</title>
+    <innerclass refid="struct_t_p_i___type" prot="public">TPI_Type</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga5a82d274eb2df8b0c92dd4ed63535928" prot="public" static="no">
+        <name>TPI_ACPR_PRESCALER_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ACPR: PRESCALER Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="751" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga4fcacd27208419929921aec8457a8c13" prot="public" static="no">
+        <name>TPI_ACPR_PRESCALER_Msk</name>
+        <initializer>(0x1FFFUL /*&lt;&lt; TPI_ACPR_PRESCALER_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ACPR: PRESCALER Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="752" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="752" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga0f302797b94bb2da24052082ab630858" prot="public" static="no">
+        <name>TPI_SPPR_TXMODE_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI SPPR: TXMODE Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="755" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="755" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaca085c8a954393d70dbd7240bb02cc1f" prot="public" static="no">
+        <name>TPI_SPPR_TXMODE_Msk</name>
+        <initializer>(0x3UL /*&lt;&lt; TPI_SPPR_TXMODE_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI SPPR: TXMODE Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="756" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="756" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga9537b8a660cc8803f57cbbee320b2fc8" prot="public" static="no">
+        <name>TPI_FFSR_FtNonStop_Pos</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FtNonStop Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="759" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="759" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaaa313f980974a8cfc7dac68c4d805ab1" prot="public" static="no">
+        <name>TPI_FFSR_FtNonStop_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFSR_FtNonStop_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FtNonStop Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="760" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="760" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gad30fde0c058da2ffb2b0a213be7a1b5c" prot="public" static="no">
+        <name>TPI_FFSR_TCPresent_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: TCPresent Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="762" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga0d6bfd263ff2fdec72d6ec9415fb1135" prot="public" static="no">
+        <name>TPI_FFSR_TCPresent_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFSR_TCPresent_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: TCPresent Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="763" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaedf31fd453a878021b542b644e2869d2" prot="public" static="no">
+        <name>TPI_FFSR_FtStopped_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FtStopped Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="765" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga1ab6c3abe1cf6311ee07e7c479ce5f78" prot="public" static="no">
+        <name>TPI_FFSR_FtStopped_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFSR_FtStopped_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FtStopped Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="766" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="766" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga542ca74a081588273e6d5275ba5da6bf" prot="public" static="no">
+        <name>TPI_FFSR_FlInProg_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FlInProg Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="768" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga63dfb09259893958962914fc3a9e3824" prot="public" static="no">
+        <name>TPI_FFSR_FlInProg_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_FFSR_FlInProg_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FlInProg Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="769" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa7ea11ba6ea75b541cd82e185c725b5b" prot="public" static="no">
+        <name>TPI_FFCR_TrigIn_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFCR: TrigIn Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="772" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="772" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga360b413bc5da61f751546a7133c3e4dd" prot="public" static="no">
+        <name>TPI_FFCR_TrigIn_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFCR_TrigIn_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFCR: TrigIn Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="773" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="773" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga99e58a0960b275a773b245e2b69b9a64" prot="public" static="no">
+        <name>TPI_FFCR_EnFCont_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFCR: EnFCont Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="775" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="775" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga27d1ecf2e0ff496df03457a2a97cb2c9" prot="public" static="no">
+        <name>TPI_FFCR_EnFCont_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFCR_EnFCont_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFCR: EnFCont Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="776" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga5517fa2ced64efbbd413720329c50b99" prot="public" static="no">
+        <name>TPI_TRIGGER_TRIGGER_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI TRIGGER: TRIGGER Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="779" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="779" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga814227af2b2665a0687bb49345e21110" prot="public" static="no">
+        <name>TPI_TRIGGER_TRIGGER_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_TRIGGER_TRIGGER_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI TRIGGER: TRIGGER Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="780" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="780" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa7e050e9eb6528241ebc6835783b6bae" prot="public" static="no">
+        <name>TPI_FIFO0_ITM_ATVALID_Pos</name>
+        <initializer>29U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ITM_ATVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="783" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga94cb2493ed35d2dab7bd4092b88a05bc" prot="public" static="no">
+        <name>TPI_FIFO0_ITM_ATVALID_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO0_ITM_ATVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ITM_ATVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="784" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="784" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gac2b6f7f13a2fa0be4aa7645a47dcac52" prot="public" static="no">
+        <name>TPI_FIFO0_ITM_bytecount_Pos</name>
+        <initializer>27U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ITM_bytecount Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="786" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga07bafa971b8daf0d63b3f92b9ae7fa16" prot="public" static="no">
+        <name>TPI_FIFO0_ITM_bytecount_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO0_ITM_bytecount_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ITM_bytecount Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="787" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="787" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga7fdeb3e465ca4aa9e3b2f424ab3bbd1d" prot="public" static="no">
+        <name>TPI_FIFO0_ETM_ATVALID_Pos</name>
+        <initializer>26U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM_ATVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="789" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="789" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga4f0005dc420b28f2369179a935b9a9d3" prot="public" static="no">
+        <name>TPI_FIFO0_ETM_ATVALID_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO0_ETM_ATVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM_ATVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="790" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="790" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga2f738e45386ebf58c4d406f578e7ddaf" prot="public" static="no">
+        <name>TPI_FIFO0_ETM_bytecount_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM_bytecount Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="792" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gad2536b3a935361c68453cd068640af92" prot="public" static="no">
+        <name>TPI_FIFO0_ETM_bytecount_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO0_ETM_bytecount_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM_bytecount Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="793" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga5f0037cc80c65e86d9e94e5005077a48" prot="public" static="no">
+        <name>TPI_FIFO0_ETM2_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM2 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="795" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa82a7b9b99c990fb12eafb3c84b68254" prot="public" static="no">
+        <name>TPI_FIFO0_ETM2_Msk</name>
+        <initializer>(0xFFUL &lt;&lt; TPI_FIFO0_ETM2_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM2 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="796" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gac5a2ef4b7f811d1f3d81ec919d794413" prot="public" static="no">
+        <name>TPI_FIFO0_ETM1_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM1 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="798" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="798" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaad9c1a6ed34a70905005a0cc14d5f01b" prot="public" static="no">
+        <name>TPI_FIFO0_ETM1_Msk</name>
+        <initializer>(0xFFUL &lt;&lt; TPI_FIFO0_ETM1_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM1 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="799" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="799" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga48783ce3c695d8c06b1352a526110a87" prot="public" static="no">
+        <name>TPI_FIFO0_ETM0_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM0 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="801" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="801" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaf924f7d1662f3f6c1da12052390cb118" prot="public" static="no">
+        <name>TPI_FIFO0_ETM0_Msk</name>
+        <initializer>(0xFFUL /*&lt;&lt; TPI_FIFO0_ETM0_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM0 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="802" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="802" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga6959f73d7db4a87ae9ad9cfc99844526" prot="public" static="no">
+        <name>TPI_ITATBCTR2_ATREADY_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITATBCTR2: ATREADY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="805" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="805" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga1859502749709a2e5ead9a2599d998db" prot="public" static="no">
+        <name>TPI_ITATBCTR2_ATREADY_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_ITATBCTR2_ATREADY_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITATBCTR2: ATREADY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="806" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="806" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga08edfc862b2c8c415854cc4ae2067dfb" prot="public" static="no">
+        <name>TPI_FIFO1_ITM_ATVALID_Pos</name>
+        <initializer>29U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM_ATVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="809" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="809" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gabc1f6a3b6cac0099d7c01ca949b4dd08" prot="public" static="no">
+        <name>TPI_FIFO1_ITM_ATVALID_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO1_ITM_ATVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM_ATVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="810" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="810" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa22ebf7c86e4f4b2c98cfd0b5981375a" prot="public" static="no">
+        <name>TPI_FIFO1_ITM_bytecount_Pos</name>
+        <initializer>27U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM_bytecount Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="812" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="812" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gacba2edfc0499828019550141356b0dcb" prot="public" static="no">
+        <name>TPI_FIFO1_ITM_bytecount_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO1_ITM_bytecount_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM_bytecount Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="813" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="813" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga3177b8d815cf4a707a2d3d3d5499315d" prot="public" static="no">
+        <name>TPI_FIFO1_ETM_ATVALID_Pos</name>
+        <initializer>26U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ETM_ATVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="815" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="815" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga0e8f29a1e9378d1ceb0708035edbb86d" prot="public" static="no">
+        <name>TPI_FIFO1_ETM_ATVALID_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO1_ETM_ATVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ETM_ATVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="816" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="816" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaab31238152b5691af633a7475eaf1f06" prot="public" static="no">
+        <name>TPI_FIFO1_ETM_bytecount_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ETM_bytecount Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="818" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="818" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gab554305459953b80554fdb1908b73291" prot="public" static="no">
+        <name>TPI_FIFO1_ETM_bytecount_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO1_ETM_bytecount_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ETM_bytecount Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="819" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="819" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga1828c228f3940005f48fb8dd88ada35b" prot="public" static="no">
+        <name>TPI_FIFO1_ITM2_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM2 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="821" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="821" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gae54512f926ebc00f2e056232aa21d335" prot="public" static="no">
+        <name>TPI_FIFO1_ITM2_Msk</name>
+        <initializer>(0xFFUL &lt;&lt; TPI_FIFO1_ITM2_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM2 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="822" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="822" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaece86ab513bc3d0e0a9dbd82258af49f" prot="public" static="no">
+        <name>TPI_FIFO1_ITM1_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM1 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="824" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="824" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga3347f42828920dfe56e3130ad319a9e6" prot="public" static="no">
+        <name>TPI_FIFO1_ITM1_Msk</name>
+        <initializer>(0xFFUL &lt;&lt; TPI_FIFO1_ITM1_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM1 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="825" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="825" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga2188671488417a52abb075bcd4d73440" prot="public" static="no">
+        <name>TPI_FIFO1_ITM0_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM0 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="827" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="827" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga8ae09f544fc1a428797e2a150f14a4c9" prot="public" static="no">
+        <name>TPI_FIFO1_ITM0_Msk</name>
+        <initializer>(0xFFUL /*&lt;&lt; TPI_FIFO1_ITM0_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM0 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="828" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="828" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gab1eb6866c65f02fa9c83696b49b0f346" prot="public" static="no">
+        <name>TPI_ITATBCTR0_ATREADY_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITATBCTR0: ATREADY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="831" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="831" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaee320b3c60f9575aa96a8742c4ff9356" prot="public" static="no">
+        <name>TPI_ITATBCTR0_ATREADY_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_ITATBCTR0_ATREADY_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITATBCTR0: ATREADY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="832" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="832" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa847adb71a1bc811d2e3190528f495f0" prot="public" static="no">
+        <name>TPI_ITCTRL_Mode_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITCTRL: Mode Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="835" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="835" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gad6f87550b468ad0920d5f405bfd3f017" prot="public" static="no">
+        <name>TPI_ITCTRL_Mode_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_ITCTRL_Mode_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITCTRL: Mode Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="836" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="836" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga9f46cf1a1708575f56d6b827766277f4" prot="public" static="no">
+        <name>TPI_DEVID_NRZVALID_Pos</name>
+        <initializer>11U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: NRZVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="839" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="839" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gacecc8710a8f6a23a7d1d4f5674daf02a" prot="public" static="no">
+        <name>TPI_DEVID_NRZVALID_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_DEVID_NRZVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: NRZVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="840" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="840" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga675534579d9e25477bb38970e3ef973c" prot="public" static="no">
+        <name>TPI_DEVID_MANCVALID_Pos</name>
+        <initializer>10U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: MANCVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="842" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga4c3ee4b1a34ad1960a6b2d6e7e0ff942" prot="public" static="no">
+        <name>TPI_DEVID_MANCVALID_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_DEVID_MANCVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: MANCVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="843" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="843" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga974cccf4c958b4a45cb71c7b5de39b7b" prot="public" static="no">
+        <name>TPI_DEVID_PTINVALID_Pos</name>
+        <initializer>9U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: PTINVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="845" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="845" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga1ca84d62243e475836bba02516ba6b97" prot="public" static="no">
+        <name>TPI_DEVID_PTINVALID_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_DEVID_PTINVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: PTINVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="846" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="846" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga3f7da5de2a34be41a092e5eddd22ac4d" prot="public" static="no">
+        <name>TPI_DEVID_MinBufSz_Pos</name>
+        <initializer>6U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: MinBufSz Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="848" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga939e068ff3f1a65b35187ab34a342cd8" prot="public" static="no">
+        <name>TPI_DEVID_MinBufSz_Msk</name>
+        <initializer>(0x7UL &lt;&lt; TPI_DEVID_MinBufSz_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: MinBufSz Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="849" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gab382b1296b5efd057be606eb8f768df8" prot="public" static="no">
+        <name>TPI_DEVID_AsynClkIn_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: AsynClkIn Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="851" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="851" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gab67830557d2d10be882284275025a2d3" prot="public" static="no">
+        <name>TPI_DEVID_AsynClkIn_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_DEVID_AsynClkIn_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: AsynClkIn Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="852" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga80ecae7fec479e80e583f545996868ed" prot="public" static="no">
+        <name>TPI_DEVID_NrTraceInput_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: NrTraceInput Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="854" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gabed454418d2140043cd65ec899abd97f" prot="public" static="no">
+        <name>TPI_DEVID_NrTraceInput_Msk</name>
+        <initializer>(0x1FUL /*&lt;&lt; TPI_DEVID_NrTraceInput_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: NrTraceInput Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="855" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga69c4892d332755a9f64c1680497cebdd" prot="public" static="no">
+        <name>TPI_DEVTYPE_MajorType_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVTYPE: MajorType Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="858" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaecbceed6d08ec586403b37ad47b38c88" prot="public" static="no">
+        <name>TPI_DEVTYPE_MajorType_Msk</name>
+        <initializer>(0xFUL &lt;&lt; TPI_DEVTYPE_MajorType_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVTYPE: MajorType Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="859" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="859" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga0c799ff892af5eb3162d152abc00af7a" prot="public" static="no">
+        <name>TPI_DEVTYPE_SubType_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVTYPE: SubType Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="861" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="861" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga5b2fd7dddaf5f64855d9c0696acd65c1" prot="public" static="no">
+        <name>TPI_DEVTYPE_SubType_Msk</name>
+        <initializer>(0xFUL /*&lt;&lt; TPI_DEVTYPE_SubType_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVTYPE: SubType Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="862" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="862" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga5a82d274eb2df8b0c92dd4ed63535928" prot="public" static="no">
+        <name>TPI_ACPR_PRESCALER_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ACPR: PRESCALER Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1413" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga4fcacd27208419929921aec8457a8c13" prot="public" static="no">
+        <name>TPI_ACPR_PRESCALER_Msk</name>
+        <initializer>(0x1FFFUL /*&lt;&lt; TPI_ACPR_PRESCALER_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ACPR: PRESCALER Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1414" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga0f302797b94bb2da24052082ab630858" prot="public" static="no">
+        <name>TPI_SPPR_TXMODE_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI SPPR: TXMODE Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1417" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaca085c8a954393d70dbd7240bb02cc1f" prot="public" static="no">
+        <name>TPI_SPPR_TXMODE_Msk</name>
+        <initializer>(0x3UL /*&lt;&lt; TPI_SPPR_TXMODE_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI SPPR: TXMODE Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1418" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga9537b8a660cc8803f57cbbee320b2fc8" prot="public" static="no">
+        <name>TPI_FFSR_FtNonStop_Pos</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FtNonStop Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1421" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaaa313f980974a8cfc7dac68c4d805ab1" prot="public" static="no">
+        <name>TPI_FFSR_FtNonStop_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFSR_FtNonStop_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FtNonStop Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1422" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gad30fde0c058da2ffb2b0a213be7a1b5c" prot="public" static="no">
+        <name>TPI_FFSR_TCPresent_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: TCPresent Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1424" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga0d6bfd263ff2fdec72d6ec9415fb1135" prot="public" static="no">
+        <name>TPI_FFSR_TCPresent_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFSR_TCPresent_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: TCPresent Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1425" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaedf31fd453a878021b542b644e2869d2" prot="public" static="no">
+        <name>TPI_FFSR_FtStopped_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FtStopped Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1427" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga1ab6c3abe1cf6311ee07e7c479ce5f78" prot="public" static="no">
+        <name>TPI_FFSR_FtStopped_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFSR_FtStopped_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FtStopped Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1428" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga542ca74a081588273e6d5275ba5da6bf" prot="public" static="no">
+        <name>TPI_FFSR_FlInProg_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FlInProg Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1430" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga63dfb09259893958962914fc3a9e3824" prot="public" static="no">
+        <name>TPI_FFSR_FlInProg_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_FFSR_FlInProg_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FlInProg Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1431" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa7ea11ba6ea75b541cd82e185c725b5b" prot="public" static="no">
+        <name>TPI_FFCR_TrigIn_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFCR: TrigIn Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1434" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga360b413bc5da61f751546a7133c3e4dd" prot="public" static="no">
+        <name>TPI_FFCR_TrigIn_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFCR_TrigIn_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFCR: TrigIn Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1435" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga99e58a0960b275a773b245e2b69b9a64" prot="public" static="no">
+        <name>TPI_FFCR_EnFCont_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFCR: EnFCont Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1437" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga27d1ecf2e0ff496df03457a2a97cb2c9" prot="public" static="no">
+        <name>TPI_FFCR_EnFCont_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFCR_EnFCont_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFCR: EnFCont Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1438" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga5517fa2ced64efbbd413720329c50b99" prot="public" static="no">
+        <name>TPI_TRIGGER_TRIGGER_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI TRIGGER: TRIGGER Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1441" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga814227af2b2665a0687bb49345e21110" prot="public" static="no">
+        <name>TPI_TRIGGER_TRIGGER_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_TRIGGER_TRIGGER_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI TRIGGER: TRIGGER Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1442" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa7e050e9eb6528241ebc6835783b6bae" prot="public" static="no">
+        <name>TPI_FIFO0_ITM_ATVALID_Pos</name>
+        <initializer>29U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ITM_ATVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1445" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga94cb2493ed35d2dab7bd4092b88a05bc" prot="public" static="no">
+        <name>TPI_FIFO0_ITM_ATVALID_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO0_ITM_ATVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ITM_ATVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1446" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gac2b6f7f13a2fa0be4aa7645a47dcac52" prot="public" static="no">
+        <name>TPI_FIFO0_ITM_bytecount_Pos</name>
+        <initializer>27U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ITM_bytecount Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1448" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga07bafa971b8daf0d63b3f92b9ae7fa16" prot="public" static="no">
+        <name>TPI_FIFO0_ITM_bytecount_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO0_ITM_bytecount_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ITM_bytecount Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1449" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga7fdeb3e465ca4aa9e3b2f424ab3bbd1d" prot="public" static="no">
+        <name>TPI_FIFO0_ETM_ATVALID_Pos</name>
+        <initializer>26U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM_ATVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1451" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga4f0005dc420b28f2369179a935b9a9d3" prot="public" static="no">
+        <name>TPI_FIFO0_ETM_ATVALID_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO0_ETM_ATVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM_ATVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1452" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga2f738e45386ebf58c4d406f578e7ddaf" prot="public" static="no">
+        <name>TPI_FIFO0_ETM_bytecount_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM_bytecount Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1454" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gad2536b3a935361c68453cd068640af92" prot="public" static="no">
+        <name>TPI_FIFO0_ETM_bytecount_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO0_ETM_bytecount_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM_bytecount Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1455" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga5f0037cc80c65e86d9e94e5005077a48" prot="public" static="no">
+        <name>TPI_FIFO0_ETM2_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM2 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1457" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa82a7b9b99c990fb12eafb3c84b68254" prot="public" static="no">
+        <name>TPI_FIFO0_ETM2_Msk</name>
+        <initializer>(0xFFUL &lt;&lt; TPI_FIFO0_ETM2_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM2 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1458" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gac5a2ef4b7f811d1f3d81ec919d794413" prot="public" static="no">
+        <name>TPI_FIFO0_ETM1_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM1 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1460" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaad9c1a6ed34a70905005a0cc14d5f01b" prot="public" static="no">
+        <name>TPI_FIFO0_ETM1_Msk</name>
+        <initializer>(0xFFUL &lt;&lt; TPI_FIFO0_ETM1_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM1 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1461" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga48783ce3c695d8c06b1352a526110a87" prot="public" static="no">
+        <name>TPI_FIFO0_ETM0_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM0 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1463" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaf924f7d1662f3f6c1da12052390cb118" prot="public" static="no">
+        <name>TPI_FIFO0_ETM0_Msk</name>
+        <initializer>(0xFFUL /*&lt;&lt; TPI_FIFO0_ETM0_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM0 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1464" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga6959f73d7db4a87ae9ad9cfc99844526" prot="public" static="no">
+        <name>TPI_ITATBCTR2_ATREADY_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITATBCTR2: ATREADY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1467" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga1859502749709a2e5ead9a2599d998db" prot="public" static="no">
+        <name>TPI_ITATBCTR2_ATREADY_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_ITATBCTR2_ATREADY_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITATBCTR2: ATREADY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1468" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga08edfc862b2c8c415854cc4ae2067dfb" prot="public" static="no">
+        <name>TPI_FIFO1_ITM_ATVALID_Pos</name>
+        <initializer>29U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM_ATVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1471" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gabc1f6a3b6cac0099d7c01ca949b4dd08" prot="public" static="no">
+        <name>TPI_FIFO1_ITM_ATVALID_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO1_ITM_ATVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM_ATVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1472" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa22ebf7c86e4f4b2c98cfd0b5981375a" prot="public" static="no">
+        <name>TPI_FIFO1_ITM_bytecount_Pos</name>
+        <initializer>27U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM_bytecount Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1474" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gacba2edfc0499828019550141356b0dcb" prot="public" static="no">
+        <name>TPI_FIFO1_ITM_bytecount_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO1_ITM_bytecount_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM_bytecount Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1475" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga3177b8d815cf4a707a2d3d3d5499315d" prot="public" static="no">
+        <name>TPI_FIFO1_ETM_ATVALID_Pos</name>
+        <initializer>26U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ETM_ATVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1477" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga0e8f29a1e9378d1ceb0708035edbb86d" prot="public" static="no">
+        <name>TPI_FIFO1_ETM_ATVALID_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO1_ETM_ATVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ETM_ATVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1478" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaab31238152b5691af633a7475eaf1f06" prot="public" static="no">
+        <name>TPI_FIFO1_ETM_bytecount_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ETM_bytecount Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1480" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gab554305459953b80554fdb1908b73291" prot="public" static="no">
+        <name>TPI_FIFO1_ETM_bytecount_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO1_ETM_bytecount_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ETM_bytecount Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1481" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga1828c228f3940005f48fb8dd88ada35b" prot="public" static="no">
+        <name>TPI_FIFO1_ITM2_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM2 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1483" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gae54512f926ebc00f2e056232aa21d335" prot="public" static="no">
+        <name>TPI_FIFO1_ITM2_Msk</name>
+        <initializer>(0xFFUL &lt;&lt; TPI_FIFO1_ITM2_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM2 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1484" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaece86ab513bc3d0e0a9dbd82258af49f" prot="public" static="no">
+        <name>TPI_FIFO1_ITM1_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM1 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1486" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga3347f42828920dfe56e3130ad319a9e6" prot="public" static="no">
+        <name>TPI_FIFO1_ITM1_Msk</name>
+        <initializer>(0xFFUL &lt;&lt; TPI_FIFO1_ITM1_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM1 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1487" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga2188671488417a52abb075bcd4d73440" prot="public" static="no">
+        <name>TPI_FIFO1_ITM0_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM0 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1489" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga8ae09f544fc1a428797e2a150f14a4c9" prot="public" static="no">
+        <name>TPI_FIFO1_ITM0_Msk</name>
+        <initializer>(0xFFUL /*&lt;&lt; TPI_FIFO1_ITM0_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM0 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1490" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gab1eb6866c65f02fa9c83696b49b0f346" prot="public" static="no">
+        <name>TPI_ITATBCTR0_ATREADY_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITATBCTR0: ATREADY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1493" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaee320b3c60f9575aa96a8742c4ff9356" prot="public" static="no">
+        <name>TPI_ITATBCTR0_ATREADY_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_ITATBCTR0_ATREADY_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITATBCTR0: ATREADY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1494" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa847adb71a1bc811d2e3190528f495f0" prot="public" static="no">
+        <name>TPI_ITCTRL_Mode_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITCTRL: Mode Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1497" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gad6f87550b468ad0920d5f405bfd3f017" prot="public" static="no">
+        <name>TPI_ITCTRL_Mode_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_ITCTRL_Mode_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITCTRL: Mode Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1498" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga9f46cf1a1708575f56d6b827766277f4" prot="public" static="no">
+        <name>TPI_DEVID_NRZVALID_Pos</name>
+        <initializer>11U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: NRZVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1501" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gacecc8710a8f6a23a7d1d4f5674daf02a" prot="public" static="no">
+        <name>TPI_DEVID_NRZVALID_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_DEVID_NRZVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: NRZVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1502" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga675534579d9e25477bb38970e3ef973c" prot="public" static="no">
+        <name>TPI_DEVID_MANCVALID_Pos</name>
+        <initializer>10U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: MANCVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1504" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga4c3ee4b1a34ad1960a6b2d6e7e0ff942" prot="public" static="no">
+        <name>TPI_DEVID_MANCVALID_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_DEVID_MANCVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: MANCVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1505" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga974cccf4c958b4a45cb71c7b5de39b7b" prot="public" static="no">
+        <name>TPI_DEVID_PTINVALID_Pos</name>
+        <initializer>9U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: PTINVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1507" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1507" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga1ca84d62243e475836bba02516ba6b97" prot="public" static="no">
+        <name>TPI_DEVID_PTINVALID_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_DEVID_PTINVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: PTINVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1508" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga3f7da5de2a34be41a092e5eddd22ac4d" prot="public" static="no">
+        <name>TPI_DEVID_MinBufSz_Pos</name>
+        <initializer>6U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: MinBufSz Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1510" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga939e068ff3f1a65b35187ab34a342cd8" prot="public" static="no">
+        <name>TPI_DEVID_MinBufSz_Msk</name>
+        <initializer>(0x7UL &lt;&lt; TPI_DEVID_MinBufSz_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: MinBufSz Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1511" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gab382b1296b5efd057be606eb8f768df8" prot="public" static="no">
+        <name>TPI_DEVID_AsynClkIn_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: AsynClkIn Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1513" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gab67830557d2d10be882284275025a2d3" prot="public" static="no">
+        <name>TPI_DEVID_AsynClkIn_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_DEVID_AsynClkIn_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: AsynClkIn Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1514" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga80ecae7fec479e80e583f545996868ed" prot="public" static="no">
+        <name>TPI_DEVID_NrTraceInput_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: NrTraceInput Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1516" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gabed454418d2140043cd65ec899abd97f" prot="public" static="no">
+        <name>TPI_DEVID_NrTraceInput_Msk</name>
+        <initializer>(0x1FUL /*&lt;&lt; TPI_DEVID_NrTraceInput_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: NrTraceInput Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1517" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1517" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga69c4892d332755a9f64c1680497cebdd" prot="public" static="no">
+        <name>TPI_DEVTYPE_MajorType_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVTYPE: MajorType Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1520" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1520" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaecbceed6d08ec586403b37ad47b38c88" prot="public" static="no">
+        <name>TPI_DEVTYPE_MajorType_Msk</name>
+        <initializer>(0xFUL &lt;&lt; TPI_DEVTYPE_MajorType_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVTYPE: MajorType Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1521" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga0c799ff892af5eb3162d152abc00af7a" prot="public" static="no">
+        <name>TPI_DEVTYPE_SubType_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVTYPE: SubType Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1523" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga5b2fd7dddaf5f64855d9c0696acd65c1" prot="public" static="no">
+        <name>TPI_DEVTYPE_SubType_Msk</name>
+        <initializer>(0xFUL /*&lt;&lt; TPI_DEVTYPE_SubType_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVTYPE: SubType Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1524" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga5a82d274eb2df8b0c92dd4ed63535928" prot="public" static="no">
+        <name>TPI_ACPR_PRESCALER_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ACPR: PRESCALER Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1090" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1090" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga4fcacd27208419929921aec8457a8c13" prot="public" static="no">
+        <name>TPI_ACPR_PRESCALER_Msk</name>
+        <initializer>(0x1FFFUL /*&lt;&lt; TPI_ACPR_PRESCALER_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ACPR: PRESCALER Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1091" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1091" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga73adc86f1ee60e5b75d963361535ed24" prot="public" static="no">
+        <name>TPI_ACPR_SWOSCALER_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ACPR: SWOSCALER Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1093" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1093" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga73da1dbfb935b27bfd5473d3b041fdb5" prot="public" static="no">
+        <name>TPI_ACPR_SWOSCALER_Msk</name>
+        <initializer>(0xFFFFUL /*&lt;&lt; TPI_ACPR_SWOSCALER_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ACPR: SWOSCALER Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1094" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1094" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga0f302797b94bb2da24052082ab630858" prot="public" static="no">
+        <name>TPI_SPPR_TXMODE_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI SPPR: TXMODE Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1097" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1097" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaca085c8a954393d70dbd7240bb02cc1f" prot="public" static="no">
+        <name>TPI_SPPR_TXMODE_Msk</name>
+        <initializer>(0x3UL /*&lt;&lt; TPI_SPPR_TXMODE_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI SPPR: TXMODE Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1098" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1098" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga9537b8a660cc8803f57cbbee320b2fc8" prot="public" static="no">
+        <name>TPI_FFSR_FtNonStop_Pos</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FtNonStop Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1101" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaaa313f980974a8cfc7dac68c4d805ab1" prot="public" static="no">
+        <name>TPI_FFSR_FtNonStop_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFSR_FtNonStop_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FtNonStop Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1102" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gad30fde0c058da2ffb2b0a213be7a1b5c" prot="public" static="no">
+        <name>TPI_FFSR_TCPresent_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: TCPresent Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1104" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga0d6bfd263ff2fdec72d6ec9415fb1135" prot="public" static="no">
+        <name>TPI_FFSR_TCPresent_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFSR_TCPresent_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: TCPresent Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1105" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaedf31fd453a878021b542b644e2869d2" prot="public" static="no">
+        <name>TPI_FFSR_FtStopped_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FtStopped Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1107" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga1ab6c3abe1cf6311ee07e7c479ce5f78" prot="public" static="no">
+        <name>TPI_FFSR_FtStopped_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFSR_FtStopped_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FtStopped Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1108" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga542ca74a081588273e6d5275ba5da6bf" prot="public" static="no">
+        <name>TPI_FFSR_FlInProg_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FlInProg Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1110" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga63dfb09259893958962914fc3a9e3824" prot="public" static="no">
+        <name>TPI_FFSR_FlInProg_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_FFSR_FlInProg_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFSR: FlInProg Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1111" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa7ea11ba6ea75b541cd82e185c725b5b" prot="public" static="no">
+        <name>TPI_FFCR_TrigIn_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFCR: TrigIn Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1114" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga360b413bc5da61f751546a7133c3e4dd" prot="public" static="no">
+        <name>TPI_FFCR_TrigIn_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFCR_TrigIn_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFCR: TrigIn Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1115" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga99e58a0960b275a773b245e2b69b9a64" prot="public" static="no">
+        <name>TPI_FFCR_EnFCont_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFCR: EnFCont Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1117" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga27d1ecf2e0ff496df03457a2a97cb2c9" prot="public" static="no">
+        <name>TPI_FFCR_EnFCont_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_FFCR_EnFCont_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FFCR: EnFCont Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1118" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga5517fa2ced64efbbd413720329c50b99" prot="public" static="no">
+        <name>TPI_TRIGGER_TRIGGER_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI TRIGGER: TRIGGER Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1121" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga814227af2b2665a0687bb49345e21110" prot="public" static="no">
+        <name>TPI_TRIGGER_TRIGGER_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_TRIGGER_TRIGGER_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI TRIGGER: TRIGGER Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1122" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa7e050e9eb6528241ebc6835783b6bae" prot="public" static="no">
+        <name>TPI_FIFO0_ITM_ATVALID_Pos</name>
+        <initializer>29U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ITM_ATVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1125" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga94cb2493ed35d2dab7bd4092b88a05bc" prot="public" static="no">
+        <name>TPI_FIFO0_ITM_ATVALID_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO0_ITM_ATVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ITM_ATVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1126" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gac2b6f7f13a2fa0be4aa7645a47dcac52" prot="public" static="no">
+        <name>TPI_FIFO0_ITM_bytecount_Pos</name>
+        <initializer>27U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ITM_bytecount Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1128" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga07bafa971b8daf0d63b3f92b9ae7fa16" prot="public" static="no">
+        <name>TPI_FIFO0_ITM_bytecount_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO0_ITM_bytecount_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ITM_bytecount Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1129" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga7fdeb3e465ca4aa9e3b2f424ab3bbd1d" prot="public" static="no">
+        <name>TPI_FIFO0_ETM_ATVALID_Pos</name>
+        <initializer>26U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM_ATVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1131" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga4f0005dc420b28f2369179a935b9a9d3" prot="public" static="no">
+        <name>TPI_FIFO0_ETM_ATVALID_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO0_ETM_ATVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM_ATVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1132" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga2f738e45386ebf58c4d406f578e7ddaf" prot="public" static="no">
+        <name>TPI_FIFO0_ETM_bytecount_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM_bytecount Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1134" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gad2536b3a935361c68453cd068640af92" prot="public" static="no">
+        <name>TPI_FIFO0_ETM_bytecount_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO0_ETM_bytecount_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM_bytecount Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1135" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga5f0037cc80c65e86d9e94e5005077a48" prot="public" static="no">
+        <name>TPI_FIFO0_ETM2_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM2 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1137" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa82a7b9b99c990fb12eafb3c84b68254" prot="public" static="no">
+        <name>TPI_FIFO0_ETM2_Msk</name>
+        <initializer>(0xFFUL &lt;&lt; TPI_FIFO0_ETM2_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM2 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1138" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gac5a2ef4b7f811d1f3d81ec919d794413" prot="public" static="no">
+        <name>TPI_FIFO0_ETM1_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM1 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1140" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaad9c1a6ed34a70905005a0cc14d5f01b" prot="public" static="no">
+        <name>TPI_FIFO0_ETM1_Msk</name>
+        <initializer>(0xFFUL &lt;&lt; TPI_FIFO0_ETM1_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM1 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1141" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga48783ce3c695d8c06b1352a526110a87" prot="public" static="no">
+        <name>TPI_FIFO0_ETM0_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM0 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1143" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaf924f7d1662f3f6c1da12052390cb118" prot="public" static="no">
+        <name>TPI_FIFO0_ETM0_Msk</name>
+        <initializer>(0xFFUL /*&lt;&lt; TPI_FIFO0_ETM0_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO0: ETM0 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1144" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga6959f73d7db4a87ae9ad9cfc99844526" prot="public" static="no">
+        <name>TPI_ITATBCTR2_ATREADY_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITATBCTR2: ATREADY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1147" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga1859502749709a2e5ead9a2599d998db" prot="public" static="no">
+        <name>TPI_ITATBCTR2_ATREADY_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_ITATBCTR2_ATREADY_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITATBCTR2: ATREADY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1148" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga08edfc862b2c8c415854cc4ae2067dfb" prot="public" static="no">
+        <name>TPI_FIFO1_ITM_ATVALID_Pos</name>
+        <initializer>29U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM_ATVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1151" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gabc1f6a3b6cac0099d7c01ca949b4dd08" prot="public" static="no">
+        <name>TPI_FIFO1_ITM_ATVALID_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO1_ITM_ATVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM_ATVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1152" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa22ebf7c86e4f4b2c98cfd0b5981375a" prot="public" static="no">
+        <name>TPI_FIFO1_ITM_bytecount_Pos</name>
+        <initializer>27U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM_bytecount Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1154" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gacba2edfc0499828019550141356b0dcb" prot="public" static="no">
+        <name>TPI_FIFO1_ITM_bytecount_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO1_ITM_bytecount_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM_bytecount Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1155" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga3177b8d815cf4a707a2d3d3d5499315d" prot="public" static="no">
+        <name>TPI_FIFO1_ETM_ATVALID_Pos</name>
+        <initializer>26U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ETM_ATVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1157" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga0e8f29a1e9378d1ceb0708035edbb86d" prot="public" static="no">
+        <name>TPI_FIFO1_ETM_ATVALID_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO1_ETM_ATVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ETM_ATVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1158" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaab31238152b5691af633a7475eaf1f06" prot="public" static="no">
+        <name>TPI_FIFO1_ETM_bytecount_Pos</name>
+        <initializer>24U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ETM_bytecount Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1160" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gab554305459953b80554fdb1908b73291" prot="public" static="no">
+        <name>TPI_FIFO1_ETM_bytecount_Msk</name>
+        <initializer>(0x3UL &lt;&lt; TPI_FIFO1_ETM_bytecount_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ETM_bytecount Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1161" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga1828c228f3940005f48fb8dd88ada35b" prot="public" static="no">
+        <name>TPI_FIFO1_ITM2_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM2 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1163" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gae54512f926ebc00f2e056232aa21d335" prot="public" static="no">
+        <name>TPI_FIFO1_ITM2_Msk</name>
+        <initializer>(0xFFUL &lt;&lt; TPI_FIFO1_ITM2_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM2 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1164" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaece86ab513bc3d0e0a9dbd82258af49f" prot="public" static="no">
+        <name>TPI_FIFO1_ITM1_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM1 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1166" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga3347f42828920dfe56e3130ad319a9e6" prot="public" static="no">
+        <name>TPI_FIFO1_ITM1_Msk</name>
+        <initializer>(0xFFUL &lt;&lt; TPI_FIFO1_ITM1_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM1 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1167" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga2188671488417a52abb075bcd4d73440" prot="public" static="no">
+        <name>TPI_FIFO1_ITM0_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM0 Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1169" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga8ae09f544fc1a428797e2a150f14a4c9" prot="public" static="no">
+        <name>TPI_FIFO1_ITM0_Msk</name>
+        <initializer>(0xFFUL /*&lt;&lt; TPI_FIFO1_ITM0_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI FIFO1: ITM0 Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1170" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gab1eb6866c65f02fa9c83696b49b0f346" prot="public" static="no">
+        <name>TPI_ITATBCTR0_ATREADY_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITATBCTR0: ATREADY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1173" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaee320b3c60f9575aa96a8742c4ff9356" prot="public" static="no">
+        <name>TPI_ITATBCTR0_ATREADY_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_ITATBCTR0_ATREADY_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITATBCTR0: ATREADY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1174" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaa847adb71a1bc811d2e3190528f495f0" prot="public" static="no">
+        <name>TPI_ITCTRL_Mode_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITCTRL: Mode Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1177" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gad6f87550b468ad0920d5f405bfd3f017" prot="public" static="no">
+        <name>TPI_ITCTRL_Mode_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; TPI_ITCTRL_Mode_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI ITCTRL: Mode Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1178" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga9f46cf1a1708575f56d6b827766277f4" prot="public" static="no">
+        <name>TPI_DEVID_NRZVALID_Pos</name>
+        <initializer>11U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: NRZVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1181" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gacecc8710a8f6a23a7d1d4f5674daf02a" prot="public" static="no">
+        <name>TPI_DEVID_NRZVALID_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_DEVID_NRZVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: NRZVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1182" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga675534579d9e25477bb38970e3ef973c" prot="public" static="no">
+        <name>TPI_DEVID_MANCVALID_Pos</name>
+        <initializer>10U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: MANCVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1184" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga4c3ee4b1a34ad1960a6b2d6e7e0ff942" prot="public" static="no">
+        <name>TPI_DEVID_MANCVALID_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_DEVID_MANCVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: MANCVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1185" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga974cccf4c958b4a45cb71c7b5de39b7b" prot="public" static="no">
+        <name>TPI_DEVID_PTINVALID_Pos</name>
+        <initializer>9U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: PTINVALID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1187" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga1ca84d62243e475836bba02516ba6b97" prot="public" static="no">
+        <name>TPI_DEVID_PTINVALID_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_DEVID_PTINVALID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: PTINVALID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1188" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga3f7da5de2a34be41a092e5eddd22ac4d" prot="public" static="no">
+        <name>TPI_DEVID_MinBufSz_Pos</name>
+        <initializer>6U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: MinBufSz Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1190" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga939e068ff3f1a65b35187ab34a342cd8" prot="public" static="no">
+        <name>TPI_DEVID_MinBufSz_Msk</name>
+        <initializer>(0x7UL &lt;&lt; TPI_DEVID_MinBufSz_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: MinBufSz Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1191" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gab382b1296b5efd057be606eb8f768df8" prot="public" static="no">
+        <name>TPI_DEVID_AsynClkIn_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: AsynClkIn Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1193" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gab67830557d2d10be882284275025a2d3" prot="public" static="no">
+        <name>TPI_DEVID_AsynClkIn_Msk</name>
+        <initializer>(0x1UL &lt;&lt; TPI_DEVID_AsynClkIn_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: AsynClkIn Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1194" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga80ecae7fec479e80e583f545996868ed" prot="public" static="no">
+        <name>TPI_DEVID_NrTraceInput_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: NrTraceInput Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1196" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gabed454418d2140043cd65ec899abd97f" prot="public" static="no">
+        <name>TPI_DEVID_NrTraceInput_Msk</name>
+        <initializer>(0x1FUL /*&lt;&lt; TPI_DEVID_NrTraceInput_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVID: NrTraceInput Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1197" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga69c4892d332755a9f64c1680497cebdd" prot="public" static="no">
+        <name>TPI_DEVTYPE_MajorType_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVTYPE: MajorType Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1200" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1gaecbceed6d08ec586403b37ad47b38c88" prot="public" static="no">
+        <name>TPI_DEVTYPE_MajorType_Msk</name>
+        <initializer>(0xFUL &lt;&lt; TPI_DEVTYPE_MajorType_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVTYPE: MajorType Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1201" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga0c799ff892af5eb3162d152abc00af7a" prot="public" static="no">
+        <name>TPI_DEVTYPE_SubType_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVTYPE: SubType Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1203" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___t_p_i_1ga5b2fd7dddaf5f64855d9c0696acd65c1" prot="public" static="no">
+        <name>TPI_DEVTYPE_SubType_Msk</name>
+        <initializer>(0xFUL /*&lt;&lt; TPI_DEVTYPE_SubType_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI DEVTYPE: SubType Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="1204" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="1204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Type definitions for the Trace Port Interface (TPI) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_sys_tick___type" kind="struct" language="C++" prot="public">
+    <compoundname>SysTick_Type</compoundname>
+    <includes refid="core__armv8mbl_8h" local="no">core_armv8mbl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sys_tick___type_1ac81efc171e9852a36caeb47122bfec5b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t CTRL</definition>
+        <argsstring></argsstring>
+        <name>CTRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x000 (R/W) SysTick Control and Status Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="557" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sys_tick___type_1a0c1333686137b7e25a46bd548a5b5bc3" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t LOAD</definition>
+        <argsstring></argsstring>
+        <name>LOAD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x004 (R/W) SysTick Reload Value Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="558" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sys_tick___type_1ae7a655a853654127f3dfb7fa32c3f457" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t VAL</definition>
+        <argsstring></argsstring>
+        <name>VAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x008 (R/W) SysTick Current Value Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="559" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_sys_tick___type_1aedf0dff29a9cacdaa2fb7eec6b116a13" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t CALIB</definition>
+        <argsstring></argsstring>
+        <name>CALIB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x00C (R/ ) SysTick Calibration Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="560" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure type to access the System Timer (SysTick). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/core_armv8mbl.h" line="556" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="555" bodyend="561"/>
+    <listofallmembers>
+      <member refid="struct_sys_tick___type_1aedf0dff29a9cacdaa2fb7eec6b116a13" prot="public" virt="non-virtual"><scope>SysTick_Type</scope><name>CALIB</name></member>
+      <member refid="struct_sys_tick___type_1ac81efc171e9852a36caeb47122bfec5b" prot="public" virt="non-virtual"><scope>SysTick_Type</scope><name>CTRL</name></member>
+      <member refid="struct_sys_tick___type_1a0c1333686137b7e25a46bd548a5b5bc3" prot="public" virt="non-virtual"><scope>SysTick_Type</scope><name>LOAD</name></member>
+      <member refid="struct_sys_tick___type_1ae7a655a853654127f3dfb7fa32c3f457" prot="public" virt="non-virtual"><scope>SysTick_Type</scope><name>VAL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

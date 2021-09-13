@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___l_l_w_u___peripheral___access___layer" kind="group">
+    <compoundname>LLWU_Peripheral_Access_Layer</compoundname>
+    <title>LLWU Peripheral Access Layer</title>
+    <innerclass refid="struct_l_l_w_u___type" prot="public">LLWU_Type</innerclass>
+    <innergroup refid="group___l_l_w_u___register___masks">LLWU Register Masks</innergroup>
+    <innergroup refid="group___l_p_t_m_r___peripheral___access___layer">LPTMR Peripheral Access Layer</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___f_m_c___peripheral___access___layer" kind="group">
+    <compoundname>FMC_Peripheral_Access_Layer</compoundname>
+    <title>FMC Peripheral Access Layer</title>
+    <innerclass refid="struct_f_m_c___type" prot="public">FMC_Type</innerclass>
+    <innergroup refid="group___f_m_c___register___masks">FMC Register Masks</innergroup>
+    <innergroup refid="group___f_t_f_e___peripheral___access___layer">FTFE Peripheral Access Layer</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

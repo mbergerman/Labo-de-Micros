@@ -1,0 +1,39 @@
+.TH "arm_biquad_casd_df1_inst_f32" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arm_biquad_casd_df1_inst_f32 \- Instance structure for the floating-point Biquad cascade filter\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arm_math\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBnumStages\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP * \fBpState\fP"
+.br
+.ti -1c
+.RI "\fBfloat32_t\fP * \fBpCoeffs\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Instance structure for the floating-point Biquad cascade filter\&. 
+.SH "Field Documentation"
+.PP 
+.SS "uint32_t numStages"
+number of 2nd order stages in the filter\&. Overall order is 2*numStages\&. 
+.SS "\fBfloat32_t\fP* pCoeffs"
+Points to the array of coefficients\&. The array is of length 5*numStages\&. 
+.SS "\fBfloat32_t\fP* pState"
+Points to the array of state coefficients\&. The array is of length 4*numStages\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

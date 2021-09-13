@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="union_i_p_s_r___type" kind="union" language="C++" prot="public">
+    <compoundname>IPSR_Type</compoundname>
+    <includes refid="core__armv8mbl_8h" local="no">core_armv8mbl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_i_p_s_r___type_1ad502ba7dbb2aab5f87c782b28f02622d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <bitfield>9</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0.. 8 Exception number </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="267" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_p_s_r___type_1ac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <bitfield>23</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 9..31 Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="268" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_p_s_r___type_1ac78a2f62a59b035eeb9bca6f21db4279" prot="public" static="no" mutable="no">
+        <type>struct IPSR_Type::@7</type>
+        <definition>struct IPSR_Type::@7  b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="269" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_p_s_r___type_1ad0fb62e7a08e70fc5e0a76b67809f84b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type used for word access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="270" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_p_s_r___type_1abb1de09b2a281d7b1020caf60a21c481" prot="public" static="no" mutable="no">
+        <type>struct IPSR_Type::@11</type>
+        <definition>struct IPSR_Type::@11  b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="359" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_p_s_r___type_1ab9848dd5f16fe15c5001ed41059eaf39" prot="public" static="no" mutable="no">
+        <type>struct IPSR_Type::@16</type>
+        <definition>struct IPSR_Type::@16  b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="304" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Union type to access the Interrupt Program Status Register (IPSR). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/core_armv8mbl.h" line="264" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="263" bodyend="271"/>
+    <listofallmembers>
+      <member refid="union_i_p_s_r___type_1ac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" virt="non-virtual"><scope>IPSR_Type</scope><name>_reserved0</name></member>
+      <member refid="union_i_p_s_r___type_1ac78a2f62a59b035eeb9bca6f21db4279" prot="public" virt="non-virtual"><scope>IPSR_Type</scope><name>b</name></member>
+      <member refid="union_i_p_s_r___type_1abb1de09b2a281d7b1020caf60a21c481" prot="public" virt="non-virtual"><scope>IPSR_Type</scope><name>b</name></member>
+      <member refid="union_i_p_s_r___type_1ab9848dd5f16fe15c5001ed41059eaf39" prot="public" virt="non-virtual"><scope>IPSR_Type</scope><name>b</name></member>
+      <member refid="union_i_p_s_r___type_1ad502ba7dbb2aab5f87c782b28f02622d" prot="public" virt="non-virtual"><scope>IPSR_Type</scope><name>ISR</name></member>
+      <member refid="union_i_p_s_r___type_1ad0fb62e7a08e70fc5e0a76b67809f84b" prot="public" virt="non-virtual"><scope>IPSR_Type</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

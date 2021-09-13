@@ -1,0 +1,776 @@
+.TH "FMC_Register_Masks" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FMC_Register_Masks
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFMC_BASE\fP   (0x4001F000u)"
+.br
+.ti -1c
+.RI "#define \fBFMC\fP   ((\fBFMC_Type\fP *)\fBFMC_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_BASE_ADDRS\fP   { \fBFMC_BASE\fP }"
+.br
+.ti -1c
+.RI "#define \fBFMC_BASE_PTRS\fP   { \fBFMC\fP }"
+.br
+.in -1c
+.SS "PFAPR - Flash Access Protection Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M0AP_MASK\fP   (0x3U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M0AP_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M0AP\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M0AP_SHIFT\fP)) & \fBFMC_PFAPR_M0AP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M1AP_MASK\fP   (0xCU)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M1AP_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M1AP\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M1AP_SHIFT\fP)) & \fBFMC_PFAPR_M1AP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M2AP_MASK\fP   (0x30U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M2AP_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M2AP\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M2AP_SHIFT\fP)) & \fBFMC_PFAPR_M2AP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M3AP_MASK\fP   (0xC0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M3AP_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M3AP\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M3AP_SHIFT\fP)) & \fBFMC_PFAPR_M3AP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M4AP_MASK\fP   (0x300U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M4AP_SHIFT\fP   (8U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M4AP\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M4AP_SHIFT\fP)) & \fBFMC_PFAPR_M4AP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M5AP_MASK\fP   (0xC00U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M5AP_SHIFT\fP   (10U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M5AP\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M5AP_SHIFT\fP)) & \fBFMC_PFAPR_M5AP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M6AP_MASK\fP   (0x3000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M6AP_SHIFT\fP   (12U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M6AP\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M6AP_SHIFT\fP)) & \fBFMC_PFAPR_M6AP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M7AP_MASK\fP   (0xC000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M7AP_SHIFT\fP   (14U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M7AP\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M7AP_SHIFT\fP)) & \fBFMC_PFAPR_M7AP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M0PFD_MASK\fP   (0x10000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M0PFD_SHIFT\fP   (16U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M0PFD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M0PFD_SHIFT\fP)) & \fBFMC_PFAPR_M0PFD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M1PFD_MASK\fP   (0x20000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M1PFD_SHIFT\fP   (17U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M1PFD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M1PFD_SHIFT\fP)) & \fBFMC_PFAPR_M1PFD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M2PFD_MASK\fP   (0x40000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M2PFD_SHIFT\fP   (18U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M2PFD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M2PFD_SHIFT\fP)) & \fBFMC_PFAPR_M2PFD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M3PFD_MASK\fP   (0x80000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M3PFD_SHIFT\fP   (19U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M3PFD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M3PFD_SHIFT\fP)) & \fBFMC_PFAPR_M3PFD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M4PFD_MASK\fP   (0x100000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M4PFD_SHIFT\fP   (20U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M4PFD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M4PFD_SHIFT\fP)) & \fBFMC_PFAPR_M4PFD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M5PFD_MASK\fP   (0x200000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M5PFD_SHIFT\fP   (21U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M5PFD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M5PFD_SHIFT\fP)) & \fBFMC_PFAPR_M5PFD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M6PFD_MASK\fP   (0x400000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M6PFD_SHIFT\fP   (22U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M6PFD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M6PFD_SHIFT\fP)) & \fBFMC_PFAPR_M6PFD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M7PFD_MASK\fP   (0x800000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M7PFD_SHIFT\fP   (23U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFAPR_M7PFD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M7PFD_SHIFT\fP)) & \fBFMC_PFAPR_M7PFD_MASK\fP)"
+.br
+.in -1c
+.SS "PFB0CR - Flash Bank 0 Control Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0SEBE_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0SEBE_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0SEBE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0SEBE_SHIFT\fP)) & \fBFMC_PFB0CR_B0SEBE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0IPE_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0IPE_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0IPE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0IPE_SHIFT\fP)) & \fBFMC_PFB0CR_B0IPE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0DPE_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0DPE_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0DPE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0DPE_SHIFT\fP)) & \fBFMC_PFB0CR_B0DPE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0ICE_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0ICE_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0ICE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0ICE_SHIFT\fP)) & \fBFMC_PFB0CR_B0ICE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0DCE_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0DCE_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0DCE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0DCE_SHIFT\fP)) & \fBFMC_PFB0CR_B0DCE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_CRC_MASK\fP   (0xE0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_CRC_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_CRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_CRC_SHIFT\fP)) & \fBFMC_PFB0CR_CRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0MW_MASK\fP   (0x60000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0MW_SHIFT\fP   (17U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0MW\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0MW_SHIFT\fP)) & \fBFMC_PFB0CR_B0MW_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_S_B_INV_MASK\fP   (0x80000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_S_B_INV_SHIFT\fP   (19U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_S_B_INV\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_S_B_INV_SHIFT\fP)) & \fBFMC_PFB0CR_S_B_INV_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_CINV_WAY_MASK\fP   (0xF00000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_CINV_WAY_SHIFT\fP   (20U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_CINV_WAY\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_CINV_WAY_SHIFT\fP)) & \fBFMC_PFB0CR_CINV_WAY_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_CLCK_WAY_MASK\fP   (0xF000000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_CLCK_WAY_SHIFT\fP   (24U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_CLCK_WAY\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_CLCK_WAY_SHIFT\fP)) & \fBFMC_PFB0CR_CLCK_WAY_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0RWSC_MASK\fP   (0xF0000000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0RWSC_SHIFT\fP   (28U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB0CR_B0RWSC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0RWSC_SHIFT\fP)) & \fBFMC_PFB0CR_B0RWSC_MASK\fP)"
+.br
+.in -1c
+.SS "PFB1CR - Flash Bank 1 Control Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1SEBE_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1SEBE_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1SEBE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1SEBE_SHIFT\fP)) & \fBFMC_PFB1CR_B1SEBE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1IPE_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1IPE_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1IPE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1IPE_SHIFT\fP)) & \fBFMC_PFB1CR_B1IPE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1DPE_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1DPE_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1DPE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1DPE_SHIFT\fP)) & \fBFMC_PFB1CR_B1DPE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1ICE_MASK\fP   (0x8U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1ICE_SHIFT\fP   (3U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1ICE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1ICE_SHIFT\fP)) & \fBFMC_PFB1CR_B1ICE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1DCE_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1DCE_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1DCE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1DCE_SHIFT\fP)) & \fBFMC_PFB1CR_B1DCE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1MW_MASK\fP   (0x60000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1MW_SHIFT\fP   (17U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1MW\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1MW_SHIFT\fP)) & \fBFMC_PFB1CR_B1MW_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1RWSC_MASK\fP   (0xF0000000U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1RWSC_SHIFT\fP   (28U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_PFB1CR_B1RWSC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1RWSC_SHIFT\fP)) & \fBFMC_PFB1CR_B1RWSC_MASK\fP)"
+.br
+.in -1c
+.SS "TAGVDW0S - Cache Tag Storage"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFMC_TAGVDW0S_valid_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW0S_valid_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW0S_valid\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW0S_valid_SHIFT\fP)) & \fBFMC_TAGVDW0S_valid_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW0S_tag_MASK\fP   (0x7FFE0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW0S_tag_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW0S_tag\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW0S_tag_SHIFT\fP)) & \fBFMC_TAGVDW0S_tag_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW0S_COUNT\fP   (4U)"
+.br
+.in -1c
+.SS "TAGVDW1S - Cache Tag Storage"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFMC_TAGVDW1S_valid_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW1S_valid_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW1S_valid\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW1S_valid_SHIFT\fP)) & \fBFMC_TAGVDW1S_valid_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW1S_tag_MASK\fP   (0x7FFE0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW1S_tag_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW1S_tag\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW1S_tag_SHIFT\fP)) & \fBFMC_TAGVDW1S_tag_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW1S_COUNT\fP   (4U)"
+.br
+.in -1c
+.SS "TAGVDW2S - Cache Tag Storage"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFMC_TAGVDW2S_valid_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW2S_valid_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW2S_valid\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW2S_valid_SHIFT\fP)) & \fBFMC_TAGVDW2S_valid_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW2S_tag_MASK\fP   (0x7FFE0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW2S_tag_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW2S_tag\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW2S_tag_SHIFT\fP)) & \fBFMC_TAGVDW2S_tag_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW2S_COUNT\fP   (4U)"
+.br
+.in -1c
+.SS "TAGVDW3S - Cache Tag Storage"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFMC_TAGVDW3S_valid_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW3S_valid_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW3S_valid\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW3S_valid_SHIFT\fP)) & \fBFMC_TAGVDW3S_valid_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW3S_tag_MASK\fP   (0x7FFE0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW3S_tag_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW3S_tag\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW3S_tag_SHIFT\fP)) & \fBFMC_TAGVDW3S_tag_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_TAGVDW3S_COUNT\fP   (4U)"
+.br
+.in -1c
+.SS "DATA_U - Cache Data Storage (upper word)"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFMC_DATA_U_data_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBFMC_DATA_U_data_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_DATA_U_data\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_DATA_U_data_SHIFT\fP)) & \fBFMC_DATA_U_data_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_DATA_U_COUNT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_DATA_U_COUNT2\fP   (4U)"
+.br
+.in -1c
+.SS "DATA_L - Cache Data Storage (lower word)"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFMC_DATA_L_data_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBFMC_DATA_L_data_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_DATA_L_data\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_DATA_L_data_SHIFT\fP)) & \fBFMC_DATA_L_data_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBFMC_DATA_L_COUNT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBFMC_DATA_L_COUNT2\fP   (4U)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FMC   ((\fBFMC_Type\fP *)\fBFMC_BASE\fP)"
+Peripheral FMC base pointer 
+.SS "#define FMC_BASE   (0x4001F000u)"
+Peripheral FMC base address 
+.SS "#define FMC_BASE_ADDRS   { \fBFMC_BASE\fP }"
+Array initializer of FMC peripheral base addresses 
+.SS "#define FMC_BASE_PTRS   { \fBFMC\fP }"
+Array initializer of FMC peripheral base pointers 
+.SS "#define FMC_DATA_L_COUNT   (4U)"
+
+.SS "#define FMC_DATA_L_COUNT2   (4U)"
+
+.SS "#define FMC_DATA_L_data(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_DATA_L_data_SHIFT\fP)) & \fBFMC_DATA_L_data_MASK\fP)"
+
+.SS "#define FMC_DATA_L_data_MASK   (0xFFFFFFFFU)"
+
+.SS "#define FMC_DATA_L_data_SHIFT   (0U)"
+
+.SS "#define FMC_DATA_U_COUNT   (4U)"
+
+.SS "#define FMC_DATA_U_COUNT2   (4U)"
+
+.SS "#define FMC_DATA_U_data(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_DATA_U_data_SHIFT\fP)) & \fBFMC_DATA_U_data_MASK\fP)"
+
+.SS "#define FMC_DATA_U_data_MASK   (0xFFFFFFFFU)"
+
+.SS "#define FMC_DATA_U_data_SHIFT   (0U)"
+
+.SS "#define FMC_PFAPR_M0AP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M0AP_SHIFT\fP)) & \fBFMC_PFAPR_M0AP_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M0AP_MASK   (0x3U)"
+
+.SS "#define FMC_PFAPR_M0AP_SHIFT   (0U)"
+
+.SS "#define FMC_PFAPR_M0PFD(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M0PFD_SHIFT\fP)) & \fBFMC_PFAPR_M0PFD_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M0PFD_MASK   (0x10000U)"
+
+.SS "#define FMC_PFAPR_M0PFD_SHIFT   (16U)"
+
+.SS "#define FMC_PFAPR_M1AP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M1AP_SHIFT\fP)) & \fBFMC_PFAPR_M1AP_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M1AP_MASK   (0xCU)"
+
+.SS "#define FMC_PFAPR_M1AP_SHIFT   (2U)"
+
+.SS "#define FMC_PFAPR_M1PFD(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M1PFD_SHIFT\fP)) & \fBFMC_PFAPR_M1PFD_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M1PFD_MASK   (0x20000U)"
+
+.SS "#define FMC_PFAPR_M1PFD_SHIFT   (17U)"
+
+.SS "#define FMC_PFAPR_M2AP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M2AP_SHIFT\fP)) & \fBFMC_PFAPR_M2AP_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M2AP_MASK   (0x30U)"
+
+.SS "#define FMC_PFAPR_M2AP_SHIFT   (4U)"
+
+.SS "#define FMC_PFAPR_M2PFD(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M2PFD_SHIFT\fP)) & \fBFMC_PFAPR_M2PFD_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M2PFD_MASK   (0x40000U)"
+
+.SS "#define FMC_PFAPR_M2PFD_SHIFT   (18U)"
+
+.SS "#define FMC_PFAPR_M3AP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M3AP_SHIFT\fP)) & \fBFMC_PFAPR_M3AP_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M3AP_MASK   (0xC0U)"
+
+.SS "#define FMC_PFAPR_M3AP_SHIFT   (6U)"
+
+.SS "#define FMC_PFAPR_M3PFD(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M3PFD_SHIFT\fP)) & \fBFMC_PFAPR_M3PFD_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M3PFD_MASK   (0x80000U)"
+
+.SS "#define FMC_PFAPR_M3PFD_SHIFT   (19U)"
+
+.SS "#define FMC_PFAPR_M4AP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M4AP_SHIFT\fP)) & \fBFMC_PFAPR_M4AP_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M4AP_MASK   (0x300U)"
+
+.SS "#define FMC_PFAPR_M4AP_SHIFT   (8U)"
+
+.SS "#define FMC_PFAPR_M4PFD(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M4PFD_SHIFT\fP)) & \fBFMC_PFAPR_M4PFD_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M4PFD_MASK   (0x100000U)"
+
+.SS "#define FMC_PFAPR_M4PFD_SHIFT   (20U)"
+
+.SS "#define FMC_PFAPR_M5AP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M5AP_SHIFT\fP)) & \fBFMC_PFAPR_M5AP_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M5AP_MASK   (0xC00U)"
+
+.SS "#define FMC_PFAPR_M5AP_SHIFT   (10U)"
+
+.SS "#define FMC_PFAPR_M5PFD(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M5PFD_SHIFT\fP)) & \fBFMC_PFAPR_M5PFD_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M5PFD_MASK   (0x200000U)"
+
+.SS "#define FMC_PFAPR_M5PFD_SHIFT   (21U)"
+
+.SS "#define FMC_PFAPR_M6AP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M6AP_SHIFT\fP)) & \fBFMC_PFAPR_M6AP_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M6AP_MASK   (0x3000U)"
+
+.SS "#define FMC_PFAPR_M6AP_SHIFT   (12U)"
+
+.SS "#define FMC_PFAPR_M6PFD(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M6PFD_SHIFT\fP)) & \fBFMC_PFAPR_M6PFD_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M6PFD_MASK   (0x400000U)"
+
+.SS "#define FMC_PFAPR_M6PFD_SHIFT   (22U)"
+
+.SS "#define FMC_PFAPR_M7AP(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M7AP_SHIFT\fP)) & \fBFMC_PFAPR_M7AP_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M7AP_MASK   (0xC000U)"
+
+.SS "#define FMC_PFAPR_M7AP_SHIFT   (14U)"
+
+.SS "#define FMC_PFAPR_M7PFD(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFAPR_M7PFD_SHIFT\fP)) & \fBFMC_PFAPR_M7PFD_MASK\fP)"
+
+.SS "#define FMC_PFAPR_M7PFD_MASK   (0x800000U)"
+
+.SS "#define FMC_PFAPR_M7PFD_SHIFT   (23U)"
+
+.SS "#define FMC_PFB0CR_B0DCE(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0DCE_SHIFT\fP)) & \fBFMC_PFB0CR_B0DCE_MASK\fP)"
+
+.SS "#define FMC_PFB0CR_B0DCE_MASK   (0x10U)"
+
+.SS "#define FMC_PFB0CR_B0DCE_SHIFT   (4U)"
+
+.SS "#define FMC_PFB0CR_B0DPE(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0DPE_SHIFT\fP)) & \fBFMC_PFB0CR_B0DPE_MASK\fP)"
+
+.SS "#define FMC_PFB0CR_B0DPE_MASK   (0x4U)"
+
+.SS "#define FMC_PFB0CR_B0DPE_SHIFT   (2U)"
+
+.SS "#define FMC_PFB0CR_B0ICE(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0ICE_SHIFT\fP)) & \fBFMC_PFB0CR_B0ICE_MASK\fP)"
+
+.SS "#define FMC_PFB0CR_B0ICE_MASK   (0x8U)"
+
+.SS "#define FMC_PFB0CR_B0ICE_SHIFT   (3U)"
+
+.SS "#define FMC_PFB0CR_B0IPE(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0IPE_SHIFT\fP)) & \fBFMC_PFB0CR_B0IPE_MASK\fP)"
+
+.SS "#define FMC_PFB0CR_B0IPE_MASK   (0x2U)"
+
+.SS "#define FMC_PFB0CR_B0IPE_SHIFT   (1U)"
+
+.SS "#define FMC_PFB0CR_B0MW(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0MW_SHIFT\fP)) & \fBFMC_PFB0CR_B0MW_MASK\fP)"
+
+.SS "#define FMC_PFB0CR_B0MW_MASK   (0x60000U)"
+
+.SS "#define FMC_PFB0CR_B0MW_SHIFT   (17U)"
+
+.SS "#define FMC_PFB0CR_B0RWSC(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0RWSC_SHIFT\fP)) & \fBFMC_PFB0CR_B0RWSC_MASK\fP)"
+
+.SS "#define FMC_PFB0CR_B0RWSC_MASK   (0xF0000000U)"
+
+.SS "#define FMC_PFB0CR_B0RWSC_SHIFT   (28U)"
+
+.SS "#define FMC_PFB0CR_B0SEBE(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_B0SEBE_SHIFT\fP)) & \fBFMC_PFB0CR_B0SEBE_MASK\fP)"
+
+.SS "#define FMC_PFB0CR_B0SEBE_MASK   (0x1U)"
+
+.SS "#define FMC_PFB0CR_B0SEBE_SHIFT   (0U)"
+
+.SS "#define FMC_PFB0CR_CINV_WAY(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_CINV_WAY_SHIFT\fP)) & \fBFMC_PFB0CR_CINV_WAY_MASK\fP)"
+
+.SS "#define FMC_PFB0CR_CINV_WAY_MASK   (0xF00000U)"
+
+.SS "#define FMC_PFB0CR_CINV_WAY_SHIFT   (20U)"
+
+.SS "#define FMC_PFB0CR_CLCK_WAY(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_CLCK_WAY_SHIFT\fP)) & \fBFMC_PFB0CR_CLCK_WAY_MASK\fP)"
+
+.SS "#define FMC_PFB0CR_CLCK_WAY_MASK   (0xF000000U)"
+
+.SS "#define FMC_PFB0CR_CLCK_WAY_SHIFT   (24U)"
+
+.SS "#define FMC_PFB0CR_CRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_CRC_SHIFT\fP)) & \fBFMC_PFB0CR_CRC_MASK\fP)"
+
+.SS "#define FMC_PFB0CR_CRC_MASK   (0xE0U)"
+
+.SS "#define FMC_PFB0CR_CRC_SHIFT   (5U)"
+
+.SS "#define FMC_PFB0CR_S_B_INV(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB0CR_S_B_INV_SHIFT\fP)) & \fBFMC_PFB0CR_S_B_INV_MASK\fP)"
+
+.SS "#define FMC_PFB0CR_S_B_INV_MASK   (0x80000U)"
+
+.SS "#define FMC_PFB0CR_S_B_INV_SHIFT   (19U)"
+
+.SS "#define FMC_PFB1CR_B1DCE(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1DCE_SHIFT\fP)) & \fBFMC_PFB1CR_B1DCE_MASK\fP)"
+
+.SS "#define FMC_PFB1CR_B1DCE_MASK   (0x10U)"
+
+.SS "#define FMC_PFB1CR_B1DCE_SHIFT   (4U)"
+
+.SS "#define FMC_PFB1CR_B1DPE(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1DPE_SHIFT\fP)) & \fBFMC_PFB1CR_B1DPE_MASK\fP)"
+
+.SS "#define FMC_PFB1CR_B1DPE_MASK   (0x4U)"
+
+.SS "#define FMC_PFB1CR_B1DPE_SHIFT   (2U)"
+
+.SS "#define FMC_PFB1CR_B1ICE(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1ICE_SHIFT\fP)) & \fBFMC_PFB1CR_B1ICE_MASK\fP)"
+
+.SS "#define FMC_PFB1CR_B1ICE_MASK   (0x8U)"
+
+.SS "#define FMC_PFB1CR_B1ICE_SHIFT   (3U)"
+
+.SS "#define FMC_PFB1CR_B1IPE(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1IPE_SHIFT\fP)) & \fBFMC_PFB1CR_B1IPE_MASK\fP)"
+
+.SS "#define FMC_PFB1CR_B1IPE_MASK   (0x2U)"
+
+.SS "#define FMC_PFB1CR_B1IPE_SHIFT   (1U)"
+
+.SS "#define FMC_PFB1CR_B1MW(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1MW_SHIFT\fP)) & \fBFMC_PFB1CR_B1MW_MASK\fP)"
+
+.SS "#define FMC_PFB1CR_B1MW_MASK   (0x60000U)"
+
+.SS "#define FMC_PFB1CR_B1MW_SHIFT   (17U)"
+
+.SS "#define FMC_PFB1CR_B1RWSC(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1RWSC_SHIFT\fP)) & \fBFMC_PFB1CR_B1RWSC_MASK\fP)"
+
+.SS "#define FMC_PFB1CR_B1RWSC_MASK   (0xF0000000U)"
+
+.SS "#define FMC_PFB1CR_B1RWSC_SHIFT   (28U)"
+
+.SS "#define FMC_PFB1CR_B1SEBE(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_PFB1CR_B1SEBE_SHIFT\fP)) & \fBFMC_PFB1CR_B1SEBE_MASK\fP)"
+
+.SS "#define FMC_PFB1CR_B1SEBE_MASK   (0x1U)"
+
+.SS "#define FMC_PFB1CR_B1SEBE_SHIFT   (0U)"
+
+.SS "#define FMC_TAGVDW0S_COUNT   (4U)"
+
+.SS "#define FMC_TAGVDW0S_tag(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW0S_tag_SHIFT\fP)) & \fBFMC_TAGVDW0S_tag_MASK\fP)"
+
+.SS "#define FMC_TAGVDW0S_tag_MASK   (0x7FFE0U)"
+
+.SS "#define FMC_TAGVDW0S_tag_SHIFT   (5U)"
+
+.SS "#define FMC_TAGVDW0S_valid(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW0S_valid_SHIFT\fP)) & \fBFMC_TAGVDW0S_valid_MASK\fP)"
+
+.SS "#define FMC_TAGVDW0S_valid_MASK   (0x1U)"
+
+.SS "#define FMC_TAGVDW0S_valid_SHIFT   (0U)"
+
+.SS "#define FMC_TAGVDW1S_COUNT   (4U)"
+
+.SS "#define FMC_TAGVDW1S_tag(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW1S_tag_SHIFT\fP)) & \fBFMC_TAGVDW1S_tag_MASK\fP)"
+
+.SS "#define FMC_TAGVDW1S_tag_MASK   (0x7FFE0U)"
+
+.SS "#define FMC_TAGVDW1S_tag_SHIFT   (5U)"
+
+.SS "#define FMC_TAGVDW1S_valid(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW1S_valid_SHIFT\fP)) & \fBFMC_TAGVDW1S_valid_MASK\fP)"
+
+.SS "#define FMC_TAGVDW1S_valid_MASK   (0x1U)"
+
+.SS "#define FMC_TAGVDW1S_valid_SHIFT   (0U)"
+
+.SS "#define FMC_TAGVDW2S_COUNT   (4U)"
+
+.SS "#define FMC_TAGVDW2S_tag(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW2S_tag_SHIFT\fP)) & \fBFMC_TAGVDW2S_tag_MASK\fP)"
+
+.SS "#define FMC_TAGVDW2S_tag_MASK   (0x7FFE0U)"
+
+.SS "#define FMC_TAGVDW2S_tag_SHIFT   (5U)"
+
+.SS "#define FMC_TAGVDW2S_valid(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW2S_valid_SHIFT\fP)) & \fBFMC_TAGVDW2S_valid_MASK\fP)"
+
+.SS "#define FMC_TAGVDW2S_valid_MASK   (0x1U)"
+
+.SS "#define FMC_TAGVDW2S_valid_SHIFT   (0U)"
+
+.SS "#define FMC_TAGVDW3S_COUNT   (4U)"
+
+.SS "#define FMC_TAGVDW3S_tag(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW3S_tag_SHIFT\fP)) & \fBFMC_TAGVDW3S_tag_MASK\fP)"
+
+.SS "#define FMC_TAGVDW3S_tag_MASK   (0x7FFE0U)"
+
+.SS "#define FMC_TAGVDW3S_tag_SHIFT   (5U)"
+
+.SS "#define FMC_TAGVDW3S_valid(x)   (((uint32_t)(((uint32_t)(x)) << \fBFMC_TAGVDW3S_valid_SHIFT\fP)) & \fBFMC_TAGVDW3S_valid_MASK\fP)"
+
+.SS "#define FMC_TAGVDW3S_valid_MASK   (0x1U)"
+
+.SS "#define FMC_TAGVDW3S_valid_SHIFT   (0U)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__park" kind="group">
+    <compoundname>park</compoundname>
+    <title>Vector Park Transform</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__park_1gae24bf07174d3b8dddcf30d8c8d8e7fbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CMSIS_INLINE <ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>CMSIS_INLINE __STATIC_INLINE void arm_park_f32</definition>
+        <argsstring>(float32_t Ialpha, float32_t Ibeta, float32_t *pId, float32_t *pIq, float32_t sinVal, float32_t cosVal)</argsstring>
+        <name>arm_park_f32</name>
+        <param>
+          <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+          <declname>Ialpha</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+          <declname>Ibeta</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+          <declname>pId</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+          <declname>pIq</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+          <declname>sinVal</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+          <declname>cosVal</declname>
+        </param>
+        <briefdescription>
+<para>Floating-point Park transform. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Ialpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input two-phase vector coordinate alpha </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Ibeta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input two-phase vector coordinate beta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to output rotor reference frame d </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pIq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to output rotor reference frame q </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sinVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sine value of rotation angle theta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cosVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cosine value of rotation angle theta</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The function implements the forward Park transform. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="5175" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="5175" bodyend="5188"/>
+      </memberdef>
+      <memberdef kind="function" id="group__park_1ga5630ed3715091f2795ee10df34672523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CMSIS_INLINE <ref refid="cmsis__iccarm_8h_1aba87361bfad2ae52cfe2f40c1a1dbf9c" kindref="member">__STATIC_INLINE</ref> void</type>
+        <definition>CMSIS_INLINE __STATIC_INLINE void arm_park_q31</definition>
+        <argsstring>(q31_t Ialpha, q31_t Ibeta, q31_t *pId, q31_t *pIq, q31_t sinVal, q31_t cosVal)</argsstring>
+        <name>arm_park_q31</name>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+          <declname>Ialpha</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+          <declname>Ibeta</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+          <declname>pId</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+          <declname>pIq</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+          <declname>sinVal</declname>
+        </param>
+        <param>
+          <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref></type>
+          <declname>cosVal</declname>
+        </param>
+        <briefdescription>
+<para>Park transform for Q31 version. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Ialpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input two-phase vector coordinate alpha </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Ibeta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input two-phase vector coordinate beta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to output rotor reference frame d </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pIq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>points to output rotor reference frame q </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sinVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sine value of rotation angle theta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cosVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cosine value of rotation angle theta</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<bold>Scaling and Overflow Behavior:</bold> <simplesect kind="par"><title></title><para>The function is implemented using an internal 32-bit accumulator. The accumulator maintains 1.31 format by truncating lower 31 bits of the intermediate multiplication in 2.62 format. There is saturation on the addition and subtraction, hence there is no risk of overflow. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="5206" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="5206" bodyend="5235"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Forward Park transform converts the input two-coordinate vector to flux and torque components. The Park transform can be used to realize the transformation of the <computeroutput>Ialpha</computeroutput> and the <computeroutput>Ibeta</computeroutput> currents from the stationary to the moving reference frame and control the spatial relationship between the stator vector current and rotor flux vector. If we consider the d axis aligned with the rotor flux, the diagram below shows the current vector and the relationship from the two reference frames: <image type="html" name="park.gif">Stator current space vector and its component in (a,b) and in the d,q rotating reference frame</image>
+ The function operates on a single sample of data and each call to the function returns the processed output. The library provides separate functions for Q31 and floating-point data types. <simplesect kind="par"><title>Algorithm</title><para><image type="html" name="parkFormula.gif"></image>
+ where <computeroutput>Ialpha</computeroutput> and <computeroutput>Ibeta</computeroutput> are the stator vector components, <computeroutput>pId</computeroutput> and <computeroutput>pIq</computeroutput> are rotor vector components and <computeroutput>cosVal</computeroutput> and <computeroutput>sinVal</computeroutput> are the cosine and sine values of theta (rotor flux position). </para></simplesect>
+<simplesect kind="par"><title>Fixed-Point Behavior</title><para>Care must be taken when using the Q31 version of the Park transform. In particular, the overflow and saturation behavior of the accumulator used must be considered. Refer to the function specific documentation below for usage guidelines. </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

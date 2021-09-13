@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___p_m_c___peripheral___access___layer" kind="group">
+    <compoundname>PMC_Peripheral_Access_Layer</compoundname>
+    <title>PMC Peripheral Access Layer</title>
+    <innerclass refid="struct_p_m_c___type" prot="public">PMC_Type</innerclass>
+    <innergroup refid="group___p_m_c___register___masks">PMC Register Masks</innergroup>
+    <innergroup refid="group___p_o_r_t___peripheral___access___layer">PORT Peripheral Access Layer</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

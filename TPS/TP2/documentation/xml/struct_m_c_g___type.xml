@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_m_c_g___type" kind="struct" language="C++" prot="public">
+    <compoundname>MCG_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gad54aa92be9fc988e74d55d2d3daae8ad" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t C1</definition>
+        <argsstring></argsstring>
+        <name>C1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MCG Control 1 Register, offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7932" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7932" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga4f920936a8fc32483b3ebd9b0674b450" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t C2</definition>
+        <argsstring></argsstring>
+        <name>C2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MCG Control 2 Register, offset: 0x1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7933" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7933" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga6533a725e5ee4892879f0b6d9dd6675a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t C3</definition>
+        <argsstring></argsstring>
+        <name>C3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MCG Control 3 Register, offset: 0x2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7934" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7934" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gadb3f29cb83f573e65eb091a7a79e2e43" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t C4</definition>
+        <argsstring></argsstring>
+        <name>C4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MCG Control 4 Register, offset: 0x3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7935" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7935" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga5c3e6553034f7993105ebde9d573236b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t C5</definition>
+        <argsstring></argsstring>
+        <name>C5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MCG Control 5 Register, offset: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7936" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7936" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaf5f7dd7e0de054a868809b27a17e4207" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t C6</definition>
+        <argsstring></argsstring>
+        <name>C6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MCG Control 6 Register, offset: 0x5 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7937" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7937" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga0542ffc7618a0893938748eef9c87474" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t S</definition>
+        <argsstring></argsstring>
+        <name>S</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MCG Status Register, offset: 0x6 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7938" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7938" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga4be6979b69000068ac5203085d425825" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_0[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>RESERVED_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7939" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7939" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga369ca7d5284929a823dab79b7d10d81f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t SC</definition>
+        <argsstring></argsstring>
+        <name>SC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MCG Status and Control Register, offset: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7940" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7940" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga83b2d6f5756a9b0aa609216190380d5f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RESERVED_1[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>RESERVED_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7941" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7941" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga168419f9fd3337173f29d6dde2133745" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t ATCVH</definition>
+        <argsstring></argsstring>
+        <name>ATCVH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MCG Auto Trim Compare Value High Register, offset: 0xA </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7942" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7942" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga9659cfc372d5156510bdda5bb491fdbb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t ATCVL</definition>
+        <argsstring></argsstring>
+        <name>ATCVL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MCG Auto Trim Compare Value Low Register, offset: 0xB </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7943" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7943" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga97f1c9dcf32bf6af23cd6b977e99d40f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t C7</definition>
+        <argsstring></argsstring>
+        <name>C7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MCG Control 7 Register, offset: 0xC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7944" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7944" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga287edae47cc7c449d8ee31b6089559d4" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint8_t</type>
+        <definition>__IO uint8_t C8</definition>
+        <argsstring></argsstring>
+        <name>C8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MCG Control 8 Register, offset: 0xD </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="7945" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7945" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>MCG - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="7931" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="7931" bodyend="7946"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga168419f9fd3337173f29d6dde2133745" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>ATCVH</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga9659cfc372d5156510bdda5bb491fdbb" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>ATCVL</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gad54aa92be9fc988e74d55d2d3daae8ad" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>C1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga4f920936a8fc32483b3ebd9b0674b450" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>C2</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga6533a725e5ee4892879f0b6d9dd6675a" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>C3</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gadb3f29cb83f573e65eb091a7a79e2e43" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>C4</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga5c3e6553034f7993105ebde9d573236b" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>C5</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaf5f7dd7e0de054a868809b27a17e4207" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>C6</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga97f1c9dcf32bf6af23cd6b977e99d40f" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>C7</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga287edae47cc7c449d8ee31b6089559d4" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>C8</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga4be6979b69000068ac5203085d425825" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>RESERVED_0</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga83b2d6f5756a9b0aa609216190380d5f" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>RESERVED_1</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga0542ffc7618a0893938748eef9c87474" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>S</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga369ca7d5284929a823dab79b7d10d81f" prot="public" virt="non-virtual"><scope>MCG_Type</scope><name>SC</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

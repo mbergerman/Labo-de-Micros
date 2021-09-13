@@ -1,0 +1,556 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___r_n_g___register___masks" kind="group">
+    <compoundname>RNG_Register_Masks</compoundname>
+    <title>RNG Register Masks</title>
+      <sectiondef kind="user-defined">
+      <header>CR - RNGA Control Register</header>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga2aebfd44952b9acb9854f17cbb241dc3" prot="public" static="no">
+        <name>RNG_CR_GO_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9287" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga33164b67927c62a20a5cc0ebf24a6dec" prot="public" static="no">
+        <name>RNG_CR_GO_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9288" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga179fde31f28a4cd70ad1513eb466a0ee" prot="public" static="no">
+        <name>RNG_CR_GO</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1ga33164b67927c62a20a5cc0ebf24a6dec" kindref="member">RNG_CR_GO_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1ga2aebfd44952b9acb9854f17cbb241dc3" kindref="member">RNG_CR_GO_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9289" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga771a9a36a3856ec15886952dd5881e67" prot="public" static="no">
+        <name>RNG_CR_HA_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9290" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga003221e3c2c56d155f0144d99b9daa28" prot="public" static="no">
+        <name>RNG_CR_HA_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9291" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga229f4a80160cd677797326cee5eb8588" prot="public" static="no">
+        <name>RNG_CR_HA</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1ga003221e3c2c56d155f0144d99b9daa28" kindref="member">RNG_CR_HA_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1ga771a9a36a3856ec15886952dd5881e67" kindref="member">RNG_CR_HA_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9292" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gaeb6ea10a08f7c854d7a2d566afbc509a" prot="public" static="no">
+        <name>RNG_CR_INTM_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9293" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga3e492e16a9a75e903cc108e526b51d7f" prot="public" static="no">
+        <name>RNG_CR_INTM_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9294" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga47b93c0137c2e27e1cbcc64146f72816" prot="public" static="no">
+        <name>RNG_CR_INTM</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1ga3e492e16a9a75e903cc108e526b51d7f" kindref="member">RNG_CR_INTM_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1gaeb6ea10a08f7c854d7a2d566afbc509a" kindref="member">RNG_CR_INTM_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9295" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gabe50fd44817cb9fbdf15fc9f832bfafa" prot="public" static="no">
+        <name>RNG_CR_CLRI_MASK</name>
+        <initializer>(0x8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9296" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga68edca922e22c3c3f052b3d5b6d825ec" prot="public" static="no">
+        <name>RNG_CR_CLRI_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9297" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga5d98cb5b775c3f09def7800b7c4c6b4f" prot="public" static="no">
+        <name>RNG_CR_CLRI</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1ga68edca922e22c3c3f052b3d5b6d825ec" kindref="member">RNG_CR_CLRI_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1gabe50fd44817cb9fbdf15fc9f832bfafa" kindref="member">RNG_CR_CLRI_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9298" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gaee432efec0674dd00de32b4a038fa4f2" prot="public" static="no">
+        <name>RNG_CR_SLP_MASK</name>
+        <initializer>(0x10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9299" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga72aad942e73c5264eeb1785dffabd3e9" prot="public" static="no">
+        <name>RNG_CR_SLP_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9300" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga3a5ee93a41dae17db5b21a0535ed6a92" prot="public" static="no">
+        <name>RNG_CR_SLP</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1ga72aad942e73c5264eeb1785dffabd3e9" kindref="member">RNG_CR_SLP_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1gaee432efec0674dd00de32b4a038fa4f2" kindref="member">RNG_CR_SLP_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9301" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9301" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>SR - RNGA Status Register</header>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga7fde61b3578eb7d529405f7090a36e28" prot="public" static="no">
+        <name>RNG_SR_SECV_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9304" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gad37b495266223189729bdaa62c9deb5f" prot="public" static="no">
+        <name>RNG_SR_SECV_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9305" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gad4572970c029ce5f45f9f71d3e259790" prot="public" static="no">
+        <name>RNG_SR_SECV</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1gad37b495266223189729bdaa62c9deb5f" kindref="member">RNG_SR_SECV_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1ga7fde61b3578eb7d529405f7090a36e28" kindref="member">RNG_SR_SECV_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9306" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gacba2db7d02686b0737b4b47ba765d063" prot="public" static="no">
+        <name>RNG_SR_LRS_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9307" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga13e9b834adced475b1d075eb159655fd" prot="public" static="no">
+        <name>RNG_SR_LRS_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9308" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga4b718e1de32f8695910d76d593bf200e" prot="public" static="no">
+        <name>RNG_SR_LRS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1ga13e9b834adced475b1d075eb159655fd" kindref="member">RNG_SR_LRS_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1gacba2db7d02686b0737b4b47ba765d063" kindref="member">RNG_SR_LRS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9309" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga3584aefed1802fa0dc97f56ee7ceb292" prot="public" static="no">
+        <name>RNG_SR_ORU_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9310" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga6b0320c0b7ca685c61880f0240959cc8" prot="public" static="no">
+        <name>RNG_SR_ORU_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9311" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gaf467e3533c442a735c1742474cf4dffc" prot="public" static="no">
+        <name>RNG_SR_ORU</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1ga6b0320c0b7ca685c61880f0240959cc8" kindref="member">RNG_SR_ORU_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1ga3584aefed1802fa0dc97f56ee7ceb292" kindref="member">RNG_SR_ORU_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9312" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga3c85bd2671168b6c4deb3d24f258e994" prot="public" static="no">
+        <name>RNG_SR_ERRI_MASK</name>
+        <initializer>(0x8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9313" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga83b4268bad929f74a99f2e7df81d7334" prot="public" static="no">
+        <name>RNG_SR_ERRI_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9314" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga65db02ced3c609548955eb5fcb6ab7f4" prot="public" static="no">
+        <name>RNG_SR_ERRI</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1ga83b4268bad929f74a99f2e7df81d7334" kindref="member">RNG_SR_ERRI_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1ga3c85bd2671168b6c4deb3d24f258e994" kindref="member">RNG_SR_ERRI_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9315" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga1a51652171cedf780e82c20ff41119f8" prot="public" static="no">
+        <name>RNG_SR_SLP_MASK</name>
+        <initializer>(0x10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9316" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga07a631716ed84be9e6c0fb94308ac55f" prot="public" static="no">
+        <name>RNG_SR_SLP_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9317" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga90609c7981750fd2318da77a1e192f0b" prot="public" static="no">
+        <name>RNG_SR_SLP</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1ga07a631716ed84be9e6c0fb94308ac55f" kindref="member">RNG_SR_SLP_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1ga1a51652171cedf780e82c20ff41119f8" kindref="member">RNG_SR_SLP_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9318" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga5ba45a08f2c283764e959f185747e549" prot="public" static="no">
+        <name>RNG_SR_OREG_LVL_MASK</name>
+        <initializer>(0xFF00U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9319" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga2e38a684aa9e1b164fb2a00db509ccf9" prot="public" static="no">
+        <name>RNG_SR_OREG_LVL_SHIFT</name>
+        <initializer>(8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9320" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gae7ebdc9ef90b73144e40809d7b8108fc" prot="public" static="no">
+        <name>RNG_SR_OREG_LVL</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1ga2e38a684aa9e1b164fb2a00db509ccf9" kindref="member">RNG_SR_OREG_LVL_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1ga5ba45a08f2c283764e959f185747e549" kindref="member">RNG_SR_OREG_LVL_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9321" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga2f35d6883145b930c34d949640694a6f" prot="public" static="no">
+        <name>RNG_SR_OREG_SIZE_MASK</name>
+        <initializer>(0xFF0000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9322" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga7bd0f51640dd8184fdc95b687473e7d6" prot="public" static="no">
+        <name>RNG_SR_OREG_SIZE_SHIFT</name>
+        <initializer>(16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9323" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga8fe3b65a512da2f37a4a9ae03b4e4f40" prot="public" static="no">
+        <name>RNG_SR_OREG_SIZE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1ga7bd0f51640dd8184fdc95b687473e7d6" kindref="member">RNG_SR_OREG_SIZE_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1ga2f35d6883145b930c34d949640694a6f" kindref="member">RNG_SR_OREG_SIZE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9324" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9324" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>ER - RNGA Entropy Register</header>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gab27d57cff82acd0615707b3a53c7cce0" prot="public" static="no">
+        <name>RNG_ER_EXT_ENT_MASK</name>
+        <initializer>(0xFFFFFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9327" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gae01cc719557411c3218c33e4b855b790" prot="public" static="no">
+        <name>RNG_ER_EXT_ENT_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9328" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga308a2ffad2128aec4f7883f9f1289940" prot="public" static="no">
+        <name>RNG_ER_EXT_ENT</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1gae01cc719557411c3218c33e4b855b790" kindref="member">RNG_ER_EXT_ENT_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1gab27d57cff82acd0615707b3a53c7cce0" kindref="member">RNG_ER_EXT_ENT_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9329" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9329" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>OR - RNGA Output Register</header>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gaa29938490b0cc9d23a54a137c62ba64a" prot="public" static="no">
+        <name>RNG_OR_RANDOUT_MASK</name>
+        <initializer>(0xFFFFFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9332" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga3f7e8e180fafb10fbbe34e9dced30b87" prot="public" static="no">
+        <name>RNG_OR_RANDOUT_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9333" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gadee84e83028dd2a869b62f046e20f795" prot="public" static="no">
+        <name>RNG_OR_RANDOUT</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___r_n_g___register___masks_1ga3f7e8e180fafb10fbbe34e9dced30b87" kindref="member">RNG_OR_RANDOUT_SHIFT</ref>)) &amp; <ref refid="group___r_n_g___register___masks_1gaa29938490b0cc9d23a54a137c62ba64a" kindref="member">RNG_OR_RANDOUT_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9334" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9334" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gab92662976cfe62457141e5b4f83d541c" prot="public" static="no">
+        <name>RNG_BASE</name>
+        <initializer>(0x40029000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral RNG base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9344" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga5b0885b8b55bbc13691092b704d9309f" prot="public" static="no">
+        <name>RNG</name>
+        <initializer>((<ref refid="struct_r_n_g___type" kindref="compound">RNG_Type</ref> *)<ref refid="group___r_n_g___register___masks_1gab92662976cfe62457141e5b4f83d541c" kindref="member">RNG_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral RNG base pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9346" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga794b814e7cc50a77c3e540fb88945326" prot="public" static="no">
+        <name>RNG_BASE_ADDRS</name>
+        <initializer>{ <ref refid="group___r_n_g___register___masks_1gab92662976cfe62457141e5b4f83d541c" kindref="member">RNG_BASE</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of RNG peripheral base addresses </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9348" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1gafe29fd84164c78d03c9a7a2128caf361" prot="public" static="no">
+        <name>RNG_BASE_PTRS</name>
+        <initializer>{ <ref refid="group___r_n_g___register___masks_1ga5b0885b8b55bbc13691092b704d9309f" kindref="member">RNG</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of RNG peripheral base pointers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9350" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_n_g___register___masks_1ga2ad5ec19e225454d775bec0771e14615" prot="public" static="no">
+        <name>RNG_IRQS</name>
+        <initializer>{ <ref refid="group___interrupt__vector__numbers_1gga666eb0caeb12ec0e281415592ae89083a90c4647e57cff99fac635c532802c4b5" kindref="member">RNG_IRQn</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt vectors for the RNG peripheral type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="9352" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="9352" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

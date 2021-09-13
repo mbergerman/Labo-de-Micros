@@ -1,3 +1,9 @@
+/***************************************************************************//**
+  @file     DRV_Encoder.c
+  @brief    Rotary encoder driver
+  @author   Grupo 1
+ ******************************************************************************/
+
 #include "DRV_Board.h"
 #include "DRV_Encoder.h"
 #include "DRV_Timers.h"

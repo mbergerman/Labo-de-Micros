@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___u_a_r_t___peripheral___access___layer" kind="group">
+    <compoundname>UART_Peripheral_Access_Layer</compoundname>
+    <title>UART Peripheral Access Layer</title>
+    <innerclass refid="struct_u_a_r_t___type" prot="public">UART_Type</innerclass>
+    <innergroup refid="group___u_a_r_t___register___masks">UART Register Masks</innergroup>
+    <innergroup refid="group___u_s_b___peripheral___access___layer">USB Peripheral Access Layer</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

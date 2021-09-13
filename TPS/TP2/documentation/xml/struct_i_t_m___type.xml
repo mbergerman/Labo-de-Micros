@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_i_t_m___type" kind="struct" language="C++" prot="public">
+    <compoundname>ITM_Type</compoundname>
+    <includes refid="core__armv8mml_8h" local="no">core_armv8mml.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i_t_m___type_1a4c0550e859d614c607bd4b575f05425c" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint8_t</type>
+        <definition>__OM uint8_t u8</definition>
+        <argsstring></argsstring>
+        <name>u8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x000 ( /W) ITM Stimulus Port 8-bit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1087" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1087" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1ae93660eefe2482a8564fae9a1ca39739" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint16_t</type>
+        <definition>__OM uint16_t u16</definition>
+        <argsstring></argsstring>
+        <name>u16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x000 ( /W) ITM Stimulus Port 16-bit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1088" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1088" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1ae89dd50f788f12863c681fba1a5b60d1" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t u32</definition>
+        <argsstring></argsstring>
+        <name>u32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x000 ( /W) ITM Stimulus Port 32-bit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1089" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1089" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1afee369623a7e583097a711ed6b435730" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> union ITM_Type::@14</type>
+        <definition>__OM union ITM_Type::@14   PORT[32U]</definition>
+        <argsstring>[32U]</argsstring>
+        <name>PORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x000 ( /W) ITM Stimulus Port Registers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1090" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1abbf2da13b6377b5a759cca640bd0e552" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED0</definition>
+        <argsstring>[864U]</argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1091" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1091" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1aa6530efad3a727fb3cc8f509403b9948" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t TER</definition>
+        <argsstring></argsstring>
+        <name>TER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xE00 (R/W) ITM Trace Enable Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1092" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1092" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a8800cb3dfa65c86b1808c4bd27f99900" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED1</definition>
+        <argsstring>[15U]</argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1093" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1093" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1afe5e266862734ca1082ceddff7180688" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t TPR</definition>
+        <argsstring></argsstring>
+        <name>TPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xE40 (R/W) ITM Trace Privilege Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1094" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1094" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a801095aba8ccf34540292b96b047981f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED2</definition>
+        <argsstring>[15U]</argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1095" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1095" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a4111c001c1e56fd3f51d27c5a63b04e6" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t TCR</definition>
+        <argsstring></argsstring>
+        <name>TCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xE80 (R/W) ITM Trace Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1096" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1096" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1aaa35c79a89060533b3acce35a0cc63ec" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED3</definition>
+        <argsstring>[29U]</argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1097" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1097" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a68e56eb5e16d2aa293b0bec5c99e50fe" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t IWR</definition>
+        <argsstring></argsstring>
+        <name>IWR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xEF8 ( /W) ITM Integration Write Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1098" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1098" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1ae300b6ee4d883ceec8f3572fc0fc3d69" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t IRR</definition>
+        <argsstring></argsstring>
+        <name>IRR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xEFC (R/ ) ITM Integration Read Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1099" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1099" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1af0446ee5dcb6082dc8bba9adcc8ec812" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t IMCR</definition>
+        <argsstring></argsstring>
+        <name>IMCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xF00 (R/W) ITM Integration Mode Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1100" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a36fbed6985e5cd320e8eecfc73eb2846" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED4</definition>
+        <argsstring>[43U]</argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1101" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1acc9e51f871c357a9094105435b150d13" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> uint32_t</type>
+        <definition>__OM uint32_t LAR</definition>
+        <argsstring></argsstring>
+        <name>LAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFB0 ( /W) ITM Lock Access Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1102" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a7219432d03f6cd1d220f4fe10aef4880" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t LSR</definition>
+        <argsstring></argsstring>
+        <name>LSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFB4 (R/ ) ITM Lock Status Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1103" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a171526446695fcdbfaf7992e567f881d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED5</definition>
+        <argsstring>[1U]</argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1104" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1ae370aa5dc47fe03310e1d847333030e7" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t DEVARCH</definition>
+        <argsstring></argsstring>
+        <name>DEVARCH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFBC (R/ ) ITM Device Architecture Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1105" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a0eb8ee1799ac1621fe383e5b234837b7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED6[4U]</definition>
+        <argsstring>[4U]</argsstring>
+        <name>RESERVED6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1106" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a4c002e97cda2375d7421ad6415b6a02f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t PID4</definition>
+        <argsstring></argsstring>
+        <name>PID4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFD0 (R/ ) ITM Peripheral Identification Register #4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1107" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1ac085b26f43fefeef9a4cf5c2af5e4a38" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t PID5</definition>
+        <argsstring></argsstring>
+        <name>PID5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFD4 (R/ ) ITM Peripheral Identification Register #5 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1108" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a83ac5d00dee24cc7f805b5c147625593" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t PID6</definition>
+        <argsstring></argsstring>
+        <name>PID6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFD8 (R/ ) ITM Peripheral Identification Register #6 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1109" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1af8aa73aeaf37bdf7dfd9f6c437ff2d2f" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t PID7</definition>
+        <argsstring></argsstring>
+        <name>PID7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFDC (R/ ) ITM Peripheral Identification Register #7 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1110" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a6e3343cc3c4a8a5a6f14937882e9202a" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t PID0</definition>
+        <argsstring></argsstring>
+        <name>PID0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFE0 (R/ ) ITM Peripheral Identification Register #0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1111" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1afa06959344f4991b00e6c545dd2fa30b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t PID1</definition>
+        <argsstring></argsstring>
+        <name>PID1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFE4 (R/ ) ITM Peripheral Identification Register #1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1112" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a63db39f871596d28e69c283288ea2eba" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t PID2</definition>
+        <argsstring></argsstring>
+        <name>PID2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFE8 (R/ ) ITM Peripheral Identification Register #2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1113" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1ac2d006eed52ba550a309e5f61ed9c401" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t PID3</definition>
+        <argsstring></argsstring>
+        <name>PID3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFEC (R/ ) ITM Peripheral Identification Register #3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1114" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a26bbad5d9e0f1d302611d52373aef839" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t CID0</definition>
+        <argsstring></argsstring>
+        <name>CID0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFF0 (R/ ) ITM Component Identification Register #0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1115" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a4e60a608afd6433ecd943d95e417b80b" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t CID1</definition>
+        <argsstring></argsstring>
+        <name>CID1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFF4 (R/ ) ITM Component Identification Register #1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1116" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1ad98950702e55d1851e91b22de07b11aa" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t CID2</definition>
+        <argsstring></argsstring>
+        <name>CID2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFF8 (R/ ) ITM Component Identification Register #2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1117" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1ab9af64f413bf6f67e2a8044481292f67" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t CID3</definition>
+        <argsstring></argsstring>
+        <name>CID3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xFFC (R/ ) ITM Component Identification Register #3 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1118" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_t_m___type_1a59dfe463f963fae339f3cbde7cb96821" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a0ea2009ed8fd9ef35b48708280fdb758" kindref="member">__OM</ref> union ITM_Type::@19</type>
+        <definition>__OM union ITM_Type::@19   PORT[32U]</definition>
+        <argsstring>[32U]</argsstring>
+        <name>PORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x000 ( /W) ITM Stimulus Port Registers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="818" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure type to access the Instrumentation Trace Macrocell Register (ITM). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/core_armv8mml.h" line="1084" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1083" bodyend="1119"/>
+    <listofallmembers>
+      <member refid="struct_i_t_m___type_1a26bbad5d9e0f1d302611d52373aef839" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>CID0</name></member>
+      <member refid="struct_i_t_m___type_1a4e60a608afd6433ecd943d95e417b80b" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>CID1</name></member>
+      <member refid="struct_i_t_m___type_1ad98950702e55d1851e91b22de07b11aa" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>CID2</name></member>
+      <member refid="struct_i_t_m___type_1ab9af64f413bf6f67e2a8044481292f67" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>CID3</name></member>
+      <member refid="struct_i_t_m___type_1ae370aa5dc47fe03310e1d847333030e7" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>DEVARCH</name></member>
+      <member refid="struct_i_t_m___type_1af0446ee5dcb6082dc8bba9adcc8ec812" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>IMCR</name></member>
+      <member refid="struct_i_t_m___type_1ae300b6ee4d883ceec8f3572fc0fc3d69" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>IRR</name></member>
+      <member refid="struct_i_t_m___type_1a68e56eb5e16d2aa293b0bec5c99e50fe" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>IWR</name></member>
+      <member refid="struct_i_t_m___type_1acc9e51f871c357a9094105435b150d13" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>LAR</name></member>
+      <member refid="struct_i_t_m___type_1a7219432d03f6cd1d220f4fe10aef4880" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>LSR</name></member>
+      <member refid="struct_i_t_m___type_1a6e3343cc3c4a8a5a6f14937882e9202a" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID0</name></member>
+      <member refid="struct_i_t_m___type_1afa06959344f4991b00e6c545dd2fa30b" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID1</name></member>
+      <member refid="struct_i_t_m___type_1a63db39f871596d28e69c283288ea2eba" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID2</name></member>
+      <member refid="struct_i_t_m___type_1ac2d006eed52ba550a309e5f61ed9c401" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID3</name></member>
+      <member refid="struct_i_t_m___type_1a4c002e97cda2375d7421ad6415b6a02f" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID4</name></member>
+      <member refid="struct_i_t_m___type_1ac085b26f43fefeef9a4cf5c2af5e4a38" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID5</name></member>
+      <member refid="struct_i_t_m___type_1a83ac5d00dee24cc7f805b5c147625593" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID6</name></member>
+      <member refid="struct_i_t_m___type_1af8aa73aeaf37bdf7dfd9f6c437ff2d2f" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PID7</name></member>
+      <member refid="struct_i_t_m___type_1afee369623a7e583097a711ed6b435730" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PORT</name></member>
+      <member refid="struct_i_t_m___type_1a59dfe463f963fae339f3cbde7cb96821" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>PORT</name></member>
+      <member refid="struct_i_t_m___type_1abbf2da13b6377b5a759cca640bd0e552" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED0</name></member>
+      <member refid="struct_i_t_m___type_1a8800cb3dfa65c86b1808c4bd27f99900" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED1</name></member>
+      <member refid="struct_i_t_m___type_1a801095aba8ccf34540292b96b047981f" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED2</name></member>
+      <member refid="struct_i_t_m___type_1aaa35c79a89060533b3acce35a0cc63ec" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED3</name></member>
+      <member refid="struct_i_t_m___type_1a36fbed6985e5cd320e8eecfc73eb2846" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED4</name></member>
+      <member refid="struct_i_t_m___type_1a171526446695fcdbfaf7992e567f881d" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED5</name></member>
+      <member refid="struct_i_t_m___type_1a0eb8ee1799ac1621fe383e5b234837b7" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>RESERVED6</name></member>
+      <member refid="struct_i_t_m___type_1a4111c001c1e56fd3f51d27c5a63b04e6" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>TCR</name></member>
+      <member refid="struct_i_t_m___type_1aa6530efad3a727fb3cc8f509403b9948" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>TER</name></member>
+      <member refid="struct_i_t_m___type_1afe5e266862734ca1082ceddff7180688" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>TPR</name></member>
+      <member refid="struct_i_t_m___type_1ae93660eefe2482a8564fae9a1ca39739" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>u16</name></member>
+      <member refid="struct_i_t_m___type_1ae89dd50f788f12863c681fba1a5b60d1" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>u32</name></member>
+      <member refid="struct_i_t_m___type_1a4c0550e859d614c607bd4b575f05425c" prot="public" virt="non-virtual"><scope>ITM_Type</scope><name>u8</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

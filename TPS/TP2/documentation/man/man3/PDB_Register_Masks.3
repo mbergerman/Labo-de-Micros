@@ -1,0 +1,529 @@
+.TH "PDB_Register_Masks" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PDB_Register_Masks
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPDB0_BASE\fP   (0x40036000u)"
+.br
+.ti -1c
+.RI "#define \fBPDB0\fP   ((\fBPDB_Type\fP *)\fBPDB0_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_BASE_ADDRS\fP   { \fBPDB0_BASE\fP }"
+.br
+.ti -1c
+.RI "#define \fBPDB_BASE_PTRS\fP   { \fBPDB0\fP }"
+.br
+.ti -1c
+.RI "#define \fBPDB_IRQS\fP   { \fBPDB0_IRQn\fP }"
+.br
+.in -1c
+.SS "SC - Status and Control register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPDB_SC_LDOK_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_LDOK_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_LDOK\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_LDOK_SHIFT\fP)) & \fBPDB_SC_LDOK_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_CONT_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_CONT_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_CONT\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_CONT_SHIFT\fP)) & \fBPDB_SC_CONT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_MULT_MASK\fP   (0xCU)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_MULT_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_MULT\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_MULT_SHIFT\fP)) & \fBPDB_SC_MULT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PDBIE_MASK\fP   (0x20U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PDBIE_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PDBIE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_PDBIE_SHIFT\fP)) & \fBPDB_SC_PDBIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PDBIF_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PDBIF_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PDBIF\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_PDBIF_SHIFT\fP)) & \fBPDB_SC_PDBIF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PDBEN_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PDBEN_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PDBEN\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_PDBEN_SHIFT\fP)) & \fBPDB_SC_PDBEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_TRGSEL_MASK\fP   (0xF00U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_TRGSEL_SHIFT\fP   (8U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_TRGSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_TRGSEL_SHIFT\fP)) & \fBPDB_SC_TRGSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PRESCALER_MASK\fP   (0x7000U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PRESCALER_SHIFT\fP   (12U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PRESCALER\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_PRESCALER_SHIFT\fP)) & \fBPDB_SC_PRESCALER_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_DMAEN_MASK\fP   (0x8000U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_DMAEN_SHIFT\fP   (15U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_DMAEN\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_DMAEN_SHIFT\fP)) & \fBPDB_SC_DMAEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_SWTRIG_MASK\fP   (0x10000U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_SWTRIG_SHIFT\fP   (16U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_SWTRIG\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_SWTRIG_SHIFT\fP)) & \fBPDB_SC_SWTRIG_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PDBEIE_MASK\fP   (0x20000U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PDBEIE_SHIFT\fP   (17U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_PDBEIE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_PDBEIE_SHIFT\fP)) & \fBPDB_SC_PDBEIE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_LDMOD_MASK\fP   (0xC0000U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_LDMOD_SHIFT\fP   (18U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_SC_LDMOD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_LDMOD_SHIFT\fP)) & \fBPDB_SC_LDMOD_MASK\fP)"
+.br
+.in -1c
+.SS "MOD - Modulus register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPDB_MOD_MOD_MASK\fP   (0xFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBPDB_MOD_MOD_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_MOD_MOD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_MOD_MOD_SHIFT\fP)) & \fBPDB_MOD_MOD_MASK\fP)"
+.br
+.in -1c
+.SS "CNT - Counter register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPDB_CNT_CNT_MASK\fP   (0xFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBPDB_CNT_CNT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_CNT_CNT\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_CNT_CNT_SHIFT\fP)) & \fBPDB_CNT_CNT_MASK\fP)"
+.br
+.in -1c
+.SS "IDLY - Interrupt Delay register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPDB_IDLY_IDLY_MASK\fP   (0xFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBPDB_IDLY_IDLY_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_IDLY_IDLY\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_IDLY_IDLY_SHIFT\fP)) & \fBPDB_IDLY_IDLY_MASK\fP)"
+.br
+.in -1c
+.SS "C1 - Channel n Control register 1"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPDB_C1_EN_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBPDB_C1_EN_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_C1_EN\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_C1_EN_SHIFT\fP)) & \fBPDB_C1_EN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_C1_TOS_MASK\fP   (0xFF00U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_C1_TOS_SHIFT\fP   (8U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_C1_TOS\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_C1_TOS_SHIFT\fP)) & \fBPDB_C1_TOS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_C1_BB_MASK\fP   (0xFF0000U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_C1_BB_SHIFT\fP   (16U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_C1_BB\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_C1_BB_SHIFT\fP)) & \fBPDB_C1_BB_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_C1_COUNT\fP   (2U)"
+.br
+.in -1c
+.SS "S - Channel n Status register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPDB_S_ERR_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBPDB_S_ERR_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_S_ERR\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_S_ERR_SHIFT\fP)) & \fBPDB_S_ERR_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_S_CF_MASK\fP   (0xFF0000U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_S_CF_SHIFT\fP   (16U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_S_CF\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_S_CF_SHIFT\fP)) & \fBPDB_S_CF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_S_COUNT\fP   (2U)"
+.br
+.in -1c
+.SS "DLY - Channel n Delay 0 register\&.\&.Channel n Delay 1 register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPDB_DLY_DLY_MASK\fP   (0xFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBPDB_DLY_DLY_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_DLY_DLY\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_DLY_DLY_SHIFT\fP)) & \fBPDB_DLY_DLY_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_DLY_COUNT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_DLY_COUNT2\fP   (2U)"
+.br
+.in -1c
+.SS "INTC - DAC Interval Trigger n Control register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPDB_INTC_TOE_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_INTC_TOE_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_INTC_TOE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_INTC_TOE_SHIFT\fP)) & \fBPDB_INTC_TOE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_INTC_EXT_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_INTC_EXT_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_INTC_EXT\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_INTC_EXT_SHIFT\fP)) & \fBPDB_INTC_EXT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_INTC_COUNT\fP   (2U)"
+.br
+.in -1c
+.SS "INT - DAC Interval n register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPDB_INT_INT_MASK\fP   (0xFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBPDB_INT_INT_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_INT_INT\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_INT_INT_SHIFT\fP)) & \fBPDB_INT_INT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_INT_COUNT\fP   (2U)"
+.br
+.in -1c
+.SS "POEN - Pulse-Out n Enable register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPDB_POEN_POEN_MASK\fP   (0xFFU)"
+.br
+.ti -1c
+.RI "#define \fBPDB_POEN_POEN_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_POEN_POEN\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_POEN_POEN_SHIFT\fP)) & \fBPDB_POEN_POEN_MASK\fP)"
+.br
+.in -1c
+.SS "PODLY - Pulse-Out n Delay register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPDB_PODLY_DLY2_MASK\fP   (0xFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBPDB_PODLY_DLY2_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_PODLY_DLY2\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_PODLY_DLY2_SHIFT\fP)) & \fBPDB_PODLY_DLY2_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_PODLY_DLY1_MASK\fP   (0xFFFF0000U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_PODLY_DLY1_SHIFT\fP   (16U)"
+.br
+.ti -1c
+.RI "#define \fBPDB_PODLY_DLY1\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_PODLY_DLY1_SHIFT\fP)) & \fBPDB_PODLY_DLY1_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBPDB_PODLY_COUNT\fP   (3U)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define PDB0   ((\fBPDB_Type\fP *)\fBPDB0_BASE\fP)"
+Peripheral PDB0 base pointer 
+.SS "#define PDB0_BASE   (0x40036000u)"
+Peripheral PDB0 base address 
+.SS "#define PDB_BASE_ADDRS   { \fBPDB0_BASE\fP }"
+Array initializer of PDB peripheral base addresses 
+.SS "#define PDB_BASE_PTRS   { \fBPDB0\fP }"
+Array initializer of PDB peripheral base pointers 
+.SS "#define PDB_C1_BB(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_C1_BB_SHIFT\fP)) & \fBPDB_C1_BB_MASK\fP)"
+
+.SS "#define PDB_C1_BB_MASK   (0xFF0000U)"
+
+.SS "#define PDB_C1_BB_SHIFT   (16U)"
+
+.SS "#define PDB_C1_COUNT   (2U)"
+
+.SS "#define PDB_C1_EN(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_C1_EN_SHIFT\fP)) & \fBPDB_C1_EN_MASK\fP)"
+
+.SS "#define PDB_C1_EN_MASK   (0xFFU)"
+
+.SS "#define PDB_C1_EN_SHIFT   (0U)"
+
+.SS "#define PDB_C1_TOS(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_C1_TOS_SHIFT\fP)) & \fBPDB_C1_TOS_MASK\fP)"
+
+.SS "#define PDB_C1_TOS_MASK   (0xFF00U)"
+
+.SS "#define PDB_C1_TOS_SHIFT   (8U)"
+
+.SS "#define PDB_CNT_CNT(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_CNT_CNT_SHIFT\fP)) & \fBPDB_CNT_CNT_MASK\fP)"
+
+.SS "#define PDB_CNT_CNT_MASK   (0xFFFFU)"
+
+.SS "#define PDB_CNT_CNT_SHIFT   (0U)"
+
+.SS "#define PDB_DLY_COUNT   (2U)"
+
+.SS "#define PDB_DLY_COUNT2   (2U)"
+
+.SS "#define PDB_DLY_DLY(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_DLY_DLY_SHIFT\fP)) & \fBPDB_DLY_DLY_MASK\fP)"
+
+.SS "#define PDB_DLY_DLY_MASK   (0xFFFFU)"
+
+.SS "#define PDB_DLY_DLY_SHIFT   (0U)"
+
+.SS "#define PDB_IDLY_IDLY(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_IDLY_IDLY_SHIFT\fP)) & \fBPDB_IDLY_IDLY_MASK\fP)"
+
+.SS "#define PDB_IDLY_IDLY_MASK   (0xFFFFU)"
+
+.SS "#define PDB_IDLY_IDLY_SHIFT   (0U)"
+
+.SS "#define PDB_INT_COUNT   (2U)"
+
+.SS "#define PDB_INT_INT(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_INT_INT_SHIFT\fP)) & \fBPDB_INT_INT_MASK\fP)"
+
+.SS "#define PDB_INT_INT_MASK   (0xFFFFU)"
+
+.SS "#define PDB_INT_INT_SHIFT   (0U)"
+
+.SS "#define PDB_INTC_COUNT   (2U)"
+
+.SS "#define PDB_INTC_EXT(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_INTC_EXT_SHIFT\fP)) & \fBPDB_INTC_EXT_MASK\fP)"
+
+.SS "#define PDB_INTC_EXT_MASK   (0x2U)"
+
+.SS "#define PDB_INTC_EXT_SHIFT   (1U)"
+
+.SS "#define PDB_INTC_TOE(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_INTC_TOE_SHIFT\fP)) & \fBPDB_INTC_TOE_MASK\fP)"
+
+.SS "#define PDB_INTC_TOE_MASK   (0x1U)"
+
+.SS "#define PDB_INTC_TOE_SHIFT   (0U)"
+
+.SS "#define PDB_IRQS   { \fBPDB0_IRQn\fP }"
+Interrupt vectors for the PDB peripheral type 
+.SS "#define PDB_MOD_MOD(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_MOD_MOD_SHIFT\fP)) & \fBPDB_MOD_MOD_MASK\fP)"
+
+.SS "#define PDB_MOD_MOD_MASK   (0xFFFFU)"
+
+.SS "#define PDB_MOD_MOD_SHIFT   (0U)"
+
+.SS "#define PDB_PODLY_COUNT   (3U)"
+
+.SS "#define PDB_PODLY_DLY1(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_PODLY_DLY1_SHIFT\fP)) & \fBPDB_PODLY_DLY1_MASK\fP)"
+
+.SS "#define PDB_PODLY_DLY1_MASK   (0xFFFF0000U)"
+
+.SS "#define PDB_PODLY_DLY1_SHIFT   (16U)"
+
+.SS "#define PDB_PODLY_DLY2(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_PODLY_DLY2_SHIFT\fP)) & \fBPDB_PODLY_DLY2_MASK\fP)"
+
+.SS "#define PDB_PODLY_DLY2_MASK   (0xFFFFU)"
+
+.SS "#define PDB_PODLY_DLY2_SHIFT   (0U)"
+
+.SS "#define PDB_POEN_POEN(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_POEN_POEN_SHIFT\fP)) & \fBPDB_POEN_POEN_MASK\fP)"
+
+.SS "#define PDB_POEN_POEN_MASK   (0xFFU)"
+
+.SS "#define PDB_POEN_POEN_SHIFT   (0U)"
+
+.SS "#define PDB_S_CF(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_S_CF_SHIFT\fP)) & \fBPDB_S_CF_MASK\fP)"
+
+.SS "#define PDB_S_CF_MASK   (0xFF0000U)"
+
+.SS "#define PDB_S_CF_SHIFT   (16U)"
+
+.SS "#define PDB_S_COUNT   (2U)"
+
+.SS "#define PDB_S_ERR(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_S_ERR_SHIFT\fP)) & \fBPDB_S_ERR_MASK\fP)"
+
+.SS "#define PDB_S_ERR_MASK   (0xFFU)"
+
+.SS "#define PDB_S_ERR_SHIFT   (0U)"
+
+.SS "#define PDB_SC_CONT(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_CONT_SHIFT\fP)) & \fBPDB_SC_CONT_MASK\fP)"
+
+.SS "#define PDB_SC_CONT_MASK   (0x2U)"
+
+.SS "#define PDB_SC_CONT_SHIFT   (1U)"
+
+.SS "#define PDB_SC_DMAEN(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_DMAEN_SHIFT\fP)) & \fBPDB_SC_DMAEN_MASK\fP)"
+
+.SS "#define PDB_SC_DMAEN_MASK   (0x8000U)"
+
+.SS "#define PDB_SC_DMAEN_SHIFT   (15U)"
+
+.SS "#define PDB_SC_LDMOD(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_LDMOD_SHIFT\fP)) & \fBPDB_SC_LDMOD_MASK\fP)"
+
+.SS "#define PDB_SC_LDMOD_MASK   (0xC0000U)"
+
+.SS "#define PDB_SC_LDMOD_SHIFT   (18U)"
+
+.SS "#define PDB_SC_LDOK(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_LDOK_SHIFT\fP)) & \fBPDB_SC_LDOK_MASK\fP)"
+
+.SS "#define PDB_SC_LDOK_MASK   (0x1U)"
+
+.SS "#define PDB_SC_LDOK_SHIFT   (0U)"
+
+.SS "#define PDB_SC_MULT(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_MULT_SHIFT\fP)) & \fBPDB_SC_MULT_MASK\fP)"
+
+.SS "#define PDB_SC_MULT_MASK   (0xCU)"
+
+.SS "#define PDB_SC_MULT_SHIFT   (2U)"
+
+.SS "#define PDB_SC_PDBEIE(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_PDBEIE_SHIFT\fP)) & \fBPDB_SC_PDBEIE_MASK\fP)"
+
+.SS "#define PDB_SC_PDBEIE_MASK   (0x20000U)"
+
+.SS "#define PDB_SC_PDBEIE_SHIFT   (17U)"
+
+.SS "#define PDB_SC_PDBEN(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_PDBEN_SHIFT\fP)) & \fBPDB_SC_PDBEN_MASK\fP)"
+
+.SS "#define PDB_SC_PDBEN_MASK   (0x80U)"
+
+.SS "#define PDB_SC_PDBEN_SHIFT   (7U)"
+
+.SS "#define PDB_SC_PDBIE(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_PDBIE_SHIFT\fP)) & \fBPDB_SC_PDBIE_MASK\fP)"
+
+.SS "#define PDB_SC_PDBIE_MASK   (0x20U)"
+
+.SS "#define PDB_SC_PDBIE_SHIFT   (5U)"
+
+.SS "#define PDB_SC_PDBIF(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_PDBIF_SHIFT\fP)) & \fBPDB_SC_PDBIF_MASK\fP)"
+
+.SS "#define PDB_SC_PDBIF_MASK   (0x40U)"
+
+.SS "#define PDB_SC_PDBIF_SHIFT   (6U)"
+
+.SS "#define PDB_SC_PRESCALER(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_PRESCALER_SHIFT\fP)) & \fBPDB_SC_PRESCALER_MASK\fP)"
+
+.SS "#define PDB_SC_PRESCALER_MASK   (0x7000U)"
+
+.SS "#define PDB_SC_PRESCALER_SHIFT   (12U)"
+
+.SS "#define PDB_SC_SWTRIG(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_SWTRIG_SHIFT\fP)) & \fBPDB_SC_SWTRIG_MASK\fP)"
+
+.SS "#define PDB_SC_SWTRIG_MASK   (0x10000U)"
+
+.SS "#define PDB_SC_SWTRIG_SHIFT   (16U)"
+
+.SS "#define PDB_SC_TRGSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBPDB_SC_TRGSEL_SHIFT\fP)) & \fBPDB_SC_TRGSEL_MASK\fP)"
+
+.SS "#define PDB_SC_TRGSEL_MASK   (0xF00U)"
+
+.SS "#define PDB_SC_TRGSEL_SHIFT   (8U)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

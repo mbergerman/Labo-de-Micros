@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___i2_s___peripheral___access___layer" kind="group">
+    <compoundname>I2S_Peripheral_Access_Layer</compoundname>
+    <title>I2S Peripheral Access Layer</title>
+    <innerclass refid="struct_i2_s___type" prot="public">I2S_Type</innerclass>
+    <innergroup refid="group___i2_s___register___masks">I2S Register Masks</innergroup>
+    <innergroup refid="group___l_l_w_u___peripheral___access___layer">LLWU Peripheral Access Layer</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

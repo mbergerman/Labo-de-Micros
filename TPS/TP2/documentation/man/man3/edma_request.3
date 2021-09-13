@@ -1,0 +1,243 @@
+.TH "edma_request" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+edma_request
+.SH SYNOPSIS
+.br
+.PP
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef enum \fB_dma_request_source\fP \fBdma_request_source_t\fP"
+.br
+.RI "Structure for the DMA hardware request\&. "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fB_dma_request_source\fP { \fBkDmaRequestMux0Disable\fP = 0|0x100U, \fBkDmaRequestMux0Reserved1\fP = 1|0x100U, \fBkDmaRequestMux0UART0Rx\fP = 2|0x100U, \fBkDmaRequestMux0UART0Tx\fP = 3|0x100U, \fBkDmaRequestMux0UART1Rx\fP = 4|0x100U, \fBkDmaRequestMux0UART1Tx\fP = 5|0x100U, \fBkDmaRequestMux0UART2Rx\fP = 6|0x100U, \fBkDmaRequestMux0UART2Tx\fP = 7|0x100U, \fBkDmaRequestMux0UART3Rx\fP = 8|0x100U, \fBkDmaRequestMux0UART3Tx\fP = 9|0x100U, \fBkDmaRequestMux0UART4\fP = 10|0x100U, \fBkDmaRequestMux0UART5\fP = 11|0x100U, \fBkDmaRequestMux0I2S0Rx\fP = 12|0x100U, \fBkDmaRequestMux0I2S0Tx\fP = 13|0x100U, \fBkDmaRequestMux0SPI0Rx\fP = 14|0x100U, \fBkDmaRequestMux0SPI0Tx\fP = 15|0x100U, \fBkDmaRequestMux0SPI1\fP = 16|0x100U, \fBkDmaRequestMux0SPI2\fP = 17|0x100U, \fBkDmaRequestMux0I2C0\fP = 18|0x100U, \fBkDmaRequestMux0I2C1I2C2\fP = 19|0x100U, \fBkDmaRequestMux0I2C1\fP = 19|0x100U, \fBkDmaRequestMux0I2C2\fP = 19|0x100U, \fBkDmaRequestMux0FTM0Channel0\fP = 20|0x100U, \fBkDmaRequestMux0FTM0Channel1\fP = 21|0x100U, \fBkDmaRequestMux0FTM0Channel2\fP = 22|0x100U, \fBkDmaRequestMux0FTM0Channel3\fP = 23|0x100U, \fBkDmaRequestMux0FTM0Channel4\fP = 24|0x100U, \fBkDmaRequestMux0FTM0Channel5\fP = 25|0x100U, \fBkDmaRequestMux0FTM0Channel6\fP = 26|0x100U, \fBkDmaRequestMux0FTM0Channel7\fP = 27|0x100U, \fBkDmaRequestMux0FTM1Channel0\fP = 28|0x100U, \fBkDmaRequestMux0FTM1Channel1\fP = 29|0x100U, \fBkDmaRequestMux0FTM2Channel0\fP = 30|0x100U, \fBkDmaRequestMux0FTM2Channel1\fP = 31|0x100U, \fBkDmaRequestMux0FTM3Channel0\fP = 32|0x100U, \fBkDmaRequestMux0FTM3Channel1\fP = 33|0x100U, \fBkDmaRequestMux0FTM3Channel2\fP = 34|0x100U, \fBkDmaRequestMux0FTM3Channel3\fP = 35|0x100U, \fBkDmaRequestMux0FTM3Channel4\fP = 36|0x100U, \fBkDmaRequestMux0FTM3Channel5\fP = 37|0x100U, \fBkDmaRequestMux0FTM3Channel6\fP = 38|0x100U, \fBkDmaRequestMux0FTM3Channel7\fP = 39|0x100U, \fBkDmaRequestMux0ADC0\fP = 40|0x100U, \fBkDmaRequestMux0ADC1\fP = 41|0x100U, \fBkDmaRequestMux0CMP0\fP = 42|0x100U, \fBkDmaRequestMux0CMP1\fP = 43|0x100U, \fBkDmaRequestMux0CMP2\fP = 44|0x100U, \fBkDmaRequestMux0DAC0\fP = 45|0x100U, \fBkDmaRequestMux0DAC1\fP = 46|0x100U, \fBkDmaRequestMux0CMT\fP = 47|0x100U, \fBkDmaRequestMux0PDB\fP = 48|0x100U, \fBkDmaRequestMux0PortA\fP = 49|0x100U, \fBkDmaRequestMux0PortB\fP = 50|0x100U, \fBkDmaRequestMux0PortC\fP = 51|0x100U, \fBkDmaRequestMux0PortD\fP = 52|0x100U, \fBkDmaRequestMux0PortE\fP = 53|0x100U, \fBkDmaRequestMux0IEEE1588Timer0\fP = 54|0x100U, \fBkDmaRequestMux0IEEE1588Timer1\fP = 55|0x100U, \fBkDmaRequestMux0IEEE1588Timer2\fP = 56|0x100U, \fBkDmaRequestMux0IEEE1588Timer3\fP = 57|0x100U, \fBkDmaRequestMux0AlwaysOn58\fP = 58|0x100U, \fBkDmaRequestMux0AlwaysOn59\fP = 59|0x100U, \fBkDmaRequestMux0AlwaysOn60\fP = 60|0x100U, \fBkDmaRequestMux0AlwaysOn61\fP = 61|0x100U, \fBkDmaRequestMux0AlwaysOn62\fP = 62|0x100U, \fBkDmaRequestMux0AlwaysOn63\fP = 63|0x100U }"
+.br
+.RI "Structure for the DMA hardware request\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Mapping Information 
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef enum \fB_dma_request_source\fP  \fBdma_request_source_t\fP"
+
+.PP
+Structure for the DMA hardware request\&. Defines the structure for the DMA hardware request collections\&. The user can configure the hardware request into DMAMUX to trigger the DMA transfer accordingly\&. The index of the hardware request varies according to the to SoC\&. 
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fB_dma_request_source\fP"
+
+.PP
+Structure for the DMA hardware request\&. Defines the structure for the DMA hardware request collections\&. The user can configure the hardware request into DMAMUX to trigger the DMA transfer accordingly\&. The index of the hardware request varies according to the to SoC\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIkDmaRequestMux0Disable \fP\fP
+DMAMUX TriggerDisabled\&. 
+.TP
+\fB\fIkDmaRequestMux0Reserved1 \fP\fP
+Reserved1 
+.TP
+\fB\fIkDmaRequestMux0UART0Rx \fP\fP
+UART0 Receive\&. 
+.TP
+\fB\fIkDmaRequestMux0UART0Tx \fP\fP
+UART0 Transmit\&. 
+.TP
+\fB\fIkDmaRequestMux0UART1Rx \fP\fP
+UART1 Receive\&. 
+.TP
+\fB\fIkDmaRequestMux0UART1Tx \fP\fP
+UART1 Transmit\&. 
+.TP
+\fB\fIkDmaRequestMux0UART2Rx \fP\fP
+UART2 Receive\&. 
+.TP
+\fB\fIkDmaRequestMux0UART2Tx \fP\fP
+UART2 Transmit\&. 
+.TP
+\fB\fIkDmaRequestMux0UART3Rx \fP\fP
+UART3 Receive\&. 
+.TP
+\fB\fIkDmaRequestMux0UART3Tx \fP\fP
+UART3 Transmit\&. 
+.TP
+\fB\fIkDmaRequestMux0UART4 \fP\fP
+UART4 Transmit or Receive\&. 
+.TP
+\fB\fIkDmaRequestMux0UART5 \fP\fP
+UART5 Transmit or Receive\&. 
+.TP
+\fB\fIkDmaRequestMux0I2S0Rx \fP\fP
+I2S0 Receive\&. 
+.TP
+\fB\fIkDmaRequestMux0I2S0Tx \fP\fP
+I2S0 Transmit\&. 
+.TP
+\fB\fIkDmaRequestMux0SPI0Rx \fP\fP
+SPI0 Receive\&. 
+.TP
+\fB\fIkDmaRequestMux0SPI0Tx \fP\fP
+SPI0 Transmit\&. 
+.TP
+\fB\fIkDmaRequestMux0SPI1 \fP\fP
+SPI1 Transmit or Receive\&. 
+.TP
+\fB\fIkDmaRequestMux0SPI2 \fP\fP
+SPI2 Transmit or Receive\&. 
+.TP
+\fB\fIkDmaRequestMux0I2C0 \fP\fP
+I2C0\&. 
+.TP
+\fB\fIkDmaRequestMux0I2C1I2C2 \fP\fP
+I2C1 and I2C2\&. 
+.TP
+\fB\fIkDmaRequestMux0I2C1 \fP\fP
+I2C1 and I2C2\&. 
+.TP
+\fB\fIkDmaRequestMux0I2C2 \fP\fP
+I2C1 and I2C2\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM0Channel0 \fP\fP
+FTM0 C0V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM0Channel1 \fP\fP
+FTM0 C1V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM0Channel2 \fP\fP
+FTM0 C2V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM0Channel3 \fP\fP
+FTM0 C3V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM0Channel4 \fP\fP
+FTM0 C4V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM0Channel5 \fP\fP
+FTM0 C5V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM0Channel6 \fP\fP
+FTM0 C6V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM0Channel7 \fP\fP
+FTM0 C7V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM1Channel0 \fP\fP
+FTM1 C0V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM1Channel1 \fP\fP
+FTM1 C1V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM2Channel0 \fP\fP
+FTM2 C0V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM2Channel1 \fP\fP
+FTM2 C1V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM3Channel0 \fP\fP
+FTM3 C0V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM3Channel1 \fP\fP
+FTM3 C1V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM3Channel2 \fP\fP
+FTM3 C2V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM3Channel3 \fP\fP
+FTM3 C3V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM3Channel4 \fP\fP
+FTM3 C4V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM3Channel5 \fP\fP
+FTM3 C5V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM3Channel6 \fP\fP
+FTM3 C6V\&. 
+.TP
+\fB\fIkDmaRequestMux0FTM3Channel7 \fP\fP
+FTM3 C7V\&. 
+.TP
+\fB\fIkDmaRequestMux0ADC0 \fP\fP
+ADC0\&. 
+.TP
+\fB\fIkDmaRequestMux0ADC1 \fP\fP
+ADC1\&. 
+.TP
+\fB\fIkDmaRequestMux0CMP0 \fP\fP
+CMP0\&. 
+.TP
+\fB\fIkDmaRequestMux0CMP1 \fP\fP
+CMP1\&. 
+.TP
+\fB\fIkDmaRequestMux0CMP2 \fP\fP
+CMP2\&. 
+.TP
+\fB\fIkDmaRequestMux0DAC0 \fP\fP
+DAC0\&. 
+.TP
+\fB\fIkDmaRequestMux0DAC1 \fP\fP
+DAC1\&. 
+.TP
+\fB\fIkDmaRequestMux0CMT \fP\fP
+CMT\&. 
+.TP
+\fB\fIkDmaRequestMux0PDB \fP\fP
+PDB0\&. 
+.TP
+\fB\fIkDmaRequestMux0PortA \fP\fP
+PTA\&. 
+.TP
+\fB\fIkDmaRequestMux0PortB \fP\fP
+PTB\&. 
+.TP
+\fB\fIkDmaRequestMux0PortC \fP\fP
+PTC\&. 
+.TP
+\fB\fIkDmaRequestMux0PortD \fP\fP
+PTD\&. 
+.TP
+\fB\fIkDmaRequestMux0PortE \fP\fP
+PTE\&. 
+.TP
+\fB\fIkDmaRequestMux0IEEE1588Timer0 \fP\fP
+ENET IEEE 1588 timer 0\&. 
+.TP
+\fB\fIkDmaRequestMux0IEEE1588Timer1 \fP\fP
+ENET IEEE 1588 timer 1\&. 
+.TP
+\fB\fIkDmaRequestMux0IEEE1588Timer2 \fP\fP
+ENET IEEE 1588 timer 2\&. 
+.TP
+\fB\fIkDmaRequestMux0IEEE1588Timer3 \fP\fP
+ENET IEEE 1588 timer 3\&. 
+.TP
+\fB\fIkDmaRequestMux0AlwaysOn58 \fP\fP
+DMAMUX Always Enabled slot\&. 
+.TP
+\fB\fIkDmaRequestMux0AlwaysOn59 \fP\fP
+DMAMUX Always Enabled slot\&. 
+.TP
+\fB\fIkDmaRequestMux0AlwaysOn60 \fP\fP
+DMAMUX Always Enabled slot\&. 
+.TP
+\fB\fIkDmaRequestMux0AlwaysOn61 \fP\fP
+DMAMUX Always Enabled slot\&. 
+.TP
+\fB\fIkDmaRequestMux0AlwaysOn62 \fP\fP
+DMAMUX Always Enabled slot\&. 
+.TP
+\fB\fIkDmaRequestMux0AlwaysOn63 \fP\fP
+DMAMUX Always Enabled slot\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

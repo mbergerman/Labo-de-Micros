@@ -1,0 +1,1078 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___m_c_m___register___masks" kind="group">
+    <compoundname>MCM_Register_Masks</compoundname>
+    <title>MCM Register Masks</title>
+      <sectiondef kind="user-defined">
+      <header>CR - Control Register</header>
+      <memberdef kind="define" id="group___d_m_a___register___masks_1ga39213f9a00cf1862ab3e77c839e71c78" prot="public" static="no">
+        <name>MCM_CR_SRAMUAP_MASK</name>
+        <initializer>(0x3000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8177" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___register___masks_1ga4608d3fb1b05eb0d37515c4686f6190c" prot="public" static="no">
+        <name>MCM_CR_SRAMUAP_SHIFT</name>
+        <initializer>(24U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8178" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___register___masks_1gab9b0e14b6d8b8eb48c993e37da8fd709" prot="public" static="no">
+        <name>MCM_CR_SRAMUAP</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___d_m_a___register___masks_1ga4608d3fb1b05eb0d37515c4686f6190c" kindref="member">MCM_CR_SRAMUAP_SHIFT</ref>)) &amp; <ref refid="group___d_m_a___register___masks_1ga39213f9a00cf1862ab3e77c839e71c78" kindref="member">MCM_CR_SRAMUAP_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8179" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___register___masks_1ga80116d649929d7c9ad773cebd4e4c3bb" prot="public" static="no">
+        <name>MCM_CR_SRAMUWP_MASK</name>
+        <initializer>(0x4000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8180" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___register___masks_1ga73c2b0e8ecdcd2a07070c863db3e9fcd" prot="public" static="no">
+        <name>MCM_CR_SRAMUWP_SHIFT</name>
+        <initializer>(26U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8181" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___register___masks_1ga35fb5ca42636f6aa9e91f8c16384787f" prot="public" static="no">
+        <name>MCM_CR_SRAMUWP</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___d_m_a___register___masks_1ga73c2b0e8ecdcd2a07070c863db3e9fcd" kindref="member">MCM_CR_SRAMUWP_SHIFT</ref>)) &amp; <ref refid="group___d_m_a___register___masks_1ga80116d649929d7c9ad773cebd4e4c3bb" kindref="member">MCM_CR_SRAMUWP_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8182" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___register___masks_1gad9a5f5487e03cefac1a4798ccce630bc" prot="public" static="no">
+        <name>MCM_CR_SRAMLAP_MASK</name>
+        <initializer>(0x30000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8183" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___register___masks_1ga083d0b4e4188e656d92bfa8fb9b4eca9" prot="public" static="no">
+        <name>MCM_CR_SRAMLAP_SHIFT</name>
+        <initializer>(28U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8184" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___register___masks_1ga016e1c55cc89e6f0db47095d5c710f06" prot="public" static="no">
+        <name>MCM_CR_SRAMLAP</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___d_m_a___register___masks_1ga083d0b4e4188e656d92bfa8fb9b4eca9" kindref="member">MCM_CR_SRAMLAP_SHIFT</ref>)) &amp; <ref refid="group___d_m_a___register___masks_1gad9a5f5487e03cefac1a4798ccce630bc" kindref="member">MCM_CR_SRAMLAP_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8185" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___register___masks_1ga93830e2785e77585febe87f0bc83da5c" prot="public" static="no">
+        <name>MCM_CR_SRAMLWP_MASK</name>
+        <initializer>(0x40000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8186" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___register___masks_1ga7c3a04f9ed4a8824e212536c1d783fea" prot="public" static="no">
+        <name>MCM_CR_SRAMLWP_SHIFT</name>
+        <initializer>(30U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8187" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_m_a___register___masks_1gac78c1a3d491b02420c7dab408a3d7675" prot="public" static="no">
+        <name>MCM_CR_SRAMLWP</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___d_m_a___register___masks_1ga7c3a04f9ed4a8824e212536c1d783fea" kindref="member">MCM_CR_SRAMLWP_SHIFT</ref>)) &amp; <ref refid="group___d_m_a___register___masks_1ga93830e2785e77585febe87f0bc83da5c" kindref="member">MCM_CR_SRAMLWP_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8188" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PLASC - Crossbar Switch (AXBS) Slave Configuration</header>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga215cf860c41174735020a34e7ccf9590" prot="public" static="no">
+        <name>MCM_PLASC_ASC_MASK</name>
+        <initializer>(0xFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8167" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga88f833168fd51e1b3c950e21b00bbfc3" prot="public" static="no">
+        <name>MCM_PLASC_ASC_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8168" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gaaae648a9e1b6e2e44af89bb3a6881a54" prot="public" static="no">
+        <name>MCM_PLASC_ASC</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga88f833168fd51e1b3c950e21b00bbfc3" kindref="member">MCM_PLASC_ASC_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga215cf860c41174735020a34e7ccf9590" kindref="member">MCM_PLASC_ASC_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8169" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PLAMC - Crossbar Switch (AXBS) Master Configuration</header>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga7988227df54012705c7f522f348214ee" prot="public" static="no">
+        <name>MCM_PLAMC_AMC_MASK</name>
+        <initializer>(0xFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8172" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gaa1b3153d0bf749f80fffacd948dd4bd4" prot="public" static="no">
+        <name>MCM_PLAMC_AMC_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8173" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gad8199ccd7b6edb29bcd5e940d17e7e47" prot="public" static="no">
+        <name>MCM_PLAMC_AMC</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint16_t)(((uint16_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1gaa1b3153d0bf749f80fffacd948dd4bd4" kindref="member">MCM_PLAMC_AMC_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga7988227df54012705c7f522f348214ee" kindref="member">MCM_PLAMC_AMC_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8174" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>ISCR - Interrupt Status Register</header>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga86ab0b13f7c720c3b9ad33950745d05d" prot="public" static="no">
+        <name>MCM_ISCR_IRQ_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8191" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga68080cbb94f82b92990da0f06b9e1fe2" prot="public" static="no">
+        <name>MCM_ISCR_IRQ_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8192" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga8860499432a7e3c401bc721f71bb7fc8" prot="public" static="no">
+        <name>MCM_ISCR_IRQ</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga68080cbb94f82b92990da0f06b9e1fe2" kindref="member">MCM_ISCR_IRQ_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga86ab0b13f7c720c3b9ad33950745d05d" kindref="member">MCM_ISCR_IRQ_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8193" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga5ca1ab81de3e013c750ffb5afc5608d3" prot="public" static="no">
+        <name>MCM_ISCR_NMI_MASK</name>
+        <initializer>(0x4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8194" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga57455aab19203d7226d9077d8be59a56" prot="public" static="no">
+        <name>MCM_ISCR_NMI_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8195" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gab426045982ad3d1f23c6c9dcdf5483ac" prot="public" static="no">
+        <name>MCM_ISCR_NMI</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga57455aab19203d7226d9077d8be59a56" kindref="member">MCM_ISCR_NMI_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga5ca1ab81de3e013c750ffb5afc5608d3" kindref="member">MCM_ISCR_NMI_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8196" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga8c932ffbc33cc5872065ee34f7bd2f0b" prot="public" static="no">
+        <name>MCM_ISCR_DHREQ_MASK</name>
+        <initializer>(0x8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8197" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gac03fba0494ea82e25a9b865d863f79ea" prot="public" static="no">
+        <name>MCM_ISCR_DHREQ_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8198" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga1ae2ac2776e7deae32f4a9fbb2f791b8" prot="public" static="no">
+        <name>MCM_ISCR_DHREQ</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1gac03fba0494ea82e25a9b865d863f79ea" kindref="member">MCM_ISCR_DHREQ_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga8c932ffbc33cc5872065ee34f7bd2f0b" kindref="member">MCM_ISCR_DHREQ_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8199" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga701558b3e4efc5c15bea4770c14a43ff" prot="public" static="no">
+        <name>MCM_ISCR_FIOC_MASK</name>
+        <initializer>(0x100U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8200" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gac6e94708b3e6f09a0355afb3756826fc" prot="public" static="no">
+        <name>MCM_ISCR_FIOC_SHIFT</name>
+        <initializer>(8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8201" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gae8ef8736457d95f0995b7ae7be15774f" prot="public" static="no">
+        <name>MCM_ISCR_FIOC</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1gac6e94708b3e6f09a0355afb3756826fc" kindref="member">MCM_ISCR_FIOC_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga701558b3e4efc5c15bea4770c14a43ff" kindref="member">MCM_ISCR_FIOC_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8202" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga5ef4e15eaa1fbc668e0e3733f44627fe" prot="public" static="no">
+        <name>MCM_ISCR_FDZC_MASK</name>
+        <initializer>(0x200U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8203" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gab5494db259f54a8e5f57134ca2d29516" prot="public" static="no">
+        <name>MCM_ISCR_FDZC_SHIFT</name>
+        <initializer>(9U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8204" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga31a64eb94277260fe6785d4df3247dda" prot="public" static="no">
+        <name>MCM_ISCR_FDZC</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1gab5494db259f54a8e5f57134ca2d29516" kindref="member">MCM_ISCR_FDZC_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga5ef4e15eaa1fbc668e0e3733f44627fe" kindref="member">MCM_ISCR_FDZC_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8205" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga4bf392796fdb8f19596f1831b9305443" prot="public" static="no">
+        <name>MCM_ISCR_FOFC_MASK</name>
+        <initializer>(0x400U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8206" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga87dd8b57048fbcd5dd6d8d7d6cb037f0" prot="public" static="no">
+        <name>MCM_ISCR_FOFC_SHIFT</name>
+        <initializer>(10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8207" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga57a1d9986ed377fcc47f21b1cd6cd45f" prot="public" static="no">
+        <name>MCM_ISCR_FOFC</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga87dd8b57048fbcd5dd6d8d7d6cb037f0" kindref="member">MCM_ISCR_FOFC_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga4bf392796fdb8f19596f1831b9305443" kindref="member">MCM_ISCR_FOFC_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8208" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga1d21eead21628e992564620393e8ebf0" prot="public" static="no">
+        <name>MCM_ISCR_FUFC_MASK</name>
+        <initializer>(0x800U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8209" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga2fed77fb78e7bc8ae312713ef58d263a" prot="public" static="no">
+        <name>MCM_ISCR_FUFC_SHIFT</name>
+        <initializer>(11U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8210" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga434dc313ab02d3e15f96fa93ce5ed022" prot="public" static="no">
+        <name>MCM_ISCR_FUFC</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga2fed77fb78e7bc8ae312713ef58d263a" kindref="member">MCM_ISCR_FUFC_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga1d21eead21628e992564620393e8ebf0" kindref="member">MCM_ISCR_FUFC_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8211" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gabe836f6795a2a2a95ff9b6a64d9a24fe" prot="public" static="no">
+        <name>MCM_ISCR_FIXC_MASK</name>
+        <initializer>(0x1000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8212" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga5c1b020ff2a6d0d96bf62556bb035fcd" prot="public" static="no">
+        <name>MCM_ISCR_FIXC_SHIFT</name>
+        <initializer>(12U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8213" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga803b54753dc2d31c0246ff11da963e7a" prot="public" static="no">
+        <name>MCM_ISCR_FIXC</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga5c1b020ff2a6d0d96bf62556bb035fcd" kindref="member">MCM_ISCR_FIXC_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1gabe836f6795a2a2a95ff9b6a64d9a24fe" kindref="member">MCM_ISCR_FIXC_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8214" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gaeca36bf639a606a24f7ee6a4fc983528" prot="public" static="no">
+        <name>MCM_ISCR_FIDC_MASK</name>
+        <initializer>(0x8000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8215" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gaaf16fcce0e380e7f200d910008794028" prot="public" static="no">
+        <name>MCM_ISCR_FIDC_SHIFT</name>
+        <initializer>(15U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8216" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga381a7d1a7455f77223d0ccdc4c99dfa3" prot="public" static="no">
+        <name>MCM_ISCR_FIDC</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1gaaf16fcce0e380e7f200d910008794028" kindref="member">MCM_ISCR_FIDC_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1gaeca36bf639a606a24f7ee6a4fc983528" kindref="member">MCM_ISCR_FIDC_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8217" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gaf48976f7ac1761a6145eea9a6add5ff5" prot="public" static="no">
+        <name>MCM_ISCR_FIOCE_MASK</name>
+        <initializer>(0x1000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8218" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga97f10ab969b7c83eb9cde216807b215b" prot="public" static="no">
+        <name>MCM_ISCR_FIOCE_SHIFT</name>
+        <initializer>(24U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8219" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga40c85d16456dabfa6179d0a8fbc29d8b" prot="public" static="no">
+        <name>MCM_ISCR_FIOCE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga97f10ab969b7c83eb9cde216807b215b" kindref="member">MCM_ISCR_FIOCE_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1gaf48976f7ac1761a6145eea9a6add5ff5" kindref="member">MCM_ISCR_FIOCE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8220" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga2ad0b7495aba7dacde7658c2a71db6bd" prot="public" static="no">
+        <name>MCM_ISCR_FDZCE_MASK</name>
+        <initializer>(0x2000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8221" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga12ce128ef5d64154df362b12c33aa526" prot="public" static="no">
+        <name>MCM_ISCR_FDZCE_SHIFT</name>
+        <initializer>(25U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8222" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gac82d36cc3bfeb92cf50ac3585324ac06" prot="public" static="no">
+        <name>MCM_ISCR_FDZCE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga12ce128ef5d64154df362b12c33aa526" kindref="member">MCM_ISCR_FDZCE_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga2ad0b7495aba7dacde7658c2a71db6bd" kindref="member">MCM_ISCR_FDZCE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8223" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga7c59e8eefce78e605951ecf8c9da1f00" prot="public" static="no">
+        <name>MCM_ISCR_FOFCE_MASK</name>
+        <initializer>(0x4000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8224" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gab83f7a7d4986544ad6d5a3972d72ced3" prot="public" static="no">
+        <name>MCM_ISCR_FOFCE_SHIFT</name>
+        <initializer>(26U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8225" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gad427cb4017543a93d2eff971fd9cf484" prot="public" static="no">
+        <name>MCM_ISCR_FOFCE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1gab83f7a7d4986544ad6d5a3972d72ced3" kindref="member">MCM_ISCR_FOFCE_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga7c59e8eefce78e605951ecf8c9da1f00" kindref="member">MCM_ISCR_FOFCE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8226" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga9fa9ddc6391e5958245ccd332ebcd575" prot="public" static="no">
+        <name>MCM_ISCR_FUFCE_MASK</name>
+        <initializer>(0x8000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8227" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gaeeab14ab4de1fa7d2d9a5d2492730e74" prot="public" static="no">
+        <name>MCM_ISCR_FUFCE_SHIFT</name>
+        <initializer>(27U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8228" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gaefed2c22d18ff6a978f483063130af4a" prot="public" static="no">
+        <name>MCM_ISCR_FUFCE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1gaeeab14ab4de1fa7d2d9a5d2492730e74" kindref="member">MCM_ISCR_FUFCE_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga9fa9ddc6391e5958245ccd332ebcd575" kindref="member">MCM_ISCR_FUFCE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8229" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gad92657cd1980c03f0d15615a3c9f2989" prot="public" static="no">
+        <name>MCM_ISCR_FIXCE_MASK</name>
+        <initializer>(0x10000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8230" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gab9757207c9768c3f13461873bcb78d71" prot="public" static="no">
+        <name>MCM_ISCR_FIXCE_SHIFT</name>
+        <initializer>(28U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8231" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga7b39d47b04e6aaa6c7a4f80efe8e819f" prot="public" static="no">
+        <name>MCM_ISCR_FIXCE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1gab9757207c9768c3f13461873bcb78d71" kindref="member">MCM_ISCR_FIXCE_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1gad92657cd1980c03f0d15615a3c9f2989" kindref="member">MCM_ISCR_FIXCE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8232" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga0dc0741a93b687a65f28c5a1e109ba6e" prot="public" static="no">
+        <name>MCM_ISCR_FIDCE_MASK</name>
+        <initializer>(0x80000000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8233" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga19c565ce09db7c0d22bf65f93d9aabfc" prot="public" static="no">
+        <name>MCM_ISCR_FIDCE_SHIFT</name>
+        <initializer>(31U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8234" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga99c7d9843151186be126c062b32deb34" prot="public" static="no">
+        <name>MCM_ISCR_FIDCE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga19c565ce09db7c0d22bf65f93d9aabfc" kindref="member">MCM_ISCR_FIDCE_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga0dc0741a93b687a65f28c5a1e109ba6e" kindref="member">MCM_ISCR_FIDCE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8235" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8235" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>ETBCC - ETB Counter Control register</header>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gaaffa6b23f821bd7647db6b0abcaf504a" prot="public" static="no">
+        <name>MCM_ETBCC_CNTEN_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8238" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga8262666b7fec7b20ea3e871bdb325dc1" prot="public" static="no">
+        <name>MCM_ETBCC_CNTEN_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8239" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gab78974191542263ca54622dad56cafb1" prot="public" static="no">
+        <name>MCM_ETBCC_CNTEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga8262666b7fec7b20ea3e871bdb325dc1" kindref="member">MCM_ETBCC_CNTEN_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1gaaffa6b23f821bd7647db6b0abcaf504a" kindref="member">MCM_ETBCC_CNTEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8240" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga155cfa2bfc46e64c665a8aeed061da6f" prot="public" static="no">
+        <name>MCM_ETBCC_RSPT_MASK</name>
+        <initializer>(0x6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8241" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga7e85c0a405fa8e736ea6b11e2a2ce2cf" prot="public" static="no">
+        <name>MCM_ETBCC_RSPT_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8242" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga7855e4b02297a6ed3202b7ee2bb536f5" prot="public" static="no">
+        <name>MCM_ETBCC_RSPT</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga7e85c0a405fa8e736ea6b11e2a2ce2cf" kindref="member">MCM_ETBCC_RSPT_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga155cfa2bfc46e64c665a8aeed061da6f" kindref="member">MCM_ETBCC_RSPT_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8243" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga16853921aa4b5ded12e5bf4d2c8509fb" prot="public" static="no">
+        <name>MCM_ETBCC_RLRQ_MASK</name>
+        <initializer>(0x8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8244" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga9ea97398989700f275f186a44b5d86b7" prot="public" static="no">
+        <name>MCM_ETBCC_RLRQ_SHIFT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8245" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gae5310b6b9ccbac39628e26dce8f50fb3" prot="public" static="no">
+        <name>MCM_ETBCC_RLRQ</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga9ea97398989700f275f186a44b5d86b7" kindref="member">MCM_ETBCC_RLRQ_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga16853921aa4b5ded12e5bf4d2c8509fb" kindref="member">MCM_ETBCC_RLRQ_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8246" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga4e65e76bc2ffbd1a4577fb31da7e5fbb" prot="public" static="no">
+        <name>MCM_ETBCC_ETDIS_MASK</name>
+        <initializer>(0x10U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8247" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga40fefdc2fb703f686abf76fda0ec6859" prot="public" static="no">
+        <name>MCM_ETBCC_ETDIS_SHIFT</name>
+        <initializer>(4U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8248" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga6eb1d37fda4a94c8a878086786bac965" prot="public" static="no">
+        <name>MCM_ETBCC_ETDIS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga40fefdc2fb703f686abf76fda0ec6859" kindref="member">MCM_ETBCC_ETDIS_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga4e65e76bc2ffbd1a4577fb31da7e5fbb" kindref="member">MCM_ETBCC_ETDIS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8249" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga390a11a02383ea3369843438b3a5ff80" prot="public" static="no">
+        <name>MCM_ETBCC_ITDIS_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8250" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga92bf57df9f719917686203be01c3d141" prot="public" static="no">
+        <name>MCM_ETBCC_ITDIS_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8251" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gaee134da4c876b2325f87ffa4560a9f96" prot="public" static="no">
+        <name>MCM_ETBCC_ITDIS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga92bf57df9f719917686203be01c3d141" kindref="member">MCM_ETBCC_ITDIS_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga390a11a02383ea3369843438b3a5ff80" kindref="member">MCM_ETBCC_ITDIS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8252" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8252" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>ETBRL - ETB Reload register</header>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gab63bbd758727921d1744034311a25c81" prot="public" static="no">
+        <name>MCM_ETBRL_RELOAD_MASK</name>
+        <initializer>(0x7FFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8255" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga04c87446d72a2644f3ee4d493f5febba" prot="public" static="no">
+        <name>MCM_ETBRL_RELOAD_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8256" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga3aa435178b25a3eb59fa4c76c4276fa4" prot="public" static="no">
+        <name>MCM_ETBRL_RELOAD</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga04c87446d72a2644f3ee4d493f5febba" kindref="member">MCM_ETBRL_RELOAD_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1gab63bbd758727921d1744034311a25c81" kindref="member">MCM_ETBRL_RELOAD_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8257" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8257" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>ETBCNT - ETB Counter Value register</header>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga0ad096c8133f83aad1812ed0263a47a7" prot="public" static="no">
+        <name>MCM_ETBCNT_COUNTER_MASK</name>
+        <initializer>(0x7FFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8260" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga6f3bfee5c1a266db914bfcce1b33e40f" prot="public" static="no">
+        <name>MCM_ETBCNT_COUNTER_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8261" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga14675877220745e714191f35ea848ee5" prot="public" static="no">
+        <name>MCM_ETBCNT_COUNTER</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga6f3bfee5c1a266db914bfcce1b33e40f" kindref="member">MCM_ETBCNT_COUNTER_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga0ad096c8133f83aad1812ed0263a47a7" kindref="member">MCM_ETBCNT_COUNTER_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8262" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PID - Process ID register</header>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga258efdcb0108c5e954d399d9a6e8883a" prot="public" static="no">
+        <name>MCM_PID_PID_MASK</name>
+        <initializer>(0xFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8265" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga579f075ec9afb3010ecf64eea087a04a" prot="public" static="no">
+        <name>MCM_PID_PID_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8266" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga6d4eaf3c8f87daf3e83324656d130eb6" prot="public" static="no">
+        <name>MCM_PID_PID</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___m_c_m___register___masks_1ga579f075ec9afb3010ecf64eea087a04a" kindref="member">MCM_PID_PID_SHIFT</ref>)) &amp; <ref refid="group___m_c_m___register___masks_1ga258efdcb0108c5e954d399d9a6e8883a" kindref="member">MCM_PID_PID_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8267" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga84250d5694181f040a437d9125af3fac" prot="public" static="no">
+        <name>MCM_BASE</name>
+        <initializer>(0xE0080000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral MCM base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8277" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga4cd2dcee5e786e36844ed653cfa40096" prot="public" static="no">
+        <name>MCM</name>
+        <initializer>((<ref refid="struct_m_c_m___type" kindref="compound">MCM_Type</ref> *)<ref refid="group___m_c_m___register___masks_1ga84250d5694181f040a437d9125af3fac" kindref="member">MCM_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral MCM base pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8279" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1ga240172b40ddf9d12c884fb331539f5e9" prot="public" static="no">
+        <name>MCM_BASE_ADDRS</name>
+        <initializer>{ <ref refid="group___m_c_m___register___masks_1ga84250d5694181f040a437d9125af3fac" kindref="member">MCM_BASE</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of MCM peripheral base addresses </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8281" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gae2d5e838ce7d2d4108738c05bf224272" prot="public" static="no">
+        <name>MCM_BASE_PTRS</name>
+        <initializer>{ <ref refid="group___m_c_m___register___masks_1ga4cd2dcee5e786e36844ed653cfa40096" kindref="member">MCM</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of MCM peripheral base pointers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8283" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_c_m___register___masks_1gac60ca8f617b85ec161957b21d024e070" prot="public" static="no">
+        <name>MCM_IRQS</name>
+        <initializer>{ <ref refid="group___interrupt__vector__numbers_1gga666eb0caeb12ec0e281415592ae89083a01b35b93c12aa0867eab0aadbd39471b" kindref="member">MCM_IRQn</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt vectors for the MCM peripheral type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8285" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8285" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

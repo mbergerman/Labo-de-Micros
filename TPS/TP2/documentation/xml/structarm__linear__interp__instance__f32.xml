@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structarm__linear__interp__instance__f32" kind="struct" language="C++" prot="public">
+    <compoundname>arm_linear_interp_instance_f32</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__linear__interp__instance__f32_1a2ea653b0599388e9a72ebab9841707ba" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t nValues</definition>
+        <argsstring></argsstring>
+        <name>nValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nValues </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1823" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1823" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__linear__interp__instance__f32_1a795ed79ea4c18d52afe5eb5e868e1c5a" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>float32_t x1</definition>
+        <argsstring></argsstring>
+        <name>x1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>x1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1824" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1824" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__linear__interp__instance__f32_1a08675584bb57fc42bbb3739c13674346" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref></type>
+        <definition>float32_t xSpacing</definition>
+        <argsstring></argsstring>
+        <name>xSpacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>xSpacing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1825" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1825" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__linear__interp__instance__f32_1af1489866b69eb5db1e0afeb24c7b01e9" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1a4611b605e45ab401f02cab15c5e38715" kindref="member">float32_t</ref> *</type>
+        <definition>float32_t* pYData</definition>
+        <argsstring></argsstring>
+        <name>pYData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pointer to the table of Y values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1826" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1826" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the floating-point Linear Interpolate function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/arm_math.h" line="1822" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1821" bodyend="1827"/>
+    <listofallmembers>
+      <member refid="structarm__linear__interp__instance__f32_1a2ea653b0599388e9a72ebab9841707ba" prot="public" virt="non-virtual"><scope>arm_linear_interp_instance_f32</scope><name>nValues</name></member>
+      <member refid="structarm__linear__interp__instance__f32_1af1489866b69eb5db1e0afeb24c7b01e9" prot="public" virt="non-virtual"><scope>arm_linear_interp_instance_f32</scope><name>pYData</name></member>
+      <member refid="structarm__linear__interp__instance__f32_1a795ed79ea4c18d52afe5eb5e868e1c5a" prot="public" virt="non-virtual"><scope>arm_linear_interp_instance_f32</scope><name>x1</name></member>
+      <member refid="structarm__linear__interp__instance__f32_1a08675584bb57fc42bbb3739c13674346" prot="public" virt="non-virtual"><scope>arm_linear_interp_instance_f32</scope><name>xSpacing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

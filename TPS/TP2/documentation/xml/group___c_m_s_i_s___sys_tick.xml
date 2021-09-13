@@ -1,0 +1,608 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___c_m_s_i_s___sys_tick" kind="group">
+    <compoundname>CMSIS_SysTick</compoundname>
+    <title>System Tick Timer (SysTick)</title>
+    <innerclass refid="struct_sys_tick___type" prot="public">SysTick_Type</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gadbb65d4a815759649db41df216ed4d60" prot="public" static="no">
+        <name>SysTick_CTRL_COUNTFLAG_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: COUNTFLAG Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="564" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga1bf3033ecccf200f59baefe15dbb367c" prot="public" static="no">
+        <name>SysTick_CTRL_COUNTFLAG_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CTRL_COUNTFLAG_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: COUNTFLAG Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="565" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga24fbc69a5f0b78d67fda2300257baff1" prot="public" static="no">
+        <name>SysTick_CTRL_CLKSOURCE_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: CLKSOURCE Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="567" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gaa41d06039797423a46596bd313d57373" prot="public" static="no">
+        <name>SysTick_CTRL_CLKSOURCE_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CTRL_CLKSOURCE_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: CLKSOURCE Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="568" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="568" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga88f45bbb89ce8df3cd2b2613c7b48214" prot="public" static="no">
+        <name>SysTick_CTRL_TICKINT_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: TICKINT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="570" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="570" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga95bb984266ca764024836a870238a027" prot="public" static="no">
+        <name>SysTick_CTRL_TICKINT_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CTRL_TICKINT_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: TICKINT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="571" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="571" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga0b48cc1e36d92a92e4bf632890314810" prot="public" static="no">
+        <name>SysTick_CTRL_ENABLE_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: ENABLE Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="573" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="573" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga16c9fee0ed0235524bdeb38af328fd1f" prot="public" static="no">
+        <name>SysTick_CTRL_ENABLE_Msk</name>
+        <initializer>(1UL /*&lt;&lt; SysTick_CTRL_ENABLE_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: ENABLE Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="574" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="574" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gaf44d10df359dc5bf5752b0894ae3bad2" prot="public" static="no">
+        <name>SysTick_LOAD_RELOAD_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick LOAD: RELOAD Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="577" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga265912a7962f0e1abd170336e579b1b1" prot="public" static="no">
+        <name>SysTick_LOAD_RELOAD_Msk</name>
+        <initializer>(0xFFFFFFUL /*&lt;&lt; SysTick_LOAD_RELOAD_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick LOAD: RELOAD Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="578" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga3208104c3b019b5de35ae8c21d5c34dd" prot="public" static="no">
+        <name>SysTick_VAL_CURRENT_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick VAL: CURRENT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="581" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gafc77b56d568930b49a2474debc75ab45" prot="public" static="no">
+        <name>SysTick_VAL_CURRENT_Msk</name>
+        <initializer>(0xFFFFFFUL /*&lt;&lt; SysTick_VAL_CURRENT_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick VAL: CURRENT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="582" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga534dbe414e7a46a6ce4c1eca1fbff409" prot="public" static="no">
+        <name>SysTick_CALIB_NOREF_Pos</name>
+        <initializer>31U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: NOREF Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="585" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga3af0d891fdd99bcc8d8912d37830edb6" prot="public" static="no">
+        <name>SysTick_CALIB_NOREF_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CALIB_NOREF_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: NOREF Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="586" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gadd0c9cd6641b9f6a0c618e7982954860" prot="public" static="no">
+        <name>SysTick_CALIB_SKEW_Pos</name>
+        <initializer>30U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: SKEW Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="588" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga8a6a85a87334776f33d77fd147587431" prot="public" static="no">
+        <name>SysTick_CALIB_SKEW_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CALIB_SKEW_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: SKEW Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="589" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gacae558f6e75a0bed5d826f606d8e695e" prot="public" static="no">
+        <name>SysTick_CALIB_TENMS_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: TENMS Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="591" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="591" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gaf1e68865c5aece2ad58971225bd3e95e" prot="public" static="no">
+        <name>SysTick_CALIB_TENMS_Msk</name>
+        <initializer>(0xFFFFFFUL /*&lt;&lt; SysTick_CALIB_TENMS_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: TENMS Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="592" column="9" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gadbb65d4a815759649db41df216ed4d60" prot="public" static="no">
+        <name>SysTick_CTRL_COUNTFLAG_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: COUNTFLAG Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1040" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1040" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga1bf3033ecccf200f59baefe15dbb367c" prot="public" static="no">
+        <name>SysTick_CTRL_COUNTFLAG_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CTRL_COUNTFLAG_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: COUNTFLAG Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1041" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga24fbc69a5f0b78d67fda2300257baff1" prot="public" static="no">
+        <name>SysTick_CTRL_CLKSOURCE_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: CLKSOURCE Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1043" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1043" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gaa41d06039797423a46596bd313d57373" prot="public" static="no">
+        <name>SysTick_CTRL_CLKSOURCE_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CTRL_CLKSOURCE_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: CLKSOURCE Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1044" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1044" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga88f45bbb89ce8df3cd2b2613c7b48214" prot="public" static="no">
+        <name>SysTick_CTRL_TICKINT_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: TICKINT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1046" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1046" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga95bb984266ca764024836a870238a027" prot="public" static="no">
+        <name>SysTick_CTRL_TICKINT_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CTRL_TICKINT_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: TICKINT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1047" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1047" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga0b48cc1e36d92a92e4bf632890314810" prot="public" static="no">
+        <name>SysTick_CTRL_ENABLE_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: ENABLE Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1049" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1049" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga16c9fee0ed0235524bdeb38af328fd1f" prot="public" static="no">
+        <name>SysTick_CTRL_ENABLE_Msk</name>
+        <initializer>(1UL /*&lt;&lt; SysTick_CTRL_ENABLE_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: ENABLE Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1050" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1050" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gaf44d10df359dc5bf5752b0894ae3bad2" prot="public" static="no">
+        <name>SysTick_LOAD_RELOAD_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick LOAD: RELOAD Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1053" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1053" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga265912a7962f0e1abd170336e579b1b1" prot="public" static="no">
+        <name>SysTick_LOAD_RELOAD_Msk</name>
+        <initializer>(0xFFFFFFUL /*&lt;&lt; SysTick_LOAD_RELOAD_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick LOAD: RELOAD Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1054" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1054" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga3208104c3b019b5de35ae8c21d5c34dd" prot="public" static="no">
+        <name>SysTick_VAL_CURRENT_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick VAL: CURRENT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1057" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1057" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gafc77b56d568930b49a2474debc75ab45" prot="public" static="no">
+        <name>SysTick_VAL_CURRENT_Msk</name>
+        <initializer>(0xFFFFFFUL /*&lt;&lt; SysTick_VAL_CURRENT_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick VAL: CURRENT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1058" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1058" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga534dbe414e7a46a6ce4c1eca1fbff409" prot="public" static="no">
+        <name>SysTick_CALIB_NOREF_Pos</name>
+        <initializer>31U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: NOREF Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1061" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1061" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga3af0d891fdd99bcc8d8912d37830edb6" prot="public" static="no">
+        <name>SysTick_CALIB_NOREF_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CALIB_NOREF_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: NOREF Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1062" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1062" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gadd0c9cd6641b9f6a0c618e7982954860" prot="public" static="no">
+        <name>SysTick_CALIB_SKEW_Pos</name>
+        <initializer>30U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: SKEW Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1064" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1064" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga8a6a85a87334776f33d77fd147587431" prot="public" static="no">
+        <name>SysTick_CALIB_SKEW_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CALIB_SKEW_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: SKEW Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1065" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1065" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gacae558f6e75a0bed5d826f606d8e695e" prot="public" static="no">
+        <name>SysTick_CALIB_TENMS_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: TENMS Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1067" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1067" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gaf1e68865c5aece2ad58971225bd3e95e" prot="public" static="no">
+        <name>SysTick_CALIB_TENMS_Msk</name>
+        <initializer>(0xFFFFFFUL /*&lt;&lt; SysTick_CALIB_TENMS_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: TENMS Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1068" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1068" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gadbb65d4a815759649db41df216ed4d60" prot="public" static="no">
+        <name>SysTick_CTRL_COUNTFLAG_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: COUNTFLAG Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="768" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga1bf3033ecccf200f59baefe15dbb367c" prot="public" static="no">
+        <name>SysTick_CTRL_COUNTFLAG_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CTRL_COUNTFLAG_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: COUNTFLAG Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="769" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga24fbc69a5f0b78d67fda2300257baff1" prot="public" static="no">
+        <name>SysTick_CTRL_CLKSOURCE_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: CLKSOURCE Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="771" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="771" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gaa41d06039797423a46596bd313d57373" prot="public" static="no">
+        <name>SysTick_CTRL_CLKSOURCE_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CTRL_CLKSOURCE_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: CLKSOURCE Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="772" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="772" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga88f45bbb89ce8df3cd2b2613c7b48214" prot="public" static="no">
+        <name>SysTick_CTRL_TICKINT_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: TICKINT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="774" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="774" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga95bb984266ca764024836a870238a027" prot="public" static="no">
+        <name>SysTick_CTRL_TICKINT_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CTRL_TICKINT_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: TICKINT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="775" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="775" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga0b48cc1e36d92a92e4bf632890314810" prot="public" static="no">
+        <name>SysTick_CTRL_ENABLE_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: ENABLE Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="777" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="777" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga16c9fee0ed0235524bdeb38af328fd1f" prot="public" static="no">
+        <name>SysTick_CTRL_ENABLE_Msk</name>
+        <initializer>(1UL /*&lt;&lt; SysTick_CTRL_ENABLE_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CTRL: ENABLE Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="778" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gaf44d10df359dc5bf5752b0894ae3bad2" prot="public" static="no">
+        <name>SysTick_LOAD_RELOAD_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick LOAD: RELOAD Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="781" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="781" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga265912a7962f0e1abd170336e579b1b1" prot="public" static="no">
+        <name>SysTick_LOAD_RELOAD_Msk</name>
+        <initializer>(0xFFFFFFUL /*&lt;&lt; SysTick_LOAD_RELOAD_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick LOAD: RELOAD Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="782" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga3208104c3b019b5de35ae8c21d5c34dd" prot="public" static="no">
+        <name>SysTick_VAL_CURRENT_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick VAL: CURRENT Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="785" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gafc77b56d568930b49a2474debc75ab45" prot="public" static="no">
+        <name>SysTick_VAL_CURRENT_Msk</name>
+        <initializer>(0xFFFFFFUL /*&lt;&lt; SysTick_VAL_CURRENT_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick VAL: CURRENT Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="786" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga534dbe414e7a46a6ce4c1eca1fbff409" prot="public" static="no">
+        <name>SysTick_CALIB_NOREF_Pos</name>
+        <initializer>31U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: NOREF Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="789" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="789" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga3af0d891fdd99bcc8d8912d37830edb6" prot="public" static="no">
+        <name>SysTick_CALIB_NOREF_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CALIB_NOREF_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: NOREF Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="790" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="790" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gadd0c9cd6641b9f6a0c618e7982954860" prot="public" static="no">
+        <name>SysTick_CALIB_SKEW_Pos</name>
+        <initializer>30U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: SKEW Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="792" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1ga8a6a85a87334776f33d77fd147587431" prot="public" static="no">
+        <name>SysTick_CALIB_SKEW_Msk</name>
+        <initializer>(1UL &lt;&lt; SysTick_CALIB_SKEW_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: SKEW Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="793" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gacae558f6e75a0bed5d826f606d8e695e" prot="public" static="no">
+        <name>SysTick_CALIB_TENMS_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: TENMS Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="795" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___sys_tick_1gaf1e68865c5aece2ad58971225bd3e95e" prot="public" static="no">
+        <name>SysTick_CALIB_TENMS_Msk</name>
+        <initializer>(0xFFFFFFUL /*&lt;&lt; SysTick_CALIB_TENMS_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick CALIB: TENMS Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="796" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="796" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Type definitions for the System Timer Registers. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

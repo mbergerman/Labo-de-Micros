@@ -1,0 +1,1096 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___p_d_b___register___masks" kind="group">
+    <compoundname>PDB_Register_Masks</compoundname>
+    <title>PDB Register Masks</title>
+      <sectiondef kind="user-defined">
+      <header>SC - Status and Control register</header>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gabe6a0c2a0e00e0d01b3b94ca8cd90728" prot="public" static="no">
+        <name>PDB_SC_LDOK_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8548" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga8766bd357685d2ec463f51e0b08c6080" prot="public" static="no">
+        <name>PDB_SC_LDOK_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8549" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gab33214a9a628b7e080eb9ef56efb8c4b" prot="public" static="no">
+        <name>PDB_SC_LDOK</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga8766bd357685d2ec463f51e0b08c6080" kindref="member">PDB_SC_LDOK_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1gabe6a0c2a0e00e0d01b3b94ca8cd90728" kindref="member">PDB_SC_LDOK_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8550" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gaa723ee73c65ba7680ef3c9de87b8a635" prot="public" static="no">
+        <name>PDB_SC_CONT_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8551" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga49a81fd7584f9957362d71ac5f4d12bb" prot="public" static="no">
+        <name>PDB_SC_CONT_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8552" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8552" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga025ef364c34241696067cbe84797a343" prot="public" static="no">
+        <name>PDB_SC_CONT</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga49a81fd7584f9957362d71ac5f4d12bb" kindref="member">PDB_SC_CONT_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1gaa723ee73c65ba7680ef3c9de87b8a635" kindref="member">PDB_SC_CONT_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8553" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga86e3ec0c9f5ec6d0bbc1ebcf20774b38" prot="public" static="no">
+        <name>PDB_SC_MULT_MASK</name>
+        <initializer>(0xCU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8554" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gaaf1dfea7eddb56850efd85b75d659ef8" prot="public" static="no">
+        <name>PDB_SC_MULT_SHIFT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8555" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga52e674d4841cbe8d87374deadb69b45f" prot="public" static="no">
+        <name>PDB_SC_MULT</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1gaaf1dfea7eddb56850efd85b75d659ef8" kindref="member">PDB_SC_MULT_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga86e3ec0c9f5ec6d0bbc1ebcf20774b38" kindref="member">PDB_SC_MULT_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8556" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8556" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga153222e454507310871a217b8ede92fd" prot="public" static="no">
+        <name>PDB_SC_PDBIE_MASK</name>
+        <initializer>(0x20U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8557" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga8632d420c92ec79e08c43f7d3acc79cf" prot="public" static="no">
+        <name>PDB_SC_PDBIE_SHIFT</name>
+        <initializer>(5U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8558" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga98dcac8748ba0eeee4470cedcbbd6e8e" prot="public" static="no">
+        <name>PDB_SC_PDBIE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga8632d420c92ec79e08c43f7d3acc79cf" kindref="member">PDB_SC_PDBIE_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga153222e454507310871a217b8ede92fd" kindref="member">PDB_SC_PDBIE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8559" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga57cd111abf2b5780daddb6619498ef7a" prot="public" static="no">
+        <name>PDB_SC_PDBIF_MASK</name>
+        <initializer>(0x40U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8560" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga98ea01f76c8cc1bc944830d4d8387118" prot="public" static="no">
+        <name>PDB_SC_PDBIF_SHIFT</name>
+        <initializer>(6U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8561" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga8c8a7204d308d7eca70a024dae1beb11" prot="public" static="no">
+        <name>PDB_SC_PDBIF</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga98ea01f76c8cc1bc944830d4d8387118" kindref="member">PDB_SC_PDBIF_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga57cd111abf2b5780daddb6619498ef7a" kindref="member">PDB_SC_PDBIF_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8562" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8562" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga5582f0b88e7ae5e9dcf69f3a859c4470" prot="public" static="no">
+        <name>PDB_SC_PDBEN_MASK</name>
+        <initializer>(0x80U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8563" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga019fc7af809a6f3945ac3c131b90432a" prot="public" static="no">
+        <name>PDB_SC_PDBEN_SHIFT</name>
+        <initializer>(7U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8564" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gad0f2fa62401dff3e7a397fae0eefbcf9" prot="public" static="no">
+        <name>PDB_SC_PDBEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga019fc7af809a6f3945ac3c131b90432a" kindref="member">PDB_SC_PDBEN_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga5582f0b88e7ae5e9dcf69f3a859c4470" kindref="member">PDB_SC_PDBEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8565" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga8950a99a799e9a49b602a679a64cc2e0" prot="public" static="no">
+        <name>PDB_SC_TRGSEL_MASK</name>
+        <initializer>(0xF00U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8566" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gae206861ff2041634f913c44605459167" prot="public" static="no">
+        <name>PDB_SC_TRGSEL_SHIFT</name>
+        <initializer>(8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8567" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gad82c5e1b8128b560787b5bdb67a70e5f" prot="public" static="no">
+        <name>PDB_SC_TRGSEL</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1gae206861ff2041634f913c44605459167" kindref="member">PDB_SC_TRGSEL_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga8950a99a799e9a49b602a679a64cc2e0" kindref="member">PDB_SC_TRGSEL_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8568" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8568" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga53e475cc672b4e976c7dccc10fe64d74" prot="public" static="no">
+        <name>PDB_SC_PRESCALER_MASK</name>
+        <initializer>(0x7000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8569" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gae8062c54fb9d63becd95c6e34399b995" prot="public" static="no">
+        <name>PDB_SC_PRESCALER_SHIFT</name>
+        <initializer>(12U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8570" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8570" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga5b7cd747de95052518759e92b7e0f867" prot="public" static="no">
+        <name>PDB_SC_PRESCALER</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1gae8062c54fb9d63becd95c6e34399b995" kindref="member">PDB_SC_PRESCALER_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga53e475cc672b4e976c7dccc10fe64d74" kindref="member">PDB_SC_PRESCALER_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8571" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8571" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gae2e04f313df4593c36890e463071fe5b" prot="public" static="no">
+        <name>PDB_SC_DMAEN_MASK</name>
+        <initializer>(0x8000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8572" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga06b0f6651787dda98baf8953321b101b" prot="public" static="no">
+        <name>PDB_SC_DMAEN_SHIFT</name>
+        <initializer>(15U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8573" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8573" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gaf59f2858467f2c5e5d3a7fb6ec275db1" prot="public" static="no">
+        <name>PDB_SC_DMAEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga06b0f6651787dda98baf8953321b101b" kindref="member">PDB_SC_DMAEN_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1gae2e04f313df4593c36890e463071fe5b" kindref="member">PDB_SC_DMAEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8574" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8574" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gaee37e4f669c308f1bfa17462ccbdc44b" prot="public" static="no">
+        <name>PDB_SC_SWTRIG_MASK</name>
+        <initializer>(0x10000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8575" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8575" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga494cf2eed3e90d588c9d6a79cdb5aaaa" prot="public" static="no">
+        <name>PDB_SC_SWTRIG_SHIFT</name>
+        <initializer>(16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8576" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8576" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga3115020e410ff99d5a7c5752cacfa394" prot="public" static="no">
+        <name>PDB_SC_SWTRIG</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga494cf2eed3e90d588c9d6a79cdb5aaaa" kindref="member">PDB_SC_SWTRIG_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1gaee37e4f669c308f1bfa17462ccbdc44b" kindref="member">PDB_SC_SWTRIG_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8577" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gadad9b8b56988b977ed415ab18985f9dc" prot="public" static="no">
+        <name>PDB_SC_PDBEIE_MASK</name>
+        <initializer>(0x20000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8578" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gaa64d610e568a9cafe7d2110a76daf8df" prot="public" static="no">
+        <name>PDB_SC_PDBEIE_SHIFT</name>
+        <initializer>(17U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8579" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga312af2bced4144186dd31b9f92ef2f8b" prot="public" static="no">
+        <name>PDB_SC_PDBEIE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1gaa64d610e568a9cafe7d2110a76daf8df" kindref="member">PDB_SC_PDBEIE_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1gadad9b8b56988b977ed415ab18985f9dc" kindref="member">PDB_SC_PDBEIE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8580" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga78d77e651e5cc9a5ddeb63fa6ac627af" prot="public" static="no">
+        <name>PDB_SC_LDMOD_MASK</name>
+        <initializer>(0xC0000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8581" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga53a8856bc6371ac178123477526e8249" prot="public" static="no">
+        <name>PDB_SC_LDMOD_SHIFT</name>
+        <initializer>(18U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8582" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga6b704d8e041f977dfe02f0288a8e01bd" prot="public" static="no">
+        <name>PDB_SC_LDMOD</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga53a8856bc6371ac178123477526e8249" kindref="member">PDB_SC_LDMOD_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga78d77e651e5cc9a5ddeb63fa6ac627af" kindref="member">PDB_SC_LDMOD_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8583" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8583" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>MOD - Modulus register</header>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga9dddc13b37ba4e27c8401dfa56b2173f" prot="public" static="no">
+        <name>PDB_MOD_MOD_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8586" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gaf224ebff31aea3bd5318f078eccf060e" prot="public" static="no">
+        <name>PDB_MOD_MOD_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8587" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8587" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga6e9107df37db341b8d9f7041561354a1" prot="public" static="no">
+        <name>PDB_MOD_MOD</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1gaf224ebff31aea3bd5318f078eccf060e" kindref="member">PDB_MOD_MOD_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga9dddc13b37ba4e27c8401dfa56b2173f" kindref="member">PDB_MOD_MOD_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8588" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8588" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>CNT - Counter register</header>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga2c5797892b612935a1eb7ba29ea0d202" prot="public" static="no">
+        <name>PDB_CNT_CNT_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8591" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8591" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga684fc86038c1a05d2ba14aa872e551a6" prot="public" static="no">
+        <name>PDB_CNT_CNT_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8592" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga7450994c413fd116da0c44f36fd27f2b" prot="public" static="no">
+        <name>PDB_CNT_CNT</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga684fc86038c1a05d2ba14aa872e551a6" kindref="member">PDB_CNT_CNT_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga2c5797892b612935a1eb7ba29ea0d202" kindref="member">PDB_CNT_CNT_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8593" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8593" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>IDLY - Interrupt Delay register</header>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gaa3a9995da0b93a73827d556de3a7f8ec" prot="public" static="no">
+        <name>PDB_IDLY_IDLY_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8596" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8596" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga7ce7e734267097f79a8fd2036dc25271" prot="public" static="no">
+        <name>PDB_IDLY_IDLY_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8597" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga495ff2eb5cc22dc5cc0585f77eb9c043" prot="public" static="no">
+        <name>PDB_IDLY_IDLY</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga7ce7e734267097f79a8fd2036dc25271" kindref="member">PDB_IDLY_IDLY_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1gaa3a9995da0b93a73827d556de3a7f8ec" kindref="member">PDB_IDLY_IDLY_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8598" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8598" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>C1 - Channel n Control register 1</header>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga318b4eb1bb609120bed14b19c91ef0c1" prot="public" static="no">
+        <name>PDB_C1_EN_MASK</name>
+        <initializer>(0xFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8601" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8601" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga99bd07d734f0e46a718933179b61402b" prot="public" static="no">
+        <name>PDB_C1_EN_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8602" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8602" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gab2ca4b13b2a865c68c2e1505f4b4f13b" prot="public" static="no">
+        <name>PDB_C1_EN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga99bd07d734f0e46a718933179b61402b" kindref="member">PDB_C1_EN_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga318b4eb1bb609120bed14b19c91ef0c1" kindref="member">PDB_C1_EN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8603" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8603" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gabc4c3ddddcd8ab8629495457629a560e" prot="public" static="no">
+        <name>PDB_C1_TOS_MASK</name>
+        <initializer>(0xFF00U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8604" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8604" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga5f76b81da95cec6cc1dcbd761e48d32f" prot="public" static="no">
+        <name>PDB_C1_TOS_SHIFT</name>
+        <initializer>(8U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8605" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gae5c193c9c001f33a49f1ae3c2a11133c" prot="public" static="no">
+        <name>PDB_C1_TOS</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga5f76b81da95cec6cc1dcbd761e48d32f" kindref="member">PDB_C1_TOS_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1gabc4c3ddddcd8ab8629495457629a560e" kindref="member">PDB_C1_TOS_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8606" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8606" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga4e6f86caa6df500cedef06d1638194ca" prot="public" static="no">
+        <name>PDB_C1_BB_MASK</name>
+        <initializer>(0xFF0000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8607" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gadd4b49047fcd1a75374752c012a931d8" prot="public" static="no">
+        <name>PDB_C1_BB_SHIFT</name>
+        <initializer>(16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8608" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8608" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga5e17c540740d6900e1a1184dd0c21e69" prot="public" static="no">
+        <name>PDB_C1_BB</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1gadd4b49047fcd1a75374752c012a931d8" kindref="member">PDB_C1_BB_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga4e6f86caa6df500cedef06d1638194ca" kindref="member">PDB_C1_BB_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8609" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8609" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga5136a593c75d4dcf64f5e58762884c72" prot="public" static="no">
+        <name>PDB_C1_COUNT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8612" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8612" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>S - Channel n Status register</header>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga544472023dc6de6708b210d54d64c69c" prot="public" static="no">
+        <name>PDB_S_ERR_MASK</name>
+        <initializer>(0xFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8615" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga3b10142858bded9ff7916076433dbcb6" prot="public" static="no">
+        <name>PDB_S_ERR_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8616" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gae5f66f6b1c641d52cb706ac11428e11d" prot="public" static="no">
+        <name>PDB_S_ERR</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga3b10142858bded9ff7916076433dbcb6" kindref="member">PDB_S_ERR_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga544472023dc6de6708b210d54d64c69c" kindref="member">PDB_S_ERR_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8617" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gabf6ae593f200a1eda316cd9affa9f5b2" prot="public" static="no">
+        <name>PDB_S_CF_MASK</name>
+        <initializer>(0xFF0000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8618" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga17f0097777c1377488f0bf9654021714" prot="public" static="no">
+        <name>PDB_S_CF_SHIFT</name>
+        <initializer>(16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8619" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gaa9865ff9f9ab4bd805a99b75ee73c7e5" prot="public" static="no">
+        <name>PDB_S_CF</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga17f0097777c1377488f0bf9654021714" kindref="member">PDB_S_CF_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1gabf6ae593f200a1eda316cd9affa9f5b2" kindref="member">PDB_S_CF_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8620" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8620" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga3c67630b6a4a3e8b25319d2979004627" prot="public" static="no">
+        <name>PDB_S_COUNT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8623" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8623" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>DLY - Channel n Delay 0 register..Channel n Delay 1 register</header>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga79150887ba3f74efde99b40d3b9c5e44" prot="public" static="no">
+        <name>PDB_DLY_DLY_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8626" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8626" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga431302f6c6fd1396cbb05844f864d241" prot="public" static="no">
+        <name>PDB_DLY_DLY_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8627" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8627" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga39781873dd40fb95e69b65d323ab49bf" prot="public" static="no">
+        <name>PDB_DLY_DLY</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga431302f6c6fd1396cbb05844f864d241" kindref="member">PDB_DLY_DLY_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga79150887ba3f74efde99b40d3b9c5e44" kindref="member">PDB_DLY_DLY_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8628" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga92fcafb0da11b7d2a8a5740281ffbdcb" prot="public" static="no">
+        <name>PDB_DLY_COUNT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8631" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga7ecc8a9c95218a85e076d1e9330da0ec" prot="public" static="no">
+        <name>PDB_DLY_COUNT2</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8634" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8634" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>INTC - DAC Interval Trigger n Control register</header>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga72fcf50548a0ad908e68c9dd67e61c2a" prot="public" static="no">
+        <name>PDB_INTC_TOE_MASK</name>
+        <initializer>(0x1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8637" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga48ed5e2759aea8d4b6a4a47f1993cacc" prot="public" static="no">
+        <name>PDB_INTC_TOE_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8638" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8638" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gad19e5e45ebeabbc6a5bd65f68917ebe4" prot="public" static="no">
+        <name>PDB_INTC_TOE</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga48ed5e2759aea8d4b6a4a47f1993cacc" kindref="member">PDB_INTC_TOE_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga72fcf50548a0ad908e68c9dd67e61c2a" kindref="member">PDB_INTC_TOE_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8639" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8639" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga012fb0606d68eca77a9b15c2b8b8c995" prot="public" static="no">
+        <name>PDB_INTC_EXT_MASK</name>
+        <initializer>(0x2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8640" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8640" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga94b6fffc0fb61e58e2436696dc674340" prot="public" static="no">
+        <name>PDB_INTC_EXT_SHIFT</name>
+        <initializer>(1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8641" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8641" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gaf418115d96a5370c7d5f4ef1364d621e" prot="public" static="no">
+        <name>PDB_INTC_EXT</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga94b6fffc0fb61e58e2436696dc674340" kindref="member">PDB_INTC_EXT_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga012fb0606d68eca77a9b15c2b8b8c995" kindref="member">PDB_INTC_EXT_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8642" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8642" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga04012dae1dfa9fb91ee9c105d71fadef" prot="public" static="no">
+        <name>PDB_INTC_COUNT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8645" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8645" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>INT - DAC Interval n register</header>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga04262fdbd8c3565c23a025cb119f1549" prot="public" static="no">
+        <name>PDB_INT_INT_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8648" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga5b99cf0c9ae2fa2cf6e4200a7e3bf13b" prot="public" static="no">
+        <name>PDB_INT_INT_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8649" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8649" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga8b612d1c7684422f1c6b14cd069814ab" prot="public" static="no">
+        <name>PDB_INT_INT</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga5b99cf0c9ae2fa2cf6e4200a7e3bf13b" kindref="member">PDB_INT_INT_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga04262fdbd8c3565c23a025cb119f1549" kindref="member">PDB_INT_INT_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8650" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8650" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga399d94cea38666c872ded3e7f714509c" prot="public" static="no">
+        <name>PDB_INT_COUNT</name>
+        <initializer>(2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8653" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8653" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>POEN - Pulse-Out n Enable register</header>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gadff2842454cba42f94cc2568cd20df3d" prot="public" static="no">
+        <name>PDB_POEN_POEN_MASK</name>
+        <initializer>(0xFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8656" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8656" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga00643f248ccf8b14021f9983f0e32ac8" prot="public" static="no">
+        <name>PDB_POEN_POEN_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8657" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8657" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gaf0b83a8c4124b3bdf53e5173d121db0f" prot="public" static="no">
+        <name>PDB_POEN_POEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga00643f248ccf8b14021f9983f0e32ac8" kindref="member">PDB_POEN_POEN_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1gadff2842454cba42f94cc2568cd20df3d" kindref="member">PDB_POEN_POEN_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8658" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8658" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>PODLY - Pulse-Out n Delay register</header>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga1b7c6a0b290ea82908b74e7b8c2f4009" prot="public" static="no">
+        <name>PDB_PODLY_DLY2_MASK</name>
+        <initializer>(0xFFFFU)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8661" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8661" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gaa576ed647be6411616c3f6e6d03ab47c" prot="public" static="no">
+        <name>PDB_PODLY_DLY2_SHIFT</name>
+        <initializer>(0U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8662" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8662" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga47e4784ba83a37ab49598af71889500c" prot="public" static="no">
+        <name>PDB_PODLY_DLY2</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1gaa576ed647be6411616c3f6e6d03ab47c" kindref="member">PDB_PODLY_DLY2_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga1b7c6a0b290ea82908b74e7b8c2f4009" kindref="member">PDB_PODLY_DLY2_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8663" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga548246bef07975bd6f1fe0fe5a2c6ef5" prot="public" static="no">
+        <name>PDB_PODLY_DLY1_MASK</name>
+        <initializer>(0xFFFF0000U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8664" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8664" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga0890f882369124f86428eea14c2eac88" prot="public" static="no">
+        <name>PDB_PODLY_DLY1_SHIFT</name>
+        <initializer>(16U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8665" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8665" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gae6b4c6aa88511e952d5cd0938d11d854" prot="public" static="no">
+        <name>PDB_PODLY_DLY1</name>
+        <param><defname>x</defname></param>
+        <initializer>(((uint32_t)(((uint32_t)(x)) &lt;&lt; <ref refid="group___p_d_b___register___masks_1ga0890f882369124f86428eea14c2eac88" kindref="member">PDB_PODLY_DLY1_SHIFT</ref>)) &amp; <ref refid="group___p_d_b___register___masks_1ga548246bef07975bd6f1fe0fe5a2c6ef5" kindref="member">PDB_PODLY_DLY1_MASK</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8666" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8666" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga52393343ff11ac023337b2a9e1353ac0" prot="public" static="no">
+        <name>PDB_PODLY_COUNT</name>
+        <initializer>(3U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8669" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8669" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_d_b___register___masks_1gaca699dde276786b0443ef728ae1f01c0" prot="public" static="no">
+        <name>PDB0_BASE</name>
+        <initializer>(0x40036000u)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral PDB0 base address </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8679" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga91cdd5c74efea207fd5cf60bb271b90c" prot="public" static="no">
+        <name>PDB0</name>
+        <initializer>((<ref refid="struct_p_d_b___type" kindref="compound">PDB_Type</ref> *)<ref refid="group___p_d_b___register___masks_1gaca699dde276786b0443ef728ae1f01c0" kindref="member">PDB0_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral PDB0 base pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8681" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga2aac97276b35cabb3a49413841a8bbe2" prot="public" static="no">
+        <name>PDB_BASE_ADDRS</name>
+        <initializer>{ <ref refid="group___p_d_b___register___masks_1gaca699dde276786b0443ef728ae1f01c0" kindref="member">PDB0_BASE</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of PDB peripheral base addresses </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8683" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga6dce940c99da63282b1d28f65ed75293" prot="public" static="no">
+        <name>PDB_BASE_PTRS</name>
+        <initializer>{ <ref refid="group___p_d_b___register___masks_1ga91cdd5c74efea207fd5cf60bb271b90c" kindref="member">PDB0</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array initializer of PDB peripheral base pointers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8685" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_d_b___register___masks_1ga8e897cb723b12765718d641d60409ce3" prot="public" static="no">
+        <name>PDB_IRQS</name>
+        <initializer>{ <ref refid="group___interrupt__vector__numbers_1gga666eb0caeb12ec0e281415592ae89083a88267c4e978fd991b88267fccba49c70" kindref="member">PDB0_IRQn</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt vectors for the PDB peripheral type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="8687" column="9" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="8687" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

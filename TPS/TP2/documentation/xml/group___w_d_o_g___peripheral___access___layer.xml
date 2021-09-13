@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___w_d_o_g___peripheral___access___layer" kind="group">
+    <compoundname>WDOG_Peripheral_Access_Layer</compoundname>
+    <title>WDOG Peripheral Access Layer</title>
+    <innerclass refid="struct_w_d_o_g___type" prot="public">WDOG_Type</innerclass>
+    <innergroup refid="group___w_d_o_g___register___masks">WDOG Register Masks</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

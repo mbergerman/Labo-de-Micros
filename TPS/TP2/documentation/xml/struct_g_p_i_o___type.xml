@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_g_p_i_o___type" kind="struct" language="C++" prot="public">
+    <compoundname>GPIO_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaef77a53fb6962f329978c788b3c1e637" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PDOR</definition>
+        <argsstring></argsstring>
+        <name>PDOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Data Output Register, offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="6893" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="6893" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga3aa2323e3b596f8c9f191acb2ad7f75d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a7e25d9380f9ef903923964322e71f2f6" kindref="member">__O</ref> uint32_t</type>
+        <definition>__O uint32_t PSOR</definition>
+        <argsstring></argsstring>
+        <name>PSOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Set Output Register, offset: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="6894" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="6894" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gac53cb29f8a090565bec5e94b6b808572" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a7e25d9380f9ef903923964322e71f2f6" kindref="member">__O</ref> uint32_t</type>
+        <definition>__O uint32_t PCOR</definition>
+        <argsstring></argsstring>
+        <name>PCOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Clear Output Register, offset: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="6895" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="6895" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga1c26bce9144a9606d3f8a60dc750b063" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a7e25d9380f9ef903923964322e71f2f6" kindref="member">__O</ref> uint32_t</type>
+        <definition>__O uint32_t PTOR</definition>
+        <argsstring></argsstring>
+        <name>PTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Toggle Output Register, offset: 0xC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="6896" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="6896" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga1013b95ac09a1205ba0528ad32ad1edc" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1af63697ed9952cc71e1225efe205f6cd3" kindref="member">__I</ref> uint32_t</type>
+        <definition>__I uint32_t PDIR</definition>
+        <argsstring></argsstring>
+        <name>PDIR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Data Input Register, offset: 0x10 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="6897" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="6897" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga441a96d3febd01d841b24561b4d036a3" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint32_t</type>
+        <definition>__IO uint32_t PDDR</definition>
+        <argsstring></argsstring>
+        <name>PDDR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Data Direction Register, offset: 0x14 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="6898" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="6898" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>GPIO - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="6892" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="6892" bodyend="6899"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gac53cb29f8a090565bec5e94b6b808572" prot="public" virt="non-virtual"><scope>GPIO_Type</scope><name>PCOR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga441a96d3febd01d841b24561b4d036a3" prot="public" virt="non-virtual"><scope>GPIO_Type</scope><name>PDDR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga1013b95ac09a1205ba0528ad32ad1edc" prot="public" virt="non-virtual"><scope>GPIO_Type</scope><name>PDIR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaef77a53fb6962f329978c788b3c1e637" prot="public" virt="non-virtual"><scope>GPIO_Type</scope><name>PDOR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga3aa2323e3b596f8c9f191acb2ad7f75d" prot="public" virt="non-virtual"><scope>GPIO_Type</scope><name>PSOR</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga1c26bce9144a9606d3f8a60dc750b063" prot="public" virt="non-virtual"><scope>GPIO_Type</scope><name>PTOR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

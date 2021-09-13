@@ -1,0 +1,152 @@
+.TH "drivers/DRV_Timers.c" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+drivers/DRV_Timers.c \- Timers driver\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'DRV_Timers\&.h'\fP
+.br
+\fC#include 'PDRV_SysTick\&.h'\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBtimer_t\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTIMER_DEVELOPMENT_MODE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBTIMER_ID_INTERNAL\fP   0"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitTimers\fP (void)"
+.br
+.RI "Initialice timer and corresponding peripheral\&. "
+.ti -1c
+.RI "\fBtim_id_t\fP \fBtimerGetId\fP (void)"
+.br
+.RI "Request an timer\&. "
+.ti -1c
+.RI "void \fBtimerStart\fP (\fBtim_id_t\fP id, \fBttick_t\fP ticks, uint8_t mode, \fBtim_callback_t\fP callback)"
+.br
+.RI "Begin to run a new timer\&. "
+.ti -1c
+.RI "void \fBtimerStop\fP (\fBtim_id_t\fP id)"
+.br
+.RI "Finish to run a timer\&. "
+.ti -1c
+.RI "bool \fBtimerExpired\fP (\fBtim_id_t\fP id)"
+.br
+.RI "Verify if a timer has run timeout\&. "
+.ti -1c
+.RI "void \fBtimerDelay\fP (\fBttick_t\fP ticks)"
+.br
+.RI "Wait the specified time\&. Use internal timer\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Timers driver\&. 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Grupo 1 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define TIMER_DEVELOPMENT_MODE   1"
+
+.SS "#define TIMER_ID_INTERNAL   0"
+
+.SH "Function Documentation"
+.PP 
+.SS "void initTimers (void)"
+
+.PP
+Initialice timer and corresponding peripheral\&. 
+.SS "void timerDelay (\fBttick_t\fP ticks)"
+
+.PP
+Wait the specified time\&. Use internal timer\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIticks\fP time to wait in ticks 
+.RE
+.PP
+
+.SS "bool timerExpired (\fBtim_id_t\fP id)"
+
+.PP
+Verify if a timer has run timeout\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP ID of the timer to check for expiration 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+1 = timer expired 
+.RE
+.PP
+
+.SS "\fBtim_id_t\fP timerGetId (void)"
+
+.PP
+Request an timer\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+ID of the timer to use 
+.RE
+.PP
+
+.SS "void timerStart (\fBtim_id_t\fP id, \fBttick_t\fP ticks, uint8_t mode, \fBtim_callback_t\fP callback)"
+
+.PP
+Begin to run a new timer\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP ID of the timer to start 
+.br
+\fIticks\fP time until timer expires, in ticks 
+.br
+\fImode\fP SINGLESHOT or PERIODIC 
+.br
+\fIcallback\fP Function to be call when timer expires 
+.RE
+.PP
+
+.SS "void timerStop (\fBtim_id_t\fP id)"
+
+.PP
+Finish to run a timer\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP ID of the timer to stop 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_w_d_o_g___type" kind="struct" language="C++" prot="public">
+    <compoundname>WDOG_Type</compoundname>
+    <includes refid="_m_k64_f12_8h" local="no">MK64F12.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gad4d85fbd5ff5d1ba1aeb7e49adb9b1fd" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t STCTRLH</definition>
+        <argsstring></argsstring>
+        <name>STCTRLH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Watchdog Status and Control Register High, offset: 0x0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12491" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaab3e807406cde45883ef340be06568cb" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t STCTRLL</definition>
+        <argsstring></argsstring>
+        <name>STCTRLL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Watchdog Status and Control Register Low, offset: 0x2 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12492" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga23960179757a36ca719156a5c90c8675" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TOVALH</definition>
+        <argsstring></argsstring>
+        <name>TOVALH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Watchdog Time-out Value Register High, offset: 0x4 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12493" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga9ccb8f22716c09c39bb0cfd02aba69f4" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TOVALL</definition>
+        <argsstring></argsstring>
+        <name>TOVALL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Watchdog Time-out Value Register Low, offset: 0x6 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12494" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaa1bde3a7b29baa67659b12f0a4a494ac" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t WINH</definition>
+        <argsstring></argsstring>
+        <name>WINH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Watchdog Window Register High, offset: 0x8 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12495" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gaced61c61e5299b565e8b257e59562d85" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t WINL</definition>
+        <argsstring></argsstring>
+        <name>WINL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Watchdog Window Register Low, offset: 0xA </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12496" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gad6e11b03f76f4f5c7f7af63c6adf72ef" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t REFRESH</definition>
+        <argsstring></argsstring>
+        <name>REFRESH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Watchdog Refresh register, offset: 0xC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12497" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gae5d5ccb6817e2e1e51eac125b01856de" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t UNLOCK</definition>
+        <argsstring></argsstring>
+        <name>UNLOCK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Watchdog Unlock register, offset: 0xE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12498" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga020e8a3bc802277ebdea61f18a256c65" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TMROUTH</definition>
+        <argsstring></argsstring>
+        <name>TMROUTH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Watchdog Timer Output Register High, offset: 0x10 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12499" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gad5ebd770efd696047aa4ac98538a798d" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t TMROUTL</definition>
+        <argsstring></argsstring>
+        <name>TMROUTL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Watchdog Timer Output Register Low, offset: 0x12 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12500" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1ga095ee56174bca40b8f3b42792b2aa554" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t RSTCNT</definition>
+        <argsstring></argsstring>
+        <name>RSTCNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Watchdog Reset Count register, offset: 0x14 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12501" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___v_r_e_f___peripheral___access___layer_1gac91805542c28a212cea60963b3983981" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1aec43007d9998a0a0e01faede4133d6be" kindref="member">__IO</ref> uint16_t</type>
+        <definition>__IO uint16_t PRESC</definition>
+        <argsstring></argsstring>
+        <name>PRESC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Watchdog Prescaler register, offset: 0x16 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/MK64F12.h" line="12502" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12502" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>WDOG - Register Layout Typedef </para>    </detaileddescription>
+    <location file="SDK/CMSIS/MK64F12.h" line="12490" column="1" bodyfile="SDK/CMSIS/MK64F12.h" bodystart="12490" bodyend="12503"/>
+    <listofallmembers>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gac91805542c28a212cea60963b3983981" prot="public" virt="non-virtual"><scope>WDOG_Type</scope><name>PRESC</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gad6e11b03f76f4f5c7f7af63c6adf72ef" prot="public" virt="non-virtual"><scope>WDOG_Type</scope><name>REFRESH</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga095ee56174bca40b8f3b42792b2aa554" prot="public" virt="non-virtual"><scope>WDOG_Type</scope><name>RSTCNT</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gad4d85fbd5ff5d1ba1aeb7e49adb9b1fd" prot="public" virt="non-virtual"><scope>WDOG_Type</scope><name>STCTRLH</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaab3e807406cde45883ef340be06568cb" prot="public" virt="non-virtual"><scope>WDOG_Type</scope><name>STCTRLL</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga020e8a3bc802277ebdea61f18a256c65" prot="public" virt="non-virtual"><scope>WDOG_Type</scope><name>TMROUTH</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gad5ebd770efd696047aa4ac98538a798d" prot="public" virt="non-virtual"><scope>WDOG_Type</scope><name>TMROUTL</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga23960179757a36ca719156a5c90c8675" prot="public" virt="non-virtual"><scope>WDOG_Type</scope><name>TOVALH</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1ga9ccb8f22716c09c39bb0cfd02aba69f4" prot="public" virt="non-virtual"><scope>WDOG_Type</scope><name>TOVALL</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gae5d5ccb6817e2e1e51eac125b01856de" prot="public" virt="non-virtual"><scope>WDOG_Type</scope><name>UNLOCK</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaa1bde3a7b29baa67659b12f0a4a494ac" prot="public" virt="non-virtual"><scope>WDOG_Type</scope><name>WINH</name></member>
+      <member refid="group___v_r_e_f___peripheral___access___layer_1gaced61c61e5299b565e8b257e59562d85" prot="public" virt="non-virtual"><scope>WDOG_Type</scope><name>WINL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

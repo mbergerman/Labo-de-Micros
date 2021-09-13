@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structarm__cfft__radix2__instance__q31" kind="struct" language="C++" prot="public">
+    <compoundname>arm_cfft_radix2_instance_q31</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__cfft__radix2__instance__q31_1ab8db3bbe7c61e6bb8ca2a55e3446e11a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t fftLen</definition>
+        <argsstring></argsstring>
+        <name>fftLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>length of the FFT. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1984" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1984" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__radix2__instance__q31_1ad6ca6e223f986ebfd94c5ee1e410aa73" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ifftFlag</definition>
+        <argsstring></argsstring>
+        <name>ifftFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flag that selects forward (ifftFlag=0) or inverse (ifftFlag=1) transform. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1985" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1985" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__radix2__instance__q31_1a09a221a818c6d0e064557a99e2fe9a8b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t bitReverseFlag</definition>
+        <argsstring></argsstring>
+        <name>bitReverseFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>flag that enables (bitReverseFlag=1) or disables (bitReverseFlag=0) bit reversal of output. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1986" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1986" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__radix2__instance__q31_1a2505b7d5ec077b244c712797a5253b6d" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* pTwiddle</definition>
+        <argsstring></argsstring>
+        <name>pTwiddle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the Twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1987" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1987" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__radix2__instance__q31_1a46a2fb328199897af100fea0bfdf59aa" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* pBitRevTable</definition>
+        <argsstring></argsstring>
+        <name>pBitRevTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the bit reversal table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1988" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1988" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__radix2__instance__q31_1afe772e5b5001c9d8e85032115a8df5bf" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t twidCoefModifier</definition>
+        <argsstring></argsstring>
+        <name>twidCoefModifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>twiddle coefficient modifier that supports different size FFTs with the same twiddle factor table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1989" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1989" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__cfft__radix2__instance__q31_1a33386d95319dc3ee7097b3a8e52e01ec" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t bitRevFactor</definition>
+        <argsstring></argsstring>
+        <name>bitRevFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit reversal modifier that supports different size FFTs with the same bit reversal table. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="1990" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1990" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Radix-2 Q31 CFFT/CIFFT function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/arm_math.h" line="1983" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="1982" bodyend="1991"/>
+    <listofallmembers>
+      <member refid="structarm__cfft__radix2__instance__q31_1a09a221a818c6d0e064557a99e2fe9a8b" prot="public" virt="non-virtual"><scope>arm_cfft_radix2_instance_q31</scope><name>bitReverseFlag</name></member>
+      <member refid="structarm__cfft__radix2__instance__q31_1a33386d95319dc3ee7097b3a8e52e01ec" prot="public" virt="non-virtual"><scope>arm_cfft_radix2_instance_q31</scope><name>bitRevFactor</name></member>
+      <member refid="structarm__cfft__radix2__instance__q31_1ab8db3bbe7c61e6bb8ca2a55e3446e11a" prot="public" virt="non-virtual"><scope>arm_cfft_radix2_instance_q31</scope><name>fftLen</name></member>
+      <member refid="structarm__cfft__radix2__instance__q31_1ad6ca6e223f986ebfd94c5ee1e410aa73" prot="public" virt="non-virtual"><scope>arm_cfft_radix2_instance_q31</scope><name>ifftFlag</name></member>
+      <member refid="structarm__cfft__radix2__instance__q31_1a46a2fb328199897af100fea0bfdf59aa" prot="public" virt="non-virtual"><scope>arm_cfft_radix2_instance_q31</scope><name>pBitRevTable</name></member>
+      <member refid="structarm__cfft__radix2__instance__q31_1a2505b7d5ec077b244c712797a5253b6d" prot="public" virt="non-virtual"><scope>arm_cfft_radix2_instance_q31</scope><name>pTwiddle</name></member>
+      <member refid="structarm__cfft__radix2__instance__q31_1afe772e5b5001c9d8e85032115a8df5bf" prot="public" virt="non-virtual"><scope>arm_cfft_radix2_instance_q31</scope><name>twidCoefModifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

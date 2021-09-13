@@ -1,0 +1,354 @@
+.TH "SDK/CMSIS/mpu_armv7.h" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SDK/CMSIS/mpu_armv7.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBARM_MPU_Region_t\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBARM_MPU_ARMV7_H\fP"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_32B\fP   ((uint8_t)0x04U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_64B\fP   ((uint8_t)0x05U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_128B\fP   ((uint8_t)0x06U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_256B\fP   ((uint8_t)0x07U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_512B\fP   ((uint8_t)0x08U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_1KB\fP   ((uint8_t)0x09U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_2KB\fP   ((uint8_t)0x0AU)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_4KB\fP   ((uint8_t)0x0BU)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_8KB\fP   ((uint8_t)0x0CU)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_16KB\fP   ((uint8_t)0x0DU)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_32KB\fP   ((uint8_t)0x0EU)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_64KB\fP   ((uint8_t)0x0FU)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_128KB\fP   ((uint8_t)0x10U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_256KB\fP   ((uint8_t)0x11U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_512KB\fP   ((uint8_t)0x12U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_1MB\fP   ((uint8_t)0x13U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_2MB\fP   ((uint8_t)0x14U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_4MB\fP   ((uint8_t)0x15U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_8MB\fP   ((uint8_t)0x16U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_16MB\fP   ((uint8_t)0x17U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_32MB\fP   ((uint8_t)0x18U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_64MB\fP   ((uint8_t)0x19U)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_128MB\fP   ((uint8_t)0x1AU)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_256MB\fP   ((uint8_t)0x1BU)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_512MB\fP   ((uint8_t)0x1CU)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_1GB\fP   ((uint8_t)0x1DU)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_2GB\fP   ((uint8_t)0x1EU)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_REGION_SIZE_4GB\fP   ((uint8_t)0x1FU)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_AP_NONE\fP   0U"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_AP_PRIV\fP   1U"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_AP_URO\fP   2U"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_AP_FULL\fP   3U"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_AP_PRO\fP   5U"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_AP_RO\fP   6U"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_RBAR\fP(Region,  BaseAddress)"
+.br
+.ti -1c
+.RI "#define \fBARM_MPU_RASR\fP(DisableExec,  AccessPermission,  TypeExtField,  IsShareable,  IsCacheable,  IsBufferable,  SubRegionDisable,  Size)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBARM_MPU_Enable\fP (uint32_t MPU_Control)"
+.br
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBARM_MPU_Disable\fP (void)"
+.br
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBARM_MPU_ClrRegion\fP (uint32_t rnr)"
+.br
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBARM_MPU_SetRegion\fP (uint32_t rbar, uint32_t rasr)"
+.br
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBARM_MPU_SetRegionEx\fP (uint32_t rnr, uint32_t rbar, uint32_t rasr)"
+.br
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBorderedCpy\fP (volatile uint32_t *dst, const uint32_t *\fB__RESTRICT\fP src, uint32_t len)"
+.br
+.ti -1c
+.RI "\fB__STATIC_INLINE\fP void \fBARM_MPU_Load\fP (\fBARM_MPU_Region_t\fP const *table, uint32_t cnt)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ARM_MPU_AP_FULL   3U"
+
+.SS "#define ARM_MPU_AP_NONE   0U"
+
+.SS "#define ARM_MPU_AP_PRIV   1U"
+
+.SS "#define ARM_MPU_AP_PRO   5U"
+
+.SS "#define ARM_MPU_AP_RO   6U"
+
+.SS "#define ARM_MPU_AP_URO   2U"
+
+.SS "#define ARM_MPU_ARMV7_H"
+
+.SS "#define ARM_MPU_RASR(DisableExec, AccessPermission, TypeExtField, IsShareable, IsCacheable, IsBufferable, SubRegionDisable, Size)"
+\fBValue:\fP
+.PP
+.nf
+((((DisableExec     ) << MPU_RASR_XN_Pos)     & MPU_RASR_XN_Msk)     | \
+   (((AccessPermission) << MPU_RASR_AP_Pos)     & MPU_RASR_AP_Msk)     | \
+   (((TypeExtField    ) << MPU_RASR_TEX_Pos)    & MPU_RASR_TEX_Msk)    | \
+   (((IsShareable     ) << MPU_RASR_S_Pos)      & MPU_RASR_S_Msk)      | \
+   (((IsCacheable     ) << MPU_RASR_C_Pos)      & MPU_RASR_C_Msk)      | \
+   (((IsBufferable    ) << MPU_RASR_B_Pos)      & MPU_RASR_B_Msk)      | \
+   (((SubRegionDisable) << MPU_RASR_SRD_Pos)    & MPU_RASR_SRD_Msk)    | \
+   (((Size            ) << MPU_RASR_SIZE_Pos)   & MPU_RASR_SIZE_Msk)   | \
+   (MPU_RASR_ENABLE_Msk))
+.fi
+MPU Region Attribute and Size Register Value
+.PP
+\fBParameters:\fP
+.RS 4
+\fIDisableExec\fP Instruction access disable bit, 1= disable instruction fetches\&. 
+.br
+\fIAccessPermission\fP Data access permissions, allows you to configure read/write access for User and Privileged mode\&. 
+.br
+\fITypeExtField\fP Type extension field, allows you to configure memory access type, for example strongly ordered, peripheral\&. 
+.br
+\fIIsShareable\fP Region is shareable between multiple bus masters\&. 
+.br
+\fIIsCacheable\fP Region is cacheable, i\&.e\&. its value may be kept in cache\&. 
+.br
+\fIIsBufferable\fP Region is bufferable, i\&.e\&. using write-back caching\&. Cacheable but non-bufferable regions use write-through policy\&. 
+.br
+\fISubRegionDisable\fP Sub-region disable field\&. 
+.br
+\fISize\fP Region size of the region to be configured, for example 4K, 8K\&. 
+.RE
+.PP
+
+.SS "#define ARM_MPU_RBAR(Region, BaseAddress)"
+\fBValue:\fP
+.PP
+.nf
+(((BaseAddress) & MPU_RBAR_ADDR_Msk) |  \
+   ((Region) & MPU_RBAR_REGION_Msk)    |  \
+   (MPU_RBAR_VALID_Msk))
+.fi
+MPU Region Base Address Register Value
+.PP
+\fBParameters:\fP
+.RS 4
+\fIRegion\fP The region to be configured, number 0 to 15\&. 
+.br
+\fIBaseAddress\fP The base address for the region\&. 
+.RE
+.PP
+
+.SS "#define ARM_MPU_REGION_SIZE_128B   ((uint8_t)0x06U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_128KB   ((uint8_t)0x10U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_128MB   ((uint8_t)0x1AU)"
+
+.SS "#define ARM_MPU_REGION_SIZE_16KB   ((uint8_t)0x0DU)"
+
+.SS "#define ARM_MPU_REGION_SIZE_16MB   ((uint8_t)0x17U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_1GB   ((uint8_t)0x1DU)"
+
+.SS "#define ARM_MPU_REGION_SIZE_1KB   ((uint8_t)0x09U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_1MB   ((uint8_t)0x13U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_256B   ((uint8_t)0x07U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_256KB   ((uint8_t)0x11U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_256MB   ((uint8_t)0x1BU)"
+
+.SS "#define ARM_MPU_REGION_SIZE_2GB   ((uint8_t)0x1EU)"
+
+.SS "#define ARM_MPU_REGION_SIZE_2KB   ((uint8_t)0x0AU)"
+
+.SS "#define ARM_MPU_REGION_SIZE_2MB   ((uint8_t)0x14U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_32B   ((uint8_t)0x04U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_32KB   ((uint8_t)0x0EU)"
+
+.SS "#define ARM_MPU_REGION_SIZE_32MB   ((uint8_t)0x18U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_4GB   ((uint8_t)0x1FU)"
+
+.SS "#define ARM_MPU_REGION_SIZE_4KB   ((uint8_t)0x0BU)"
+
+.SS "#define ARM_MPU_REGION_SIZE_4MB   ((uint8_t)0x15U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_512B   ((uint8_t)0x08U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_512KB   ((uint8_t)0x12U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_512MB   ((uint8_t)0x1CU)"
+
+.SS "#define ARM_MPU_REGION_SIZE_64B   ((uint8_t)0x05U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_64KB   ((uint8_t)0x0FU)"
+
+.SS "#define ARM_MPU_REGION_SIZE_64MB   ((uint8_t)0x19U)"
+
+.SS "#define ARM_MPU_REGION_SIZE_8KB   ((uint8_t)0x0CU)"
+
+.SS "#define ARM_MPU_REGION_SIZE_8MB   ((uint8_t)0x16U)"
+
+.SH "Function Documentation"
+.PP 
+.SS "\fB__STATIC_INLINE\fP void ARM_MPU_ClrRegion (uint32_t rnr)"
+Clear and disable the given MPU region\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrnr\fP Region number to be cleared\&. 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP void ARM_MPU_Disable (void)"
+Disable the MPU\&. 
+.SS "\fB__STATIC_INLINE\fP void ARM_MPU_Enable (uint32_t MPU_Control)"
+Enable the MPU\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIMPU_Control\fP Default access permissions for unconfigured regions\&. 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP void ARM_MPU_Load (\fBARM_MPU_Region_t\fP const * table, uint32_t cnt)"
+Load the given number of MPU regions from a table\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItable\fP Pointer to the MPU configuration table\&. 
+.br
+\fIcnt\fP Amount of regions to be configured\&. 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP void ARM_MPU_SetRegion (uint32_t rbar, uint32_t rasr)"
+Configure an MPU region\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrbar\fP Value for RBAR register\&. 
+.br
+\fIrsar\fP Value for RSAR register\&. 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP void ARM_MPU_SetRegionEx (uint32_t rnr, uint32_t rbar, uint32_t rasr)"
+Configure the given MPU region\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrnr\fP Region number to be configured\&. 
+.br
+\fIrbar\fP Value for RBAR register\&. 
+.br
+\fIrsar\fP Value for RSAR register\&. 
+.RE
+.PP
+
+.SS "\fB__STATIC_INLINE\fP void orderedCpy (volatile uint32_t * dst, const uint32_t *\fB__RESTRICT\fP src, uint32_t len)"
+Memcopy with strictly ordered memory access, e\&.g\&. for register targets\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdst\fP Destination data is copied to\&. 
+.br
+\fIsrc\fP Source data is copied from\&. 
+.br
+\fIlen\fP Amount of data words to be copied\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

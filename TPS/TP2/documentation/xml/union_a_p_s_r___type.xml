@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="union_a_p_s_r___type" kind="union" language="C++" prot="public">
+    <compoundname>APSR_Type</compoundname>
+    <includes refid="core__armv8mbl_8h" local="no">core_armv8mbl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_a_p_s_r___type_1ac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved0</definition>
+        <argsstring></argsstring>
+        <name>_reserved0</name>
+        <bitfield>28</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 0..27 Reserved</para><para>bit: 0..15 Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="237" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_a_p_s_r___type_1acd4a2b64faee91e4a9eef300667fa222" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 28 Overflow condition code flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="238" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_a_p_s_r___type_1a7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 29 Carry condition code flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="239" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_a_p_s_r___type_1a5ae954cbd9986cd64625d7fa00943c8e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Z</definition>
+        <argsstring></argsstring>
+        <name>Z</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 30 Zero condition code flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="240" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_a_p_s_r___type_1abae0610bc2a97bbf7f689e953e0b451f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 31 Negative condition code flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="241" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_a_p_s_r___type_1a9dbe3d4a8983684f38d0fd2d68299eea" prot="public" static="no" mutable="no">
+        <type>struct APSR_Type::@6</type>
+        <definition>struct APSR_Type::@6  b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_a_p_s_r___type_1ad0fb62e7a08e70fc5e0a76b67809f84b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type used for word access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mbl.h" line="243" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_a_p_s_r___type_1aa91800ec6e90e457c7a1acd1f2e17099" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t GE</definition>
+        <argsstring></argsstring>
+        <name>GE</name>
+        <bitfield>4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 16..19 Greater than or Equal flags </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="319" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_a_p_s_r___type_1a959a73d8faee56599b7e792a7c5a2d16" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _reserved1</definition>
+        <argsstring></argsstring>
+        <name>_reserved1</name>
+        <bitfield>7</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 20..26 Reserved </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="320" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_a_p_s_r___type_1a65f27ddc4f7e09c14ce7c5211b2e000a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Q</definition>
+        <argsstring></argsstring>
+        <name>Q</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bit: 27 Saturation condition flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="321" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_a_p_s_r___type_1a593dce2636921777ec2a4875fe032b68" prot="public" static="no" mutable="no">
+        <type>struct APSR_Type::@10</type>
+        <definition>struct APSR_Type::@10  b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="326" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_a_p_s_r___type_1a4ec850ae1a2959785d92187338a71190" prot="public" static="no" mutable="no">
+        <type>struct APSR_Type::@15</type>
+        <definition>struct APSR_Type::@15  b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure used for bit access </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="271" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Union type to access the Application Program Status Register (APSR). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/core_armv8mbl.h" line="234" column="1" bodyfile="SDK/CMSIS/core_armv8mbl.h" bodystart="233" bodyend="244"/>
+    <listofallmembers>
+      <member refid="union_a_p_s_r___type_1ac8a6a13838a897c8d0b8bc991bbaf7c1" prot="public" virt="non-virtual"><scope>APSR_Type</scope><name>_reserved0</name></member>
+      <member refid="union_a_p_s_r___type_1a959a73d8faee56599b7e792a7c5a2d16" prot="public" virt="non-virtual"><scope>APSR_Type</scope><name>_reserved1</name></member>
+      <member refid="union_a_p_s_r___type_1a9dbe3d4a8983684f38d0fd2d68299eea" prot="public" virt="non-virtual"><scope>APSR_Type</scope><name>b</name></member>
+      <member refid="union_a_p_s_r___type_1a593dce2636921777ec2a4875fe032b68" prot="public" virt="non-virtual"><scope>APSR_Type</scope><name>b</name></member>
+      <member refid="union_a_p_s_r___type_1a4ec850ae1a2959785d92187338a71190" prot="public" virt="non-virtual"><scope>APSR_Type</scope><name>b</name></member>
+      <member refid="union_a_p_s_r___type_1a7a1caf92f32fe9ebd8d1fe89b06c7776" prot="public" virt="non-virtual"><scope>APSR_Type</scope><name>C</name></member>
+      <member refid="union_a_p_s_r___type_1aa91800ec6e90e457c7a1acd1f2e17099" prot="public" virt="non-virtual"><scope>APSR_Type</scope><name>GE</name></member>
+      <member refid="union_a_p_s_r___type_1abae0610bc2a97bbf7f689e953e0b451f" prot="public" virt="non-virtual"><scope>APSR_Type</scope><name>N</name></member>
+      <member refid="union_a_p_s_r___type_1a65f27ddc4f7e09c14ce7c5211b2e000a" prot="public" virt="non-virtual"><scope>APSR_Type</scope><name>Q</name></member>
+      <member refid="union_a_p_s_r___type_1acd4a2b64faee91e4a9eef300667fa222" prot="public" virt="non-virtual"><scope>APSR_Type</scope><name>V</name></member>
+      <member refid="union_a_p_s_r___type_1ad0fb62e7a08e70fc5e0a76b67809f84b" prot="public" virt="non-virtual"><scope>APSR_Type</scope><name>w</name></member>
+      <member refid="union_a_p_s_r___type_1a5ae954cbd9986cd64625d7fa00943c8e" prot="public" virt="non-virtual"><scope>APSR_Type</scope><name>Z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

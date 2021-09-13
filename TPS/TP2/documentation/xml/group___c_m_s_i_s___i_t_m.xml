@@ -1,0 +1,784 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___c_m_s_i_s___i_t_m" kind="group">
+    <compoundname>CMSIS_ITM</compoundname>
+    <title>Instrumentation Trace Macrocell (ITM)</title>
+    <innerclass refid="struct_i_t_m___type" prot="public">ITM_Type</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gafd9ed85f36233685f182cc249621e025" prot="public" static="no">
+        <name>ITM_STIM_DISABLED_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM STIM: DISABLED Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1122" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga9d8f821bdad48c7b4a02f11ebf2c8852" prot="public" static="no">
+        <name>ITM_STIM_DISABLED_Msk</name>
+        <initializer>(0x1UL &lt;&lt; ITM_STIM_DISABLED_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM STIM: DISABLED Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1123" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gaa79f3a59d15d810d48d924c0ca4ae0b9" prot="public" static="no">
+        <name>ITM_STIM_FIFOREADY_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM STIM: FIFOREADY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1125" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga73dc88e3338b4ef9a81e53a1d2c5ae83" prot="public" static="no">
+        <name>ITM_STIM_FIFOREADY_Msk</name>
+        <initializer>(0x1UL /*&lt;&lt; ITM_STIM_FIFOREADY_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM STIM: FIFOREADY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1126" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga7abe5e590d1611599df87a1884a352e8" prot="public" static="no">
+        <name>ITM_TPR_PRIVMASK_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TPR: PRIVMASK Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1129" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga168e089d882df325a387aab3a802a46b" prot="public" static="no">
+        <name>ITM_TPR_PRIVMASK_Msk</name>
+        <initializer>(0xFUL /*&lt;&lt; ITM_TPR_PRIVMASK_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TPR: PRIVMASK Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1130" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga9174ad4a36052c377cef4e6aba2ed484" prot="public" static="no">
+        <name>ITM_TCR_BUSY_Pos</name>
+        <initializer>23U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: BUSY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1133" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga43ad7cf33de12f2ef3a412d4f354c60f" prot="public" static="no">
+        <name>ITM_TCR_BUSY_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_TCR_BUSY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: BUSY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1134" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga113bf41ed31584360ad7d865e5e0ace7" prot="public" static="no">
+        <name>ITM_TCR_TRACEBUSID_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: ATBID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1136" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gac014c7345304ed245b642eb9d6e9a302" prot="public" static="no">
+        <name>ITM_TCR_TRACEBUSID_Msk</name>
+        <initializer>(0x7FUL &lt;&lt; ITM_TCR_TRACEBUSID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: ATBID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1137" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga96c7c7cbc0d98426c408090b41f583f1" prot="public" static="no">
+        <name>ITM_TCR_GTSFREQ_Pos</name>
+        <initializer>10U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: Global timestamp frequency Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1139" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gade862cf009827f7f6748fc44c541b067" prot="public" static="no">
+        <name>ITM_TCR_GTSFREQ_Msk</name>
+        <initializer>(3UL &lt;&lt; ITM_TCR_GTSFREQ_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: Global timestamp frequency Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1140" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gaa39e93e22d56e5e9edaf866b1171ac4f" prot="public" static="no">
+        <name>ITM_TCR_TSPRESCALE_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: TSPRESCALE Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1142" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga3e8651ecde89295bcc6e248a1b7393d6" prot="public" static="no">
+        <name>ITM_TCR_TSPRESCALE_Msk</name>
+        <initializer>(3UL &lt;&lt; ITM_TCR_TSPRESCALE_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: TSPRESCALE Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1143" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gad74ca6140644b572eadbf21e870d24b9" prot="public" static="no">
+        <name>ITM_TCR_STALLENA_Pos</name>
+        <initializer>5U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: STALLENA Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1145" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga724f0560593042670b49e2f9a6483b6f" prot="public" static="no">
+        <name>ITM_TCR_STALLENA_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_TCR_STALLENA_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: STALLENA Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1146" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga7a380f0c8078f6560051406583ecd6a5" prot="public" static="no">
+        <name>ITM_TCR_SWOENA_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: SWOENA Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1148" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga97476cb65bab16a328b35f81fd02010a" prot="public" static="no">
+        <name>ITM_TCR_SWOENA_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_TCR_SWOENA_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: SWOENA Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1149" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga30e83ebb33aa766070fe3d1f27ae820e" prot="public" static="no">
+        <name>ITM_TCR_DWTENA_Pos</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: DWTENA Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1151" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga98ea1c596d43d3633a202f9ee746cf70" prot="public" static="no">
+        <name>ITM_TCR_DWTENA_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_TCR_DWTENA_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: DWTENA Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1152" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gaa93a1147a39fc63980d299231252a30e" prot="public" static="no">
+        <name>ITM_TCR_SYNCENA_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: SYNCENA Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1154" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gac89b74a78701c25b442105d7fe2bbefb" prot="public" static="no">
+        <name>ITM_TCR_SYNCENA_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_TCR_SYNCENA_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: SYNCENA Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1155" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga5aa381845f810114ab519b90753922a1" prot="public" static="no">
+        <name>ITM_TCR_TSENA_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: TSENA Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1157" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga436b2e8fa24328f48f2da31c00fc9e65" prot="public" static="no">
+        <name>ITM_TCR_TSENA_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_TCR_TSENA_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: TSENA Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1158" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga3286b86004bce7ffe17ee269f87f8d9d" prot="public" static="no">
+        <name>ITM_TCR_ITMENA_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: ITM Enable bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1160" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga7dd53e3bff24ac09d94e61cb595cb2d9" prot="public" static="no">
+        <name>ITM_TCR_ITMENA_Msk</name>
+        <initializer>(1UL /*&lt;&lt; ITM_TCR_ITMENA_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: ITM Enable bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1161" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga04d3f842ad48f6a9127b4cecc963e1d7" prot="public" static="no">
+        <name>ITM_IWR_ATVALIDM_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM IWR: ATVALIDM Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1164" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga67b969f8f04ed15886727788f0e2ffd7" prot="public" static="no">
+        <name>ITM_IWR_ATVALIDM_Msk</name>
+        <initializer>(1UL /*&lt;&lt; ITM_IWR_ATVALIDM_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM IWR: ATVALIDM Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1165" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga259edfd1d2e877a62e06d7a240df97f4" prot="public" static="no">
+        <name>ITM_IRR_ATREADYM_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM IRR: ATREADYM Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1168" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga3dbc3e15f5bde2669cd8121a1fe419b9" prot="public" static="no">
+        <name>ITM_IRR_ATREADYM_Msk</name>
+        <initializer>(1UL /*&lt;&lt; ITM_IRR_ATREADYM_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM IRR: ATREADYM Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1169" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga08de02bf32caf48aaa29f7c68ff5d755" prot="public" static="no">
+        <name>ITM_IMCR_INTEGRATION_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM IMCR: INTEGRATION Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1172" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga8838bd3dd04c1a6be97cd946364a3fd2" prot="public" static="no">
+        <name>ITM_IMCR_INTEGRATION_Msk</name>
+        <initializer>(1UL /*&lt;&lt; ITM_IMCR_INTEGRATION_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM IMCR: INTEGRATION Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1173" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gabfae3e570edc8759597311ed6dfb478e" prot="public" static="no">
+        <name>ITM_LSR_ByteAcc_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM LSR: ByteAcc Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1176" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga91f492b2891bb8b7eac5b58de7b220f4" prot="public" static="no">
+        <name>ITM_LSR_ByteAcc_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_LSR_ByteAcc_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM LSR: ByteAcc Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1177" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga144a49e12b83ad9809fdd2769094fdc0" prot="public" static="no">
+        <name>ITM_LSR_Access_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM LSR: Access Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1179" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gac8ae69f11c0311da226c0c8ec40b3d37" prot="public" static="no">
+        <name>ITM_LSR_Access_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_LSR_Access_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM LSR: Access Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1180" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gaf5740689cf14564d3f3fd91299b6c88d" prot="public" static="no">
+        <name>ITM_LSR_Present_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM LSR: Present Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1182" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gaa5bc2a7f5f1d69ff819531f5508bb017" prot="public" static="no">
+        <name>ITM_LSR_Present_Msk</name>
+        <initializer>(1UL /*&lt;&lt; ITM_LSR_Present_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM LSR: Present Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1183" column="9" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga7abe5e590d1611599df87a1884a352e8" prot="public" static="no">
+        <name>ITM_TPR_PRIVMASK_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TPR: PRIVMASK Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="848" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga168e089d882df325a387aab3a802a46b" prot="public" static="no">
+        <name>ITM_TPR_PRIVMASK_Msk</name>
+        <initializer>(0xFFFFFFFFUL /*&lt;&lt; ITM_TPR_PRIVMASK_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TPR: PRIVMASK Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="849" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga9174ad4a36052c377cef4e6aba2ed484" prot="public" static="no">
+        <name>ITM_TCR_BUSY_Pos</name>
+        <initializer>23U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: BUSY Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="852" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga43ad7cf33de12f2ef3a412d4f354c60f" prot="public" static="no">
+        <name>ITM_TCR_BUSY_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_TCR_BUSY_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: BUSY Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="853" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gaca0281de867f33114aac0636f7ce65d3" prot="public" static="no">
+        <name>ITM_TCR_TraceBusID_Pos</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: ATBID Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="855" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga60c20bd9649d1da5a2be8e656ba19a60" prot="public" static="no">
+        <name>ITM_TCR_TraceBusID_Msk</name>
+        <initializer>(0x7FUL &lt;&lt; ITM_TCR_TraceBusID_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: ATBID Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="856" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="856" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga96c7c7cbc0d98426c408090b41f583f1" prot="public" static="no">
+        <name>ITM_TCR_GTSFREQ_Pos</name>
+        <initializer>10U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: Global timestamp frequency Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="858" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gade862cf009827f7f6748fc44c541b067" prot="public" static="no">
+        <name>ITM_TCR_GTSFREQ_Msk</name>
+        <initializer>(3UL &lt;&lt; ITM_TCR_GTSFREQ_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: Global timestamp frequency Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="859" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="859" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gad7bc9ee1732032c6e0de035f0978e473" prot="public" static="no">
+        <name>ITM_TCR_TSPrescale_Pos</name>
+        <initializer>8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: TSPrescale Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="861" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="861" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga7a723f71bfb0204c264d8dbe8cc7ae52" prot="public" static="no">
+        <name>ITM_TCR_TSPrescale_Msk</name>
+        <initializer>(3UL &lt;&lt; ITM_TCR_TSPrescale_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: TSPrescale Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="862" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="862" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga7a380f0c8078f6560051406583ecd6a5" prot="public" static="no">
+        <name>ITM_TCR_SWOENA_Pos</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: SWOENA Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="864" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="864" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga97476cb65bab16a328b35f81fd02010a" prot="public" static="no">
+        <name>ITM_TCR_SWOENA_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_TCR_SWOENA_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: SWOENA Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="865" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="865" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga30e83ebb33aa766070fe3d1f27ae820e" prot="public" static="no">
+        <name>ITM_TCR_DWTENA_Pos</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: DWTENA Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="867" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="867" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga98ea1c596d43d3633a202f9ee746cf70" prot="public" static="no">
+        <name>ITM_TCR_DWTENA_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_TCR_DWTENA_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: DWTENA Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="868" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="868" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gaa93a1147a39fc63980d299231252a30e" prot="public" static="no">
+        <name>ITM_TCR_SYNCENA_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: SYNCENA Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="870" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="870" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gac89b74a78701c25b442105d7fe2bbefb" prot="public" static="no">
+        <name>ITM_TCR_SYNCENA_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_TCR_SYNCENA_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: SYNCENA Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="871" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="871" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga5aa381845f810114ab519b90753922a1" prot="public" static="no">
+        <name>ITM_TCR_TSENA_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: TSENA Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="873" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="873" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga436b2e8fa24328f48f2da31c00fc9e65" prot="public" static="no">
+        <name>ITM_TCR_TSENA_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_TCR_TSENA_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: TSENA Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="874" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="874" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga3286b86004bce7ffe17ee269f87f8d9d" prot="public" static="no">
+        <name>ITM_TCR_ITMENA_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: ITM Enable bit Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="876" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="876" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga7dd53e3bff24ac09d94e61cb595cb2d9" prot="public" static="no">
+        <name>ITM_TCR_ITMENA_Msk</name>
+        <initializer>(1UL /*&lt;&lt; ITM_TCR_ITMENA_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM TCR: ITM Enable bit Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="877" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="877" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga04d3f842ad48f6a9127b4cecc963e1d7" prot="public" static="no">
+        <name>ITM_IWR_ATVALIDM_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM IWR: ATVALIDM Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="880" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="880" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga67b969f8f04ed15886727788f0e2ffd7" prot="public" static="no">
+        <name>ITM_IWR_ATVALIDM_Msk</name>
+        <initializer>(1UL /*&lt;&lt; ITM_IWR_ATVALIDM_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM IWR: ATVALIDM Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="881" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="881" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga259edfd1d2e877a62e06d7a240df97f4" prot="public" static="no">
+        <name>ITM_IRR_ATREADYM_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM IRR: ATREADYM Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="884" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="884" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga3dbc3e15f5bde2669cd8121a1fe419b9" prot="public" static="no">
+        <name>ITM_IRR_ATREADYM_Msk</name>
+        <initializer>(1UL /*&lt;&lt; ITM_IRR_ATREADYM_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM IRR: ATREADYM Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="885" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="885" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga08de02bf32caf48aaa29f7c68ff5d755" prot="public" static="no">
+        <name>ITM_IMCR_INTEGRATION_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM IMCR: INTEGRATION Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="888" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="888" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga8838bd3dd04c1a6be97cd946364a3fd2" prot="public" static="no">
+        <name>ITM_IMCR_INTEGRATION_Msk</name>
+        <initializer>(1UL /*&lt;&lt; ITM_IMCR_INTEGRATION_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM IMCR: INTEGRATION Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="889" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="889" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gabfae3e570edc8759597311ed6dfb478e" prot="public" static="no">
+        <name>ITM_LSR_ByteAcc_Pos</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM LSR: ByteAcc Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="892" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="892" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga91f492b2891bb8b7eac5b58de7b220f4" prot="public" static="no">
+        <name>ITM_LSR_ByteAcc_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_LSR_ByteAcc_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM LSR: ByteAcc Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="893" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="893" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1ga144a49e12b83ad9809fdd2769094fdc0" prot="public" static="no">
+        <name>ITM_LSR_Access_Pos</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM LSR: Access Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="895" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="895" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gac8ae69f11c0311da226c0c8ec40b3d37" prot="public" static="no">
+        <name>ITM_LSR_Access_Msk</name>
+        <initializer>(1UL &lt;&lt; ITM_LSR_Access_Pos)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM LSR: Access Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="896" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="896" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gaf5740689cf14564d3f3fd91299b6c88d" prot="public" static="no">
+        <name>ITM_LSR_Present_Pos</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM LSR: Present Position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="898" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="898" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_m_s_i_s___i_t_m_1gaa5bc2a7f5f1d69ff819531f5508bb017" prot="public" static="no">
+        <name>ITM_LSR_Present_Msk</name>
+        <initializer>(1UL /*&lt;&lt; ITM_LSR_Present_Pos*/)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM LSR: Present Mask </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_cm4.h" line="899" column="9" bodyfile="SDK/CMSIS/core_cm4.h" bodystart="899" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Type definitions for the Instrumentation Trace Macrocell (ITM) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

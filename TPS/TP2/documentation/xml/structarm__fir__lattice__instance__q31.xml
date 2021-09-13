@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structarm__fir__lattice__instance__q31" kind="struct" language="C++" prot="public">
+    <compoundname>arm_fir_lattice_instance_q31</compoundname>
+    <includes refid="arm__math_8h" local="no">arm_math.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarm__fir__lattice__instance__q31_1a4cceb90547b3e585d4c7aabaa8057212" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t numStages</definition>
+        <argsstring></argsstring>
+        <name>numStages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of filter stages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="3716" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="3716" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__lattice__instance__q31_1adee4ba3ee8869865af7d8fa08ca913d6" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* pState</definition>
+        <argsstring></argsstring>
+        <name>pState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the state variable array. The array is of length numStages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="3717" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="3717" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarm__fir__lattice__instance__q31_1a68888e36167d81cb7836db10367a1682" prot="public" static="no" mutable="no">
+        <type><ref refid="arm__math_8h_1adc89a3547f5324b7b3b95adec3806bc0" kindref="member">q31_t</ref> *</type>
+        <definition>q31_t* pCoeffs</definition>
+        <argsstring></argsstring>
+        <name>pCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>points to the coefficient array. The array is of length numStages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/arm_math.h" line="3718" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="3718" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instance structure for the Q31 FIR lattice filter. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/arm_math.h" line="3715" column="1" bodyfile="SDK/CMSIS/arm_math.h" bodystart="3714" bodyend="3719"/>
+    <listofallmembers>
+      <member refid="structarm__fir__lattice__instance__q31_1a4cceb90547b3e585d4c7aabaa8057212" prot="public" virt="non-virtual"><scope>arm_fir_lattice_instance_q31</scope><name>numStages</name></member>
+      <member refid="structarm__fir__lattice__instance__q31_1a68888e36167d81cb7836db10367a1682" prot="public" virt="non-virtual"><scope>arm_fir_lattice_instance_q31</scope><name>pCoeffs</name></member>
+      <member refid="structarm__fir__lattice__instance__q31_1adee4ba3ee8869865af7d8fa08ca913d6" prot="public" virt="non-virtual"><scope>arm_fir_lattice_instance_q31</scope><name>pState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

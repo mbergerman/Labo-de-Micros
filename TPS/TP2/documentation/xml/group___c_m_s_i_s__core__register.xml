@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group___c_m_s_i_s__core__register" kind="group">
+    <compoundname>CMSIS_core_register</compoundname>
+    <title>Defines and Type Definitions</title>
+    <innergroup refid="group___c_m_s_i_s___c_o_r_e">Status and Control Registers</innergroup>
+    <innergroup refid="group___c_m_s_i_s___n_v_i_c">Nested Vectored Interrupt Controller (NVIC)</innergroup>
+    <innergroup refid="group___c_m_s_i_s___s_c_b">System Control Block (SCB)</innergroup>
+    <innergroup refid="group___c_m_s_i_s___sys_tick">System Tick Timer (SysTick)</innergroup>
+    <innergroup refid="group___c_m_s_i_s___d_w_t">Data Watchpoint and Trace (DWT)</innergroup>
+    <innergroup refid="group___c_m_s_i_s___t_p_i">Trace Port Interface (TPI)</innergroup>
+    <innergroup refid="group___c_m_s_i_s___core_debug">Core Debug Registers (CoreDebug)</innergroup>
+    <innergroup refid="group___c_m_s_i_s__core__bitfield">Core register bit field macros</innergroup>
+    <innergroup refid="group___c_m_s_i_s__core__base">Core Definitions</innergroup>
+    <innergroup refid="group___c_m_s_i_s___s_cn_s_c_b">System Controls not in SCB (SCnSCB)</innergroup>
+    <innergroup refid="group___c_m_s_i_s___i_t_m">Instrumentation Trace Macrocell (ITM)</innergroup>
+    <innergroup refid="group___c_m_s_i_s___f_p_u">Floating Point Unit (FPU)</innergroup>
+    <briefdescription>
+<para>Type definitions and defines for Cortex-M processor based devices. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

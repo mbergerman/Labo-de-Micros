@@ -1,0 +1,146 @@
+\hypertarget{_number_editor_8c}{}\section{source/\+Number\+Editor.c File Reference}
+\label{_number_editor_8c}\index{source/\+Number\+Editor.\+c@{source/\+Number\+Editor.\+c}}
+{\ttfamily \#include \char`\"{}stdlib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}D\+R\+V\+\_\+\+Display.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}D\+R\+V\+\_\+\+Timers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Number\+Editor.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_number_editor_8c_afb1391527f0ddff5a12a527fb660f30a}{E\+D\+I\+T\+O\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}}~(\mbox{\hyperlink{_d_r_v___display_8h_a3f61b4197942c82065f8477a5c814f39}{D\+I\+S\+P\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}})
+\item 
+\#define \mbox{\hyperlink{_number_editor_8c_a0bee960c857e882fd50e6d491ad28b9d}{C\+H\+A\+R\+\_\+\+P\+R\+EV}}~\textquotesingle{}$<$\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_number_editor_8c_a653cb6188789d1a769c17b22027d847c}{C\+H\+A\+R\+\_\+\+N\+E\+XT}}~\textquotesingle{}$>$\textquotesingle{}
+\item 
+\#define \mbox{\hyperlink{_number_editor_8c_a3622af14a1135c5bf904606e225a35cd}{B\+L\+I\+N\+K\+\_\+\+D\+P\+\_\+\+MS}}~250
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_number_editor_8c_a19a68c3e0c0f845a5d5e16c8b06c840d}{editor\+State\+\_\+t}} \{ \mbox{\hyperlink{_number_editor_8c_a19a68c3e0c0f845a5d5e16c8b06c840dae726e880146880ccb2b9e2c6e6413132}{S\+T\+A\+T\+E\+\_\+\+E\+D\+I\+T\+O\+R\+\_\+\+S\+C\+R\+O\+LL}}, 
+\mbox{\hyperlink{_number_editor_8c_a19a68c3e0c0f845a5d5e16c8b06c840da5d23f4bdfd2b6a00985d320a66f17eaa}{S\+T\+A\+T\+E\+\_\+\+E\+D\+I\+T\+O\+R\+\_\+\+M\+O\+D\+I\+FY}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_number_editor_8c_a33b2c3d483df458b5d0f941a72b62452}{init\+\_\+number\+\_\+editor}} ()
+\item 
+void \mbox{\hyperlink{_number_editor_8c_a290913655791fd26c513167a178765e2}{start\+\_\+number\+\_\+editor}} (uint8\+\_\+t editor\+\_\+len, bool flag\+\_\+next, bool flag\+\_\+hidden)
+\begin{DoxyCompactList}\small\item\em T\+O\+DO\+: completar descripcion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_number_editor_8c_a15cc6f83faf4af586d2fece59315615d}{set\+\_\+number\+\_\+editor\+\_\+digit}} (uint8\+\_\+t n, uint8\+\_\+t digit)
+\item 
+void \mbox{\hyperlink{_number_editor_8c_a61edad920a239fa2dcb8a82caa8a03bb}{number\+\_\+editor\+\_\+right}} ()
+\item 
+void \mbox{\hyperlink{_number_editor_8c_abdd6782394104dfcd081912927d8d080}{number\+\_\+editor\+\_\+left}} ()
+\item 
+\mbox{\hyperlink{_number_editor_8h_a0c3bce4a359345dce22956aff870abe6}{editor\+Event\+\_\+t}} \mbox{\hyperlink{_number_editor_8c_a50f2e5a4bfe56cace34a4701674f903c}{number\+\_\+editor\+\_\+click}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{_number_editor_8c_abb98a80ae432a076b3fd0ed7cf75d1db}{get\+Buffer\+Number}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_number_editor_8c_a3622af14a1135c5bf904606e225a35cd}\label{_number_editor_8c_a3622af14a1135c5bf904606e225a35cd}} 
+\index{Number\+Editor.\+c@{Number\+Editor.\+c}!B\+L\+I\+N\+K\+\_\+\+D\+P\+\_\+\+MS@{B\+L\+I\+N\+K\+\_\+\+D\+P\+\_\+\+MS}}
+\index{B\+L\+I\+N\+K\+\_\+\+D\+P\+\_\+\+MS@{B\+L\+I\+N\+K\+\_\+\+D\+P\+\_\+\+MS}!Number\+Editor.\+c@{Number\+Editor.\+c}}
+\subsubsection{\texorpdfstring{B\+L\+I\+N\+K\+\_\+\+D\+P\+\_\+\+MS}{BLINK\_DP\_MS}}
+{\footnotesize\ttfamily \#define B\+L\+I\+N\+K\+\_\+\+D\+P\+\_\+\+MS~250}
+
+\mbox{\Hypertarget{_number_editor_8c_a653cb6188789d1a769c17b22027d847c}\label{_number_editor_8c_a653cb6188789d1a769c17b22027d847c}} 
+\index{Number\+Editor.\+c@{Number\+Editor.\+c}!C\+H\+A\+R\+\_\+\+N\+E\+XT@{C\+H\+A\+R\+\_\+\+N\+E\+XT}}
+\index{C\+H\+A\+R\+\_\+\+N\+E\+XT@{C\+H\+A\+R\+\_\+\+N\+E\+XT}!Number\+Editor.\+c@{Number\+Editor.\+c}}
+\subsubsection{\texorpdfstring{C\+H\+A\+R\+\_\+\+N\+E\+XT}{CHAR\_NEXT}}
+{\footnotesize\ttfamily \#define C\+H\+A\+R\+\_\+\+N\+E\+XT~\textquotesingle{}$>$\textquotesingle{}}
+
+\mbox{\Hypertarget{_number_editor_8c_a0bee960c857e882fd50e6d491ad28b9d}\label{_number_editor_8c_a0bee960c857e882fd50e6d491ad28b9d}} 
+\index{Number\+Editor.\+c@{Number\+Editor.\+c}!C\+H\+A\+R\+\_\+\+P\+R\+EV@{C\+H\+A\+R\+\_\+\+P\+R\+EV}}
+\index{C\+H\+A\+R\+\_\+\+P\+R\+EV@{C\+H\+A\+R\+\_\+\+P\+R\+EV}!Number\+Editor.\+c@{Number\+Editor.\+c}}
+\subsubsection{\texorpdfstring{C\+H\+A\+R\+\_\+\+P\+R\+EV}{CHAR\_PREV}}
+{\footnotesize\ttfamily \#define C\+H\+A\+R\+\_\+\+P\+R\+EV~\textquotesingle{}$<$\textquotesingle{}}
+
+\mbox{\Hypertarget{_number_editor_8c_afb1391527f0ddff5a12a527fb660f30a}\label{_number_editor_8c_afb1391527f0ddff5a12a527fb660f30a}} 
+\index{Number\+Editor.\+c@{Number\+Editor.\+c}!E\+D\+I\+T\+O\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN@{E\+D\+I\+T\+O\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}}
+\index{E\+D\+I\+T\+O\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN@{E\+D\+I\+T\+O\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}!Number\+Editor.\+c@{Number\+Editor.\+c}}
+\subsubsection{\texorpdfstring{E\+D\+I\+T\+O\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}{EDITOR\_BUFFER\_LEN}}
+{\footnotesize\ttfamily \#define E\+D\+I\+T\+O\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN~(\mbox{\hyperlink{_d_r_v___display_8h_a3f61b4197942c82065f8477a5c814f39}{D\+I\+S\+P\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}})}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_number_editor_8c_a19a68c3e0c0f845a5d5e16c8b06c840d}\label{_number_editor_8c_a19a68c3e0c0f845a5d5e16c8b06c840d}} 
+\index{Number\+Editor.\+c@{Number\+Editor.\+c}!editor\+State\+\_\+t@{editor\+State\+\_\+t}}
+\index{editor\+State\+\_\+t@{editor\+State\+\_\+t}!Number\+Editor.\+c@{Number\+Editor.\+c}}
+\subsubsection{\texorpdfstring{editor\+State\+\_\+t}{editorState\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_number_editor_8c_a19a68c3e0c0f845a5d5e16c8b06c840d}{editor\+State\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+\+E\+D\+I\+T\+O\+R\+\_\+\+S\+C\+R\+O\+LL@{S\+T\+A\+T\+E\+\_\+\+E\+D\+I\+T\+O\+R\+\_\+\+S\+C\+R\+O\+LL}!Number\+Editor.\+c@{Number\+Editor.\+c}}\index{Number\+Editor.\+c@{Number\+Editor.\+c}!S\+T\+A\+T\+E\+\_\+\+E\+D\+I\+T\+O\+R\+\_\+\+S\+C\+R\+O\+LL@{S\+T\+A\+T\+E\+\_\+\+E\+D\+I\+T\+O\+R\+\_\+\+S\+C\+R\+O\+LL}}}\mbox{\Hypertarget{_number_editor_8c_a19a68c3e0c0f845a5d5e16c8b06c840dae726e880146880ccb2b9e2c6e6413132}\label{_number_editor_8c_a19a68c3e0c0f845a5d5e16c8b06c840dae726e880146880ccb2b9e2c6e6413132}} 
+S\+T\+A\+T\+E\+\_\+\+E\+D\+I\+T\+O\+R\+\_\+\+S\+C\+R\+O\+LL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+\+E\+D\+I\+T\+O\+R\+\_\+\+M\+O\+D\+I\+FY@{S\+T\+A\+T\+E\+\_\+\+E\+D\+I\+T\+O\+R\+\_\+\+M\+O\+D\+I\+FY}!Number\+Editor.\+c@{Number\+Editor.\+c}}\index{Number\+Editor.\+c@{Number\+Editor.\+c}!S\+T\+A\+T\+E\+\_\+\+E\+D\+I\+T\+O\+R\+\_\+\+M\+O\+D\+I\+FY@{S\+T\+A\+T\+E\+\_\+\+E\+D\+I\+T\+O\+R\+\_\+\+M\+O\+D\+I\+FY}}}\mbox{\Hypertarget{_number_editor_8c_a19a68c3e0c0f845a5d5e16c8b06c840da5d23f4bdfd2b6a00985d320a66f17eaa}\label{_number_editor_8c_a19a68c3e0c0f845a5d5e16c8b06c840da5d23f4bdfd2b6a00985d320a66f17eaa}} 
+S\+T\+A\+T\+E\+\_\+\+E\+D\+I\+T\+O\+R\+\_\+\+M\+O\+D\+I\+FY&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_number_editor_8c_abb98a80ae432a076b3fd0ed7cf75d1db}\label{_number_editor_8c_abb98a80ae432a076b3fd0ed7cf75d1db}} 
+\index{Number\+Editor.\+c@{Number\+Editor.\+c}!get\+Buffer\+Number@{get\+Buffer\+Number}}
+\index{get\+Buffer\+Number@{get\+Buffer\+Number}!Number\+Editor.\+c@{Number\+Editor.\+c}}
+\subsubsection{\texorpdfstring{get\+Buffer\+Number()}{getBufferNumber()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Buffer\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_number_editor_8c_a33b2c3d483df458b5d0f941a72b62452}\label{_number_editor_8c_a33b2c3d483df458b5d0f941a72b62452}} 
+\index{Number\+Editor.\+c@{Number\+Editor.\+c}!init\+\_\+number\+\_\+editor@{init\+\_\+number\+\_\+editor}}
+\index{init\+\_\+number\+\_\+editor@{init\+\_\+number\+\_\+editor}!Number\+Editor.\+c@{Number\+Editor.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+number\+\_\+editor()}{init\_number\_editor()}}
+{\footnotesize\ttfamily void init\+\_\+number\+\_\+editor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_number_editor_8c_a50f2e5a4bfe56cace34a4701674f903c}\label{_number_editor_8c_a50f2e5a4bfe56cace34a4701674f903c}} 
+\index{Number\+Editor.\+c@{Number\+Editor.\+c}!number\+\_\+editor\+\_\+click@{number\+\_\+editor\+\_\+click}}
+\index{number\+\_\+editor\+\_\+click@{number\+\_\+editor\+\_\+click}!Number\+Editor.\+c@{Number\+Editor.\+c}}
+\subsubsection{\texorpdfstring{number\+\_\+editor\+\_\+click()}{number\_editor\_click()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_number_editor_8h_a0c3bce4a359345dce22956aff870abe6}{editor\+Event\+\_\+t}} number\+\_\+editor\+\_\+click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_number_editor_8c_abdd6782394104dfcd081912927d8d080}\label{_number_editor_8c_abdd6782394104dfcd081912927d8d080}} 
+\index{Number\+Editor.\+c@{Number\+Editor.\+c}!number\+\_\+editor\+\_\+left@{number\+\_\+editor\+\_\+left}}
+\index{number\+\_\+editor\+\_\+left@{number\+\_\+editor\+\_\+left}!Number\+Editor.\+c@{Number\+Editor.\+c}}
+\subsubsection{\texorpdfstring{number\+\_\+editor\+\_\+left()}{number\_editor\_left()}}
+{\footnotesize\ttfamily void number\+\_\+editor\+\_\+left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_number_editor_8c_a61edad920a239fa2dcb8a82caa8a03bb}\label{_number_editor_8c_a61edad920a239fa2dcb8a82caa8a03bb}} 
+\index{Number\+Editor.\+c@{Number\+Editor.\+c}!number\+\_\+editor\+\_\+right@{number\+\_\+editor\+\_\+right}}
+\index{number\+\_\+editor\+\_\+right@{number\+\_\+editor\+\_\+right}!Number\+Editor.\+c@{Number\+Editor.\+c}}
+\subsubsection{\texorpdfstring{number\+\_\+editor\+\_\+right()}{number\_editor\_right()}}
+{\footnotesize\ttfamily void number\+\_\+editor\+\_\+right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_number_editor_8c_a15cc6f83faf4af586d2fece59315615d}\label{_number_editor_8c_a15cc6f83faf4af586d2fece59315615d}} 
+\index{Number\+Editor.\+c@{Number\+Editor.\+c}!set\+\_\+number\+\_\+editor\+\_\+digit@{set\+\_\+number\+\_\+editor\+\_\+digit}}
+\index{set\+\_\+number\+\_\+editor\+\_\+digit@{set\+\_\+number\+\_\+editor\+\_\+digit}!Number\+Editor.\+c@{Number\+Editor.\+c}}
+\subsubsection{\texorpdfstring{set\+\_\+number\+\_\+editor\+\_\+digit()}{set\_number\_editor\_digit()}}
+{\footnotesize\ttfamily void set\+\_\+number\+\_\+editor\+\_\+digit (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{n,  }\item[{uint8\+\_\+t}]{digit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_number_editor_8c_a290913655791fd26c513167a178765e2}\label{_number_editor_8c_a290913655791fd26c513167a178765e2}} 
+\index{Number\+Editor.\+c@{Number\+Editor.\+c}!start\+\_\+number\+\_\+editor@{start\+\_\+number\+\_\+editor}}
+\index{start\+\_\+number\+\_\+editor@{start\+\_\+number\+\_\+editor}!Number\+Editor.\+c@{Number\+Editor.\+c}}
+\subsubsection{\texorpdfstring{start\+\_\+number\+\_\+editor()}{start\_number\_editor()}}
+{\footnotesize\ttfamily void start\+\_\+number\+\_\+editor (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{editor\+\_\+len,  }\item[{bool}]{flag\+\_\+next,  }\item[{bool}]{flag\+\_\+hidden }\end{DoxyParamCaption})}
+
+
+
+T\+O\+DO\+: completar descripcion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param1} & Descripcion parametro 1 \\
+\hline
+{\em param2} & Descripcion parametro 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Descripcion valor que devuelve 
+\end{DoxyReturn}

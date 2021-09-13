@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="struct_s_cn_s_c_b___type" kind="struct" language="C++" prot="public">
+    <compoundname>SCnSCB_Type</compoundname>
+    <includes refid="core__armv8mml_8h" local="no">core_armv8mml.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_cn_s_c_b___type_1affae06cd6df5e9fe9a92994052fd3bec" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RESERVED0</definition>
+        <argsstring>[1U]</argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1008" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1008" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_cn_s_c_b___type_1acf9b76331abd768af25a10b3625da4b4" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1a4cc1649793116d7c2d8afce7a4ffce43" kindref="member">__IM</ref> uint32_t</type>
+        <definition>__IM uint32_t ICTR</definition>
+        <argsstring></argsstring>
+        <name>ICTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x004 (R/ ) Interrupt Controller Type Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1009" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1009" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_cn_s_c_b___type_1afabed911b9f91f9df848999e1b5d6504" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t ACTLR</definition>
+        <argsstring></argsstring>
+        <name>ACTLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x008 (R/W) Auxiliary Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1010" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1010" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_cn_s_c_b___type_1a6236035fc90059a599910d9cb9299ff0" prot="public" static="no" mutable="no">
+        <type><ref refid="core__cm4_8h_1ab6caba5853a60a17e8e04499b52bf691" kindref="member">__IOM</ref> uint32_t</type>
+        <definition>__IOM uint32_t CPPWR</definition>
+        <argsstring></argsstring>
+        <name>CPPWR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x00C (R/W) Coprocessor Power Control Register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SDK/CMSIS/core_armv8mml.h" line="1011" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1011" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure type to access the System Control and ID Register not in the SCB. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="SDK/CMSIS/core_armv8mml.h" line="1007" column="1" bodyfile="SDK/CMSIS/core_armv8mml.h" bodystart="1006" bodyend="1012"/>
+    <listofallmembers>
+      <member refid="struct_s_cn_s_c_b___type_1afabed911b9f91f9df848999e1b5d6504" prot="public" virt="non-virtual"><scope>SCnSCB_Type</scope><name>ACTLR</name></member>
+      <member refid="struct_s_cn_s_c_b___type_1a6236035fc90059a599910d9cb9299ff0" prot="public" virt="non-virtual"><scope>SCnSCB_Type</scope><name>CPPWR</name></member>
+      <member refid="struct_s_cn_s_c_b___type_1acf9b76331abd768af25a10b3625da4b4" prot="public" virt="non-virtual"><scope>SCnSCB_Type</scope><name>ICTR</name></member>
+      <member refid="struct_s_cn_s_c_b___type_1affae06cd6df5e9fe9a92994052fd3bec" prot="public" virt="non-virtual"><scope>SCnSCB_Type</scope><name>RESERVED0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

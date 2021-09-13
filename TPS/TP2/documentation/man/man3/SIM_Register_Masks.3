@@ -1,0 +1,1913 @@
+.TH "SIM_Register_Masks" 3 "Mon Sep 13 2021" "TP2_G1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SIM_Register_Masks
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_BASE\fP   (0x40047000u)"
+.br
+.ti -1c
+.RI "#define \fBSIM\fP   ((\fBSIM_Type\fP *)\fBSIM_BASE\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_BASE_ADDRS\fP   { \fBSIM_BASE\fP }"
+.br
+.ti -1c
+.RI "#define \fBSIM_BASE_PTRS\fP   { \fBSIM\fP }"
+.br
+.in -1c
+.SS "SOPT1 - System Options Register 1"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SOPT1_RAMSIZE_MASK\fP   (0xF000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_RAMSIZE_SHIFT\fP   (12U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_RAMSIZE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1_RAMSIZE_SHIFT\fP)) & \fBSIM_SOPT1_RAMSIZE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_OSC32KSEL_MASK\fP   (0xC0000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_OSC32KSEL_SHIFT\fP   (18U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_OSC32KSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1_OSC32KSEL_SHIFT\fP)) & \fBSIM_SOPT1_OSC32KSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_USBVSTBY_MASK\fP   (0x20000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_USBVSTBY_SHIFT\fP   (29U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_USBVSTBY\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1_USBVSTBY_SHIFT\fP)) & \fBSIM_SOPT1_USBVSTBY_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_USBSSTBY_MASK\fP   (0x40000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_USBSSTBY_SHIFT\fP   (30U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_USBSSTBY\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1_USBSSTBY_SHIFT\fP)) & \fBSIM_SOPT1_USBSSTBY_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_USBREGEN_MASK\fP   (0x80000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_USBREGEN_SHIFT\fP   (31U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1_USBREGEN\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1_USBREGEN_SHIFT\fP)) & \fBSIM_SOPT1_USBREGEN_MASK\fP)"
+.br
+.in -1c
+.SS "SOPT1CFG - SOPT1 Configuration Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SOPT1CFG_URWE_MASK\fP   (0x1000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1CFG_URWE_SHIFT\fP   (24U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1CFG_URWE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1CFG_URWE_SHIFT\fP)) & \fBSIM_SOPT1CFG_URWE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1CFG_UVSWE_MASK\fP   (0x2000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1CFG_UVSWE_SHIFT\fP   (25U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1CFG_UVSWE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1CFG_UVSWE_SHIFT\fP)) & \fBSIM_SOPT1CFG_UVSWE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1CFG_USSWE_MASK\fP   (0x4000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1CFG_USSWE_SHIFT\fP   (26U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT1CFG_USSWE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1CFG_USSWE_SHIFT\fP)) & \fBSIM_SOPT1CFG_USSWE_MASK\fP)"
+.br
+.in -1c
+.SS "SOPT2 - System Options Register 2"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SOPT2_RTCCLKOUTSEL_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_RTCCLKOUTSEL_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_RTCCLKOUTSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_RTCCLKOUTSEL_SHIFT\fP)) & \fBSIM_SOPT2_RTCCLKOUTSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_CLKOUTSEL_MASK\fP   (0xE0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_CLKOUTSEL_SHIFT\fP   (5U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_CLKOUTSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_CLKOUTSEL_SHIFT\fP)) & \fBSIM_SOPT2_CLKOUTSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_FBSL_MASK\fP   (0x300U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_FBSL_SHIFT\fP   (8U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_FBSL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_FBSL_SHIFT\fP)) & \fBSIM_SOPT2_FBSL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_PTD7PAD_MASK\fP   (0x800U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_PTD7PAD_SHIFT\fP   (11U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_PTD7PAD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_PTD7PAD_SHIFT\fP)) & \fBSIM_SOPT2_PTD7PAD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_TRACECLKSEL_MASK\fP   (0x1000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_TRACECLKSEL_SHIFT\fP   (12U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_TRACECLKSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_TRACECLKSEL_SHIFT\fP)) & \fBSIM_SOPT2_TRACECLKSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_PLLFLLSEL_MASK\fP   (0x30000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_PLLFLLSEL_SHIFT\fP   (16U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_PLLFLLSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_PLLFLLSEL_SHIFT\fP)) & \fBSIM_SOPT2_PLLFLLSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_USBSRC_MASK\fP   (0x40000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_USBSRC_SHIFT\fP   (18U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_USBSRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_USBSRC_SHIFT\fP)) & \fBSIM_SOPT2_USBSRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_RMIISRC_MASK\fP   (0x80000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_RMIISRC_SHIFT\fP   (19U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_RMIISRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_RMIISRC_SHIFT\fP)) & \fBSIM_SOPT2_RMIISRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_TIMESRC_MASK\fP   (0x300000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_TIMESRC_SHIFT\fP   (20U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_TIMESRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_TIMESRC_SHIFT\fP)) & \fBSIM_SOPT2_TIMESRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_SDHCSRC_MASK\fP   (0x30000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_SDHCSRC_SHIFT\fP   (28U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT2_SDHCSRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_SDHCSRC_SHIFT\fP)) & \fBSIM_SOPT2_SDHCSRC_MASK\fP)"
+.br
+.in -1c
+.SS "SOPT4 - System Options Register 4"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0FLT0_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0FLT0_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0FLT0\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM0FLT0_SHIFT\fP)) & \fBSIM_SOPT4_FTM0FLT0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0FLT1_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0FLT1_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0FLT1\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM0FLT1_SHIFT\fP)) & \fBSIM_SOPT4_FTM0FLT1_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0FLT2_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0FLT2_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0FLT2\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM0FLT2_SHIFT\fP)) & \fBSIM_SOPT4_FTM0FLT2_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM1FLT0_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM1FLT0_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM1FLT0\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM1FLT0_SHIFT\fP)) & \fBSIM_SOPT4_FTM1FLT0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM2FLT0_MASK\fP   (0x100U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM2FLT0_SHIFT\fP   (8U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM2FLT0\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM2FLT0_SHIFT\fP)) & \fBSIM_SOPT4_FTM2FLT0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM3FLT0_MASK\fP   (0x1000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM3FLT0_SHIFT\fP   (12U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM3FLT0\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM3FLT0_SHIFT\fP)) & \fBSIM_SOPT4_FTM3FLT0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM1CH0SRC_MASK\fP   (0xC0000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM1CH0SRC_SHIFT\fP   (18U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM1CH0SRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM1CH0SRC_SHIFT\fP)) & \fBSIM_SOPT4_FTM1CH0SRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM2CH0SRC_MASK\fP   (0x300000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM2CH0SRC_SHIFT\fP   (20U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM2CH0SRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM2CH0SRC_SHIFT\fP)) & \fBSIM_SOPT4_FTM2CH0SRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0CLKSEL_MASK\fP   (0x1000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0CLKSEL_SHIFT\fP   (24U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0CLKSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM0CLKSEL_SHIFT\fP)) & \fBSIM_SOPT4_FTM0CLKSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM1CLKSEL_MASK\fP   (0x2000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM1CLKSEL_SHIFT\fP   (25U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM1CLKSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM1CLKSEL_SHIFT\fP)) & \fBSIM_SOPT4_FTM1CLKSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM2CLKSEL_MASK\fP   (0x4000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM2CLKSEL_SHIFT\fP   (26U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM2CLKSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM2CLKSEL_SHIFT\fP)) & \fBSIM_SOPT4_FTM2CLKSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM3CLKSEL_MASK\fP   (0x8000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM3CLKSEL_SHIFT\fP   (27U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM3CLKSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM3CLKSEL_SHIFT\fP)) & \fBSIM_SOPT4_FTM3CLKSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0TRG0SRC_MASK\fP   (0x10000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0TRG0SRC_SHIFT\fP   (28U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0TRG0SRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM0TRG0SRC_SHIFT\fP)) & \fBSIM_SOPT4_FTM0TRG0SRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0TRG1SRC_MASK\fP   (0x20000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0TRG1SRC_SHIFT\fP   (29U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM0TRG1SRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM0TRG1SRC_SHIFT\fP)) & \fBSIM_SOPT4_FTM0TRG1SRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM3TRG0SRC_MASK\fP   (0x40000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM3TRG0SRC_SHIFT\fP   (30U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM3TRG0SRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM3TRG0SRC_SHIFT\fP)) & \fBSIM_SOPT4_FTM3TRG0SRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM3TRG1SRC_MASK\fP   (0x80000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM3TRG1SRC_SHIFT\fP   (31U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT4_FTM3TRG1SRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM3TRG1SRC_SHIFT\fP)) & \fBSIM_SOPT4_FTM3TRG1SRC_MASK\fP)"
+.br
+.in -1c
+.SS "SOPT5 - System Options Register 5"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SOPT5_UART0TXSRC_MASK\fP   (0x3U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT5_UART0TXSRC_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT5_UART0TXSRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT5_UART0TXSRC_SHIFT\fP)) & \fBSIM_SOPT5_UART0TXSRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT5_UART0RXSRC_MASK\fP   (0xCU)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT5_UART0RXSRC_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT5_UART0RXSRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT5_UART0RXSRC_SHIFT\fP)) & \fBSIM_SOPT5_UART0RXSRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT5_UART1TXSRC_MASK\fP   (0x30U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT5_UART1TXSRC_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT5_UART1TXSRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT5_UART1TXSRC_SHIFT\fP)) & \fBSIM_SOPT5_UART1TXSRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT5_UART1RXSRC_MASK\fP   (0xC0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT5_UART1RXSRC_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT5_UART1RXSRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT5_UART1RXSRC_SHIFT\fP)) & \fBSIM_SOPT5_UART1RXSRC_MASK\fP)"
+.br
+.in -1c
+.SS "SOPT7 - System Options Register 7"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC0TRGSEL_MASK\fP   (0xFU)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC0TRGSEL_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC0TRGSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT7_ADC0TRGSEL_SHIFT\fP)) & \fBSIM_SOPT7_ADC0TRGSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC0PRETRGSEL_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC0PRETRGSEL_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC0PRETRGSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT7_ADC0PRETRGSEL_SHIFT\fP)) & \fBSIM_SOPT7_ADC0PRETRGSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC0ALTTRGEN_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC0ALTTRGEN_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC0ALTTRGEN\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT7_ADC0ALTTRGEN_SHIFT\fP)) & \fBSIM_SOPT7_ADC0ALTTRGEN_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC1TRGSEL_MASK\fP   (0xF00U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC1TRGSEL_SHIFT\fP   (8U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC1TRGSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT7_ADC1TRGSEL_SHIFT\fP)) & \fBSIM_SOPT7_ADC1TRGSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC1PRETRGSEL_MASK\fP   (0x1000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC1PRETRGSEL_SHIFT\fP   (12U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC1PRETRGSEL\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT7_ADC1PRETRGSEL_SHIFT\fP)) & \fBSIM_SOPT7_ADC1PRETRGSEL_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC1ALTTRGEN_MASK\fP   (0x8000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC1ALTTRGEN_SHIFT\fP   (15U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SOPT7_ADC1ALTTRGEN\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT7_ADC1ALTTRGEN_SHIFT\fP)) & \fBSIM_SOPT7_ADC1ALTTRGEN_MASK\fP)"
+.br
+.in -1c
+.SS "SDID - System Device Identification Register"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SDID_PINID_MASK\fP   (0xFU)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_PINID_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_PINID\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_PINID_SHIFT\fP)) & \fBSIM_SDID_PINID_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_FAMID_MASK\fP   (0x70U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_FAMID_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_FAMID\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_FAMID_SHIFT\fP)) & \fBSIM_SDID_FAMID_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_DIEID_MASK\fP   (0xF80U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_DIEID_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_DIEID\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_DIEID_SHIFT\fP)) & \fBSIM_SDID_DIEID_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_REVID_MASK\fP   (0xF000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_REVID_SHIFT\fP   (12U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_REVID\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_REVID_SHIFT\fP)) & \fBSIM_SDID_REVID_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_SERIESID_MASK\fP   (0xF00000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_SERIESID_SHIFT\fP   (20U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_SERIESID\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_SERIESID_SHIFT\fP)) & \fBSIM_SDID_SERIESID_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_SUBFAMID_MASK\fP   (0xF000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_SUBFAMID_SHIFT\fP   (24U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_SUBFAMID\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_SUBFAMID_SHIFT\fP)) & \fBSIM_SDID_SUBFAMID_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_FAMILYID_MASK\fP   (0xF0000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_FAMILYID_SHIFT\fP   (28U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SDID_FAMILYID\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_FAMILYID_SHIFT\fP)) & \fBSIM_SDID_FAMILYID_MASK\fP)"
+.br
+.in -1c
+.SS "SCGC1 - System Clock Gating Control Register 1"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SCGC1_I2C2_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC1_I2C2_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC1_I2C2\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC1_I2C2_SHIFT\fP)) & \fBSIM_SCGC1_I2C2_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC1_UART4_MASK\fP   (0x400U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC1_UART4_SHIFT\fP   (10U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC1_UART4\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC1_UART4_SHIFT\fP)) & \fBSIM_SCGC1_UART4_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC1_UART5_MASK\fP   (0x800U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC1_UART5_SHIFT\fP   (11U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC1_UART5\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC1_UART5_SHIFT\fP)) & \fBSIM_SCGC1_UART5_MASK\fP)"
+.br
+.in -1c
+.SS "SCGC2 - System Clock Gating Control Register 2"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SCGC2_ENET_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC2_ENET_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC2_ENET\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC2_ENET_SHIFT\fP)) & \fBSIM_SCGC2_ENET_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC2_DAC0_MASK\fP   (0x1000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC2_DAC0_SHIFT\fP   (12U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC2_DAC0\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC2_DAC0_SHIFT\fP)) & \fBSIM_SCGC2_DAC0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC2_DAC1_MASK\fP   (0x2000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC2_DAC1_SHIFT\fP   (13U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC2_DAC1\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC2_DAC1_SHIFT\fP)) & \fBSIM_SCGC2_DAC1_MASK\fP)"
+.br
+.in -1c
+.SS "SCGC3 - System Clock Gating Control Register 3"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SCGC3_RNGA_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_RNGA_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_RNGA\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC3_RNGA_SHIFT\fP)) & \fBSIM_SCGC3_RNGA_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_SPI2_MASK\fP   (0x1000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_SPI2_SHIFT\fP   (12U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_SPI2\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC3_SPI2_SHIFT\fP)) & \fBSIM_SCGC3_SPI2_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_SDHC_MASK\fP   (0x20000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_SDHC_SHIFT\fP   (17U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_SDHC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC3_SDHC_SHIFT\fP)) & \fBSIM_SCGC3_SDHC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_FTM2_MASK\fP   (0x1000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_FTM2_SHIFT\fP   (24U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_FTM2\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC3_FTM2_SHIFT\fP)) & \fBSIM_SCGC3_FTM2_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_FTM3_MASK\fP   (0x2000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_FTM3_SHIFT\fP   (25U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_FTM3\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC3_FTM3_SHIFT\fP)) & \fBSIM_SCGC3_FTM3_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_ADC1_MASK\fP   (0x8000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_ADC1_SHIFT\fP   (27U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC3_ADC1\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC3_ADC1_SHIFT\fP)) & \fBSIM_SCGC3_ADC1_MASK\fP)"
+.br
+.in -1c
+.SS "SCGC4 - System Clock Gating Control Register 4"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SCGC4_EWM_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_EWM_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_EWM\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_EWM_SHIFT\fP)) & \fBSIM_SCGC4_EWM_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_CMT_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_CMT_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_CMT\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_CMT_SHIFT\fP)) & \fBSIM_SCGC4_CMT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_I2C0_MASK\fP   (0x40U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_I2C0_SHIFT\fP   (6U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_I2C0\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_I2C0_SHIFT\fP)) & \fBSIM_SCGC4_I2C0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_I2C1_MASK\fP   (0x80U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_I2C1_SHIFT\fP   (7U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_I2C1\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_I2C1_SHIFT\fP)) & \fBSIM_SCGC4_I2C1_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_UART0_MASK\fP   (0x400U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_UART0_SHIFT\fP   (10U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_UART0\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_UART0_SHIFT\fP)) & \fBSIM_SCGC4_UART0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_UART1_MASK\fP   (0x800U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_UART1_SHIFT\fP   (11U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_UART1\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_UART1_SHIFT\fP)) & \fBSIM_SCGC4_UART1_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_UART2_MASK\fP   (0x1000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_UART2_SHIFT\fP   (12U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_UART2\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_UART2_SHIFT\fP)) & \fBSIM_SCGC4_UART2_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_UART3_MASK\fP   (0x2000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_UART3_SHIFT\fP   (13U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_UART3\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_UART3_SHIFT\fP)) & \fBSIM_SCGC4_UART3_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_USBOTG_MASK\fP   (0x40000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_USBOTG_SHIFT\fP   (18U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_USBOTG\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_USBOTG_SHIFT\fP)) & \fBSIM_SCGC4_USBOTG_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_CMP_MASK\fP   (0x80000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_CMP_SHIFT\fP   (19U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_CMP\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_CMP_SHIFT\fP)) & \fBSIM_SCGC4_CMP_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_VREF_MASK\fP   (0x100000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_VREF_SHIFT\fP   (20U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC4_VREF\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_VREF_SHIFT\fP)) & \fBSIM_SCGC4_VREF_MASK\fP)"
+.br
+.in -1c
+.SS "SCGC5 - System Clock Gating Control Register 5"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SCGC5_LPTMR_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_LPTMR_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_LPTMR\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC5_LPTMR_SHIFT\fP)) & \fBSIM_SCGC5_LPTMR_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTA_MASK\fP   (0x200U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTA_SHIFT\fP   (9U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTA\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC5_PORTA_SHIFT\fP)) & \fBSIM_SCGC5_PORTA_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTB_MASK\fP   (0x400U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTB_SHIFT\fP   (10U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTB\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC5_PORTB_SHIFT\fP)) & \fBSIM_SCGC5_PORTB_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTC_MASK\fP   (0x800U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTC_SHIFT\fP   (11U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC5_PORTC_SHIFT\fP)) & \fBSIM_SCGC5_PORTC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTD_MASK\fP   (0x1000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTD_SHIFT\fP   (12U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC5_PORTD_SHIFT\fP)) & \fBSIM_SCGC5_PORTD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTE_MASK\fP   (0x2000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTE_SHIFT\fP   (13U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC5_PORTE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC5_PORTE_SHIFT\fP)) & \fBSIM_SCGC5_PORTE_MASK\fP)"
+.br
+.in -1c
+.SS "SCGC6 - System Clock Gating Control Register 6"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FTF_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FTF_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FTF\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_FTF_SHIFT\fP)) & \fBSIM_SCGC6_FTF_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_DMAMUX_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_DMAMUX_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_DMAMUX\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_DMAMUX_SHIFT\fP)) & \fBSIM_SCGC6_DMAMUX_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FLEXCAN0_MASK\fP   (0x10U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FLEXCAN0_SHIFT\fP   (4U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FLEXCAN0\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_FLEXCAN0_SHIFT\fP)) & \fBSIM_SCGC6_FLEXCAN0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_RNGA_MASK\fP   (0x200U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_RNGA_SHIFT\fP   (9U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_RNGA\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_RNGA_SHIFT\fP)) & \fBSIM_SCGC6_RNGA_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_SPI0_MASK\fP   (0x1000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_SPI0_SHIFT\fP   (12U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_SPI0\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_SPI0_SHIFT\fP)) & \fBSIM_SCGC6_SPI0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_SPI1_MASK\fP   (0x2000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_SPI1_SHIFT\fP   (13U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_SPI1\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_SPI1_SHIFT\fP)) & \fBSIM_SCGC6_SPI1_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_I2S_MASK\fP   (0x8000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_I2S_SHIFT\fP   (15U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_I2S\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_I2S_SHIFT\fP)) & \fBSIM_SCGC6_I2S_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_CRC_MASK\fP   (0x40000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_CRC_SHIFT\fP   (18U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_CRC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_CRC_SHIFT\fP)) & \fBSIM_SCGC6_CRC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_USBDCD_MASK\fP   (0x200000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_USBDCD_SHIFT\fP   (21U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_USBDCD\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_USBDCD_SHIFT\fP)) & \fBSIM_SCGC6_USBDCD_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_PDB_MASK\fP   (0x400000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_PDB_SHIFT\fP   (22U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_PDB\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_PDB_SHIFT\fP)) & \fBSIM_SCGC6_PDB_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_PIT_MASK\fP   (0x800000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_PIT_SHIFT\fP   (23U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_PIT\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_PIT_SHIFT\fP)) & \fBSIM_SCGC6_PIT_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FTM0_MASK\fP   (0x1000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FTM0_SHIFT\fP   (24U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FTM0\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_FTM0_SHIFT\fP)) & \fBSIM_SCGC6_FTM0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FTM1_MASK\fP   (0x2000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FTM1_SHIFT\fP   (25U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FTM1\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_FTM1_SHIFT\fP)) & \fBSIM_SCGC6_FTM1_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FTM2_MASK\fP   (0x4000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FTM2_SHIFT\fP   (26U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_FTM2\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_FTM2_SHIFT\fP)) & \fBSIM_SCGC6_FTM2_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_ADC0_MASK\fP   (0x8000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_ADC0_SHIFT\fP   (27U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_ADC0\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_ADC0_SHIFT\fP)) & \fBSIM_SCGC6_ADC0_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_RTC_MASK\fP   (0x20000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_RTC_SHIFT\fP   (29U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_RTC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_RTC_SHIFT\fP)) & \fBSIM_SCGC6_RTC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_DAC0_MASK\fP   (0x80000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_DAC0_SHIFT\fP   (31U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC6_DAC0\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_DAC0_SHIFT\fP)) & \fBSIM_SCGC6_DAC0_MASK\fP)"
+.br
+.in -1c
+.SS "SCGC7 - System Clock Gating Control Register 7"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_SCGC7_FLEXBUS_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC7_FLEXBUS_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC7_FLEXBUS\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC7_FLEXBUS_SHIFT\fP)) & \fBSIM_SCGC7_FLEXBUS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC7_DMA_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC7_DMA_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC7_DMA\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC7_DMA_SHIFT\fP)) & \fBSIM_SCGC7_DMA_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC7_MPU_MASK\fP   (0x4U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC7_MPU_SHIFT\fP   (2U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_SCGC7_MPU\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC7_MPU_SHIFT\fP)) & \fBSIM_SCGC7_MPU_MASK\fP)"
+.br
+.in -1c
+.SS "CLKDIV1 - System Clock Divider Register 1"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_CLKDIV1_OUTDIV4_MASK\fP   (0xF0000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV1_OUTDIV4_SHIFT\fP   (16U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV1_OUTDIV4\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_CLKDIV1_OUTDIV4_SHIFT\fP)) & \fBSIM_CLKDIV1_OUTDIV4_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV1_OUTDIV3_MASK\fP   (0xF00000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV1_OUTDIV3_SHIFT\fP   (20U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV1_OUTDIV3\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_CLKDIV1_OUTDIV3_SHIFT\fP)) & \fBSIM_CLKDIV1_OUTDIV3_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV1_OUTDIV2_MASK\fP   (0xF000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV1_OUTDIV2_SHIFT\fP   (24U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV1_OUTDIV2\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_CLKDIV1_OUTDIV2_SHIFT\fP)) & \fBSIM_CLKDIV1_OUTDIV2_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV1_OUTDIV1_MASK\fP   (0xF0000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV1_OUTDIV1_SHIFT\fP   (28U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV1_OUTDIV1\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_CLKDIV1_OUTDIV1_SHIFT\fP)) & \fBSIM_CLKDIV1_OUTDIV1_MASK\fP)"
+.br
+.in -1c
+.SS "CLKDIV2 - System Clock Divider Register 2"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_CLKDIV2_USBFRAC_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV2_USBFRAC_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV2_USBFRAC\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_CLKDIV2_USBFRAC_SHIFT\fP)) & \fBSIM_CLKDIV2_USBFRAC_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV2_USBDIV_MASK\fP   (0xEU)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV2_USBDIV_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_CLKDIV2_USBDIV\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_CLKDIV2_USBDIV_SHIFT\fP)) & \fBSIM_CLKDIV2_USBDIV_MASK\fP)"
+.br
+.in -1c
+.SS "FCFG1 - Flash Configuration Register 1"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_FCFG1_FLASHDIS_MASK\fP   (0x1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_FLASHDIS_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_FLASHDIS\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG1_FLASHDIS_SHIFT\fP)) & \fBSIM_FCFG1_FLASHDIS_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_FLASHDOZE_MASK\fP   (0x2U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_FLASHDOZE_SHIFT\fP   (1U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_FLASHDOZE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG1_FLASHDOZE_SHIFT\fP)) & \fBSIM_FCFG1_FLASHDOZE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_DEPART_MASK\fP   (0xF00U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_DEPART_SHIFT\fP   (8U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_DEPART\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG1_DEPART_SHIFT\fP)) & \fBSIM_FCFG1_DEPART_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_EESIZE_MASK\fP   (0xF0000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_EESIZE_SHIFT\fP   (16U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_EESIZE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG1_EESIZE_SHIFT\fP)) & \fBSIM_FCFG1_EESIZE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_PFSIZE_MASK\fP   (0xF000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_PFSIZE_SHIFT\fP   (24U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_PFSIZE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG1_PFSIZE_SHIFT\fP)) & \fBSIM_FCFG1_PFSIZE_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_NVMSIZE_MASK\fP   (0xF0000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_NVMSIZE_SHIFT\fP   (28U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG1_NVMSIZE\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG1_NVMSIZE_SHIFT\fP)) & \fBSIM_FCFG1_NVMSIZE_MASK\fP)"
+.br
+.in -1c
+.SS "FCFG2 - Flash Configuration Register 2"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_FCFG2_MAXADDR1_MASK\fP   (0x7F0000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG2_MAXADDR1_SHIFT\fP   (16U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG2_MAXADDR1\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG2_MAXADDR1_SHIFT\fP)) & \fBSIM_FCFG2_MAXADDR1_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG2_PFLSH_MASK\fP   (0x800000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG2_PFLSH_SHIFT\fP   (23U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG2_PFLSH\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG2_PFLSH_SHIFT\fP)) & \fBSIM_FCFG2_PFLSH_MASK\fP)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG2_MAXADDR0_MASK\fP   (0x7F000000U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG2_MAXADDR0_SHIFT\fP   (24U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_FCFG2_MAXADDR0\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG2_MAXADDR0_SHIFT\fP)) & \fBSIM_FCFG2_MAXADDR0_MASK\fP)"
+.br
+.in -1c
+.SS "UIDH - Unique Identification Register High"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_UIDH_UID_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBSIM_UIDH_UID_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_UIDH_UID\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_UIDH_UID_SHIFT\fP)) & \fBSIM_UIDH_UID_MASK\fP)"
+.br
+.in -1c
+.SS "UIDMH - Unique Identification Register Mid-High"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_UIDMH_UID_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBSIM_UIDMH_UID_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_UIDMH_UID\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_UIDMH_UID_SHIFT\fP)) & \fBSIM_UIDMH_UID_MASK\fP)"
+.br
+.in -1c
+.SS "UIDML - Unique Identification Register Mid Low"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_UIDML_UID_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBSIM_UIDML_UID_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_UIDML_UID\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_UIDML_UID_SHIFT\fP)) & \fBSIM_UIDML_UID_MASK\fP)"
+.br
+.in -1c
+.SS "UIDL - Unique Identification Register Low"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSIM_UIDL_UID_MASK\fP   (0xFFFFFFFFU)"
+.br
+.ti -1c
+.RI "#define \fBSIM_UIDL_UID_SHIFT\fP   (0U)"
+.br
+.ti -1c
+.RI "#define \fBSIM_UIDL_UID\fP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_UIDL_UID_SHIFT\fP)) & \fBSIM_UIDL_UID_MASK\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define SIM   ((\fBSIM_Type\fP *)\fBSIM_BASE\fP)"
+Peripheral SIM base pointer 
+.SS "#define SIM_BASE   (0x40047000u)"
+Peripheral SIM base address 
+.SS "#define SIM_BASE_ADDRS   { \fBSIM_BASE\fP }"
+Array initializer of SIM peripheral base addresses 
+.SS "#define SIM_BASE_PTRS   { \fBSIM\fP }"
+Array initializer of SIM peripheral base pointers 
+.SS "#define SIM_CLKDIV1_OUTDIV1(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_CLKDIV1_OUTDIV1_SHIFT\fP)) & \fBSIM_CLKDIV1_OUTDIV1_MASK\fP)"
+
+.SS "#define SIM_CLKDIV1_OUTDIV1_MASK   (0xF0000000U)"
+
+.SS "#define SIM_CLKDIV1_OUTDIV1_SHIFT   (28U)"
+
+.SS "#define SIM_CLKDIV1_OUTDIV2(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_CLKDIV1_OUTDIV2_SHIFT\fP)) & \fBSIM_CLKDIV1_OUTDIV2_MASK\fP)"
+
+.SS "#define SIM_CLKDIV1_OUTDIV2_MASK   (0xF000000U)"
+
+.SS "#define SIM_CLKDIV1_OUTDIV2_SHIFT   (24U)"
+
+.SS "#define SIM_CLKDIV1_OUTDIV3(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_CLKDIV1_OUTDIV3_SHIFT\fP)) & \fBSIM_CLKDIV1_OUTDIV3_MASK\fP)"
+
+.SS "#define SIM_CLKDIV1_OUTDIV3_MASK   (0xF00000U)"
+
+.SS "#define SIM_CLKDIV1_OUTDIV3_SHIFT   (20U)"
+
+.SS "#define SIM_CLKDIV1_OUTDIV4(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_CLKDIV1_OUTDIV4_SHIFT\fP)) & \fBSIM_CLKDIV1_OUTDIV4_MASK\fP)"
+
+.SS "#define SIM_CLKDIV1_OUTDIV4_MASK   (0xF0000U)"
+
+.SS "#define SIM_CLKDIV1_OUTDIV4_SHIFT   (16U)"
+
+.SS "#define SIM_CLKDIV2_USBDIV(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_CLKDIV2_USBDIV_SHIFT\fP)) & \fBSIM_CLKDIV2_USBDIV_MASK\fP)"
+
+.SS "#define SIM_CLKDIV2_USBDIV_MASK   (0xEU)"
+
+.SS "#define SIM_CLKDIV2_USBDIV_SHIFT   (1U)"
+
+.SS "#define SIM_CLKDIV2_USBFRAC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_CLKDIV2_USBFRAC_SHIFT\fP)) & \fBSIM_CLKDIV2_USBFRAC_MASK\fP)"
+
+.SS "#define SIM_CLKDIV2_USBFRAC_MASK   (0x1U)"
+
+.SS "#define SIM_CLKDIV2_USBFRAC_SHIFT   (0U)"
+
+.SS "#define SIM_FCFG1_DEPART(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG1_DEPART_SHIFT\fP)) & \fBSIM_FCFG1_DEPART_MASK\fP)"
+
+.SS "#define SIM_FCFG1_DEPART_MASK   (0xF00U)"
+
+.SS "#define SIM_FCFG1_DEPART_SHIFT   (8U)"
+
+.SS "#define SIM_FCFG1_EESIZE(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG1_EESIZE_SHIFT\fP)) & \fBSIM_FCFG1_EESIZE_MASK\fP)"
+
+.SS "#define SIM_FCFG1_EESIZE_MASK   (0xF0000U)"
+
+.SS "#define SIM_FCFG1_EESIZE_SHIFT   (16U)"
+
+.SS "#define SIM_FCFG1_FLASHDIS(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG1_FLASHDIS_SHIFT\fP)) & \fBSIM_FCFG1_FLASHDIS_MASK\fP)"
+
+.SS "#define SIM_FCFG1_FLASHDIS_MASK   (0x1U)"
+
+.SS "#define SIM_FCFG1_FLASHDIS_SHIFT   (0U)"
+
+.SS "#define SIM_FCFG1_FLASHDOZE(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG1_FLASHDOZE_SHIFT\fP)) & \fBSIM_FCFG1_FLASHDOZE_MASK\fP)"
+
+.SS "#define SIM_FCFG1_FLASHDOZE_MASK   (0x2U)"
+
+.SS "#define SIM_FCFG1_FLASHDOZE_SHIFT   (1U)"
+
+.SS "#define SIM_FCFG1_NVMSIZE(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG1_NVMSIZE_SHIFT\fP)) & \fBSIM_FCFG1_NVMSIZE_MASK\fP)"
+
+.SS "#define SIM_FCFG1_NVMSIZE_MASK   (0xF0000000U)"
+
+.SS "#define SIM_FCFG1_NVMSIZE_SHIFT   (28U)"
+
+.SS "#define SIM_FCFG1_PFSIZE(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG1_PFSIZE_SHIFT\fP)) & \fBSIM_FCFG1_PFSIZE_MASK\fP)"
+
+.SS "#define SIM_FCFG1_PFSIZE_MASK   (0xF000000U)"
+
+.SS "#define SIM_FCFG1_PFSIZE_SHIFT   (24U)"
+
+.SS "#define SIM_FCFG2_MAXADDR0(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG2_MAXADDR0_SHIFT\fP)) & \fBSIM_FCFG2_MAXADDR0_MASK\fP)"
+
+.SS "#define SIM_FCFG2_MAXADDR0_MASK   (0x7F000000U)"
+
+.SS "#define SIM_FCFG2_MAXADDR0_SHIFT   (24U)"
+
+.SS "#define SIM_FCFG2_MAXADDR1(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG2_MAXADDR1_SHIFT\fP)) & \fBSIM_FCFG2_MAXADDR1_MASK\fP)"
+
+.SS "#define SIM_FCFG2_MAXADDR1_MASK   (0x7F0000U)"
+
+.SS "#define SIM_FCFG2_MAXADDR1_SHIFT   (16U)"
+
+.SS "#define SIM_FCFG2_PFLSH(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_FCFG2_PFLSH_SHIFT\fP)) & \fBSIM_FCFG2_PFLSH_MASK\fP)"
+
+.SS "#define SIM_FCFG2_PFLSH_MASK   (0x800000U)"
+
+.SS "#define SIM_FCFG2_PFLSH_SHIFT   (23U)"
+
+.SS "#define SIM_SCGC1_I2C2(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC1_I2C2_SHIFT\fP)) & \fBSIM_SCGC1_I2C2_MASK\fP)"
+
+.SS "#define SIM_SCGC1_I2C2_MASK   (0x40U)"
+
+.SS "#define SIM_SCGC1_I2C2_SHIFT   (6U)"
+
+.SS "#define SIM_SCGC1_UART4(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC1_UART4_SHIFT\fP)) & \fBSIM_SCGC1_UART4_MASK\fP)"
+
+.SS "#define SIM_SCGC1_UART4_MASK   (0x400U)"
+
+.SS "#define SIM_SCGC1_UART4_SHIFT   (10U)"
+
+.SS "#define SIM_SCGC1_UART5(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC1_UART5_SHIFT\fP)) & \fBSIM_SCGC1_UART5_MASK\fP)"
+
+.SS "#define SIM_SCGC1_UART5_MASK   (0x800U)"
+
+.SS "#define SIM_SCGC1_UART5_SHIFT   (11U)"
+
+.SS "#define SIM_SCGC2_DAC0(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC2_DAC0_SHIFT\fP)) & \fBSIM_SCGC2_DAC0_MASK\fP)"
+
+.SS "#define SIM_SCGC2_DAC0_MASK   (0x1000U)"
+
+.SS "#define SIM_SCGC2_DAC0_SHIFT   (12U)"
+
+.SS "#define SIM_SCGC2_DAC1(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC2_DAC1_SHIFT\fP)) & \fBSIM_SCGC2_DAC1_MASK\fP)"
+
+.SS "#define SIM_SCGC2_DAC1_MASK   (0x2000U)"
+
+.SS "#define SIM_SCGC2_DAC1_SHIFT   (13U)"
+
+.SS "#define SIM_SCGC2_ENET(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC2_ENET_SHIFT\fP)) & \fBSIM_SCGC2_ENET_MASK\fP)"
+
+.SS "#define SIM_SCGC2_ENET_MASK   (0x1U)"
+
+.SS "#define SIM_SCGC2_ENET_SHIFT   (0U)"
+
+.SS "#define SIM_SCGC3_ADC1(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC3_ADC1_SHIFT\fP)) & \fBSIM_SCGC3_ADC1_MASK\fP)"
+
+.SS "#define SIM_SCGC3_ADC1_MASK   (0x8000000U)"
+
+.SS "#define SIM_SCGC3_ADC1_SHIFT   (27U)"
+
+.SS "#define SIM_SCGC3_FTM2(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC3_FTM2_SHIFT\fP)) & \fBSIM_SCGC3_FTM2_MASK\fP)"
+
+.SS "#define SIM_SCGC3_FTM2_MASK   (0x1000000U)"
+
+.SS "#define SIM_SCGC3_FTM2_SHIFT   (24U)"
+
+.SS "#define SIM_SCGC3_FTM3(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC3_FTM3_SHIFT\fP)) & \fBSIM_SCGC3_FTM3_MASK\fP)"
+
+.SS "#define SIM_SCGC3_FTM3_MASK   (0x2000000U)"
+
+.SS "#define SIM_SCGC3_FTM3_SHIFT   (25U)"
+
+.SS "#define SIM_SCGC3_RNGA(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC3_RNGA_SHIFT\fP)) & \fBSIM_SCGC3_RNGA_MASK\fP)"
+
+.SS "#define SIM_SCGC3_RNGA_MASK   (0x1U)"
+
+.SS "#define SIM_SCGC3_RNGA_SHIFT   (0U)"
+
+.SS "#define SIM_SCGC3_SDHC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC3_SDHC_SHIFT\fP)) & \fBSIM_SCGC3_SDHC_MASK\fP)"
+
+.SS "#define SIM_SCGC3_SDHC_MASK   (0x20000U)"
+
+.SS "#define SIM_SCGC3_SDHC_SHIFT   (17U)"
+
+.SS "#define SIM_SCGC3_SPI2(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC3_SPI2_SHIFT\fP)) & \fBSIM_SCGC3_SPI2_MASK\fP)"
+
+.SS "#define SIM_SCGC3_SPI2_MASK   (0x1000U)"
+
+.SS "#define SIM_SCGC3_SPI2_SHIFT   (12U)"
+
+.SS "#define SIM_SCGC4_CMP(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_CMP_SHIFT\fP)) & \fBSIM_SCGC4_CMP_MASK\fP)"
+
+.SS "#define SIM_SCGC4_CMP_MASK   (0x80000U)"
+
+.SS "#define SIM_SCGC4_CMP_SHIFT   (19U)"
+
+.SS "#define SIM_SCGC4_CMT(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_CMT_SHIFT\fP)) & \fBSIM_SCGC4_CMT_MASK\fP)"
+
+.SS "#define SIM_SCGC4_CMT_MASK   (0x4U)"
+
+.SS "#define SIM_SCGC4_CMT_SHIFT   (2U)"
+
+.SS "#define SIM_SCGC4_EWM(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_EWM_SHIFT\fP)) & \fBSIM_SCGC4_EWM_MASK\fP)"
+
+.SS "#define SIM_SCGC4_EWM_MASK   (0x2U)"
+
+.SS "#define SIM_SCGC4_EWM_SHIFT   (1U)"
+
+.SS "#define SIM_SCGC4_I2C0(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_I2C0_SHIFT\fP)) & \fBSIM_SCGC4_I2C0_MASK\fP)"
+
+.SS "#define SIM_SCGC4_I2C0_MASK   (0x40U)"
+
+.SS "#define SIM_SCGC4_I2C0_SHIFT   (6U)"
+
+.SS "#define SIM_SCGC4_I2C1(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_I2C1_SHIFT\fP)) & \fBSIM_SCGC4_I2C1_MASK\fP)"
+
+.SS "#define SIM_SCGC4_I2C1_MASK   (0x80U)"
+
+.SS "#define SIM_SCGC4_I2C1_SHIFT   (7U)"
+
+.SS "#define SIM_SCGC4_UART0(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_UART0_SHIFT\fP)) & \fBSIM_SCGC4_UART0_MASK\fP)"
+
+.SS "#define SIM_SCGC4_UART0_MASK   (0x400U)"
+
+.SS "#define SIM_SCGC4_UART0_SHIFT   (10U)"
+
+.SS "#define SIM_SCGC4_UART1(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_UART1_SHIFT\fP)) & \fBSIM_SCGC4_UART1_MASK\fP)"
+
+.SS "#define SIM_SCGC4_UART1_MASK   (0x800U)"
+
+.SS "#define SIM_SCGC4_UART1_SHIFT   (11U)"
+
+.SS "#define SIM_SCGC4_UART2(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_UART2_SHIFT\fP)) & \fBSIM_SCGC4_UART2_MASK\fP)"
+
+.SS "#define SIM_SCGC4_UART2_MASK   (0x1000U)"
+
+.SS "#define SIM_SCGC4_UART2_SHIFT   (12U)"
+
+.SS "#define SIM_SCGC4_UART3(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_UART3_SHIFT\fP)) & \fBSIM_SCGC4_UART3_MASK\fP)"
+
+.SS "#define SIM_SCGC4_UART3_MASK   (0x2000U)"
+
+.SS "#define SIM_SCGC4_UART3_SHIFT   (13U)"
+
+.SS "#define SIM_SCGC4_USBOTG(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_USBOTG_SHIFT\fP)) & \fBSIM_SCGC4_USBOTG_MASK\fP)"
+
+.SS "#define SIM_SCGC4_USBOTG_MASK   (0x40000U)"
+
+.SS "#define SIM_SCGC4_USBOTG_SHIFT   (18U)"
+
+.SS "#define SIM_SCGC4_VREF(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC4_VREF_SHIFT\fP)) & \fBSIM_SCGC4_VREF_MASK\fP)"
+
+.SS "#define SIM_SCGC4_VREF_MASK   (0x100000U)"
+
+.SS "#define SIM_SCGC4_VREF_SHIFT   (20U)"
+
+.SS "#define SIM_SCGC5_LPTMR(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC5_LPTMR_SHIFT\fP)) & \fBSIM_SCGC5_LPTMR_MASK\fP)"
+
+.SS "#define SIM_SCGC5_LPTMR_MASK   (0x1U)"
+
+.SS "#define SIM_SCGC5_LPTMR_SHIFT   (0U)"
+
+.SS "#define SIM_SCGC5_PORTA(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC5_PORTA_SHIFT\fP)) & \fBSIM_SCGC5_PORTA_MASK\fP)"
+
+.SS "#define SIM_SCGC5_PORTA_MASK   (0x200U)"
+
+.SS "#define SIM_SCGC5_PORTA_SHIFT   (9U)"
+
+.SS "#define SIM_SCGC5_PORTB(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC5_PORTB_SHIFT\fP)) & \fBSIM_SCGC5_PORTB_MASK\fP)"
+
+.SS "#define SIM_SCGC5_PORTB_MASK   (0x400U)"
+
+.SS "#define SIM_SCGC5_PORTB_SHIFT   (10U)"
+
+.SS "#define SIM_SCGC5_PORTC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC5_PORTC_SHIFT\fP)) & \fBSIM_SCGC5_PORTC_MASK\fP)"
+
+.SS "#define SIM_SCGC5_PORTC_MASK   (0x800U)"
+
+.SS "#define SIM_SCGC5_PORTC_SHIFT   (11U)"
+
+.SS "#define SIM_SCGC5_PORTD(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC5_PORTD_SHIFT\fP)) & \fBSIM_SCGC5_PORTD_MASK\fP)"
+
+.SS "#define SIM_SCGC5_PORTD_MASK   (0x1000U)"
+
+.SS "#define SIM_SCGC5_PORTD_SHIFT   (12U)"
+
+.SS "#define SIM_SCGC5_PORTE(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC5_PORTE_SHIFT\fP)) & \fBSIM_SCGC5_PORTE_MASK\fP)"
+
+.SS "#define SIM_SCGC5_PORTE_MASK   (0x2000U)"
+
+.SS "#define SIM_SCGC5_PORTE_SHIFT   (13U)"
+
+.SS "#define SIM_SCGC6_ADC0(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_ADC0_SHIFT\fP)) & \fBSIM_SCGC6_ADC0_MASK\fP)"
+
+.SS "#define SIM_SCGC6_ADC0_MASK   (0x8000000U)"
+
+.SS "#define SIM_SCGC6_ADC0_SHIFT   (27U)"
+
+.SS "#define SIM_SCGC6_CRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_CRC_SHIFT\fP)) & \fBSIM_SCGC6_CRC_MASK\fP)"
+
+.SS "#define SIM_SCGC6_CRC_MASK   (0x40000U)"
+
+.SS "#define SIM_SCGC6_CRC_SHIFT   (18U)"
+
+.SS "#define SIM_SCGC6_DAC0(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_DAC0_SHIFT\fP)) & \fBSIM_SCGC6_DAC0_MASK\fP)"
+
+.SS "#define SIM_SCGC6_DAC0_MASK   (0x80000000U)"
+
+.SS "#define SIM_SCGC6_DAC0_SHIFT   (31U)"
+
+.SS "#define SIM_SCGC6_DMAMUX(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_DMAMUX_SHIFT\fP)) & \fBSIM_SCGC6_DMAMUX_MASK\fP)"
+
+.SS "#define SIM_SCGC6_DMAMUX_MASK   (0x2U)"
+
+.SS "#define SIM_SCGC6_DMAMUX_SHIFT   (1U)"
+
+.SS "#define SIM_SCGC6_FLEXCAN0(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_FLEXCAN0_SHIFT\fP)) & \fBSIM_SCGC6_FLEXCAN0_MASK\fP)"
+
+.SS "#define SIM_SCGC6_FLEXCAN0_MASK   (0x10U)"
+
+.SS "#define SIM_SCGC6_FLEXCAN0_SHIFT   (4U)"
+
+.SS "#define SIM_SCGC6_FTF(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_FTF_SHIFT\fP)) & \fBSIM_SCGC6_FTF_MASK\fP)"
+
+.SS "#define SIM_SCGC6_FTF_MASK   (0x1U)"
+
+.SS "#define SIM_SCGC6_FTF_SHIFT   (0U)"
+
+.SS "#define SIM_SCGC6_FTM0(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_FTM0_SHIFT\fP)) & \fBSIM_SCGC6_FTM0_MASK\fP)"
+
+.SS "#define SIM_SCGC6_FTM0_MASK   (0x1000000U)"
+
+.SS "#define SIM_SCGC6_FTM0_SHIFT   (24U)"
+
+.SS "#define SIM_SCGC6_FTM1(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_FTM1_SHIFT\fP)) & \fBSIM_SCGC6_FTM1_MASK\fP)"
+
+.SS "#define SIM_SCGC6_FTM1_MASK   (0x2000000U)"
+
+.SS "#define SIM_SCGC6_FTM1_SHIFT   (25U)"
+
+.SS "#define SIM_SCGC6_FTM2(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_FTM2_SHIFT\fP)) & \fBSIM_SCGC6_FTM2_MASK\fP)"
+
+.SS "#define SIM_SCGC6_FTM2_MASK   (0x4000000U)"
+
+.SS "#define SIM_SCGC6_FTM2_SHIFT   (26U)"
+
+.SS "#define SIM_SCGC6_I2S(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_I2S_SHIFT\fP)) & \fBSIM_SCGC6_I2S_MASK\fP)"
+
+.SS "#define SIM_SCGC6_I2S_MASK   (0x8000U)"
+
+.SS "#define SIM_SCGC6_I2S_SHIFT   (15U)"
+
+.SS "#define SIM_SCGC6_PDB(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_PDB_SHIFT\fP)) & \fBSIM_SCGC6_PDB_MASK\fP)"
+
+.SS "#define SIM_SCGC6_PDB_MASK   (0x400000U)"
+
+.SS "#define SIM_SCGC6_PDB_SHIFT   (22U)"
+
+.SS "#define SIM_SCGC6_PIT(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_PIT_SHIFT\fP)) & \fBSIM_SCGC6_PIT_MASK\fP)"
+
+.SS "#define SIM_SCGC6_PIT_MASK   (0x800000U)"
+
+.SS "#define SIM_SCGC6_PIT_SHIFT   (23U)"
+
+.SS "#define SIM_SCGC6_RNGA(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_RNGA_SHIFT\fP)) & \fBSIM_SCGC6_RNGA_MASK\fP)"
+
+.SS "#define SIM_SCGC6_RNGA_MASK   (0x200U)"
+
+.SS "#define SIM_SCGC6_RNGA_SHIFT   (9U)"
+
+.SS "#define SIM_SCGC6_RTC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_RTC_SHIFT\fP)) & \fBSIM_SCGC6_RTC_MASK\fP)"
+
+.SS "#define SIM_SCGC6_RTC_MASK   (0x20000000U)"
+
+.SS "#define SIM_SCGC6_RTC_SHIFT   (29U)"
+
+.SS "#define SIM_SCGC6_SPI0(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_SPI0_SHIFT\fP)) & \fBSIM_SCGC6_SPI0_MASK\fP)"
+
+.SS "#define SIM_SCGC6_SPI0_MASK   (0x1000U)"
+
+.SS "#define SIM_SCGC6_SPI0_SHIFT   (12U)"
+
+.SS "#define SIM_SCGC6_SPI1(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_SPI1_SHIFT\fP)) & \fBSIM_SCGC6_SPI1_MASK\fP)"
+
+.SS "#define SIM_SCGC6_SPI1_MASK   (0x2000U)"
+
+.SS "#define SIM_SCGC6_SPI1_SHIFT   (13U)"
+
+.SS "#define SIM_SCGC6_USBDCD(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC6_USBDCD_SHIFT\fP)) & \fBSIM_SCGC6_USBDCD_MASK\fP)"
+
+.SS "#define SIM_SCGC6_USBDCD_MASK   (0x200000U)"
+
+.SS "#define SIM_SCGC6_USBDCD_SHIFT   (21U)"
+
+.SS "#define SIM_SCGC7_DMA(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC7_DMA_SHIFT\fP)) & \fBSIM_SCGC7_DMA_MASK\fP)"
+
+.SS "#define SIM_SCGC7_DMA_MASK   (0x2U)"
+
+.SS "#define SIM_SCGC7_DMA_SHIFT   (1U)"
+
+.SS "#define SIM_SCGC7_FLEXBUS(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC7_FLEXBUS_SHIFT\fP)) & \fBSIM_SCGC7_FLEXBUS_MASK\fP)"
+
+.SS "#define SIM_SCGC7_FLEXBUS_MASK   (0x1U)"
+
+.SS "#define SIM_SCGC7_FLEXBUS_SHIFT   (0U)"
+
+.SS "#define SIM_SCGC7_MPU(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SCGC7_MPU_SHIFT\fP)) & \fBSIM_SCGC7_MPU_MASK\fP)"
+
+.SS "#define SIM_SCGC7_MPU_MASK   (0x4U)"
+
+.SS "#define SIM_SCGC7_MPU_SHIFT   (2U)"
+
+.SS "#define SIM_SDID_DIEID(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_DIEID_SHIFT\fP)) & \fBSIM_SDID_DIEID_MASK\fP)"
+
+.SS "#define SIM_SDID_DIEID_MASK   (0xF80U)"
+
+.SS "#define SIM_SDID_DIEID_SHIFT   (7U)"
+
+.SS "#define SIM_SDID_FAMID(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_FAMID_SHIFT\fP)) & \fBSIM_SDID_FAMID_MASK\fP)"
+
+.SS "#define SIM_SDID_FAMID_MASK   (0x70U)"
+
+.SS "#define SIM_SDID_FAMID_SHIFT   (4U)"
+
+.SS "#define SIM_SDID_FAMILYID(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_FAMILYID_SHIFT\fP)) & \fBSIM_SDID_FAMILYID_MASK\fP)"
+
+.SS "#define SIM_SDID_FAMILYID_MASK   (0xF0000000U)"
+
+.SS "#define SIM_SDID_FAMILYID_SHIFT   (28U)"
+
+.SS "#define SIM_SDID_PINID(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_PINID_SHIFT\fP)) & \fBSIM_SDID_PINID_MASK\fP)"
+
+.SS "#define SIM_SDID_PINID_MASK   (0xFU)"
+
+.SS "#define SIM_SDID_PINID_SHIFT   (0U)"
+
+.SS "#define SIM_SDID_REVID(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_REVID_SHIFT\fP)) & \fBSIM_SDID_REVID_MASK\fP)"
+
+.SS "#define SIM_SDID_REVID_MASK   (0xF000U)"
+
+.SS "#define SIM_SDID_REVID_SHIFT   (12U)"
+
+.SS "#define SIM_SDID_SERIESID(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_SERIESID_SHIFT\fP)) & \fBSIM_SDID_SERIESID_MASK\fP)"
+
+.SS "#define SIM_SDID_SERIESID_MASK   (0xF00000U)"
+
+.SS "#define SIM_SDID_SERIESID_SHIFT   (20U)"
+
+.SS "#define SIM_SDID_SUBFAMID(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SDID_SUBFAMID_SHIFT\fP)) & \fBSIM_SDID_SUBFAMID_MASK\fP)"
+
+.SS "#define SIM_SDID_SUBFAMID_MASK   (0xF000000U)"
+
+.SS "#define SIM_SDID_SUBFAMID_SHIFT   (24U)"
+
+.SS "#define SIM_SOPT1_OSC32KSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1_OSC32KSEL_SHIFT\fP)) & \fBSIM_SOPT1_OSC32KSEL_MASK\fP)"
+
+.SS "#define SIM_SOPT1_OSC32KSEL_MASK   (0xC0000U)"
+
+.SS "#define SIM_SOPT1_OSC32KSEL_SHIFT   (18U)"
+
+.SS "#define SIM_SOPT1_RAMSIZE(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1_RAMSIZE_SHIFT\fP)) & \fBSIM_SOPT1_RAMSIZE_MASK\fP)"
+
+.SS "#define SIM_SOPT1_RAMSIZE_MASK   (0xF000U)"
+
+.SS "#define SIM_SOPT1_RAMSIZE_SHIFT   (12U)"
+
+.SS "#define SIM_SOPT1_USBREGEN(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1_USBREGEN_SHIFT\fP)) & \fBSIM_SOPT1_USBREGEN_MASK\fP)"
+
+.SS "#define SIM_SOPT1_USBREGEN_MASK   (0x80000000U)"
+
+.SS "#define SIM_SOPT1_USBREGEN_SHIFT   (31U)"
+
+.SS "#define SIM_SOPT1_USBSSTBY(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1_USBSSTBY_SHIFT\fP)) & \fBSIM_SOPT1_USBSSTBY_MASK\fP)"
+
+.SS "#define SIM_SOPT1_USBSSTBY_MASK   (0x40000000U)"
+
+.SS "#define SIM_SOPT1_USBSSTBY_SHIFT   (30U)"
+
+.SS "#define SIM_SOPT1_USBVSTBY(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1_USBVSTBY_SHIFT\fP)) & \fBSIM_SOPT1_USBVSTBY_MASK\fP)"
+
+.SS "#define SIM_SOPT1_USBVSTBY_MASK   (0x20000000U)"
+
+.SS "#define SIM_SOPT1_USBVSTBY_SHIFT   (29U)"
+
+.SS "#define SIM_SOPT1CFG_URWE(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1CFG_URWE_SHIFT\fP)) & \fBSIM_SOPT1CFG_URWE_MASK\fP)"
+
+.SS "#define SIM_SOPT1CFG_URWE_MASK   (0x1000000U)"
+
+.SS "#define SIM_SOPT1CFG_URWE_SHIFT   (24U)"
+
+.SS "#define SIM_SOPT1CFG_USSWE(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1CFG_USSWE_SHIFT\fP)) & \fBSIM_SOPT1CFG_USSWE_MASK\fP)"
+
+.SS "#define SIM_SOPT1CFG_USSWE_MASK   (0x4000000U)"
+
+.SS "#define SIM_SOPT1CFG_USSWE_SHIFT   (26U)"
+
+.SS "#define SIM_SOPT1CFG_UVSWE(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT1CFG_UVSWE_SHIFT\fP)) & \fBSIM_SOPT1CFG_UVSWE_MASK\fP)"
+
+.SS "#define SIM_SOPT1CFG_UVSWE_MASK   (0x2000000U)"
+
+.SS "#define SIM_SOPT1CFG_UVSWE_SHIFT   (25U)"
+
+.SS "#define SIM_SOPT2_CLKOUTSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_CLKOUTSEL_SHIFT\fP)) & \fBSIM_SOPT2_CLKOUTSEL_MASK\fP)"
+
+.SS "#define SIM_SOPT2_CLKOUTSEL_MASK   (0xE0U)"
+
+.SS "#define SIM_SOPT2_CLKOUTSEL_SHIFT   (5U)"
+
+.SS "#define SIM_SOPT2_FBSL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_FBSL_SHIFT\fP)) & \fBSIM_SOPT2_FBSL_MASK\fP)"
+
+.SS "#define SIM_SOPT2_FBSL_MASK   (0x300U)"
+
+.SS "#define SIM_SOPT2_FBSL_SHIFT   (8U)"
+
+.SS "#define SIM_SOPT2_PLLFLLSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_PLLFLLSEL_SHIFT\fP)) & \fBSIM_SOPT2_PLLFLLSEL_MASK\fP)"
+
+.SS "#define SIM_SOPT2_PLLFLLSEL_MASK   (0x30000U)"
+
+.SS "#define SIM_SOPT2_PLLFLLSEL_SHIFT   (16U)"
+
+.SS "#define SIM_SOPT2_PTD7PAD(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_PTD7PAD_SHIFT\fP)) & \fBSIM_SOPT2_PTD7PAD_MASK\fP)"
+
+.SS "#define SIM_SOPT2_PTD7PAD_MASK   (0x800U)"
+
+.SS "#define SIM_SOPT2_PTD7PAD_SHIFT   (11U)"
+
+.SS "#define SIM_SOPT2_RMIISRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_RMIISRC_SHIFT\fP)) & \fBSIM_SOPT2_RMIISRC_MASK\fP)"
+
+.SS "#define SIM_SOPT2_RMIISRC_MASK   (0x80000U)"
+
+.SS "#define SIM_SOPT2_RMIISRC_SHIFT   (19U)"
+
+.SS "#define SIM_SOPT2_RTCCLKOUTSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_RTCCLKOUTSEL_SHIFT\fP)) & \fBSIM_SOPT2_RTCCLKOUTSEL_MASK\fP)"
+
+.SS "#define SIM_SOPT2_RTCCLKOUTSEL_MASK   (0x10U)"
+
+.SS "#define SIM_SOPT2_RTCCLKOUTSEL_SHIFT   (4U)"
+
+.SS "#define SIM_SOPT2_SDHCSRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_SDHCSRC_SHIFT\fP)) & \fBSIM_SOPT2_SDHCSRC_MASK\fP)"
+
+.SS "#define SIM_SOPT2_SDHCSRC_MASK   (0x30000000U)"
+
+.SS "#define SIM_SOPT2_SDHCSRC_SHIFT   (28U)"
+
+.SS "#define SIM_SOPT2_TIMESRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_TIMESRC_SHIFT\fP)) & \fBSIM_SOPT2_TIMESRC_MASK\fP)"
+
+.SS "#define SIM_SOPT2_TIMESRC_MASK   (0x300000U)"
+
+.SS "#define SIM_SOPT2_TIMESRC_SHIFT   (20U)"
+
+.SS "#define SIM_SOPT2_TRACECLKSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_TRACECLKSEL_SHIFT\fP)) & \fBSIM_SOPT2_TRACECLKSEL_MASK\fP)"
+
+.SS "#define SIM_SOPT2_TRACECLKSEL_MASK   (0x1000U)"
+
+.SS "#define SIM_SOPT2_TRACECLKSEL_SHIFT   (12U)"
+
+.SS "#define SIM_SOPT2_USBSRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT2_USBSRC_SHIFT\fP)) & \fBSIM_SOPT2_USBSRC_MASK\fP)"
+
+.SS "#define SIM_SOPT2_USBSRC_MASK   (0x40000U)"
+
+.SS "#define SIM_SOPT2_USBSRC_SHIFT   (18U)"
+
+.SS "#define SIM_SOPT4_FTM0CLKSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM0CLKSEL_SHIFT\fP)) & \fBSIM_SOPT4_FTM0CLKSEL_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM0CLKSEL_MASK   (0x1000000U)"
+
+.SS "#define SIM_SOPT4_FTM0CLKSEL_SHIFT   (24U)"
+
+.SS "#define SIM_SOPT4_FTM0FLT0(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM0FLT0_SHIFT\fP)) & \fBSIM_SOPT4_FTM0FLT0_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM0FLT0_MASK   (0x1U)"
+
+.SS "#define SIM_SOPT4_FTM0FLT0_SHIFT   (0U)"
+
+.SS "#define SIM_SOPT4_FTM0FLT1(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM0FLT1_SHIFT\fP)) & \fBSIM_SOPT4_FTM0FLT1_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM0FLT1_MASK   (0x2U)"
+
+.SS "#define SIM_SOPT4_FTM0FLT1_SHIFT   (1U)"
+
+.SS "#define SIM_SOPT4_FTM0FLT2(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM0FLT2_SHIFT\fP)) & \fBSIM_SOPT4_FTM0FLT2_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM0FLT2_MASK   (0x4U)"
+
+.SS "#define SIM_SOPT4_FTM0FLT2_SHIFT   (2U)"
+
+.SS "#define SIM_SOPT4_FTM0TRG0SRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM0TRG0SRC_SHIFT\fP)) & \fBSIM_SOPT4_FTM0TRG0SRC_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM0TRG0SRC_MASK   (0x10000000U)"
+
+.SS "#define SIM_SOPT4_FTM0TRG0SRC_SHIFT   (28U)"
+
+.SS "#define SIM_SOPT4_FTM0TRG1SRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM0TRG1SRC_SHIFT\fP)) & \fBSIM_SOPT4_FTM0TRG1SRC_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM0TRG1SRC_MASK   (0x20000000U)"
+
+.SS "#define SIM_SOPT4_FTM0TRG1SRC_SHIFT   (29U)"
+
+.SS "#define SIM_SOPT4_FTM1CH0SRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM1CH0SRC_SHIFT\fP)) & \fBSIM_SOPT4_FTM1CH0SRC_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM1CH0SRC_MASK   (0xC0000U)"
+
+.SS "#define SIM_SOPT4_FTM1CH0SRC_SHIFT   (18U)"
+
+.SS "#define SIM_SOPT4_FTM1CLKSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM1CLKSEL_SHIFT\fP)) & \fBSIM_SOPT4_FTM1CLKSEL_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM1CLKSEL_MASK   (0x2000000U)"
+
+.SS "#define SIM_SOPT4_FTM1CLKSEL_SHIFT   (25U)"
+
+.SS "#define SIM_SOPT4_FTM1FLT0(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM1FLT0_SHIFT\fP)) & \fBSIM_SOPT4_FTM1FLT0_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM1FLT0_MASK   (0x10U)"
+
+.SS "#define SIM_SOPT4_FTM1FLT0_SHIFT   (4U)"
+
+.SS "#define SIM_SOPT4_FTM2CH0SRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM2CH0SRC_SHIFT\fP)) & \fBSIM_SOPT4_FTM2CH0SRC_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM2CH0SRC_MASK   (0x300000U)"
+
+.SS "#define SIM_SOPT4_FTM2CH0SRC_SHIFT   (20U)"
+
+.SS "#define SIM_SOPT4_FTM2CLKSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM2CLKSEL_SHIFT\fP)) & \fBSIM_SOPT4_FTM2CLKSEL_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM2CLKSEL_MASK   (0x4000000U)"
+
+.SS "#define SIM_SOPT4_FTM2CLKSEL_SHIFT   (26U)"
+
+.SS "#define SIM_SOPT4_FTM2FLT0(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM2FLT0_SHIFT\fP)) & \fBSIM_SOPT4_FTM2FLT0_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM2FLT0_MASK   (0x100U)"
+
+.SS "#define SIM_SOPT4_FTM2FLT0_SHIFT   (8U)"
+
+.SS "#define SIM_SOPT4_FTM3CLKSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM3CLKSEL_SHIFT\fP)) & \fBSIM_SOPT4_FTM3CLKSEL_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM3CLKSEL_MASK   (0x8000000U)"
+
+.SS "#define SIM_SOPT4_FTM3CLKSEL_SHIFT   (27U)"
+
+.SS "#define SIM_SOPT4_FTM3FLT0(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM3FLT0_SHIFT\fP)) & \fBSIM_SOPT4_FTM3FLT0_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM3FLT0_MASK   (0x1000U)"
+
+.SS "#define SIM_SOPT4_FTM3FLT0_SHIFT   (12U)"
+
+.SS "#define SIM_SOPT4_FTM3TRG0SRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM3TRG0SRC_SHIFT\fP)) & \fBSIM_SOPT4_FTM3TRG0SRC_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM3TRG0SRC_MASK   (0x40000000U)"
+
+.SS "#define SIM_SOPT4_FTM3TRG0SRC_SHIFT   (30U)"
+
+.SS "#define SIM_SOPT4_FTM3TRG1SRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT4_FTM3TRG1SRC_SHIFT\fP)) & \fBSIM_SOPT4_FTM3TRG1SRC_MASK\fP)"
+
+.SS "#define SIM_SOPT4_FTM3TRG1SRC_MASK   (0x80000000U)"
+
+.SS "#define SIM_SOPT4_FTM3TRG1SRC_SHIFT   (31U)"
+
+.SS "#define SIM_SOPT5_UART0RXSRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT5_UART0RXSRC_SHIFT\fP)) & \fBSIM_SOPT5_UART0RXSRC_MASK\fP)"
+
+.SS "#define SIM_SOPT5_UART0RXSRC_MASK   (0xCU)"
+
+.SS "#define SIM_SOPT5_UART0RXSRC_SHIFT   (2U)"
+
+.SS "#define SIM_SOPT5_UART0TXSRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT5_UART0TXSRC_SHIFT\fP)) & \fBSIM_SOPT5_UART0TXSRC_MASK\fP)"
+
+.SS "#define SIM_SOPT5_UART0TXSRC_MASK   (0x3U)"
+
+.SS "#define SIM_SOPT5_UART0TXSRC_SHIFT   (0U)"
+
+.SS "#define SIM_SOPT5_UART1RXSRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT5_UART1RXSRC_SHIFT\fP)) & \fBSIM_SOPT5_UART1RXSRC_MASK\fP)"
+
+.SS "#define SIM_SOPT5_UART1RXSRC_MASK   (0xC0U)"
+
+.SS "#define SIM_SOPT5_UART1RXSRC_SHIFT   (6U)"
+
+.SS "#define SIM_SOPT5_UART1TXSRC(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT5_UART1TXSRC_SHIFT\fP)) & \fBSIM_SOPT5_UART1TXSRC_MASK\fP)"
+
+.SS "#define SIM_SOPT5_UART1TXSRC_MASK   (0x30U)"
+
+.SS "#define SIM_SOPT5_UART1TXSRC_SHIFT   (4U)"
+
+.SS "#define SIM_SOPT7_ADC0ALTTRGEN(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT7_ADC0ALTTRGEN_SHIFT\fP)) & \fBSIM_SOPT7_ADC0ALTTRGEN_MASK\fP)"
+
+.SS "#define SIM_SOPT7_ADC0ALTTRGEN_MASK   (0x80U)"
+
+.SS "#define SIM_SOPT7_ADC0ALTTRGEN_SHIFT   (7U)"
+
+.SS "#define SIM_SOPT7_ADC0PRETRGSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT7_ADC0PRETRGSEL_SHIFT\fP)) & \fBSIM_SOPT7_ADC0PRETRGSEL_MASK\fP)"
+
+.SS "#define SIM_SOPT7_ADC0PRETRGSEL_MASK   (0x10U)"
+
+.SS "#define SIM_SOPT7_ADC0PRETRGSEL_SHIFT   (4U)"
+
+.SS "#define SIM_SOPT7_ADC0TRGSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT7_ADC0TRGSEL_SHIFT\fP)) & \fBSIM_SOPT7_ADC0TRGSEL_MASK\fP)"
+
+.SS "#define SIM_SOPT7_ADC0TRGSEL_MASK   (0xFU)"
+
+.SS "#define SIM_SOPT7_ADC0TRGSEL_SHIFT   (0U)"
+
+.SS "#define SIM_SOPT7_ADC1ALTTRGEN(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT7_ADC1ALTTRGEN_SHIFT\fP)) & \fBSIM_SOPT7_ADC1ALTTRGEN_MASK\fP)"
+
+.SS "#define SIM_SOPT7_ADC1ALTTRGEN_MASK   (0x8000U)"
+
+.SS "#define SIM_SOPT7_ADC1ALTTRGEN_SHIFT   (15U)"
+
+.SS "#define SIM_SOPT7_ADC1PRETRGSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT7_ADC1PRETRGSEL_SHIFT\fP)) & \fBSIM_SOPT7_ADC1PRETRGSEL_MASK\fP)"
+
+.SS "#define SIM_SOPT7_ADC1PRETRGSEL_MASK   (0x1000U)"
+
+.SS "#define SIM_SOPT7_ADC1PRETRGSEL_SHIFT   (12U)"
+
+.SS "#define SIM_SOPT7_ADC1TRGSEL(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_SOPT7_ADC1TRGSEL_SHIFT\fP)) & \fBSIM_SOPT7_ADC1TRGSEL_MASK\fP)"
+
+.SS "#define SIM_SOPT7_ADC1TRGSEL_MASK   (0xF00U)"
+
+.SS "#define SIM_SOPT7_ADC1TRGSEL_SHIFT   (8U)"
+
+.SS "#define SIM_UIDH_UID(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_UIDH_UID_SHIFT\fP)) & \fBSIM_UIDH_UID_MASK\fP)"
+
+.SS "#define SIM_UIDH_UID_MASK   (0xFFFFFFFFU)"
+
+.SS "#define SIM_UIDH_UID_SHIFT   (0U)"
+
+.SS "#define SIM_UIDL_UID(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_UIDL_UID_SHIFT\fP)) & \fBSIM_UIDL_UID_MASK\fP)"
+
+.SS "#define SIM_UIDL_UID_MASK   (0xFFFFFFFFU)"
+
+.SS "#define SIM_UIDL_UID_SHIFT   (0U)"
+
+.SS "#define SIM_UIDMH_UID(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_UIDMH_UID_SHIFT\fP)) & \fBSIM_UIDMH_UID_MASK\fP)"
+
+.SS "#define SIM_UIDMH_UID_MASK   (0xFFFFFFFFU)"
+
+.SS "#define SIM_UIDMH_UID_SHIFT   (0U)"
+
+.SS "#define SIM_UIDML_UID(x)   (((uint32_t)(((uint32_t)(x)) << \fBSIM_UIDML_UID_SHIFT\fP)) & \fBSIM_UIDML_UID_MASK\fP)"
+
+.SS "#define SIM_UIDML_UID_MASK   (0xFFFFFFFFU)"
+
+.SS "#define SIM_UIDML_UID_SHIFT   (0U)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TP2_G1 from the source code\&.

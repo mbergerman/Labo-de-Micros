@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__group_fast_math" kind="group">
+    <compoundname>groupFastMath</compoundname>
+    <title>Fast Math Functions</title>
+    <innergroup refid="group___s_q_r_t">Square Root</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This set of functions provides a fast approximation to sine, cosine, and square root. As compared to most of the other functions in the CMSIS math library, the fast math functions operate on individual values and not arrays. There are separate functions for Q15, Q31, and floating-point data. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>
