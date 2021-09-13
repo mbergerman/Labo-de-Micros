@@ -57,19 +57,10 @@ typedef enum{
 typedef enum{
 	ITEM_ID,
 	ITEM_EDIT,
-	//ITEM_ADMIN,
 	ITEM_BRIGHTNESS,
 	ITEM_SPEED,
 	NUM_ITEMS
 }menuItem_t;
-
-typedef enum{
-	ITEM_ADD_USER,
-	ITEM_DEL_USER,
-	ITEM_UNBLOCK_USER,
-	ITEM_CLOSE,
-	NUM_ITEMS_ADMIN
-}adminItem_t;
 
 enum {
 	LED_LATCH,
@@ -80,26 +71,7 @@ enum {
  * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-static const char* menu_item_strings[] = {"Enter ID", "Edit", /*"Boss",*/ "Brightness", "Speed"};
-static const char* admin_item_strings[] = {"Add User", "Del User", "Close"};
-
-static menuItem_t menu_item = ITEM_ID;
-static bool edit_flag = false;
-static bool edit_user_pin = false;
-
-static char card_number[READER_NUM_MAX_LEN+1];
-static uint8_t card_number_len = 0;
-
-static User user_to_check;
-
-static tim_id_t error_tim_id;
-static tim_id_t warning_tim_id;
-static tim_id_t latch_tim_id;
-
-static const int disp_speeds[10] = {1000, 900, 800, 700, 600, 500, 400, 300 , 200 ,100};
-static uint16_t disp_scroll_speed = DISP_MEDIUM;
-
-static adminItem_t admin_item = ITEM_ADD_USER;
+static const char* menu_item_strings[] = {"Enter ID", "Edit", "Brightness", "Speed"};
 
 /*******************************************************************************
  * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
@@ -108,9 +80,7 @@ static adminItem_t admin_item = ITEM_ADD_USER;
 static menuState_t state_main(menuEvent_t);
 static menuState_t state_id(menuEvent_t event);
 static menuState_t state_pin(menuEvent_t event);
-static menuState_t state_brightness(menuEvent_t event);
-static menuState_t state_speed(menuEvent_t event);
-static menuState_t state_admin(menuEvent_t event);
+static menuEvent_t state_brightness(menuEvent_t event);
 
 static menuState_t state_check_id(uint32_t id_value);
 
@@ -120,6 +90,25 @@ static void show_error();
 static void unshow_error();
 static void show_warning();
 static void unshow_warning();
+
+/*******************************************************************************
+ * GLOBAL VARIABLES ?)
+ ******************************************************************************/
+
+static menuItem_t menu_item = ITEM_ID;
+static bool edit_flag = false;
+static bool edit_user_pin = false;
+
+static char card_number[READER_NUM_MAX_LEN+1];
+static uint8_t card_number_len = 0;
+
+static User* user_to_check;
+
+static tim_id_t error_tim_id;
+static tim_id_t warning_tim_id;
+static tim_id_t latch_tim_id;
+
+static uint16_t disp_scroll_speed = DISP_MEDIUM;
 
 /*******************************************************************************
  *******************************************************************************
@@ -183,7 +172,7 @@ void App_Run (void)
 			menu_state = state_brightness(event);
 			break;
 		case STATE_SPEED:
-			menu_state = state_speed(event);
+			//menu_state = state_speed(event);
 			break;
 		default: break;
 		}
@@ -223,9 +212,6 @@ static menuState_t state_main(menuEvent_t event){
 			start_number_editor(ID_LENGTH, true, false);
 			enableReader();
 			break;
-//		case ITEM_ADMIN:
-//			next_state = STATE_ADMIN;
-//			break;
 		case ITEM_BRIGHTNESS:
 			next_state = STATE_BRIGHTNESS;
 			start_number_editor(1, false, false);
@@ -337,50 +323,46 @@ static menuState_t state_pin(menuEvent_t event) {
 				next_state = STATE_ID;
 				enableReader();
 			}else if (event_click == EVENT_EDITOR_NEXT) {
-				if(is_blocked(user_to_check)){
-					show_warning();
-					timerStart(warning_tim_id, TIMER_MS2TICKS(ERROR_TIME_MS), TIM_MODE_SINGLESHOT, unshow_warning);
-				}else{
-					uint32_t pin_value = getBufferNumber();
+				uint32_t pin_value = getBufferNumber();
+				if(!is_blocked(user_to_check)){
+				if (edit_user_pin){
+					user_to_check->PIN = pin_value;
+					next_state = STATE_MAIN;
 
-					if (edit_user_pin){
-						edit_PIN(user_to_check.ID, pin_value);
+					dispStartAutoScroll(disp_scroll_speed);
+					dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
+
+					edit_user_pin = false; 
+				}else if ((pin_value == user_to_check->PIN) && !edit_user_pin){
+					if (edit_flag) {
+						if (!user_to_check.admin) {
+							edit_user_pin = true;
+							next_state = STATE_PIN;
+							start_number_editor(PIN_LENGTH, 1, 1);
+							edit_flag = false;
+						}else{
+							next_state = STATE_ADMIN;
+							edit_flag = false;
+							user_to_check->error_counter = 0;
+
+						}
+					}else{
+						//activo latch "entro"
+						activate_latch();
+						timerStart(latch_tim_id, TIMER_MS2TICKS(LATCH_TIME_MS), TIM_MODE_SINGLESHOT, deactivate_latch);
 						next_state = STATE_MAIN;
 
 						dispStartAutoScroll(disp_scroll_speed);
 						dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
 
-						edit_user_pin = false;
-					}else if ((pin_value == user_to_check.PIN) && !edit_user_pin){
-						if (edit_flag) {
-							if (!user_to_check.admin) {
-								edit_user_pin = true;
-								next_state = STATE_PIN;
-								start_number_editor(PIN_LENGTH, 1, 1);
-								edit_flag = false;
-							}else{
-								next_state = STATE_ADMIN;
-								edit_flag = false;
-								unblock_user(user_to_check);
-
-							}
-						}else{
-							//activo latch "entro"
-							activate_latch();
-							timerStart(latch_tim_id, TIMER_MS2TICKS(LATCH_TIME_MS), TIM_MODE_SINGLESHOT, deactivate_latch);
-							next_state = STATE_MAIN;
-
-							dispStartAutoScroll(disp_scroll_speed);
-							dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
-
-							unblock_user(user_to_check);
-						}
-					}else{
-						//Si no se valida ID y PIN, se prende el PIN de error
-						show_error();
-						timerStart(error_tim_id, TIMER_MS2TICKS(ERROR_TIME_MS), TIM_MODE_SINGLESHOT, unshow_error);
-						add_error(user_to_check);
+						user_to_check->error_counter =0;
 					}
+				}
+				}else{
+					//Si no se valida ID y PIN, se prende el PIN de error
+					show_error();
+					timerStart(error_tim_id, TIMER_MS2TICKS(ERROR_TIME_MS), TIM_MODE_SINGLESHOT, unshow_error);
+					user_to_check->error_counter++;
 				}
 			}
 			break;
@@ -418,7 +400,7 @@ static void unshow_warning() {
 }
 
 
-static menuState_t state_brightness(menuEvent_t event) {
+static menuEvent_t state_brightness(menuEvent_t event) {
 	menuState_t next_state = STATE_BRIGHTNESS;
 	editorEvent_t event_click = EVENT_EDITOR_NONE;
 
@@ -442,78 +424,6 @@ static menuState_t state_brightness(menuEvent_t event) {
 		}
 
 	default:break;
-	}
-
-	return next_state;
-}
-
-
-static menuState_t state_speed(menuEvent_t event) {
-	menuState_t next_state = STATE_SPEED;
-	editorEvent_t event_click = EVENT_EDITOR_NONE;
-
-	switch(event){
-	case EVENT_ENC_RIGHT:
-		number_editor_right();
-		disp_scroll_speed = disp_speeds[getBufferNumber()];
-		break;
-	case EVENT_ENC_LEFT:
-		number_editor_left();
-		disp_scroll_speed = disp_speeds[getBufferNumber()];
-		break;
-	case EVENT_ENC_CLICK:
-		event_click = number_editor_click();
-		if(event_click == EVENT_EDITOR_PREV) {
-			disp_scroll_speed = disp_speeds[getBufferNumber()];
-			next_state = STATE_MAIN;
-
-			dispStartAutoScroll(disp_scroll_speed);
-			dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
-		}
-
-	default:break;
-	}
-
-	return next_state;
-}
-
-
-
-static menuState_t state_admin(menuEvent_t event){
-	menuState_t next_state = STATE_ADMIN;
-
-	switch(event){
-	case EVENT_ENC_LEFT:
-		admin_item = (admin_item + NUM_ITEMS_ADMIN - 1) % NUM_ITEMS_ADMIN;
-		dispWriteBuffer(strlen(admin_item_strings[admin_item]), admin_item_strings[admin_item]);
-		break;
-	case EVENT_ENC_RIGHT:
-		admin_item = (admin_item + 1) % NUM_ITEMS_ADMIN;
-		dispWriteBuffer(strlen(admin_item_strings[admin_item]), admin_item_strings[admin_item]);
-		break;
-	case EVENT_ENC_CLICK:
-		switch(admin_item){
-		case ITEM_ADD_USER:
-//			edit_flag = false;
-//			next_state = STATE_ID;
-//			start_number_editor(ID_LENGTH, true, false);
-//			enableReader();
-			break;
-		case ITEM_DEL_USER:
-//			edit_flag = true;
-//			next_state = STATE_ID;
-//			start_number_editor(ID_LENGTH, true, false);
-//			enableReader();
-			break;
-		case ITEM_UNBLOCK_USER:
-			break;
-		case ITEM_CLOSE:
-			next_state = STATE_MAIN;
-			dispStartAutoScroll(disp_scroll_speed);
-			dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
-		default: break;
-		}
-	default: break;
 	}
 
 	return next_state;
