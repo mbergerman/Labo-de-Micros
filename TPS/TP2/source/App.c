@@ -57,10 +57,19 @@ typedef enum{
 typedef enum{
 	ITEM_ID,
 	ITEM_EDIT,
+	//ITEM_ADMIN,
 	ITEM_BRIGHTNESS,
 	ITEM_SPEED,
 	NUM_ITEMS
 }menuItem_t;
+
+typedef enum{
+	ITEM_ADD_USER,
+	ITEM_DEL_USER,
+	ITEM_UNBLOCK_USER,
+	ITEM_CLOSE,
+	NUM_ITEMS_ADMIN
+}adminItem_t;
 
 enum {
 	LED_LATCH,
@@ -71,30 +80,8 @@ enum {
  * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-static const char* menu_item_strings[] = {"Enter ID", "Edit", "Brightness", "Speed"};
-
-/*******************************************************************************
- * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
- ******************************************************************************/
-
-static menuState_t state_main(menuEvent_t);
-static menuState_t state_id(menuEvent_t event);
-static menuState_t state_pin(menuEvent_t event);
-static menuState_t state_brightness(menuEvent_t event);
-static menuState_t state_speed(menuEvent_t event);
-
-static menuState_t state_check_id(uint32_t id_value);
-
-static void activate_latch();
-static void deactivate_latch();
-static void show_error();
-static void unshow_error();
-static void show_warning();
-static void unshow_warning();
-
-/*******************************************************************************
-* STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
- ******************************************************************************/
+static const char* menu_item_strings[] = {"Enter ID", "Edit", /*"Boss",*/ "Brightness", "Speed"};
+static const char* admin_item_strings[] = {"Add User", "Del User", "Close"};
 
 static menuItem_t menu_item = ITEM_ID;
 static bool edit_flag = false;
@@ -111,6 +98,28 @@ static tim_id_t latch_tim_id;
 
 static const int disp_speeds[10] = {1000, 900, 800, 700, 600, 500, 400, 300 , 200 ,100};
 static uint16_t disp_scroll_speed = DISP_MEDIUM;
+
+static adminItem_t admin_item = ITEM_ADD_USER;
+
+/*******************************************************************************
+ * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
+ ******************************************************************************/
+
+static menuState_t state_main(menuEvent_t);
+static menuState_t state_id(menuEvent_t event);
+static menuState_t state_pin(menuEvent_t event);
+static menuState_t state_brightness(menuEvent_t event);
+static menuState_t state_speed(menuEvent_t event);
+static menuState_t state_admin(menuEvent_t event);
+
+static menuState_t state_check_id(uint32_t id_value);
+
+static void activate_latch();
+static void deactivate_latch();
+static void show_error();
+static void unshow_error();
+static void show_warning();
+static void unshow_warning();
 
 /*******************************************************************************
  *******************************************************************************
@@ -214,6 +223,9 @@ static menuState_t state_main(menuEvent_t event){
 			start_number_editor(ID_LENGTH, true, false);
 			enableReader();
 			break;
+//		case ITEM_ADMIN:
+//			next_state = STATE_ADMIN;
+//			break;
 		case ITEM_BRIGHTNESS:
 			next_state = STATE_BRIGHTNESS;
 			start_number_editor(1, false, false);
@@ -460,6 +472,48 @@ static menuState_t state_speed(menuEvent_t event) {
 		}
 
 	default:break;
+	}
+
+	return next_state;
+}
+
+
+
+static menuState_t state_admin(menuEvent_t event){
+	menuState_t next_state = STATE_ADMIN;
+
+	switch(event){
+	case EVENT_ENC_LEFT:
+		admin_item = (admin_item + NUM_ITEMS_ADMIN - 1) % NUM_ITEMS_ADMIN;
+		dispWriteBuffer(strlen(admin_item_strings[admin_item]), admin_item_strings[admin_item]);
+		break;
+	case EVENT_ENC_RIGHT:
+		admin_item = (admin_item + 1) % NUM_ITEMS_ADMIN;
+		dispWriteBuffer(strlen(admin_item_strings[admin_item]), admin_item_strings[admin_item]);
+		break;
+	case EVENT_ENC_CLICK:
+		switch(admin_item){
+		case ITEM_ADD_USER:
+//			edit_flag = false;
+//			next_state = STATE_ID;
+//			start_number_editor(ID_LENGTH, true, false);
+//			enableReader();
+			break;
+		case ITEM_DEL_USER:
+//			edit_flag = true;
+//			next_state = STATE_ID;
+//			start_number_editor(ID_LENGTH, true, false);
+//			enableReader();
+			break;
+		case ITEM_UNBLOCK_USER:
+			break;
+		case ITEM_CLOSE:
+			next_state = STATE_MAIN;
+			dispStartAutoScroll(disp_scroll_speed);
+			dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
+		default: break;
+		}
+	default: break;
 	}
 
 	return next_state;
