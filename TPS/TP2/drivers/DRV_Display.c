@@ -55,8 +55,8 @@
 #define LET_Y	0b1101110
 #define LET_B 	0b1111100
 
-//				  gfedcba
-#define SYM__	0b0001000
+//				  	  gfedcba
+#define SYM__		0b0001000
 #define SYM_DASH	0b1000000
 #define SYM_BACK	0b0100001
 #define SYM_FRWD	0b0001100
@@ -100,9 +100,9 @@ static int end_of_line = DISP_CHARS_NUM;
 
 static int segment_counter = 0;
 
-static int my_refresh_rate = 2;
+static int my_refresh_rate = 5;
 
-static int my_brightness = (50 / 2) * (5.0 / 10.0);
+static int my_brightness = (5) * (8.0 / 10.0);
 
 static tim_id_t rate_id;
 static tim_id_t bright_id;
@@ -240,13 +240,14 @@ void dispUpdateRefreshRate(int refreshRate)
 
 void dispUpdateBrightness(int brightness)
 {
-	if(!brightness) {
-		brightness = MIN_BRIGHT;
-	}
-	if(brightness >= MIN_BRIGHT && brightness <= MAX_BRIGHT)
-	{
-		my_brightness = (my_refresh_rate / 2) * (brightness / 10.0);
-	}
+	if(brightness > 9) brightness = 9;
+	if(brightness < 1) brightness = 1;
+	my_brightness = (my_refresh_rate) * ((brightness+1) / 10.0);
+}
+
+
+int dispGetBrightness(){
+	return (my_brightness * 10.0) / my_refresh_rate - 1;
 }
 
 
@@ -384,7 +385,7 @@ static void update_display()
 		i = positionCounter;
 	}
 
-	timerStart(bright_id, my_brightness, TIM_MODE_SINGLESHOT, &turn_off_seven_segment);
+	timerStart(bright_id, TIMER_MS2TICKS(my_brightness), TIM_MODE_SINGLESHOT, &turn_off_seven_segment);
 
 	gpioWrite(SEL0, seven_segment_selector[segment_counter].select0);
 	gpioWrite(SEL1, seven_segment_selector[segment_counter].select1);

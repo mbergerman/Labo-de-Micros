@@ -61,6 +61,8 @@ void dispUpdateRefreshRate(int refreshRate);
 // dispUpdateBrightness(int brightness) - Updates the brightness of the display - brightness: int between one and nine.
 void dispUpdateBrightness(int brightness);
 
+int dispGetBrightness();
+
 // dispScrollLeft() - Scroll display to the left.
 void dispScrollLeft();
 // dispScrollRight() - Scroll display to the right.
