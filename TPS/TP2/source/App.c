@@ -343,7 +343,7 @@ static menuState_t state_pin(menuEvent_t event) {
 						}else{
 							next_state = STATE_ADMIN;
 							edit_flag = false;
-							user_to_check->error_counter = 0;
+							user_to_check->error_counter=0;
 
 						}
 					}else{
@@ -355,7 +355,7 @@ static menuState_t state_pin(menuEvent_t event) {
 						dispStartAutoScroll(disp_scroll_speed);
 						dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
 
-						user_to_check->error_counter =0;
+						user_to_check->error_counter=0;
 					}
 				}
 				}else{
