@@ -36,6 +36,12 @@
 // calibration value register
 #define CALIB_MASK 0xC0FFFFFF
 
+#define SYSTICK_DEVELOPMENT_MODE    1
+#ifdef SYSTICK_DEVELOPMENT_MODE
+	#include "PDRV_GPIO.h"
+	#define SYSTICK_IRQ_TEST_PIN	PORTNUM2PIN(PE,25)
+#endif
+
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
@@ -72,11 +78,26 @@ bool SysTick_Init (void (*funcallback)(void)) {
 	SysTick->CTRL = CSR_MASK & (ENABLE_MASK | TICKINT_MASK | CLKSOURCE_MASK);
 
 	funcallback_ptr = funcallback;
+
+#ifdef SYSTICK_DEVELOPMENT_MODE
+	gpioMode(SYSTICK_IRQ_TEST_PIN, OUTPUT);
+#endif //SYSTICK_DEVELOPMENT_MODE
+
 	return 0;
 }
 
 __ISR__ SysTick_Handler(void) {
+
+#ifdef SYSTICK_DEVELOPMENT_MODE
+	gpioWrite(SYSTICK_IRQ_TEST_PIN, HIGH);
+#endif //SYSTICK_DEVELOPMENT_MODE
+
 	(*funcallback_ptr)();
+
+#ifdef SYSTICK_DEVELOPMENT_MODE
+	gpioMode(SYSTICK_IRQ_TEST_PIN, LOW);
+#endif //SYSTICK_DEVELOPMENT_MODE
+
 }
 
 /*******************************************************************************

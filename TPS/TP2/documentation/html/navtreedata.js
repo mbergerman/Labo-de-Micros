@@ -1,29 +1,30 @@
 /*
-@ @licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2017 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "TP2_G1", "index.html", [
+  [ "TP2 - G1", "index.html", [
     [ "CMSIS DSP Software Library", "index.html", null ],
     [ "MISRA-C:2004 Compliance Exceptions", "_c_m_s_i_s__m_i_s_r_a__exceptions.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
@@ -54,84 +55,83 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_account_manager_8c.html",
-"_d_r_v___reader_8d.html",
-"_m_k64_f12__features_8h.html#a58790439f3708768ecdba9773e1b7798",
-"_m_k64_f12__features_8h.html#ae216dd24d8878306e7058798bcd7ce98",
-"arm__const__structs_8h.html#a92c94dc79c66ec66c95f793aedb964b9",
-"arm__math_8h.html#ab09941de7dfeb247e5c29b406a435fcc",
-"core__armv8mml_8h.html#aec43007d9998a0a0e01faede4133d6be",
-"group___a_d_c___register___masks.html#ga450ab5053af7a32f369bc1436b35d7f5",
-"group___a_i_p_s___register___masks.html#ga04bee5c16c03b5d4dcbbf6af21074d73",
-"group___a_i_p_s___register___masks.html#ga210fb859f3b2f6a62697a9830f5b1af7",
-"group___a_i_p_s___register___masks.html#ga3a5a16d7fa003c043c7f1c41ba468bf4",
-"group___a_i_p_s___register___masks.html#ga547d8a24cbb45a1528642e647a669edb",
-"group___a_i_p_s___register___masks.html#ga6b93d9224fa47096b56739590863cc60",
-"group___a_i_p_s___register___masks.html#ga83ea7c7a8ec58925f980f0523cf29ea3",
-"group___a_i_p_s___register___masks.html#ga9d5fc40dda23f7bf5da0d671e9bcd311",
-"group___a_i_p_s___register___masks.html#gabbd49dc86ea00669bb8ba1744e579c03",
-"group___a_i_p_s___register___masks.html#gad54c0f7e77c172141f608dab604bed96",
-"group___a_i_p_s___register___masks.html#gaee8c4aada08fc5b369fea1802e83bf21",
-"group___a_x_b_s___register___masks.html#gaa1f873165d665725d94cd2615e37daf5",
-"group___c_a_n___register___masks.html#ga4eef45eb97993797f0e4d25d84ae98ae",
-"group___c_a_n___register___masks.html#ga984ade68da6423e2afc012f0979221d7",
-"group___c_a_n___register___masks.html#gafaa9b706ec3fceebaa9315a30df1878c",
-"group___c_a_u___register___masks.html#ga53178110db052d34395df9ad7e9afd0e",
-"group___c_a_u___register___masks.html#gaaa37d49b203514cc1d0d59ef3dc5d4b0",
-"group___c_a_u___register___masks.html#gafa83a6c79cb080610d79ce60d6b99c59",
-"group___c_m_s_i_s___c_o_r_e.html#ga5869dd608eea73c80f0567d781d2230b",
-"group___c_m_s_i_s___core___n_v_i_c_functions.html#ga2b47e2e52cf5c48a5c3348636434b3ac",
-"group___c_m_s_i_s___core_debug.html#ga1eef4992d8f84bc6c0dffed1c87f90a5",
-"group___c_m_s_i_s___core_debug.html#gadad0bf68d32cba49c1ea7534122c2752",
-"group___c_m_s_i_s___d_w_t.html#gac2fb3e387e405a4b33fc5ba0bea5b21c",
-"group___c_m_s_i_s___f_p_u.html#gac48b42e143b93411977dcb9086a5e4e4",
-"group___c_m_s_i_s___s_c_b.html#ga0932b31faafd47656a03ced75a31d99b",
-"group___c_m_s_i_s___s_c_b.html#ga4cf59b6343ca962c80e1885710da90aa",
-"group___c_m_s_i_s___s_c_b.html#ga9147fd4e1b12394ae26eadf900a023a3",
-"group___c_m_s_i_s___s_c_b.html#gac8e4197b295c8560e68e2d71285c7879",
-"group___c_m_s_i_s___s_c_b.html#gaffb2737eca1eac0fc1c282a76a40953c",
-"group___c_m_s_i_s___t_p_i.html#ga48783ce3c695d8c06b1352a526110a87",
-"group___c_m_s_i_s___t_p_i.html#gacecc8710a8f6a23a7d1d4f5674daf02a",
-"group___c_m_t___register___masks.html#ga8bbdd2644bc864f959170f9260981476",
-"group___cortex___core___configuration.html#gab58771b4ec03f9bdddc84770f7c95c68",
-"group___d_m_a___register___masks.html#ga17c965464f8707b527e21600d136c450",
-"group___d_m_a___register___masks.html#ga436df8136dd63b3043e2835a3c5e476d",
-"group___d_m_a___register___masks.html#ga71e8be2fe53b3e57287a73d382467140",
-"group___d_m_a___register___masks.html#ga9f34d449d0ef98d8e06bcc52d8aef151",
-"group___d_m_a___register___masks.html#gad06728afa85b6e94aa8756fb96f40e11",
-"group___e_n_e_t___register___masks.html#ga010507349cf682b907697293a4302774",
-"group___e_n_e_t___register___masks.html#ga3bfa977a883b14b1f86c879e0a31ef5b",
-"group___e_n_e_t___register___masks.html#ga7b2d30f7f3e517d68feba7edd38c0c9c",
-"group___e_n_e_t___register___masks.html#gab2418a9dfbf8e0b5c7dd20714c14f791",
-"group___e_n_e_t___register___masks.html#gae9646ae2a082e18adeb6a1c2e654a821",
-"group___f_b___register___masks.html#ga861785aecc93d0e0824eb96ecc78322f",
-"group___f_m_c___register___masks.html#ga9b319489763e3896418dc291ca062b1e",
-"group___f_t_f_e___register___masks.html#gab782fa18693d9a3113b2d58a492717b4",
-"group___f_t_m___register___masks.html#ga1f12d6f2ddbc4a71756f2b0203ab57dd",
-"group___f_t_m___register___masks.html#ga5cd0fca223b478bedc823f61829aadf9",
-"group___f_t_m___register___masks.html#ga9eed3afcff66166330a8ec14590a1808",
-"group___f_t_m___register___masks.html#gadaacd100d78453d1cd175156838852b2",
-"group___g_p_i_o___register___masks.html#gacb7c8cc976937906c8e803811a7fbb68",
-"group___i2_c___register___masks.html#gae92fd6c5f532d79f1a47e76c6dbc33f0",
-"group___i2_s___register___masks.html#gac2ef4100a746df4bf4b7dff201b29c4f",
-"group___interrupt__vector__numbers.html#gga666eb0caeb12ec0e281415592ae89083af10966fc3931d5e75c0b53bf8eacf84e",
-"group___m_c_g___register___masks.html#ga1c693472984fb69650b117ffe5b76da5",
-"group___n_v___register___masks.html#gabf1111ccacc4104b2855c4f3851cbaa5",
-"group___p_o_r_t___register___masks.html#ga7e2386d3b1084b5b875ae3696f550ba9",
-"group___r_t_c___register___masks.html#ga818fe20844147f1e5844214424365459",
-"group___s_d_h_c___register___masks.html#ga5f00efec00a18073d07677099619160d",
-"group___s_d_h_c___register___masks.html#gae491cb6cce5060d01d37d180b32ac94c",
-"group___s_i_m___register___masks.html#ga5d0dd9f68667fdf71fce1b0a6ae990dd",
-"group___s_m_c___register___masks.html#ga9cc7998d16f01dc2d8deb5cd1bf184df",
-"group___s_y_s_m_p_u___register___masks.html#ga4e62e94f4b48a2a55a8fe744add7ed10",
-"group___u_a_r_t___register___masks.html#ga6547a749564447be3c48693c268e0373",
-"group___u_s_b___register___masks.html#ga11854093d47631b4f11f0c50bf7a063f",
-"group___u_s_b___register___masks.html#gadf654883244211ef077839ab67084069",
-"group___v_r_e_f___peripheral___access___layer.html#ga4f920936a8fc32483b3ebd9b0674b450",
-"group___v_r_e_f___peripheral___access___layer.html#gae15aca0c18a3014721e0e8a77fd3a70b",
-"group__edma__request.html#ggafd16b7227cfdebb996c941d293ddd600a9a39af91e43d5245a6826165c901a26b",
-"startup__mk64f12_8c.html#aa2cf6326a71a07daf281e2363e7cad20",
-"struct_s_c_b___type.html#ab974e7ceb2e52a3fbcaa84e06e52922d",
-"structarm__fir__lattice__instance__q31.html"
+"_d_r_v___stub___display_8c.html",
+"_m_k64_f12__features_8h.html#a5f2248d99e70fa7b6d941009e051a59a",
+"_m_k64_f12__features_8h.html#ae936766157566bd25463515dfaf0e6d8",
+"arm__math_8h.html#a053450cc600a55410ba5b5605e96245d",
+"arm__math_8h.html#ac132856c68f4bf2a056eaad5921c7880",
+"dir_92709420fde8ca446636ff7c23065e8b.html",
+"group___a_d_c___register___masks.html#ga9fd60a35fc4c15b563078ecbd3eaa449",
+"group___a_i_p_s___register___masks.html#ga2dd11dbd526cf34cbe3115f557488787",
+"group___a_i_p_s___register___masks.html#ga5d1232d21ec1ebc71208f60bbda96ed3",
+"group___a_i_p_s___register___masks.html#ga8e78d13022065a5ad39a0b0588fb6705",
+"group___a_i_p_s___register___masks.html#gac8bd9bbe01165c9de89ab39ea9bce89b",
+"group___a_i_p_s___register___masks.html#gaf9ed9f32740f8b9af4e4fff3373aa627",
+"group___c_a_n___register___masks.html#ga67ada6cca36875fac8f1cdbc7e0e47b9",
+"group___c_a_u___register___masks.html#ga201a5c7621a22e47519189370bcdb769",
+"group___c_a_u___register___masks.html#gacb80d3117440c08ed94005920ea5fb39",
+"group___c_m_s_i_s___c_o_r_e.html#gae1af7c6a3a6482a32ae290b66db3a3f8",
+"group___c_m_s_i_s___core___instruction_interface.html#gaad233022e850a009fc6f7602be1182f6",
+"group___c_m_s_i_s___core___n_v_i_c_functions.html#ga0e798d5aec68cdd8263db86a76df788f",
+"group___c_m_s_i_s___core___n_v_i_c_functions.html#ga58ad3f352f832235ab3b192ff4745320",
+"group___c_m_s_i_s___core___n_v_i_c_functions.html#ga8045d905a5ca57437d8e6f71ffcb6df5",
+"group___c_m_s_i_s___core___n_v_i_c_functions.html#gaaeb5e7cc0eaad4e2817272e7bf742083",
+"group___c_m_s_i_s___core___reg_acc_functions.html#ga08b66e2b60a46fada36d90d2bc1e7c9b",
+"group___c_m_s_i_s___core___sys_tick_functions.html#ga16e2f314ca3e2bf3383b81ec9a03a436",
+"group___c_m_s_i_s___core___sys_tick_functions.html#ga2916e1173ded6e0fc26e8445e72a6087",
+"group___c_m_s_i_s___core___sys_tick_functions.html#ga4d91e8d0f8791a2d137be359e6ca669f",
+"group___c_m_s_i_s___core___sys_tick_functions.html#ga6e1cf12e53a20224f6f62c001d9be972",
+"group___c_m_s_i_s___core___sys_tick_functions.html#ga87175ae057853babe4b55c2bf32ff933",
+"group___c_m_s_i_s___core___sys_tick_functions.html#ga9b7aee338904a0499cdfbc375a1e9f07",
+"group___c_m_s_i_s___core___sys_tick_functions.html#gab783d2034e8b4ee931a01929aa7f4372",
+"group___c_m_s_i_s___core___sys_tick_functions.html#gac81efc171e9852a36caeb47122bfec5b",
+"group___c_m_s_i_s___core___sys_tick_functions.html#gad0fb62e7a08e70fc5e0a76b67809f84b",
+"group___c_m_s_i_s___core___sys_tick_functions.html#gae185aac93686ffc78e998a9daf41415b",
+"group___c_m_s_i_s___core___sys_tick_functions.html#gaf86c61a5d38a4fc9cef942a12744486b",
+"group___c_m_s_i_s___core_debug.html#ga1e2f706a59e0d8131279af1c7e152f8d",
+"group___c_m_s_i_s___core_debug.html#ga444454f7c7748e76cd76c3809c887c41",
+"group___c_m_s_i_s___core_debug.html#ga7b67e4506d7f464ef5dafd6219739756",
+"group___c_m_s_i_s___core_debug.html#gaa043fd13768d57be320c682ca1c9b234",
+"group___c_m_s_i_s___core_debug.html#gad420a9b60620584faaca6289e83d3a87",
+"group___c_m_s_i_s___d_w_t.html#ga05f13b547a9a1e63e003ee0bc6446d0d",
+"group___c_m_s_i_s___d_w_t.html#ga9c6d62d121164013a8e3ee372f17f3e5",
+"group___c_m_s_i_s___d_w_t.html#gafd8448d7db4bc51f27f202e6e1f27823",
+"group___c_m_s_i_s___f_p_u.html#ga7aeedf36be8f170dd3e276028e8e29ed",
+"group___c_m_s_i_s___f_p_u.html#gafe29dd327ed3b723b3f01759568e116d",
+"group___c_m_s_i_s___s_c_b.html#ga3accaa1c94b1d7b920a48ffa1b47443b",
+"group___c_m_s_i_s___s_c_b.html#gabab1177d5e9a6ef204b9fd88551b7e53",
+"group___c_m_s_i_s___sys_tick.html#ga95bb984266ca764024836a870238a027",
+"group___c_m_s_i_s___t_p_i.html#ga3f7da5de2a34be41a092e5eddd22ac4d",
+"group___c_m_s_i_s___t_p_i.html#ga9537b8a660cc8803f57cbbee320b2fc8",
+"group___c_m_s_i_s___t_p_i.html#gacba2edfc0499828019550141356b0dcb",
+"group___c_m_s_i_s__core___debug_functions.html#ga12e68e55a7badc271b948d6c7230b2a8",
+"group___c_m_s_i_s__core___debug_functions.html#ga29ca657c77928334be08a2e6555be950",
+"group___c_m_s_i_s__core___debug_functions.html#ga40e45b21a6a619be3b6d5ce9c5bc5ffb",
+"group___c_m_s_i_s__core___debug_functions.html#ga5ae954cbd9986cd64625d7fa00943c8e",
+"group___c_m_s_i_s__core___debug_functions.html#ga6e1cf12e53a20224f6f62c001d9be972",
+"group___c_m_s_i_s__core___debug_functions.html#ga801095aba8ccf34540292b96b047981f",
+"group___c_m_s_i_s__core___debug_functions.html#ga9d4029e220311690756d836948e71393",
+"group___c_m_s_i_s__core___debug_functions.html#gaafa1400cd3168b21652b86599ad3ed83",
+"group___c_m_s_i_s__core___debug_functions.html#gac3ee2c30a1ac4ed34c8a866a17decd53",
+"group___c_m_s_i_s__core___debug_functions.html#gacc9e51f871c357a9094105435b150d13",
+"group___c_m_s_i_s__core___debug_functions.html#gadcaacbb12a2397ba3145a73d7d80ec3f",
+"group___c_m_s_i_s__core___debug_functions.html#gae89dd50f788f12863c681fba1a5b60d1",
+"group___c_m_s_i_s__core___debug_functions.html#gafe0bbc124e53ad450abc72bfb56bd74f",
+"group___c_m_s_i_s__core__base.html#gaaaf6477c2bde2f00f99e3c2fd1060b01",
+"group___c_m_s_i_s__core__bitfield.html#ga286e3b913dbd236c7f48ea70c8821f4e",
+"group___d_m_a___register___masks.html#ga007cfb975ad771415fc6ff30ec5e0ff8",
+"group___d_m_a___register___masks.html#ga61fa9d2c60ec0993ecf63e1a3ed62e79",
+"group___d_m_a___register___masks.html#gabce1884c422b6ac489666e9cf6ae23ed",
+"group___e_n_e_t___register___masks.html#ga265342bcbd0f282f5fbd894bb7e5191c",
+"group___e_n_e_t___register___masks.html#ga98ea3eee6cc1ad4be4cd471b4adfd876",
+"group___e_w_m___register___masks.html#ga4aacdb92f0d1a2edcdf651328e741c6a",
+"group___f_t_f_e___register___masks.html#ga18ad048f9a72d6d052efabc10f60b3a5",
+"group___f_t_m___register___masks.html#ga3f0dd548b377ac411ed455073958f9bd",
+"group___f_t_m___register___masks.html#gabd7f8ac1fa597d6b97b85926ae9e6fec",
+"group___interrupt__vector__numbers.html#gga666eb0caeb12ec0e281415592ae89083a869842c366512b0bc4c29e77e8b32217",
+"startup__mk64f12_8c.html#a0667bbddf0315d34758b87730f9dc7d0",
+"structarm__cfft__radix2__instance__q31.html#a46a2fb328199897af100fea0bfdf59aa",
+"structarm__rfft__instance__f32.html#ab13a458744ac79bb23784351e8002382"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

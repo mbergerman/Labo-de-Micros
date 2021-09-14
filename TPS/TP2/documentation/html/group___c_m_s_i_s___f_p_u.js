@@ -1,12 +1,13 @@
 var group___c_m_s_i_s___f_p_u =
 [
+    [ "Core Debug Registers (CoreDebug)", "group___c_m_s_i_s___core_debug.html", "group___c_m_s_i_s___core_debug" ],
     [ "FPU_Type", "struct_f_p_u___type.html", [
-      [ "FPCAR", "struct_f_p_u___type.html#a4fa83b560b046f9cec201c68fbe33507", null ],
-      [ "FPCCR", "struct_f_p_u___type.html#a242040bad11980d6250848a44cc967e3", null ],
-      [ "FPDSCR", "struct_f_p_u___type.html#a05a8c9a999e6ca4ff19f30c93ec50217", null ],
-      [ "MVFR0", "struct_f_p_u___type.html#a9b0103b438c8922eaea5624f71afbbc8", null ],
-      [ "MVFR1", "struct_f_p_u___type.html#a0a610dc4212de3ce1ad62e9afa76c728", null ],
-      [ "RESERVED0", "struct_f_p_u___type.html#affae06cd6df5e9fe9a92994052fd3bec", null ]
+      [ "FPCAR", "group___c_m_s_i_s__core___debug_functions.html#ga4fa83b560b046f9cec201c68fbe33507", null ],
+      [ "FPCCR", "group___c_m_s_i_s__core___debug_functions.html#ga242040bad11980d6250848a44cc967e3", null ],
+      [ "FPDSCR", "group___c_m_s_i_s__core___debug_functions.html#ga05a8c9a999e6ca4ff19f30c93ec50217", null ],
+      [ "MVFR0", "group___c_m_s_i_s__core___debug_functions.html#ga9b0103b438c8922eaea5624f71afbbc8", null ],
+      [ "MVFR1", "group___c_m_s_i_s__core___debug_functions.html#ga0a610dc4212de3ce1ad62e9afa76c728", null ],
+      [ "RESERVED0", "group___c_m_s_i_s__core___debug_functions.html#gaffae06cd6df5e9fe9a92994052fd3bec", null ]
     ] ],
     [ "FPU_FPCAR_ADDRESS_Msk", "group___c_m_s_i_s___f_p_u.html#ga517d89370c81325c5387b9c3085ac554", null ],
     [ "FPU_FPCAR_ADDRESS_Msk", "group___c_m_s_i_s___f_p_u.html#ga517d89370c81325c5387b9c3085ac554", null ],

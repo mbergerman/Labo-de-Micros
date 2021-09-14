@@ -1,6 +1,6 @@
 var struct_f_b___type =
 [
-    [ "CS", "group___v_r_e_f___peripheral___access___layer.html#ga9f248450f93c158815963e3e97e729c8", null ],
+    [ "CS", "group___v_r_e_f___peripheral___access___layer.html#ga3147bc500f8b146650a80632ce0e4f42", null ],
     [ "CSAR", "group___v_r_e_f___peripheral___access___layer.html#gaf9ab99d74989193a551ecdde079dc3dd", null ],
     [ "CSCR", "group___v_r_e_f___peripheral___access___layer.html#ga0fec501e836e61f4357f33451b5846c3", null ],
     [ "CSMR", "group___v_r_e_f___peripheral___access___layer.html#gaa3996f8519c6ea0bc401efe7c8c3a09d", null ],

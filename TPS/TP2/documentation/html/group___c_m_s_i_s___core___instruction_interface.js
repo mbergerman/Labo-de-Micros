@@ -1,5 +1,6 @@
 var group___c_m_s_i_s___core___instruction_interface =
 [
+    [ "CMSIS SIMD Intrinsics", "group___c_m_s_i_s___s_i_m_d__intrinsics.html", null ],
     [ "__BKPT", "group___c_m_s_i_s___core___instruction_interface.html#ga15ea6bd3c507d3e81c3b3a1258e46397", null ],
     [ "__BKPT", "group___c_m_s_i_s___core___instruction_interface.html#ga15ea6bd3c507d3e81c3b3a1258e46397", null ],
     [ "__BKPT", "group___c_m_s_i_s___core___instruction_interface.html#ga15ea6bd3c507d3e81c3b3a1258e46397", null ],
@@ -35,9 +36,9 @@ var group___c_m_s_i_s___core___instruction_interface =
     [ "__WFI", "group___c_m_s_i_s___core___instruction_interface.html#gad23bf2b78a9a4524157c9de0d30b7448", null ],
     [ "__WFI", "group___c_m_s_i_s___core___instruction_interface.html#gad23bf2b78a9a4524157c9de0d30b7448", null ],
     [ "__WFI", "group___c_m_s_i_s___core___instruction_interface.html#gab28e2b328c4cf23c917ab18a23194f8e", null ],
+    [ "__attribute__", "group___c_m_s_i_s___core___instruction_interface.html#gab926fe7178a379c3a7c0410b06fcb661", null ],
     [ "__attribute__", "group___c_m_s_i_s___core___instruction_interface.html#gae84a2733711339c5eefeb0d899506b96", null ],
     [ "__attribute__", "group___c_m_s_i_s___core___instruction_interface.html#gabe2b619a40cc0a7ffa8f765249ccf682", null ],
-    [ "__attribute__", "group___c_m_s_i_s___core___instruction_interface.html#gab926fe7178a379c3a7c0410b06fcb661", null ],
     [ "__DMB", "group___c_m_s_i_s___core___instruction_interface.html#gab1ea24daaaaee9c828f90cbca330cb5e", null ],
     [ "__DSB", "group___c_m_s_i_s___core___instruction_interface.html#ga7fe277f5385d23b9c44b2cbda1577ce9", null ],
     [ "__ISB", "group___c_m_s_i_s___core___instruction_interface.html#gae26c2b3961e702aeabc24d4984ebd369", null ],

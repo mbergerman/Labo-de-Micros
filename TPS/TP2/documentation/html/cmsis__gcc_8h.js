@@ -38,7 +38,7 @@ var cmsis__gcc_8h =
     [ "__get_MSP", "group___c_m_s_i_s___core___reg_acc_functions.html#ga667e7b8b97b4a30f445ae45d37588e45", null ],
     [ "__get_PRIMASK", "group___c_m_s_i_s___core___reg_acc_functions.html#ga4ff59fb9e280d19e79e6875863a65f0a", null ],
     [ "__get_PSP", "group___c_m_s_i_s___core___reg_acc_functions.html#ga826c53e30812e350c77f58aac9f42bcb", null ],
-    [ "__get_xPSR", "group___c_m_s_i_s___core___reg_acc_functions.html#ga52ca795dc9429ee0ac64ddd12c034834", null ],
+    [ "__get_xPSR", "group___c_m_s_i_s___core___reg_acc_functions.html#ga94c675a736d4754a5f73d8748b24aa11", null ],
     [ "__ISB", "group___c_m_s_i_s___core___instruction_interface.html#gae26c2b3961e702aeabc24d4984ebd369", null ],
     [ "__RBIT", "group___c_m_s_i_s___core___instruction_interface.html#gaf944a7b7d8fd70164cca27669316bcf7", null ],
     [ "__REV", "group___c_m_s_i_s___core___instruction_interface.html#gadb92679719950635fba8b1b954072695", null ],

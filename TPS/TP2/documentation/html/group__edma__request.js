@@ -1,6 +1,6 @@
 var group__edma__request =
 [
-    [ "dma_request_source_t", "group__edma__request.html#ga87fac76863c6c941e6363236dde6f58e", null ],
+    [ "dma_request_source_t", "group__edma__request.html#ga65b6d3293bf6cc9fe48af7f03002a373", null ],
     [ "_dma_request_source", "group__edma__request.html#gafd16b7227cfdebb996c941d293ddd600", [
       [ "kDmaRequestMux0Disable", "group__edma__request.html#ggafd16b7227cfdebb996c941d293ddd600aadd4a4e2b949beeb891c555e14334928", null ],
       [ "kDmaRequestMux0Reserved1", "group__edma__request.html#ggafd16b7227cfdebb996c941d293ddd600a85eeff0b46973f2b0ae4daf813462d5a", null ],

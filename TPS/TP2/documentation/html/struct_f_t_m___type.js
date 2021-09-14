@@ -6,7 +6,7 @@ var struct_f_t_m___type =
     [ "CnV", "group___v_r_e_f___peripheral___access___layer.html#gabbc17ee9708ecdd4ddc9cb9e528bdbac", null ],
     [ "COMBINE", "group___v_r_e_f___peripheral___access___layer.html#ga26b6fa0ba5b755cebdc2e3457f8a5172", null ],
     [ "CONF", "group___v_r_e_f___peripheral___access___layer.html#ga42f5a13cd52a3f76b0b20e3e7cb441b4", null ],
-    [ "CONTROLS", "group___v_r_e_f___peripheral___access___layer.html#ga49481166bedc27ac3587d77f0202fade", null ],
+    [ "CONTROLS", "group___v_r_e_f___peripheral___access___layer.html#ga23b073c9f92e284cfecb058b9ab8d8c8", null ],
     [ "DEADTIME", "group___v_r_e_f___peripheral___access___layer.html#ga4a65a29756f74ae8195109f77532ac6a", null ],
     [ "EXTTRIG", "group___v_r_e_f___peripheral___access___layer.html#ga9abcc76868e079ede7576489d123ac7c", null ],
     [ "FILTER", "group___v_r_e_f___peripheral___access___layer.html#ga4db3bd27e96389911d0d4b7f88f56f67", null ],

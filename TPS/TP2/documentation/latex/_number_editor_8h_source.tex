@@ -1,0 +1,65 @@
+\hypertarget{_number_editor_8h_source}{}\doxysection{Number\+Editor.\+h}
+\label{_number_editor_8h_source}\index{source/NumberEditor.h@{source/NumberEditor.h}}
+\mbox{\hyperlink{_number_editor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/***************************************************************************/}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef \_NUMBER\_EDITOR\_H\_}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define \_NUMBER\_EDITOR\_H\_}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{11 \textcolor{comment}{ * INCLUDE HEADER FILES}}
+\DoxyCodeLine{12 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{19 \textcolor{comment}{ * CONSTANT AND MACRO DEFINITIONS USING \#DEFINE}}
+\DoxyCodeLine{20 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{25 \textcolor{comment}{ * ENUMERATIONS AND STRUCTURES AND TYPEDEFS}}
+\DoxyCodeLine{26 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{typedef} \textcolor{keyword}{enum}\{}
+\DoxyCodeLine{29     \mbox{\hyperlink{_number_editor_8h_a0c3bce4a359345dce22956aff870abe6afdeb85e0f7d23adf4456df94ba80d7a9}{EVENT\_EDITOR\_PREV}},}
+\DoxyCodeLine{30     \mbox{\hyperlink{_number_editor_8h_a0c3bce4a359345dce22956aff870abe6a229e536212cb947404f8fe18a3c22a4c}{EVENT\_EDITOR\_NEXT}},}
+\DoxyCodeLine{31     \mbox{\hyperlink{_number_editor_8h_a0c3bce4a359345dce22956aff870abe6ae74049be75d30e8d00452138690e33fb}{EVENT\_EDITOR\_NONE}}}
+\DoxyCodeLine{32 \}\mbox{\hyperlink{_number_editor_8h_a0c3bce4a359345dce22956aff870abe6}{editorEvent\_t}};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{35 \textcolor{comment}{ * VARIABLE PROTOTYPES WITH GLOBAL SCOPE}}
+\DoxyCodeLine{36 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{comment}{// +ej: extern unsigned int anio\_actual;+}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{42 \textcolor{comment}{ * FUNCTION PROTOTYPES WITH GLOBAL SCOPE}}
+\DoxyCodeLine{43 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{keywordtype}{void} \mbox{\hyperlink{_number_editor_8h_ad3e30f55497851a510ac4a93a1e6cd67}{numberEditorStart}}(uint8\_t editor\_len, \textcolor{keywordtype}{bool} flag\_next, \textcolor{keywordtype}{bool} flag\_hidden);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{keywordtype}{void} \mbox{\hyperlink{_number_editor_8h_a44a75a828f9e115b39d741065aa0edb7}{numberEditorSetDigit}}(uint8\_t n, uint8\_t digit);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{keywordtype}{void} \mbox{\hyperlink{_number_editor_8h_a9c65916027ef2de15a48c8b9fba405f0}{numberEditorLeft}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{keywordtype}{void} \mbox{\hyperlink{_number_editor_8h_ab194a9bf0cdf890751fe25431cd81380}{numberEditorRight}}();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \mbox{\hyperlink{_number_editor_8h_a0c3bce4a359345dce22956aff870abe6}{editorEvent\_t}} \mbox{\hyperlink{_number_editor_8h_a228d6fbfc652e62a678c34250dea7932}{numberEditorClick}}();}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{keywordtype}{void} \mbox{\hyperlink{_number_editor_8h_aeeb9593c11489eef6f1855be7123b5ab}{initNumberEditor}}();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 uint32\_t \mbox{\hyperlink{_number_editor_8h_abb98a80ae432a076b3fd0ed7cf75d1db}{getBufferNumber}}();}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 uint8\_t \mbox{\hyperlink{_number_editor_8h_a4b080cbb504d3691205dfa6dc28fb545}{getNumberLen}}();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{62 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_NUMBER\_EDITOR\_H\_}}
+
+\end{DoxyCode}

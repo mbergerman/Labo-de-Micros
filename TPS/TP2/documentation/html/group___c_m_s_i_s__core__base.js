@@ -1,5 +1,7 @@
 var group___c_m_s_i_s__core__base =
 [
+    [ "Functions and Instructions Reference", "group___c_m_s_i_s___core___function_interface.html", "group___c_m_s_i_s___core___function_interface" ],
+    [ "NVIC Functions", "group___c_m_s_i_s___core___n_v_i_c_functions.html", "group___c_m_s_i_s___core___n_v_i_c_functions" ],
     [ "CoreDebug", "group___c_m_s_i_s__core__base.html#gab6e30a2b802d9021619dbb0be7f5d63d", null ],
     [ "CoreDebug", "group___c_m_s_i_s__core__base.html#gab6e30a2b802d9021619dbb0be7f5d63d", null ],
     [ "CoreDebug", "group___c_m_s_i_s__core__base.html#gab6e30a2b802d9021619dbb0be7f5d63d", null ],

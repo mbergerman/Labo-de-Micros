@@ -1,12 +1,31 @@
-#include "AccountManager.h"
+/***************************************************************************//**
+  @file     AccountManager.h
+  @brief    Manager of accounts in the database
+  @author   Grupo 1
+ ******************************************************************************/
 
+/*******************************************************************************
+ * INCLUDE HEADER FILES
+ ******************************************************************************/
+
+#include "AccountManager.h"
+#include <stdio.h>
+
+/*******************************************************************************
+ * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
+ ******************************************************************************/
 
 static User user_data_base[DATA_BASE_MAX];
 static int users_in_db = 0;
 
 
+/*******************************************************************************
+ *******************************************************************************
+                        GLOBAL FUNCTION DEFINITIONS
+ *******************************************************************************
+ ******************************************************************************/
 
-static void init_data_base()
+void initDataBase()
 {
 	User master_user;
 	master_user.ID = MASTER_ID;
@@ -16,12 +35,16 @@ static void init_data_base()
 	user_data_base[users_in_db] = master_user;
 	users_in_db++;
 
-	add_to_data_base(master_user, 22747207, 800, false);
-	add_to_data_base(master_user, 10000000, 10090, false);
+	// Tarjetas que teníamos a mano:
+	dbAddNewUser(master_user, 22747207, 800, false);
+	dbAddNewUser(master_user, 38966311, 60831, false);
+
+	// Test user:
+	dbAddNewUser(master_user, 10000000, 10090, false);
 }
 
 //Devuelve si el ID está en la BD
-static bool id_check(uint32_t ID_buffered)
+bool dbCheckID(uint32_t ID_buffered)
 {
 	bool check = false;
 	for (uint8_t i = 0; (i < users_in_db) && !check; i++) {
@@ -34,21 +57,21 @@ static bool id_check(uint32_t ID_buffered)
 }
 
 //Devuelve el User de un determinado ID
-static User* user_search(uint32_t ID_to_search)
+User* dbUserSearch(uint32_t ID_to_search)
 {
-	User result;
-
 	for (uint8_t i = 0; (i < users_in_db); i++) {
 		uint32_t id_db = user_data_base[i].ID;
 		if (id_db == ID_to_search) {
 			return &user_data_base[i];
 		}
 	}
+
+	return NULL;	// No se encontró el user (no debería pasar ya que antes se llama a id_check
 }
 
-static bool add_to_data_base(User admin_user, uint32_t ID_u, uint32_t PIN_u, bool admin_u){	
+bool dbAddNewUser(User admin_user, uint32_t ID_u, uint32_t PIN_u, bool admin_u){
 	bool done = false;
-	if(admin_user.admin && !id_check(ID_u)){
+	if(admin_user.admin && !dbCheckID(ID_u)){
 		User new_user;
 		new_user.ID = ID_u;
 		new_user.PIN = PIN_u;
@@ -61,7 +84,7 @@ static bool add_to_data_base(User admin_user, uint32_t ID_u, uint32_t PIN_u, boo
 	return done;
 }
 
-static bool delete_from_data_base(User admin_user, uint32_t ID_u){
+bool dbRemoveUser(User admin_user, uint32_t ID_u){
 	bool found = false;
     for (uint8_t i = 0; admin_user.admin && (i < users_in_db) && !found ; i++) {
 		uint32_t id_db = user_data_base[i].ID;
@@ -73,6 +96,6 @@ static bool delete_from_data_base(User admin_user, uint32_t ID_u){
 	return found;
 }
 
-static bool is_blocked(User* u){
+bool dbUserBlocked(User* u){
 	return (u->error_counter >= MAX_ERRORS);
 }

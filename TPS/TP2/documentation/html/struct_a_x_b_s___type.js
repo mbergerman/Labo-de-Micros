@@ -14,5 +14,5 @@ var struct_a_x_b_s___type =
     [ "RESERVED_3", "group___v_r_e_f___peripheral___access___layer.html#gae6f7bcb4c19541862a0ea955208a38f2", null ],
     [ "RESERVED_4", "group___v_r_e_f___peripheral___access___layer.html#ga269f43b5f47b1d3dadb76a9bb547eb2c", null ],
     [ "RESERVED_5", "group___v_r_e_f___peripheral___access___layer.html#gac434c3049fc8beb09dd04d55973be5a5", null ],
-    [ "SLAVE", "group___v_r_e_f___peripheral___access___layer.html#ga289303c4d837180d3b16b684f80f0ba0", null ]
+    [ "SLAVE", "group___v_r_e_f___peripheral___access___layer.html#ga49d038f708567a8218c8fc391776faa9", null ]
 ];

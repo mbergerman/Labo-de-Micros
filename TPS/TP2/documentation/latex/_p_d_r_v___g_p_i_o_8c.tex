@@ -1,106 +1,122 @@
-\hypertarget{_p_d_r_v___g_p_i_o_8c}{}\section{drivers/\+P\+D\+R\+V\+\_\+\+G\+P\+IO.c File Reference}
-\label{_p_d_r_v___g_p_i_o_8c}\index{drivers/\+P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{drivers/\+P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
+\hypertarget{_p_d_r_v___g_p_i_o_8c}{}\doxysection{drivers/\+PDRV\+\_\+\+GPIO.c File Reference}
+\label{_p_d_r_v___g_p_i_o_8c}\index{drivers/PDRV\_GPIO.c@{drivers/PDRV\_GPIO.c}}
 
 
-G\+P\+IO driver.  
+GPIO driver.  
 
 
-{\ttfamily \#include \char`\"{}M\+K64\+F12.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MK64\+F12.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}PDRV\+\_\+\+GPIO.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}hardware.\+h\char`\"{}}\newline
-\subsection*{Macros}
+\doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a78b3fd1f2cef0eb0e025019eb7ab3c65}{S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+SK}}~0x3\+E00
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a78b3fd1f2cef0eb0e025019eb7ab3c65}{SIM\+\_\+\+SCGC5\+\_\+\+PORT\+\_\+\+MASK}}~0x3\+E00
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a46168c358807631601faa34d692fd993}{S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+RT}}(port,  b)~(((uint32\+\_\+t)(((uint32\+\_\+t)(b)) $<$$<$ (9+port))) \& \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a78b3fd1f2cef0eb0e025019eb7ab3c65}{S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+SK}})
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a46168c358807631601faa34d692fd993}{SIM\+\_\+\+SCGC5\+\_\+\+PORT}}(port,  b)~(((uint32\+\_\+t)(((uint32\+\_\+t)(b)) $<$$<$ (9+port))) \& \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a78b3fd1f2cef0eb0e025019eb7ab3c65}{SIM\+\_\+\+SCGC5\+\_\+\+PORT\+\_\+\+MASK}})
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a3def8ddb155ca19398c3d9939ba3bebe}{P\+O\+R\+T\+X\+\_\+\+I\+R\+Qn}}(p)~(\mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083ab9d085b02f1b3c2ed7b0b7fe6ae4c947}{P\+O\+R\+T\+A\+\_\+\+I\+R\+Qn}}+p)
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a3def8ddb155ca19398c3d9939ba3bebe}{PORTX\+\_\+\+IRQn}}(p)~(\mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083ab9d085b02f1b3c2ed7b0b7fe6ae4c947}{PORTA\+\_\+\+IRQn}}+p)
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_adb312c6a2d8064fb21620d1e141111d6}{P\+I\+N\+S\+\_\+\+P\+E\+R\+\_\+\+P\+O\+RT}}~32
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_adb312c6a2d8064fb21620d1e141111d6}{PINS\+\_\+\+PER\+\_\+\+PORT}}~32
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a7ec751f49d6391028a94f1419374c2fa}{A\+R\+R\+A\+Y\+\_\+\+S\+I\+ZE}}~(F\+S\+L\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+S\+O\+C\+\_\+\+P\+O\+R\+T\+\_\+\+C\+O\+U\+NT$\ast$\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_adb312c6a2d8064fb21620d1e141111d6}{P\+I\+N\+S\+\_\+\+P\+E\+R\+\_\+\+P\+O\+RT}})
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a7ec751f49d6391028a94f1419374c2fa}{ARRAY\+\_\+\+SIZE}}~(FSL\+\_\+\+FEATURE\+\_\+\+SOC\+\_\+\+PORT\+\_\+\+COUNT$\ast$\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_adb312c6a2d8064fb21620d1e141111d6}{PINS\+\_\+\+PER\+\_\+\+PORT}})
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_aff638a81914812f58422ea841b9954f9}{GPIO\+\_\+\+DEVELOPMENT\+\_\+\+MODE}}~1
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a3c2f421e5a93c4b331a3cfbd0e35637d}{GPIO\+\_\+\+IRQ\+\_\+\+TEST\+\_\+\+PIN}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04a84a0e8421125bc6ef85e43bab494f68c}{PE}},24)
 \end{DoxyCompactItemize}
-\subsection*{Functions}
+\doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_ab34efe1e7a4661cb63c09374414169d6}{gpio\+Mode}} (\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}} pin, uint8\+\_\+t mode)
 \begin{DoxyCompactList}\small\item\em Configures the specified pin to behave either as an input or an output. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a7dfc26dc60c3056b0cbe99bfaedab27f}{gpio\+I\+RQ}} (\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}} pin, uint8\+\_\+t irq\+Mode, \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a393f57a2cb0a6d68e52055655b75e6c5}{pin\+Irq\+Fun\+\_\+t}} irq\+Fun)
-\begin{DoxyCompactList}\small\item\em Configures how the pin reacts when an I\+RQ event ocurrs. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a7dfc26dc60c3056b0cbe99bfaedab27f}{gpio\+IRQ}} (\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}} pin, uint8\+\_\+t irq\+Mode, \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a393f57a2cb0a6d68e52055655b75e6c5}{pin\+Irq\+Fun\+\_\+t}} irq\+Fun)
+\begin{DoxyCompactList}\small\item\em Configures how the pin reacts when an IRQ event ocurrs. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_ad68eec4f70f9f1fa38ae48c138c0d82f}{gpio\+Write}} (\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}} pin, bool value)
-\begin{DoxyCompactList}\small\item\em Write a H\+I\+GH or a L\+OW value to a digital pin. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Write a HIGH or a LOW value to a digital pin. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a87cc22913db98be1ef1dadb20cda7831}{gpio\+Toggle}} (\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}} pin)
-\begin{DoxyCompactList}\small\item\em Toggle the value of a digital pin (H\+I\+GH$<$-\/$>$L\+OW) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Toggle the value of a digital pin (HIGH\texorpdfstring{$<$}{<}-\/\texorpdfstring{$>$}{>}LOW) \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a59ce7b278cd2032a644766fd87e2e61a}{gpio\+Read}} (\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}} pin)
-\begin{DoxyCompactList}\small\item\em Reads the value from a specified digital pin, either H\+I\+GH or L\+OW. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{hardware_8h_a27a122170c1b7feec6fa7247a91ac899}{\+\_\+\+\_\+\+I\+S\+R\+\_\+\+\_\+}} \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a23bab1118c571fb986315470633d20d3}{P\+O\+R\+T\+A\+\_\+\+I\+R\+Q\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em Reads the value from a specified digital pin, either HIGH or LOW. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{hardware_8h_a27a122170c1b7feec6fa7247a91ac899}{\+\_\+\+\_\+\+ISR\+\_\+\+\_\+}} \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a23bab1118c571fb986315470633d20d3}{PORTA\+\_\+\+IRQHandler}} (void)
 \item 
-\mbox{\hyperlink{hardware_8h_a27a122170c1b7feec6fa7247a91ac899}{\+\_\+\+\_\+\+I\+S\+R\+\_\+\+\_\+}} \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a235248bab056bf6e9490bd77f5ea4953}{P\+O\+R\+T\+B\+\_\+\+I\+R\+Q\+Handler}} (void)
+\mbox{\hyperlink{hardware_8h_a27a122170c1b7feec6fa7247a91ac899}{\+\_\+\+\_\+\+ISR\+\_\+\+\_\+}} \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a235248bab056bf6e9490bd77f5ea4953}{PORTB\+\_\+\+IRQHandler}} (void)
 \item 
-\mbox{\hyperlink{hardware_8h_a27a122170c1b7feec6fa7247a91ac899}{\+\_\+\+\_\+\+I\+S\+R\+\_\+\+\_\+}} \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_ade3880e81da2b0c4348d766324b8e4d4}{P\+O\+R\+T\+C\+\_\+\+I\+R\+Q\+Handler}} (void)
+\mbox{\hyperlink{hardware_8h_a27a122170c1b7feec6fa7247a91ac899}{\+\_\+\+\_\+\+ISR\+\_\+\+\_\+}} \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_ade3880e81da2b0c4348d766324b8e4d4}{PORTC\+\_\+\+IRQHandler}} (void)
 \item 
-\mbox{\hyperlink{hardware_8h_a27a122170c1b7feec6fa7247a91ac899}{\+\_\+\+\_\+\+I\+S\+R\+\_\+\+\_\+}} \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a8fd3ee50dc9009ad6273dd3afd6e68ad}{P\+O\+R\+T\+D\+\_\+\+I\+R\+Q\+Handler}} (void)
+\mbox{\hyperlink{hardware_8h_a27a122170c1b7feec6fa7247a91ac899}{\+\_\+\+\_\+\+ISR\+\_\+\+\_\+}} \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a8fd3ee50dc9009ad6273dd3afd6e68ad}{PORTD\+\_\+\+IRQHandler}} (void)
 \item 
-\mbox{\hyperlink{hardware_8h_a27a122170c1b7feec6fa7247a91ac899}{\+\_\+\+\_\+\+I\+S\+R\+\_\+\+\_\+}} \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a54fa8831a9507d69e623def7625bcc2c}{P\+O\+R\+T\+E\+\_\+\+I\+R\+Q\+Handler}} (void)
+\mbox{\hyperlink{hardware_8h_a27a122170c1b7feec6fa7247a91ac899}{\+\_\+\+\_\+\+ISR\+\_\+\+\_\+}} \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a54fa8831a9507d69e623def7625bcc2c}{PORTE\+\_\+\+IRQHandler}} (void)
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
-G\+P\+IO driver. 
+\doxysubsection{Detailed Description}
+GPIO driver. 
 
 \begin{DoxyAuthor}{Author}
 Grupo 1 
 \end{DoxyAuthor}
 
 
-\subsection{Macro Definition Documentation}
+\doxysubsection{Macro Definition Documentation}
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_a7ec751f49d6391028a94f1419374c2fa}\label{_p_d_r_v___g_p_i_o_8c_a7ec751f49d6391028a94f1419374c2fa}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!A\+R\+R\+A\+Y\+\_\+\+S\+I\+ZE@{A\+R\+R\+A\+Y\+\_\+\+S\+I\+ZE}}
-\index{A\+R\+R\+A\+Y\+\_\+\+S\+I\+ZE@{A\+R\+R\+A\+Y\+\_\+\+S\+I\+ZE}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{A\+R\+R\+A\+Y\+\_\+\+S\+I\+ZE}{ARRAY\_SIZE}}
-{\footnotesize\ttfamily \#define A\+R\+R\+A\+Y\+\_\+\+S\+I\+ZE~(F\+S\+L\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+S\+O\+C\+\_\+\+P\+O\+R\+T\+\_\+\+C\+O\+U\+NT$\ast$\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_adb312c6a2d8064fb21620d1e141111d6}{P\+I\+N\+S\+\_\+\+P\+E\+R\+\_\+\+P\+O\+RT}})}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!ARRAY\_SIZE@{ARRAY\_SIZE}}
+\index{ARRAY\_SIZE@{ARRAY\_SIZE}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{ARRAY\_SIZE}{ARRAY\_SIZE}}
+{\footnotesize\ttfamily \#define ARRAY\+\_\+\+SIZE~(FSL\+\_\+\+FEATURE\+\_\+\+SOC\+\_\+\+PORT\+\_\+\+COUNT$\ast$\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_adb312c6a2d8064fb21620d1e141111d6}{PINS\+\_\+\+PER\+\_\+\+PORT}})}
+
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_aff638a81914812f58422ea841b9954f9}\label{_p_d_r_v___g_p_i_o_8c_aff638a81914812f58422ea841b9954f9}} 
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!GPIO\_DEVELOPMENT\_MODE@{GPIO\_DEVELOPMENT\_MODE}}
+\index{GPIO\_DEVELOPMENT\_MODE@{GPIO\_DEVELOPMENT\_MODE}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{GPIO\_DEVELOPMENT\_MODE}{GPIO\_DEVELOPMENT\_MODE}}
+{\footnotesize\ttfamily \#define GPIO\+\_\+\+DEVELOPMENT\+\_\+\+MODE~1}
+
+\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_a3c2f421e5a93c4b331a3cfbd0e35637d}\label{_p_d_r_v___g_p_i_o_8c_a3c2f421e5a93c4b331a3cfbd0e35637d}} 
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!GPIO\_IRQ\_TEST\_PIN@{GPIO\_IRQ\_TEST\_PIN}}
+\index{GPIO\_IRQ\_TEST\_PIN@{GPIO\_IRQ\_TEST\_PIN}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{GPIO\_IRQ\_TEST\_PIN}{GPIO\_IRQ\_TEST\_PIN}}
+{\footnotesize\ttfamily \#define GPIO\+\_\+\+IRQ\+\_\+\+TEST\+\_\+\+PIN~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04a84a0e8421125bc6ef85e43bab494f68c}{PE}},24)}
 
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_adb312c6a2d8064fb21620d1e141111d6}\label{_p_d_r_v___g_p_i_o_8c_adb312c6a2d8064fb21620d1e141111d6}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!P\+I\+N\+S\+\_\+\+P\+E\+R\+\_\+\+P\+O\+RT@{P\+I\+N\+S\+\_\+\+P\+E\+R\+\_\+\+P\+O\+RT}}
-\index{P\+I\+N\+S\+\_\+\+P\+E\+R\+\_\+\+P\+O\+RT@{P\+I\+N\+S\+\_\+\+P\+E\+R\+\_\+\+P\+O\+RT}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{P\+I\+N\+S\+\_\+\+P\+E\+R\+\_\+\+P\+O\+RT}{PINS\_PER\_PORT}}
-{\footnotesize\ttfamily \#define P\+I\+N\+S\+\_\+\+P\+E\+R\+\_\+\+P\+O\+RT~32}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!PINS\_PER\_PORT@{PINS\_PER\_PORT}}
+\index{PINS\_PER\_PORT@{PINS\_PER\_PORT}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{PINS\_PER\_PORT}{PINS\_PER\_PORT}}
+{\footnotesize\ttfamily \#define PINS\+\_\+\+PER\+\_\+\+PORT~32}
 
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_a3def8ddb155ca19398c3d9939ba3bebe}\label{_p_d_r_v___g_p_i_o_8c_a3def8ddb155ca19398c3d9939ba3bebe}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!P\+O\+R\+T\+X\+\_\+\+I\+R\+Qn@{P\+O\+R\+T\+X\+\_\+\+I\+R\+Qn}}
-\index{P\+O\+R\+T\+X\+\_\+\+I\+R\+Qn@{P\+O\+R\+T\+X\+\_\+\+I\+R\+Qn}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{P\+O\+R\+T\+X\+\_\+\+I\+R\+Qn}{PORTX\_IRQn}}
-{\footnotesize\ttfamily \#define P\+O\+R\+T\+X\+\_\+\+I\+R\+Qn(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083ab9d085b02f1b3c2ed7b0b7fe6ae4c947}{P\+O\+R\+T\+A\+\_\+\+I\+R\+Qn}}+p)}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!PORTX\_IRQn@{PORTX\_IRQn}}
+\index{PORTX\_IRQn@{PORTX\_IRQn}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{PORTX\_IRQn}{PORTX\_IRQn}}
+{\footnotesize\ttfamily \#define PORTX\+\_\+\+IRQn(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083ab9d085b02f1b3c2ed7b0b7fe6ae4c947}{PORTA\+\_\+\+IRQn}}+p)}
 
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_a46168c358807631601faa34d692fd993}\label{_p_d_r_v___g_p_i_o_8c_a46168c358807631601faa34d692fd993}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+RT@{S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+RT}}
-\index{S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+RT@{S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+RT}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+RT}{SIM\_SCGC5\_PORT}}
-{\footnotesize\ttfamily \#define S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+RT(\begin{DoxyParamCaption}\item[{}]{port,  }\item[{}]{b }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(b)) $<$$<$ (9+port))) \& \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a78b3fd1f2cef0eb0e025019eb7ab3c65}{S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+SK}})}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!SIM\_SCGC5\_PORT@{SIM\_SCGC5\_PORT}}
+\index{SIM\_SCGC5\_PORT@{SIM\_SCGC5\_PORT}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{SIM\_SCGC5\_PORT}{SIM\_SCGC5\_PORT}}
+{\footnotesize\ttfamily \#define SIM\+\_\+\+SCGC5\+\_\+\+PORT(\begin{DoxyParamCaption}\item[{}]{port,  }\item[{}]{b }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(b)) $<$$<$ (9+port))) \& \mbox{\hyperlink{_p_d_r_v___g_p_i_o_8c_a78b3fd1f2cef0eb0e025019eb7ab3c65}{SIM\+\_\+\+SCGC5\+\_\+\+PORT\+\_\+\+MASK}})}
 
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_a78b3fd1f2cef0eb0e025019eb7ab3c65}\label{_p_d_r_v___g_p_i_o_8c_a78b3fd1f2cef0eb0e025019eb7ab3c65}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+SK@{S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+SK}}
-\index{S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+SK@{S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+SK}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+SK}{SIM\_SCGC5\_PORT\_MASK}}
-{\footnotesize\ttfamily \#define S\+I\+M\+\_\+\+S\+C\+G\+C5\+\_\+\+P\+O\+R\+T\+\_\+\+M\+A\+SK~0x3\+E00}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!SIM\_SCGC5\_PORT\_MASK@{SIM\_SCGC5\_PORT\_MASK}}
+\index{SIM\_SCGC5\_PORT\_MASK@{SIM\_SCGC5\_PORT\_MASK}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{SIM\_SCGC5\_PORT\_MASK}{SIM\_SCGC5\_PORT\_MASK}}
+{\footnotesize\ttfamily \#define SIM\+\_\+\+SCGC5\+\_\+\+PORT\+\_\+\+MASK~0x3\+E00}
 
 
 
-\subsection{Function Documentation}
+\doxysubsection{Function Documentation}
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_a7dfc26dc60c3056b0cbe99bfaedab27f}\label{_p_d_r_v___g_p_i_o_8c_a7dfc26dc60c3056b0cbe99bfaedab27f}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!gpio\+I\+RQ@{gpio\+I\+RQ}}
-\index{gpio\+I\+RQ@{gpio\+I\+RQ}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{gpio\+I\+R\+Q()}{gpioIRQ()}}
-{\footnotesize\ttfamily bool gpio\+I\+RQ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}}}]{pin,  }\item[{uint8\+\_\+t}]{irq\+Mode,  }\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a393f57a2cb0a6d68e52055655b75e6c5}{pin\+Irq\+Fun\+\_\+t}}}]{irq\+Fun }\end{DoxyParamCaption})}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!gpioIRQ@{gpioIRQ}}
+\index{gpioIRQ@{gpioIRQ}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{gpioIRQ()}{gpioIRQ()}}
+{\footnotesize\ttfamily bool gpio\+IRQ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}}}]{pin,  }\item[{uint8\+\_\+t}]{irq\+Mode,  }\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a393f57a2cb0a6d68e52055655b75e6c5}{pin\+Irq\+Fun\+\_\+t}}}]{irq\+Fun }\end{DoxyParamCaption})}
 
 
 
-Configures how the pin reacts when an I\+RQ event ocurrs. 
+Configures how the pin reacts when an IRQ event ocurrs. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em pin} & the pin whose I\+RQ mode you wish to set (according P\+O\+R\+T\+N\+U\+M2\+P\+IN) \\
+{\em pin} & the pin whose IRQ mode you wish to set (according PORTNUM2\+PIN) \\
 \hline
 {\em irq\+Mode} & disable, rising\+Edge, falling\+Edge or both\+Edges \\
 \hline
@@ -111,9 +127,9 @@ Configures how the pin reacts when an I\+RQ event ocurrs.
 Registration succeed 
 \end{DoxyReturn}
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_ab34efe1e7a4661cb63c09374414169d6}\label{_p_d_r_v___g_p_i_o_8c_ab34efe1e7a4661cb63c09374414169d6}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!gpio\+Mode@{gpio\+Mode}}
-\index{gpio\+Mode@{gpio\+Mode}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{gpio\+Mode()}{gpioMode()}}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!gpioMode@{gpioMode}}
+\index{gpioMode@{gpioMode}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{gpioMode()}{gpioMode()}}
 {\footnotesize\ttfamily void gpio\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}}}]{pin,  }\item[{uint8\+\_\+t}]{mode }\end{DoxyParamCaption})}
 
 
@@ -122,88 +138,88 @@ Configures the specified pin to behave either as an input or an output.
 
 
 \begin{DoxyParams}{Parameters}
-{\em pin} & the pin whose mode you wish to set (according P\+O\+R\+T\+N\+U\+M2\+P\+IN) \\
+{\em pin} & the pin whose mode you wish to set (according PORTNUM2\+PIN) \\
 \hline
-{\em mode} & I\+N\+P\+UT, O\+U\+T\+P\+UT, I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+UP or I\+N\+P\+U\+T\+\_\+\+P\+U\+L\+L\+D\+O\+WN. \\
+{\em mode} & INPUT, OUTPUT, INPUT\+\_\+\+PULLUP or INPUT\+\_\+\+PULLDOWN. \\
 \hline
 \end{DoxyParams}
-!! \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_a59ce7b278cd2032a644766fd87e2e61a}\label{_p_d_r_v___g_p_i_o_8c_a59ce7b278cd2032a644766fd87e2e61a}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!gpio\+Read@{gpio\+Read}}
-\index{gpio\+Read@{gpio\+Read}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{gpio\+Read()}{gpioRead()}}
+!!\mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_a59ce7b278cd2032a644766fd87e2e61a}\label{_p_d_r_v___g_p_i_o_8c_a59ce7b278cd2032a644766fd87e2e61a}} 
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!gpioRead@{gpioRead}}
+\index{gpioRead@{gpioRead}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{gpioRead()}{gpioRead()}}
 {\footnotesize\ttfamily bool gpio\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}}}]{pin }\end{DoxyParamCaption})}
 
 
 
-Reads the value from a specified digital pin, either H\+I\+GH or L\+OW. 
+Reads the value from a specified digital pin, either HIGH or LOW. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em pin} & the pin to read (according P\+O\+R\+T\+N\+U\+M2\+P\+IN) \\
+{\em pin} & the pin to read (according PORTNUM2\+PIN) \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-H\+I\+GH or L\+OW 
+HIGH or LOW 
 \end{DoxyReturn}
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_a87cc22913db98be1ef1dadb20cda7831}\label{_p_d_r_v___g_p_i_o_8c_a87cc22913db98be1ef1dadb20cda7831}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!gpio\+Toggle@{gpio\+Toggle}}
-\index{gpio\+Toggle@{gpio\+Toggle}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{gpio\+Toggle()}{gpioToggle()}}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!gpioToggle@{gpioToggle}}
+\index{gpioToggle@{gpioToggle}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{gpioToggle()}{gpioToggle()}}
 {\footnotesize\ttfamily void gpio\+Toggle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}}}]{pin }\end{DoxyParamCaption})}
 
 
 
-Toggle the value of a digital pin (H\+I\+GH$<$-\/$>$L\+OW) 
+Toggle the value of a digital pin (HIGH\texorpdfstring{$<$}{<}-\/\texorpdfstring{$>$}{>}LOW) 
 
 
 \begin{DoxyParams}{Parameters}
-{\em pin} & the pin to toggle (according P\+O\+R\+T\+N\+U\+M2\+P\+IN) \\
+{\em pin} & the pin to toggle (according PORTNUM2\+PIN) \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_ad68eec4f70f9f1fa38ae48c138c0d82f}\label{_p_d_r_v___g_p_i_o_8c_ad68eec4f70f9f1fa38ae48c138c0d82f}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!gpio\+Write@{gpio\+Write}}
-\index{gpio\+Write@{gpio\+Write}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{gpio\+Write()}{gpioWrite()}}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!gpioWrite@{gpioWrite}}
+\index{gpioWrite@{gpioWrite}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{gpioWrite()}{gpioWrite()}}
 {\footnotesize\ttfamily void gpio\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_aede467d93ddeb5fdeff6023236aa4ad6}{pin\+\_\+t}}}]{pin,  }\item[{bool}]{value }\end{DoxyParamCaption})}
 
 
 
-Write a H\+I\+GH or a L\+OW value to a digital pin. 
+Write a HIGH or a LOW value to a digital pin. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em pin} & the pin to write (according P\+O\+R\+T\+N\+U\+M2\+P\+IN) \\
+{\em pin} & the pin to write (according PORTNUM2\+PIN) \\
 \hline
-{\em val} & Desired value (H\+I\+GH or L\+OW) \\
+{\em val} & Desired value (HIGH or LOW) \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_a23bab1118c571fb986315470633d20d3}\label{_p_d_r_v___g_p_i_o_8c_a23bab1118c571fb986315470633d20d3}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!P\+O\+R\+T\+A\+\_\+\+I\+R\+Q\+Handler@{P\+O\+R\+T\+A\+\_\+\+I\+R\+Q\+Handler}}
-\index{P\+O\+R\+T\+A\+\_\+\+I\+R\+Q\+Handler@{P\+O\+R\+T\+A\+\_\+\+I\+R\+Q\+Handler}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{P\+O\+R\+T\+A\+\_\+\+I\+R\+Q\+Handler()}{PORTA\_IRQHandler()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{startup__mk64f12_8c_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void P\+O\+R\+T\+A\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!PORTA\_IRQHandler@{PORTA\_IRQHandler}}
+\index{PORTA\_IRQHandler@{PORTA\_IRQHandler}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{PORTA\_IRQHandler()}{PORTA\_IRQHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{startup__mk64f12_8c_ad1480e9557edcc543498ca259cee6c7d}{WEAK}} void PORTA\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_a235248bab056bf6e9490bd77f5ea4953}\label{_p_d_r_v___g_p_i_o_8c_a235248bab056bf6e9490bd77f5ea4953}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!P\+O\+R\+T\+B\+\_\+\+I\+R\+Q\+Handler@{P\+O\+R\+T\+B\+\_\+\+I\+R\+Q\+Handler}}
-\index{P\+O\+R\+T\+B\+\_\+\+I\+R\+Q\+Handler@{P\+O\+R\+T\+B\+\_\+\+I\+R\+Q\+Handler}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{P\+O\+R\+T\+B\+\_\+\+I\+R\+Q\+Handler()}{PORTB\_IRQHandler()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{startup__mk64f12_8c_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void P\+O\+R\+T\+B\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!PORTB\_IRQHandler@{PORTB\_IRQHandler}}
+\index{PORTB\_IRQHandler@{PORTB\_IRQHandler}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{PORTB\_IRQHandler()}{PORTB\_IRQHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{startup__mk64f12_8c_ad1480e9557edcc543498ca259cee6c7d}{WEAK}} void PORTB\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_ade3880e81da2b0c4348d766324b8e4d4}\label{_p_d_r_v___g_p_i_o_8c_ade3880e81da2b0c4348d766324b8e4d4}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!P\+O\+R\+T\+C\+\_\+\+I\+R\+Q\+Handler@{P\+O\+R\+T\+C\+\_\+\+I\+R\+Q\+Handler}}
-\index{P\+O\+R\+T\+C\+\_\+\+I\+R\+Q\+Handler@{P\+O\+R\+T\+C\+\_\+\+I\+R\+Q\+Handler}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{P\+O\+R\+T\+C\+\_\+\+I\+R\+Q\+Handler()}{PORTC\_IRQHandler()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{startup__mk64f12_8c_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void P\+O\+R\+T\+C\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!PORTC\_IRQHandler@{PORTC\_IRQHandler}}
+\index{PORTC\_IRQHandler@{PORTC\_IRQHandler}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{PORTC\_IRQHandler()}{PORTC\_IRQHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{startup__mk64f12_8c_ad1480e9557edcc543498ca259cee6c7d}{WEAK}} void PORTC\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_a8fd3ee50dc9009ad6273dd3afd6e68ad}\label{_p_d_r_v___g_p_i_o_8c_a8fd3ee50dc9009ad6273dd3afd6e68ad}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!P\+O\+R\+T\+D\+\_\+\+I\+R\+Q\+Handler@{P\+O\+R\+T\+D\+\_\+\+I\+R\+Q\+Handler}}
-\index{P\+O\+R\+T\+D\+\_\+\+I\+R\+Q\+Handler@{P\+O\+R\+T\+D\+\_\+\+I\+R\+Q\+Handler}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{P\+O\+R\+T\+D\+\_\+\+I\+R\+Q\+Handler()}{PORTD\_IRQHandler()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{startup__mk64f12_8c_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void P\+O\+R\+T\+D\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!PORTD\_IRQHandler@{PORTD\_IRQHandler}}
+\index{PORTD\_IRQHandler@{PORTD\_IRQHandler}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{PORTD\_IRQHandler()}{PORTD\_IRQHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{startup__mk64f12_8c_ad1480e9557edcc543498ca259cee6c7d}{WEAK}} void PORTD\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{_p_d_r_v___g_p_i_o_8c_a54fa8831a9507d69e623def7625bcc2c}\label{_p_d_r_v___g_p_i_o_8c_a54fa8831a9507d69e623def7625bcc2c}} 
-\index{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}!P\+O\+R\+T\+E\+\_\+\+I\+R\+Q\+Handler@{P\+O\+R\+T\+E\+\_\+\+I\+R\+Q\+Handler}}
-\index{P\+O\+R\+T\+E\+\_\+\+I\+R\+Q\+Handler@{P\+O\+R\+T\+E\+\_\+\+I\+R\+Q\+Handler}!P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c@{P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+c}}
-\subsubsection{\texorpdfstring{P\+O\+R\+T\+E\+\_\+\+I\+R\+Q\+Handler()}{PORTE\_IRQHandler()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{startup__mk64f12_8c_ad1480e9557edcc543498ca259cee6c7d}{W\+E\+AK}} void P\+O\+R\+T\+E\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\index{PDRV\_GPIO.c@{PDRV\_GPIO.c}!PORTE\_IRQHandler@{PORTE\_IRQHandler}}
+\index{PORTE\_IRQHandler@{PORTE\_IRQHandler}!PDRV\_GPIO.c@{PDRV\_GPIO.c}}
+\doxysubsubsection{\texorpdfstring{PORTE\_IRQHandler()}{PORTE\_IRQHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{startup__mk64f12_8c_ad1480e9557edcc543498ca259cee6c7d}{WEAK}} void PORTE\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 

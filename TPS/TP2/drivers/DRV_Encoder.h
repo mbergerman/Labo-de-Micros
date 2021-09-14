@@ -38,15 +38,25 @@ typedef enum{
 /*******************************************************************************
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
+
+/**
+ * @brief Initialize encoder
+ */
 void initEncoder();
 
-//Devuelve true si hubo movimiento
+/**
+ * @brief Check for new encoder events
+ * @return true if there is an encoder event
+ */
 bool encoderGetStatus();
 
-//Devuelve la data
+/**
+ * @brief Get event type
+ * @return event
+ */
 encoderResult_t encoderGetEvent();
+
 /*******************************************************************************
  ******************************************************************************/
-
 
 #endif /* DRV_ENCODER_H_ */

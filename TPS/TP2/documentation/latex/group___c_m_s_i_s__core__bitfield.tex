@@ -1,38 +1,46 @@
-\hypertarget{group___c_m_s_i_s__core__bitfield}{}\section{Core register bit field macros}
+\hypertarget{group___c_m_s_i_s__core__bitfield}{}\doxysection{Core register bit field macros}
 \label{group___c_m_s_i_s__core__bitfield}\index{Core register bit field macros@{Core register bit field macros}}
 
 
 Macros for use with bit field definitions (xxx\+\_\+\+Pos, xxx\+\_\+\+Msk).  
 
 
-\subsection*{Macros}
+\doxysubsection*{Modules}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{group___c_m_s_i_s__core__bitfield_ga286e3b913dbd236c7f48ea70c8821f4e}{\+\_\+\+V\+A\+L2\+F\+LD}}(field,  value)~(((uint32\+\_\+t)(value) $<$$<$ field \#\# \+\_\+\+Pos) \& field \#\# \+\_\+\+Msk)
+\mbox{\hyperlink{group___c_m_s_i_s__core__base}{Core Definitions}}
+\begin{DoxyCompactList}\small\item\em Definitions for base addresses, unions, and structures. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s__core__bitfield_ga286e3b913dbd236c7f48ea70c8821f4e}{\+\_\+\+VAL2\+FLD}}(field,  value)~(((uint32\+\_\+t)(value) $<$$<$ field \#\# \+\_\+\+Pos) \& field \#\# \+\_\+\+Msk)
 \begin{DoxyCompactList}\small\item\em Mask and shift a bit field value for use in a register bit range. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{group___c_m_s_i_s__core__bitfield_ga139b6e261c981f014f386927ca4a8444}{\+\_\+\+F\+L\+D2\+V\+AL}}(field,  value)~(((uint32\+\_\+t)(value) \& field \#\# \+\_\+\+Msk) $>$$>$ field \#\# \+\_\+\+Pos)
-\begin{DoxyCompactList}\small\item\em Mask and shift a register value to extract a bit filed value. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{group___c_m_s_i_s__core__bitfield_ga286e3b913dbd236c7f48ea70c8821f4e}{\+\_\+\+V\+A\+L2\+F\+LD}}(field,  value)~(((uint32\+\_\+t)(value) $<$$<$ field \#\# \+\_\+\+Pos) \& field \#\# \+\_\+\+Msk)
+\#define \mbox{\hyperlink{group___c_m_s_i_s__core__bitfield_ga139b6e261c981f014f386927ca4a8444}{\+\_\+\+FLD2\+VAL}}(field,  value)~(((uint32\+\_\+t)(value) \& field \#\# \+\_\+\+Msk) $>$$>$ field \#\# \+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em Mask and shift a register value to extract a bit filed value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s__core__bitfield_ga286e3b913dbd236c7f48ea70c8821f4e}{\+\_\+\+VAL2\+FLD}}(field,  value)~(((uint32\+\_\+t)(value) $<$$<$ field \#\# \+\_\+\+Pos) \& field \#\# \+\_\+\+Msk)
 \begin{DoxyCompactList}\small\item\em Mask and shift a bit field value for use in a register bit range. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{group___c_m_s_i_s__core__bitfield_ga139b6e261c981f014f386927ca4a8444}{\+\_\+\+F\+L\+D2\+V\+AL}}(field,  value)~(((uint32\+\_\+t)(value) \& field \#\# \+\_\+\+Msk) $>$$>$ field \#\# \+\_\+\+Pos)
-\begin{DoxyCompactList}\small\item\em Mask and shift a register value to extract a bit filed value. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{group___c_m_s_i_s__core__bitfield_ga286e3b913dbd236c7f48ea70c8821f4e}{\+\_\+\+V\+A\+L2\+F\+LD}}(field,  value)~(((uint32\+\_\+t)(value) $<$$<$ field \#\# \+\_\+\+Pos) \& field \#\# \+\_\+\+Msk)
+\#define \mbox{\hyperlink{group___c_m_s_i_s__core__bitfield_ga139b6e261c981f014f386927ca4a8444}{\+\_\+\+FLD2\+VAL}}(field,  value)~(((uint32\+\_\+t)(value) \& field \#\# \+\_\+\+Msk) $>$$>$ field \#\# \+\_\+\+Pos)
+\begin{DoxyCompactList}\small\item\em Mask and shift a register value to extract a bit filed value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s__core__bitfield_ga286e3b913dbd236c7f48ea70c8821f4e}{\+\_\+\+VAL2\+FLD}}(field,  value)~(((uint32\+\_\+t)(value) $<$$<$ field \#\# \+\_\+\+Pos) \& field \#\# \+\_\+\+Msk)
 \begin{DoxyCompactList}\small\item\em Mask and shift a bit field value for use in a register bit range. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{group___c_m_s_i_s__core__bitfield_ga139b6e261c981f014f386927ca4a8444}{\+\_\+\+F\+L\+D2\+V\+AL}}(field,  value)~(((uint32\+\_\+t)(value) \& field \#\# \+\_\+\+Msk) $>$$>$ field \#\# \+\_\+\+Pos)
+\#define \mbox{\hyperlink{group___c_m_s_i_s__core__bitfield_ga139b6e261c981f014f386927ca4a8444}{\+\_\+\+FLD2\+VAL}}(field,  value)~(((uint32\+\_\+t)(value) \& field \#\# \+\_\+\+Msk) $>$$>$ field \#\# \+\_\+\+Pos)
 \begin{DoxyCompactList}\small\item\em Mask and shift a register value to extract a bit filed value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 Macros for use with bit field definitions (xxx\+\_\+\+Pos, xxx\+\_\+\+Msk). 
 
 
 
-\subsection{Macro Definition Documentation}
+\doxysubsection{Macro Definition Documentation}
 \mbox{\Hypertarget{group___c_m_s_i_s__core__bitfield_ga139b6e261c981f014f386927ca4a8444}\label{group___c_m_s_i_s__core__bitfield_ga139b6e261c981f014f386927ca4a8444}} 
-\index{Core register bit field macros@{Core register bit field macros}!\+\_\+\+F\+L\+D2\+V\+AL@{\+\_\+\+F\+L\+D2\+V\+AL}}
-\index{\+\_\+\+F\+L\+D2\+V\+AL@{\+\_\+\+F\+L\+D2\+V\+AL}!Core register bit field macros@{Core register bit field macros}}
-\subsubsection{\texorpdfstring{\+\_\+\+F\+L\+D2\+V\+AL}{\_FLD2VAL}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily \#define \+\_\+\+F\+L\+D2\+V\+AL(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((uint32\+\_\+t)(value) \& field \#\# \+\_\+\+Msk) $>$$>$ field \#\# \+\_\+\+Pos)}
+\index{Core register bit field macros@{Core register bit field macros}!\_FLD2VAL@{\_FLD2VAL}}
+\index{\_FLD2VAL@{\_FLD2VAL}!Core register bit field macros@{Core register bit field macros}}
+\doxysubsubsection{\texorpdfstring{\_FLD2VAL}{\_FLD2VAL}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \#define \+\_\+\+FLD2\+VAL(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((uint32\+\_\+t)(value) \& field \#\# \+\_\+\+Msk) $>$$>$ field \#\# \+\_\+\+Pos)}
 
 
 
@@ -40,19 +48,19 @@ Mask and shift a register value to extract a bit filed value.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em field} & Name of the register bit field. \\
+\mbox{\texttt{ in}}  & {\em field} & Name of the register bit field. \\
 \hline
-\mbox{\tt in}  & {\em value} & Value of register. This parameter is interpreted as an uint32\+\_\+t type. \\
+\mbox{\texttt{ in}}  & {\em value} & Value of register. This parameter is interpreted as an uint32\+\_\+t type. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Masked and shifted bit field value. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{group___c_m_s_i_s__core__bitfield_ga139b6e261c981f014f386927ca4a8444}\label{group___c_m_s_i_s__core__bitfield_ga139b6e261c981f014f386927ca4a8444}} 
-\index{Core register bit field macros@{Core register bit field macros}!\+\_\+\+F\+L\+D2\+V\+AL@{\+\_\+\+F\+L\+D2\+V\+AL}}
-\index{\+\_\+\+F\+L\+D2\+V\+AL@{\+\_\+\+F\+L\+D2\+V\+AL}!Core register bit field macros@{Core register bit field macros}}
-\subsubsection{\texorpdfstring{\+\_\+\+F\+L\+D2\+V\+AL}{\_FLD2VAL}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily \#define \+\_\+\+F\+L\+D2\+V\+AL(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((uint32\+\_\+t)(value) \& field \#\# \+\_\+\+Msk) $>$$>$ field \#\# \+\_\+\+Pos)}
+\index{Core register bit field macros@{Core register bit field macros}!\_FLD2VAL@{\_FLD2VAL}}
+\index{\_FLD2VAL@{\_FLD2VAL}!Core register bit field macros@{Core register bit field macros}}
+\doxysubsubsection{\texorpdfstring{\_FLD2VAL}{\_FLD2VAL}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \#define \+\_\+\+FLD2\+VAL(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((uint32\+\_\+t)(value) \& field \#\# \+\_\+\+Msk) $>$$>$ field \#\# \+\_\+\+Pos)}
 
 
 
@@ -60,19 +68,19 @@ Mask and shift a register value to extract a bit filed value.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em field} & Name of the register bit field. \\
+\mbox{\texttt{ in}}  & {\em field} & Name of the register bit field. \\
 \hline
-\mbox{\tt in}  & {\em value} & Value of register. This parameter is interpreted as an uint32\+\_\+t type. \\
+\mbox{\texttt{ in}}  & {\em value} & Value of register. This parameter is interpreted as an uint32\+\_\+t type. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Masked and shifted bit field value. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{group___c_m_s_i_s__core__bitfield_ga139b6e261c981f014f386927ca4a8444}\label{group___c_m_s_i_s__core__bitfield_ga139b6e261c981f014f386927ca4a8444}} 
-\index{Core register bit field macros@{Core register bit field macros}!\+\_\+\+F\+L\+D2\+V\+AL@{\+\_\+\+F\+L\+D2\+V\+AL}}
-\index{\+\_\+\+F\+L\+D2\+V\+AL@{\+\_\+\+F\+L\+D2\+V\+AL}!Core register bit field macros@{Core register bit field macros}}
-\subsubsection{\texorpdfstring{\+\_\+\+F\+L\+D2\+V\+AL}{\_FLD2VAL}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily \#define \+\_\+\+F\+L\+D2\+V\+AL(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((uint32\+\_\+t)(value) \& field \#\# \+\_\+\+Msk) $>$$>$ field \#\# \+\_\+\+Pos)}
+\index{Core register bit field macros@{Core register bit field macros}!\_FLD2VAL@{\_FLD2VAL}}
+\index{\_FLD2VAL@{\_FLD2VAL}!Core register bit field macros@{Core register bit field macros}}
+\doxysubsubsection{\texorpdfstring{\_FLD2VAL}{\_FLD2VAL}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \#define \+\_\+\+FLD2\+VAL(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((uint32\+\_\+t)(value) \& field \#\# \+\_\+\+Msk) $>$$>$ field \#\# \+\_\+\+Pos)}
 
 
 
@@ -80,19 +88,19 @@ Mask and shift a register value to extract a bit filed value.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em field} & Name of the register bit field. \\
+\mbox{\texttt{ in}}  & {\em field} & Name of the register bit field. \\
 \hline
-\mbox{\tt in}  & {\em value} & Value of register. This parameter is interpreted as an uint32\+\_\+t type. \\
+\mbox{\texttt{ in}}  & {\em value} & Value of register. This parameter is interpreted as an uint32\+\_\+t type. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Masked and shifted bit field value. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{group___c_m_s_i_s__core__bitfield_ga286e3b913dbd236c7f48ea70c8821f4e}\label{group___c_m_s_i_s__core__bitfield_ga286e3b913dbd236c7f48ea70c8821f4e}} 
-\index{Core register bit field macros@{Core register bit field macros}!\+\_\+\+V\+A\+L2\+F\+LD@{\+\_\+\+V\+A\+L2\+F\+LD}}
-\index{\+\_\+\+V\+A\+L2\+F\+LD@{\+\_\+\+V\+A\+L2\+F\+LD}!Core register bit field macros@{Core register bit field macros}}
-\subsubsection{\texorpdfstring{\+\_\+\+V\+A\+L2\+F\+LD}{\_VAL2FLD}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily \#define \+\_\+\+V\+A\+L2\+F\+LD(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((uint32\+\_\+t)(value) $<$$<$ field \#\# \+\_\+\+Pos) \& field \#\# \+\_\+\+Msk)}
+\index{Core register bit field macros@{Core register bit field macros}!\_VAL2FLD@{\_VAL2FLD}}
+\index{\_VAL2FLD@{\_VAL2FLD}!Core register bit field macros@{Core register bit field macros}}
+\doxysubsubsection{\texorpdfstring{\_VAL2FLD}{\_VAL2FLD}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \#define \+\_\+\+VAL2\+FLD(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((uint32\+\_\+t)(value) $<$$<$ field \#\# \+\_\+\+Pos) \& field \#\# \+\_\+\+Msk)}
 
 
 
@@ -100,19 +108,19 @@ Mask and shift a bit field value for use in a register bit range.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em field} & Name of the register bit field. \\
+\mbox{\texttt{ in}}  & {\em field} & Name of the register bit field. \\
 \hline
-\mbox{\tt in}  & {\em value} & Value of the bit field. This parameter is interpreted as an uint32\+\_\+t type. \\
+\mbox{\texttt{ in}}  & {\em value} & Value of the bit field. This parameter is interpreted as an uint32\+\_\+t type. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Masked and shifted value. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{group___c_m_s_i_s__core__bitfield_ga286e3b913dbd236c7f48ea70c8821f4e}\label{group___c_m_s_i_s__core__bitfield_ga286e3b913dbd236c7f48ea70c8821f4e}} 
-\index{Core register bit field macros@{Core register bit field macros}!\+\_\+\+V\+A\+L2\+F\+LD@{\+\_\+\+V\+A\+L2\+F\+LD}}
-\index{\+\_\+\+V\+A\+L2\+F\+LD@{\+\_\+\+V\+A\+L2\+F\+LD}!Core register bit field macros@{Core register bit field macros}}
-\subsubsection{\texorpdfstring{\+\_\+\+V\+A\+L2\+F\+LD}{\_VAL2FLD}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily \#define \+\_\+\+V\+A\+L2\+F\+LD(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((uint32\+\_\+t)(value) $<$$<$ field \#\# \+\_\+\+Pos) \& field \#\# \+\_\+\+Msk)}
+\index{Core register bit field macros@{Core register bit field macros}!\_VAL2FLD@{\_VAL2FLD}}
+\index{\_VAL2FLD@{\_VAL2FLD}!Core register bit field macros@{Core register bit field macros}}
+\doxysubsubsection{\texorpdfstring{\_VAL2FLD}{\_VAL2FLD}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \#define \+\_\+\+VAL2\+FLD(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((uint32\+\_\+t)(value) $<$$<$ field \#\# \+\_\+\+Pos) \& field \#\# \+\_\+\+Msk)}
 
 
 
@@ -120,19 +128,19 @@ Mask and shift a bit field value for use in a register bit range.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em field} & Name of the register bit field. \\
+\mbox{\texttt{ in}}  & {\em field} & Name of the register bit field. \\
 \hline
-\mbox{\tt in}  & {\em value} & Value of the bit field. This parameter is interpreted as an uint32\+\_\+t type. \\
+\mbox{\texttt{ in}}  & {\em value} & Value of the bit field. This parameter is interpreted as an uint32\+\_\+t type. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Masked and shifted value. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{group___c_m_s_i_s__core__bitfield_ga286e3b913dbd236c7f48ea70c8821f4e}\label{group___c_m_s_i_s__core__bitfield_ga286e3b913dbd236c7f48ea70c8821f4e}} 
-\index{Core register bit field macros@{Core register bit field macros}!\+\_\+\+V\+A\+L2\+F\+LD@{\+\_\+\+V\+A\+L2\+F\+LD}}
-\index{\+\_\+\+V\+A\+L2\+F\+LD@{\+\_\+\+V\+A\+L2\+F\+LD}!Core register bit field macros@{Core register bit field macros}}
-\subsubsection{\texorpdfstring{\+\_\+\+V\+A\+L2\+F\+LD}{\_VAL2FLD}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily \#define \+\_\+\+V\+A\+L2\+F\+LD(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((uint32\+\_\+t)(value) $<$$<$ field \#\# \+\_\+\+Pos) \& field \#\# \+\_\+\+Msk)}
+\index{Core register bit field macros@{Core register bit field macros}!\_VAL2FLD@{\_VAL2FLD}}
+\index{\_VAL2FLD@{\_VAL2FLD}!Core register bit field macros@{Core register bit field macros}}
+\doxysubsubsection{\texorpdfstring{\_VAL2FLD}{\_VAL2FLD}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \#define \+\_\+\+VAL2\+FLD(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((uint32\+\_\+t)(value) $<$$<$ field \#\# \+\_\+\+Pos) \& field \#\# \+\_\+\+Msk)}
 
 
 
@@ -140,9 +148,9 @@ Mask and shift a bit field value for use in a register bit range.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em field} & Name of the register bit field. \\
+\mbox{\texttt{ in}}  & {\em field} & Name of the register bit field. \\
 \hline
-\mbox{\tt in}  & {\em value} & Value of the bit field. This parameter is interpreted as an uint32\+\_\+t type. \\
+\mbox{\texttt{ in}}  & {\em value} & Value of the bit field. This parameter is interpreted as an uint32\+\_\+t type. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

@@ -1,10 +1,11 @@
 var group___c_m_s_i_s___s_cn_s_c_b =
 [
+    [ "System Tick Timer (SysTick)", "group___c_m_s_i_s___sys_tick.html", "group___c_m_s_i_s___sys_tick" ],
     [ "SCnSCB_Type", "struct_s_cn_s_c_b___type.html", [
-      [ "ACTLR", "struct_s_cn_s_c_b___type.html#afabed911b9f91f9df848999e1b5d6504", null ],
-      [ "CPPWR", "struct_s_cn_s_c_b___type.html#a6236035fc90059a599910d9cb9299ff0", null ],
-      [ "ICTR", "struct_s_cn_s_c_b___type.html#acf9b76331abd768af25a10b3625da4b4", null ],
-      [ "RESERVED0", "struct_s_cn_s_c_b___type.html#affae06cd6df5e9fe9a92994052fd3bec", null ]
+      [ "ACTLR", "group___c_m_s_i_s__core___debug_functions.html#gafabed911b9f91f9df848999e1b5d6504", null ],
+      [ "CPPWR", "group___c_m_s_i_s__core___debug_functions.html#ga6236035fc90059a599910d9cb9299ff0", null ],
+      [ "ICTR", "group___c_m_s_i_s__core___debug_functions.html#gacf9b76331abd768af25a10b3625da4b4", null ],
+      [ "RESERVED0", "group___c_m_s_i_s__core___debug_functions.html#gaffae06cd6df5e9fe9a92994052fd3bec", null ]
     ] ],
     [ "SCnSCB_ACTLR_DISDEFWBUF_Msk", "group___c_m_s_i_s___s_cn_s_c_b.html#ga6cda7b7219232a008ec52cc8e89d5d08", null ],
     [ "SCnSCB_ACTLR_DISDEFWBUF_Pos", "group___c_m_s_i_s___s_cn_s_c_b.html#gafa2eb37493c0f8dae77cde81ecf80f77", null ],

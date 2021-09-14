@@ -5,9 +5,13 @@ var _app_8c =
     [ "LATCH_TIME_MS", "_app_8c.html#af984cfb49c4454e5e498a1610e31abad", null ],
     [ "PIN_LENGTH", "_app_8c.html#a437a8409bf354ead02685397992ae701", null ],
     [ "WARNING_TIME_MS", "_app_8c.html#a9138c8b03ac19a6a3f6d903ed35a9538", null ],
-    [ "LED_LATCH", "_app_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a65083de9ba671bdf2670c1e12bffc4db", null ],
-    [ "LED_ERROR", "_app_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a208e2cc99f8c3ec832b79364b67f854d", null ],
-    [ "LED_WARNING", "_app_8c.html#ae6dceca96ec2c7a1b4aa211264a87ef6a26e80724486c0b1360ce002332b2c9ee", null ],
+    [ "adminItem_t", "_app_8c.html#ae633eda02f05ee8e8bf17945ffdf242e", [
+      [ "ITEM_ADD_USER", "_app_8c.html#ae633eda02f05ee8e8bf17945ffdf242eaa3915d252044860f6d3cdf2708f6b9cd", null ],
+      [ "ITEM_DEL_USER", "_app_8c.html#ae633eda02f05ee8e8bf17945ffdf242ea3d14263852031c04515dcb0fec226ff6", null ],
+      [ "ITEM_UNBLOCK_USER", "_app_8c.html#ae633eda02f05ee8e8bf17945ffdf242eabc1908cfa3cbdccfecc9e36f0cb8b51b", null ],
+      [ "ITEM_CLOSE", "_app_8c.html#ae633eda02f05ee8e8bf17945ffdf242ea4f4ac85b42167d32ecd4ac12b8546a9e", null ],
+      [ "NUM_ITEMS_ADMIN", "_app_8c.html#ae633eda02f05ee8e8bf17945ffdf242ea87fd132dd7a43e4d0ad2fcbab3bd7bde", null ]
+    ] ],
     [ "menuEvent_t", "_app_8c.html#a05f9cffa4c2071b196dacbb0265df833", [
       [ "EVENT_ENC_LEFT", "_app_8c.html#a05f9cffa4c2071b196dacbb0265df833aa5286daa6faa05cc6df045b6d4ab5984", null ],
       [ "EVENT_ENC_RIGHT", "_app_8c.html#a05f9cffa4c2071b196dacbb0265df833a3dfb238fa06c3a11b33d8624aaeffce0", null ],

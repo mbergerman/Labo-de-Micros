@@ -1,26 +1,26 @@
-\hypertarget{_d_r_v___stub___encoder_8c}{}\section{drivers/\+D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.c File Reference}
-\label{_d_r_v___stub___encoder_8c}\index{drivers/\+D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c@{drivers/\+D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c}}
+\hypertarget{_d_r_v___stub___encoder_8c}{}\doxysection{drivers/\+DRV\+\_\+\+Stub\+\_\+\+Encoder.c File Reference}
+\label{_d_r_v___stub___encoder_8c}\index{drivers/DRV\_Stub\_Encoder.c@{drivers/DRV\_Stub\_Encoder.c}}
 
 
 Rotary Encoder stub driver.  
 
 
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}D\+R\+V\+\_\+\+Encoder.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}D\+R\+V\+\_\+\+Board.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}P\+D\+R\+V\+\_\+\+G\+P\+I\+O.\+h\char`\"{}}\newline
-\subsection*{Functions}
+{\ttfamily \#include \char`\"{}DRV\+\_\+\+Encoder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DRV\+\_\+\+Board.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}PDRV\+\_\+\+GPIO.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_d_r_v___stub___encoder_8c_a816b22a073a30b233d6afdf983c27e8d}{init\+Encoder}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize encoder. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{_d_r_v___stub___encoder_8c_aeecebb19c73c7d96e9bff0d2e2dac31f}{encoder\+Get\+Status}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Check for new encoder events. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{_d_r_v___encoder_8h_a30a1a4fd7b6a6ed6a023e586c82ac854}{encoder\+Result\+\_\+t}} \mbox{\hyperlink{_d_r_v___stub___encoder_8c_a997ecbb0db39175331354fa59dbb08a9}{encoder\+Get\+Event}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get event type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 Rotary Encoder stub driver. 
 
 \begin{DoxyAuthor}{Author}
@@ -28,22 +28,40 @@ Grupo 1
 \end{DoxyAuthor}
 
 
-\subsection{Function Documentation}
+\doxysubsection{Function Documentation}
 \mbox{\Hypertarget{_d_r_v___stub___encoder_8c_a997ecbb0db39175331354fa59dbb08a9}\label{_d_r_v___stub___encoder_8c_a997ecbb0db39175331354fa59dbb08a9}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c}!encoder\+Get\+Event@{encoder\+Get\+Event}}
-\index{encoder\+Get\+Event@{encoder\+Get\+Event}!D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c}}
-\subsubsection{\texorpdfstring{encoder\+Get\+Event()}{encoderGetEvent()}}
+\index{DRV\_Stub\_Encoder.c@{DRV\_Stub\_Encoder.c}!encoderGetEvent@{encoderGetEvent}}
+\index{encoderGetEvent@{encoderGetEvent}!DRV\_Stub\_Encoder.c@{DRV\_Stub\_Encoder.c}}
+\doxysubsubsection{\texorpdfstring{encoderGetEvent()}{encoderGetEvent()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{_d_r_v___encoder_8h_a30a1a4fd7b6a6ed6a023e586c82ac854}{encoder\+Result\+\_\+t}} encoder\+Get\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Get event type. 
+
+\begin{DoxyReturn}{Returns}
+event 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_d_r_v___stub___encoder_8c_aeecebb19c73c7d96e9bff0d2e2dac31f}\label{_d_r_v___stub___encoder_8c_aeecebb19c73c7d96e9bff0d2e2dac31f}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c}!encoder\+Get\+Status@{encoder\+Get\+Status}}
-\index{encoder\+Get\+Status@{encoder\+Get\+Status}!D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c}}
-\subsubsection{\texorpdfstring{encoder\+Get\+Status()}{encoderGetStatus()}}
+\index{DRV\_Stub\_Encoder.c@{DRV\_Stub\_Encoder.c}!encoderGetStatus@{encoderGetStatus}}
+\index{encoderGetStatus@{encoderGetStatus}!DRV\_Stub\_Encoder.c@{DRV\_Stub\_Encoder.c}}
+\doxysubsubsection{\texorpdfstring{encoderGetStatus()}{encoderGetStatus()}}
 {\footnotesize\ttfamily bool encoder\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Check for new encoder events. 
+
+\begin{DoxyReturn}{Returns}
+true if there is an encoder event 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_d_r_v___stub___encoder_8c_a816b22a073a30b233d6afdf983c27e8d}\label{_d_r_v___stub___encoder_8c_a816b22a073a30b233d6afdf983c27e8d}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c}!init\+Encoder@{init\+Encoder}}
-\index{init\+Encoder@{init\+Encoder}!D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Encoder.\+c}}
-\subsubsection{\texorpdfstring{init\+Encoder()}{initEncoder()}}
+\index{DRV\_Stub\_Encoder.c@{DRV\_Stub\_Encoder.c}!initEncoder@{initEncoder}}
+\index{initEncoder@{initEncoder}!DRV\_Stub\_Encoder.c@{DRV\_Stub\_Encoder.c}}
+\doxysubsubsection{\texorpdfstring{initEncoder()}{initEncoder()}}
 {\footnotesize\ttfamily void init\+Encoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize encoder. 
 

@@ -7,6 +7,6 @@ var struct_s_y_s_m_p_u___type =
     [ "RESERVED_1", "group___v_r_e_f___peripheral___access___layer.html#gaed973faccea151edaf3bdaa2664da441", null ],
     [ "RESERVED_2", "group___v_r_e_f___peripheral___access___layer.html#ga91ced9af85b6245589cbf0d6688d5ad8", null ],
     [ "RGDAAC", "group___v_r_e_f___peripheral___access___layer.html#ga361969cc7784783c8fabc39826ef8afb", null ],
-    [ "SP", "group___v_r_e_f___peripheral___access___layer.html#ga580a2c7b622f8b50342faed2cfcd9fbb", null ],
+    [ "SP", "group___v_r_e_f___peripheral___access___layer.html#gab09a59fc2dab98db3bb4b14506b1bea4", null ],
     [ "WORD", "group___v_r_e_f___peripheral___access___layer.html#gaa052a52bc368d47899920f359ba10ce6", null ]
 ];

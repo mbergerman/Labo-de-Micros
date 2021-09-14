@@ -1,139 +1,144 @@
-\hypertarget{_account_manager_8h}{}\section{source/\+Account\+Manager.h File Reference}
-\label{_account_manager_8h}\index{source/\+Account\+Manager.\+h@{source/\+Account\+Manager.\+h}}
+\hypertarget{_account_manager_8h}{}\doxysection{source/\+Account\+Manager.h File Reference}
+\label{_account_manager_8h}\index{source/AccountManager.h@{source/AccountManager.h}}
+
+
+Manager of accounts in the database.  
+
+
 {\ttfamily \#include $<$stdint.\+h$>$}\newline
 {\ttfamily \#include $<$stdbool.\+h$>$}\newline
-\subsection*{Data Structures}
+\doxysubsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_users}{Users}}
 \end{DoxyCompactItemize}
-\subsection*{Macros}
+\doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{_account_manager_8h_a751fc7874c6d1840f5d5cba707c59fcc}{D\+A\+T\+A\+\_\+\+B\+A\+S\+E\+\_\+\+M\+AX}}~100
+\#define \mbox{\hyperlink{_account_manager_8h_a751fc7874c6d1840f5d5cba707c59fcc}{DATA\+\_\+\+BASE\+\_\+\+MAX}}~100
 \item 
-\#define \mbox{\hyperlink{_account_manager_8h_a57375ea0ee50482e9db7de35d1b9e781}{I\+D\+\_\+\+S\+I\+ZE}}~8
+\#define \mbox{\hyperlink{_account_manager_8h_a57375ea0ee50482e9db7de35d1b9e781}{ID\+\_\+\+SIZE}}~8
 \item 
-\#define \mbox{\hyperlink{_account_manager_8h_ac1844931ea84fe93bc9d0b521f0448cd}{P\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+AX}}~6
+\#define \mbox{\hyperlink{_account_manager_8h_ac1844931ea84fe93bc9d0b521f0448cd}{PIN\+\_\+\+SIZE\+\_\+\+MAX}}~6
 \item 
-\#define \mbox{\hyperlink{_account_manager_8h_a150a81da38cd990da60c0363014b246b}{M\+A\+S\+T\+E\+R\+\_\+\+ID}}~12345678
+\#define \mbox{\hyperlink{_account_manager_8h_a150a81da38cd990da60c0363014b246b}{MASTER\+\_\+\+ID}}~12345678
 \item 
-\#define \mbox{\hyperlink{_account_manager_8h_a63e3cd82c49f3de2fc75107d65530365}{M\+A\+S\+T\+E\+R\+\_\+\+P\+IN}}~12345
+\#define \mbox{\hyperlink{_account_manager_8h_a63e3cd82c49f3de2fc75107d65530365}{MASTER\+\_\+\+PIN}}~12345
+\item 
+\#define \mbox{\hyperlink{_account_manager_8h_aee6f4b0b74820d727dd8fba4f5efa061}{MAX\+\_\+\+ERRORS}}~3
 \end{DoxyCompactItemize}
-\subsection*{Typedefs}
+\doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef struct \mbox{\hyperlink{struct_users}{Users}} \mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}}
+typedef struct \mbox{\hyperlink{struct_users}{Users}} \mbox{\hyperlink{_account_manager_8h_a4e9a2310a7dd63e26512f1e5fcdbcd69}{User}}
 \end{DoxyCompactItemize}
-\subsection*{Functions}
+\doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{_account_manager_8h_a5d2815bc5b836e61e1ae8dcfc17b6d94}{init\+\_\+data\+\_\+base}} ()
+void \mbox{\hyperlink{_account_manager_8h_a105a7cfbcc815b5563032c24181dcdbf}{init\+Data\+Base}} ()
 \item 
-bool \mbox{\hyperlink{_account_manager_8h_a96e7122e62f667a55492a25afe545bf6}{id\+\_\+check}} (uint32\+\_\+t I\+D\+\_\+buffered)
+bool \mbox{\hyperlink{_account_manager_8h_ae6a3f78067d780956b6b9cfc3ee80326}{db\+Check\+ID}} (uint32\+\_\+t ID\+\_\+buffered)
 \item 
-\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}} \mbox{\hyperlink{_account_manager_8h_aaddd3153e2bc1669037e6a778ad1b6a0}{user\+\_\+search}} (uint32\+\_\+t I\+D\+\_\+to\+\_\+search)
+\mbox{\hyperlink{_account_manager_8h_a4e9a2310a7dd63e26512f1e5fcdbcd69}{User}} $\ast$ \mbox{\hyperlink{_account_manager_8h_ab73933051a2add27d5c533aaba286062}{db\+User\+Search}} (uint32\+\_\+t ID\+\_\+to\+\_\+search)
 \item 
-bool \mbox{\hyperlink{_account_manager_8h_a3e86716fd7c838e5dfda6fdf09cba007}{add\+\_\+to\+\_\+data\+\_\+base}} (\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}} admin\+\_\+user, uint32\+\_\+t I\+D\+\_\+u, uint32\+\_\+t P\+I\+N\+\_\+u, bool admin\+\_\+u)
+bool \mbox{\hyperlink{_account_manager_8h_a84f9be76bf3b569ed9f87d8d3c812fdd}{db\+Add\+New\+User}} (\mbox{\hyperlink{_account_manager_8h_a4e9a2310a7dd63e26512f1e5fcdbcd69}{User}} admin\+\_\+user, uint32\+\_\+t ID\+\_\+u, uint32\+\_\+t PIN\+\_\+u, bool admin\+\_\+u)
 \item 
-bool \mbox{\hyperlink{_account_manager_8h_a3037a158bf4cbf78b42d8fc2486f23e9}{delete\+\_\+from\+\_\+data\+\_\+base}} (\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}} admin\+\_\+user, uint32\+\_\+t I\+D\+\_\+u)
+bool \mbox{\hyperlink{_account_manager_8h_a1cda9c8b07e200fec04cc2aac1773269}{db\+Remove\+User}} (\mbox{\hyperlink{_account_manager_8h_a4e9a2310a7dd63e26512f1e5fcdbcd69}{User}} admin\+\_\+user, uint32\+\_\+t ID\+\_\+u)
 \item 
-bool \mbox{\hyperlink{_account_manager_8h_a7b6cc08409013532dd92e3a2ab290a4b}{edit\+\_\+\+P\+IN}} (uint32\+\_\+t user\+\_\+to\+\_\+change, uint32\+\_\+t P\+I\+N\+\_\+u)
-\item 
-void \mbox{\hyperlink{_account_manager_8h_a94492add454898020cc4c16d2a41d4e6}{unblock\+\_\+user}} (\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}} u)
-\item 
-bool \mbox{\hyperlink{_account_manager_8h_ab24bda9cc9e8484bcfb43065d9622b41}{is\+\_\+blocked}} (\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}} u)
+bool \mbox{\hyperlink{_account_manager_8h_a5d43f114289bcf5c00262ba8690cb165}{db\+User\+Blocked}} (\mbox{\hyperlink{_account_manager_8h_a4e9a2310a7dd63e26512f1e5fcdbcd69}{User}} $\ast$u)
 \end{DoxyCompactItemize}
 
 
-\subsection{Macro Definition Documentation}
+\doxysubsection{Detailed Description}
+Manager of accounts in the database. 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Macro Definition Documentation}
 \mbox{\Hypertarget{_account_manager_8h_a751fc7874c6d1840f5d5cba707c59fcc}\label{_account_manager_8h_a751fc7874c6d1840f5d5cba707c59fcc}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!D\+A\+T\+A\+\_\+\+B\+A\+S\+E\+\_\+\+M\+AX@{D\+A\+T\+A\+\_\+\+B\+A\+S\+E\+\_\+\+M\+AX}}
-\index{D\+A\+T\+A\+\_\+\+B\+A\+S\+E\+\_\+\+M\+AX@{D\+A\+T\+A\+\_\+\+B\+A\+S\+E\+\_\+\+M\+AX}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{D\+A\+T\+A\+\_\+\+B\+A\+S\+E\+\_\+\+M\+AX}{DATA\_BASE\_MAX}}
-{\footnotesize\ttfamily \#define D\+A\+T\+A\+\_\+\+B\+A\+S\+E\+\_\+\+M\+AX~100}
+\index{AccountManager.h@{AccountManager.h}!DATA\_BASE\_MAX@{DATA\_BASE\_MAX}}
+\index{DATA\_BASE\_MAX@{DATA\_BASE\_MAX}!AccountManager.h@{AccountManager.h}}
+\doxysubsubsection{\texorpdfstring{DATA\_BASE\_MAX}{DATA\_BASE\_MAX}}
+{\footnotesize\ttfamily \#define DATA\+\_\+\+BASE\+\_\+\+MAX~100}
 
 \mbox{\Hypertarget{_account_manager_8h_a57375ea0ee50482e9db7de35d1b9e781}\label{_account_manager_8h_a57375ea0ee50482e9db7de35d1b9e781}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!I\+D\+\_\+\+S\+I\+ZE@{I\+D\+\_\+\+S\+I\+ZE}}
-\index{I\+D\+\_\+\+S\+I\+ZE@{I\+D\+\_\+\+S\+I\+ZE}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{I\+D\+\_\+\+S\+I\+ZE}{ID\_SIZE}}
-{\footnotesize\ttfamily \#define I\+D\+\_\+\+S\+I\+ZE~8}
+\index{AccountManager.h@{AccountManager.h}!ID\_SIZE@{ID\_SIZE}}
+\index{ID\_SIZE@{ID\_SIZE}!AccountManager.h@{AccountManager.h}}
+\doxysubsubsection{\texorpdfstring{ID\_SIZE}{ID\_SIZE}}
+{\footnotesize\ttfamily \#define ID\+\_\+\+SIZE~8}
 
 \mbox{\Hypertarget{_account_manager_8h_a150a81da38cd990da60c0363014b246b}\label{_account_manager_8h_a150a81da38cd990da60c0363014b246b}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!M\+A\+S\+T\+E\+R\+\_\+\+ID@{M\+A\+S\+T\+E\+R\+\_\+\+ID}}
-\index{M\+A\+S\+T\+E\+R\+\_\+\+ID@{M\+A\+S\+T\+E\+R\+\_\+\+ID}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{M\+A\+S\+T\+E\+R\+\_\+\+ID}{MASTER\_ID}}
-{\footnotesize\ttfamily \#define M\+A\+S\+T\+E\+R\+\_\+\+ID~12345678}
+\index{AccountManager.h@{AccountManager.h}!MASTER\_ID@{MASTER\_ID}}
+\index{MASTER\_ID@{MASTER\_ID}!AccountManager.h@{AccountManager.h}}
+\doxysubsubsection{\texorpdfstring{MASTER\_ID}{MASTER\_ID}}
+{\footnotesize\ttfamily \#define MASTER\+\_\+\+ID~12345678}
 
 \mbox{\Hypertarget{_account_manager_8h_a63e3cd82c49f3de2fc75107d65530365}\label{_account_manager_8h_a63e3cd82c49f3de2fc75107d65530365}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!M\+A\+S\+T\+E\+R\+\_\+\+P\+IN@{M\+A\+S\+T\+E\+R\+\_\+\+P\+IN}}
-\index{M\+A\+S\+T\+E\+R\+\_\+\+P\+IN@{M\+A\+S\+T\+E\+R\+\_\+\+P\+IN}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{M\+A\+S\+T\+E\+R\+\_\+\+P\+IN}{MASTER\_PIN}}
-{\footnotesize\ttfamily \#define M\+A\+S\+T\+E\+R\+\_\+\+P\+IN~12345}
+\index{AccountManager.h@{AccountManager.h}!MASTER\_PIN@{MASTER\_PIN}}
+\index{MASTER\_PIN@{MASTER\_PIN}!AccountManager.h@{AccountManager.h}}
+\doxysubsubsection{\texorpdfstring{MASTER\_PIN}{MASTER\_PIN}}
+{\footnotesize\ttfamily \#define MASTER\+\_\+\+PIN~12345}
+
+\mbox{\Hypertarget{_account_manager_8h_aee6f4b0b74820d727dd8fba4f5efa061}\label{_account_manager_8h_aee6f4b0b74820d727dd8fba4f5efa061}} 
+\index{AccountManager.h@{AccountManager.h}!MAX\_ERRORS@{MAX\_ERRORS}}
+\index{MAX\_ERRORS@{MAX\_ERRORS}!AccountManager.h@{AccountManager.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_ERRORS}{MAX\_ERRORS}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+ERRORS~3}
 
 \mbox{\Hypertarget{_account_manager_8h_ac1844931ea84fe93bc9d0b521f0448cd}\label{_account_manager_8h_ac1844931ea84fe93bc9d0b521f0448cd}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!P\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+AX@{P\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+AX}}
-\index{P\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+AX@{P\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+AX}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{P\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+AX}{PIN\_SIZE\_MAX}}
-{\footnotesize\ttfamily \#define P\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+M\+AX~6}
+\index{AccountManager.h@{AccountManager.h}!PIN\_SIZE\_MAX@{PIN\_SIZE\_MAX}}
+\index{PIN\_SIZE\_MAX@{PIN\_SIZE\_MAX}!AccountManager.h@{AccountManager.h}}
+\doxysubsubsection{\texorpdfstring{PIN\_SIZE\_MAX}{PIN\_SIZE\_MAX}}
+{\footnotesize\ttfamily \#define PIN\+\_\+\+SIZE\+\_\+\+MAX~6}
 
 
 
-\subsection{Typedef Documentation}
-\mbox{\Hypertarget{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}\label{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!User@{User}}
-\index{User@{User}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{User}{User}}
-{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_users}{Users}}  \mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}}}
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_account_manager_8h_a4e9a2310a7dd63e26512f1e5fcdbcd69}\label{_account_manager_8h_a4e9a2310a7dd63e26512f1e5fcdbcd69}} 
+\index{AccountManager.h@{AccountManager.h}!User@{User}}
+\index{User@{User}!AccountManager.h@{AccountManager.h}}
+\doxysubsubsection{\texorpdfstring{User}{User}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_users}{Users}} \mbox{\hyperlink{_account_manager_8h_a4e9a2310a7dd63e26512f1e5fcdbcd69}{User}}}
 
 
 
-\subsection{Function Documentation}
-\mbox{\Hypertarget{_account_manager_8h_a3e86716fd7c838e5dfda6fdf09cba007}\label{_account_manager_8h_a3e86716fd7c838e5dfda6fdf09cba007}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!add\+\_\+to\+\_\+data\+\_\+base@{add\+\_\+to\+\_\+data\+\_\+base}}
-\index{add\+\_\+to\+\_\+data\+\_\+base@{add\+\_\+to\+\_\+data\+\_\+base}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{add\+\_\+to\+\_\+data\+\_\+base()}{add\_to\_data\_base()}}
-{\footnotesize\ttfamily bool add\+\_\+to\+\_\+data\+\_\+base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}}}]{admin\+\_\+user,  }\item[{uint32\+\_\+t}]{I\+D\+\_\+u,  }\item[{uint32\+\_\+t}]{P\+I\+N\+\_\+u,  }\item[{bool}]{admin\+\_\+u }\end{DoxyParamCaption})}
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_account_manager_8h_a84f9be76bf3b569ed9f87d8d3c812fdd}\label{_account_manager_8h_a84f9be76bf3b569ed9f87d8d3c812fdd}} 
+\index{AccountManager.h@{AccountManager.h}!dbAddNewUser@{dbAddNewUser}}
+\index{dbAddNewUser@{dbAddNewUser}!AccountManager.h@{AccountManager.h}}
+\doxysubsubsection{\texorpdfstring{dbAddNewUser()}{dbAddNewUser()}}
+{\footnotesize\ttfamily bool db\+Add\+New\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_account_manager_8h_a4e9a2310a7dd63e26512f1e5fcdbcd69}{User}}}]{admin\+\_\+user,  }\item[{uint32\+\_\+t}]{ID\+\_\+u,  }\item[{uint32\+\_\+t}]{PIN\+\_\+u,  }\item[{bool}]{admin\+\_\+u }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_account_manager_8h_a3037a158bf4cbf78b42d8fc2486f23e9}\label{_account_manager_8h_a3037a158bf4cbf78b42d8fc2486f23e9}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!delete\+\_\+from\+\_\+data\+\_\+base@{delete\+\_\+from\+\_\+data\+\_\+base}}
-\index{delete\+\_\+from\+\_\+data\+\_\+base@{delete\+\_\+from\+\_\+data\+\_\+base}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{delete\+\_\+from\+\_\+data\+\_\+base()}{delete\_from\_data\_base()}}
-{\footnotesize\ttfamily bool delete\+\_\+from\+\_\+data\+\_\+base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}}}]{admin\+\_\+user,  }\item[{uint32\+\_\+t}]{I\+D\+\_\+u }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{_account_manager_8h_ae6a3f78067d780956b6b9cfc3ee80326}\label{_account_manager_8h_ae6a3f78067d780956b6b9cfc3ee80326}} 
+\index{AccountManager.h@{AccountManager.h}!dbCheckID@{dbCheckID}}
+\index{dbCheckID@{dbCheckID}!AccountManager.h@{AccountManager.h}}
+\doxysubsubsection{\texorpdfstring{dbCheckID()}{dbCheckID()}}
+{\footnotesize\ttfamily bool db\+Check\+ID (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ID\+\_\+buffered }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_account_manager_8h_a7b6cc08409013532dd92e3a2ab290a4b}\label{_account_manager_8h_a7b6cc08409013532dd92e3a2ab290a4b}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!edit\+\_\+\+P\+IN@{edit\+\_\+\+P\+IN}}
-\index{edit\+\_\+\+P\+IN@{edit\+\_\+\+P\+IN}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{edit\+\_\+\+P\+I\+N()}{edit\_PIN()}}
-{\footnotesize\ttfamily bool edit\+\_\+\+P\+IN (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{user\+\_\+to\+\_\+change,  }\item[{uint32\+\_\+t}]{P\+I\+N\+\_\+u }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{_account_manager_8h_a1cda9c8b07e200fec04cc2aac1773269}\label{_account_manager_8h_a1cda9c8b07e200fec04cc2aac1773269}} 
+\index{AccountManager.h@{AccountManager.h}!dbRemoveUser@{dbRemoveUser}}
+\index{dbRemoveUser@{dbRemoveUser}!AccountManager.h@{AccountManager.h}}
+\doxysubsubsection{\texorpdfstring{dbRemoveUser()}{dbRemoveUser()}}
+{\footnotesize\ttfamily bool db\+Remove\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_account_manager_8h_a4e9a2310a7dd63e26512f1e5fcdbcd69}{User}}}]{admin\+\_\+user,  }\item[{uint32\+\_\+t}]{ID\+\_\+u }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_account_manager_8h_a96e7122e62f667a55492a25afe545bf6}\label{_account_manager_8h_a96e7122e62f667a55492a25afe545bf6}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!id\+\_\+check@{id\+\_\+check}}
-\index{id\+\_\+check@{id\+\_\+check}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{id\+\_\+check()}{id\_check()}}
-{\footnotesize\ttfamily bool id\+\_\+check (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{I\+D\+\_\+buffered }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{_account_manager_8h_a5d43f114289bcf5c00262ba8690cb165}\label{_account_manager_8h_a5d43f114289bcf5c00262ba8690cb165}} 
+\index{AccountManager.h@{AccountManager.h}!dbUserBlocked@{dbUserBlocked}}
+\index{dbUserBlocked@{dbUserBlocked}!AccountManager.h@{AccountManager.h}}
+\doxysubsubsection{\texorpdfstring{dbUserBlocked()}{dbUserBlocked()}}
+{\footnotesize\ttfamily bool db\+User\+Blocked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_account_manager_8h_a4e9a2310a7dd63e26512f1e5fcdbcd69}{User}} $\ast$}]{u }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_account_manager_8h_a5d2815bc5b836e61e1ae8dcfc17b6d94}\label{_account_manager_8h_a5d2815bc5b836e61e1ae8dcfc17b6d94}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!init\+\_\+data\+\_\+base@{init\+\_\+data\+\_\+base}}
-\index{init\+\_\+data\+\_\+base@{init\+\_\+data\+\_\+base}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{init\+\_\+data\+\_\+base()}{init\_data\_base()}}
-{\footnotesize\ttfamily void init\+\_\+data\+\_\+base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{_account_manager_8h_ab73933051a2add27d5c533aaba286062}\label{_account_manager_8h_ab73933051a2add27d5c533aaba286062}} 
+\index{AccountManager.h@{AccountManager.h}!dbUserSearch@{dbUserSearch}}
+\index{dbUserSearch@{dbUserSearch}!AccountManager.h@{AccountManager.h}}
+\doxysubsubsection{\texorpdfstring{dbUserSearch()}{dbUserSearch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_account_manager_8h_a4e9a2310a7dd63e26512f1e5fcdbcd69}{User}} $\ast$ db\+User\+Search (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ID\+\_\+to\+\_\+search }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_account_manager_8h_ab24bda9cc9e8484bcfb43065d9622b41}\label{_account_manager_8h_ab24bda9cc9e8484bcfb43065d9622b41}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!is\+\_\+blocked@{is\+\_\+blocked}}
-\index{is\+\_\+blocked@{is\+\_\+blocked}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{is\+\_\+blocked()}{is\_blocked()}}
-{\footnotesize\ttfamily bool is\+\_\+blocked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}}}]{u }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{_account_manager_8h_a94492add454898020cc4c16d2a41d4e6}\label{_account_manager_8h_a94492add454898020cc4c16d2a41d4e6}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!unblock\+\_\+user@{unblock\+\_\+user}}
-\index{unblock\+\_\+user@{unblock\+\_\+user}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{unblock\+\_\+user()}{unblock\_user()}}
-{\footnotesize\ttfamily void unblock\+\_\+user (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}}}]{u }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{_account_manager_8h_aaddd3153e2bc1669037e6a778ad1b6a0}\label{_account_manager_8h_aaddd3153e2bc1669037e6a778ad1b6a0}} 
-\index{Account\+Manager.\+h@{Account\+Manager.\+h}!user\+\_\+search@{user\+\_\+search}}
-\index{user\+\_\+search@{user\+\_\+search}!Account\+Manager.\+h@{Account\+Manager.\+h}}
-\subsubsection{\texorpdfstring{user\+\_\+search()}{user\_search()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_account_manager_8h_aeb0919dde672c4348472b039425d82b5}{User}} user\+\_\+search (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{I\+D\+\_\+to\+\_\+search }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{_account_manager_8h_a105a7cfbcc815b5563032c24181dcdbf}\label{_account_manager_8h_a105a7cfbcc815b5563032c24181dcdbf}} 
+\index{AccountManager.h@{AccountManager.h}!initDataBase@{initDataBase}}
+\index{initDataBase@{initDataBase}!AccountManager.h@{AccountManager.h}}
+\doxysubsubsection{\texorpdfstring{initDataBase()}{initDataBase()}}
+{\footnotesize\ttfamily void init\+Data\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 

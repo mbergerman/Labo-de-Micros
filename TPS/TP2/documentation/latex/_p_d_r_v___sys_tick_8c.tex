@@ -1,48 +1,53 @@
-\hypertarget{_p_d_r_v___sys_tick_8c}{}\section{drivers/\+P\+D\+R\+V\+\_\+\+Sys\+Tick.c File Reference}
-\label{_p_d_r_v___sys_tick_8c}\index{drivers/\+P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{drivers/\+P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
+\hypertarget{_p_d_r_v___sys_tick_8c}{}\doxysection{drivers/\+PDRV\+\_\+\+Sys\+Tick.c File Reference}
+\label{_p_d_r_v___sys_tick_8c}\index{drivers/PDRV\_SysTick.c@{drivers/PDRV\_SysTick.c}}
 
 
 Sys\+Tick driver.  
 
 
-{\ttfamily \#include \char`\"{}P\+D\+R\+V\+\_\+\+Sys\+Tick.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}M\+K64\+F12.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}PDRV\+\_\+\+Sys\+Tick.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MK64\+F12.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}hardware.\+h\char`\"{}}\newline
-\subsection*{Macros}
+{\ttfamily \#include \char`\"{}PDRV\+\_\+\+GPIO.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a6ebe466e477d394ca5bb309b35b6bc39}{F\+C\+LK}}~\mbox{\hyperlink{hardware_8h_a2bb871b713df2e72306bcd1dc28faefc}{\+\_\+\+\_\+\+C\+O\+R\+E\+\_\+\+C\+L\+O\+C\+K\+\_\+\+\_\+}}
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a6ebe466e477d394ca5bb309b35b6bc39}{FCLK}}~\mbox{\hyperlink{hardware_8h_a2bb871b713df2e72306bcd1dc28faefc}{\+\_\+\+\_\+\+CORE\+\_\+\+CLOCK\+\_\+\+\_\+}}
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a5cfe6449a874cc2f1795cb46efaa5014}{C\+S\+R\+\_\+\+M\+A\+SK}}~0x00010007
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a5cfe6449a874cc2f1795cb46efaa5014}{CSR\+\_\+\+MASK}}~0x00010007
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a668ef5c699426237f86f59fb33a906f6}{E\+N\+A\+B\+L\+E\+\_\+\+M\+A\+SK}}~0x01
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a668ef5c699426237f86f59fb33a906f6}{ENABLE\+\_\+\+MASK}}~0x01
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_adedb09ae4cec8a9a45c51b3f24868096}{T\+I\+C\+K\+I\+N\+T\+\_\+\+M\+A\+SK}}~0x02
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_adedb09ae4cec8a9a45c51b3f24868096}{TICKINT\+\_\+\+MASK}}~0x02
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a3f7b4dbbd861f1192a87b3f868133295}{C\+L\+K\+S\+O\+U\+R\+C\+E\+\_\+\+M\+A\+SK}}~0x04
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a3f7b4dbbd861f1192a87b3f868133295}{CLKSOURCE\+\_\+\+MASK}}~0x04
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_abe037252492043a52e27bdf614dbc2ea}{C\+O\+U\+N\+T\+F\+L\+A\+G\+\_\+\+M\+A\+SK}}~0x10000
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_abe037252492043a52e27bdf614dbc2ea}{COUNTFLAG\+\_\+\+MASK}}~0x10000
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a786fc72cc1b8facb7dd6aff9bb068d9c}{R\+E\+L\+O\+A\+D\+\_\+\+V\+A\+L\+UE}}~(\mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a6ebe466e477d394ca5bb309b35b6bc39}{F\+C\+LK}}/\mbox{\hyperlink{_p_d_r_v___sys_tick_8h_ac352ac5d53364dc4e115af3949592001}{S\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+S\+R\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ}} -\/ 1)
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a786fc72cc1b8facb7dd6aff9bb068d9c}{RELOAD\+\_\+\+VALUE}}~(\mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a6ebe466e477d394ca5bb309b35b6bc39}{FCLK}}/\mbox{\hyperlink{_p_d_r_v___sys_tick_8h_ac352ac5d53364dc4e115af3949592001}{SYSTICK\+\_\+\+ISR\+\_\+\+FREQUENCY\+\_\+\+HZ}} -\/ 1)
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_aa7ad5eced22dae581a75160075cfe9bd}{R\+V\+R\+\_\+\+M\+A\+SK}}~0x00\+F\+F\+F\+F\+FF
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_aa7ad5eced22dae581a75160075cfe9bd}{RVR\+\_\+\+MASK}}~0x00\+FFFFFF
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a12e606b8e0c1123f988a2f3df2ce7fb8}{C\+L\+E\+A\+R\+\_\+\+V\+A\+L\+UE}}~0x0
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a12e606b8e0c1123f988a2f3df2ce7fb8}{CLEAR\+\_\+\+VALUE}}~0x0
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_aded78da8d68311355ad5a3f215fb3b14}{C\+V\+R\+\_\+\+M\+A\+SK}}~0x00\+F\+F\+F\+F\+FF
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_aded78da8d68311355ad5a3f215fb3b14}{CVR\+\_\+\+MASK}}~0x00\+FFFFFF
 \item 
-\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a84b110e2c635b7b9169701ae6f3be239}{C\+A\+L\+I\+B\+\_\+\+M\+A\+SK}}~0x\+C0\+F\+F\+F\+F\+FF
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a84b110e2c635b7b9169701ae6f3be239}{CALIB\+\_\+\+MASK}}~0x\+C0\+FFFFFF
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a1e163d6c6e67381d91c17aa5b46a5b1b}{SYSTICK\+\_\+\+DEVELOPMENT\+\_\+\+MODE}}~1
+\item 
+\#define \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a1b89625a06317ed8b7299a61ccf008c5}{SYSTICK\+\_\+\+IRQ\+\_\+\+TEST\+\_\+\+PIN}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04a84a0e8421125bc6ef85e43bab494f68c}{PE}},25)
 \end{DoxyCompactItemize}
-\subsection*{Functions}
+\doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 bool \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_ab2a8b988c01547bab2f66998dedf990e}{Sys\+Tick\+\_\+\+Init}} (void($\ast$funcallback)(void))
 \begin{DoxyCompactList}\small\item\em Initialize Sys\+Tic driver. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{hardware_8h_a27a122170c1b7feec6fa7247a91ac899}{\+\_\+\+\_\+\+I\+S\+R\+\_\+\+\_\+}} \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_ac139f26cc440c13fe1b2c959cc55c3d4}{Sys\+Tick\+\_\+\+Handler}} (void)
+\mbox{\hyperlink{hardware_8h_a27a122170c1b7feec6fa7247a91ac899}{\+\_\+\+\_\+\+ISR\+\_\+\+\_\+}} \mbox{\hyperlink{_p_d_r_v___sys_tick_8c_ac139f26cc440c13fe1b2c959cc55c3d4}{Sys\+Tick\+\_\+\+Handler}} (void)
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 Sys\+Tick driver. 
 
 \begin{DoxyAuthor}{Author}
@@ -50,86 +55,98 @@ Grupo 1
 \end{DoxyAuthor}
 
 
-\subsection{Macro Definition Documentation}
+\doxysubsection{Macro Definition Documentation}
 \mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_a84b110e2c635b7b9169701ae6f3be239}\label{_p_d_r_v___sys_tick_8c_a84b110e2c635b7b9169701ae6f3be239}} 
-\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}!C\+A\+L\+I\+B\+\_\+\+M\+A\+SK@{C\+A\+L\+I\+B\+\_\+\+M\+A\+SK}}
-\index{C\+A\+L\+I\+B\+\_\+\+M\+A\+SK@{C\+A\+L\+I\+B\+\_\+\+M\+A\+SK}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
-\subsubsection{\texorpdfstring{C\+A\+L\+I\+B\+\_\+\+M\+A\+SK}{CALIB\_MASK}}
-{\footnotesize\ttfamily \#define C\+A\+L\+I\+B\+\_\+\+M\+A\+SK~0x\+C0\+F\+F\+F\+F\+FF}
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!CALIB\_MASK@{CALIB\_MASK}}
+\index{CALIB\_MASK@{CALIB\_MASK}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{CALIB\_MASK}{CALIB\_MASK}}
+{\footnotesize\ttfamily \#define CALIB\+\_\+\+MASK~0x\+C0\+FFFFFF}
 
 \mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_a12e606b8e0c1123f988a2f3df2ce7fb8}\label{_p_d_r_v___sys_tick_8c_a12e606b8e0c1123f988a2f3df2ce7fb8}} 
-\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}!C\+L\+E\+A\+R\+\_\+\+V\+A\+L\+UE@{C\+L\+E\+A\+R\+\_\+\+V\+A\+L\+UE}}
-\index{C\+L\+E\+A\+R\+\_\+\+V\+A\+L\+UE@{C\+L\+E\+A\+R\+\_\+\+V\+A\+L\+UE}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
-\subsubsection{\texorpdfstring{C\+L\+E\+A\+R\+\_\+\+V\+A\+L\+UE}{CLEAR\_VALUE}}
-{\footnotesize\ttfamily \#define C\+L\+E\+A\+R\+\_\+\+V\+A\+L\+UE~0x0}
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!CLEAR\_VALUE@{CLEAR\_VALUE}}
+\index{CLEAR\_VALUE@{CLEAR\_VALUE}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{CLEAR\_VALUE}{CLEAR\_VALUE}}
+{\footnotesize\ttfamily \#define CLEAR\+\_\+\+VALUE~0x0}
 
 \mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_a3f7b4dbbd861f1192a87b3f868133295}\label{_p_d_r_v___sys_tick_8c_a3f7b4dbbd861f1192a87b3f868133295}} 
-\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}!C\+L\+K\+S\+O\+U\+R\+C\+E\+\_\+\+M\+A\+SK@{C\+L\+K\+S\+O\+U\+R\+C\+E\+\_\+\+M\+A\+SK}}
-\index{C\+L\+K\+S\+O\+U\+R\+C\+E\+\_\+\+M\+A\+SK@{C\+L\+K\+S\+O\+U\+R\+C\+E\+\_\+\+M\+A\+SK}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
-\subsubsection{\texorpdfstring{C\+L\+K\+S\+O\+U\+R\+C\+E\+\_\+\+M\+A\+SK}{CLKSOURCE\_MASK}}
-{\footnotesize\ttfamily \#define C\+L\+K\+S\+O\+U\+R\+C\+E\+\_\+\+M\+A\+SK~0x04}
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!CLKSOURCE\_MASK@{CLKSOURCE\_MASK}}
+\index{CLKSOURCE\_MASK@{CLKSOURCE\_MASK}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{CLKSOURCE\_MASK}{CLKSOURCE\_MASK}}
+{\footnotesize\ttfamily \#define CLKSOURCE\+\_\+\+MASK~0x04}
 
 \mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_abe037252492043a52e27bdf614dbc2ea}\label{_p_d_r_v___sys_tick_8c_abe037252492043a52e27bdf614dbc2ea}} 
-\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}!C\+O\+U\+N\+T\+F\+L\+A\+G\+\_\+\+M\+A\+SK@{C\+O\+U\+N\+T\+F\+L\+A\+G\+\_\+\+M\+A\+SK}}
-\index{C\+O\+U\+N\+T\+F\+L\+A\+G\+\_\+\+M\+A\+SK@{C\+O\+U\+N\+T\+F\+L\+A\+G\+\_\+\+M\+A\+SK}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
-\subsubsection{\texorpdfstring{C\+O\+U\+N\+T\+F\+L\+A\+G\+\_\+\+M\+A\+SK}{COUNTFLAG\_MASK}}
-{\footnotesize\ttfamily \#define C\+O\+U\+N\+T\+F\+L\+A\+G\+\_\+\+M\+A\+SK~0x10000}
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!COUNTFLAG\_MASK@{COUNTFLAG\_MASK}}
+\index{COUNTFLAG\_MASK@{COUNTFLAG\_MASK}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{COUNTFLAG\_MASK}{COUNTFLAG\_MASK}}
+{\footnotesize\ttfamily \#define COUNTFLAG\+\_\+\+MASK~0x10000}
 
 \mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_a5cfe6449a874cc2f1795cb46efaa5014}\label{_p_d_r_v___sys_tick_8c_a5cfe6449a874cc2f1795cb46efaa5014}} 
-\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}!C\+S\+R\+\_\+\+M\+A\+SK@{C\+S\+R\+\_\+\+M\+A\+SK}}
-\index{C\+S\+R\+\_\+\+M\+A\+SK@{C\+S\+R\+\_\+\+M\+A\+SK}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
-\subsubsection{\texorpdfstring{C\+S\+R\+\_\+\+M\+A\+SK}{CSR\_MASK}}
-{\footnotesize\ttfamily \#define C\+S\+R\+\_\+\+M\+A\+SK~0x00010007}
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!CSR\_MASK@{CSR\_MASK}}
+\index{CSR\_MASK@{CSR\_MASK}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{CSR\_MASK}{CSR\_MASK}}
+{\footnotesize\ttfamily \#define CSR\+\_\+\+MASK~0x00010007}
 
 \mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_aded78da8d68311355ad5a3f215fb3b14}\label{_p_d_r_v___sys_tick_8c_aded78da8d68311355ad5a3f215fb3b14}} 
-\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}!C\+V\+R\+\_\+\+M\+A\+SK@{C\+V\+R\+\_\+\+M\+A\+SK}}
-\index{C\+V\+R\+\_\+\+M\+A\+SK@{C\+V\+R\+\_\+\+M\+A\+SK}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
-\subsubsection{\texorpdfstring{C\+V\+R\+\_\+\+M\+A\+SK}{CVR\_MASK}}
-{\footnotesize\ttfamily \#define C\+V\+R\+\_\+\+M\+A\+SK~0x00\+F\+F\+F\+F\+FF}
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!CVR\_MASK@{CVR\_MASK}}
+\index{CVR\_MASK@{CVR\_MASK}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{CVR\_MASK}{CVR\_MASK}}
+{\footnotesize\ttfamily \#define CVR\+\_\+\+MASK~0x00\+FFFFFF}
 
 \mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_a668ef5c699426237f86f59fb33a906f6}\label{_p_d_r_v___sys_tick_8c_a668ef5c699426237f86f59fb33a906f6}} 
-\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}!E\+N\+A\+B\+L\+E\+\_\+\+M\+A\+SK@{E\+N\+A\+B\+L\+E\+\_\+\+M\+A\+SK}}
-\index{E\+N\+A\+B\+L\+E\+\_\+\+M\+A\+SK@{E\+N\+A\+B\+L\+E\+\_\+\+M\+A\+SK}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
-\subsubsection{\texorpdfstring{E\+N\+A\+B\+L\+E\+\_\+\+M\+A\+SK}{ENABLE\_MASK}}
-{\footnotesize\ttfamily \#define E\+N\+A\+B\+L\+E\+\_\+\+M\+A\+SK~0x01}
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!ENABLE\_MASK@{ENABLE\_MASK}}
+\index{ENABLE\_MASK@{ENABLE\_MASK}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{ENABLE\_MASK}{ENABLE\_MASK}}
+{\footnotesize\ttfamily \#define ENABLE\+\_\+\+MASK~0x01}
 
 \mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_a6ebe466e477d394ca5bb309b35b6bc39}\label{_p_d_r_v___sys_tick_8c_a6ebe466e477d394ca5bb309b35b6bc39}} 
-\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}!F\+C\+LK@{F\+C\+LK}}
-\index{F\+C\+LK@{F\+C\+LK}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
-\subsubsection{\texorpdfstring{F\+C\+LK}{FCLK}}
-{\footnotesize\ttfamily \#define F\+C\+LK~\mbox{\hyperlink{hardware_8h_a2bb871b713df2e72306bcd1dc28faefc}{\+\_\+\+\_\+\+C\+O\+R\+E\+\_\+\+C\+L\+O\+C\+K\+\_\+\+\_\+}}}
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!FCLK@{FCLK}}
+\index{FCLK@{FCLK}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{FCLK}{FCLK}}
+{\footnotesize\ttfamily \#define FCLK~\mbox{\hyperlink{hardware_8h_a2bb871b713df2e72306bcd1dc28faefc}{\+\_\+\+\_\+\+CORE\+\_\+\+CLOCK\+\_\+\+\_\+}}}
 
 \mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_a786fc72cc1b8facb7dd6aff9bb068d9c}\label{_p_d_r_v___sys_tick_8c_a786fc72cc1b8facb7dd6aff9bb068d9c}} 
-\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}!R\+E\+L\+O\+A\+D\+\_\+\+V\+A\+L\+UE@{R\+E\+L\+O\+A\+D\+\_\+\+V\+A\+L\+UE}}
-\index{R\+E\+L\+O\+A\+D\+\_\+\+V\+A\+L\+UE@{R\+E\+L\+O\+A\+D\+\_\+\+V\+A\+L\+UE}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
-\subsubsection{\texorpdfstring{R\+E\+L\+O\+A\+D\+\_\+\+V\+A\+L\+UE}{RELOAD\_VALUE}}
-{\footnotesize\ttfamily \#define R\+E\+L\+O\+A\+D\+\_\+\+V\+A\+L\+UE~(\mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a6ebe466e477d394ca5bb309b35b6bc39}{F\+C\+LK}}/\mbox{\hyperlink{_p_d_r_v___sys_tick_8h_ac352ac5d53364dc4e115af3949592001}{S\+Y\+S\+T\+I\+C\+K\+\_\+\+I\+S\+R\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+C\+Y\+\_\+\+HZ}} -\/ 1)}
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!RELOAD\_VALUE@{RELOAD\_VALUE}}
+\index{RELOAD\_VALUE@{RELOAD\_VALUE}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{RELOAD\_VALUE}{RELOAD\_VALUE}}
+{\footnotesize\ttfamily \#define RELOAD\+\_\+\+VALUE~(\mbox{\hyperlink{_p_d_r_v___sys_tick_8c_a6ebe466e477d394ca5bb309b35b6bc39}{FCLK}}/\mbox{\hyperlink{_p_d_r_v___sys_tick_8h_ac352ac5d53364dc4e115af3949592001}{SYSTICK\+\_\+\+ISR\+\_\+\+FREQUENCY\+\_\+\+HZ}} -\/ 1)}
 
 \mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_aa7ad5eced22dae581a75160075cfe9bd}\label{_p_d_r_v___sys_tick_8c_aa7ad5eced22dae581a75160075cfe9bd}} 
-\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}!R\+V\+R\+\_\+\+M\+A\+SK@{R\+V\+R\+\_\+\+M\+A\+SK}}
-\index{R\+V\+R\+\_\+\+M\+A\+SK@{R\+V\+R\+\_\+\+M\+A\+SK}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
-\subsubsection{\texorpdfstring{R\+V\+R\+\_\+\+M\+A\+SK}{RVR\_MASK}}
-{\footnotesize\ttfamily \#define R\+V\+R\+\_\+\+M\+A\+SK~0x00\+F\+F\+F\+F\+FF}
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!RVR\_MASK@{RVR\_MASK}}
+\index{RVR\_MASK@{RVR\_MASK}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{RVR\_MASK}{RVR\_MASK}}
+{\footnotesize\ttfamily \#define RVR\+\_\+\+MASK~0x00\+FFFFFF}
+
+\mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_a1e163d6c6e67381d91c17aa5b46a5b1b}\label{_p_d_r_v___sys_tick_8c_a1e163d6c6e67381d91c17aa5b46a5b1b}} 
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!SYSTICK\_DEVELOPMENT\_MODE@{SYSTICK\_DEVELOPMENT\_MODE}}
+\index{SYSTICK\_DEVELOPMENT\_MODE@{SYSTICK\_DEVELOPMENT\_MODE}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{SYSTICK\_DEVELOPMENT\_MODE}{SYSTICK\_DEVELOPMENT\_MODE}}
+{\footnotesize\ttfamily \#define SYSTICK\+\_\+\+DEVELOPMENT\+\_\+\+MODE~1}
+
+\mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_a1b89625a06317ed8b7299a61ccf008c5}\label{_p_d_r_v___sys_tick_8c_a1b89625a06317ed8b7299a61ccf008c5}} 
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!SYSTICK\_IRQ\_TEST\_PIN@{SYSTICK\_IRQ\_TEST\_PIN}}
+\index{SYSTICK\_IRQ\_TEST\_PIN@{SYSTICK\_IRQ\_TEST\_PIN}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{SYSTICK\_IRQ\_TEST\_PIN}{SYSTICK\_IRQ\_TEST\_PIN}}
+{\footnotesize\ttfamily \#define SYSTICK\+\_\+\+IRQ\+\_\+\+TEST\+\_\+\+PIN~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04a84a0e8421125bc6ef85e43bab494f68c}{PE}},25)}
 
 \mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_adedb09ae4cec8a9a45c51b3f24868096}\label{_p_d_r_v___sys_tick_8c_adedb09ae4cec8a9a45c51b3f24868096}} 
-\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}!T\+I\+C\+K\+I\+N\+T\+\_\+\+M\+A\+SK@{T\+I\+C\+K\+I\+N\+T\+\_\+\+M\+A\+SK}}
-\index{T\+I\+C\+K\+I\+N\+T\+\_\+\+M\+A\+SK@{T\+I\+C\+K\+I\+N\+T\+\_\+\+M\+A\+SK}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
-\subsubsection{\texorpdfstring{T\+I\+C\+K\+I\+N\+T\+\_\+\+M\+A\+SK}{TICKINT\_MASK}}
-{\footnotesize\ttfamily \#define T\+I\+C\+K\+I\+N\+T\+\_\+\+M\+A\+SK~0x02}
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!TICKINT\_MASK@{TICKINT\_MASK}}
+\index{TICKINT\_MASK@{TICKINT\_MASK}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{TICKINT\_MASK}{TICKINT\_MASK}}
+{\footnotesize\ttfamily \#define TICKINT\+\_\+\+MASK~0x02}
 
 
 
-\subsection{Function Documentation}
+\doxysubsection{Function Documentation}
 \mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_ac139f26cc440c13fe1b2c959cc55c3d4}\label{_p_d_r_v___sys_tick_8c_ac139f26cc440c13fe1b2c959cc55c3d4}} 
-\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}!Sys\+Tick\+\_\+\+Handler@{Sys\+Tick\+\_\+\+Handler}}
-\index{Sys\+Tick\+\_\+\+Handler@{Sys\+Tick\+\_\+\+Handler}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
-\subsubsection{\texorpdfstring{Sys\+Tick\+\_\+\+Handler()}{SysTick\_Handler()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{startup__mk64f12_8c_ad7383a35b899049e9f2a2cb68ba6b6af}{W\+E\+A\+K\+\_\+\+AV}} void Sys\+Tick\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!SysTick\_Handler@{SysTick\_Handler}}
+\index{SysTick\_Handler@{SysTick\_Handler}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{SysTick\_Handler()}{SysTick\_Handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{startup__mk64f12_8c_ad7383a35b899049e9f2a2cb68ba6b6af}{WEAK\+\_\+\+AV}} void Sys\+Tick\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{_p_d_r_v___sys_tick_8c_ab2a8b988c01547bab2f66998dedf990e}\label{_p_d_r_v___sys_tick_8c_ab2a8b988c01547bab2f66998dedf990e}} 
-\index{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}!Sys\+Tick\+\_\+\+Init@{Sys\+Tick\+\_\+\+Init}}
-\index{Sys\+Tick\+\_\+\+Init@{Sys\+Tick\+\_\+\+Init}!P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c@{P\+D\+R\+V\+\_\+\+Sys\+Tick.\+c}}
-\subsubsection{\texorpdfstring{Sys\+Tick\+\_\+\+Init()}{SysTick\_Init()}}
+\index{PDRV\_SysTick.c@{PDRV\_SysTick.c}!SysTick\_Init@{SysTick\_Init}}
+\index{SysTick\_Init@{SysTick\_Init}!PDRV\_SysTick.c@{PDRV\_SysTick.c}}
+\doxysubsubsection{\texorpdfstring{SysTick\_Init()}{SysTick\_Init()}}
 {\footnotesize\ttfamily bool Sys\+Tick\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{funcallback }\end{DoxyParamCaption})}
 
 

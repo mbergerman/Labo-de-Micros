@@ -1,499 +1,142 @@
-\hypertarget{struct_s_c_b___type}{}\section{S\+C\+B\+\_\+\+Type Struct Reference}
-\label{struct_s_c_b___type}\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
+\hypertarget{struct_s_c_b___type}{}\doxysection{SCB\+\_\+\+Type Struct Reference}
+\label{struct_s_c_b___type}\index{SCB\_Type@{SCB\_Type}}
 
 
-Structure type to access the System Control Block (S\+CB).  
+Structure type to access the System Control Block (SCB).  
 
 
 
 
 {\ttfamily \#include $<$core\+\_\+armv8mbl.\+h$>$}
 
-\subsection*{Data Fields}
+\doxysubsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_adbf8292503748ba6421a523bdee6819d}{C\+P\+U\+ID}}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s___core___sys_tick_functions_gadbf8292503748ba6421a523bdee6819d}{CPUID}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_aced895d6aba03d72b0d865fcc5ce44ee}{I\+C\+SR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s___core___sys_tick_functions_gaced895d6aba03d72b0d865fcc5ce44ee}{ICSR}}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_af86c61a5d38a4fc9cef942a12744486b}{R\+E\+S\+E\+R\+V\+E\+D0}}
+uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s___core___sys_tick_functions_gaf86c61a5d38a4fc9cef942a12744486b}{RESERVED0}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a9b6ccd9c0c0865f8facad77ea37240b0}{A\+I\+R\+CR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s___core___sys_tick_functions_ga9b6ccd9c0c0865f8facad77ea37240b0}{AIRCR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_acac65f229cb3fcb5369a0a9e0393b8c0}{S\+CR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s___core___sys_tick_functions_gacac65f229cb3fcb5369a0a9e0393b8c0}{SCR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ad68b5c1f2d9845ef4247cf2d9b041336}{C\+CR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s___core___sys_tick_functions_gad68b5c1f2d9845ef4247cf2d9b041336}{CCR}}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ac4ac04e673b5b8320d53f7b0947db902}{R\+E\+S\+E\+R\+V\+E\+D1}}
+uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s___core___sys_tick_functions_gac4ac04e673b5b8320d53f7b0947db902}{RESERVED1}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a67fd6058e3196a723d64df2d22ae6daa}{S\+H\+PR}} \mbox{[}2\+U\mbox{]}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s___core___sys_tick_functions_ga67fd6058e3196a723d64df2d22ae6daa}{SHPR}} \mbox{[}2U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a44ad5c292dbd77e72f310902375a8a06}{S\+H\+C\+SR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s___core___sys_tick_functions_ga44ad5c292dbd77e72f310902375a8a06}{SHCSR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ae457d2615e203c3d5904a43a1bc9df71}{V\+T\+OR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gae457d2615e203c3d5904a43a1bc9df71}{VTOR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint8\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a49f5a554705aebf542765b3a38f4feb9}{S\+H\+PR}} \mbox{[}12\+U\mbox{]}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint8\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga49f5a554705aebf542765b3a38f4feb9}{SHPR}} \mbox{[}12U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a0f9e27357254e6e953a94f95bda040b1}{C\+F\+SR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga0f9e27357254e6e953a94f95bda040b1}{CFSR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ab974e7ceb2e52a3fbcaa84e06e52922d}{H\+F\+SR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gab974e7ceb2e52a3fbcaa84e06e52922d}{HFSR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a3b590075aa07880ce686d5cfb4e61c5c}{D\+F\+SR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3b590075aa07880ce686d5cfb4e61c5c}{DFSR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ae9d94d186615d57d38c9253cb842d244}{M\+M\+F\+AR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gae9d94d186615d57d38c9253cb842d244}{MMFAR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a3fde073744418e2fe476333cb4d55d0d}{B\+F\+AR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3fde073744418e2fe476333cb4d55d0d}{BFAR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a3ef0057e48fdef798f2ee12125a80d9f}{A\+F\+SR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3ef0057e48fdef798f2ee12125a80d9f}{AFSR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a37569b15cd2c9a50691e8b5e15a1d129}{I\+D\+\_\+\+P\+FR}} \mbox{[}2\+U\mbox{]}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga37569b15cd2c9a50691e8b5e15a1d129}{ID\+\_\+\+PFR}} \mbox{[}2U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a883f7e28417c51d3a3bf03185baf448f}{I\+D\+\_\+\+D\+FR}}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga883f7e28417c51d3a3bf03185baf448f}{ID\+\_\+\+DFR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a394a63fd0c3f9d7a52d7b220e31a2ef4}{I\+D\+\_\+\+A\+DR}}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga394a63fd0c3f9d7a52d7b220e31a2ef4}{ID\+\_\+\+ADR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a6a3474c4944f3e007cc3a9dc28b76650}{I\+D\+\_\+\+M\+M\+FR}} \mbox{[}4\+U\mbox{]}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga6a3474c4944f3e007cc3a9dc28b76650}{ID\+\_\+\+MMFR}} \mbox{[}4U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a7b10a73ce177ee4ea65cf88f8538017e}{I\+D\+\_\+\+I\+S\+AR}} \mbox{[}6\+U\mbox{]}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga7b10a73ce177ee4ea65cf88f8538017e}{ID\+\_\+\+ISAR}} \mbox{[}6U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a40b4dc749a25d1c95c2125e88683a591}{C\+L\+I\+DR}}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga40b4dc749a25d1c95c2125e88683a591}{CLIDR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_aad937861e203bb05ae22c4369c458561}{C\+TR}}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gaad937861e203bb05ae22c4369c458561}{CTR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a90c793639fc9470e50e4f4fc4b3464da}{C\+C\+S\+I\+DR}}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga90c793639fc9470e50e4f4fc4b3464da}{CCSIDR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ae627674bc3ccfc2d67caccfc1f4ea4ed}{C\+S\+S\+E\+LR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gae627674bc3ccfc2d67caccfc1f4ea4ed}{CSSELR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ab8e9dd6ca5f31244ea352ed0c19155d8}{C\+P\+A\+CR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gab8e9dd6ca5f31244ea352ed0c19155d8}{CPACR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a3b7fa817ab498ce63563c73ae316c9b6}{N\+S\+A\+CR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3b7fa817ab498ce63563c73ae316c9b6}{NSACR}}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ae4127589f72d736e30df2dd53f665e93}{R\+E\+S\+E\+R\+V\+E\+D3}} \mbox{[}92\+U\mbox{]}
+uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gae4127589f72d736e30df2dd53f665e93}{RESERVED3}} \mbox{[}92U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ada9cbba14ab1cc3fddd585f870932db8}{S\+T\+IR}}
+\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gada9cbba14ab1cc3fddd585f870932db8}{STIR}}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_af348cb636c453ec2e83974c0b38fe9d7}{R\+E\+S\+E\+R\+V\+E\+D4}} \mbox{[}15\+U\mbox{]}
+uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gaf348cb636c453ec2e83974c0b38fe9d7}{RESERVED4}} \mbox{[}15U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a9b0103b438c8922eaea5624f71afbbc8}{M\+V\+F\+R0}}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga9b0103b438c8922eaea5624f71afbbc8}{MVFR0}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a0a610dc4212de3ce1ad62e9afa76c728}{M\+V\+F\+R1}}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga0a610dc4212de3ce1ad62e9afa76c728}{MVFR1}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a8353348c9336aa1aadcbf86b6f0f18c9}{M\+V\+F\+R2}}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga8353348c9336aa1aadcbf86b6f0f18c9}{MVFR2}}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a942b5bad37ebf529ebb15a33522ae475}{R\+E\+S\+E\+R\+V\+E\+D5}} \mbox{[}1\+U\mbox{]}
+uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga942b5bad37ebf529ebb15a33522ae475}{RESERVED5}} \mbox{[}1U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a011024c365e7c5bd13a63830af60b10c}{I\+C\+I\+A\+L\+LU}}
+\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga011024c365e7c5bd13a63830af60b10c}{ICIALLU}}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_aecf1563d46d998532d9a9fdb0a9affff}{R\+E\+S\+E\+R\+V\+E\+D6}} \mbox{[}1\+U\mbox{]}
+uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gaecf1563d46d998532d9a9fdb0a9affff}{RESERVED6}} \mbox{[}1U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a1a8ecda7b1e4a1100dd82fc694bb4eb5}{I\+C\+I\+M\+V\+AU}}
+\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga1a8ecda7b1e4a1100dd82fc694bb4eb5}{ICIMVAU}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a72402d657f9e448afce57bbd8577864d}{D\+C\+I\+M\+V\+AC}}
+\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga72402d657f9e448afce57bbd8577864d}{DCIMVAC}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_aca1ec746911b0934dd11c31d93a369be}{D\+C\+I\+SW}}
+\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gaca1ec746911b0934dd11c31d93a369be}{DCISW}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a9d4029e220311690756d836948e71393}{D\+C\+C\+M\+V\+AU}}
+\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga9d4029e220311690756d836948e71393}{DCCMVAU}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_acc23dc74d8f0378d81bc72302e325e50}{D\+C\+C\+M\+V\+AC}}
+\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gacc23dc74d8f0378d81bc72302e325e50}{DCCMVAC}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a2bf149d6d8f4fa59e25aee340512cb79}{D\+C\+C\+SW}}
+\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga2bf149d6d8f4fa59e25aee340512cb79}{DCCSW}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a18ef4bf4fbbb205544985598b1bb64f4}{D\+C\+C\+I\+M\+V\+AC}}
+\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga18ef4bf4fbbb205544985598b1bb64f4}{DCCIMVAC}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ab6e447723358e736a9f69ffc88a97ba1}{D\+C\+C\+I\+SW}}
+\mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gab6e447723358e736a9f69ffc88a97ba1}{DCCISW}}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a673086408889531c2e8220a306411a43}{R\+E\+S\+E\+R\+V\+E\+D7}} \mbox{[}6\+U\mbox{]}
+uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga673086408889531c2e8220a306411a43}{RESERVED7}} \mbox{[}6U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a18d1734811b40e7edf6e5213bf336ca8}{I\+T\+C\+M\+CR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga18d1734811b40e7edf6e5213bf336ca8}{ITCMCR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ad5a9c8098433fa3ac108487e0ccd9cfc}{D\+T\+C\+M\+CR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gad5a9c8098433fa3ac108487e0ccd9cfc}{DTCMCR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a209b4026c2994d0e18e883aa9af5c3cc}{A\+H\+B\+P\+CR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga209b4026c2994d0e18e883aa9af5c3cc}{AHBPCR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a39711bf09810b078ac81b2c76c6908f6}{C\+A\+CR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga39711bf09810b078ac81b2c76c6908f6}{CACR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a25bb4ac449a4122217e2ca74b9ad4e3e}{A\+H\+B\+S\+CR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga25bb4ac449a4122217e2ca74b9ad4e3e}{AHBSCR}}
 \item 
-uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ac51834a471d74e0522dd2734079d57cb}{R\+E\+S\+E\+R\+V\+E\+D8}} \mbox{[}1\+U\mbox{]}
+uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gac51834a471d74e0522dd2734079d57cb}{RESERVED8}} \mbox{[}1U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_aa104b9e01b129abe3de43c439916f655}{A\+B\+F\+SR}}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gaa104b9e01b129abe3de43c439916f655}{ABFSR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint8\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a293826a2c44f754e80af03d62f62f9e6}{S\+HP}} \mbox{[}12\+U\mbox{]}
+\mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+IOM}} uint8\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga293826a2c44f754e80af03d62f62f9e6}{SHP}} \mbox{[}12U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a602fa5eae6a772dbb09970d304e75690}{P\+FR}} \mbox{[}2\+U\mbox{]}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga602fa5eae6a772dbb09970d304e75690}{PFR}} \mbox{[}2U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ae2b3d4530d1b0c05593b634dc46348bd}{D\+FR}}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gae2b3d4530d1b0c05593b634dc46348bd}{DFR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a72572af6d5dece4947453aeabd52575f}{A\+DR}}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga72572af6d5dece4947453aeabd52575f}{ADR}}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ab6c914b579d22d7eb86d0e3d9a5fde71}{M\+M\+FR}} \mbox{[}4\+U\mbox{]}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gab6c914b579d22d7eb86d0e3d9a5fde71}{MMFR}} \mbox{[}4U\mbox{]}
 \item 
-\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_af2950df748750d535d5d65ac1c209563}{I\+S\+AR}} \mbox{[}5\+U\mbox{]}
+\mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gaf2950df748750d535d5d65ac1c209563}{ISAR}} \mbox{[}5U\mbox{]}
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
-Structure type to access the System Control Block (S\+CB). 
-
-\subsection{Field Documentation}
-\mbox{\Hypertarget{struct_s_c_b___type_aa104b9e01b129abe3de43c439916f655}\label{struct_s_c_b___type_aa104b9e01b129abe3de43c439916f655}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!A\+B\+F\+SR@{A\+B\+F\+SR}}
-\index{A\+B\+F\+SR@{A\+B\+F\+SR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{A\+B\+F\+SR}{ABFSR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t A\+B\+F\+SR}
-
-Offset\+: 0x2\+A8 (R/W) Auxiliary Bus Fault Status Register \mbox{\Hypertarget{struct_s_c_b___type_a72572af6d5dece4947453aeabd52575f}\label{struct_s_c_b___type_a72572af6d5dece4947453aeabd52575f}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!A\+DR@{A\+DR}}
-\index{A\+DR@{A\+DR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{A\+DR}{ADR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t A\+DR}
-
-Offset\+: 0x04C (R/ ) Auxiliary Feature Register \mbox{\Hypertarget{struct_s_c_b___type_a3ef0057e48fdef798f2ee12125a80d9f}\label{struct_s_c_b___type_a3ef0057e48fdef798f2ee12125a80d9f}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!A\+F\+SR@{A\+F\+SR}}
-\index{A\+F\+SR@{A\+F\+SR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{A\+F\+SR}{AFSR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t A\+F\+SR}
-
-Offset\+: 0x03C (R/W) Auxiliary Fault Status Register \mbox{\Hypertarget{struct_s_c_b___type_a209b4026c2994d0e18e883aa9af5c3cc}\label{struct_s_c_b___type_a209b4026c2994d0e18e883aa9af5c3cc}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!A\+H\+B\+P\+CR@{A\+H\+B\+P\+CR}}
-\index{A\+H\+B\+P\+CR@{A\+H\+B\+P\+CR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{A\+H\+B\+P\+CR}{AHBPCR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t A\+H\+B\+P\+CR}
-
-Offset\+: 0x298 (R/W) A\+H\+BP Control Register \mbox{\Hypertarget{struct_s_c_b___type_a25bb4ac449a4122217e2ca74b9ad4e3e}\label{struct_s_c_b___type_a25bb4ac449a4122217e2ca74b9ad4e3e}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!A\+H\+B\+S\+CR@{A\+H\+B\+S\+CR}}
-\index{A\+H\+B\+S\+CR@{A\+H\+B\+S\+CR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{A\+H\+B\+S\+CR}{AHBSCR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t A\+H\+B\+S\+CR}
-
-Offset\+: 0x2\+A0 (R/W) A\+HB Slave Control Register \mbox{\Hypertarget{struct_s_c_b___type_a9b6ccd9c0c0865f8facad77ea37240b0}\label{struct_s_c_b___type_a9b6ccd9c0c0865f8facad77ea37240b0}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!A\+I\+R\+CR@{A\+I\+R\+CR}}
-\index{A\+I\+R\+CR@{A\+I\+R\+CR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{A\+I\+R\+CR}{AIRCR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t A\+I\+R\+CR}
-
-Offset\+: 0x00C (R/W) Application Interrupt and Reset Control Register \mbox{\Hypertarget{struct_s_c_b___type_a3fde073744418e2fe476333cb4d55d0d}\label{struct_s_c_b___type_a3fde073744418e2fe476333cb4d55d0d}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!B\+F\+AR@{B\+F\+AR}}
-\index{B\+F\+AR@{B\+F\+AR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{B\+F\+AR}{BFAR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t B\+F\+AR}
-
-Offset\+: 0x038 (R/W) Bus\+Fault Address Register \mbox{\Hypertarget{struct_s_c_b___type_a39711bf09810b078ac81b2c76c6908f6}\label{struct_s_c_b___type_a39711bf09810b078ac81b2c76c6908f6}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!C\+A\+CR@{C\+A\+CR}}
-\index{C\+A\+CR@{C\+A\+CR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{C\+A\+CR}{CACR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t C\+A\+CR}
-
-Offset\+: 0x29C (R/W) L1 Cache Control Register \mbox{\Hypertarget{struct_s_c_b___type_ad68b5c1f2d9845ef4247cf2d9b041336}\label{struct_s_c_b___type_ad68b5c1f2d9845ef4247cf2d9b041336}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!C\+CR@{C\+CR}}
-\index{C\+CR@{C\+CR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{C\+CR}{CCR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t C\+CR}
-
-Offset\+: 0x014 (R/W) Configuration Control Register \mbox{\Hypertarget{struct_s_c_b___type_a90c793639fc9470e50e4f4fc4b3464da}\label{struct_s_c_b___type_a90c793639fc9470e50e4f4fc4b3464da}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!C\+C\+S\+I\+DR@{C\+C\+S\+I\+DR}}
-\index{C\+C\+S\+I\+DR@{C\+C\+S\+I\+DR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{C\+C\+S\+I\+DR}{CCSIDR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t C\+C\+S\+I\+DR}
-
-Offset\+: 0x080 (R/ ) Cache Size ID Register \mbox{\Hypertarget{struct_s_c_b___type_a0f9e27357254e6e953a94f95bda040b1}\label{struct_s_c_b___type_a0f9e27357254e6e953a94f95bda040b1}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!C\+F\+SR@{C\+F\+SR}}
-\index{C\+F\+SR@{C\+F\+SR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{C\+F\+SR}{CFSR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t C\+F\+SR}
-
-Offset\+: 0x028 (R/W) Configurable Fault Status Register \mbox{\Hypertarget{struct_s_c_b___type_a40b4dc749a25d1c95c2125e88683a591}\label{struct_s_c_b___type_a40b4dc749a25d1c95c2125e88683a591}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!C\+L\+I\+DR@{C\+L\+I\+DR}}
-\index{C\+L\+I\+DR@{C\+L\+I\+DR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{C\+L\+I\+DR}{CLIDR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t C\+L\+I\+DR}
-
-Offset\+: 0x078 (R/ ) Cache Level ID register \mbox{\Hypertarget{struct_s_c_b___type_ab8e9dd6ca5f31244ea352ed0c19155d8}\label{struct_s_c_b___type_ab8e9dd6ca5f31244ea352ed0c19155d8}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!C\+P\+A\+CR@{C\+P\+A\+CR}}
-\index{C\+P\+A\+CR@{C\+P\+A\+CR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{C\+P\+A\+CR}{CPACR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t C\+P\+A\+CR}
-
-Offset\+: 0x088 (R/W) Coprocessor Access Control Register \mbox{\Hypertarget{struct_s_c_b___type_adbf8292503748ba6421a523bdee6819d}\label{struct_s_c_b___type_adbf8292503748ba6421a523bdee6819d}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!C\+P\+U\+ID@{C\+P\+U\+ID}}
-\index{C\+P\+U\+ID@{C\+P\+U\+ID}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{C\+P\+U\+ID}{CPUID}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t C\+P\+U\+ID}
-
-Offset\+: 0x000 (R/ ) C\+P\+U\+ID Base Register \mbox{\Hypertarget{struct_s_c_b___type_ae627674bc3ccfc2d67caccfc1f4ea4ed}\label{struct_s_c_b___type_ae627674bc3ccfc2d67caccfc1f4ea4ed}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!C\+S\+S\+E\+LR@{C\+S\+S\+E\+LR}}
-\index{C\+S\+S\+E\+LR@{C\+S\+S\+E\+LR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{C\+S\+S\+E\+LR}{CSSELR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t C\+S\+S\+E\+LR}
-
-Offset\+: 0x084 (R/W) Cache Size Selection Register \mbox{\Hypertarget{struct_s_c_b___type_aad937861e203bb05ae22c4369c458561}\label{struct_s_c_b___type_aad937861e203bb05ae22c4369c458561}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!C\+TR@{C\+TR}}
-\index{C\+TR@{C\+TR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{C\+TR}{CTR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t C\+TR}
-
-Offset\+: 0x07C (R/ ) Cache Type register \mbox{\Hypertarget{struct_s_c_b___type_a18ef4bf4fbbb205544985598b1bb64f4}\label{struct_s_c_b___type_a18ef4bf4fbbb205544985598b1bb64f4}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!D\+C\+C\+I\+M\+V\+AC@{D\+C\+C\+I\+M\+V\+AC}}
-\index{D\+C\+C\+I\+M\+V\+AC@{D\+C\+C\+I\+M\+V\+AC}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{D\+C\+C\+I\+M\+V\+AC}{DCCIMVAC}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t D\+C\+C\+I\+M\+V\+AC}
-
-Offset\+: 0x270 ( /W) D-\/\+Cache Clean and Invalidate by M\+VA to PoC \mbox{\Hypertarget{struct_s_c_b___type_ab6e447723358e736a9f69ffc88a97ba1}\label{struct_s_c_b___type_ab6e447723358e736a9f69ffc88a97ba1}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!D\+C\+C\+I\+SW@{D\+C\+C\+I\+SW}}
-\index{D\+C\+C\+I\+SW@{D\+C\+C\+I\+SW}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{D\+C\+C\+I\+SW}{DCCISW}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t D\+C\+C\+I\+SW}
-
-Offset\+: 0x274 ( /W) D-\/\+Cache Clean and Invalidate by Set-\/way \mbox{\Hypertarget{struct_s_c_b___type_acc23dc74d8f0378d81bc72302e325e50}\label{struct_s_c_b___type_acc23dc74d8f0378d81bc72302e325e50}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!D\+C\+C\+M\+V\+AC@{D\+C\+C\+M\+V\+AC}}
-\index{D\+C\+C\+M\+V\+AC@{D\+C\+C\+M\+V\+AC}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{D\+C\+C\+M\+V\+AC}{DCCMVAC}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t D\+C\+C\+M\+V\+AC}
-
-Offset\+: 0x268 ( /W) D-\/\+Cache Clean by M\+VA to PoC \mbox{\Hypertarget{struct_s_c_b___type_a9d4029e220311690756d836948e71393}\label{struct_s_c_b___type_a9d4029e220311690756d836948e71393}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!D\+C\+C\+M\+V\+AU@{D\+C\+C\+M\+V\+AU}}
-\index{D\+C\+C\+M\+V\+AU@{D\+C\+C\+M\+V\+AU}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{D\+C\+C\+M\+V\+AU}{DCCMVAU}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t D\+C\+C\+M\+V\+AU}
-
-Offset\+: 0x264 ( /W) D-\/\+Cache Clean by M\+VA to PoU \mbox{\Hypertarget{struct_s_c_b___type_a2bf149d6d8f4fa59e25aee340512cb79}\label{struct_s_c_b___type_a2bf149d6d8f4fa59e25aee340512cb79}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!D\+C\+C\+SW@{D\+C\+C\+SW}}
-\index{D\+C\+C\+SW@{D\+C\+C\+SW}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{D\+C\+C\+SW}{DCCSW}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t D\+C\+C\+SW}
-
-Offset\+: 0x26C ( /W) D-\/\+Cache Clean by Set-\/way \mbox{\Hypertarget{struct_s_c_b___type_a72402d657f9e448afce57bbd8577864d}\label{struct_s_c_b___type_a72402d657f9e448afce57bbd8577864d}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!D\+C\+I\+M\+V\+AC@{D\+C\+I\+M\+V\+AC}}
-\index{D\+C\+I\+M\+V\+AC@{D\+C\+I\+M\+V\+AC}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{D\+C\+I\+M\+V\+AC}{DCIMVAC}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t D\+C\+I\+M\+V\+AC}
-
-Offset\+: 0x25C ( /W) D-\/\+Cache Invalidate by M\+VA to PoC \mbox{\Hypertarget{struct_s_c_b___type_aca1ec746911b0934dd11c31d93a369be}\label{struct_s_c_b___type_aca1ec746911b0934dd11c31d93a369be}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!D\+C\+I\+SW@{D\+C\+I\+SW}}
-\index{D\+C\+I\+SW@{D\+C\+I\+SW}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{D\+C\+I\+SW}{DCISW}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t D\+C\+I\+SW}
-
-Offset\+: 0x260 ( /W) D-\/\+Cache Invalidate by Set-\/way \mbox{\Hypertarget{struct_s_c_b___type_ae2b3d4530d1b0c05593b634dc46348bd}\label{struct_s_c_b___type_ae2b3d4530d1b0c05593b634dc46348bd}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!D\+FR@{D\+FR}}
-\index{D\+FR@{D\+FR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{D\+FR}{DFR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t D\+FR}
-
-Offset\+: 0x048 (R/ ) Debug Feature Register \mbox{\Hypertarget{struct_s_c_b___type_a3b590075aa07880ce686d5cfb4e61c5c}\label{struct_s_c_b___type_a3b590075aa07880ce686d5cfb4e61c5c}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!D\+F\+SR@{D\+F\+SR}}
-\index{D\+F\+SR@{D\+F\+SR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{D\+F\+SR}{DFSR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t D\+F\+SR}
-
-Offset\+: 0x030 (R/W) Debug Fault Status Register \mbox{\Hypertarget{struct_s_c_b___type_ad5a9c8098433fa3ac108487e0ccd9cfc}\label{struct_s_c_b___type_ad5a9c8098433fa3ac108487e0ccd9cfc}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!D\+T\+C\+M\+CR@{D\+T\+C\+M\+CR}}
-\index{D\+T\+C\+M\+CR@{D\+T\+C\+M\+CR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{D\+T\+C\+M\+CR}{DTCMCR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t D\+T\+C\+M\+CR}
-
-Offset\+: 0x294 (R/W) Data Tightly-\/\+Coupled Memory Control Registers \mbox{\Hypertarget{struct_s_c_b___type_ab974e7ceb2e52a3fbcaa84e06e52922d}\label{struct_s_c_b___type_ab974e7ceb2e52a3fbcaa84e06e52922d}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!H\+F\+SR@{H\+F\+SR}}
-\index{H\+F\+SR@{H\+F\+SR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{H\+F\+SR}{HFSR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t H\+F\+SR}
-
-Offset\+: 0x02C (R/W) Hard\+Fault Status Register \mbox{\Hypertarget{struct_s_c_b___type_a011024c365e7c5bd13a63830af60b10c}\label{struct_s_c_b___type_a011024c365e7c5bd13a63830af60b10c}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!I\+C\+I\+A\+L\+LU@{I\+C\+I\+A\+L\+LU}}
-\index{I\+C\+I\+A\+L\+LU@{I\+C\+I\+A\+L\+LU}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{I\+C\+I\+A\+L\+LU}{ICIALLU}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t I\+C\+I\+A\+L\+LU}
-
-Offset\+: 0x250 ( /W) I-\/\+Cache Invalidate All to PoU \mbox{\Hypertarget{struct_s_c_b___type_a1a8ecda7b1e4a1100dd82fc694bb4eb5}\label{struct_s_c_b___type_a1a8ecda7b1e4a1100dd82fc694bb4eb5}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!I\+C\+I\+M\+V\+AU@{I\+C\+I\+M\+V\+AU}}
-\index{I\+C\+I\+M\+V\+AU@{I\+C\+I\+M\+V\+AU}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{I\+C\+I\+M\+V\+AU}{ICIMVAU}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t I\+C\+I\+M\+V\+AU}
-
-Offset\+: 0x258 ( /W) I-\/\+Cache Invalidate by M\+VA to PoU \mbox{\Hypertarget{struct_s_c_b___type_aced895d6aba03d72b0d865fcc5ce44ee}\label{struct_s_c_b___type_aced895d6aba03d72b0d865fcc5ce44ee}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!I\+C\+SR@{I\+C\+SR}}
-\index{I\+C\+SR@{I\+C\+SR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{I\+C\+SR}{ICSR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t I\+C\+SR}
-
-Offset\+: 0x004 (R/W) Interrupt Control and State Register \mbox{\Hypertarget{struct_s_c_b___type_a394a63fd0c3f9d7a52d7b220e31a2ef4}\label{struct_s_c_b___type_a394a63fd0c3f9d7a52d7b220e31a2ef4}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!I\+D\+\_\+\+A\+DR@{I\+D\+\_\+\+A\+DR}}
-\index{I\+D\+\_\+\+A\+DR@{I\+D\+\_\+\+A\+DR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{I\+D\+\_\+\+A\+DR}{ID\_ADR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t I\+D\+\_\+\+A\+DR}
-
-Offset\+: 0x04C (R/ ) Auxiliary Feature Register \mbox{\Hypertarget{struct_s_c_b___type_a883f7e28417c51d3a3bf03185baf448f}\label{struct_s_c_b___type_a883f7e28417c51d3a3bf03185baf448f}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!I\+D\+\_\+\+D\+FR@{I\+D\+\_\+\+D\+FR}}
-\index{I\+D\+\_\+\+D\+FR@{I\+D\+\_\+\+D\+FR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{I\+D\+\_\+\+D\+FR}{ID\_DFR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t I\+D\+\_\+\+D\+FR}
-
-Offset\+: 0x048 (R/ ) Debug Feature Register \mbox{\Hypertarget{struct_s_c_b___type_a7b10a73ce177ee4ea65cf88f8538017e}\label{struct_s_c_b___type_a7b10a73ce177ee4ea65cf88f8538017e}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!I\+D\+\_\+\+I\+S\+AR@{I\+D\+\_\+\+I\+S\+AR}}
-\index{I\+D\+\_\+\+I\+S\+AR@{I\+D\+\_\+\+I\+S\+AR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{I\+D\+\_\+\+I\+S\+AR}{ID\_ISAR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t I\+D\+\_\+\+I\+S\+AR\mbox{[}6\+U\mbox{]}}
-
-Offset\+: 0x060 (R/ ) Instruction Set Attributes Register \mbox{\Hypertarget{struct_s_c_b___type_a6a3474c4944f3e007cc3a9dc28b76650}\label{struct_s_c_b___type_a6a3474c4944f3e007cc3a9dc28b76650}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!I\+D\+\_\+\+M\+M\+FR@{I\+D\+\_\+\+M\+M\+FR}}
-\index{I\+D\+\_\+\+M\+M\+FR@{I\+D\+\_\+\+M\+M\+FR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{I\+D\+\_\+\+M\+M\+FR}{ID\_MMFR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t I\+D\+\_\+\+M\+M\+FR\mbox{[}4\+U\mbox{]}}
-
-Offset\+: 0x050 (R/ ) Memory Model Feature Register \mbox{\Hypertarget{struct_s_c_b___type_a37569b15cd2c9a50691e8b5e15a1d129}\label{struct_s_c_b___type_a37569b15cd2c9a50691e8b5e15a1d129}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!I\+D\+\_\+\+P\+FR@{I\+D\+\_\+\+P\+FR}}
-\index{I\+D\+\_\+\+P\+FR@{I\+D\+\_\+\+P\+FR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{I\+D\+\_\+\+P\+FR}{ID\_PFR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t I\+D\+\_\+\+P\+FR\mbox{[}2\+U\mbox{]}}
-
-Offset\+: 0x040 (R/ ) Processor Feature Register \mbox{\Hypertarget{struct_s_c_b___type_af2950df748750d535d5d65ac1c209563}\label{struct_s_c_b___type_af2950df748750d535d5d65ac1c209563}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!I\+S\+AR@{I\+S\+AR}}
-\index{I\+S\+AR@{I\+S\+AR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{I\+S\+AR}{ISAR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t I\+S\+AR\mbox{[}5\+U\mbox{]}}
-
-Offset\+: 0x060 (R/ ) Instruction Set Attributes Register \mbox{\Hypertarget{struct_s_c_b___type_a18d1734811b40e7edf6e5213bf336ca8}\label{struct_s_c_b___type_a18d1734811b40e7edf6e5213bf336ca8}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!I\+T\+C\+M\+CR@{I\+T\+C\+M\+CR}}
-\index{I\+T\+C\+M\+CR@{I\+T\+C\+M\+CR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{I\+T\+C\+M\+CR}{ITCMCR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t I\+T\+C\+M\+CR}
-
-Offset\+: 0x290 (R/W) Instruction Tightly-\/\+Coupled Memory Control Register \mbox{\Hypertarget{struct_s_c_b___type_ae9d94d186615d57d38c9253cb842d244}\label{struct_s_c_b___type_ae9d94d186615d57d38c9253cb842d244}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!M\+M\+F\+AR@{M\+M\+F\+AR}}
-\index{M\+M\+F\+AR@{M\+M\+F\+AR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{M\+M\+F\+AR}{MMFAR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t M\+M\+F\+AR}
-
-Offset\+: 0x034 (R/W) Mem\+Manage Fault Address Register \mbox{\Hypertarget{struct_s_c_b___type_ab6c914b579d22d7eb86d0e3d9a5fde71}\label{struct_s_c_b___type_ab6c914b579d22d7eb86d0e3d9a5fde71}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!M\+M\+FR@{M\+M\+FR}}
-\index{M\+M\+FR@{M\+M\+FR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{M\+M\+FR}{MMFR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t M\+M\+FR\mbox{[}4\+U\mbox{]}}
-
-Offset\+: 0x050 (R/ ) Memory Model Feature Register \mbox{\Hypertarget{struct_s_c_b___type_a9b0103b438c8922eaea5624f71afbbc8}\label{struct_s_c_b___type_a9b0103b438c8922eaea5624f71afbbc8}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!M\+V\+F\+R0@{M\+V\+F\+R0}}
-\index{M\+V\+F\+R0@{M\+V\+F\+R0}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{M\+V\+F\+R0}{MVFR0}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t M\+V\+F\+R0}
-
-Offset\+: 0x240 (R/ ) Media and V\+FP Feature Register 0 \mbox{\Hypertarget{struct_s_c_b___type_a0a610dc4212de3ce1ad62e9afa76c728}\label{struct_s_c_b___type_a0a610dc4212de3ce1ad62e9afa76c728}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!M\+V\+F\+R1@{M\+V\+F\+R1}}
-\index{M\+V\+F\+R1@{M\+V\+F\+R1}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{M\+V\+F\+R1}{MVFR1}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t M\+V\+F\+R1}
-
-Offset\+: 0x244 (R/ ) Media and V\+FP Feature Register 1 \mbox{\Hypertarget{struct_s_c_b___type_a8353348c9336aa1aadcbf86b6f0f18c9}\label{struct_s_c_b___type_a8353348c9336aa1aadcbf86b6f0f18c9}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!M\+V\+F\+R2@{M\+V\+F\+R2}}
-\index{M\+V\+F\+R2@{M\+V\+F\+R2}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{M\+V\+F\+R2}{MVFR2}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t M\+V\+F\+R2}
-
-Offset\+: 0x248 (R/ ) Media and V\+FP Feature Register 2 \mbox{\Hypertarget{struct_s_c_b___type_a3b7fa817ab498ce63563c73ae316c9b6}\label{struct_s_c_b___type_a3b7fa817ab498ce63563c73ae316c9b6}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!N\+S\+A\+CR@{N\+S\+A\+CR}}
-\index{N\+S\+A\+CR@{N\+S\+A\+CR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{N\+S\+A\+CR}{NSACR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t N\+S\+A\+CR}
-
-Offset\+: 0x08C (R/W) Non-\/\+Secure Access Control Register \mbox{\Hypertarget{struct_s_c_b___type_a602fa5eae6a772dbb09970d304e75690}\label{struct_s_c_b___type_a602fa5eae6a772dbb09970d304e75690}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!P\+FR@{P\+FR}}
-\index{P\+FR@{P\+FR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{P\+FR}{PFR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a4cc1649793116d7c2d8afce7a4ffce43}{\+\_\+\+\_\+\+IM}} uint32\+\_\+t P\+FR\mbox{[}2\+U\mbox{]}}
-
-Offset\+: 0x040 (R/ ) Processor Feature Register \mbox{\Hypertarget{struct_s_c_b___type_af86c61a5d38a4fc9cef942a12744486b}\label{struct_s_c_b___type_af86c61a5d38a4fc9cef942a12744486b}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!R\+E\+S\+E\+R\+V\+E\+D0@{R\+E\+S\+E\+R\+V\+E\+D0}}
-\index{R\+E\+S\+E\+R\+V\+E\+D0@{R\+E\+S\+E\+R\+V\+E\+D0}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{R\+E\+S\+E\+R\+V\+E\+D0}{RESERVED0}}
-{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D0}
-
-\mbox{\Hypertarget{struct_s_c_b___type_ac4ac04e673b5b8320d53f7b0947db902}\label{struct_s_c_b___type_ac4ac04e673b5b8320d53f7b0947db902}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!R\+E\+S\+E\+R\+V\+E\+D1@{R\+E\+S\+E\+R\+V\+E\+D1}}
-\index{R\+E\+S\+E\+R\+V\+E\+D1@{R\+E\+S\+E\+R\+V\+E\+D1}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{R\+E\+S\+E\+R\+V\+E\+D1}{RESERVED1}}
-{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D1}
-
-\mbox{\Hypertarget{struct_s_c_b___type_ae4127589f72d736e30df2dd53f665e93}\label{struct_s_c_b___type_ae4127589f72d736e30df2dd53f665e93}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!R\+E\+S\+E\+R\+V\+E\+D3@{R\+E\+S\+E\+R\+V\+E\+D3}}
-\index{R\+E\+S\+E\+R\+V\+E\+D3@{R\+E\+S\+E\+R\+V\+E\+D3}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{R\+E\+S\+E\+R\+V\+E\+D3}{RESERVED3}}
-{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D3\mbox{[}92\+U\mbox{]}}
-
-\mbox{\Hypertarget{struct_s_c_b___type_af348cb636c453ec2e83974c0b38fe9d7}\label{struct_s_c_b___type_af348cb636c453ec2e83974c0b38fe9d7}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!R\+E\+S\+E\+R\+V\+E\+D4@{R\+E\+S\+E\+R\+V\+E\+D4}}
-\index{R\+E\+S\+E\+R\+V\+E\+D4@{R\+E\+S\+E\+R\+V\+E\+D4}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{R\+E\+S\+E\+R\+V\+E\+D4}{RESERVED4}}
-{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D4\mbox{[}15\+U\mbox{]}}
-
-\mbox{\Hypertarget{struct_s_c_b___type_a942b5bad37ebf529ebb15a33522ae475}\label{struct_s_c_b___type_a942b5bad37ebf529ebb15a33522ae475}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!R\+E\+S\+E\+R\+V\+E\+D5@{R\+E\+S\+E\+R\+V\+E\+D5}}
-\index{R\+E\+S\+E\+R\+V\+E\+D5@{R\+E\+S\+E\+R\+V\+E\+D5}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{R\+E\+S\+E\+R\+V\+E\+D5}{RESERVED5}}
-{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D5\mbox{[}1\+U\mbox{]}}
-
-\mbox{\Hypertarget{struct_s_c_b___type_aecf1563d46d998532d9a9fdb0a9affff}\label{struct_s_c_b___type_aecf1563d46d998532d9a9fdb0a9affff}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!R\+E\+S\+E\+R\+V\+E\+D6@{R\+E\+S\+E\+R\+V\+E\+D6}}
-\index{R\+E\+S\+E\+R\+V\+E\+D6@{R\+E\+S\+E\+R\+V\+E\+D6}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{R\+E\+S\+E\+R\+V\+E\+D6}{RESERVED6}}
-{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D6\mbox{[}1\+U\mbox{]}}
-
-\mbox{\Hypertarget{struct_s_c_b___type_a673086408889531c2e8220a306411a43}\label{struct_s_c_b___type_a673086408889531c2e8220a306411a43}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!R\+E\+S\+E\+R\+V\+E\+D7@{R\+E\+S\+E\+R\+V\+E\+D7}}
-\index{R\+E\+S\+E\+R\+V\+E\+D7@{R\+E\+S\+E\+R\+V\+E\+D7}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{R\+E\+S\+E\+R\+V\+E\+D7}{RESERVED7}}
-{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D7\mbox{[}6\+U\mbox{]}}
-
-\mbox{\Hypertarget{struct_s_c_b___type_ac51834a471d74e0522dd2734079d57cb}\label{struct_s_c_b___type_ac51834a471d74e0522dd2734079d57cb}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!R\+E\+S\+E\+R\+V\+E\+D8@{R\+E\+S\+E\+R\+V\+E\+D8}}
-\index{R\+E\+S\+E\+R\+V\+E\+D8@{R\+E\+S\+E\+R\+V\+E\+D8}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{R\+E\+S\+E\+R\+V\+E\+D8}{RESERVED8}}
-{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D8\mbox{[}1\+U\mbox{]}}
-
-\mbox{\Hypertarget{struct_s_c_b___type_acac65f229cb3fcb5369a0a9e0393b8c0}\label{struct_s_c_b___type_acac65f229cb3fcb5369a0a9e0393b8c0}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!S\+CR@{S\+CR}}
-\index{S\+CR@{S\+CR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{S\+CR}{SCR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t S\+CR}
-
-Offset\+: 0x010 (R/W) System Control Register \mbox{\Hypertarget{struct_s_c_b___type_a44ad5c292dbd77e72f310902375a8a06}\label{struct_s_c_b___type_a44ad5c292dbd77e72f310902375a8a06}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!S\+H\+C\+SR@{S\+H\+C\+SR}}
-\index{S\+H\+C\+SR@{S\+H\+C\+SR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{S\+H\+C\+SR}{SHCSR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t S\+H\+C\+SR}
-
-Offset\+: 0x024 (R/W) System Handler Control and State Register \mbox{\Hypertarget{struct_s_c_b___type_a293826a2c44f754e80af03d62f62f9e6}\label{struct_s_c_b___type_a293826a2c44f754e80af03d62f62f9e6}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!S\+HP@{S\+HP}}
-\index{S\+HP@{S\+HP}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{S\+HP}{SHP}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint8\+\_\+t S\+HP\mbox{[}12\+U\mbox{]}}
-
-Offset\+: 0x018 (R/W) System Handlers Priority Registers (4-\/7, 8-\/11, 12-\/15) \mbox{\Hypertarget{struct_s_c_b___type_a67fd6058e3196a723d64df2d22ae6daa}\label{struct_s_c_b___type_a67fd6058e3196a723d64df2d22ae6daa}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!S\+H\+PR@{S\+H\+PR}}
-\index{S\+H\+PR@{S\+H\+PR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{S\+H\+PR}{SHPR}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t S\+H\+PR\mbox{[}2\+U\mbox{]}}
-
-Offset\+: 0x01C (R/W) System Handlers Priority Registers. \mbox{[}0\mbox{]} is R\+E\+S\+E\+R\+V\+ED \mbox{\Hypertarget{struct_s_c_b___type_a49f5a554705aebf542765b3a38f4feb9}\label{struct_s_c_b___type_a49f5a554705aebf542765b3a38f4feb9}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!S\+H\+PR@{S\+H\+PR}}
-\index{S\+H\+PR@{S\+H\+PR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{S\+H\+PR}{SHPR}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint8\+\_\+t S\+H\+PR\mbox{[}12\+U\mbox{]}}
-
-Offset\+: 0x018 (R/W) System Handlers Priority Registers (4-\/7, 8-\/11, 12-\/15) \mbox{\Hypertarget{struct_s_c_b___type_ada9cbba14ab1cc3fddd585f870932db8}\label{struct_s_c_b___type_ada9cbba14ab1cc3fddd585f870932db8}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!S\+T\+IR@{S\+T\+IR}}
-\index{S\+T\+IR@{S\+T\+IR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{S\+T\+IR}{STIR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_a0ea2009ed8fd9ef35b48708280fdb758}{\+\_\+\+\_\+\+OM}} uint32\+\_\+t S\+T\+IR}
-
-Offset\+: 0x200 ( /W) Software Triggered Interrupt Register \mbox{\Hypertarget{struct_s_c_b___type_ae457d2615e203c3d5904a43a1bc9df71}\label{struct_s_c_b___type_ae457d2615e203c3d5904a43a1bc9df71}} 
-\index{S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}!V\+T\+OR@{V\+T\+OR}}
-\index{V\+T\+OR@{V\+T\+OR}!S\+C\+B\+\_\+\+Type@{S\+C\+B\+\_\+\+Type}}
-\subsubsection{\texorpdfstring{V\+T\+OR}{VTOR}}
-{\footnotesize\ttfamily \mbox{\hyperlink{core__cm4_8h_ab6caba5853a60a17e8e04499b52bf691}{\+\_\+\+\_\+\+I\+OM}} uint32\+\_\+t V\+T\+OR}
-
-Offset\+: 0x008 (R/W) Vector Table Offset Register 
+\doxysubsection{Detailed Description}
+Structure type to access the System Control Block (SCB). 
 
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-S\+D\+K/\+C\+M\+S\+I\+S/\mbox{\hyperlink{core__armv8mbl_8h}{core\+\_\+armv8mbl.\+h}}\item 
-S\+D\+K/\+C\+M\+S\+I\+S/\mbox{\hyperlink{core__armv8mml_8h}{core\+\_\+armv8mml.\+h}}\item 
-S\+D\+K/\+C\+M\+S\+I\+S/\mbox{\hyperlink{core__cm4_8h}{core\+\_\+cm4.\+h}}\end{DoxyCompactItemize}
+SDK/\+CMSIS/\mbox{\hyperlink{core__armv8mbl_8h}{core\+\_\+armv8mbl.\+h}}\item 
+SDK/\+CMSIS/\mbox{\hyperlink{core__armv8mml_8h}{core\+\_\+armv8mml.\+h}}\item 
+SDK/\+CMSIS/\mbox{\hyperlink{core__cm4_8h}{core\+\_\+cm4.\+h}}\end{DoxyCompactItemize}

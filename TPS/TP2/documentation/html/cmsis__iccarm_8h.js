@@ -9,7 +9,7 @@ var cmsis__iccarm_8h =
     [ "__FORCEINLINE", "cmsis__iccarm_8h.html#a2ecb43ce8e7aa73d32f50afa67b42c76", null ],
     [ "__get_FPSCR", "cmsis__iccarm_8h.html#af56e3c942846b8643cbf8f5208d6a63b", null ],
     [ "__get_FPSCR", "cmsis__iccarm_8h.html#a6b3a48e13de4b114653b4e06145a601d", null ],
-    [ "__get_xPSR", "cmsis__iccarm_8h.html#ad0fa4773e9c51500ee78bc4daa88341b", null ],
+    [ "__get_xPSR", "group___c_m_s_i_s___core___reg_acc_functions.html#gae0d8e20f8c3c2a502075dabcff733c05", null ],
     [ "__IAR_FT", "cmsis__iccarm_8h.html#a3e769b5b7bc4f5d17d8da74663073393", null ],
     [ "__IAR_M0_FAMILY", "cmsis__iccarm_8h.html#a6c0c4e21065cda012c4275eeb205d18e", null ],
     [ "__ICCARM_INTRINSICS_VERSION__", "cmsis__iccarm_8h.html#a2cf5e66520f87c928ab4395d5787e4df", null ],

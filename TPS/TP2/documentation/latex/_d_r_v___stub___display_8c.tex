@@ -1,18 +1,18 @@
-\hypertarget{_d_r_v___stub___display_8c}{}\section{drivers/\+D\+R\+V\+\_\+\+Stub\+\_\+\+Display.c File Reference}
-\label{_d_r_v___stub___display_8c}\index{drivers/\+D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{drivers/\+D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
+\hypertarget{_d_r_v___stub___display_8c}{}\doxysection{drivers/\+DRV\+\_\+\+Stub\+\_\+\+Display.c File Reference}
+\label{_d_r_v___stub___display_8c}\index{drivers/DRV\_Stub\_Display.c@{drivers/DRV\_Stub\_Display.c}}
 
 
 stdout-\/based display stub driver  
 
 
-{\ttfamily \#include \char`\"{}D\+R\+V\+\_\+\+Display.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DRV\+\_\+\+Display.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
-\subsection*{Macros}
+\doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{_d_r_v___stub___display_8c_ac8c6ebd33b501db1b4c940142c529279}{D\+I\+S\+P\+L\+A\+Y\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE}}~1
+\#define \mbox{\hyperlink{_d_r_v___stub___display_8c_ac8c6ebd33b501db1b4c940142c529279}{DISPLAY\+\_\+\+DEVELOPMENT\+\_\+\+MODE}}~1
 \end{DoxyCompactItemize}
-\subsection*{Functions}
+\doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_d_r_v___stub___display_8c_a1a9171e2595ab20c0d50a6b9ba243997}{init\+Display}} ()
@@ -39,11 +39,11 @@ void \mbox{\hyperlink{_d_r_v___stub___display_8c_ac7715f91cb1f99c919ee00327e79c7
 \begin{DoxyCompactList}\small\item\em Sets n as the starting print position for the buffer. \end{DoxyCompactList}\item 
 uint8\+\_\+t \mbox{\hyperlink{_d_r_v___stub___display_8c_a00c499300ac10262772db567c5f67278}{disp\+Get\+Buffer\+Pos}} ()
 \begin{DoxyCompactList}\small\item\em Get starting print position. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_d_r_v___stub___display_8c_a83d7de4cef0c2924540b0290e67c579d}{disp\+Clear\+L\+ED}} (int n)
-\begin{DoxyCompactList}\small\item\em Turn off a L\+ED. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_d_r_v___stub___display_8c_a83cf1c2a8516ed219e648d78a9633466}{disp\+Set\+L\+ED}} (int n)
-\begin{DoxyCompactList}\small\item\em Turn on a L\+ED. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_d_r_v___stub___display_8c_ab55cfcccfedb751ea6ca588f47844c65}{disp\+Toggle\+L\+ED}} ()
+void \mbox{\hyperlink{_d_r_v___stub___display_8c_a83d7de4cef0c2924540b0290e67c579d}{disp\+Clear\+LED}} (int n)
+\begin{DoxyCompactList}\small\item\em Turn off a LED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___stub___display_8c_a83cf1c2a8516ed219e648d78a9633466}{disp\+Set\+LED}} (int n)
+\begin{DoxyCompactList}\small\item\em Turn on a LED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___stub___display_8c_ab55cfcccfedb751ea6ca588f47844c65}{disp\+Toggle\+LED}} ()
 \item 
 void \mbox{\hyperlink{_d_r_v___stub___display_8c_af338ab3a8224c7e5aeadd84a53f8d16e}{disp\+Set\+DP}} (int i)
 \begin{DoxyCompactList}\small\item\em Turns on the decimal point of the nth seven segment. \end{DoxyCompactList}\item 
@@ -51,11 +51,13 @@ void \mbox{\hyperlink{_d_r_v___stub___display_8c_a1220b3b872060b5d648b6280dab2d1
 \begin{DoxyCompactList}\small\item\em Turns off the decimal point of the nth seven segment. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_d_r_v___stub___display_8c_ae33258196f8cd762c56b9d3fb122cbb1}{disp\+Toggle\+DP}} (int i)
 \begin{DoxyCompactList}\small\item\em Toggles the decimal point of the nth seven segment. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_d_r_v___stub___display_8c_a278ed4464485157b9579be0db6ecf1a3}{disp\+Update\+Brightness}} (int brightness)
-\begin{DoxyCompactList}\small\item\em Updates the brightness of the display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{_d_r_v___stub___display_8c_a5c98bf58cebdc5bb890097ff79c9b0be}{disp\+Update\+Brightness}} (int b)
+\begin{DoxyCompactList}\small\item\em Updates the brightness of the display. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_d_r_v___stub___display_8c_ab0b20802e79e6235241df747854f8765}{disp\+Get\+Brightness}} ()
+\begin{DoxyCompactList}\small\item\em Returns current display brightness. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 stdout-\/based display stub driver 
 
 \begin{DoxyAuthor}{Author}
@@ -63,20 +65,20 @@ Grupo 1
 \end{DoxyAuthor}
 
 
-\subsection{Macro Definition Documentation}
+\doxysubsection{Macro Definition Documentation}
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_ac8c6ebd33b501db1b4c940142c529279}\label{_d_r_v___stub___display_8c_ac8c6ebd33b501db1b4c940142c529279}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!D\+I\+S\+P\+L\+A\+Y\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE@{D\+I\+S\+P\+L\+A\+Y\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE}}
-\index{D\+I\+S\+P\+L\+A\+Y\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE@{D\+I\+S\+P\+L\+A\+Y\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{D\+I\+S\+P\+L\+A\+Y\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE}{DISPLAY\_DEVELOPMENT\_MODE}}
-{\footnotesize\ttfamily \#define D\+I\+S\+P\+L\+A\+Y\+\_\+\+D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+M\+O\+DE~1}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!DISPLAY\_DEVELOPMENT\_MODE@{DISPLAY\_DEVELOPMENT\_MODE}}
+\index{DISPLAY\_DEVELOPMENT\_MODE@{DISPLAY\_DEVELOPMENT\_MODE}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{DISPLAY\_DEVELOPMENT\_MODE}{DISPLAY\_DEVELOPMENT\_MODE}}
+{\footnotesize\ttfamily \#define DISPLAY\+\_\+\+DEVELOPMENT\+\_\+\+MODE~1}
 
 
 
-\subsection{Function Documentation}
+\doxysubsection{Function Documentation}
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_a82b49831690c342069ad4f428cae5e61}\label{_d_r_v___stub___display_8c_a82b49831690c342069ad4f428cae5e61}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Clear\+Buffer@{disp\+Clear\+Buffer}}
-\index{disp\+Clear\+Buffer@{disp\+Clear\+Buffer}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Clear\+Buffer()}{dispClearBuffer()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispClearBuffer@{dispClearBuffer}}
+\index{dispClearBuffer@{dispClearBuffer}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispClearBuffer()}{dispClearBuffer()}}
 {\footnotesize\ttfamily void disp\+Clear\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -84,9 +86,9 @@ Grupo 1
 Clears the display buffer. 
 
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_a1220b3b872060b5d648b6280dab2d111}\label{_d_r_v___stub___display_8c_a1220b3b872060b5d648b6280dab2d111}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Clear\+DP@{disp\+Clear\+DP}}
-\index{disp\+Clear\+DP@{disp\+Clear\+DP}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Clear\+D\+P()}{dispClearDP()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispClearDP@{dispClearDP}}
+\index{dispClearDP@{dispClearDP}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispClearDP()}{dispClearDP()}}
 {\footnotesize\ttfamily void disp\+Clear\+DP (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
 
 
@@ -99,24 +101,37 @@ Turns off the decimal point of the nth seven segment.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_a83d7de4cef0c2924540b0290e67c579d}\label{_d_r_v___stub___display_8c_a83d7de4cef0c2924540b0290e67c579d}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Clear\+L\+ED@{disp\+Clear\+L\+ED}}
-\index{disp\+Clear\+L\+ED@{disp\+Clear\+L\+ED}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Clear\+L\+E\+D()}{dispClearLED()}}
-{\footnotesize\ttfamily void disp\+Clear\+L\+ED (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispClearLED@{dispClearLED}}
+\index{dispClearLED@{dispClearLED}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispClearLED()}{dispClearLED()}}
+{\footnotesize\ttfamily void disp\+Clear\+LED (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
 
 
 
-Turn off a L\+ED. 
+Turn off a LED. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em n} & Index of L\+ED to turn off \\
+{\em n} & Index of LED to turn off \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___stub___display_8c_ab0b20802e79e6235241df747854f8765}\label{_d_r_v___stub___display_8c_ab0b20802e79e6235241df747854f8765}} 
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispGetBrightness@{dispGetBrightness}}
+\index{dispGetBrightness@{dispGetBrightness}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispGetBrightness()}{dispGetBrightness()}}
+{\footnotesize\ttfamily int disp\+Get\+Brightness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns current display brightness. 
+
+\begin{DoxyReturn}{Returns}
+brightness value 
+\end{DoxyReturn}
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_a00c499300ac10262772db567c5f67278}\label{_d_r_v___stub___display_8c_a00c499300ac10262772db567c5f67278}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Get\+Buffer\+Pos@{disp\+Get\+Buffer\+Pos}}
-\index{disp\+Get\+Buffer\+Pos@{disp\+Get\+Buffer\+Pos}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Get\+Buffer\+Pos()}{dispGetBufferPos()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispGetBufferPos@{dispGetBufferPos}}
+\index{dispGetBufferPos@{dispGetBufferPos}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispGetBufferPos()}{dispGetBufferPos()}}
 {\footnotesize\ttfamily uint8\+\_\+t disp\+Get\+Buffer\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -124,15 +139,15 @@ Turn off a L\+ED.
 Get starting print position. 
 
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_a26af5a41d6fa849ac0c23e695cab44be}\label{_d_r_v___stub___display_8c_a26af5a41d6fa849ac0c23e695cab44be}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Reset\+Scroll@{disp\+Reset\+Scroll}}
-\index{disp\+Reset\+Scroll@{disp\+Reset\+Scroll}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Reset\+Scroll()}{dispResetScroll()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispResetScroll@{dispResetScroll}}
+\index{dispResetScroll@{dispResetScroll}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispResetScroll()}{dispResetScroll()}}
 {\footnotesize\ttfamily void disp\+Reset\+Scroll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_a7147ac15263b2fdc3e1f8491697292e4}\label{_d_r_v___stub___display_8c_a7147ac15263b2fdc3e1f8491697292e4}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Scroll\+Left@{disp\+Scroll\+Left}}
-\index{disp\+Scroll\+Left@{disp\+Scroll\+Left}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Scroll\+Left()}{dispScrollLeft()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispScrollLeft@{dispScrollLeft}}
+\index{dispScrollLeft@{dispScrollLeft}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispScrollLeft()}{dispScrollLeft()}}
 {\footnotesize\ttfamily void disp\+Scroll\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -140,9 +155,9 @@ Get starting print position.
 Scroll display to the left. 
 
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_ac217e6c75ca80b82afe700b9ce024294}\label{_d_r_v___stub___display_8c_ac217e6c75ca80b82afe700b9ce024294}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Scroll\+Right@{disp\+Scroll\+Right}}
-\index{disp\+Scroll\+Right@{disp\+Scroll\+Right}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Scroll\+Right()}{dispScrollRight()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispScrollRight@{dispScrollRight}}
+\index{dispScrollRight@{dispScrollRight}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispScrollRight()}{dispScrollRight()}}
 {\footnotesize\ttfamily void disp\+Scroll\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -150,9 +165,9 @@ Scroll display to the left.
 Scroll display to the right. 
 
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_ac7715f91cb1f99c919ee00327e79c7fa}\label{_d_r_v___stub___display_8c_ac7715f91cb1f99c919ee00327e79c7fa}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Set\+Buffer\+Pos@{disp\+Set\+Buffer\+Pos}}
-\index{disp\+Set\+Buffer\+Pos@{disp\+Set\+Buffer\+Pos}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Set\+Buffer\+Pos()}{dispSetBufferPos()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispSetBufferPos@{dispSetBufferPos}}
+\index{dispSetBufferPos@{dispSetBufferPos}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispSetBufferPos()}{dispSetBufferPos()}}
 {\footnotesize\ttfamily void disp\+Set\+Buffer\+Pos (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
 
 
@@ -165,9 +180,9 @@ Sets n as the starting print position for the buffer.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_af338ab3a8224c7e5aeadd84a53f8d16e}\label{_d_r_v___stub___display_8c_af338ab3a8224c7e5aeadd84a53f8d16e}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Set\+DP@{disp\+Set\+DP}}
-\index{disp\+Set\+DP@{disp\+Set\+DP}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Set\+D\+P()}{dispSetDP()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispSetDP@{dispSetDP}}
+\index{dispSetDP@{dispSetDP}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispSetDP()}{dispSetDP()}}
 {\footnotesize\ttfamily void disp\+Set\+DP (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
 
 
@@ -180,24 +195,24 @@ Turns on the decimal point of the nth seven segment.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_a83cf1c2a8516ed219e648d78a9633466}\label{_d_r_v___stub___display_8c_a83cf1c2a8516ed219e648d78a9633466}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Set\+L\+ED@{disp\+Set\+L\+ED}}
-\index{disp\+Set\+L\+ED@{disp\+Set\+L\+ED}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Set\+L\+E\+D()}{dispSetLED()}}
-{\footnotesize\ttfamily void disp\+Set\+L\+ED (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispSetLED@{dispSetLED}}
+\index{dispSetLED@{dispSetLED}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispSetLED()}{dispSetLED()}}
+{\footnotesize\ttfamily void disp\+Set\+LED (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
 
 
 
-Turn on a L\+ED. 
+Turn on a LED. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em n} & Index of L\+ED to turn on \\
+{\em n} & Index of LED to turn on \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_a7f77d4be414c1ef99847d387917a3870}\label{_d_r_v___stub___display_8c_a7f77d4be414c1ef99847d387917a3870}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Start\+Auto\+Scroll@{disp\+Start\+Auto\+Scroll}}
-\index{disp\+Start\+Auto\+Scroll@{disp\+Start\+Auto\+Scroll}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Start\+Auto\+Scroll()}{dispStartAutoScroll()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispStartAutoScroll@{dispStartAutoScroll}}
+\index{dispStartAutoScroll@{dispStartAutoScroll}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispStartAutoScroll()}{dispStartAutoScroll()}}
 {\footnotesize\ttfamily void disp\+Start\+Auto\+Scroll (\begin{DoxyParamCaption}\item[{int}]{speed }\end{DoxyParamCaption})}
 
 
@@ -210,9 +225,9 @@ Initialize autoscroll with specified speed.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_a1748ae93f3d907dab9fb47fd4b481594}\label{_d_r_v___stub___display_8c_a1748ae93f3d907dab9fb47fd4b481594}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Stop\+Auto\+Scroll@{disp\+Stop\+Auto\+Scroll}}
-\index{disp\+Stop\+Auto\+Scroll@{disp\+Stop\+Auto\+Scroll}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Stop\+Auto\+Scroll()}{dispStopAutoScroll()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispStopAutoScroll@{dispStopAutoScroll}}
+\index{dispStopAutoScroll@{dispStopAutoScroll}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispStopAutoScroll()}{dispStopAutoScroll()}}
 {\footnotesize\ttfamily void disp\+Stop\+Auto\+Scroll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -220,9 +235,9 @@ Initialize autoscroll with specified speed.
 Stop autoscroll. 
 
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_ae33258196f8cd762c56b9d3fb122cbb1}\label{_d_r_v___stub___display_8c_ae33258196f8cd762c56b9d3fb122cbb1}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Toggle\+DP@{disp\+Toggle\+DP}}
-\index{disp\+Toggle\+DP@{disp\+Toggle\+DP}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Toggle\+D\+P()}{dispToggleDP()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispToggleDP@{dispToggleDP}}
+\index{dispToggleDP@{dispToggleDP}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispToggleDP()}{dispToggleDP()}}
 {\footnotesize\ttfamily void disp\+Toggle\+DP (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
 
 
@@ -235,15 +250,15 @@ Toggles the decimal point of the nth seven segment.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_ab55cfcccfedb751ea6ca588f47844c65}\label{_d_r_v___stub___display_8c_ab55cfcccfedb751ea6ca588f47844c65}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Toggle\+L\+ED@{disp\+Toggle\+L\+ED}}
-\index{disp\+Toggle\+L\+ED@{disp\+Toggle\+L\+ED}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Toggle\+L\+E\+D()}{dispToggleLED()}}
-{\footnotesize\ttfamily void disp\+Toggle\+L\+ED (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispToggleLED@{dispToggleLED}}
+\index{dispToggleLED@{dispToggleLED}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispToggleLED()}{dispToggleLED()}}
+{\footnotesize\ttfamily void disp\+Toggle\+LED (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{_d_r_v___stub___display_8c_a278ed4464485157b9579be0db6ecf1a3}\label{_d_r_v___stub___display_8c_a278ed4464485157b9579be0db6ecf1a3}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Update\+Brightness@{disp\+Update\+Brightness}}
-\index{disp\+Update\+Brightness@{disp\+Update\+Brightness}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Update\+Brightness()}{dispUpdateBrightness()}}
+\mbox{\Hypertarget{_d_r_v___stub___display_8c_a5c98bf58cebdc5bb890097ff79c9b0be}\label{_d_r_v___stub___display_8c_a5c98bf58cebdc5bb890097ff79c9b0be}} 
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispUpdateBrightness@{dispUpdateBrightness}}
+\index{dispUpdateBrightness@{dispUpdateBrightness}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispUpdateBrightness()}{dispUpdateBrightness()}}
 {\footnotesize\ttfamily void disp\+Update\+Brightness (\begin{DoxyParamCaption}\item[{int}]{brightness }\end{DoxyParamCaption})}
 
 
@@ -256,15 +271,15 @@ Updates the brightness of the display.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_a332f6abc0d8d01cc72b37680897d73f6}\label{_d_r_v___stub___display_8c_a332f6abc0d8d01cc72b37680897d73f6}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Valid\+Char@{disp\+Valid\+Char}}
-\index{disp\+Valid\+Char@{disp\+Valid\+Char}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Valid\+Char()}{dispValidChar()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispValidChar@{dispValidChar}}
+\index{dispValidChar@{dispValidChar}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispValidChar()}{dispValidChar()}}
 {\footnotesize\ttfamily bool disp\+Valid\+Char (\begin{DoxyParamCaption}\item[{char}]{character }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_a5cd6965b4b53f7f7574624ed99441a2f}\label{_d_r_v___stub___display_8c_a5cd6965b4b53f7f7574624ed99441a2f}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Write\+Buffer@{disp\+Write\+Buffer}}
-\index{disp\+Write\+Buffer@{disp\+Write\+Buffer}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Write\+Buffer()}{dispWriteBuffer()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispWriteBuffer@{dispWriteBuffer}}
+\index{dispWriteBuffer@{dispWriteBuffer}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispWriteBuffer()}{dispWriteBuffer()}}
 {\footnotesize\ttfamily void disp\+Write\+Buffer (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{const char $\ast$}]{word }\end{DoxyParamCaption})}
 
 
@@ -279,9 +294,9 @@ Sets word of length c in the buffer.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_ac4e572e17ccea4d1861d1c1ad0fbdb01}\label{_d_r_v___stub___display_8c_ac4e572e17ccea4d1861d1c1ad0fbdb01}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!disp\+Write\+Char@{disp\+Write\+Char}}
-\index{disp\+Write\+Char@{disp\+Write\+Char}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{disp\+Write\+Char()}{dispWriteChar()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!dispWriteChar@{dispWriteChar}}
+\index{dispWriteChar@{dispWriteChar}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispWriteChar()}{dispWriteChar()}}
 {\footnotesize\ttfamily void disp\+Write\+Char (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{char}]{character }\end{DoxyParamCaption})}
 
 
@@ -296,9 +311,9 @@ Sets character in position n of the buffer.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_d_r_v___stub___display_8c_a1a9171e2595ab20c0d50a6b9ba243997}\label{_d_r_v___stub___display_8c_a1a9171e2595ab20c0d50a6b9ba243997}} 
-\index{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}!init\+Display@{init\+Display}}
-\index{init\+Display@{init\+Display}!D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c@{D\+R\+V\+\_\+\+Stub\+\_\+\+Display.\+c}}
-\subsubsection{\texorpdfstring{init\+Display()}{initDisplay()}}
+\index{DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}!initDisplay@{initDisplay}}
+\index{initDisplay@{initDisplay}!DRV\_Stub\_Display.c@{DRV\_Stub\_Display.c}}
+\doxysubsubsection{\texorpdfstring{initDisplay()}{initDisplay()}}
 {\footnotesize\ttfamily void init\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 

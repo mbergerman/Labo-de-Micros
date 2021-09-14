@@ -7,6 +7,7 @@
 /*******************************************************************************
  * INCLUDE HEADER FILES
  ******************************************************************************/
+
 #include "MK64F12.h"
 #include "PDRV_GPIO.h"
 #include "hardware.h"
@@ -20,6 +21,12 @@
 #define PORTX_IRQn(p) (PORTA_IRQn+p)
 #define PINS_PER_PORT 32
 #define ARRAY_SIZE (FSL_FEATURE_SOC_PORT_COUNT*PINS_PER_PORT)
+
+
+#define GPIO_DEVELOPMENT_MODE    1
+#ifdef GPIO_DEVELOPMENT_MODE
+	#define GPIO_IRQ_TEST_PIN	PORTNUM2PIN(PE,24)
+#endif
 
 /*******************************************************************************
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
@@ -118,6 +125,12 @@ bool gpioRead (pin_t pin){
  ******************************************************************************/
 
 static void IRQHandler(int32_t port) {
+
+#ifdef GPIO_DEVELOPMENT_MODE
+	gpioWrite(GPIO_IRQ_TEST_PIN, HIGH);
+#endif //GPIO_DEVELOPMENT_MODE
+
+
 	PORT_Type* port_ptr = PORT_PTRS[port];
 	uint32_t ISFR = port_ptr->ISFR;
 	for(int pin = 0; pin<PINS_PER_PORT; pin++) {
@@ -126,6 +139,11 @@ static void IRQHandler(int32_t port) {
 			(*CALLBACKS[PINS_PER_PORT*port + pin])();
 		}
 	}
+
+#ifdef GPIO_DEVELOPMENT_MODE
+	gpioWrite(GPIO_IRQ_TEST_PIN, LOW);
+#endif //GPIO_DEVELOPMENT_MODE
+
 }
 
 __ISR__ PORTA_IRQHandler(void) { IRQHandler(PA); }

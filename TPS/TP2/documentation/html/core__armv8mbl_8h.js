@@ -324,5 +324,5 @@ var core__armv8mbl_8h =
     [ "__NVIC_SetPriority", "group___c_m_s_i_s___core___n_v_i_c_functions.html#ga505338e23563a9c074910fb14e7d45fd", null ],
     [ "__NVIC_SetVector", "group___c_m_s_i_s___core___n_v_i_c_functions.html#ga0df355460bc1783d58f9d72ee4884208", null ],
     [ "__NVIC_SystemReset", "group___c_m_s_i_s___core___n_v_i_c_functions.html#ga49f66a3782cbff3b821bd9802cd046f5", null ],
-    [ "SCB_GetFPUType", "group___c_m_s_i_s___core___fpu_functions.html#ga6bcad99ce80a0e7e4ddc6f2379081756", null ]
+    [ "SCB_GetFPUType", "group___c_m_s_i_s___core___n_v_i_c_functions.html#ga6bcad99ce80a0e7e4ddc6f2379081756", null ]
 ];

@@ -1,0 +1,56 @@
+\hypertarget{_d_r_v___reader_8h_source}{}\doxysection{DRV\+\_\+\+Reader.\+h}
+\label{_d_r_v___reader_8h_source}\index{drivers/DRV\_Reader.h@{drivers/DRV\_Reader.h}}
+\mbox{\hyperlink{_d_r_v___reader_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/***************************************************************************/}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef DRV\_READER\_H\_}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define DRV\_READER\_H\_}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{12 \textcolor{comment}{ * INCLUDE HEADER FILES}}
+\DoxyCodeLine{13 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h}{PDRV\_GPIO.h}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{18 \textcolor{comment}{ * CONSTANT AND MACRO DEFINITIONS USING \#DEFINE}}
+\DoxyCodeLine{19 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define TERMINATOR\_CHAR     '\(\backslash\)0'}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define READER\_TIMEOUT      500  }\textcolor{comment}{// Milisegundos a esperar antes de cancelar una lectura}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define READER\_NUM\_MAX\_LEN  19}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{26 \textcolor{comment}{ * ENUMERATIONS AND STRUCTURES AND TYPEDEFS}}
+\DoxyCodeLine{27 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{typedef} void (*\mbox{\hyperlink{_d_r_v___reader_8h_acaf05406c221f8d1c2c269d85a3b4d4a}{readerCallback\_t}})(\textcolor{keywordtype}{char}*, uint8\_t);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{32 \textcolor{comment}{ * VARIABLE PROTOTYPES WITH GLOBAL SCOPE}}
+\DoxyCodeLine{33 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{37 \textcolor{comment}{ * FUNCTION PROTOTYPES WITH GLOBAL SCOPE}}
+\DoxyCodeLine{38 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{43 \textcolor{keywordtype}{void} \mbox{\hyperlink{_d_r_v___reader_8h_a1edc5658ebaaaed4ec5b1b520bc5cf71}{initReader}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{48 \textcolor{keywordtype}{void} \mbox{\hyperlink{_d_r_v___reader_8h_a007ce4e94147e193f485a2165bf9cb39}{enableReader}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{53 \textcolor{keywordtype}{void} \mbox{\hyperlink{_d_r_v___reader_8h_aa1e32a5ce0eddd56eea1ffc9d687cfb4}{disableReader}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{59 \textcolor{keywordtype}{bool} \mbox{\hyperlink{_d_r_v___reader_8h_a9062773cd482afcd89e2de039c2ea172}{readerIsReady}}();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{66 \textcolor{keywordtype}{void} \mbox{\hyperlink{_d_r_v___reader_8h_aea291c8cddfc6d9987a2a94fbe3fd3ea}{getValueReader}}(\textcolor{keywordtype}{char}* result\_number\_ptr, uint8\_t* result\_len\_ptr);}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{70 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* DRV\_READER\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

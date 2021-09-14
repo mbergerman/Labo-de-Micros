@@ -1,5 +1,7 @@
 var group___c_m_s_i_s___core___reg_acc_functions =
 [
+    [ "CMSIS Core Instruction Interface", "group___c_m_s_i_s___core___instruction_interface.html", "group___c_m_s_i_s___core___instruction_interface" ],
+    [ "__get_xPSR", "group___c_m_s_i_s___core___reg_acc_functions.html#gae0d8e20f8c3c2a502075dabcff733c05", null ],
     [ "__disable_irq", "group___c_m_s_i_s___core___reg_acc_functions.html#ga2299877e4ba3e162ca9dbabd6e0abef6", null ],
     [ "__enable_irq", "group___c_m_s_i_s___core___reg_acc_functions.html#gae84bf4e95944e61937f4ed2453e5ef23", null ],
     [ "__get_APSR", "group___c_m_s_i_s___core___reg_acc_functions.html#gadff4f1e599946e8ae96fba17b5245f04", null ],
@@ -8,7 +10,7 @@ var group___c_m_s_i_s___core___reg_acc_functions =
     [ "__get_MSP", "group___c_m_s_i_s___core___reg_acc_functions.html#ga667e7b8b97b4a30f445ae45d37588e45", null ],
     [ "__get_PRIMASK", "group___c_m_s_i_s___core___reg_acc_functions.html#ga4ff59fb9e280d19e79e6875863a65f0a", null ],
     [ "__get_PSP", "group___c_m_s_i_s___core___reg_acc_functions.html#ga826c53e30812e350c77f58aac9f42bcb", null ],
-    [ "__get_xPSR", "group___c_m_s_i_s___core___reg_acc_functions.html#ga52ca795dc9429ee0ac64ddd12c034834", null ],
+    [ "__get_xPSR", "group___c_m_s_i_s___core___reg_acc_functions.html#ga94c675a736d4754a5f73d8748b24aa11", null ],
     [ "__set_CONTROL", "group___c_m_s_i_s___core___reg_acc_functions.html#ga0102d0939d9b26c5c792be6bf5fd550f", null ],
     [ "__set_MSP", "group___c_m_s_i_s___core___reg_acc_functions.html#ga08b66e2b60a46fada36d90d2bc1e7c9b", null ],
     [ "__set_PRIMASK", "group___c_m_s_i_s___core___reg_acc_functions.html#gaf4a17d3be7dbb066489836d849930d92", null ],

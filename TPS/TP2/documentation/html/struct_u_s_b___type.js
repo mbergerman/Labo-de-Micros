@@ -10,7 +10,7 @@ var struct_u_s_b___type =
     [ "CLK_RECOVER_IRC_EN", "group___v_r_e_f___peripheral___access___layer.html#ga9cd5cd20ce5d7dbf868a7af12fe69b81", null ],
     [ "CONTROL", "group___v_r_e_f___peripheral___access___layer.html#gad042c540de71ddbe331a097886f11579", null ],
     [ "CTL", "group___v_r_e_f___peripheral___access___layer.html#gacb7581e8a603234f71f2e32a3f5463c5", null ],
-    [ "ENDPOINT", "group___v_r_e_f___peripheral___access___layer.html#ga624768547e347d8bd7fde8bbdf15075c", null ],
+    [ "ENDPOINT", "group___v_r_e_f___peripheral___access___layer.html#gac83d80f191b6a45f290a8a08001c43fd", null ],
     [ "ENDPT", "group___v_r_e_f___peripheral___access___layer.html#gad696ad5082cb8aef65756299d5eb897e", null ],
     [ "ERREN", "group___v_r_e_f___peripheral___access___layer.html#gab65f35c56895733ec3c11e246b4d99ec", null ],
     [ "ERRSTAT", "group___v_r_e_f___peripheral___access___layer.html#gaae749069a75330cb4543daa28772e327", null ],

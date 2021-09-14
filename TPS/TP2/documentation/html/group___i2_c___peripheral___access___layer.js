@@ -1,7 +1,5 @@
 var group___i2_c___peripheral___access___layer =
 [
-    [ "I2C Register Masks", "group___i2_c___register___masks.html", "group___i2_c___register___masks" ],
-    [ "I2S Peripheral Access Layer", "group___i2_s___peripheral___access___layer.html", "group___i2_s___peripheral___access___layer" ],
     [ "I2C_Type", "struct_i2_c___type.html", [
       [ "A1", "group___v_r_e_f___peripheral___access___layer.html#gacb6a1bc3db8fa6148894140daa6b97e1", null ],
       [ "A2", "group___v_r_e_f___peripheral___access___layer.html#gae8436760942c43a7f6b6b8561803dfd7", null ],

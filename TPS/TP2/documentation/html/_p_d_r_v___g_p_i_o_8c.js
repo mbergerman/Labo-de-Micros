@@ -1,6 +1,8 @@
 var _p_d_r_v___g_p_i_o_8c =
 [
     [ "ARRAY_SIZE", "_p_d_r_v___g_p_i_o_8c.html#a7ec751f49d6391028a94f1419374c2fa", null ],
+    [ "GPIO_DEVELOPMENT_MODE", "_p_d_r_v___g_p_i_o_8c.html#aff638a81914812f58422ea841b9954f9", null ],
+    [ "GPIO_IRQ_TEST_PIN", "_p_d_r_v___g_p_i_o_8c.html#a3c2f421e5a93c4b331a3cfbd0e35637d", null ],
     [ "PINS_PER_PORT", "_p_d_r_v___g_p_i_o_8c.html#adb312c6a2d8064fb21620d1e141111d6", null ],
     [ "PORTX_IRQn", "_p_d_r_v___g_p_i_o_8c.html#a3def8ddb155ca19398c3d9939ba3bebe", null ],
     [ "SIM_SCGC5_PORT", "_p_d_r_v___g_p_i_o_8c.html#a46168c358807631601faa34d692fd993", null ],

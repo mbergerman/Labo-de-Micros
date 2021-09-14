@@ -1,9 +1,9 @@
 var struct_p_d_b___type =
 [
     [ "C1", "group___v_r_e_f___peripheral___access___layer.html#ga7bf92f3ccb47d979d85a1c09ca148024", null ],
-    [ "CH", "group___v_r_e_f___peripheral___access___layer.html#ga09a3b25c72456dc274d97bd2c30e8c09", null ],
+    [ "CH", "group___v_r_e_f___peripheral___access___layer.html#gad22972c4003a339652a86b074081aee4", null ],
     [ "CNT", "group___v_r_e_f___peripheral___access___layer.html#ga5a2def14363813fcf6287e3edd1104bf", null ],
-    [ "DAC", "group___v_r_e_f___peripheral___access___layer.html#gae118976c5526888e4385d2b45e4ca8ac", null ],
+    [ "DAC", "group___v_r_e_f___peripheral___access___layer.html#ga95ac12ba449cc79b825f942b6d29c597", null ],
     [ "DLY", "group___v_r_e_f___peripheral___access___layer.html#ga826415186f68fa272f4659ba9af7c392", null ],
     [ "IDLY", "group___v_r_e_f___peripheral___access___layer.html#ga84172a8f32e3e8ab454c186f973d63be", null ],
     [ "INT", "group___v_r_e_f___peripheral___access___layer.html#gafab15a0b540bc4e09cc8b0dcabe8791f", null ],

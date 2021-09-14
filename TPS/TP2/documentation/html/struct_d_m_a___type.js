@@ -53,5 +53,5 @@ var struct_d_m_a___type =
     [ "SLAST", "group___v_r_e_f___peripheral___access___layer.html#ga259cfcca8e9764142934b37873e0b2ea", null ],
     [ "SOFF", "group___v_r_e_f___peripheral___access___layer.html#gab83ecd61515a229daa91f7ee98f377d7", null ],
     [ "SSRT", "group___v_r_e_f___peripheral___access___layer.html#ga20abbb37927be43e6e153072de17c02f", null ],
-    [ "TCD", "group___v_r_e_f___peripheral___access___layer.html#ga580b2d1eee871c5b190f951fb6f753e3", null ]
+    [ "TCD", "group___v_r_e_f___peripheral___access___layer.html#gaf15b2633e9ccf94d6a2d61bb3291d8bd", null ]
 ];

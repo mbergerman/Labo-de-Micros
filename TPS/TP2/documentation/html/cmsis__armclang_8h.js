@@ -39,7 +39,7 @@ var cmsis__armclang_8h =
     [ "__get_MSP", "group___c_m_s_i_s___core___reg_acc_functions.html#ga667e7b8b97b4a30f445ae45d37588e45", null ],
     [ "__get_PRIMASK", "group___c_m_s_i_s___core___reg_acc_functions.html#ga4ff59fb9e280d19e79e6875863a65f0a", null ],
     [ "__get_PSP", "group___c_m_s_i_s___core___reg_acc_functions.html#ga826c53e30812e350c77f58aac9f42bcb", null ],
-    [ "__get_xPSR", "group___c_m_s_i_s___core___reg_acc_functions.html#ga52ca795dc9429ee0ac64ddd12c034834", null ],
+    [ "__get_xPSR", "group___c_m_s_i_s___core___reg_acc_functions.html#ga94c675a736d4754a5f73d8748b24aa11", null ],
     [ "__ROR", "group___c_m_s_i_s___core___instruction_interface.html#gab16acb6456176f1e87a4f2724c2b6028", null ],
     [ "__set_CONTROL", "group___c_m_s_i_s___core___reg_acc_functions.html#ga0102d0939d9b26c5c792be6bf5fd550f", null ],
     [ "__set_MSP", "group___c_m_s_i_s___core___reg_acc_functions.html#ga08b66e2b60a46fada36d90d2bc1e7c9b", null ],

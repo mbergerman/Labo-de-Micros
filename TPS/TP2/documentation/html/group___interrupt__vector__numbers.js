@@ -1,7 +1,7 @@
 var group___interrupt__vector__numbers =
 [
     [ "NUMBER_OF_INT_VECTORS", "group___interrupt__vector__numbers.html#gafe46d81f4fa2c4f6ed1361f24f046fa8", null ],
-    [ "IRQn_Type", "group___interrupt__vector__numbers.html#gac3af4a32370fb28c4ade8bf2add80251", null ],
+    [ "IRQn_Type", "group___interrupt__vector__numbers.html#ga4a0206df9604302e0741c1aa4ca1ded3", null ],
     [ "IRQn", "group___interrupt__vector__numbers.html#ga666eb0caeb12ec0e281415592ae89083", [
       [ "NotAvail_IRQn", "group___interrupt__vector__numbers.html#gga666eb0caeb12ec0e281415592ae89083a1f4ef0294648930fce11a95a3000197d", null ],
       [ "NonMaskableInt_IRQn", "group___interrupt__vector__numbers.html#gga666eb0caeb12ec0e281415592ae89083ade177d9c70c89e084093024b932a4e30", null ],

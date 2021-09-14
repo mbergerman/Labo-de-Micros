@@ -1,23 +1,23 @@
-\hypertarget{group___bit___field___generic___macros}{}\section{Macros for use with bit field definitions (xxx\+\_\+\+S\+H\+I\+FT, xxx\+\_\+\+M\+A\+SK).}
-\label{group___bit___field___generic___macros}\index{Macros for use with bit field definitions (xxx\+\_\+\+S\+H\+I\+F\+T, xxx\+\_\+\+M\+A\+S\+K).@{Macros for use with bit field definitions (xxx\+\_\+\+S\+H\+I\+F\+T, xxx\+\_\+\+M\+A\+S\+K).}}
-\subsection*{Macros}
+\hypertarget{group___bit___field___generic___macros}{}\doxysection{Macros for use with bit field definitions (xxx\+\_\+\+SHIFT, xxx\+\_\+\+MASK).}
+\label{group___bit___field___generic___macros}\index{Macros for use with bit field definitions (xxx\_SHIFT, xxx\_MASK).@{Macros for use with bit field definitions (xxx\_SHIFT, xxx\_MASK).}}
+\doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{group___bit___field___generic___macros_ga174e73af51fd6bf7974359c28ec60c0d}{N\+X\+P\+\_\+\+V\+A\+L2\+F\+LD}}(field,  value)~(((value) $<$$<$ (field \#\# \+\_\+\+S\+H\+I\+FT)) \& (field \#\# \+\_\+\+M\+A\+SK))
+\#define \mbox{\hyperlink{group___bit___field___generic___macros_ga174e73af51fd6bf7974359c28ec60c0d}{NXP\+\_\+\+VAL2\+FLD}}(field,  value)~(((value) $<$$<$ (field \#\# \+\_\+\+SHIFT)) \& (field \#\# \+\_\+\+MASK))
 \begin{DoxyCompactList}\small\item\em Mask and left-\/shift a bit field value for use in a register bit range. \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{group___bit___field___generic___macros_ga83e253adbbe07eccc440659bf67ef176}{N\+X\+P\+\_\+\+F\+L\+D2\+V\+AL}}(field,  value)~(((value) \& (field \#\# \+\_\+\+M\+A\+SK)) $>$$>$ (field \#\# \+\_\+\+S\+H\+I\+FT))
+\#define \mbox{\hyperlink{group___bit___field___generic___macros_ga83e253adbbe07eccc440659bf67ef176}{NXP\+\_\+\+FLD2\+VAL}}(field,  value)~(((value) \& (field \#\# \+\_\+\+MASK)) $>$$>$ (field \#\# \+\_\+\+SHIFT))
 \begin{DoxyCompactList}\small\item\em Mask and right-\/shift a register value to extract a bit field value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 
 
-\subsection{Macro Definition Documentation}
+\doxysubsection{Macro Definition Documentation}
 \mbox{\Hypertarget{group___bit___field___generic___macros_ga83e253adbbe07eccc440659bf67ef176}\label{group___bit___field___generic___macros_ga83e253adbbe07eccc440659bf67ef176}} 
-\index{Macros for use with bit field definitions (xxx\+\_\+\+S\+H\+I\+F\+T, xxx\+\_\+\+M\+A\+S\+K).@{Macros for use with bit field definitions (xxx\+\_\+\+S\+H\+I\+F\+T, xxx\+\_\+\+M\+A\+S\+K).}!N\+X\+P\+\_\+\+F\+L\+D2\+V\+AL@{N\+X\+P\+\_\+\+F\+L\+D2\+V\+AL}}
-\index{N\+X\+P\+\_\+\+F\+L\+D2\+V\+AL@{N\+X\+P\+\_\+\+F\+L\+D2\+V\+AL}!Macros for use with bit field definitions (xxx\+\_\+\+S\+H\+I\+F\+T, xxx\+\_\+\+M\+A\+S\+K).@{Macros for use with bit field definitions (xxx\+\_\+\+S\+H\+I\+F\+T, xxx\+\_\+\+M\+A\+S\+K).}}
-\subsubsection{\texorpdfstring{N\+X\+P\+\_\+\+F\+L\+D2\+V\+AL}{NXP\_FLD2VAL}}
-{\footnotesize\ttfamily \#define N\+X\+P\+\_\+\+F\+L\+D2\+V\+AL(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((value) \& (field \#\# \+\_\+\+M\+A\+SK)) $>$$>$ (field \#\# \+\_\+\+S\+H\+I\+FT))}
+\index{Macros for use with bit field definitions (xxx\_SHIFT, xxx\_MASK).@{Macros for use with bit field definitions (xxx\_SHIFT, xxx\_MASK).}!NXP\_FLD2VAL@{NXP\_FLD2VAL}}
+\index{NXP\_FLD2VAL@{NXP\_FLD2VAL}!Macros for use with bit field definitions (xxx\_SHIFT, xxx\_MASK).@{Macros for use with bit field definitions (xxx\_SHIFT, xxx\_MASK).}}
+\doxysubsubsection{\texorpdfstring{NXP\_FLD2VAL}{NXP\_FLD2VAL}}
+{\footnotesize\ttfamily \#define NXP\+\_\+\+FLD2\+VAL(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((value) \& (field \#\# \+\_\+\+MASK)) $>$$>$ (field \#\# \+\_\+\+SHIFT))}
 
 
 
@@ -34,10 +34,10 @@ Mask and right-\/shift a register value to extract a bit field value.
 Masked and shifted bit field value. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{group___bit___field___generic___macros_ga174e73af51fd6bf7974359c28ec60c0d}\label{group___bit___field___generic___macros_ga174e73af51fd6bf7974359c28ec60c0d}} 
-\index{Macros for use with bit field definitions (xxx\+\_\+\+S\+H\+I\+F\+T, xxx\+\_\+\+M\+A\+S\+K).@{Macros for use with bit field definitions (xxx\+\_\+\+S\+H\+I\+F\+T, xxx\+\_\+\+M\+A\+S\+K).}!N\+X\+P\+\_\+\+V\+A\+L2\+F\+LD@{N\+X\+P\+\_\+\+V\+A\+L2\+F\+LD}}
-\index{N\+X\+P\+\_\+\+V\+A\+L2\+F\+LD@{N\+X\+P\+\_\+\+V\+A\+L2\+F\+LD}!Macros for use with bit field definitions (xxx\+\_\+\+S\+H\+I\+F\+T, xxx\+\_\+\+M\+A\+S\+K).@{Macros for use with bit field definitions (xxx\+\_\+\+S\+H\+I\+F\+T, xxx\+\_\+\+M\+A\+S\+K).}}
-\subsubsection{\texorpdfstring{N\+X\+P\+\_\+\+V\+A\+L2\+F\+LD}{NXP\_VAL2FLD}}
-{\footnotesize\ttfamily \#define N\+X\+P\+\_\+\+V\+A\+L2\+F\+LD(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((value) $<$$<$ (field \#\# \+\_\+\+S\+H\+I\+FT)) \& (field \#\# \+\_\+\+M\+A\+SK))}
+\index{Macros for use with bit field definitions (xxx\_SHIFT, xxx\_MASK).@{Macros for use with bit field definitions (xxx\_SHIFT, xxx\_MASK).}!NXP\_VAL2FLD@{NXP\_VAL2FLD}}
+\index{NXP\_VAL2FLD@{NXP\_VAL2FLD}!Macros for use with bit field definitions (xxx\_SHIFT, xxx\_MASK).@{Macros for use with bit field definitions (xxx\_SHIFT, xxx\_MASK).}}
+\doxysubsubsection{\texorpdfstring{NXP\_VAL2FLD}{NXP\_VAL2FLD}}
+{\footnotesize\ttfamily \#define NXP\+\_\+\+VAL2\+FLD(\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{value }\end{DoxyParamCaption})~(((value) $<$$<$ (field \#\# \+\_\+\+SHIFT)) \& (field \#\# \+\_\+\+MASK))}
 
 
 

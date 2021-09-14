@@ -8222,8 +8222,8 @@ var _m_k64_f12_8h =
     [ "WDOG_WINL_WINLOW", "group___w_d_o_g___register___masks.html#gab55f3f4203f758c69ed8ab7e41db69fd", null ],
     [ "WDOG_WINL_WINLOW_MASK", "group___w_d_o_g___register___masks.html#gadc36bfdccd5e9c14d063a5b36b6a3f6a", null ],
     [ "WDOG_WINL_WINLOW_SHIFT", "group___w_d_o_g___register___masks.html#ga7f2baf848e4bfe9b0143d073467d1c1a", null ],
-    [ "dma_request_source_t", "group__edma__request.html#ga87fac76863c6c941e6363236dde6f58e", null ],
-    [ "IRQn_Type", "group___interrupt__vector__numbers.html#gac3af4a32370fb28c4ade8bf2add80251", null ],
+    [ "dma_request_source_t", "group__edma__request.html#ga65b6d3293bf6cc9fe48af7f03002a373", null ],
+    [ "IRQn_Type", "group___interrupt__vector__numbers.html#ga4a0206df9604302e0741c1aa4ca1ded3", null ],
     [ "_dma_request_source", "group__edma__request.html#gafd16b7227cfdebb996c941d293ddd600", [
       [ "kDmaRequestMux0Disable", "group__edma__request.html#ggafd16b7227cfdebb996c941d293ddd600aadd4a4e2b949beeb891c555e14334928", null ],
       [ "kDmaRequestMux0Reserved1", "group__edma__request.html#ggafd16b7227cfdebb996c941d293ddd600a85eeff0b46973f2b0ae4daf813462d5a", null ],

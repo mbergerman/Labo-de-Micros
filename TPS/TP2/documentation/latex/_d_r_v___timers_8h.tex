@@ -1,5 +1,5 @@
-\hypertarget{_d_r_v___timers_8h}{}\section{drivers/\+D\+R\+V\+\_\+\+Timers.h File Reference}
-\label{_d_r_v___timers_8h}\index{drivers/\+D\+R\+V\+\_\+\+Timers.\+h@{drivers/\+D\+R\+V\+\_\+\+Timers.\+h}}
+\hypertarget{_d_r_v___timers_8h}{}\doxysection{drivers/\+DRV\+\_\+\+Timers.h File Reference}
+\label{_d_r_v___timers_8h}\index{drivers/DRV\_Timers.h@{drivers/DRV\_Timers.h}}
 
 
 Timers driver.  
@@ -8,18 +8,18 @@ Timers driver.
 {\ttfamily \#include $<$stdint.\+h$>$}\newline
 {\ttfamily \#include $<$stdbool.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
-\subsection*{Macros}
+\doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{_d_r_v___timers_8h_aa4b879382b8af09be944a76aaf8ddd53}{T\+I\+M\+E\+R\+\_\+\+T\+I\+C\+K\+\_\+\+MS}}~1
+\#define \mbox{\hyperlink{_d_r_v___timers_8h_aa4b879382b8af09be944a76aaf8ddd53}{TIMER\+\_\+\+TICK\+\_\+\+MS}}~1
 \item 
-\#define \mbox{\hyperlink{_d_r_v___timers_8h_a5147d9123bc0ebde61d4a207e27e07a1}{T\+I\+M\+E\+R\+\_\+\+M\+S2\+T\+I\+C\+KS}}(ms)~((ms)/\mbox{\hyperlink{_d_r_v___timers_8h_aa4b879382b8af09be944a76aaf8ddd53}{T\+I\+M\+E\+R\+\_\+\+T\+I\+C\+K\+\_\+\+MS}})
+\#define \mbox{\hyperlink{_d_r_v___timers_8h_a5147d9123bc0ebde61d4a207e27e07a1}{TIMER\+\_\+\+MS2\+TICKS}}(ms)~((ms)/\mbox{\hyperlink{_d_r_v___timers_8h_aa4b879382b8af09be944a76aaf8ddd53}{TIMER\+\_\+\+TICK\+\_\+\+MS}})
 \item 
-\#define \mbox{\hyperlink{_d_r_v___timers_8h_ae0c10facd6ab8d9e1f609e1b59abfdbf}{T\+I\+M\+E\+R\+S\+\_\+\+M\+A\+X\+\_\+\+C\+A\+NT}}~32
+\#define \mbox{\hyperlink{_d_r_v___timers_8h_ae0c10facd6ab8d9e1f609e1b59abfdbf}{TIMERS\+\_\+\+MAX\+\_\+\+CANT}}~32
 \item 
-\#define \mbox{\hyperlink{_d_r_v___timers_8h_a4d069cdc857a5c07fb77aa308c72a904}{T\+I\+M\+E\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID}}~255
+\#define \mbox{\hyperlink{_d_r_v___timers_8h_a4d069cdc857a5c07fb77aa308c72a904}{TIMER\+\_\+\+INVALID\+\_\+\+ID}}~255
 \end{DoxyCompactItemize}
-\subsection*{Typedefs}
+\doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
 typedef uint32\+\_\+t \mbox{\hyperlink{_d_r_v___timers_8h_a21588d564d58c0716d3901da569691db}{ttick\+\_\+t}}
@@ -28,15 +28,15 @@ typedef uint8\+\_\+t \mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e
 \item 
 typedef void($\ast$ \mbox{\hyperlink{_d_r_v___timers_8h_a0b70e2941dede906fc97d15b026a16e1}{tim\+\_\+callback\+\_\+t}}) (void)
 \end{DoxyCompactItemize}
-\subsection*{Enumerations}
+\doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \{ \mbox{\hyperlink{_d_r_v___timers_8h_abc6126af1d45847bc59afa0aa3216b04a6155e9404d43a8e6efa4063c86efcfaf}{T\+I\+M\+\_\+\+M\+O\+D\+E\+\_\+\+S\+I\+N\+G\+L\+E\+S\+H\+OT}}, 
-\mbox{\hyperlink{_d_r_v___timers_8h_abc6126af1d45847bc59afa0aa3216b04a7a1497f4309bf8f5d2fb0ac7695822c3}{T\+I\+M\+\_\+\+M\+O\+D\+E\+\_\+\+P\+E\+R\+I\+O\+D\+IC}}, 
-\mbox{\hyperlink{_d_r_v___timers_8h_abc6126af1d45847bc59afa0aa3216b04ae2f303315d389a36b806045ab38241e4}{C\+A\+N\+T\+\_\+\+T\+I\+M\+\_\+\+M\+O\+D\+ES}}
+enum \{ \mbox{\hyperlink{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5a6155e9404d43a8e6efa4063c86efcfaf}{TIM\+\_\+\+MODE\+\_\+\+SINGLESHOT}}
+, \mbox{\hyperlink{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5a7a1497f4309bf8f5d2fb0ac7695822c3}{TIM\+\_\+\+MODE\+\_\+\+PERIODIC}}
+, \mbox{\hyperlink{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5ae2f303315d389a36b806045ab38241e4}{CANT\+\_\+\+TIM\+\_\+\+MODES}}
  \}
 \end{DoxyCompactItemize}
-\subsection*{Functions}
+\doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_d_r_v___timers_8h_a9e737e3249388fb2e50d868bad69c688}{init\+Timers}} (void)
@@ -53,7 +53,7 @@ void \mbox{\hyperlink{_d_r_v___timers_8h_a367713eae4c0901efd5b7336f20ddefa}{time
 \begin{DoxyCompactList}\small\item\em Wait the specified time. Use internal timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 Timers driver. 
 
 \begin{DoxyAuthor}{Author}
@@ -61,80 +61,80 @@ Grupo 1
 \end{DoxyAuthor}
 
 
-\subsection{Macro Definition Documentation}
+\doxysubsection{Macro Definition Documentation}
 \mbox{\Hypertarget{_d_r_v___timers_8h_a4d069cdc857a5c07fb77aa308c72a904}\label{_d_r_v___timers_8h_a4d069cdc857a5c07fb77aa308c72a904}} 
-\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!T\+I\+M\+E\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID@{T\+I\+M\+E\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID}}
-\index{T\+I\+M\+E\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID@{T\+I\+M\+E\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}
-\subsubsection{\texorpdfstring{T\+I\+M\+E\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID}{TIMER\_INVALID\_ID}}
-{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+ID~255}
+\index{DRV\_Timers.h@{DRV\_Timers.h}!TIMER\_INVALID\_ID@{TIMER\_INVALID\_ID}}
+\index{TIMER\_INVALID\_ID@{TIMER\_INVALID\_ID}!DRV\_Timers.h@{DRV\_Timers.h}}
+\doxysubsubsection{\texorpdfstring{TIMER\_INVALID\_ID}{TIMER\_INVALID\_ID}}
+{\footnotesize\ttfamily \#define TIMER\+\_\+\+INVALID\+\_\+\+ID~255}
 
 \mbox{\Hypertarget{_d_r_v___timers_8h_a5147d9123bc0ebde61d4a207e27e07a1}\label{_d_r_v___timers_8h_a5147d9123bc0ebde61d4a207e27e07a1}} 
-\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!T\+I\+M\+E\+R\+\_\+\+M\+S2\+T\+I\+C\+KS@{T\+I\+M\+E\+R\+\_\+\+M\+S2\+T\+I\+C\+KS}}
-\index{T\+I\+M\+E\+R\+\_\+\+M\+S2\+T\+I\+C\+KS@{T\+I\+M\+E\+R\+\_\+\+M\+S2\+T\+I\+C\+KS}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}
-\subsubsection{\texorpdfstring{T\+I\+M\+E\+R\+\_\+\+M\+S2\+T\+I\+C\+KS}{TIMER\_MS2TICKS}}
-{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+M\+S2\+T\+I\+C\+KS(\begin{DoxyParamCaption}\item[{}]{ms }\end{DoxyParamCaption})~((ms)/\mbox{\hyperlink{_d_r_v___timers_8h_aa4b879382b8af09be944a76aaf8ddd53}{T\+I\+M\+E\+R\+\_\+\+T\+I\+C\+K\+\_\+\+MS}})}
+\index{DRV\_Timers.h@{DRV\_Timers.h}!TIMER\_MS2TICKS@{TIMER\_MS2TICKS}}
+\index{TIMER\_MS2TICKS@{TIMER\_MS2TICKS}!DRV\_Timers.h@{DRV\_Timers.h}}
+\doxysubsubsection{\texorpdfstring{TIMER\_MS2TICKS}{TIMER\_MS2TICKS}}
+{\footnotesize\ttfamily \#define TIMER\+\_\+\+MS2\+TICKS(\begin{DoxyParamCaption}\item[{}]{ms }\end{DoxyParamCaption})~((ms)/\mbox{\hyperlink{_d_r_v___timers_8h_aa4b879382b8af09be944a76aaf8ddd53}{TIMER\+\_\+\+TICK\+\_\+\+MS}})}
 
 \mbox{\Hypertarget{_d_r_v___timers_8h_aa4b879382b8af09be944a76aaf8ddd53}\label{_d_r_v___timers_8h_aa4b879382b8af09be944a76aaf8ddd53}} 
-\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!T\+I\+M\+E\+R\+\_\+\+T\+I\+C\+K\+\_\+\+MS@{T\+I\+M\+E\+R\+\_\+\+T\+I\+C\+K\+\_\+\+MS}}
-\index{T\+I\+M\+E\+R\+\_\+\+T\+I\+C\+K\+\_\+\+MS@{T\+I\+M\+E\+R\+\_\+\+T\+I\+C\+K\+\_\+\+MS}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}
-\subsubsection{\texorpdfstring{T\+I\+M\+E\+R\+\_\+\+T\+I\+C\+K\+\_\+\+MS}{TIMER\_TICK\_MS}}
-{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+\_\+\+T\+I\+C\+K\+\_\+\+MS~1}
+\index{DRV\_Timers.h@{DRV\_Timers.h}!TIMER\_TICK\_MS@{TIMER\_TICK\_MS}}
+\index{TIMER\_TICK\_MS@{TIMER\_TICK\_MS}!DRV\_Timers.h@{DRV\_Timers.h}}
+\doxysubsubsection{\texorpdfstring{TIMER\_TICK\_MS}{TIMER\_TICK\_MS}}
+{\footnotesize\ttfamily \#define TIMER\+\_\+\+TICK\+\_\+\+MS~1}
 
 \mbox{\Hypertarget{_d_r_v___timers_8h_ae0c10facd6ab8d9e1f609e1b59abfdbf}\label{_d_r_v___timers_8h_ae0c10facd6ab8d9e1f609e1b59abfdbf}} 
-\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!T\+I\+M\+E\+R\+S\+\_\+\+M\+A\+X\+\_\+\+C\+A\+NT@{T\+I\+M\+E\+R\+S\+\_\+\+M\+A\+X\+\_\+\+C\+A\+NT}}
-\index{T\+I\+M\+E\+R\+S\+\_\+\+M\+A\+X\+\_\+\+C\+A\+NT@{T\+I\+M\+E\+R\+S\+\_\+\+M\+A\+X\+\_\+\+C\+A\+NT}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}
-\subsubsection{\texorpdfstring{T\+I\+M\+E\+R\+S\+\_\+\+M\+A\+X\+\_\+\+C\+A\+NT}{TIMERS\_MAX\_CANT}}
-{\footnotesize\ttfamily \#define T\+I\+M\+E\+R\+S\+\_\+\+M\+A\+X\+\_\+\+C\+A\+NT~32}
+\index{DRV\_Timers.h@{DRV\_Timers.h}!TIMERS\_MAX\_CANT@{TIMERS\_MAX\_CANT}}
+\index{TIMERS\_MAX\_CANT@{TIMERS\_MAX\_CANT}!DRV\_Timers.h@{DRV\_Timers.h}}
+\doxysubsubsection{\texorpdfstring{TIMERS\_MAX\_CANT}{TIMERS\_MAX\_CANT}}
+{\footnotesize\ttfamily \#define TIMERS\+\_\+\+MAX\+\_\+\+CANT~32}
 
 
 
-\subsection{Typedef Documentation}
+\doxysubsection{Typedef Documentation}
 \mbox{\Hypertarget{_d_r_v___timers_8h_a0b70e2941dede906fc97d15b026a16e1}\label{_d_r_v___timers_8h_a0b70e2941dede906fc97d15b026a16e1}} 
-\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!tim\+\_\+callback\+\_\+t@{tim\+\_\+callback\+\_\+t}}
-\index{tim\+\_\+callback\+\_\+t@{tim\+\_\+callback\+\_\+t}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}
-\subsubsection{\texorpdfstring{tim\+\_\+callback\+\_\+t}{tim\_callback\_t}}
+\index{DRV\_Timers.h@{DRV\_Timers.h}!tim\_callback\_t@{tim\_callback\_t}}
+\index{tim\_callback\_t@{tim\_callback\_t}!DRV\_Timers.h@{DRV\_Timers.h}}
+\doxysubsubsection{\texorpdfstring{tim\_callback\_t}{tim\_callback\_t}}
 {\footnotesize\ttfamily typedef void($\ast$ tim\+\_\+callback\+\_\+t) (void)}
 
 \mbox{\Hypertarget{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}\label{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}} 
-\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!tim\+\_\+id\+\_\+t@{tim\+\_\+id\+\_\+t}}
-\index{tim\+\_\+id\+\_\+t@{tim\+\_\+id\+\_\+t}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}
-\subsubsection{\texorpdfstring{tim\+\_\+id\+\_\+t}{tim\_id\_t}}
+\index{DRV\_Timers.h@{DRV\_Timers.h}!tim\_id\_t@{tim\_id\_t}}
+\index{tim\_id\_t@{tim\_id\_t}!DRV\_Timers.h@{DRV\_Timers.h}}
+\doxysubsubsection{\texorpdfstring{tim\_id\_t}{tim\_id\_t}}
 {\footnotesize\ttfamily typedef uint8\+\_\+t \mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\+\_\+id\+\_\+t}}}
 
 \mbox{\Hypertarget{_d_r_v___timers_8h_a21588d564d58c0716d3901da569691db}\label{_d_r_v___timers_8h_a21588d564d58c0716d3901da569691db}} 
-\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!ttick\+\_\+t@{ttick\+\_\+t}}
-\index{ttick\+\_\+t@{ttick\+\_\+t}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}
-\subsubsection{\texorpdfstring{ttick\+\_\+t}{ttick\_t}}
+\index{DRV\_Timers.h@{DRV\_Timers.h}!ttick\_t@{ttick\_t}}
+\index{ttick\_t@{ttick\_t}!DRV\_Timers.h@{DRV\_Timers.h}}
+\doxysubsubsection{\texorpdfstring{ttick\_t}{ttick\_t}}
 {\footnotesize\ttfamily typedef uint32\+\_\+t \mbox{\hyperlink{_d_r_v___timers_8h_a21588d564d58c0716d3901da569691db}{ttick\+\_\+t}}}
 
 
 
-\subsection{Enumeration Type Documentation}
-\mbox{\Hypertarget{_d_r_v___timers_8h_abc6126af1d45847bc59afa0aa3216b04}\label{_d_r_v___timers_8h_abc6126af1d45847bc59afa0aa3216b04}} 
-\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5}\label{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
 {\footnotesize\ttfamily anonymous enum}
 
 \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+I\+M\+\_\+\+M\+O\+D\+E\+\_\+\+S\+I\+N\+G\+L\+E\+S\+H\+OT@{T\+I\+M\+\_\+\+M\+O\+D\+E\+\_\+\+S\+I\+N\+G\+L\+E\+S\+H\+OT}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!T\+I\+M\+\_\+\+M\+O\+D\+E\+\_\+\+S\+I\+N\+G\+L\+E\+S\+H\+OT@{T\+I\+M\+\_\+\+M\+O\+D\+E\+\_\+\+S\+I\+N\+G\+L\+E\+S\+H\+OT}}}\mbox{\Hypertarget{_d_r_v___timers_8h_abc6126af1d45847bc59afa0aa3216b04a6155e9404d43a8e6efa4063c86efcfaf}\label{_d_r_v___timers_8h_abc6126af1d45847bc59afa0aa3216b04a6155e9404d43a8e6efa4063c86efcfaf}} 
-T\+I\+M\+\_\+\+M\+O\+D\+E\+\_\+\+S\+I\+N\+G\+L\+E\+S\+H\+OT&\\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_MODE\_SINGLESHOT@{TIM\_MODE\_SINGLESHOT}!DRV\_Timers.h@{DRV\_Timers.h}}\index{DRV\_Timers.h@{DRV\_Timers.h}!TIM\_MODE\_SINGLESHOT@{TIM\_MODE\_SINGLESHOT}}}\mbox{\Hypertarget{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5a6155e9404d43a8e6efa4063c86efcfaf}\label{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5a6155e9404d43a8e6efa4063c86efcfaf}} 
+TIM\+\_\+\+MODE\+\_\+\+SINGLESHOT&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+I\+M\+\_\+\+M\+O\+D\+E\+\_\+\+P\+E\+R\+I\+O\+D\+IC@{T\+I\+M\+\_\+\+M\+O\+D\+E\+\_\+\+P\+E\+R\+I\+O\+D\+IC}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!T\+I\+M\+\_\+\+M\+O\+D\+E\+\_\+\+P\+E\+R\+I\+O\+D\+IC@{T\+I\+M\+\_\+\+M\+O\+D\+E\+\_\+\+P\+E\+R\+I\+O\+D\+IC}}}\mbox{\Hypertarget{_d_r_v___timers_8h_abc6126af1d45847bc59afa0aa3216b04a7a1497f4309bf8f5d2fb0ac7695822c3}\label{_d_r_v___timers_8h_abc6126af1d45847bc59afa0aa3216b04a7a1497f4309bf8f5d2fb0ac7695822c3}} 
-T\+I\+M\+\_\+\+M\+O\+D\+E\+\_\+\+P\+E\+R\+I\+O\+D\+IC&\\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIM\_MODE\_PERIODIC@{TIM\_MODE\_PERIODIC}!DRV\_Timers.h@{DRV\_Timers.h}}\index{DRV\_Timers.h@{DRV\_Timers.h}!TIM\_MODE\_PERIODIC@{TIM\_MODE\_PERIODIC}}}\mbox{\Hypertarget{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5a7a1497f4309bf8f5d2fb0ac7695822c3}\label{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5a7a1497f4309bf8f5d2fb0ac7695822c3}} 
+TIM\+\_\+\+MODE\+\_\+\+PERIODIC&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+A\+N\+T\+\_\+\+T\+I\+M\+\_\+\+M\+O\+D\+ES@{C\+A\+N\+T\+\_\+\+T\+I\+M\+\_\+\+M\+O\+D\+ES}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!C\+A\+N\+T\+\_\+\+T\+I\+M\+\_\+\+M\+O\+D\+ES@{C\+A\+N\+T\+\_\+\+T\+I\+M\+\_\+\+M\+O\+D\+ES}}}\mbox{\Hypertarget{_d_r_v___timers_8h_abc6126af1d45847bc59afa0aa3216b04ae2f303315d389a36b806045ab38241e4}\label{_d_r_v___timers_8h_abc6126af1d45847bc59afa0aa3216b04ae2f303315d389a36b806045ab38241e4}} 
-C\+A\+N\+T\+\_\+\+T\+I\+M\+\_\+\+M\+O\+D\+ES&\\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CANT\_TIM\_MODES@{CANT\_TIM\_MODES}!DRV\_Timers.h@{DRV\_Timers.h}}\index{DRV\_Timers.h@{DRV\_Timers.h}!CANT\_TIM\_MODES@{CANT\_TIM\_MODES}}}\mbox{\Hypertarget{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5ae2f303315d389a36b806045ab38241e4}\label{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5ae2f303315d389a36b806045ab38241e4}} 
+CANT\+\_\+\+TIM\+\_\+\+MODES&\\
 \hline
 
 \end{DoxyEnumFields}
 
 
-\subsection{Function Documentation}
+\doxysubsection{Function Documentation}
 \mbox{\Hypertarget{_d_r_v___timers_8h_a9e737e3249388fb2e50d868bad69c688}\label{_d_r_v___timers_8h_a9e737e3249388fb2e50d868bad69c688}} 
-\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!init\+Timers@{init\+Timers}}
-\index{init\+Timers@{init\+Timers}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}
-\subsubsection{\texorpdfstring{init\+Timers()}{initTimers()}}
+\index{DRV\_Timers.h@{DRV\_Timers.h}!initTimers@{initTimers}}
+\index{initTimers@{initTimers}!DRV\_Timers.h@{DRV\_Timers.h}}
+\doxysubsubsection{\texorpdfstring{initTimers()}{initTimers()}}
 {\footnotesize\ttfamily void init\+Timers (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
@@ -142,9 +142,9 @@ C\+A\+N\+T\+\_\+\+T\+I\+M\+\_\+\+M\+O\+D\+ES&\\
 Initialice timer and corresponding peripheral. 
 
 \mbox{\Hypertarget{_d_r_v___timers_8h_a367713eae4c0901efd5b7336f20ddefa}\label{_d_r_v___timers_8h_a367713eae4c0901efd5b7336f20ddefa}} 
-\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!timer\+Delay@{timer\+Delay}}
-\index{timer\+Delay@{timer\+Delay}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}
-\subsubsection{\texorpdfstring{timer\+Delay()}{timerDelay()}}
+\index{DRV\_Timers.h@{DRV\_Timers.h}!timerDelay@{timerDelay}}
+\index{timerDelay@{timerDelay}!DRV\_Timers.h@{DRV\_Timers.h}}
+\doxysubsubsection{\texorpdfstring{timerDelay()}{timerDelay()}}
 {\footnotesize\ttfamily void timer\+Delay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___timers_8h_a21588d564d58c0716d3901da569691db}{ttick\+\_\+t}}}]{ticks }\end{DoxyParamCaption})}
 
 
@@ -157,9 +157,9 @@ Wait the specified time. Use internal timer.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_d_r_v___timers_8h_a9d870bec105107f492485b93d20867da}\label{_d_r_v___timers_8h_a9d870bec105107f492485b93d20867da}} 
-\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!timer\+Expired@{timer\+Expired}}
-\index{timer\+Expired@{timer\+Expired}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}
-\subsubsection{\texorpdfstring{timer\+Expired()}{timerExpired()}}
+\index{DRV\_Timers.h@{DRV\_Timers.h}!timerExpired@{timerExpired}}
+\index{timerExpired@{timerExpired}!DRV\_Timers.h@{DRV\_Timers.h}}
+\doxysubsubsection{\texorpdfstring{timerExpired()}{timerExpired()}}
 {\footnotesize\ttfamily bool timer\+Expired (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\+\_\+id\+\_\+t}}}]{id }\end{DoxyParamCaption})}
 
 
@@ -175,9 +175,9 @@ Verify if a timer has run timeout.
 1 = timer expired 
 \end{DoxyReturn}
 \mbox{\Hypertarget{_d_r_v___timers_8h_a482d96c2dea661ebf999865b82f776b8}\label{_d_r_v___timers_8h_a482d96c2dea661ebf999865b82f776b8}} 
-\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!timer\+Get\+Id@{timer\+Get\+Id}}
-\index{timer\+Get\+Id@{timer\+Get\+Id}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}
-\subsubsection{\texorpdfstring{timer\+Get\+Id()}{timerGetId()}}
+\index{DRV\_Timers.h@{DRV\_Timers.h}!timerGetId@{timerGetId}}
+\index{timerGetId@{timerGetId}!DRV\_Timers.h@{DRV\_Timers.h}}
+\doxysubsubsection{\texorpdfstring{timerGetId()}{timerGetId()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\+\_\+id\+\_\+t}} timer\+Get\+Id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
@@ -188,9 +188,9 @@ Request an timer.
 ID of the timer to use 
 \end{DoxyReturn}
 \mbox{\Hypertarget{_d_r_v___timers_8h_a03e4dcebc46bc9c08d903d44fbb8f834}\label{_d_r_v___timers_8h_a03e4dcebc46bc9c08d903d44fbb8f834}} 
-\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!timer\+Start@{timer\+Start}}
-\index{timer\+Start@{timer\+Start}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}
-\subsubsection{\texorpdfstring{timer\+Start()}{timerStart()}}
+\index{DRV\_Timers.h@{DRV\_Timers.h}!timerStart@{timerStart}}
+\index{timerStart@{timerStart}!DRV\_Timers.h@{DRV\_Timers.h}}
+\doxysubsubsection{\texorpdfstring{timerStart()}{timerStart()}}
 {\footnotesize\ttfamily void timer\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\+\_\+id\+\_\+t}}}]{id,  }\item[{\mbox{\hyperlink{_d_r_v___timers_8h_a21588d564d58c0716d3901da569691db}{ttick\+\_\+t}}}]{ticks,  }\item[{uint8\+\_\+t}]{mode,  }\item[{\mbox{\hyperlink{_d_r_v___timers_8h_a0b70e2941dede906fc97d15b026a16e1}{tim\+\_\+callback\+\_\+t}}}]{callback }\end{DoxyParamCaption})}
 
 
@@ -203,15 +203,15 @@ Begin to run a new timer.
 \hline
 {\em ticks} & time until timer expires, in ticks \\
 \hline
-{\em mode} & S\+I\+N\+G\+L\+E\+S\+H\+OT or P\+E\+R\+I\+O\+D\+IC \\
+{\em mode} & SINGLESHOT or PERIODIC \\
 \hline
 {\em callback} & Function to be call when timer expires \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{_d_r_v___timers_8h_a1d8fc7435aca9180251cd17ee1f61cb4}\label{_d_r_v___timers_8h_a1d8fc7435aca9180251cd17ee1f61cb4}} 
-\index{D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}!timer\+Stop@{timer\+Stop}}
-\index{timer\+Stop@{timer\+Stop}!D\+R\+V\+\_\+\+Timers.\+h@{D\+R\+V\+\_\+\+Timers.\+h}}
-\subsubsection{\texorpdfstring{timer\+Stop()}{timerStop()}}
+\index{DRV\_Timers.h@{DRV\_Timers.h}!timerStop@{timerStop}}
+\index{timerStop@{timerStop}!DRV\_Timers.h@{DRV\_Timers.h}}
+\doxysubsubsection{\texorpdfstring{timerStop()}{timerStop()}}
 {\footnotesize\ttfamily void timer\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\+\_\+id\+\_\+t}}}]{id }\end{DoxyParamCaption})}
 
 

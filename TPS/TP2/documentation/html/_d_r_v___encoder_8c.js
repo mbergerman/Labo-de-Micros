@@ -2,7 +2,7 @@ var _d_r_v___encoder_8c =
 [
     [ "PIN_A", "_d_r_v___encoder_8c.html#ad7c0c16486a5a3e1579cc8e384d7f96a", null ],
     [ "PIN_B", "_d_r_v___encoder_8c.html#a9fda21ec50fc75d0fa9bbcb33bf560ff", null ],
-    [ "PIN_SWA", "_d_r_v___encoder_8c.html#af0bbce43e84c5c35ff422da2a3278b88", null ],
+    [ "PIN_SWITCH", "_d_r_v___encoder_8c.html#aff50e04f4467fb9c5b259e2ee6f21464", null ],
     [ "SW_ACTIVE", "_d_r_v___encoder_8c.html#a4f5376783549da38da34aefaaafc7e57", null ],
     [ "states", "_d_r_v___encoder_8c.html#aa19be6305a5a4485e1e70de70ed7d677", [
       [ "START", "_d_r_v___encoder_8c.html#aa19be6305a5a4485e1e70de70ed7d677a13d000b4d7dc70d90239b7430d1eb6b2", null ],

@@ -1,6 +1,6 @@
 var struct_p_i_t___type =
 [
-    [ "CHANNEL", "group___v_r_e_f___peripheral___access___layer.html#gab04f5654f5af63fa2e971faccfc67617", null ],
+    [ "CHANNEL", "group___v_r_e_f___peripheral___access___layer.html#ga3196acb697cd321dd9f7497b216fbfb8", null ],
     [ "CVAL", "group___v_r_e_f___peripheral___access___layer.html#gad4fcb6f0bd4cbbc890593eeb21152a92", null ],
     [ "LDVAL", "group___v_r_e_f___peripheral___access___layer.html#ga7066d020800ce5572217b4dd7be33245", null ],
     [ "MCR", "group___v_r_e_f___peripheral___access___layer.html#ga27af4e9f888f0b7b1e8da7e002d98798", null ],

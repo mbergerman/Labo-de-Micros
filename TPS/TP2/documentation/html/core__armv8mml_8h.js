@@ -707,6 +707,6 @@ var core__armv8mml_8h =
     [ "ITM_SendChar", "group___c_m_s_i_s__core___debug_functions.html#gac90a497bd64286b84552c2c553d3419e", null ],
     [ "NVIC_DecodePriority", "group___c_m_s_i_s___core___n_v_i_c_functions.html#ga3387607fd8a1a32cccd77d2ac672dd96", null ],
     [ "NVIC_EncodePriority", "group___c_m_s_i_s___core___n_v_i_c_functions.html#gadb94ac5d892b376e4f3555ae0418ebac", null ],
-    [ "SCB_GetFPUType", "group___c_m_s_i_s___core___fpu_functions.html#ga6bcad99ce80a0e7e4ddc6f2379081756", null ],
+    [ "SCB_GetFPUType", "group___c_m_s_i_s___core___n_v_i_c_functions.html#ga6bcad99ce80a0e7e4ddc6f2379081756", null ],
     [ "ITM_RxBuffer", "group___c_m_s_i_s__core___debug_functions.html#ga12e68e55a7badc271b948d6c7230b2a8", null ]
 ];

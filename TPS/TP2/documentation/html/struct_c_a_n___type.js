@@ -10,7 +10,7 @@ var struct_c_a_n___type =
     [ "ID", "group___v_r_e_f___peripheral___access___layer.html#ga88105bb6b46e81bf45146d2a365bc255", null ],
     [ "IFLAG1", "group___v_r_e_f___peripheral___access___layer.html#gaa45c5366e27007e4ceedba56462d190c", null ],
     [ "IMASK1", "group___v_r_e_f___peripheral___access___layer.html#ga0071f98a0dbef8205320a7b4b1dd9031", null ],
-    [ "MB", "group___v_r_e_f___peripheral___access___layer.html#gaf9e0c314b6fd1e78c8d6708776c8a9f8", null ],
+    [ "MB", "group___v_r_e_f___peripheral___access___layer.html#ga407be563596fc665508ae27472081670", null ],
     [ "MCR", "group___v_r_e_f___peripheral___access___layer.html#ga27af4e9f888f0b7b1e8da7e002d98798", null ],
     [ "RESERVED_0", "group___v_r_e_f___peripheral___access___layer.html#ga71277aaa40be4473ac2521981f273bd3", null ],
     [ "RESERVED_1", "group___v_r_e_f___peripheral___access___layer.html#ga422ac2beba1cc5c797380d1c5832b885", null ],

@@ -4,142 +4,77 @@
   @author   Grupo 1
  ******************************************************************************/
 
+/*******************************************************************************
+ * INCLUDE HEADER FILES
+ ******************************************************************************/
+
 #include "DRV_Board.h"
 #include "DRV_Encoder.h"
 #include "DRV_Timers.h"
 
+/*******************************************************************************
+ * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
+ ******************************************************************************/
+
 //Definiciones de pines que irian en config
 #define PIN_A 		PORTNUM2PIN(PA,1)
 #define PIN_B 		PORTNUM2PIN(PB,23)
-#define PIN_SWA 	PORTNUM2PIN(PA,2)
+#define PIN_SWITCH 	PORTNUM2PIN(PA,2)
 #define SW_ACTIVE 	LOW
 
-//Valores actuales de A, B y C que se actualizan con getCurr()
-static bool A_curr;
-static bool B_curr;
-static bool C_curr;
-
-//Data de encoder
-static bool status;
-static encoderResult_t data;
-
-//Def del timer
-static tim_id_t encoder_timer;
+/*******************************************************************************
+ * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
+ ******************************************************************************/
 
 //Estados de la FSM
 enum states {START, CW1, CW2, CW3, ACW1, ACW2, ACW3};
 
-//FSM que determina si se realizo un movimiento en sentido horario (CW) o antihorario (ACW)
-static encoderResult_t CheckMovement(bool A, bool B){
+/*******************************************************************************
+ * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
+ ******************************************************************************/
 
-    static enum states CurrentState = START;
-    static bool last_sw = false;
+static encoderResult_t check_event(bool A, bool B);
+static void get_current_pin_values(void);
+static void encoder_callback(void);
 
+/*******************************************************************************
+ * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
+ ******************************************************************************/
 
-    bool current_sw = C_curr == SW_ACTIVE;
-    encoderResult_t result = ENC_NONE;
-    if(!last_sw && current_sw){
-    	result = ENC_CLICK;
-    	status = true;
-    }
-    last_sw = current_sw;
+//Valores actuales de A, B y D que se actualizan con get_current_pin_values()
+static bool A_current_value;
+static bool B_current_value;
+static bool switch_current_value;
 
-    switch(CurrentState){
-        case START:
-                if (A && !B){  
-                    CurrentState = CW1;
-                }
-                if (!A && B){
-                    CurrentState = ACW1;
-                }
-        break;
-        case CW1:
-                if(!A && !B){
-                    CurrentState = CW2;
-                }
-                else if(A && !B){
-                }
-                else{
-                    CurrentState = START;
-                }
-        break;
-        case CW2:
-                if(!A && B){
-                    CurrentState = CW3;
-                }
-                else if(!A && !B){
-                }
-                else{
-                    CurrentState = START;
-                }
-        break;
-        case CW3:
-                if(A && B){
-                    CurrentState = START;
-                    result = ENC_RIGHT;
-                    status = true;
-                } 
-                else if(!A && B){
-                      
-                }
-                else{
-                    CurrentState = START;
-                }
-        break;
-        case ACW1:
-                if(!A && !B){
-                    CurrentState = ACW2;
-                }
-                else if(!A && B){
-                }
-                else{
-                    CurrentState = START;
-                }
-        break;
-        case ACW2:
-                if(A && !B){
-                    CurrentState = ACW3;
-                }
-                else if(!A && !B){
-                    
-                }
-                else{
-                    CurrentState = START;
-                }
-        break;
-        case ACW3:
-                if(A && B){
-                    CurrentState = START;
-                    result = ENC_LEFT;
-                    status = true;
-                } 
-                else if(A && !B){
-                      
-                }
-                else{
-                    CurrentState = START;
-                }
-        break;
-        default:
-        break;
-    }
-    return result;
-}
+//Data de encoder
+static bool status;
+static encoderResult_t encoder_event;
 
+//Def del timer
+static tim_id_t encoder_timer;
 
-static void getCurr(void){
+/*******************************************************************************
+ *******************************************************************************
+                        GLOBAL FUNCTION DEFINITIONS
+ *******************************************************************************
+ ******************************************************************************/
 
-	A_curr = gpioRead(PIN_A);
-	B_curr = gpioRead(PIN_B);
-    C_curr = gpioRead(PIN_SWA);
+void initEncoder() {
+    //Inicializo Timer
+	initTimers();
+	encoder_timer = timerGetId();
 
-}
+    //Inicializo Data
+    encoder_event = ENC_NONE;
+    status = false;
 
-static void callbackEncoder(void) {   
+    //Seteo los Pines
+	gpioMode(PIN_A, INPUT);
+	gpioMode(PIN_B, INPUT);
+	gpioMode(PIN_SWITCH, INPUT);
 
-    getCurr(); // Busco valores actuales de A, B y C
-
-    data = CheckMovement(A_curr, B_curr);   //FSM analiza los valores actuales
+    //Seteo el timer para que llame periodicamente a encoder_callback con 1ms
+	timerStart(encoder_timer, TIMER_MS2TICKS(1), TIM_MODE_PERIODIC, encoder_callback);
 }
 
 bool encoderGetStatus(){
@@ -152,23 +87,124 @@ bool encoderGetStatus(){
 }
 
 encoderResult_t encoderGetEvent(){
-	return data;
+	return encoder_event;
 }
 
-void initEncoder() {
-    //Inicializo Timer
-	initTimers();
-	encoder_timer = timerGetId();
+/*******************************************************************************
+ *******************************************************************************
+                        LOCAL FUNCTION DEFINITIONS
+ *******************************************************************************
+ ******************************************************************************/
 
-    //Inicializo Data 
-    data = ENC_NONE;
-    status = false;
+//FSM que determina si se realizo un movimiento en sentido horario (CW) o antihorario (ACW)
+static encoderResult_t check_event(bool A, bool B){
 
-    //Seteo los Pines
-	gpioMode(PIN_A, INPUT);
-	gpioMode(PIN_B, INPUT);
-	gpioMode(PIN_SWA, INPUT);
+    static enum states current_state = START;
+    static bool last_sw = false;
 
-    //Seteo el timer para que llame periodicamente a callbackEncoder con 10ms
-	timerStart(encoder_timer, TIMER_MS2TICKS(1), TIM_MODE_PERIODIC, callbackEncoder);
+    encoderResult_t result = ENC_NONE;
+
+    // Reviso si hubo un flanco del switch
+    bool current_sw = switch_current_value == SW_ACTIVE;
+    if(!last_sw && current_sw){
+    	result = ENC_CLICK;
+    	status = true;
+    }
+    last_sw = current_sw;
+
+    // Analizo el estado de la FSM del encoder
+    switch(current_state){
+        case START:
+                if (A && !B){  
+                    current_state = CW1;
+                }
+                if (!A && B){
+                    current_state = ACW1;
+                }
+        break;
+        case CW1:
+                if(!A && !B){
+                    current_state = CW2;
+                }
+                else if(A && !B){
+                }
+                else{
+                    current_state = START;
+                }
+        break;
+        case CW2:
+                if(!A && B){
+                	current_state = CW3;
+                }
+                else if(!A && !B){
+                }
+                else{
+                    current_state = START;
+                }
+        break;
+        case CW3:
+                if(A && B){
+                    current_state = START;
+                    result = ENC_RIGHT;
+                    status = true;
+                } 
+                else if(!A && B){
+                      
+                }
+                else{
+                    current_state = START;
+                }
+        break;
+        case ACW1:
+                if(!A && !B){
+                    current_state = ACW2;
+                }
+                else if(!A && B){
+                }
+                else{
+                    current_state = START;
+                }
+        break;
+        case ACW2:
+                if(A && !B){
+                    current_state = ACW3;
+                }
+                else if(!A && !B){
+                    
+                }
+                else{
+                    current_state = START;
+                }
+        break;
+        case ACW3:
+                if(A && B){
+                    current_state = START;
+                    result = ENC_LEFT;
+                    status = true;
+                } 
+                else if(A && !B){
+                      
+                }
+                else{
+                    current_state = START;
+                }
+        break;
+        default: break;
+    }
+    return result;
+}
+
+static void get_current_pin_values(void){
+
+	A_current_value = gpioRead(PIN_A);
+	B_current_value = gpioRead(PIN_B);
+    switch_current_value = gpioRead(PIN_SWITCH);
+
+}
+
+static void encoder_callback(void){
+
+    get_current_pin_values(); // Busco valores actuales de A, B y switch
+
+    encoder_event = check_event(A_current_value, B_current_value);   // FSM analiza si ocurre un evento
 }

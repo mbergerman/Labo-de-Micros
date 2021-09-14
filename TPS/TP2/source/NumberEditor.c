@@ -1,7 +1,7 @@
 /***************************************************************************//**
-  @file     +Nombre del archivo (ej: template.c)+
-  @brief    +Descripcion del archivo+
-  @author   +Nombre del autor (ej: Salvador Allende)+
+  @file     NumberEditor.c
+  @brief    Editor de numeros
+  @author   Grupo 1
  ******************************************************************************/
 
 /*******************************************************************************
@@ -72,13 +72,14 @@ static tim_id_t blink_dp_tim_id;
  *******************************************************************************
  ******************************************************************************/
 
-void init_number_editor(){
+void initNumberEditor(){
 	blink_dp_tim_id = timerGetId();
 }
 
+// Inicio el módulo number editor con parametros iniciales
 // editor_len: cuántos numero queres editar?
 // flag_next: si queres que haya un botón de 'ok' (flechita para la derecha)
-void start_number_editor(uint8_t editor_len, bool flag_next, bool flag_hidden){
+void numberEditorStart(uint8_t editor_len, bool flag_next, bool flag_hidden){
 	editor_state = STATE_EDITOR_SCROLL;
 	number_editor_len = editor_len;
 	number_editor_flag_hidden = flag_hidden;
@@ -103,13 +104,14 @@ void start_number_editor(uint8_t editor_len, bool flag_next, bool flag_hidden){
 	dispWriteBuffer(number_editor_len+1+flag_next , display_editor_array);
 }
 
-void set_number_editor_digit(uint8_t n, uint8_t digit){
+void numberEditorSetDigit(uint8_t n, uint8_t digit){
 	number_editor_array[n+1] = digit;
 	display_editor_array[n+1] = (number_editor_flag_hidden)? '-': '0'+digit;
 	dispWriteChar(n+1, display_editor_array[n+1]);
 }
 
-void number_editor_right() {
+// Le indica al number editor que hay un evento de ENC_RIGHT
+void numberEditorRight() {
 	switch(editor_state) {
 	case STATE_EDITOR_SCROLL:
 		if ( (digit_pointer - number_editor_array) < (number_editor_len + (uint8_t)number_editor_flag_next) ) {
@@ -149,7 +151,8 @@ void number_editor_right() {
 	}
 }
 
-void number_editor_left() {
+// Le indica al number editor que hay un evento de ENC_LEFT
+void numberEditorLeft() {
 	switch(editor_state) {
 	case STATE_EDITOR_SCROLL:
 		if ( (digit_pointer - number_editor_array) > 0 ) {
@@ -188,11 +191,16 @@ void number_editor_left() {
 }
 
 
+
+
+// Le indica al number editor que hay un evento de ENC_CLICK
+// Este devuelve el evento pertinente
+
 // Si clickeas en '<' devuelve PREV
 // Si clickeas en '>' devuelve NEXT
 // Si clickeas en un dígito devuelve NONE
 
-editorEvent_t number_editor_click() {
+editorEvent_t numberEditorClick() {
 	switch(editor_state) {
 	case STATE_EDITOR_SCROLL:
 		if ( digit_pointer - number_editor_array == 0 ){
@@ -217,7 +225,7 @@ editorEvent_t number_editor_click() {
 	return EVENT_EDITOR_NONE;
 }
 
-
+// Retorna el valor en formato int del número ingresado
 uint32_t getBufferNumber(){
 	uint32_t result = 0;
 	for(int i = 1; i <= number_editor_len; i++){

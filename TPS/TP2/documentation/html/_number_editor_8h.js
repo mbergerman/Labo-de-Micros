@@ -7,10 +7,10 @@ var _number_editor_8h =
     ] ],
     [ "getBufferNumber", "_number_editor_8h.html#abb98a80ae432a076b3fd0ed7cf75d1db", null ],
     [ "getNumberLen", "_number_editor_8h.html#a4b080cbb504d3691205dfa6dc28fb545", null ],
-    [ "init_number_editor", "_number_editor_8h.html#a33b2c3d483df458b5d0f941a72b62452", null ],
-    [ "number_editor_click", "_number_editor_8h.html#a50f2e5a4bfe56cace34a4701674f903c", null ],
-    [ "number_editor_left", "_number_editor_8h.html#abdd6782394104dfcd081912927d8d080", null ],
-    [ "number_editor_right", "_number_editor_8h.html#a61edad920a239fa2dcb8a82caa8a03bb", null ],
-    [ "set_number_editor_digit", "_number_editor_8h.html#a15cc6f83faf4af586d2fece59315615d", null ],
-    [ "start_number_editor", "_number_editor_8h.html#a290913655791fd26c513167a178765e2", null ]
+    [ "initNumberEditor", "_number_editor_8h.html#aeeb9593c11489eef6f1855be7123b5ab", null ],
+    [ "numberEditorClick", "_number_editor_8h.html#a228d6fbfc652e62a678c34250dea7932", null ],
+    [ "numberEditorLeft", "_number_editor_8h.html#a9c65916027ef2de15a48c8b9fba405f0", null ],
+    [ "numberEditorRight", "_number_editor_8h.html#ab194a9bf0cdf890751fe25431cd81380", null ],
+    [ "numberEditorSetDigit", "_number_editor_8h.html#a44a75a828f9e115b39d741065aa0edb7", null ],
+    [ "numberEditorStart", "_number_editor_8h.html#ad3e30f55497851a510ac4a93a1e6cd67", null ]
 ];

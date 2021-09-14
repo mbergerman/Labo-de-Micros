@@ -10,6 +10,8 @@ var _p_d_r_v___sys_tick_8c =
     [ "FCLK", "_p_d_r_v___sys_tick_8c.html#a6ebe466e477d394ca5bb309b35b6bc39", null ],
     [ "RELOAD_VALUE", "_p_d_r_v___sys_tick_8c.html#a786fc72cc1b8facb7dd6aff9bb068d9c", null ],
     [ "RVR_MASK", "_p_d_r_v___sys_tick_8c.html#aa7ad5eced22dae581a75160075cfe9bd", null ],
+    [ "SYSTICK_DEVELOPMENT_MODE", "_p_d_r_v___sys_tick_8c.html#a1e163d6c6e67381d91c17aa5b46a5b1b", null ],
+    [ "SYSTICK_IRQ_TEST_PIN", "_p_d_r_v___sys_tick_8c.html#a1b89625a06317ed8b7299a61ccf008c5", null ],
     [ "TICKINT_MASK", "_p_d_r_v___sys_tick_8c.html#adedb09ae4cec8a9a45c51b3f24868096", null ],
     [ "SysTick_Handler", "_p_d_r_v___sys_tick_8c.html#ac139f26cc440c13fe1b2c959cc55c3d4", null ],
     [ "SysTick_Init", "_p_d_r_v___sys_tick_8c.html#ab2a8b988c01547bab2f66998dedf990e", null ]

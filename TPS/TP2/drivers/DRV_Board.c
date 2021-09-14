@@ -66,6 +66,10 @@ void initBoard(){
 	clearLED(RED);
 	clearLED(GREEN);
 	clearLED(BLUE);
+
+#ifdef GPIO_DEVELOPMENT_MODE
+	gpioMode(GPIO_IRQ_TEST_PIN, OUTPUT);
+#endif //GPIO_DEVELOPMENT_MODE
 }
 
 void setLED(LED_t led, bool value){
