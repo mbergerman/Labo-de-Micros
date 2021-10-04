@@ -50,9 +50,11 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-TPS/TP2/.settings/language.settings.xml
-TPS/TP2/Debug/source/subdir.mk
-TPS/TP2/Debug/TP2_G1.axf
-TPS/TP2/Debug/TP2_G1_Debug.ld
-TPS/TP2/Debug/TP2_G1_Debug_library.ld
-TPS/TP2/Debug/TP2_G1_Debug_memory.ld
+
+*.xml
+*.mk
+*.axf
+*.ld
+*.cproject
+*.project
+*.launch

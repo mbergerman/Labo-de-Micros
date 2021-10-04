@@ -1,0 +1,669 @@
+\hypertarget{_d_r_v___display_8c}{}\doxysection{drivers/\+DRV\+\_\+\+Display.c File Reference}
+\label{_d_r_v___display_8c}\index{drivers/DRV\_Display.c@{drivers/DRV\_Display.c}}
+
+
+7-\/segment display driver  
+
+
+{\ttfamily \#include \char`\"{}DRV\+\_\+\+Display.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DRV\+\_\+\+Timers.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structselector__data__t}{selector\+\_\+data\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_ac328e551bde3d39b6d7b8cc9e048d941}{ZERO}}~0b0111111
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a206b6f5362e56b51ca957635350b70b6}{ONE}}~0b0000110
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a888e15353eb3d330c743dbdeb47117e2}{TWO}}~0b1011011
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a1859c475c0bde19dfc1101e35d71b939}{THREE}}~0b1001111
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a64a9b58c6a5bcd3724f3b56ad6d006a7}{FOUR}}~0b1100110
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a18ced145d1fdc806b5006bd4c2857026}{FIVE}}~0b1101101
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_afad3d8b3d66fceadb1732af784734c75}{SIX}}~0b1111101
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_ac537e6e7dad3ecef73fc3fc4f14fe020}{SEVEN}}~0b0000111
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_aaf6cfeda610d5092df7deb18fd5d63c2}{EIGHT}}~0b1111111
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_aef08329d0c1db97d7b269330ae9a70af}{NINE}}~0b1101111
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_ae8e64d335a7d301ef16da5ae2730ac0f}{LET\+\_\+C}}~0b0111001
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_aa94de5143ecf5811a7b5ff372173accb}{LET\+\_\+A}}~0b0110111
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a2444f17f6f8ce2a6307dd27dc2ea8b8a}{LET\+\_\+R}}~0b1010000
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_af7c7eca3514d0536640dc60d89774827}{LET\+\_\+D}}~0b1011110
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a81263d15c81ed5eb77c3bcafabdac26d}{LET\+\_\+P}}~0b1110011
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_aa953b70a0aeec161e64a8e32dc0b9287}{LET\+\_\+I}}~0b0110000
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_ad4def4f0931d89758e39d836b5f3a48e}{LET\+\_\+N}}~0b1010100
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_ac134d6c8d7786f02a9c07064dd1282dc}{LET\+\_\+E}}~0b1111001
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_aa4750a7758a6279af9cbb6a584c454b2}{LET\+\_\+F}}~0b1110001
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a7d1d15b686744b9598524167ba9e731f}{LET\+\_\+U}}~0b0111110
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a17b5a60bcbae0680dc9a0e012fe2ce95}{LET\+\_\+H}}~0b1110110
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_ab0f8ced74bd084b758ebe55bdb90a44a}{LET\+\_\+O}}~0b0111111
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a5f596fb52a27b9882cce0b6b99b78ad3}{LET\+\_\+T}}~0b1111000
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a38a5d96af76175189e5ea4c88db0a68d}{LET\+\_\+G}}~0b0111101
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a5567eac832ed6602059ce7d9870f5860}{LET\+\_\+L}}~0b0111000
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a6929cea12c71c70088af8ba53000c6ae}{LET\+\_\+S}}~0b1101101
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a057b199da07870536aa781f78a12b61f}{LET\+\_\+J}}~0b0011110
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_aa583d241e986840385402bab4b58c9f2}{LET\+\_\+Q}}~0b1100111
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a8054130c09bf122c7b053f90f4bee0d5}{LET\+\_\+Y}}~0b1101110
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_af4440e5125b9af4a7bf408e20be0c379}{LET\+\_\+B}}~0b1111100
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a2addc9e46baf52fbd15ba480d85fb8b8}{SYM\+\_\+\+\_\+}}~0b0001000
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_afdc3669f49d6e0ccae7c801f7df8b881}{SYM\+\_\+\+DASH}}~0b1000000
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a5b3fbffeadd53e0380b3c1e193886a39}{SYM\+\_\+\+BACK}}~0b0100001
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_aeb6f6c8b13f8b6219d09202f1967df82}{SYM\+\_\+\+FRWD}}~0b0001100
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_aa3b532dc1dfcb8b6683540476e7589e9}{SEL0}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},17)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a7fc3ebaf23e24324e05c158644703067}{SEL1}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04a8b7dd81ba2f0d15957795457d92ce139}{PB}},9)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a20ca592d6a4b9ad9c21dab8da1b4ce93}{SSEGA}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04a8b7dd81ba2f0d15957795457d92ce139}{PB}},18)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_af464b6f08892c553d3b8660e289a347d}{SSEGB}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04a8b7dd81ba2f0d15957795457d92ce139}{PB}},19)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a5702922f7b971b48f5287baaf71a00d7}{SSEGC}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},1)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a4e534eae23e8980291a3b0c4b4f5692b}{SSEGD}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},8)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_ad2cd044d0b229ec87e917ebaaf1b6992}{SSEGE}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},9)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_ac63c4c9dec994959bd7c6e68c6ba9fb3}{SSEGF}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},0)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a199491a351e6742945e35f3a61242273}{SSEGG}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},7)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_a1d406eddb72bdeb58625d8baa54250dc}{SSEGDP}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},5)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___display_8c_aa0cd7b8b90e45eabbdf4a1f0626ab9b4}{VALIDCHARS}}~54
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structselector__data__t}{selector\+\_\+data\+\_\+t}} \mbox{\hyperlink{_d_r_v___display_8c_a33d1f8844621110eee19cffeca4da32f}{selector\+\_\+data\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_a1a9171e2595ab20c0d50a6b9ba243997}{init\+Display}} ()
+\begin{DoxyCompactList}\small\item\em Initialize display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_a82b49831690c342069ad4f428cae5e61}{disp\+Clear\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Clears the display buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_ad00f5868f176187b270a7080d78dff9e}{disp\+Clear\+Char}} (int n)
+\begin{DoxyCompactList}\small\item\em Clears the character from position n from the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_ae060797a83c109f6bd357d8b3d980f56}{disp\+Write\+Char}} (int n, char character)
+\begin{DoxyCompactList}\small\item\em Sets character in position n of the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_a6500a77a9aec67f9d83e6f8b03a1f192}{disp\+Write\+Buffer}} (int c, const char $\ast$word)
+\begin{DoxyCompactList}\small\item\em Sets word of length c in the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_af1a015e3c5565ef030fec23921f1a6c0}{disp\+Update\+Refresh\+Rate}} (int refresh\+Rate)
+\begin{DoxyCompactList}\small\item\em Updates the refresh rate of the display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_a278ed4464485157b9579be0db6ecf1a3}{disp\+Update\+Brightness}} (int brightness)
+\begin{DoxyCompactList}\small\item\em Updates the brightness of the display. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_d_r_v___display_8c_ab0b20802e79e6235241df747854f8765}{disp\+Get\+Brightness}} ()
+\begin{DoxyCompactList}\small\item\em Returns current display brightness. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_a7147ac15263b2fdc3e1f8491697292e4}{disp\+Scroll\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Scroll display to the left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_ac217e6c75ca80b82afe700b9ce024294}{disp\+Scroll\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Scroll display to the right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_a7f77d4be414c1ef99847d387917a3870}{disp\+Start\+Auto\+Scroll}} (int speed)
+\begin{DoxyCompactList}\small\item\em Initialize autoscroll with specified speed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_a1748ae93f3d907dab9fb47fd4b481594}{disp\+Stop\+Auto\+Scroll}} ()
+\begin{DoxyCompactList}\small\item\em Stop autoscroll. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_ac7715f91cb1f99c919ee00327e79c7fa}{disp\+Set\+Buffer\+Pos}} (int n)
+\begin{DoxyCompactList}\small\item\em Sets n as the starting print position for the buffer. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{_d_r_v___display_8c_a00c499300ac10262772db567c5f67278}{disp\+Get\+Buffer\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em Get starting print position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_a46d9b2124fe5c5be680425d5a5c17d3f}{disp\+Set\+DP}} (int n)
+\begin{DoxyCompactList}\small\item\em Turns on the decimal point of the nth seven segment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_afd7c4be152510beeb065c9fe7e4c060e}{disp\+Clear\+DP}} (int n)
+\begin{DoxyCompactList}\small\item\em Turns off the decimal point of the nth seven segment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___display_8c_a23d2e2688f5aaa319a5884169c526e4f}{disp\+Toggle\+DP}} (int n)
+\begin{DoxyCompactList}\small\item\em Toggles the decimal point of the nth seven segment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+7-\/segment display driver 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_d_r_v___display_8c_aaf6cfeda610d5092df7deb18fd5d63c2}\label{_d_r_v___display_8c_aaf6cfeda610d5092df7deb18fd5d63c2}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!EIGHT@{EIGHT}}
+\index{EIGHT@{EIGHT}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{EIGHT}{EIGHT}}
+{\footnotesize\ttfamily \#define EIGHT~0b1111111}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a18ced145d1fdc806b5006bd4c2857026}\label{_d_r_v___display_8c_a18ced145d1fdc806b5006bd4c2857026}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!FIVE@{FIVE}}
+\index{FIVE@{FIVE}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{FIVE}{FIVE}}
+{\footnotesize\ttfamily \#define FIVE~0b1101101}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a64a9b58c6a5bcd3724f3b56ad6d006a7}\label{_d_r_v___display_8c_a64a9b58c6a5bcd3724f3b56ad6d006a7}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!FOUR@{FOUR}}
+\index{FOUR@{FOUR}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{FOUR}{FOUR}}
+{\footnotesize\ttfamily \#define FOUR~0b1100110}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_aa94de5143ecf5811a7b5ff372173accb}\label{_d_r_v___display_8c_aa94de5143ecf5811a7b5ff372173accb}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_A@{LET\_A}}
+\index{LET\_A@{LET\_A}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_A}{LET\_A}}
+{\footnotesize\ttfamily \#define LET\+\_\+A~0b0110111}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_af4440e5125b9af4a7bf408e20be0c379}\label{_d_r_v___display_8c_af4440e5125b9af4a7bf408e20be0c379}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_B@{LET\_B}}
+\index{LET\_B@{LET\_B}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_B}{LET\_B}}
+{\footnotesize\ttfamily \#define LET\+\_\+B~0b1111100}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_ae8e64d335a7d301ef16da5ae2730ac0f}\label{_d_r_v___display_8c_ae8e64d335a7d301ef16da5ae2730ac0f}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_C@{LET\_C}}
+\index{LET\_C@{LET\_C}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_C}{LET\_C}}
+{\footnotesize\ttfamily \#define LET\+\_\+C~0b0111001}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_af7c7eca3514d0536640dc60d89774827}\label{_d_r_v___display_8c_af7c7eca3514d0536640dc60d89774827}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_D@{LET\_D}}
+\index{LET\_D@{LET\_D}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_D}{LET\_D}}
+{\footnotesize\ttfamily \#define LET\+\_\+D~0b1011110}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_ac134d6c8d7786f02a9c07064dd1282dc}\label{_d_r_v___display_8c_ac134d6c8d7786f02a9c07064dd1282dc}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_E@{LET\_E}}
+\index{LET\_E@{LET\_E}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_E}{LET\_E}}
+{\footnotesize\ttfamily \#define LET\+\_\+E~0b1111001}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_aa4750a7758a6279af9cbb6a584c454b2}\label{_d_r_v___display_8c_aa4750a7758a6279af9cbb6a584c454b2}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_F@{LET\_F}}
+\index{LET\_F@{LET\_F}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_F}{LET\_F}}
+{\footnotesize\ttfamily \#define LET\+\_\+F~0b1110001}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a38a5d96af76175189e5ea4c88db0a68d}\label{_d_r_v___display_8c_a38a5d96af76175189e5ea4c88db0a68d}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_G@{LET\_G}}
+\index{LET\_G@{LET\_G}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_G}{LET\_G}}
+{\footnotesize\ttfamily \#define LET\+\_\+G~0b0111101}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a17b5a60bcbae0680dc9a0e012fe2ce95}\label{_d_r_v___display_8c_a17b5a60bcbae0680dc9a0e012fe2ce95}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_H@{LET\_H}}
+\index{LET\_H@{LET\_H}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_H}{LET\_H}}
+{\footnotesize\ttfamily \#define LET\+\_\+H~0b1110110}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_aa953b70a0aeec161e64a8e32dc0b9287}\label{_d_r_v___display_8c_aa953b70a0aeec161e64a8e32dc0b9287}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_I@{LET\_I}}
+\index{LET\_I@{LET\_I}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_I}{LET\_I}}
+{\footnotesize\ttfamily \#define LET\+\_\+I~0b0110000}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a057b199da07870536aa781f78a12b61f}\label{_d_r_v___display_8c_a057b199da07870536aa781f78a12b61f}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_J@{LET\_J}}
+\index{LET\_J@{LET\_J}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_J}{LET\_J}}
+{\footnotesize\ttfamily \#define LET\+\_\+J~0b0011110}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a5567eac832ed6602059ce7d9870f5860}\label{_d_r_v___display_8c_a5567eac832ed6602059ce7d9870f5860}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_L@{LET\_L}}
+\index{LET\_L@{LET\_L}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_L}{LET\_L}}
+{\footnotesize\ttfamily \#define LET\+\_\+L~0b0111000}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_ad4def4f0931d89758e39d836b5f3a48e}\label{_d_r_v___display_8c_ad4def4f0931d89758e39d836b5f3a48e}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_N@{LET\_N}}
+\index{LET\_N@{LET\_N}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_N}{LET\_N}}
+{\footnotesize\ttfamily \#define LET\+\_\+N~0b1010100}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_ab0f8ced74bd084b758ebe55bdb90a44a}\label{_d_r_v___display_8c_ab0f8ced74bd084b758ebe55bdb90a44a}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_O@{LET\_O}}
+\index{LET\_O@{LET\_O}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_O}{LET\_O}}
+{\footnotesize\ttfamily \#define LET\+\_\+O~0b0111111}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a81263d15c81ed5eb77c3bcafabdac26d}\label{_d_r_v___display_8c_a81263d15c81ed5eb77c3bcafabdac26d}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_P@{LET\_P}}
+\index{LET\_P@{LET\_P}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_P}{LET\_P}}
+{\footnotesize\ttfamily \#define LET\+\_\+P~0b1110011}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_aa583d241e986840385402bab4b58c9f2}\label{_d_r_v___display_8c_aa583d241e986840385402bab4b58c9f2}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_Q@{LET\_Q}}
+\index{LET\_Q@{LET\_Q}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_Q}{LET\_Q}}
+{\footnotesize\ttfamily \#define LET\+\_\+Q~0b1100111}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a2444f17f6f8ce2a6307dd27dc2ea8b8a}\label{_d_r_v___display_8c_a2444f17f6f8ce2a6307dd27dc2ea8b8a}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_R@{LET\_R}}
+\index{LET\_R@{LET\_R}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_R}{LET\_R}}
+{\footnotesize\ttfamily \#define LET\+\_\+R~0b1010000}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a6929cea12c71c70088af8ba53000c6ae}\label{_d_r_v___display_8c_a6929cea12c71c70088af8ba53000c6ae}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_S@{LET\_S}}
+\index{LET\_S@{LET\_S}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_S}{LET\_S}}
+{\footnotesize\ttfamily \#define LET\+\_\+S~0b1101101}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a5f596fb52a27b9882cce0b6b99b78ad3}\label{_d_r_v___display_8c_a5f596fb52a27b9882cce0b6b99b78ad3}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_T@{LET\_T}}
+\index{LET\_T@{LET\_T}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_T}{LET\_T}}
+{\footnotesize\ttfamily \#define LET\+\_\+T~0b1111000}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a7d1d15b686744b9598524167ba9e731f}\label{_d_r_v___display_8c_a7d1d15b686744b9598524167ba9e731f}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_U@{LET\_U}}
+\index{LET\_U@{LET\_U}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_U}{LET\_U}}
+{\footnotesize\ttfamily \#define LET\+\_\+U~0b0111110}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a8054130c09bf122c7b053f90f4bee0d5}\label{_d_r_v___display_8c_a8054130c09bf122c7b053f90f4bee0d5}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!LET\_Y@{LET\_Y}}
+\index{LET\_Y@{LET\_Y}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{LET\_Y}{LET\_Y}}
+{\footnotesize\ttfamily \#define LET\+\_\+Y~0b1101110}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_aef08329d0c1db97d7b269330ae9a70af}\label{_d_r_v___display_8c_aef08329d0c1db97d7b269330ae9a70af}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!NINE@{NINE}}
+\index{NINE@{NINE}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{NINE}{NINE}}
+{\footnotesize\ttfamily \#define NINE~0b1101111}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a206b6f5362e56b51ca957635350b70b6}\label{_d_r_v___display_8c_a206b6f5362e56b51ca957635350b70b6}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!ONE@{ONE}}
+\index{ONE@{ONE}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{ONE}{ONE}}
+{\footnotesize\ttfamily \#define ONE~0b0000110}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_aa3b532dc1dfcb8b6683540476e7589e9}\label{_d_r_v___display_8c_aa3b532dc1dfcb8b6683540476e7589e9}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SEL0@{SEL0}}
+\index{SEL0@{SEL0}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SEL0}{SEL0}}
+{\footnotesize\ttfamily \#define SEL0~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},17)}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a7fc3ebaf23e24324e05c158644703067}\label{_d_r_v___display_8c_a7fc3ebaf23e24324e05c158644703067}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SEL1@{SEL1}}
+\index{SEL1@{SEL1}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SEL1}{SEL1}}
+{\footnotesize\ttfamily \#define SEL1~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04a8b7dd81ba2f0d15957795457d92ce139}{PB}},9)}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_ac537e6e7dad3ecef73fc3fc4f14fe020}\label{_d_r_v___display_8c_ac537e6e7dad3ecef73fc3fc4f14fe020}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SEVEN@{SEVEN}}
+\index{SEVEN@{SEVEN}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SEVEN}{SEVEN}}
+{\footnotesize\ttfamily \#define SEVEN~0b0000111}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_afad3d8b3d66fceadb1732af784734c75}\label{_d_r_v___display_8c_afad3d8b3d66fceadb1732af784734c75}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SIX@{SIX}}
+\index{SIX@{SIX}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SIX}{SIX}}
+{\footnotesize\ttfamily \#define SIX~0b1111101}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a20ca592d6a4b9ad9c21dab8da1b4ce93}\label{_d_r_v___display_8c_a20ca592d6a4b9ad9c21dab8da1b4ce93}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SSEGA@{SSEGA}}
+\index{SSEGA@{SSEGA}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SSEGA}{SSEGA}}
+{\footnotesize\ttfamily \#define SSEGA~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04a8b7dd81ba2f0d15957795457d92ce139}{PB}},18)}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_af464b6f08892c553d3b8660e289a347d}\label{_d_r_v___display_8c_af464b6f08892c553d3b8660e289a347d}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SSEGB@{SSEGB}}
+\index{SSEGB@{SSEGB}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SSEGB}{SSEGB}}
+{\footnotesize\ttfamily \#define SSEGB~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04a8b7dd81ba2f0d15957795457d92ce139}{PB}},19)}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a5702922f7b971b48f5287baaf71a00d7}\label{_d_r_v___display_8c_a5702922f7b971b48f5287baaf71a00d7}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SSEGC@{SSEGC}}
+\index{SSEGC@{SSEGC}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SSEGC}{SSEGC}}
+{\footnotesize\ttfamily \#define SSEGC~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},1)}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a4e534eae23e8980291a3b0c4b4f5692b}\label{_d_r_v___display_8c_a4e534eae23e8980291a3b0c4b4f5692b}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SSEGD@{SSEGD}}
+\index{SSEGD@{SSEGD}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SSEGD}{SSEGD}}
+{\footnotesize\ttfamily \#define SSEGD~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},8)}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a1d406eddb72bdeb58625d8baa54250dc}\label{_d_r_v___display_8c_a1d406eddb72bdeb58625d8baa54250dc}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SSEGDP@{SSEGDP}}
+\index{SSEGDP@{SSEGDP}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SSEGDP}{SSEGDP}}
+{\footnotesize\ttfamily \#define SSEGDP~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},5)}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_ad2cd044d0b229ec87e917ebaaf1b6992}\label{_d_r_v___display_8c_ad2cd044d0b229ec87e917ebaaf1b6992}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SSEGE@{SSEGE}}
+\index{SSEGE@{SSEGE}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SSEGE}{SSEGE}}
+{\footnotesize\ttfamily \#define SSEGE~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},9)}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_ac63c4c9dec994959bd7c6e68c6ba9fb3}\label{_d_r_v___display_8c_ac63c4c9dec994959bd7c6e68c6ba9fb3}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SSEGF@{SSEGF}}
+\index{SSEGF@{SSEGF}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SSEGF}{SSEGF}}
+{\footnotesize\ttfamily \#define SSEGF~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},0)}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a199491a351e6742945e35f3a61242273}\label{_d_r_v___display_8c_a199491a351e6742945e35f3a61242273}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SSEGG@{SSEGG}}
+\index{SSEGG@{SSEGG}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SSEGG}{SSEGG}}
+{\footnotesize\ttfamily \#define SSEGG~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},7)}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a2addc9e46baf52fbd15ba480d85fb8b8}\label{_d_r_v___display_8c_a2addc9e46baf52fbd15ba480d85fb8b8}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SYM\_\_@{SYM\_\_}}
+\index{SYM\_\_@{SYM\_\_}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SYM\_\_}{SYM\_\_}}
+{\footnotesize\ttfamily \#define SYM\+\_\+\+\_\+~0b0001000}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a5b3fbffeadd53e0380b3c1e193886a39}\label{_d_r_v___display_8c_a5b3fbffeadd53e0380b3c1e193886a39}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SYM\_BACK@{SYM\_BACK}}
+\index{SYM\_BACK@{SYM\_BACK}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SYM\_BACK}{SYM\_BACK}}
+{\footnotesize\ttfamily \#define SYM\+\_\+\+BACK~0b0100001}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_afdc3669f49d6e0ccae7c801f7df8b881}\label{_d_r_v___display_8c_afdc3669f49d6e0ccae7c801f7df8b881}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SYM\_DASH@{SYM\_DASH}}
+\index{SYM\_DASH@{SYM\_DASH}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SYM\_DASH}{SYM\_DASH}}
+{\footnotesize\ttfamily \#define SYM\+\_\+\+DASH~0b1000000}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_aeb6f6c8b13f8b6219d09202f1967df82}\label{_d_r_v___display_8c_aeb6f6c8b13f8b6219d09202f1967df82}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!SYM\_FRWD@{SYM\_FRWD}}
+\index{SYM\_FRWD@{SYM\_FRWD}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{SYM\_FRWD}{SYM\_FRWD}}
+{\footnotesize\ttfamily \#define SYM\+\_\+\+FRWD~0b0001100}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a1859c475c0bde19dfc1101e35d71b939}\label{_d_r_v___display_8c_a1859c475c0bde19dfc1101e35d71b939}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!THREE@{THREE}}
+\index{THREE@{THREE}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{THREE}{THREE}}
+{\footnotesize\ttfamily \#define THREE~0b1001111}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a888e15353eb3d330c743dbdeb47117e2}\label{_d_r_v___display_8c_a888e15353eb3d330c743dbdeb47117e2}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!TWO@{TWO}}
+\index{TWO@{TWO}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{TWO}{TWO}}
+{\footnotesize\ttfamily \#define TWO~0b1011011}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_aa0cd7b8b90e45eabbdf4a1f0626ab9b4}\label{_d_r_v___display_8c_aa0cd7b8b90e45eabbdf4a1f0626ab9b4}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!VALIDCHARS@{VALIDCHARS}}
+\index{VALIDCHARS@{VALIDCHARS}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{VALIDCHARS}{VALIDCHARS}}
+{\footnotesize\ttfamily \#define VALIDCHARS~54}
+
+\mbox{\Hypertarget{_d_r_v___display_8c_ac328e551bde3d39b6d7b8cc9e048d941}\label{_d_r_v___display_8c_ac328e551bde3d39b6d7b8cc9e048d941}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!ZERO@{ZERO}}
+\index{ZERO@{ZERO}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{ZERO}{ZERO}}
+{\footnotesize\ttfamily \#define ZERO~0b0111111}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_d_r_v___display_8c_a33d1f8844621110eee19cffeca4da32f}\label{_d_r_v___display_8c_a33d1f8844621110eee19cffeca4da32f}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!selector\_data\_t@{selector\_data\_t}}
+\index{selector\_data\_t@{selector\_data\_t}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{selector\_data\_t}{selector\_data\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structselector__data__t}{selector\+\_\+data\+\_\+t}} \mbox{\hyperlink{structselector__data__t}{selector\+\_\+data\+\_\+t}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_d_r_v___display_8c_a82b49831690c342069ad4f428cae5e61}\label{_d_r_v___display_8c_a82b49831690c342069ad4f428cae5e61}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispClearBuffer@{dispClearBuffer}}
+\index{dispClearBuffer@{dispClearBuffer}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispClearBuffer()}{dispClearBuffer()}}
+{\footnotesize\ttfamily void disp\+Clear\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the display buffer. 
+
+\mbox{\Hypertarget{_d_r_v___display_8c_ad00f5868f176187b270a7080d78dff9e}\label{_d_r_v___display_8c_ad00f5868f176187b270a7080d78dff9e}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispClearChar@{dispClearChar}}
+\index{dispClearChar@{dispClearChar}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispClearChar()}{dispClearChar()}}
+{\footnotesize\ttfamily void disp\+Clear\+Char (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Clears the character from position n from the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index of char to clear \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8c_afd7c4be152510beeb065c9fe7e4c060e}\label{_d_r_v___display_8c_afd7c4be152510beeb065c9fe7e4c060e}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispClearDP@{dispClearDP}}
+\index{dispClearDP@{dispClearDP}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispClearDP()}{dispClearDP()}}
+{\footnotesize\ttfamily void disp\+Clear\+DP (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Turns off the decimal point of the nth seven segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & DP index = 0, 1, 2, 3 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8c_ab0b20802e79e6235241df747854f8765}\label{_d_r_v___display_8c_ab0b20802e79e6235241df747854f8765}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispGetBrightness@{dispGetBrightness}}
+\index{dispGetBrightness@{dispGetBrightness}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispGetBrightness()}{dispGetBrightness()}}
+{\footnotesize\ttfamily int disp\+Get\+Brightness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns current display brightness. 
+
+\begin{DoxyReturn}{Returns}
+brightness value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_r_v___display_8c_a00c499300ac10262772db567c5f67278}\label{_d_r_v___display_8c_a00c499300ac10262772db567c5f67278}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispGetBufferPos@{dispGetBufferPos}}
+\index{dispGetBufferPos@{dispGetBufferPos}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispGetBufferPos()}{dispGetBufferPos()}}
+{\footnotesize\ttfamily uint8\+\_\+t disp\+Get\+Buffer\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get starting print position. 
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a7147ac15263b2fdc3e1f8491697292e4}\label{_d_r_v___display_8c_a7147ac15263b2fdc3e1f8491697292e4}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispScrollLeft@{dispScrollLeft}}
+\index{dispScrollLeft@{dispScrollLeft}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispScrollLeft()}{dispScrollLeft()}}
+{\footnotesize\ttfamily void disp\+Scroll\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Scroll display to the left. 
+
+\mbox{\Hypertarget{_d_r_v___display_8c_ac217e6c75ca80b82afe700b9ce024294}\label{_d_r_v___display_8c_ac217e6c75ca80b82afe700b9ce024294}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispScrollRight@{dispScrollRight}}
+\index{dispScrollRight@{dispScrollRight}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispScrollRight()}{dispScrollRight()}}
+{\footnotesize\ttfamily void disp\+Scroll\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Scroll display to the right. 
+
+\mbox{\Hypertarget{_d_r_v___display_8c_ac7715f91cb1f99c919ee00327e79c7fa}\label{_d_r_v___display_8c_ac7715f91cb1f99c919ee00327e79c7fa}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispSetBufferPos@{dispSetBufferPos}}
+\index{dispSetBufferPos@{dispSetBufferPos}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispSetBufferPos()}{dispSetBufferPos()}}
+{\footnotesize\ttfamily void disp\+Set\+Buffer\+Pos (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Sets n as the starting print position for the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & New buffer position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8c_a46d9b2124fe5c5be680425d5a5c17d3f}\label{_d_r_v___display_8c_a46d9b2124fe5c5be680425d5a5c17d3f}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispSetDP@{dispSetDP}}
+\index{dispSetDP@{dispSetDP}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispSetDP()}{dispSetDP()}}
+{\footnotesize\ttfamily void disp\+Set\+DP (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Turns on the decimal point of the nth seven segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & DP index = 0, 1, 2, 3 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8c_a7f77d4be414c1ef99847d387917a3870}\label{_d_r_v___display_8c_a7f77d4be414c1ef99847d387917a3870}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispStartAutoScroll@{dispStartAutoScroll}}
+\index{dispStartAutoScroll@{dispStartAutoScroll}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispStartAutoScroll()}{dispStartAutoScroll()}}
+{\footnotesize\ttfamily void disp\+Start\+Auto\+Scroll (\begin{DoxyParamCaption}\item[{int}]{speed }\end{DoxyParamCaption})}
+
+
+
+Initialize autoscroll with specified speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & Scroll speed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8c_a1748ae93f3d907dab9fb47fd4b481594}\label{_d_r_v___display_8c_a1748ae93f3d907dab9fb47fd4b481594}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispStopAutoScroll@{dispStopAutoScroll}}
+\index{dispStopAutoScroll@{dispStopAutoScroll}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispStopAutoScroll()}{dispStopAutoScroll()}}
+{\footnotesize\ttfamily void disp\+Stop\+Auto\+Scroll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stop autoscroll. 
+
+\mbox{\Hypertarget{_d_r_v___display_8c_a23d2e2688f5aaa319a5884169c526e4f}\label{_d_r_v___display_8c_a23d2e2688f5aaa319a5884169c526e4f}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispToggleDP@{dispToggleDP}}
+\index{dispToggleDP@{dispToggleDP}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispToggleDP()}{dispToggleDP()}}
+{\footnotesize\ttfamily void disp\+Toggle\+DP (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Toggles the decimal point of the nth seven segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & DP index = 0, 1, 2, 3 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8c_a278ed4464485157b9579be0db6ecf1a3}\label{_d_r_v___display_8c_a278ed4464485157b9579be0db6ecf1a3}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispUpdateBrightness@{dispUpdateBrightness}}
+\index{dispUpdateBrightness@{dispUpdateBrightness}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispUpdateBrightness()}{dispUpdateBrightness()}}
+{\footnotesize\ttfamily void disp\+Update\+Brightness (\begin{DoxyParamCaption}\item[{int}]{brightness }\end{DoxyParamCaption})}
+
+
+
+Updates the brightness of the display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em brightness} & brightness\+: int between one and nine \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8c_af1a015e3c5565ef030fec23921f1a6c0}\label{_d_r_v___display_8c_af1a015e3c5565ef030fec23921f1a6c0}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispUpdateRefreshRate@{dispUpdateRefreshRate}}
+\index{dispUpdateRefreshRate@{dispUpdateRefreshRate}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispUpdateRefreshRate()}{dispUpdateRefreshRate()}}
+{\footnotesize\ttfamily void disp\+Update\+Refresh\+Rate (\begin{DoxyParamCaption}\item[{int}]{refresh\+Rate }\end{DoxyParamCaption})}
+
+
+
+Updates the refresh rate of the display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em refresh\+Rate} & New refresh rate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8c_a6500a77a9aec67f9d83e6f8b03a1f192}\label{_d_r_v___display_8c_a6500a77a9aec67f9d83e6f8b03a1f192}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispWriteBuffer@{dispWriteBuffer}}
+\index{dispWriteBuffer@{dispWriteBuffer}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispWriteBuffer()}{dispWriteBuffer()}}
+{\footnotesize\ttfamily void disp\+Write\+Buffer (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{const char $\ast$}]{word }\end{DoxyParamCaption})}
+
+
+
+Sets word of length c in the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Length of word \\
+\hline
+{\em word} & Word to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8c_ae060797a83c109f6bd357d8b3d980f56}\label{_d_r_v___display_8c_ae060797a83c109f6bd357d8b3d980f56}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!dispWriteChar@{dispWriteChar}}
+\index{dispWriteChar@{dispWriteChar}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{dispWriteChar()}{dispWriteChar()}}
+{\footnotesize\ttfamily void disp\+Write\+Char (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{char}]{character }\end{DoxyParamCaption})}
+
+
+
+Sets character in position n of the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index of char to write \\
+\hline
+{\em character} & Value of char \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___display_8c_a1a9171e2595ab20c0d50a6b9ba243997}\label{_d_r_v___display_8c_a1a9171e2595ab20c0d50a6b9ba243997}} 
+\index{DRV\_Display.c@{DRV\_Display.c}!initDisplay@{initDisplay}}
+\index{initDisplay@{initDisplay}!DRV\_Display.c@{DRV\_Display.c}}
+\doxysubsubsection{\texorpdfstring{initDisplay()}{initDisplay()}}
+{\footnotesize\ttfamily void init\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize display. 
+

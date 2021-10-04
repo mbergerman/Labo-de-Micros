@@ -1,0 +1,102 @@
+\hypertarget{_d_r_v___l_e_ds_8h}{}\doxysection{drivers/\+DRV\+\_\+\+LEDs.h File Reference}
+\label{_d_r_v___l_e_ds_8h}\index{drivers/DRV\_LEDs.h@{drivers/DRV\_LEDs.h}}
+
+
+LEDs driver.  
+
+
+{\ttfamily \#include \char`\"{}PDRV\+\_\+\+GPIO.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___l_e_ds_8h_a08a7be72ebb255eaf567885bcdc4cc24}{DISP\+\_\+\+LEDS\+\_\+\+NUM}}~3
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_r_v___l_e_ds_8h_ad01e06046ad67ff45343f39dcc81df90}{init\+LEDs}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the LEDs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___l_e_ds_8h_a83d7de4cef0c2924540b0290e67c579d}{disp\+Clear\+LED}} (int n)
+\begin{DoxyCompactList}\small\item\em Turn off a LED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___l_e_ds_8h_a83cf1c2a8516ed219e648d78a9633466}{disp\+Set\+LED}} (int n)
+\begin{DoxyCompactList}\small\item\em Turn on a LED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___l_e_ds_8h_ac68048849fab011ad6d1ef6bc3d77005}{disp\+Toggle\+LED}} (int n)
+\begin{DoxyCompactList}\small\item\em Toggle a LED. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+LEDs driver. 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8h_a08a7be72ebb255eaf567885bcdc4cc24}\label{_d_r_v___l_e_ds_8h_a08a7be72ebb255eaf567885bcdc4cc24}} 
+\index{DRV\_LEDs.h@{DRV\_LEDs.h}!DISP\_LEDS\_NUM@{DISP\_LEDS\_NUM}}
+\index{DISP\_LEDS\_NUM@{DISP\_LEDS\_NUM}!DRV\_LEDs.h@{DRV\_LEDs.h}}
+\doxysubsubsection{\texorpdfstring{DISP\_LEDS\_NUM}{DISP\_LEDS\_NUM}}
+{\footnotesize\ttfamily \#define DISP\+\_\+\+LEDS\+\_\+\+NUM~3}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8h_a83d7de4cef0c2924540b0290e67c579d}\label{_d_r_v___l_e_ds_8h_a83d7de4cef0c2924540b0290e67c579d}} 
+\index{DRV\_LEDs.h@{DRV\_LEDs.h}!dispClearLED@{dispClearLED}}
+\index{dispClearLED@{dispClearLED}!DRV\_LEDs.h@{DRV\_LEDs.h}}
+\doxysubsubsection{\texorpdfstring{dispClearLED()}{dispClearLED()}}
+{\footnotesize\ttfamily void disp\+Clear\+LED (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Turn off a LED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index of LED to turn off \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8h_a83cf1c2a8516ed219e648d78a9633466}\label{_d_r_v___l_e_ds_8h_a83cf1c2a8516ed219e648d78a9633466}} 
+\index{DRV\_LEDs.h@{DRV\_LEDs.h}!dispSetLED@{dispSetLED}}
+\index{dispSetLED@{dispSetLED}!DRV\_LEDs.h@{DRV\_LEDs.h}}
+\doxysubsubsection{\texorpdfstring{dispSetLED()}{dispSetLED()}}
+{\footnotesize\ttfamily void disp\+Set\+LED (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Turn on a LED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index of LED to turn on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8h_ac68048849fab011ad6d1ef6bc3d77005}\label{_d_r_v___l_e_ds_8h_ac68048849fab011ad6d1ef6bc3d77005}} 
+\index{DRV\_LEDs.h@{DRV\_LEDs.h}!dispToggleLED@{dispToggleLED}}
+\index{dispToggleLED@{dispToggleLED}!DRV\_LEDs.h@{DRV\_LEDs.h}}
+\doxysubsubsection{\texorpdfstring{dispToggleLED()}{dispToggleLED()}}
+{\footnotesize\ttfamily void disp\+Toggle\+LED (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Toggle a LED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index of LED to toggle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 = timer expired 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8h_ad01e06046ad67ff45343f39dcc81df90}\label{_d_r_v___l_e_ds_8h_ad01e06046ad67ff45343f39dcc81df90}} 
+\index{DRV\_LEDs.h@{DRV\_LEDs.h}!initLEDs@{initLEDs}}
+\index{initLEDs@{initLEDs}!DRV\_LEDs.h@{DRV\_LEDs.h}}
+\doxysubsubsection{\texorpdfstring{initLEDs()}{initLEDs()}}
+{\footnotesize\ttfamily void init\+LEDs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the LEDs. 
+

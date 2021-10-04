@@ -1,0 +1,1442 @@
+\hypertarget{group___s_y_s_m_p_u___register___masks}{}\doxysection{SYSMPU Register Masks}
+\label{group___s_y_s_m_p_u___register___masks}\index{SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga377b5f232e8f11cd457d6e69da03d692}{SYSMPU\+\_\+\+BASE}}~(0x4000\+D000u)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabd7e48c068a1331dd1738656e3c56502}{SYSMPU}}~((\mbox{\hyperlink{struct_s_y_s_m_p_u___type}{SYSMPU\+\_\+\+Type}} $\ast$)\mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga377b5f232e8f11cd457d6e69da03d692}{SYSMPU\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gacf3a38a82e268caba62ba6563154fe74}{SYSMPU\+\_\+\+BASE\+\_\+\+ADDRS}}~\{ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga377b5f232e8f11cd457d6e69da03d692}{SYSMPU\+\_\+\+BASE}} \}
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa9e3c9249411bd3f83d7d18105d09fd2}{SYSMPU\+\_\+\+BASE\+\_\+\+PTRS}}~\{ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabd7e48c068a1331dd1738656e3c56502}{SYSMPU}} \}
+\end{DoxyCompactItemize}
+\doxysubsection*{CESR -\/ Control/\+Error Status Register}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga259df00a0bc876323990972e64a9c7e7}{SYSMPU\+\_\+\+CESR\+\_\+\+VLD\+\_\+\+MASK}}~(0x1U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga2421b268cb5e1ac79a30eb7cc66e17e3}{SYSMPU\+\_\+\+CESR\+\_\+\+VLD\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga00f4c8510a02b5acd409f51ffc26de85}{SYSMPU\+\_\+\+CESR\+\_\+\+VLD}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga2421b268cb5e1ac79a30eb7cc66e17e3}{SYSMPU\+\_\+\+CESR\+\_\+\+VLD\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga259df00a0bc876323990972e64a9c7e7}{SYSMPU\+\_\+\+CESR\+\_\+\+VLD\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaaf6c8f0664a073b376e646c9c4e24952}{SYSMPU\+\_\+\+CESR\+\_\+\+NRGD\+\_\+\+MASK}}~(0x\+F00U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga17df488654b4d09a0a15c02acc6f4de5}{SYSMPU\+\_\+\+CESR\+\_\+\+NRGD\+\_\+\+SHIFT}}~(8U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf7a17c9bff832202cee487ff5cd304e8}{SYSMPU\+\_\+\+CESR\+\_\+\+NRGD}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga17df488654b4d09a0a15c02acc6f4de5}{SYSMPU\+\_\+\+CESR\+\_\+\+NRGD\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaaf6c8f0664a073b376e646c9c4e24952}{SYSMPU\+\_\+\+CESR\+\_\+\+NRGD\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gac48f7411bae4206428ca7a27f95fe89b}{SYSMPU\+\_\+\+CESR\+\_\+\+NSP\+\_\+\+MASK}}~(0x\+F000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1579b603c3fe8c7c00502b776915dd52}{SYSMPU\+\_\+\+CESR\+\_\+\+NSP\+\_\+\+SHIFT}}~(12U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga376ec3fe851f0d8e69076e1a39fddc59}{SYSMPU\+\_\+\+CESR\+\_\+\+NSP}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1579b603c3fe8c7c00502b776915dd52}{SYSMPU\+\_\+\+CESR\+\_\+\+NSP\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gac48f7411bae4206428ca7a27f95fe89b}{SYSMPU\+\_\+\+CESR\+\_\+\+NSP\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga82af5460e500bd2c3b09cb1cfbbaf5d2}{SYSMPU\+\_\+\+CESR\+\_\+\+HRL\+\_\+\+MASK}}~(0x\+F0000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa8920ae89621efc52d62e09f48a6bee2}{SYSMPU\+\_\+\+CESR\+\_\+\+HRL\+\_\+\+SHIFT}}~(16U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gadf21368f19053fcc61a478ce1b0770ff}{SYSMPU\+\_\+\+CESR\+\_\+\+HRL}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa8920ae89621efc52d62e09f48a6bee2}{SYSMPU\+\_\+\+CESR\+\_\+\+HRL\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga82af5460e500bd2c3b09cb1cfbbaf5d2}{SYSMPU\+\_\+\+CESR\+\_\+\+HRL\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga4cd877b663e87af1218b6472d62f54dd}{SYSMPU\+\_\+\+CESR\+\_\+\+SPERR\+\_\+\+MASK}}~(0x\+F8000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabb82a54c803804ffe6769a1a1ba60083}{SYSMPU\+\_\+\+CESR\+\_\+\+SPERR\+\_\+\+SHIFT}}~(27U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga97c01c0704a88bf1410842132456c971}{SYSMPU\+\_\+\+CESR\+\_\+\+SPERR}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabb82a54c803804ffe6769a1a1ba60083}{SYSMPU\+\_\+\+CESR\+\_\+\+SPERR\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga4cd877b663e87af1218b6472d62f54dd}{SYSMPU\+\_\+\+CESR\+\_\+\+SPERR\+\_\+\+MASK}})
+\end{DoxyCompactItemize}
+\doxysubsection*{EAR -\/ Error Address Register, slave port n}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad9947bf32f168be3db5227b84ce9f469}{SYSMPU\+\_\+\+EAR\+\_\+\+EADDR\+\_\+\+MASK}}~(0x\+FFFFFFFFU)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga140e9532d599f77863a509b01cead499}{SYSMPU\+\_\+\+EAR\+\_\+\+EADDR\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga6eaaa6e1fdc2cb2bb525f28d889beb72}{SYSMPU\+\_\+\+EAR\+\_\+\+EADDR}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga140e9532d599f77863a509b01cead499}{SYSMPU\+\_\+\+EAR\+\_\+\+EADDR\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad9947bf32f168be3db5227b84ce9f469}{SYSMPU\+\_\+\+EAR\+\_\+\+EADDR\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gac8eefc978742488f304f6e076d472423}{SYSMPU\+\_\+\+EAR\+\_\+\+COUNT}}~(5U)
+\end{DoxyCompactItemize}
+\doxysubsection*{EDR -\/ Error Detail Register, slave port n}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3c4ae997c305852f070d00553649fce6}{SYSMPU\+\_\+\+EDR\+\_\+\+ERW\+\_\+\+MASK}}~(0x1U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaae93e1aa7891872249873e1df1676ac8}{SYSMPU\+\_\+\+EDR\+\_\+\+ERW\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga78ec31c5a6e224f900264c2cdcbeb35f}{SYSMPU\+\_\+\+EDR\+\_\+\+ERW}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaae93e1aa7891872249873e1df1676ac8}{SYSMPU\+\_\+\+EDR\+\_\+\+ERW\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3c4ae997c305852f070d00553649fce6}{SYSMPU\+\_\+\+EDR\+\_\+\+ERW\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga521311a1fb6faf3494b411de8e3bdc58}{SYSMPU\+\_\+\+EDR\+\_\+\+EATTR\+\_\+\+MASK}}~(0x\+EU)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1f9663f3fe817691b67c0de632ef4ff3}{SYSMPU\+\_\+\+EDR\+\_\+\+EATTR\+\_\+\+SHIFT}}~(1U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3c9ca97a0120d6618085c99c2d5452ce}{SYSMPU\+\_\+\+EDR\+\_\+\+EATTR}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1f9663f3fe817691b67c0de632ef4ff3}{SYSMPU\+\_\+\+EDR\+\_\+\+EATTR\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga521311a1fb6faf3494b411de8e3bdc58}{SYSMPU\+\_\+\+EDR\+\_\+\+EATTR\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7976b6fa8a2e6072faf02766c930d637}{SYSMPU\+\_\+\+EDR\+\_\+\+EMN\+\_\+\+MASK}}~(0x\+F0U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaebd14b20417f360b1cc7098eecaa1339}{SYSMPU\+\_\+\+EDR\+\_\+\+EMN\+\_\+\+SHIFT}}~(4U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa8cc8f96a333140954daf162485bdc5a}{SYSMPU\+\_\+\+EDR\+\_\+\+EMN}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaebd14b20417f360b1cc7098eecaa1339}{SYSMPU\+\_\+\+EDR\+\_\+\+EMN\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7976b6fa8a2e6072faf02766c930d637}{SYSMPU\+\_\+\+EDR\+\_\+\+EMN\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae79cdbd254ae868e33b891fa96ff190e}{SYSMPU\+\_\+\+EDR\+\_\+\+EPID\+\_\+\+MASK}}~(0x\+FF00U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa12359a8177a0e0be420dfe61a46aac3}{SYSMPU\+\_\+\+EDR\+\_\+\+EPID\+\_\+\+SHIFT}}~(8U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga022f0cc87ea2c18e23efddb55affefc1}{SYSMPU\+\_\+\+EDR\+\_\+\+EPID}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa12359a8177a0e0be420dfe61a46aac3}{SYSMPU\+\_\+\+EDR\+\_\+\+EPID\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae79cdbd254ae868e33b891fa96ff190e}{SYSMPU\+\_\+\+EDR\+\_\+\+EPID\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf99289e521fdaa84ea9e2c3527bceb1c}{SYSMPU\+\_\+\+EDR\+\_\+\+EACD\+\_\+\+MASK}}~(0x\+FFFF0000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8947db0bb6e311a2118dfadb5bb65cb9}{SYSMPU\+\_\+\+EDR\+\_\+\+EACD\+\_\+\+SHIFT}}~(16U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad72d9bc3c29f2531ff8b2b8de21f4e50}{SYSMPU\+\_\+\+EDR\+\_\+\+EACD}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8947db0bb6e311a2118dfadb5bb65cb9}{SYSMPU\+\_\+\+EDR\+\_\+\+EACD\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf99289e521fdaa84ea9e2c3527bceb1c}{SYSMPU\+\_\+\+EDR\+\_\+\+EACD\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga24478da038839c1350817f983549ede6}{SYSMPU\+\_\+\+EDR\+\_\+\+COUNT}}~(5U)
+\end{DoxyCompactItemize}
+\doxysubsection*{WORD -\/ Region Descriptor n, Word 0..Region Descriptor n, Word 3}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga65e6de8c34911946e2548317ef7f5aa0}{SYSMPU\+\_\+\+WORD\+\_\+\+VLD\+\_\+\+MASK}}~(0x1U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3a8af1d96f0672f6e086d70f9bcbb06a}{SYSMPU\+\_\+\+WORD\+\_\+\+VLD\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga12198f84250021efbcc5cd113b082a46}{SYSMPU\+\_\+\+WORD\+\_\+\+VLD}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3a8af1d96f0672f6e086d70f9bcbb06a}{SYSMPU\+\_\+\+WORD\+\_\+\+VLD\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga65e6de8c34911946e2548317ef7f5aa0}{SYSMPU\+\_\+\+WORD\+\_\+\+VLD\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8a0fececd20e71c06897b79aa2b03eb4}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+UM\+\_\+\+MASK}}~(0x7U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf863864153f045db758c616b3a798ecc}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+UM\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga0fbbafb44245a49e27cb15d1bd6b5ff5}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+UM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf863864153f045db758c616b3a798ecc}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8a0fececd20e71c06897b79aa2b03eb4}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+UM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa2b6a90954e96cd27843e4977cadecb8}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+SM\+\_\+\+MASK}}~(0x18U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gadaf9df921f73cb74a891b96031c798fb}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+SM\+\_\+\+SHIFT}}~(3U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae2a5cec6f6707a4132761c05f8d69071}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+SM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gadaf9df921f73cb74a891b96031c798fb}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa2b6a90954e96cd27843e4977cadecb8}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+SM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaff5e58417e71b136bcef7ac03177ca2e}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+PE\+\_\+\+MASK}}~(0x20U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gacd7c0ea160bd6c4aef68af6ac0b0d521}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+PE\+\_\+\+SHIFT}}~(5U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabc9d63b645f6a80ceb840c4373d21e9c}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+PE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gacd7c0ea160bd6c4aef68af6ac0b0d521}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaff5e58417e71b136bcef7ac03177ca2e}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+PE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3b4055d3f5b44db1c32be889dbfc6d3f}{SYSMPU\+\_\+\+WORD\+\_\+\+ENDADDR\+\_\+\+MASK}}~(0x\+FFFFFFE0U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga774311afd3c172d7d3a12c1c565405b7}{SYSMPU\+\_\+\+WORD\+\_\+\+ENDADDR\+\_\+\+SHIFT}}~(5U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabe7211d94f810d83d21b2e78c42b42ea}{SYSMPU\+\_\+\+WORD\+\_\+\+ENDADDR}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga774311afd3c172d7d3a12c1c565405b7}{SYSMPU\+\_\+\+WORD\+\_\+\+ENDADDR\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3b4055d3f5b44db1c32be889dbfc6d3f}{SYSMPU\+\_\+\+WORD\+\_\+\+ENDADDR\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga98aa3dd7c2229c4be590b38c2816d784}{SYSMPU\+\_\+\+WORD\+\_\+\+SRTADDR\+\_\+\+MASK}}~(0x\+FFFFFFE0U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf65c7dccab90aa0c23a01d551848134f}{SYSMPU\+\_\+\+WORD\+\_\+\+SRTADDR\+\_\+\+SHIFT}}~(5U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gac8bb140cac65730a9e3f93de5b7dd226}{SYSMPU\+\_\+\+WORD\+\_\+\+SRTADDR}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf65c7dccab90aa0c23a01d551848134f}{SYSMPU\+\_\+\+WORD\+\_\+\+SRTADDR\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga98aa3dd7c2229c4be590b38c2816d784}{SYSMPU\+\_\+\+WORD\+\_\+\+SRTADDR\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga9e8917ca1fa783e0f7d64c5325a72f64}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+UM\+\_\+\+MASK}}~(0x1\+C0U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga0f91b2629a278e8f6e9e19358658364f}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+UM\+\_\+\+SHIFT}}~(6U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga4e62e94f4b48a2a55a8fe744add7ed10}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+UM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga0f91b2629a278e8f6e9e19358658364f}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga9e8917ca1fa783e0f7d64c5325a72f64}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+UM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7dee6ba7e6211ebaf9488acba295fb86}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+SM\+\_\+\+MASK}}~(0x600U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3f5e26bf16ec6e327508ebc5ea27d5a7}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+SM\+\_\+\+SHIFT}}~(9U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga91737f35e41ee9994eb685659a75ee8f}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+SM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3f5e26bf16ec6e327508ebc5ea27d5a7}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7dee6ba7e6211ebaf9488acba295fb86}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+SM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga4a180a45d54de7cf18b2ae97fbf44637}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+PE\+\_\+\+MASK}}~(0x800U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7e177734c642052c85f912b648a821f7}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+PE\+\_\+\+SHIFT}}~(11U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga44836fc5dc7a6d84950850dc05253540}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+PE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7e177734c642052c85f912b648a821f7}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga4a180a45d54de7cf18b2ae97fbf44637}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+PE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga2349e72decbdb37a5d225db0f8381085}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+UM\+\_\+\+MASK}}~(0x7000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5529355e0696227edc2c3d4e3cd685d2}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+UM\+\_\+\+SHIFT}}~(12U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga54ac7cd0bae53d875ba4701f40d7144a}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+UM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5529355e0696227edc2c3d4e3cd685d2}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga2349e72decbdb37a5d225db0f8381085}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+UM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7a322573a604903a73bf503d186f29a1}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+SM\+\_\+\+MASK}}~(0x18000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga0adcb59fe9361718c49b07222d12af9e}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+SM\+\_\+\+SHIFT}}~(15U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae2a6fc63c275f7905d6449c6191bcfdf}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+SM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga0adcb59fe9361718c49b07222d12af9e}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7a322573a604903a73bf503d186f29a1}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+SM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3d4c41e9862f07cba0f94d84e217b383}{SYSMPU\+\_\+\+WORD\+\_\+\+PIDMASK\+\_\+\+MASK}}~(0x\+FF0000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga6df5c084bcf6d1e6848665ffd9007140}{SYSMPU\+\_\+\+WORD\+\_\+\+PIDMASK\+\_\+\+SHIFT}}~(16U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8d86a5d6a523cc8affea1df3cafd27c3}{SYSMPU\+\_\+\+WORD\+\_\+\+PIDMASK}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga6df5c084bcf6d1e6848665ffd9007140}{SYSMPU\+\_\+\+WORD\+\_\+\+PIDMASK\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3d4c41e9862f07cba0f94d84e217b383}{SYSMPU\+\_\+\+WORD\+\_\+\+PIDMASK\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7f72b16598726a30a3fcd0f69e5f88f1}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+PE\+\_\+\+MASK}}~(0x20000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa7e65aacdb7fea3b44442a9262ed6232}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+PE\+\_\+\+SHIFT}}~(17U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga04e88db67ef837b1c5916513c6b825cd}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+PE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa7e65aacdb7fea3b44442a9262ed6232}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7f72b16598726a30a3fcd0f69e5f88f1}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+PE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga9b6b9421f66f545a7ed0c342eb0e5e2e}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+UM\+\_\+\+MASK}}~(0x1\+C0000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gadfbd9684345392e532f7fd37bbd5a3f2}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+UM\+\_\+\+SHIFT}}~(18U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gab7dcfe7c446a2e44c7e31bed98b34f5f}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+UM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gadfbd9684345392e532f7fd37bbd5a3f2}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga9b6b9421f66f545a7ed0c342eb0e5e2e}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+UM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga59814d59ef917844397a31d4fc167a55}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+SM\+\_\+\+MASK}}~(0x600000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gacbfcc275939bc9c80a3ca862d0de36ab}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+SM\+\_\+\+SHIFT}}~(21U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1e888ec8d33a10847c6754997793500f}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+SM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gacbfcc275939bc9c80a3ca862d0de36ab}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga59814d59ef917844397a31d4fc167a55}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+SM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1f01c95b0ef8ba564502ae9e7bd1e153}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+PE\+\_\+\+MASK}}~(0x800000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5fd3c390a85db75735f13cd595fe1062}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+PE\+\_\+\+SHIFT}}~(23U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gac7c63b6c9a51af7a6ab569aa7460e779}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+PE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5fd3c390a85db75735f13cd595fe1062}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1f01c95b0ef8ba564502ae9e7bd1e153}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+PE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga564d5f4c870186288b1cb1ee7ba57884}{SYSMPU\+\_\+\+WORD\+\_\+\+PID\+\_\+\+MASK}}~(0x\+FF000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7c1cf9876a3d083719265a9a5ff571bf}{SYSMPU\+\_\+\+WORD\+\_\+\+PID\+\_\+\+SHIFT}}~(24U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga9089cbb6fde91250b829cc8ff588172d}{SYSMPU\+\_\+\+WORD\+\_\+\+PID}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7c1cf9876a3d083719265a9a5ff571bf}{SYSMPU\+\_\+\+WORD\+\_\+\+PID\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga564d5f4c870186288b1cb1ee7ba57884}{SYSMPU\+\_\+\+WORD\+\_\+\+PID\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf58c4e708c5fb62d40a9cf7a150674e9}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+WE\+\_\+\+MASK}}~(0x1000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8988ba4f338efcd856f60442c3a9d0a2}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+WE\+\_\+\+SHIFT}}~(24U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gac628d7b39d91f396a406c6a8d622282d}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+WE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8988ba4f338efcd856f60442c3a9d0a2}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf58c4e708c5fb62d40a9cf7a150674e9}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+WE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga10a274c859895c807fc418dc8205986f}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+RE\+\_\+\+MASK}}~(0x2000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf9764803abe1d19e7c2f502b2d49e22b}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+RE\+\_\+\+SHIFT}}~(25U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa4398a1dbf2f030ad246a89dfcdc8952}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+RE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf9764803abe1d19e7c2f502b2d49e22b}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga10a274c859895c807fc418dc8205986f}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+RE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga37394e198992080135e62dbd5fed7da5}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+WE\+\_\+\+MASK}}~(0x4000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae77d70249e11a27948536215016147f6}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+WE\+\_\+\+SHIFT}}~(26U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga26b604b00befa37ea042c3d66f5cc87b}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+WE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae77d70249e11a27948536215016147f6}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga37394e198992080135e62dbd5fed7da5}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+WE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gab887aca3aba6ad98fae31b0f9f6be82b}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+RE\+\_\+\+MASK}}~(0x8000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7700eb4355e959ba3432c2bd954231f6}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+RE\+\_\+\+SHIFT}}~(27U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga0380e6a9a8d6d0703972b9b016b23d75}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+RE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7700eb4355e959ba3432c2bd954231f6}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gab887aca3aba6ad98fae31b0f9f6be82b}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+RE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5e77a9a3d2709c5de1ba32a7c569a04b}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+WE\+\_\+\+MASK}}~(0x10000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa5ebb9194dbe9b492eab34dbcfbbbf47}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+WE\+\_\+\+SHIFT}}~(28U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gadf42fbfe1f15f2350adeb8e4d43f22cd}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+WE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa5ebb9194dbe9b492eab34dbcfbbbf47}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5e77a9a3d2709c5de1ba32a7c569a04b}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+WE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga87759da3282dfcdd114029fde51528b5}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+RE\+\_\+\+MASK}}~(0x20000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8cf72c2a85a12820912e0d2916cea43d}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+RE\+\_\+\+SHIFT}}~(29U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga206ab5e021c3fd35489194de2bbc54b9}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+RE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8cf72c2a85a12820912e0d2916cea43d}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga87759da3282dfcdd114029fde51528b5}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+RE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3e550bdd1bf42a8f775316748faaeff3}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+WE\+\_\+\+MASK}}~(0x40000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae43090d81255e6a70452a2cee326cc94}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+WE\+\_\+\+SHIFT}}~(30U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1f6574658fdda3d3a65ccea71ad97447}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+WE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae43090d81255e6a70452a2cee326cc94}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3e550bdd1bf42a8f775316748faaeff3}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+WE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3dac1542d2ff73792ea5ee9a7c703b5c}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+RE\+\_\+\+MASK}}~(0x80000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga93e5aa5b536b88bb00efea67bb5c49b8}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+RE\+\_\+\+SHIFT}}~(31U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga2183d6d680d29c42637d4484479cd5e0}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+RE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga93e5aa5b536b88bb00efea67bb5c49b8}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3dac1542d2ff73792ea5ee9a7c703b5c}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+RE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gab884871b2c660b896506055dde6dce11}{SYSMPU\+\_\+\+WORD\+\_\+\+COUNT}}~(12U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8a45931ec5e60a7c8819214c9928eb96}{SYSMPU\+\_\+\+WORD\+\_\+\+COUNT2}}~(4U)
+\end{DoxyCompactItemize}
+\doxysubsection*{RGDAAC -\/ Region Descriptor Alternate Access Control n}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga54303a9e2048685dc4cb2bacd7f29580}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+UM\+\_\+\+MASK}}~(0x7U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga87c8892fc77a1d99f3a2d2c8824cc0a8}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+UM\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga64c8b329954152a68f91ea0493c14f93}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+UM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga87c8892fc77a1d99f3a2d2c8824cc0a8}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga54303a9e2048685dc4cb2bacd7f29580}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+UM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3abe927f5b1ee907e04e879ee8b7bde3}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+SM\+\_\+\+MASK}}~(0x18U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1e07b43327cea07589170831cf01c1d2}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+SM\+\_\+\+SHIFT}}~(3U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga168e6cdaadec7c56296f480c6bc2d002}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+SM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1e07b43327cea07589170831cf01c1d2}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3abe927f5b1ee907e04e879ee8b7bde3}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+SM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga93284d1a0a0c34dad8a07e15fa24041a}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+PE\+\_\+\+MASK}}~(0x20U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae35ce9172c62d386a9042e30dbd74863}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+PE\+\_\+\+SHIFT}}~(5U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7ed41b53162a22c4a3d3dbc093c56a28}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+PE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae35ce9172c62d386a9042e30dbd74863}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga93284d1a0a0c34dad8a07e15fa24041a}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+PE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaee03b4db0fc2c4b8a1bfca463bc12080}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+UM\+\_\+\+MASK}}~(0x1\+C0U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaac07a4c547a0f649e468d7a718940328}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+UM\+\_\+\+SHIFT}}~(6U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga9dfcefb65fe3682a21c0534523d5bfae}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+UM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaac07a4c547a0f649e468d7a718940328}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaee03b4db0fc2c4b8a1bfca463bc12080}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+UM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gacedbd4cbc18414a2fb369562eba67ad9}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+SM\+\_\+\+MASK}}~(0x600U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga64bb3f490d3eb5ae8ffc915d930ac329}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+SM\+\_\+\+SHIFT}}~(9U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga6e329f68f5285da783af4411f7726277}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+SM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga64bb3f490d3eb5ae8ffc915d930ac329}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gacedbd4cbc18414a2fb369562eba67ad9}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+SM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1a69ebbac0c48dc223453241c0db028a}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+PE\+\_\+\+MASK}}~(0x800U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga6845ac7ac5b9b76b06b1a5fc93046bc3}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+PE\+\_\+\+SHIFT}}~(11U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8a3b05287eb78db6f030a062a725b067}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+PE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga6845ac7ac5b9b76b06b1a5fc93046bc3}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1a69ebbac0c48dc223453241c0db028a}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+PE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga590cb7934f73b4b1e9a07ae999973175}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+UM\+\_\+\+MASK}}~(0x7000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad73345d426993c97e41f5cdf90a7a430}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+UM\+\_\+\+SHIFT}}~(12U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad1eeaff535e998137ed0d218bb51cc34}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+UM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad73345d426993c97e41f5cdf90a7a430}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga590cb7934f73b4b1e9a07ae999973175}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+UM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae02b415f5af47989e555a606620048ff}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+SM\+\_\+\+MASK}}~(0x18000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad07124843ee1ca0a88f40c45caead910}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+SM\+\_\+\+SHIFT}}~(15U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gade04b820dc4b6d7a9826cddc7ec284c8}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+SM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad07124843ee1ca0a88f40c45caead910}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae02b415f5af47989e555a606620048ff}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+SM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga275f5873275d9a27f9784d51def6d76d}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+PE\+\_\+\+MASK}}~(0x20000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabb71f952ad394d52edc275b841afa1e5}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+PE\+\_\+\+SHIFT}}~(17U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga92ef4c4e5329a8f3ea95b4fb28c37abe}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+PE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabb71f952ad394d52edc275b841afa1e5}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga275f5873275d9a27f9784d51def6d76d}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+PE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga042a92beefb545ab1606948f65f9682b}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+UM\+\_\+\+MASK}}~(0x1\+C0000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gac367eaf5fbe827dc8247b95b568a446f}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+UM\+\_\+\+SHIFT}}~(18U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga4ea3a2e43afc033403c880d30dc7d319}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+UM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gac367eaf5fbe827dc8247b95b568a446f}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga042a92beefb545ab1606948f65f9682b}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+UM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad141d56f495c594e278315708d6e350c}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+SM\+\_\+\+MASK}}~(0x600000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga89b50e242d50fb28a55a09c66859f66b}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+SM\+\_\+\+SHIFT}}~(21U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaee6e6e15b28b1a812fa522b3fb08d54b}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+SM}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga89b50e242d50fb28a55a09c66859f66b}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad141d56f495c594e278315708d6e350c}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+SM\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa1de9ddeb982fc776df6bdecda7cecf2}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+PE\+\_\+\+MASK}}~(0x800000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga499c52fd154f96f23c8790846de1b347}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+PE\+\_\+\+SHIFT}}~(23U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga79f9e4bac84523a253a2a7857892c69e}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+PE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga499c52fd154f96f23c8790846de1b347}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa1de9ddeb982fc776df6bdecda7cecf2}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+PE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabb5f7c93ab93b88d2a8480f2ca8d8b92}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+WE\+\_\+\+MASK}}~(0x1000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga0fa0186c2648eb2d8c7eded2a95a603e}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+WE\+\_\+\+SHIFT}}~(24U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae952a6d345807188cba4fd8d91f5d7b9}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+WE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga0fa0186c2648eb2d8c7eded2a95a603e}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabb5f7c93ab93b88d2a8480f2ca8d8b92}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+WE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5c3ab9c31dac36964d9a42dc63cd0562}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+RE\+\_\+\+MASK}}~(0x2000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga71acc537c1c212185803c2a5980b6b91}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+RE\+\_\+\+SHIFT}}~(25U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga6335cb3a5247ceb12dc7b507b735193a}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+RE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga71acc537c1c212185803c2a5980b6b91}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5c3ab9c31dac36964d9a42dc63cd0562}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+RE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gab07617f5450a0265dcbe82f887eaffc2}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+WE\+\_\+\+MASK}}~(0x4000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf466b78026a2e26a28f8d31e6906f255}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+WE\+\_\+\+SHIFT}}~(26U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaba51b621181f07712ad3ecf83f83fbf0}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+WE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf466b78026a2e26a28f8d31e6906f255}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gab07617f5450a0265dcbe82f887eaffc2}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+WE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga81bb649444de69b3cbc7e4da89a302ed}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+RE\+\_\+\+MASK}}~(0x8000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga643131b9d871336a798b7b4279998c63}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+RE\+\_\+\+SHIFT}}~(27U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga2eedd45098b08bdcaff5d50adee745bb}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+RE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga643131b9d871336a798b7b4279998c63}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga81bb649444de69b3cbc7e4da89a302ed}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+RE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gadf6593cd8fedd17e2c69e055b74e1d12}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+WE\+\_\+\+MASK}}~(0x10000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga15a20fa019111f179db6b6210b5137f4}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+WE\+\_\+\+SHIFT}}~(28U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga52d5f9cc728b735fc1b345e7704cb3f6}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+WE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga15a20fa019111f179db6b6210b5137f4}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gadf6593cd8fedd17e2c69e055b74e1d12}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+WE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gac0fff025cadba3aff5afb932d979f822}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+RE\+\_\+\+MASK}}~(0x20000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga25e3e66e4dbbc48ffbe074e086b2dbb0}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+RE\+\_\+\+SHIFT}}~(29U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa6ffae6f8b01dbd2a30b137bb5de8734}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+RE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga25e3e66e4dbbc48ffbe074e086b2dbb0}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gac0fff025cadba3aff5afb932d979f822}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+RE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7a2ea71a079ee3e454931a06d2ce3688}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+WE\+\_\+\+MASK}}~(0x40000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga025e80d9085ce9ad8f68880df2623096}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+WE\+\_\+\+SHIFT}}~(30U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga6746268c9392d28c32d285d68d902970}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+WE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga025e80d9085ce9ad8f68880df2623096}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7a2ea71a079ee3e454931a06d2ce3688}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+WE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5e9902c0637794adc3a5f4603054eee2}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+RE\+\_\+\+MASK}}~(0x80000000U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga2a76b8d6ff8f1787a84500a9496a4979}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+RE\+\_\+\+SHIFT}}~(31U)
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad17b13f650930e216355ea4098f8af6b}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+RE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga2a76b8d6ff8f1787a84500a9496a4979}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5e9902c0637794adc3a5f4603054eee2}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+RE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga4885914907cc6358adcbe7e022f316b8}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+COUNT}}~(12U)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gabd7e48c068a1331dd1738656e3c56502}\label{group___s_y_s_m_p_u___register___masks_gabd7e48c068a1331dd1738656e3c56502}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU@{SYSMPU}}
+\index{SYSMPU@{SYSMPU}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU}{SYSMPU}}
+{\footnotesize\ttfamily \#define SYSMPU~((\mbox{\hyperlink{struct_s_y_s_m_p_u___type}{SYSMPU\+\_\+\+Type}} $\ast$)\mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga377b5f232e8f11cd457d6e69da03d692}{SYSMPU\+\_\+\+BASE}})}
+
+Peripheral SYSMPU base pointer \mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga377b5f232e8f11cd457d6e69da03d692}\label{group___s_y_s_m_p_u___register___masks_ga377b5f232e8f11cd457d6e69da03d692}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_BASE@{SYSMPU\_BASE}}
+\index{SYSMPU\_BASE@{SYSMPU\_BASE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_BASE}{SYSMPU\_BASE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+BASE~(0x4000\+D000u)}
+
+Peripheral SYSMPU base address \mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gacf3a38a82e268caba62ba6563154fe74}\label{group___s_y_s_m_p_u___register___masks_gacf3a38a82e268caba62ba6563154fe74}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_BASE\_ADDRS@{SYSMPU\_BASE\_ADDRS}}
+\index{SYSMPU\_BASE\_ADDRS@{SYSMPU\_BASE\_ADDRS}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_BASE\_ADDRS}{SYSMPU\_BASE\_ADDRS}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+BASE\+\_\+\+ADDRS~\{ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga377b5f232e8f11cd457d6e69da03d692}{SYSMPU\+\_\+\+BASE}} \}}
+
+Array initializer of SYSMPU peripheral base addresses \mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaa9e3c9249411bd3f83d7d18105d09fd2}\label{group___s_y_s_m_p_u___register___masks_gaa9e3c9249411bd3f83d7d18105d09fd2}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_BASE\_PTRS@{SYSMPU\_BASE\_PTRS}}
+\index{SYSMPU\_BASE\_PTRS@{SYSMPU\_BASE\_PTRS}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_BASE\_PTRS}{SYSMPU\_BASE\_PTRS}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+BASE\+\_\+\+PTRS~\{ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabd7e48c068a1331dd1738656e3c56502}{SYSMPU}} \}}
+
+Array initializer of SYSMPU peripheral base pointers \mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gadf21368f19053fcc61a478ce1b0770ff}\label{group___s_y_s_m_p_u___register___masks_gadf21368f19053fcc61a478ce1b0770ff}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_HRL@{SYSMPU\_CESR\_HRL}}
+\index{SYSMPU\_CESR\_HRL@{SYSMPU\_CESR\_HRL}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_HRL}{SYSMPU\_CESR\_HRL}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+HRL(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa8920ae89621efc52d62e09f48a6bee2}{SYSMPU\+\_\+\+CESR\+\_\+\+HRL\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga82af5460e500bd2c3b09cb1cfbbaf5d2}{SYSMPU\+\_\+\+CESR\+\_\+\+HRL\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga82af5460e500bd2c3b09cb1cfbbaf5d2}\label{group___s_y_s_m_p_u___register___masks_ga82af5460e500bd2c3b09cb1cfbbaf5d2}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_HRL\_MASK@{SYSMPU\_CESR\_HRL\_MASK}}
+\index{SYSMPU\_CESR\_HRL\_MASK@{SYSMPU\_CESR\_HRL\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_HRL\_MASK}{SYSMPU\_CESR\_HRL\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+HRL\+\_\+\+MASK~(0x\+F0000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaa8920ae89621efc52d62e09f48a6bee2}\label{group___s_y_s_m_p_u___register___masks_gaa8920ae89621efc52d62e09f48a6bee2}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_HRL\_SHIFT@{SYSMPU\_CESR\_HRL\_SHIFT}}
+\index{SYSMPU\_CESR\_HRL\_SHIFT@{SYSMPU\_CESR\_HRL\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_HRL\_SHIFT}{SYSMPU\_CESR\_HRL\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+HRL\+\_\+\+SHIFT~(16U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaf7a17c9bff832202cee487ff5cd304e8}\label{group___s_y_s_m_p_u___register___masks_gaf7a17c9bff832202cee487ff5cd304e8}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_NRGD@{SYSMPU\_CESR\_NRGD}}
+\index{SYSMPU\_CESR\_NRGD@{SYSMPU\_CESR\_NRGD}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_NRGD}{SYSMPU\_CESR\_NRGD}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+NRGD(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga17df488654b4d09a0a15c02acc6f4de5}{SYSMPU\+\_\+\+CESR\+\_\+\+NRGD\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaaf6c8f0664a073b376e646c9c4e24952}{SYSMPU\+\_\+\+CESR\+\_\+\+NRGD\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaaf6c8f0664a073b376e646c9c4e24952}\label{group___s_y_s_m_p_u___register___masks_gaaf6c8f0664a073b376e646c9c4e24952}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_NRGD\_MASK@{SYSMPU\_CESR\_NRGD\_MASK}}
+\index{SYSMPU\_CESR\_NRGD\_MASK@{SYSMPU\_CESR\_NRGD\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_NRGD\_MASK}{SYSMPU\_CESR\_NRGD\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+NRGD\+\_\+\+MASK~(0x\+F00U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga17df488654b4d09a0a15c02acc6f4de5}\label{group___s_y_s_m_p_u___register___masks_ga17df488654b4d09a0a15c02acc6f4de5}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_NRGD\_SHIFT@{SYSMPU\_CESR\_NRGD\_SHIFT}}
+\index{SYSMPU\_CESR\_NRGD\_SHIFT@{SYSMPU\_CESR\_NRGD\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_NRGD\_SHIFT}{SYSMPU\_CESR\_NRGD\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+NRGD\+\_\+\+SHIFT~(8U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga376ec3fe851f0d8e69076e1a39fddc59}\label{group___s_y_s_m_p_u___register___masks_ga376ec3fe851f0d8e69076e1a39fddc59}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_NSP@{SYSMPU\_CESR\_NSP}}
+\index{SYSMPU\_CESR\_NSP@{SYSMPU\_CESR\_NSP}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_NSP}{SYSMPU\_CESR\_NSP}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+NSP(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1579b603c3fe8c7c00502b776915dd52}{SYSMPU\+\_\+\+CESR\+\_\+\+NSP\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gac48f7411bae4206428ca7a27f95fe89b}{SYSMPU\+\_\+\+CESR\+\_\+\+NSP\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gac48f7411bae4206428ca7a27f95fe89b}\label{group___s_y_s_m_p_u___register___masks_gac48f7411bae4206428ca7a27f95fe89b}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_NSP\_MASK@{SYSMPU\_CESR\_NSP\_MASK}}
+\index{SYSMPU\_CESR\_NSP\_MASK@{SYSMPU\_CESR\_NSP\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_NSP\_MASK}{SYSMPU\_CESR\_NSP\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+NSP\+\_\+\+MASK~(0x\+F000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga1579b603c3fe8c7c00502b776915dd52}\label{group___s_y_s_m_p_u___register___masks_ga1579b603c3fe8c7c00502b776915dd52}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_NSP\_SHIFT@{SYSMPU\_CESR\_NSP\_SHIFT}}
+\index{SYSMPU\_CESR\_NSP\_SHIFT@{SYSMPU\_CESR\_NSP\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_NSP\_SHIFT}{SYSMPU\_CESR\_NSP\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+NSP\+\_\+\+SHIFT~(12U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga97c01c0704a88bf1410842132456c971}\label{group___s_y_s_m_p_u___register___masks_ga97c01c0704a88bf1410842132456c971}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_SPERR@{SYSMPU\_CESR\_SPERR}}
+\index{SYSMPU\_CESR\_SPERR@{SYSMPU\_CESR\_SPERR}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_SPERR}{SYSMPU\_CESR\_SPERR}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+SPERR(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabb82a54c803804ffe6769a1a1ba60083}{SYSMPU\+\_\+\+CESR\+\_\+\+SPERR\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga4cd877b663e87af1218b6472d62f54dd}{SYSMPU\+\_\+\+CESR\+\_\+\+SPERR\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga4cd877b663e87af1218b6472d62f54dd}\label{group___s_y_s_m_p_u___register___masks_ga4cd877b663e87af1218b6472d62f54dd}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_SPERR\_MASK@{SYSMPU\_CESR\_SPERR\_MASK}}
+\index{SYSMPU\_CESR\_SPERR\_MASK@{SYSMPU\_CESR\_SPERR\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_SPERR\_MASK}{SYSMPU\_CESR\_SPERR\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+SPERR\+\_\+\+MASK~(0x\+F8000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gabb82a54c803804ffe6769a1a1ba60083}\label{group___s_y_s_m_p_u___register___masks_gabb82a54c803804ffe6769a1a1ba60083}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_SPERR\_SHIFT@{SYSMPU\_CESR\_SPERR\_SHIFT}}
+\index{SYSMPU\_CESR\_SPERR\_SHIFT@{SYSMPU\_CESR\_SPERR\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_SPERR\_SHIFT}{SYSMPU\_CESR\_SPERR\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+SPERR\+\_\+\+SHIFT~(27U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga00f4c8510a02b5acd409f51ffc26de85}\label{group___s_y_s_m_p_u___register___masks_ga00f4c8510a02b5acd409f51ffc26de85}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_VLD@{SYSMPU\_CESR\_VLD}}
+\index{SYSMPU\_CESR\_VLD@{SYSMPU\_CESR\_VLD}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_VLD}{SYSMPU\_CESR\_VLD}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+VLD(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga2421b268cb5e1ac79a30eb7cc66e17e3}{SYSMPU\+\_\+\+CESR\+\_\+\+VLD\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga259df00a0bc876323990972e64a9c7e7}{SYSMPU\+\_\+\+CESR\+\_\+\+VLD\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga259df00a0bc876323990972e64a9c7e7}\label{group___s_y_s_m_p_u___register___masks_ga259df00a0bc876323990972e64a9c7e7}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_VLD\_MASK@{SYSMPU\_CESR\_VLD\_MASK}}
+\index{SYSMPU\_CESR\_VLD\_MASK@{SYSMPU\_CESR\_VLD\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_VLD\_MASK}{SYSMPU\_CESR\_VLD\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+VLD\+\_\+\+MASK~(0x1U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga2421b268cb5e1ac79a30eb7cc66e17e3}\label{group___s_y_s_m_p_u___register___masks_ga2421b268cb5e1ac79a30eb7cc66e17e3}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_CESR\_VLD\_SHIFT@{SYSMPU\_CESR\_VLD\_SHIFT}}
+\index{SYSMPU\_CESR\_VLD\_SHIFT@{SYSMPU\_CESR\_VLD\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_CESR\_VLD\_SHIFT}{SYSMPU\_CESR\_VLD\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+CESR\+\_\+\+VLD\+\_\+\+SHIFT~(0U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gac8eefc978742488f304f6e076d472423}\label{group___s_y_s_m_p_u___register___masks_gac8eefc978742488f304f6e076d472423}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EAR\_COUNT@{SYSMPU\_EAR\_COUNT}}
+\index{SYSMPU\_EAR\_COUNT@{SYSMPU\_EAR\_COUNT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EAR\_COUNT}{SYSMPU\_EAR\_COUNT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EAR\+\_\+\+COUNT~(5U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga6eaaa6e1fdc2cb2bb525f28d889beb72}\label{group___s_y_s_m_p_u___register___masks_ga6eaaa6e1fdc2cb2bb525f28d889beb72}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EAR\_EADDR@{SYSMPU\_EAR\_EADDR}}
+\index{SYSMPU\_EAR\_EADDR@{SYSMPU\_EAR\_EADDR}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EAR\_EADDR}{SYSMPU\_EAR\_EADDR}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EAR\+\_\+\+EADDR(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga140e9532d599f77863a509b01cead499}{SYSMPU\+\_\+\+EAR\+\_\+\+EADDR\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad9947bf32f168be3db5227b84ce9f469}{SYSMPU\+\_\+\+EAR\+\_\+\+EADDR\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gad9947bf32f168be3db5227b84ce9f469}\label{group___s_y_s_m_p_u___register___masks_gad9947bf32f168be3db5227b84ce9f469}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EAR\_EADDR\_MASK@{SYSMPU\_EAR\_EADDR\_MASK}}
+\index{SYSMPU\_EAR\_EADDR\_MASK@{SYSMPU\_EAR\_EADDR\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EAR\_EADDR\_MASK}{SYSMPU\_EAR\_EADDR\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EAR\+\_\+\+EADDR\+\_\+\+MASK~(0x\+FFFFFFFFU)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga140e9532d599f77863a509b01cead499}\label{group___s_y_s_m_p_u___register___masks_ga140e9532d599f77863a509b01cead499}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EAR\_EADDR\_SHIFT@{SYSMPU\_EAR\_EADDR\_SHIFT}}
+\index{SYSMPU\_EAR\_EADDR\_SHIFT@{SYSMPU\_EAR\_EADDR\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EAR\_EADDR\_SHIFT}{SYSMPU\_EAR\_EADDR\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EAR\+\_\+\+EADDR\+\_\+\+SHIFT~(0U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga24478da038839c1350817f983549ede6}\label{group___s_y_s_m_p_u___register___masks_ga24478da038839c1350817f983549ede6}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_COUNT@{SYSMPU\_EDR\_COUNT}}
+\index{SYSMPU\_EDR\_COUNT@{SYSMPU\_EDR\_COUNT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_COUNT}{SYSMPU\_EDR\_COUNT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+COUNT~(5U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gad72d9bc3c29f2531ff8b2b8de21f4e50}\label{group___s_y_s_m_p_u___register___masks_gad72d9bc3c29f2531ff8b2b8de21f4e50}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_EACD@{SYSMPU\_EDR\_EACD}}
+\index{SYSMPU\_EDR\_EACD@{SYSMPU\_EDR\_EACD}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_EACD}{SYSMPU\_EDR\_EACD}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+EACD(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8947db0bb6e311a2118dfadb5bb65cb9}{SYSMPU\+\_\+\+EDR\+\_\+\+EACD\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf99289e521fdaa84ea9e2c3527bceb1c}{SYSMPU\+\_\+\+EDR\+\_\+\+EACD\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaf99289e521fdaa84ea9e2c3527bceb1c}\label{group___s_y_s_m_p_u___register___masks_gaf99289e521fdaa84ea9e2c3527bceb1c}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_EACD\_MASK@{SYSMPU\_EDR\_EACD\_MASK}}
+\index{SYSMPU\_EDR\_EACD\_MASK@{SYSMPU\_EDR\_EACD\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_EACD\_MASK}{SYSMPU\_EDR\_EACD\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+EACD\+\_\+\+MASK~(0x\+FFFF0000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga8947db0bb6e311a2118dfadb5bb65cb9}\label{group___s_y_s_m_p_u___register___masks_ga8947db0bb6e311a2118dfadb5bb65cb9}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_EACD\_SHIFT@{SYSMPU\_EDR\_EACD\_SHIFT}}
+\index{SYSMPU\_EDR\_EACD\_SHIFT@{SYSMPU\_EDR\_EACD\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_EACD\_SHIFT}{SYSMPU\_EDR\_EACD\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+EACD\+\_\+\+SHIFT~(16U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga3c9ca97a0120d6618085c99c2d5452ce}\label{group___s_y_s_m_p_u___register___masks_ga3c9ca97a0120d6618085c99c2d5452ce}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_EATTR@{SYSMPU\_EDR\_EATTR}}
+\index{SYSMPU\_EDR\_EATTR@{SYSMPU\_EDR\_EATTR}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_EATTR}{SYSMPU\_EDR\_EATTR}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+EATTR(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1f9663f3fe817691b67c0de632ef4ff3}{SYSMPU\+\_\+\+EDR\+\_\+\+EATTR\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga521311a1fb6faf3494b411de8e3bdc58}{SYSMPU\+\_\+\+EDR\+\_\+\+EATTR\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga521311a1fb6faf3494b411de8e3bdc58}\label{group___s_y_s_m_p_u___register___masks_ga521311a1fb6faf3494b411de8e3bdc58}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_EATTR\_MASK@{SYSMPU\_EDR\_EATTR\_MASK}}
+\index{SYSMPU\_EDR\_EATTR\_MASK@{SYSMPU\_EDR\_EATTR\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_EATTR\_MASK}{SYSMPU\_EDR\_EATTR\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+EATTR\+\_\+\+MASK~(0x\+EU)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga1f9663f3fe817691b67c0de632ef4ff3}\label{group___s_y_s_m_p_u___register___masks_ga1f9663f3fe817691b67c0de632ef4ff3}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_EATTR\_SHIFT@{SYSMPU\_EDR\_EATTR\_SHIFT}}
+\index{SYSMPU\_EDR\_EATTR\_SHIFT@{SYSMPU\_EDR\_EATTR\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_EATTR\_SHIFT}{SYSMPU\_EDR\_EATTR\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+EATTR\+\_\+\+SHIFT~(1U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaa8cc8f96a333140954daf162485bdc5a}\label{group___s_y_s_m_p_u___register___masks_gaa8cc8f96a333140954daf162485bdc5a}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_EMN@{SYSMPU\_EDR\_EMN}}
+\index{SYSMPU\_EDR\_EMN@{SYSMPU\_EDR\_EMN}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_EMN}{SYSMPU\_EDR\_EMN}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+EMN(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaebd14b20417f360b1cc7098eecaa1339}{SYSMPU\+\_\+\+EDR\+\_\+\+EMN\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7976b6fa8a2e6072faf02766c930d637}{SYSMPU\+\_\+\+EDR\+\_\+\+EMN\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga7976b6fa8a2e6072faf02766c930d637}\label{group___s_y_s_m_p_u___register___masks_ga7976b6fa8a2e6072faf02766c930d637}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_EMN\_MASK@{SYSMPU\_EDR\_EMN\_MASK}}
+\index{SYSMPU\_EDR\_EMN\_MASK@{SYSMPU\_EDR\_EMN\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_EMN\_MASK}{SYSMPU\_EDR\_EMN\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+EMN\+\_\+\+MASK~(0x\+F0U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaebd14b20417f360b1cc7098eecaa1339}\label{group___s_y_s_m_p_u___register___masks_gaebd14b20417f360b1cc7098eecaa1339}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_EMN\_SHIFT@{SYSMPU\_EDR\_EMN\_SHIFT}}
+\index{SYSMPU\_EDR\_EMN\_SHIFT@{SYSMPU\_EDR\_EMN\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_EMN\_SHIFT}{SYSMPU\_EDR\_EMN\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+EMN\+\_\+\+SHIFT~(4U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga022f0cc87ea2c18e23efddb55affefc1}\label{group___s_y_s_m_p_u___register___masks_ga022f0cc87ea2c18e23efddb55affefc1}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_EPID@{SYSMPU\_EDR\_EPID}}
+\index{SYSMPU\_EDR\_EPID@{SYSMPU\_EDR\_EPID}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_EPID}{SYSMPU\_EDR\_EPID}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+EPID(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa12359a8177a0e0be420dfe61a46aac3}{SYSMPU\+\_\+\+EDR\+\_\+\+EPID\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae79cdbd254ae868e33b891fa96ff190e}{SYSMPU\+\_\+\+EDR\+\_\+\+EPID\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gae79cdbd254ae868e33b891fa96ff190e}\label{group___s_y_s_m_p_u___register___masks_gae79cdbd254ae868e33b891fa96ff190e}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_EPID\_MASK@{SYSMPU\_EDR\_EPID\_MASK}}
+\index{SYSMPU\_EDR\_EPID\_MASK@{SYSMPU\_EDR\_EPID\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_EPID\_MASK}{SYSMPU\_EDR\_EPID\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+EPID\+\_\+\+MASK~(0x\+FF00U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaa12359a8177a0e0be420dfe61a46aac3}\label{group___s_y_s_m_p_u___register___masks_gaa12359a8177a0e0be420dfe61a46aac3}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_EPID\_SHIFT@{SYSMPU\_EDR\_EPID\_SHIFT}}
+\index{SYSMPU\_EDR\_EPID\_SHIFT@{SYSMPU\_EDR\_EPID\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_EPID\_SHIFT}{SYSMPU\_EDR\_EPID\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+EPID\+\_\+\+SHIFT~(8U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga78ec31c5a6e224f900264c2cdcbeb35f}\label{group___s_y_s_m_p_u___register___masks_ga78ec31c5a6e224f900264c2cdcbeb35f}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_ERW@{SYSMPU\_EDR\_ERW}}
+\index{SYSMPU\_EDR\_ERW@{SYSMPU\_EDR\_ERW}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_ERW}{SYSMPU\_EDR\_ERW}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+ERW(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaae93e1aa7891872249873e1df1676ac8}{SYSMPU\+\_\+\+EDR\+\_\+\+ERW\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3c4ae997c305852f070d00553649fce6}{SYSMPU\+\_\+\+EDR\+\_\+\+ERW\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga3c4ae997c305852f070d00553649fce6}\label{group___s_y_s_m_p_u___register___masks_ga3c4ae997c305852f070d00553649fce6}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_ERW\_MASK@{SYSMPU\_EDR\_ERW\_MASK}}
+\index{SYSMPU\_EDR\_ERW\_MASK@{SYSMPU\_EDR\_ERW\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_ERW\_MASK}{SYSMPU\_EDR\_ERW\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+ERW\+\_\+\+MASK~(0x1U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaae93e1aa7891872249873e1df1676ac8}\label{group___s_y_s_m_p_u___register___masks_gaae93e1aa7891872249873e1df1676ac8}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_EDR\_ERW\_SHIFT@{SYSMPU\_EDR\_ERW\_SHIFT}}
+\index{SYSMPU\_EDR\_ERW\_SHIFT@{SYSMPU\_EDR\_ERW\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_EDR\_ERW\_SHIFT}{SYSMPU\_EDR\_ERW\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+EDR\+\_\+\+ERW\+\_\+\+SHIFT~(0U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga4885914907cc6358adcbe7e022f316b8}\label{group___s_y_s_m_p_u___register___masks_ga4885914907cc6358adcbe7e022f316b8}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_COUNT@{SYSMPU\_RGDAAC\_COUNT}}
+\index{SYSMPU\_RGDAAC\_COUNT@{SYSMPU\_RGDAAC\_COUNT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_COUNT}{SYSMPU\_RGDAAC\_COUNT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+COUNT~(12U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga7ed41b53162a22c4a3d3dbc093c56a28}\label{group___s_y_s_m_p_u___register___masks_ga7ed41b53162a22c4a3d3dbc093c56a28}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M0PE@{SYSMPU\_RGDAAC\_M0PE}}
+\index{SYSMPU\_RGDAAC\_M0PE@{SYSMPU\_RGDAAC\_M0PE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M0PE}{SYSMPU\_RGDAAC\_M0PE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+PE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae35ce9172c62d386a9042e30dbd74863}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga93284d1a0a0c34dad8a07e15fa24041a}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+PE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga93284d1a0a0c34dad8a07e15fa24041a}\label{group___s_y_s_m_p_u___register___masks_ga93284d1a0a0c34dad8a07e15fa24041a}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M0PE\_MASK@{SYSMPU\_RGDAAC\_M0PE\_MASK}}
+\index{SYSMPU\_RGDAAC\_M0PE\_MASK@{SYSMPU\_RGDAAC\_M0PE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M0PE\_MASK}{SYSMPU\_RGDAAC\_M0PE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+PE\+\_\+\+MASK~(0x20U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gae35ce9172c62d386a9042e30dbd74863}\label{group___s_y_s_m_p_u___register___masks_gae35ce9172c62d386a9042e30dbd74863}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M0PE\_SHIFT@{SYSMPU\_RGDAAC\_M0PE\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M0PE\_SHIFT@{SYSMPU\_RGDAAC\_M0PE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M0PE\_SHIFT}{SYSMPU\_RGDAAC\_M0PE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+PE\+\_\+\+SHIFT~(5U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga168e6cdaadec7c56296f480c6bc2d002}\label{group___s_y_s_m_p_u___register___masks_ga168e6cdaadec7c56296f480c6bc2d002}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M0SM@{SYSMPU\_RGDAAC\_M0SM}}
+\index{SYSMPU\_RGDAAC\_M0SM@{SYSMPU\_RGDAAC\_M0SM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M0SM}{SYSMPU\_RGDAAC\_M0SM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+SM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1e07b43327cea07589170831cf01c1d2}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3abe927f5b1ee907e04e879ee8b7bde3}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+SM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga3abe927f5b1ee907e04e879ee8b7bde3}\label{group___s_y_s_m_p_u___register___masks_ga3abe927f5b1ee907e04e879ee8b7bde3}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M0SM\_MASK@{SYSMPU\_RGDAAC\_M0SM\_MASK}}
+\index{SYSMPU\_RGDAAC\_M0SM\_MASK@{SYSMPU\_RGDAAC\_M0SM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M0SM\_MASK}{SYSMPU\_RGDAAC\_M0SM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+SM\+\_\+\+MASK~(0x18U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga1e07b43327cea07589170831cf01c1d2}\label{group___s_y_s_m_p_u___register___masks_ga1e07b43327cea07589170831cf01c1d2}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M0SM\_SHIFT@{SYSMPU\_RGDAAC\_M0SM\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M0SM\_SHIFT@{SYSMPU\_RGDAAC\_M0SM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M0SM\_SHIFT}{SYSMPU\_RGDAAC\_M0SM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+SM\+\_\+\+SHIFT~(3U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga64c8b329954152a68f91ea0493c14f93}\label{group___s_y_s_m_p_u___register___masks_ga64c8b329954152a68f91ea0493c14f93}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M0UM@{SYSMPU\_RGDAAC\_M0UM}}
+\index{SYSMPU\_RGDAAC\_M0UM@{SYSMPU\_RGDAAC\_M0UM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M0UM}{SYSMPU\_RGDAAC\_M0UM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+UM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga87c8892fc77a1d99f3a2d2c8824cc0a8}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga54303a9e2048685dc4cb2bacd7f29580}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+UM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga54303a9e2048685dc4cb2bacd7f29580}\label{group___s_y_s_m_p_u___register___masks_ga54303a9e2048685dc4cb2bacd7f29580}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M0UM\_MASK@{SYSMPU\_RGDAAC\_M0UM\_MASK}}
+\index{SYSMPU\_RGDAAC\_M0UM\_MASK@{SYSMPU\_RGDAAC\_M0UM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M0UM\_MASK}{SYSMPU\_RGDAAC\_M0UM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+UM\+\_\+\+MASK~(0x7U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga87c8892fc77a1d99f3a2d2c8824cc0a8}\label{group___s_y_s_m_p_u___register___masks_ga87c8892fc77a1d99f3a2d2c8824cc0a8}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M0UM\_SHIFT@{SYSMPU\_RGDAAC\_M0UM\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M0UM\_SHIFT@{SYSMPU\_RGDAAC\_M0UM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M0UM\_SHIFT}{SYSMPU\_RGDAAC\_M0UM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M0\+UM\+\_\+\+SHIFT~(0U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga8a3b05287eb78db6f030a062a725b067}\label{group___s_y_s_m_p_u___register___masks_ga8a3b05287eb78db6f030a062a725b067}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M1PE@{SYSMPU\_RGDAAC\_M1PE}}
+\index{SYSMPU\_RGDAAC\_M1PE@{SYSMPU\_RGDAAC\_M1PE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M1PE}{SYSMPU\_RGDAAC\_M1PE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+PE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga6845ac7ac5b9b76b06b1a5fc93046bc3}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1a69ebbac0c48dc223453241c0db028a}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+PE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga1a69ebbac0c48dc223453241c0db028a}\label{group___s_y_s_m_p_u___register___masks_ga1a69ebbac0c48dc223453241c0db028a}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M1PE\_MASK@{SYSMPU\_RGDAAC\_M1PE\_MASK}}
+\index{SYSMPU\_RGDAAC\_M1PE\_MASK@{SYSMPU\_RGDAAC\_M1PE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M1PE\_MASK}{SYSMPU\_RGDAAC\_M1PE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+PE\+\_\+\+MASK~(0x800U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga6845ac7ac5b9b76b06b1a5fc93046bc3}\label{group___s_y_s_m_p_u___register___masks_ga6845ac7ac5b9b76b06b1a5fc93046bc3}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M1PE\_SHIFT@{SYSMPU\_RGDAAC\_M1PE\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M1PE\_SHIFT@{SYSMPU\_RGDAAC\_M1PE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M1PE\_SHIFT}{SYSMPU\_RGDAAC\_M1PE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+PE\+\_\+\+SHIFT~(11U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga6e329f68f5285da783af4411f7726277}\label{group___s_y_s_m_p_u___register___masks_ga6e329f68f5285da783af4411f7726277}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M1SM@{SYSMPU\_RGDAAC\_M1SM}}
+\index{SYSMPU\_RGDAAC\_M1SM@{SYSMPU\_RGDAAC\_M1SM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M1SM}{SYSMPU\_RGDAAC\_M1SM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+SM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga64bb3f490d3eb5ae8ffc915d930ac329}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gacedbd4cbc18414a2fb369562eba67ad9}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+SM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gacedbd4cbc18414a2fb369562eba67ad9}\label{group___s_y_s_m_p_u___register___masks_gacedbd4cbc18414a2fb369562eba67ad9}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M1SM\_MASK@{SYSMPU\_RGDAAC\_M1SM\_MASK}}
+\index{SYSMPU\_RGDAAC\_M1SM\_MASK@{SYSMPU\_RGDAAC\_M1SM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M1SM\_MASK}{SYSMPU\_RGDAAC\_M1SM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+SM\+\_\+\+MASK~(0x600U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga64bb3f490d3eb5ae8ffc915d930ac329}\label{group___s_y_s_m_p_u___register___masks_ga64bb3f490d3eb5ae8ffc915d930ac329}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M1SM\_SHIFT@{SYSMPU\_RGDAAC\_M1SM\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M1SM\_SHIFT@{SYSMPU\_RGDAAC\_M1SM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M1SM\_SHIFT}{SYSMPU\_RGDAAC\_M1SM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+SM\+\_\+\+SHIFT~(9U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga9dfcefb65fe3682a21c0534523d5bfae}\label{group___s_y_s_m_p_u___register___masks_ga9dfcefb65fe3682a21c0534523d5bfae}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M1UM@{SYSMPU\_RGDAAC\_M1UM}}
+\index{SYSMPU\_RGDAAC\_M1UM@{SYSMPU\_RGDAAC\_M1UM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M1UM}{SYSMPU\_RGDAAC\_M1UM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+UM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaac07a4c547a0f649e468d7a718940328}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaee03b4db0fc2c4b8a1bfca463bc12080}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+UM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaee03b4db0fc2c4b8a1bfca463bc12080}\label{group___s_y_s_m_p_u___register___masks_gaee03b4db0fc2c4b8a1bfca463bc12080}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M1UM\_MASK@{SYSMPU\_RGDAAC\_M1UM\_MASK}}
+\index{SYSMPU\_RGDAAC\_M1UM\_MASK@{SYSMPU\_RGDAAC\_M1UM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M1UM\_MASK}{SYSMPU\_RGDAAC\_M1UM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+UM\+\_\+\+MASK~(0x1\+C0U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaac07a4c547a0f649e468d7a718940328}\label{group___s_y_s_m_p_u___register___masks_gaac07a4c547a0f649e468d7a718940328}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M1UM\_SHIFT@{SYSMPU\_RGDAAC\_M1UM\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M1UM\_SHIFT@{SYSMPU\_RGDAAC\_M1UM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M1UM\_SHIFT}{SYSMPU\_RGDAAC\_M1UM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M1\+UM\+\_\+\+SHIFT~(6U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga92ef4c4e5329a8f3ea95b4fb28c37abe}\label{group___s_y_s_m_p_u___register___masks_ga92ef4c4e5329a8f3ea95b4fb28c37abe}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M2PE@{SYSMPU\_RGDAAC\_M2PE}}
+\index{SYSMPU\_RGDAAC\_M2PE@{SYSMPU\_RGDAAC\_M2PE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M2PE}{SYSMPU\_RGDAAC\_M2PE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+PE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabb71f952ad394d52edc275b841afa1e5}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga275f5873275d9a27f9784d51def6d76d}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+PE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga275f5873275d9a27f9784d51def6d76d}\label{group___s_y_s_m_p_u___register___masks_ga275f5873275d9a27f9784d51def6d76d}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M2PE\_MASK@{SYSMPU\_RGDAAC\_M2PE\_MASK}}
+\index{SYSMPU\_RGDAAC\_M2PE\_MASK@{SYSMPU\_RGDAAC\_M2PE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M2PE\_MASK}{SYSMPU\_RGDAAC\_M2PE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+PE\+\_\+\+MASK~(0x20000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gabb71f952ad394d52edc275b841afa1e5}\label{group___s_y_s_m_p_u___register___masks_gabb71f952ad394d52edc275b841afa1e5}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M2PE\_SHIFT@{SYSMPU\_RGDAAC\_M2PE\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M2PE\_SHIFT@{SYSMPU\_RGDAAC\_M2PE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M2PE\_SHIFT}{SYSMPU\_RGDAAC\_M2PE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+PE\+\_\+\+SHIFT~(17U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gade04b820dc4b6d7a9826cddc7ec284c8}\label{group___s_y_s_m_p_u___register___masks_gade04b820dc4b6d7a9826cddc7ec284c8}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M2SM@{SYSMPU\_RGDAAC\_M2SM}}
+\index{SYSMPU\_RGDAAC\_M2SM@{SYSMPU\_RGDAAC\_M2SM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M2SM}{SYSMPU\_RGDAAC\_M2SM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+SM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad07124843ee1ca0a88f40c45caead910}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae02b415f5af47989e555a606620048ff}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+SM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gae02b415f5af47989e555a606620048ff}\label{group___s_y_s_m_p_u___register___masks_gae02b415f5af47989e555a606620048ff}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M2SM\_MASK@{SYSMPU\_RGDAAC\_M2SM\_MASK}}
+\index{SYSMPU\_RGDAAC\_M2SM\_MASK@{SYSMPU\_RGDAAC\_M2SM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M2SM\_MASK}{SYSMPU\_RGDAAC\_M2SM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+SM\+\_\+\+MASK~(0x18000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gad07124843ee1ca0a88f40c45caead910}\label{group___s_y_s_m_p_u___register___masks_gad07124843ee1ca0a88f40c45caead910}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M2SM\_SHIFT@{SYSMPU\_RGDAAC\_M2SM\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M2SM\_SHIFT@{SYSMPU\_RGDAAC\_M2SM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M2SM\_SHIFT}{SYSMPU\_RGDAAC\_M2SM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+SM\+\_\+\+SHIFT~(15U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gad1eeaff535e998137ed0d218bb51cc34}\label{group___s_y_s_m_p_u___register___masks_gad1eeaff535e998137ed0d218bb51cc34}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M2UM@{SYSMPU\_RGDAAC\_M2UM}}
+\index{SYSMPU\_RGDAAC\_M2UM@{SYSMPU\_RGDAAC\_M2UM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M2UM}{SYSMPU\_RGDAAC\_M2UM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+UM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad73345d426993c97e41f5cdf90a7a430}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga590cb7934f73b4b1e9a07ae999973175}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+UM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga590cb7934f73b4b1e9a07ae999973175}\label{group___s_y_s_m_p_u___register___masks_ga590cb7934f73b4b1e9a07ae999973175}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M2UM\_MASK@{SYSMPU\_RGDAAC\_M2UM\_MASK}}
+\index{SYSMPU\_RGDAAC\_M2UM\_MASK@{SYSMPU\_RGDAAC\_M2UM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M2UM\_MASK}{SYSMPU\_RGDAAC\_M2UM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+UM\+\_\+\+MASK~(0x7000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gad73345d426993c97e41f5cdf90a7a430}\label{group___s_y_s_m_p_u___register___masks_gad73345d426993c97e41f5cdf90a7a430}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M2UM\_SHIFT@{SYSMPU\_RGDAAC\_M2UM\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M2UM\_SHIFT@{SYSMPU\_RGDAAC\_M2UM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M2UM\_SHIFT}{SYSMPU\_RGDAAC\_M2UM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M2\+UM\+\_\+\+SHIFT~(12U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga79f9e4bac84523a253a2a7857892c69e}\label{group___s_y_s_m_p_u___register___masks_ga79f9e4bac84523a253a2a7857892c69e}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M3PE@{SYSMPU\_RGDAAC\_M3PE}}
+\index{SYSMPU\_RGDAAC\_M3PE@{SYSMPU\_RGDAAC\_M3PE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M3PE}{SYSMPU\_RGDAAC\_M3PE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+PE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga499c52fd154f96f23c8790846de1b347}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa1de9ddeb982fc776df6bdecda7cecf2}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+PE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaa1de9ddeb982fc776df6bdecda7cecf2}\label{group___s_y_s_m_p_u___register___masks_gaa1de9ddeb982fc776df6bdecda7cecf2}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M3PE\_MASK@{SYSMPU\_RGDAAC\_M3PE\_MASK}}
+\index{SYSMPU\_RGDAAC\_M3PE\_MASK@{SYSMPU\_RGDAAC\_M3PE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M3PE\_MASK}{SYSMPU\_RGDAAC\_M3PE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+PE\+\_\+\+MASK~(0x800000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga499c52fd154f96f23c8790846de1b347}\label{group___s_y_s_m_p_u___register___masks_ga499c52fd154f96f23c8790846de1b347}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M3PE\_SHIFT@{SYSMPU\_RGDAAC\_M3PE\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M3PE\_SHIFT@{SYSMPU\_RGDAAC\_M3PE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M3PE\_SHIFT}{SYSMPU\_RGDAAC\_M3PE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+PE\+\_\+\+SHIFT~(23U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaee6e6e15b28b1a812fa522b3fb08d54b}\label{group___s_y_s_m_p_u___register___masks_gaee6e6e15b28b1a812fa522b3fb08d54b}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M3SM@{SYSMPU\_RGDAAC\_M3SM}}
+\index{SYSMPU\_RGDAAC\_M3SM@{SYSMPU\_RGDAAC\_M3SM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M3SM}{SYSMPU\_RGDAAC\_M3SM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+SM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga89b50e242d50fb28a55a09c66859f66b}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gad141d56f495c594e278315708d6e350c}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+SM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gad141d56f495c594e278315708d6e350c}\label{group___s_y_s_m_p_u___register___masks_gad141d56f495c594e278315708d6e350c}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M3SM\_MASK@{SYSMPU\_RGDAAC\_M3SM\_MASK}}
+\index{SYSMPU\_RGDAAC\_M3SM\_MASK@{SYSMPU\_RGDAAC\_M3SM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M3SM\_MASK}{SYSMPU\_RGDAAC\_M3SM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+SM\+\_\+\+MASK~(0x600000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga89b50e242d50fb28a55a09c66859f66b}\label{group___s_y_s_m_p_u___register___masks_ga89b50e242d50fb28a55a09c66859f66b}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M3SM\_SHIFT@{SYSMPU\_RGDAAC\_M3SM\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M3SM\_SHIFT@{SYSMPU\_RGDAAC\_M3SM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M3SM\_SHIFT}{SYSMPU\_RGDAAC\_M3SM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+SM\+\_\+\+SHIFT~(21U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga4ea3a2e43afc033403c880d30dc7d319}\label{group___s_y_s_m_p_u___register___masks_ga4ea3a2e43afc033403c880d30dc7d319}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M3UM@{SYSMPU\_RGDAAC\_M3UM}}
+\index{SYSMPU\_RGDAAC\_M3UM@{SYSMPU\_RGDAAC\_M3UM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M3UM}{SYSMPU\_RGDAAC\_M3UM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+UM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gac367eaf5fbe827dc8247b95b568a446f}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga042a92beefb545ab1606948f65f9682b}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+UM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga042a92beefb545ab1606948f65f9682b}\label{group___s_y_s_m_p_u___register___masks_ga042a92beefb545ab1606948f65f9682b}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M3UM\_MASK@{SYSMPU\_RGDAAC\_M3UM\_MASK}}
+\index{SYSMPU\_RGDAAC\_M3UM\_MASK@{SYSMPU\_RGDAAC\_M3UM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M3UM\_MASK}{SYSMPU\_RGDAAC\_M3UM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+UM\+\_\+\+MASK~(0x1\+C0000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gac367eaf5fbe827dc8247b95b568a446f}\label{group___s_y_s_m_p_u___register___masks_gac367eaf5fbe827dc8247b95b568a446f}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M3UM\_SHIFT@{SYSMPU\_RGDAAC\_M3UM\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M3UM\_SHIFT@{SYSMPU\_RGDAAC\_M3UM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M3UM\_SHIFT}{SYSMPU\_RGDAAC\_M3UM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M3\+UM\+\_\+\+SHIFT~(18U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga6335cb3a5247ceb12dc7b507b735193a}\label{group___s_y_s_m_p_u___register___masks_ga6335cb3a5247ceb12dc7b507b735193a}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M4RE@{SYSMPU\_RGDAAC\_M4RE}}
+\index{SYSMPU\_RGDAAC\_M4RE@{SYSMPU\_RGDAAC\_M4RE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M4RE}{SYSMPU\_RGDAAC\_M4RE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+RE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga71acc537c1c212185803c2a5980b6b91}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5c3ab9c31dac36964d9a42dc63cd0562}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+RE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga5c3ab9c31dac36964d9a42dc63cd0562}\label{group___s_y_s_m_p_u___register___masks_ga5c3ab9c31dac36964d9a42dc63cd0562}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M4RE\_MASK@{SYSMPU\_RGDAAC\_M4RE\_MASK}}
+\index{SYSMPU\_RGDAAC\_M4RE\_MASK@{SYSMPU\_RGDAAC\_M4RE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M4RE\_MASK}{SYSMPU\_RGDAAC\_M4RE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+RE\+\_\+\+MASK~(0x2000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga71acc537c1c212185803c2a5980b6b91}\label{group___s_y_s_m_p_u___register___masks_ga71acc537c1c212185803c2a5980b6b91}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M4RE\_SHIFT@{SYSMPU\_RGDAAC\_M4RE\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M4RE\_SHIFT@{SYSMPU\_RGDAAC\_M4RE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M4RE\_SHIFT}{SYSMPU\_RGDAAC\_M4RE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+RE\+\_\+\+SHIFT~(25U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gae952a6d345807188cba4fd8d91f5d7b9}\label{group___s_y_s_m_p_u___register___masks_gae952a6d345807188cba4fd8d91f5d7b9}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M4WE@{SYSMPU\_RGDAAC\_M4WE}}
+\index{SYSMPU\_RGDAAC\_M4WE@{SYSMPU\_RGDAAC\_M4WE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M4WE}{SYSMPU\_RGDAAC\_M4WE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+WE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga0fa0186c2648eb2d8c7eded2a95a603e}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gabb5f7c93ab93b88d2a8480f2ca8d8b92}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+WE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gabb5f7c93ab93b88d2a8480f2ca8d8b92}\label{group___s_y_s_m_p_u___register___masks_gabb5f7c93ab93b88d2a8480f2ca8d8b92}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M4WE\_MASK@{SYSMPU\_RGDAAC\_M4WE\_MASK}}
+\index{SYSMPU\_RGDAAC\_M4WE\_MASK@{SYSMPU\_RGDAAC\_M4WE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M4WE\_MASK}{SYSMPU\_RGDAAC\_M4WE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+WE\+\_\+\+MASK~(0x1000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga0fa0186c2648eb2d8c7eded2a95a603e}\label{group___s_y_s_m_p_u___register___masks_ga0fa0186c2648eb2d8c7eded2a95a603e}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M4WE\_SHIFT@{SYSMPU\_RGDAAC\_M4WE\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M4WE\_SHIFT@{SYSMPU\_RGDAAC\_M4WE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M4WE\_SHIFT}{SYSMPU\_RGDAAC\_M4WE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M4\+WE\+\_\+\+SHIFT~(24U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga2eedd45098b08bdcaff5d50adee745bb}\label{group___s_y_s_m_p_u___register___masks_ga2eedd45098b08bdcaff5d50adee745bb}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M5RE@{SYSMPU\_RGDAAC\_M5RE}}
+\index{SYSMPU\_RGDAAC\_M5RE@{SYSMPU\_RGDAAC\_M5RE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M5RE}{SYSMPU\_RGDAAC\_M5RE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+RE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga643131b9d871336a798b7b4279998c63}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga81bb649444de69b3cbc7e4da89a302ed}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+RE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga81bb649444de69b3cbc7e4da89a302ed}\label{group___s_y_s_m_p_u___register___masks_ga81bb649444de69b3cbc7e4da89a302ed}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M5RE\_MASK@{SYSMPU\_RGDAAC\_M5RE\_MASK}}
+\index{SYSMPU\_RGDAAC\_M5RE\_MASK@{SYSMPU\_RGDAAC\_M5RE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M5RE\_MASK}{SYSMPU\_RGDAAC\_M5RE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+RE\+\_\+\+MASK~(0x8000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga643131b9d871336a798b7b4279998c63}\label{group___s_y_s_m_p_u___register___masks_ga643131b9d871336a798b7b4279998c63}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M5RE\_SHIFT@{SYSMPU\_RGDAAC\_M5RE\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M5RE\_SHIFT@{SYSMPU\_RGDAAC\_M5RE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M5RE\_SHIFT}{SYSMPU\_RGDAAC\_M5RE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+RE\+\_\+\+SHIFT~(27U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaba51b621181f07712ad3ecf83f83fbf0}\label{group___s_y_s_m_p_u___register___masks_gaba51b621181f07712ad3ecf83f83fbf0}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M5WE@{SYSMPU\_RGDAAC\_M5WE}}
+\index{SYSMPU\_RGDAAC\_M5WE@{SYSMPU\_RGDAAC\_M5WE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M5WE}{SYSMPU\_RGDAAC\_M5WE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+WE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf466b78026a2e26a28f8d31e6906f255}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gab07617f5450a0265dcbe82f887eaffc2}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+WE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gab07617f5450a0265dcbe82f887eaffc2}\label{group___s_y_s_m_p_u___register___masks_gab07617f5450a0265dcbe82f887eaffc2}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M5WE\_MASK@{SYSMPU\_RGDAAC\_M5WE\_MASK}}
+\index{SYSMPU\_RGDAAC\_M5WE\_MASK@{SYSMPU\_RGDAAC\_M5WE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M5WE\_MASK}{SYSMPU\_RGDAAC\_M5WE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+WE\+\_\+\+MASK~(0x4000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaf466b78026a2e26a28f8d31e6906f255}\label{group___s_y_s_m_p_u___register___masks_gaf466b78026a2e26a28f8d31e6906f255}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M5WE\_SHIFT@{SYSMPU\_RGDAAC\_M5WE\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M5WE\_SHIFT@{SYSMPU\_RGDAAC\_M5WE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M5WE\_SHIFT}{SYSMPU\_RGDAAC\_M5WE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M5\+WE\+\_\+\+SHIFT~(26U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaa6ffae6f8b01dbd2a30b137bb5de8734}\label{group___s_y_s_m_p_u___register___masks_gaa6ffae6f8b01dbd2a30b137bb5de8734}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M6RE@{SYSMPU\_RGDAAC\_M6RE}}
+\index{SYSMPU\_RGDAAC\_M6RE@{SYSMPU\_RGDAAC\_M6RE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M6RE}{SYSMPU\_RGDAAC\_M6RE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+RE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga25e3e66e4dbbc48ffbe074e086b2dbb0}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gac0fff025cadba3aff5afb932d979f822}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+RE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gac0fff025cadba3aff5afb932d979f822}\label{group___s_y_s_m_p_u___register___masks_gac0fff025cadba3aff5afb932d979f822}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M6RE\_MASK@{SYSMPU\_RGDAAC\_M6RE\_MASK}}
+\index{SYSMPU\_RGDAAC\_M6RE\_MASK@{SYSMPU\_RGDAAC\_M6RE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M6RE\_MASK}{SYSMPU\_RGDAAC\_M6RE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+RE\+\_\+\+MASK~(0x20000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga25e3e66e4dbbc48ffbe074e086b2dbb0}\label{group___s_y_s_m_p_u___register___masks_ga25e3e66e4dbbc48ffbe074e086b2dbb0}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M6RE\_SHIFT@{SYSMPU\_RGDAAC\_M6RE\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M6RE\_SHIFT@{SYSMPU\_RGDAAC\_M6RE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M6RE\_SHIFT}{SYSMPU\_RGDAAC\_M6RE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+RE\+\_\+\+SHIFT~(29U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga52d5f9cc728b735fc1b345e7704cb3f6}\label{group___s_y_s_m_p_u___register___masks_ga52d5f9cc728b735fc1b345e7704cb3f6}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M6WE@{SYSMPU\_RGDAAC\_M6WE}}
+\index{SYSMPU\_RGDAAC\_M6WE@{SYSMPU\_RGDAAC\_M6WE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M6WE}{SYSMPU\_RGDAAC\_M6WE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+WE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga15a20fa019111f179db6b6210b5137f4}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gadf6593cd8fedd17e2c69e055b74e1d12}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+WE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gadf6593cd8fedd17e2c69e055b74e1d12}\label{group___s_y_s_m_p_u___register___masks_gadf6593cd8fedd17e2c69e055b74e1d12}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M6WE\_MASK@{SYSMPU\_RGDAAC\_M6WE\_MASK}}
+\index{SYSMPU\_RGDAAC\_M6WE\_MASK@{SYSMPU\_RGDAAC\_M6WE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M6WE\_MASK}{SYSMPU\_RGDAAC\_M6WE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+WE\+\_\+\+MASK~(0x10000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga15a20fa019111f179db6b6210b5137f4}\label{group___s_y_s_m_p_u___register___masks_ga15a20fa019111f179db6b6210b5137f4}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M6WE\_SHIFT@{SYSMPU\_RGDAAC\_M6WE\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M6WE\_SHIFT@{SYSMPU\_RGDAAC\_M6WE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M6WE\_SHIFT}{SYSMPU\_RGDAAC\_M6WE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M6\+WE\+\_\+\+SHIFT~(28U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gad17b13f650930e216355ea4098f8af6b}\label{group___s_y_s_m_p_u___register___masks_gad17b13f650930e216355ea4098f8af6b}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M7RE@{SYSMPU\_RGDAAC\_M7RE}}
+\index{SYSMPU\_RGDAAC\_M7RE@{SYSMPU\_RGDAAC\_M7RE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M7RE}{SYSMPU\_RGDAAC\_M7RE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+RE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga2a76b8d6ff8f1787a84500a9496a4979}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5e9902c0637794adc3a5f4603054eee2}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+RE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga5e9902c0637794adc3a5f4603054eee2}\label{group___s_y_s_m_p_u___register___masks_ga5e9902c0637794adc3a5f4603054eee2}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M7RE\_MASK@{SYSMPU\_RGDAAC\_M7RE\_MASK}}
+\index{SYSMPU\_RGDAAC\_M7RE\_MASK@{SYSMPU\_RGDAAC\_M7RE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M7RE\_MASK}{SYSMPU\_RGDAAC\_M7RE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+RE\+\_\+\+MASK~(0x80000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga2a76b8d6ff8f1787a84500a9496a4979}\label{group___s_y_s_m_p_u___register___masks_ga2a76b8d6ff8f1787a84500a9496a4979}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M7RE\_SHIFT@{SYSMPU\_RGDAAC\_M7RE\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M7RE\_SHIFT@{SYSMPU\_RGDAAC\_M7RE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M7RE\_SHIFT}{SYSMPU\_RGDAAC\_M7RE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+RE\+\_\+\+SHIFT~(31U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga6746268c9392d28c32d285d68d902970}\label{group___s_y_s_m_p_u___register___masks_ga6746268c9392d28c32d285d68d902970}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M7WE@{SYSMPU\_RGDAAC\_M7WE}}
+\index{SYSMPU\_RGDAAC\_M7WE@{SYSMPU\_RGDAAC\_M7WE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M7WE}{SYSMPU\_RGDAAC\_M7WE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+WE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga025e80d9085ce9ad8f68880df2623096}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7a2ea71a079ee3e454931a06d2ce3688}{SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+WE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga7a2ea71a079ee3e454931a06d2ce3688}\label{group___s_y_s_m_p_u___register___masks_ga7a2ea71a079ee3e454931a06d2ce3688}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M7WE\_MASK@{SYSMPU\_RGDAAC\_M7WE\_MASK}}
+\index{SYSMPU\_RGDAAC\_M7WE\_MASK@{SYSMPU\_RGDAAC\_M7WE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M7WE\_MASK}{SYSMPU\_RGDAAC\_M7WE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+WE\+\_\+\+MASK~(0x40000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga025e80d9085ce9ad8f68880df2623096}\label{group___s_y_s_m_p_u___register___masks_ga025e80d9085ce9ad8f68880df2623096}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_RGDAAC\_M7WE\_SHIFT@{SYSMPU\_RGDAAC\_M7WE\_SHIFT}}
+\index{SYSMPU\_RGDAAC\_M7WE\_SHIFT@{SYSMPU\_RGDAAC\_M7WE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_RGDAAC\_M7WE\_SHIFT}{SYSMPU\_RGDAAC\_M7WE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+RGDAAC\+\_\+\+M7\+WE\+\_\+\+SHIFT~(30U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gab884871b2c660b896506055dde6dce11}\label{group___s_y_s_m_p_u___register___masks_gab884871b2c660b896506055dde6dce11}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_COUNT@{SYSMPU\_WORD\_COUNT}}
+\index{SYSMPU\_WORD\_COUNT@{SYSMPU\_WORD\_COUNT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_COUNT}{SYSMPU\_WORD\_COUNT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+COUNT~(12U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga8a45931ec5e60a7c8819214c9928eb96}\label{group___s_y_s_m_p_u___register___masks_ga8a45931ec5e60a7c8819214c9928eb96}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_COUNT2@{SYSMPU\_WORD\_COUNT2}}
+\index{SYSMPU\_WORD\_COUNT2@{SYSMPU\_WORD\_COUNT2}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_COUNT2}{SYSMPU\_WORD\_COUNT2}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+COUNT2~(4U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gabe7211d94f810d83d21b2e78c42b42ea}\label{group___s_y_s_m_p_u___register___masks_gabe7211d94f810d83d21b2e78c42b42ea}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_ENDADDR@{SYSMPU\_WORD\_ENDADDR}}
+\index{SYSMPU\_WORD\_ENDADDR@{SYSMPU\_WORD\_ENDADDR}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_ENDADDR}{SYSMPU\_WORD\_ENDADDR}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+ENDADDR(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga774311afd3c172d7d3a12c1c565405b7}{SYSMPU\+\_\+\+WORD\+\_\+\+ENDADDR\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3b4055d3f5b44db1c32be889dbfc6d3f}{SYSMPU\+\_\+\+WORD\+\_\+\+ENDADDR\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga3b4055d3f5b44db1c32be889dbfc6d3f}\label{group___s_y_s_m_p_u___register___masks_ga3b4055d3f5b44db1c32be889dbfc6d3f}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_ENDADDR\_MASK@{SYSMPU\_WORD\_ENDADDR\_MASK}}
+\index{SYSMPU\_WORD\_ENDADDR\_MASK@{SYSMPU\_WORD\_ENDADDR\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_ENDADDR\_MASK}{SYSMPU\_WORD\_ENDADDR\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+ENDADDR\+\_\+\+MASK~(0x\+FFFFFFE0U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga774311afd3c172d7d3a12c1c565405b7}\label{group___s_y_s_m_p_u___register___masks_ga774311afd3c172d7d3a12c1c565405b7}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_ENDADDR\_SHIFT@{SYSMPU\_WORD\_ENDADDR\_SHIFT}}
+\index{SYSMPU\_WORD\_ENDADDR\_SHIFT@{SYSMPU\_WORD\_ENDADDR\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_ENDADDR\_SHIFT}{SYSMPU\_WORD\_ENDADDR\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+ENDADDR\+\_\+\+SHIFT~(5U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gabc9d63b645f6a80ceb840c4373d21e9c}\label{group___s_y_s_m_p_u___register___masks_gabc9d63b645f6a80ceb840c4373d21e9c}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M0PE@{SYSMPU\_WORD\_M0PE}}
+\index{SYSMPU\_WORD\_M0PE@{SYSMPU\_WORD\_M0PE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M0PE}{SYSMPU\_WORD\_M0PE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M0\+PE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gacd7c0ea160bd6c4aef68af6ac0b0d521}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaff5e58417e71b136bcef7ac03177ca2e}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+PE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaff5e58417e71b136bcef7ac03177ca2e}\label{group___s_y_s_m_p_u___register___masks_gaff5e58417e71b136bcef7ac03177ca2e}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M0PE\_MASK@{SYSMPU\_WORD\_M0PE\_MASK}}
+\index{SYSMPU\_WORD\_M0PE\_MASK@{SYSMPU\_WORD\_M0PE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M0PE\_MASK}{SYSMPU\_WORD\_M0PE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M0\+PE\+\_\+\+MASK~(0x20U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gacd7c0ea160bd6c4aef68af6ac0b0d521}\label{group___s_y_s_m_p_u___register___masks_gacd7c0ea160bd6c4aef68af6ac0b0d521}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M0PE\_SHIFT@{SYSMPU\_WORD\_M0PE\_SHIFT}}
+\index{SYSMPU\_WORD\_M0PE\_SHIFT@{SYSMPU\_WORD\_M0PE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M0PE\_SHIFT}{SYSMPU\_WORD\_M0PE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M0\+PE\+\_\+\+SHIFT~(5U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gae2a5cec6f6707a4132761c05f8d69071}\label{group___s_y_s_m_p_u___register___masks_gae2a5cec6f6707a4132761c05f8d69071}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M0SM@{SYSMPU\_WORD\_M0SM}}
+\index{SYSMPU\_WORD\_M0SM@{SYSMPU\_WORD\_M0SM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M0SM}{SYSMPU\_WORD\_M0SM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M0\+SM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gadaf9df921f73cb74a891b96031c798fb}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa2b6a90954e96cd27843e4977cadecb8}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+SM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaa2b6a90954e96cd27843e4977cadecb8}\label{group___s_y_s_m_p_u___register___masks_gaa2b6a90954e96cd27843e4977cadecb8}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M0SM\_MASK@{SYSMPU\_WORD\_M0SM\_MASK}}
+\index{SYSMPU\_WORD\_M0SM\_MASK@{SYSMPU\_WORD\_M0SM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M0SM\_MASK}{SYSMPU\_WORD\_M0SM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M0\+SM\+\_\+\+MASK~(0x18U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gadaf9df921f73cb74a891b96031c798fb}\label{group___s_y_s_m_p_u___register___masks_gadaf9df921f73cb74a891b96031c798fb}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M0SM\_SHIFT@{SYSMPU\_WORD\_M0SM\_SHIFT}}
+\index{SYSMPU\_WORD\_M0SM\_SHIFT@{SYSMPU\_WORD\_M0SM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M0SM\_SHIFT}{SYSMPU\_WORD\_M0SM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M0\+SM\+\_\+\+SHIFT~(3U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga0fbbafb44245a49e27cb15d1bd6b5ff5}\label{group___s_y_s_m_p_u___register___masks_ga0fbbafb44245a49e27cb15d1bd6b5ff5}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M0UM@{SYSMPU\_WORD\_M0UM}}
+\index{SYSMPU\_WORD\_M0UM@{SYSMPU\_WORD\_M0UM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M0UM}{SYSMPU\_WORD\_M0UM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M0\+UM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf863864153f045db758c616b3a798ecc}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8a0fececd20e71c06897b79aa2b03eb4}{SYSMPU\+\_\+\+WORD\+\_\+\+M0\+UM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga8a0fececd20e71c06897b79aa2b03eb4}\label{group___s_y_s_m_p_u___register___masks_ga8a0fececd20e71c06897b79aa2b03eb4}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M0UM\_MASK@{SYSMPU\_WORD\_M0UM\_MASK}}
+\index{SYSMPU\_WORD\_M0UM\_MASK@{SYSMPU\_WORD\_M0UM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M0UM\_MASK}{SYSMPU\_WORD\_M0UM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M0\+UM\+\_\+\+MASK~(0x7U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaf863864153f045db758c616b3a798ecc}\label{group___s_y_s_m_p_u___register___masks_gaf863864153f045db758c616b3a798ecc}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M0UM\_SHIFT@{SYSMPU\_WORD\_M0UM\_SHIFT}}
+\index{SYSMPU\_WORD\_M0UM\_SHIFT@{SYSMPU\_WORD\_M0UM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M0UM\_SHIFT}{SYSMPU\_WORD\_M0UM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M0\+UM\+\_\+\+SHIFT~(0U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga44836fc5dc7a6d84950850dc05253540}\label{group___s_y_s_m_p_u___register___masks_ga44836fc5dc7a6d84950850dc05253540}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M1PE@{SYSMPU\_WORD\_M1PE}}
+\index{SYSMPU\_WORD\_M1PE@{SYSMPU\_WORD\_M1PE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M1PE}{SYSMPU\_WORD\_M1PE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M1\+PE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7e177734c642052c85f912b648a821f7}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga4a180a45d54de7cf18b2ae97fbf44637}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+PE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga4a180a45d54de7cf18b2ae97fbf44637}\label{group___s_y_s_m_p_u___register___masks_ga4a180a45d54de7cf18b2ae97fbf44637}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M1PE\_MASK@{SYSMPU\_WORD\_M1PE\_MASK}}
+\index{SYSMPU\_WORD\_M1PE\_MASK@{SYSMPU\_WORD\_M1PE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M1PE\_MASK}{SYSMPU\_WORD\_M1PE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M1\+PE\+\_\+\+MASK~(0x800U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga7e177734c642052c85f912b648a821f7}\label{group___s_y_s_m_p_u___register___masks_ga7e177734c642052c85f912b648a821f7}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M1PE\_SHIFT@{SYSMPU\_WORD\_M1PE\_SHIFT}}
+\index{SYSMPU\_WORD\_M1PE\_SHIFT@{SYSMPU\_WORD\_M1PE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M1PE\_SHIFT}{SYSMPU\_WORD\_M1PE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M1\+PE\+\_\+\+SHIFT~(11U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga91737f35e41ee9994eb685659a75ee8f}\label{group___s_y_s_m_p_u___register___masks_ga91737f35e41ee9994eb685659a75ee8f}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M1SM@{SYSMPU\_WORD\_M1SM}}
+\index{SYSMPU\_WORD\_M1SM@{SYSMPU\_WORD\_M1SM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M1SM}{SYSMPU\_WORD\_M1SM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M1\+SM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3f5e26bf16ec6e327508ebc5ea27d5a7}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7dee6ba7e6211ebaf9488acba295fb86}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+SM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga7dee6ba7e6211ebaf9488acba295fb86}\label{group___s_y_s_m_p_u___register___masks_ga7dee6ba7e6211ebaf9488acba295fb86}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M1SM\_MASK@{SYSMPU\_WORD\_M1SM\_MASK}}
+\index{SYSMPU\_WORD\_M1SM\_MASK@{SYSMPU\_WORD\_M1SM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M1SM\_MASK}{SYSMPU\_WORD\_M1SM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M1\+SM\+\_\+\+MASK~(0x600U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga3f5e26bf16ec6e327508ebc5ea27d5a7}\label{group___s_y_s_m_p_u___register___masks_ga3f5e26bf16ec6e327508ebc5ea27d5a7}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M1SM\_SHIFT@{SYSMPU\_WORD\_M1SM\_SHIFT}}
+\index{SYSMPU\_WORD\_M1SM\_SHIFT@{SYSMPU\_WORD\_M1SM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M1SM\_SHIFT}{SYSMPU\_WORD\_M1SM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M1\+SM\+\_\+\+SHIFT~(9U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga4e62e94f4b48a2a55a8fe744add7ed10}\label{group___s_y_s_m_p_u___register___masks_ga4e62e94f4b48a2a55a8fe744add7ed10}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M1UM@{SYSMPU\_WORD\_M1UM}}
+\index{SYSMPU\_WORD\_M1UM@{SYSMPU\_WORD\_M1UM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M1UM}{SYSMPU\_WORD\_M1UM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M1\+UM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga0f91b2629a278e8f6e9e19358658364f}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga9e8917ca1fa783e0f7d64c5325a72f64}{SYSMPU\+\_\+\+WORD\+\_\+\+M1\+UM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga9e8917ca1fa783e0f7d64c5325a72f64}\label{group___s_y_s_m_p_u___register___masks_ga9e8917ca1fa783e0f7d64c5325a72f64}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M1UM\_MASK@{SYSMPU\_WORD\_M1UM\_MASK}}
+\index{SYSMPU\_WORD\_M1UM\_MASK@{SYSMPU\_WORD\_M1UM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M1UM\_MASK}{SYSMPU\_WORD\_M1UM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M1\+UM\+\_\+\+MASK~(0x1\+C0U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga0f91b2629a278e8f6e9e19358658364f}\label{group___s_y_s_m_p_u___register___masks_ga0f91b2629a278e8f6e9e19358658364f}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M1UM\_SHIFT@{SYSMPU\_WORD\_M1UM\_SHIFT}}
+\index{SYSMPU\_WORD\_M1UM\_SHIFT@{SYSMPU\_WORD\_M1UM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M1UM\_SHIFT}{SYSMPU\_WORD\_M1UM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M1\+UM\+\_\+\+SHIFT~(6U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga04e88db67ef837b1c5916513c6b825cd}\label{group___s_y_s_m_p_u___register___masks_ga04e88db67ef837b1c5916513c6b825cd}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M2PE@{SYSMPU\_WORD\_M2PE}}
+\index{SYSMPU\_WORD\_M2PE@{SYSMPU\_WORD\_M2PE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M2PE}{SYSMPU\_WORD\_M2PE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M2\+PE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa7e65aacdb7fea3b44442a9262ed6232}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7f72b16598726a30a3fcd0f69e5f88f1}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+PE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga7f72b16598726a30a3fcd0f69e5f88f1}\label{group___s_y_s_m_p_u___register___masks_ga7f72b16598726a30a3fcd0f69e5f88f1}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M2PE\_MASK@{SYSMPU\_WORD\_M2PE\_MASK}}
+\index{SYSMPU\_WORD\_M2PE\_MASK@{SYSMPU\_WORD\_M2PE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M2PE\_MASK}{SYSMPU\_WORD\_M2PE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M2\+PE\+\_\+\+MASK~(0x20000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaa7e65aacdb7fea3b44442a9262ed6232}\label{group___s_y_s_m_p_u___register___masks_gaa7e65aacdb7fea3b44442a9262ed6232}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M2PE\_SHIFT@{SYSMPU\_WORD\_M2PE\_SHIFT}}
+\index{SYSMPU\_WORD\_M2PE\_SHIFT@{SYSMPU\_WORD\_M2PE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M2PE\_SHIFT}{SYSMPU\_WORD\_M2PE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M2\+PE\+\_\+\+SHIFT~(17U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gae2a6fc63c275f7905d6449c6191bcfdf}\label{group___s_y_s_m_p_u___register___masks_gae2a6fc63c275f7905d6449c6191bcfdf}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M2SM@{SYSMPU\_WORD\_M2SM}}
+\index{SYSMPU\_WORD\_M2SM@{SYSMPU\_WORD\_M2SM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M2SM}{SYSMPU\_WORD\_M2SM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M2\+SM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga0adcb59fe9361718c49b07222d12af9e}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7a322573a604903a73bf503d186f29a1}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+SM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga7a322573a604903a73bf503d186f29a1}\label{group___s_y_s_m_p_u___register___masks_ga7a322573a604903a73bf503d186f29a1}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M2SM\_MASK@{SYSMPU\_WORD\_M2SM\_MASK}}
+\index{SYSMPU\_WORD\_M2SM\_MASK@{SYSMPU\_WORD\_M2SM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M2SM\_MASK}{SYSMPU\_WORD\_M2SM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M2\+SM\+\_\+\+MASK~(0x18000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga0adcb59fe9361718c49b07222d12af9e}\label{group___s_y_s_m_p_u___register___masks_ga0adcb59fe9361718c49b07222d12af9e}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M2SM\_SHIFT@{SYSMPU\_WORD\_M2SM\_SHIFT}}
+\index{SYSMPU\_WORD\_M2SM\_SHIFT@{SYSMPU\_WORD\_M2SM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M2SM\_SHIFT}{SYSMPU\_WORD\_M2SM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M2\+SM\+\_\+\+SHIFT~(15U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga54ac7cd0bae53d875ba4701f40d7144a}\label{group___s_y_s_m_p_u___register___masks_ga54ac7cd0bae53d875ba4701f40d7144a}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M2UM@{SYSMPU\_WORD\_M2UM}}
+\index{SYSMPU\_WORD\_M2UM@{SYSMPU\_WORD\_M2UM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M2UM}{SYSMPU\_WORD\_M2UM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M2\+UM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5529355e0696227edc2c3d4e3cd685d2}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga2349e72decbdb37a5d225db0f8381085}{SYSMPU\+\_\+\+WORD\+\_\+\+M2\+UM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga2349e72decbdb37a5d225db0f8381085}\label{group___s_y_s_m_p_u___register___masks_ga2349e72decbdb37a5d225db0f8381085}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M2UM\_MASK@{SYSMPU\_WORD\_M2UM\_MASK}}
+\index{SYSMPU\_WORD\_M2UM\_MASK@{SYSMPU\_WORD\_M2UM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M2UM\_MASK}{SYSMPU\_WORD\_M2UM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M2\+UM\+\_\+\+MASK~(0x7000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga5529355e0696227edc2c3d4e3cd685d2}\label{group___s_y_s_m_p_u___register___masks_ga5529355e0696227edc2c3d4e3cd685d2}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M2UM\_SHIFT@{SYSMPU\_WORD\_M2UM\_SHIFT}}
+\index{SYSMPU\_WORD\_M2UM\_SHIFT@{SYSMPU\_WORD\_M2UM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M2UM\_SHIFT}{SYSMPU\_WORD\_M2UM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M2\+UM\+\_\+\+SHIFT~(12U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gac7c63b6c9a51af7a6ab569aa7460e779}\label{group___s_y_s_m_p_u___register___masks_gac7c63b6c9a51af7a6ab569aa7460e779}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M3PE@{SYSMPU\_WORD\_M3PE}}
+\index{SYSMPU\_WORD\_M3PE@{SYSMPU\_WORD\_M3PE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M3PE}{SYSMPU\_WORD\_M3PE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M3\+PE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5fd3c390a85db75735f13cd595fe1062}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+PE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga1f01c95b0ef8ba564502ae9e7bd1e153}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+PE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga1f01c95b0ef8ba564502ae9e7bd1e153}\label{group___s_y_s_m_p_u___register___masks_ga1f01c95b0ef8ba564502ae9e7bd1e153}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M3PE\_MASK@{SYSMPU\_WORD\_M3PE\_MASK}}
+\index{SYSMPU\_WORD\_M3PE\_MASK@{SYSMPU\_WORD\_M3PE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M3PE\_MASK}{SYSMPU\_WORD\_M3PE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M3\+PE\+\_\+\+MASK~(0x800000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga5fd3c390a85db75735f13cd595fe1062}\label{group___s_y_s_m_p_u___register___masks_ga5fd3c390a85db75735f13cd595fe1062}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M3PE\_SHIFT@{SYSMPU\_WORD\_M3PE\_SHIFT}}
+\index{SYSMPU\_WORD\_M3PE\_SHIFT@{SYSMPU\_WORD\_M3PE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M3PE\_SHIFT}{SYSMPU\_WORD\_M3PE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M3\+PE\+\_\+\+SHIFT~(23U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga1e888ec8d33a10847c6754997793500f}\label{group___s_y_s_m_p_u___register___masks_ga1e888ec8d33a10847c6754997793500f}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M3SM@{SYSMPU\_WORD\_M3SM}}
+\index{SYSMPU\_WORD\_M3SM@{SYSMPU\_WORD\_M3SM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M3SM}{SYSMPU\_WORD\_M3SM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M3\+SM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gacbfcc275939bc9c80a3ca862d0de36ab}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+SM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga59814d59ef917844397a31d4fc167a55}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+SM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga59814d59ef917844397a31d4fc167a55}\label{group___s_y_s_m_p_u___register___masks_ga59814d59ef917844397a31d4fc167a55}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M3SM\_MASK@{SYSMPU\_WORD\_M3SM\_MASK}}
+\index{SYSMPU\_WORD\_M3SM\_MASK@{SYSMPU\_WORD\_M3SM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M3SM\_MASK}{SYSMPU\_WORD\_M3SM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M3\+SM\+\_\+\+MASK~(0x600000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gacbfcc275939bc9c80a3ca862d0de36ab}\label{group___s_y_s_m_p_u___register___masks_gacbfcc275939bc9c80a3ca862d0de36ab}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M3SM\_SHIFT@{SYSMPU\_WORD\_M3SM\_SHIFT}}
+\index{SYSMPU\_WORD\_M3SM\_SHIFT@{SYSMPU\_WORD\_M3SM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M3SM\_SHIFT}{SYSMPU\_WORD\_M3SM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M3\+SM\+\_\+\+SHIFT~(21U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gab7dcfe7c446a2e44c7e31bed98b34f5f}\label{group___s_y_s_m_p_u___register___masks_gab7dcfe7c446a2e44c7e31bed98b34f5f}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M3UM@{SYSMPU\_WORD\_M3UM}}
+\index{SYSMPU\_WORD\_M3UM@{SYSMPU\_WORD\_M3UM}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M3UM}{SYSMPU\_WORD\_M3UM}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M3\+UM(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gadfbd9684345392e532f7fd37bbd5a3f2}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+UM\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga9b6b9421f66f545a7ed0c342eb0e5e2e}{SYSMPU\+\_\+\+WORD\+\_\+\+M3\+UM\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga9b6b9421f66f545a7ed0c342eb0e5e2e}\label{group___s_y_s_m_p_u___register___masks_ga9b6b9421f66f545a7ed0c342eb0e5e2e}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M3UM\_MASK@{SYSMPU\_WORD\_M3UM\_MASK}}
+\index{SYSMPU\_WORD\_M3UM\_MASK@{SYSMPU\_WORD\_M3UM\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M3UM\_MASK}{SYSMPU\_WORD\_M3UM\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M3\+UM\+\_\+\+MASK~(0x1\+C0000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gadfbd9684345392e532f7fd37bbd5a3f2}\label{group___s_y_s_m_p_u___register___masks_gadfbd9684345392e532f7fd37bbd5a3f2}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M3UM\_SHIFT@{SYSMPU\_WORD\_M3UM\_SHIFT}}
+\index{SYSMPU\_WORD\_M3UM\_SHIFT@{SYSMPU\_WORD\_M3UM\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M3UM\_SHIFT}{SYSMPU\_WORD\_M3UM\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M3\+UM\+\_\+\+SHIFT~(18U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaa4398a1dbf2f030ad246a89dfcdc8952}\label{group___s_y_s_m_p_u___register___masks_gaa4398a1dbf2f030ad246a89dfcdc8952}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M4RE@{SYSMPU\_WORD\_M4RE}}
+\index{SYSMPU\_WORD\_M4RE@{SYSMPU\_WORD\_M4RE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M4RE}{SYSMPU\_WORD\_M4RE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M4\+RE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf9764803abe1d19e7c2f502b2d49e22b}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga10a274c859895c807fc418dc8205986f}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+RE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga10a274c859895c807fc418dc8205986f}\label{group___s_y_s_m_p_u___register___masks_ga10a274c859895c807fc418dc8205986f}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M4RE\_MASK@{SYSMPU\_WORD\_M4RE\_MASK}}
+\index{SYSMPU\_WORD\_M4RE\_MASK@{SYSMPU\_WORD\_M4RE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M4RE\_MASK}{SYSMPU\_WORD\_M4RE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M4\+RE\+\_\+\+MASK~(0x2000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaf9764803abe1d19e7c2f502b2d49e22b}\label{group___s_y_s_m_p_u___register___masks_gaf9764803abe1d19e7c2f502b2d49e22b}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M4RE\_SHIFT@{SYSMPU\_WORD\_M4RE\_SHIFT}}
+\index{SYSMPU\_WORD\_M4RE\_SHIFT@{SYSMPU\_WORD\_M4RE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M4RE\_SHIFT}{SYSMPU\_WORD\_M4RE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M4\+RE\+\_\+\+SHIFT~(25U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gac628d7b39d91f396a406c6a8d622282d}\label{group___s_y_s_m_p_u___register___masks_gac628d7b39d91f396a406c6a8d622282d}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M4WE@{SYSMPU\_WORD\_M4WE}}
+\index{SYSMPU\_WORD\_M4WE@{SYSMPU\_WORD\_M4WE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M4WE}{SYSMPU\_WORD\_M4WE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M4\+WE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8988ba4f338efcd856f60442c3a9d0a2}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf58c4e708c5fb62d40a9cf7a150674e9}{SYSMPU\+\_\+\+WORD\+\_\+\+M4\+WE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaf58c4e708c5fb62d40a9cf7a150674e9}\label{group___s_y_s_m_p_u___register___masks_gaf58c4e708c5fb62d40a9cf7a150674e9}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M4WE\_MASK@{SYSMPU\_WORD\_M4WE\_MASK}}
+\index{SYSMPU\_WORD\_M4WE\_MASK@{SYSMPU\_WORD\_M4WE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M4WE\_MASK}{SYSMPU\_WORD\_M4WE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M4\+WE\+\_\+\+MASK~(0x1000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga8988ba4f338efcd856f60442c3a9d0a2}\label{group___s_y_s_m_p_u___register___masks_ga8988ba4f338efcd856f60442c3a9d0a2}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M4WE\_SHIFT@{SYSMPU\_WORD\_M4WE\_SHIFT}}
+\index{SYSMPU\_WORD\_M4WE\_SHIFT@{SYSMPU\_WORD\_M4WE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M4WE\_SHIFT}{SYSMPU\_WORD\_M4WE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M4\+WE\+\_\+\+SHIFT~(24U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga0380e6a9a8d6d0703972b9b016b23d75}\label{group___s_y_s_m_p_u___register___masks_ga0380e6a9a8d6d0703972b9b016b23d75}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M5RE@{SYSMPU\_WORD\_M5RE}}
+\index{SYSMPU\_WORD\_M5RE@{SYSMPU\_WORD\_M5RE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M5RE}{SYSMPU\_WORD\_M5RE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M5\+RE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7700eb4355e959ba3432c2bd954231f6}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gab887aca3aba6ad98fae31b0f9f6be82b}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+RE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gab887aca3aba6ad98fae31b0f9f6be82b}\label{group___s_y_s_m_p_u___register___masks_gab887aca3aba6ad98fae31b0f9f6be82b}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M5RE\_MASK@{SYSMPU\_WORD\_M5RE\_MASK}}
+\index{SYSMPU\_WORD\_M5RE\_MASK@{SYSMPU\_WORD\_M5RE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M5RE\_MASK}{SYSMPU\_WORD\_M5RE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M5\+RE\+\_\+\+MASK~(0x8000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga7700eb4355e959ba3432c2bd954231f6}\label{group___s_y_s_m_p_u___register___masks_ga7700eb4355e959ba3432c2bd954231f6}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M5RE\_SHIFT@{SYSMPU\_WORD\_M5RE\_SHIFT}}
+\index{SYSMPU\_WORD\_M5RE\_SHIFT@{SYSMPU\_WORD\_M5RE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M5RE\_SHIFT}{SYSMPU\_WORD\_M5RE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M5\+RE\+\_\+\+SHIFT~(27U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga26b604b00befa37ea042c3d66f5cc87b}\label{group___s_y_s_m_p_u___register___masks_ga26b604b00befa37ea042c3d66f5cc87b}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M5WE@{SYSMPU\_WORD\_M5WE}}
+\index{SYSMPU\_WORD\_M5WE@{SYSMPU\_WORD\_M5WE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M5WE}{SYSMPU\_WORD\_M5WE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M5\+WE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae77d70249e11a27948536215016147f6}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga37394e198992080135e62dbd5fed7da5}{SYSMPU\+\_\+\+WORD\+\_\+\+M5\+WE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga37394e198992080135e62dbd5fed7da5}\label{group___s_y_s_m_p_u___register___masks_ga37394e198992080135e62dbd5fed7da5}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M5WE\_MASK@{SYSMPU\_WORD\_M5WE\_MASK}}
+\index{SYSMPU\_WORD\_M5WE\_MASK@{SYSMPU\_WORD\_M5WE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M5WE\_MASK}{SYSMPU\_WORD\_M5WE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M5\+WE\+\_\+\+MASK~(0x4000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gae77d70249e11a27948536215016147f6}\label{group___s_y_s_m_p_u___register___masks_gae77d70249e11a27948536215016147f6}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M5WE\_SHIFT@{SYSMPU\_WORD\_M5WE\_SHIFT}}
+\index{SYSMPU\_WORD\_M5WE\_SHIFT@{SYSMPU\_WORD\_M5WE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M5WE\_SHIFT}{SYSMPU\_WORD\_M5WE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M5\+WE\+\_\+\+SHIFT~(26U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga206ab5e021c3fd35489194de2bbc54b9}\label{group___s_y_s_m_p_u___register___masks_ga206ab5e021c3fd35489194de2bbc54b9}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M6RE@{SYSMPU\_WORD\_M6RE}}
+\index{SYSMPU\_WORD\_M6RE@{SYSMPU\_WORD\_M6RE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M6RE}{SYSMPU\_WORD\_M6RE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M6\+RE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga8cf72c2a85a12820912e0d2916cea43d}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga87759da3282dfcdd114029fde51528b5}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+RE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga87759da3282dfcdd114029fde51528b5}\label{group___s_y_s_m_p_u___register___masks_ga87759da3282dfcdd114029fde51528b5}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M6RE\_MASK@{SYSMPU\_WORD\_M6RE\_MASK}}
+\index{SYSMPU\_WORD\_M6RE\_MASK@{SYSMPU\_WORD\_M6RE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M6RE\_MASK}{SYSMPU\_WORD\_M6RE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M6\+RE\+\_\+\+MASK~(0x20000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga8cf72c2a85a12820912e0d2916cea43d}\label{group___s_y_s_m_p_u___register___masks_ga8cf72c2a85a12820912e0d2916cea43d}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M6RE\_SHIFT@{SYSMPU\_WORD\_M6RE\_SHIFT}}
+\index{SYSMPU\_WORD\_M6RE\_SHIFT@{SYSMPU\_WORD\_M6RE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M6RE\_SHIFT}{SYSMPU\_WORD\_M6RE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M6\+RE\+\_\+\+SHIFT~(29U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gadf42fbfe1f15f2350adeb8e4d43f22cd}\label{group___s_y_s_m_p_u___register___masks_gadf42fbfe1f15f2350adeb8e4d43f22cd}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M6WE@{SYSMPU\_WORD\_M6WE}}
+\index{SYSMPU\_WORD\_M6WE@{SYSMPU\_WORD\_M6WE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M6WE}{SYSMPU\_WORD\_M6WE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M6\+WE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaa5ebb9194dbe9b492eab34dbcfbbbf47}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga5e77a9a3d2709c5de1ba32a7c569a04b}{SYSMPU\+\_\+\+WORD\+\_\+\+M6\+WE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga5e77a9a3d2709c5de1ba32a7c569a04b}\label{group___s_y_s_m_p_u___register___masks_ga5e77a9a3d2709c5de1ba32a7c569a04b}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M6WE\_MASK@{SYSMPU\_WORD\_M6WE\_MASK}}
+\index{SYSMPU\_WORD\_M6WE\_MASK@{SYSMPU\_WORD\_M6WE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M6WE\_MASK}{SYSMPU\_WORD\_M6WE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M6\+WE\+\_\+\+MASK~(0x10000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaa5ebb9194dbe9b492eab34dbcfbbbf47}\label{group___s_y_s_m_p_u___register___masks_gaa5ebb9194dbe9b492eab34dbcfbbbf47}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M6WE\_SHIFT@{SYSMPU\_WORD\_M6WE\_SHIFT}}
+\index{SYSMPU\_WORD\_M6WE\_SHIFT@{SYSMPU\_WORD\_M6WE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M6WE\_SHIFT}{SYSMPU\_WORD\_M6WE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M6\+WE\+\_\+\+SHIFT~(28U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga2183d6d680d29c42637d4484479cd5e0}\label{group___s_y_s_m_p_u___register___masks_ga2183d6d680d29c42637d4484479cd5e0}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M7RE@{SYSMPU\_WORD\_M7RE}}
+\index{SYSMPU\_WORD\_M7RE@{SYSMPU\_WORD\_M7RE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M7RE}{SYSMPU\_WORD\_M7RE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M7\+RE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga93e5aa5b536b88bb00efea67bb5c49b8}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+RE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3dac1542d2ff73792ea5ee9a7c703b5c}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+RE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga3dac1542d2ff73792ea5ee9a7c703b5c}\label{group___s_y_s_m_p_u___register___masks_ga3dac1542d2ff73792ea5ee9a7c703b5c}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M7RE\_MASK@{SYSMPU\_WORD\_M7RE\_MASK}}
+\index{SYSMPU\_WORD\_M7RE\_MASK@{SYSMPU\_WORD\_M7RE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M7RE\_MASK}{SYSMPU\_WORD\_M7RE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M7\+RE\+\_\+\+MASK~(0x80000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga93e5aa5b536b88bb00efea67bb5c49b8}\label{group___s_y_s_m_p_u___register___masks_ga93e5aa5b536b88bb00efea67bb5c49b8}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M7RE\_SHIFT@{SYSMPU\_WORD\_M7RE\_SHIFT}}
+\index{SYSMPU\_WORD\_M7RE\_SHIFT@{SYSMPU\_WORD\_M7RE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M7RE\_SHIFT}{SYSMPU\_WORD\_M7RE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M7\+RE\+\_\+\+SHIFT~(31U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga1f6574658fdda3d3a65ccea71ad97447}\label{group___s_y_s_m_p_u___register___masks_ga1f6574658fdda3d3a65ccea71ad97447}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M7WE@{SYSMPU\_WORD\_M7WE}}
+\index{SYSMPU\_WORD\_M7WE@{SYSMPU\_WORD\_M7WE}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M7WE}{SYSMPU\_WORD\_M7WE}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M7\+WE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gae43090d81255e6a70452a2cee326cc94}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+WE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3e550bdd1bf42a8f775316748faaeff3}{SYSMPU\+\_\+\+WORD\+\_\+\+M7\+WE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga3e550bdd1bf42a8f775316748faaeff3}\label{group___s_y_s_m_p_u___register___masks_ga3e550bdd1bf42a8f775316748faaeff3}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M7WE\_MASK@{SYSMPU\_WORD\_M7WE\_MASK}}
+\index{SYSMPU\_WORD\_M7WE\_MASK@{SYSMPU\_WORD\_M7WE\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M7WE\_MASK}{SYSMPU\_WORD\_M7WE\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M7\+WE\+\_\+\+MASK~(0x40000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gae43090d81255e6a70452a2cee326cc94}\label{group___s_y_s_m_p_u___register___masks_gae43090d81255e6a70452a2cee326cc94}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_M7WE\_SHIFT@{SYSMPU\_WORD\_M7WE\_SHIFT}}
+\index{SYSMPU\_WORD\_M7WE\_SHIFT@{SYSMPU\_WORD\_M7WE\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_M7WE\_SHIFT}{SYSMPU\_WORD\_M7WE\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+M7\+WE\+\_\+\+SHIFT~(30U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga9089cbb6fde91250b829cc8ff588172d}\label{group___s_y_s_m_p_u___register___masks_ga9089cbb6fde91250b829cc8ff588172d}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_PID@{SYSMPU\_WORD\_PID}}
+\index{SYSMPU\_WORD\_PID@{SYSMPU\_WORD\_PID}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_PID}{SYSMPU\_WORD\_PID}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+PID(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga7c1cf9876a3d083719265a9a5ff571bf}{SYSMPU\+\_\+\+WORD\+\_\+\+PID\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga564d5f4c870186288b1cb1ee7ba57884}{SYSMPU\+\_\+\+WORD\+\_\+\+PID\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga564d5f4c870186288b1cb1ee7ba57884}\label{group___s_y_s_m_p_u___register___masks_ga564d5f4c870186288b1cb1ee7ba57884}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_PID\_MASK@{SYSMPU\_WORD\_PID\_MASK}}
+\index{SYSMPU\_WORD\_PID\_MASK@{SYSMPU\_WORD\_PID\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_PID\_MASK}{SYSMPU\_WORD\_PID\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+PID\+\_\+\+MASK~(0x\+FF000000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga7c1cf9876a3d083719265a9a5ff571bf}\label{group___s_y_s_m_p_u___register___masks_ga7c1cf9876a3d083719265a9a5ff571bf}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_PID\_SHIFT@{SYSMPU\_WORD\_PID\_SHIFT}}
+\index{SYSMPU\_WORD\_PID\_SHIFT@{SYSMPU\_WORD\_PID\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_PID\_SHIFT}{SYSMPU\_WORD\_PID\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+PID\+\_\+\+SHIFT~(24U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga8d86a5d6a523cc8affea1df3cafd27c3}\label{group___s_y_s_m_p_u___register___masks_ga8d86a5d6a523cc8affea1df3cafd27c3}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_PIDMASK@{SYSMPU\_WORD\_PIDMASK}}
+\index{SYSMPU\_WORD\_PIDMASK@{SYSMPU\_WORD\_PIDMASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_PIDMASK}{SYSMPU\_WORD\_PIDMASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+PIDMASK(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga6df5c084bcf6d1e6848665ffd9007140}{SYSMPU\+\_\+\+WORD\+\_\+\+PIDMASK\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3d4c41e9862f07cba0f94d84e217b383}{SYSMPU\+\_\+\+WORD\+\_\+\+PIDMASK\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga3d4c41e9862f07cba0f94d84e217b383}\label{group___s_y_s_m_p_u___register___masks_ga3d4c41e9862f07cba0f94d84e217b383}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_PIDMASK\_MASK@{SYSMPU\_WORD\_PIDMASK\_MASK}}
+\index{SYSMPU\_WORD\_PIDMASK\_MASK@{SYSMPU\_WORD\_PIDMASK\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_PIDMASK\_MASK}{SYSMPU\_WORD\_PIDMASK\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+PIDMASK\+\_\+\+MASK~(0x\+FF0000U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga6df5c084bcf6d1e6848665ffd9007140}\label{group___s_y_s_m_p_u___register___masks_ga6df5c084bcf6d1e6848665ffd9007140}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_PIDMASK\_SHIFT@{SYSMPU\_WORD\_PIDMASK\_SHIFT}}
+\index{SYSMPU\_WORD\_PIDMASK\_SHIFT@{SYSMPU\_WORD\_PIDMASK\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_PIDMASK\_SHIFT}{SYSMPU\_WORD\_PIDMASK\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+PIDMASK\+\_\+\+SHIFT~(16U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gac8bb140cac65730a9e3f93de5b7dd226}\label{group___s_y_s_m_p_u___register___masks_gac8bb140cac65730a9e3f93de5b7dd226}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_SRTADDR@{SYSMPU\_WORD\_SRTADDR}}
+\index{SYSMPU\_WORD\_SRTADDR@{SYSMPU\_WORD\_SRTADDR}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_SRTADDR}{SYSMPU\_WORD\_SRTADDR}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+SRTADDR(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_gaf65c7dccab90aa0c23a01d551848134f}{SYSMPU\+\_\+\+WORD\+\_\+\+SRTADDR\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga98aa3dd7c2229c4be590b38c2816d784}{SYSMPU\+\_\+\+WORD\+\_\+\+SRTADDR\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga98aa3dd7c2229c4be590b38c2816d784}\label{group___s_y_s_m_p_u___register___masks_ga98aa3dd7c2229c4be590b38c2816d784}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_SRTADDR\_MASK@{SYSMPU\_WORD\_SRTADDR\_MASK}}
+\index{SYSMPU\_WORD\_SRTADDR\_MASK@{SYSMPU\_WORD\_SRTADDR\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_SRTADDR\_MASK}{SYSMPU\_WORD\_SRTADDR\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+SRTADDR\+\_\+\+MASK~(0x\+FFFFFFE0U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_gaf65c7dccab90aa0c23a01d551848134f}\label{group___s_y_s_m_p_u___register___masks_gaf65c7dccab90aa0c23a01d551848134f}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_SRTADDR\_SHIFT@{SYSMPU\_WORD\_SRTADDR\_SHIFT}}
+\index{SYSMPU\_WORD\_SRTADDR\_SHIFT@{SYSMPU\_WORD\_SRTADDR\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_SRTADDR\_SHIFT}{SYSMPU\_WORD\_SRTADDR\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+SRTADDR\+\_\+\+SHIFT~(5U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga12198f84250021efbcc5cd113b082a46}\label{group___s_y_s_m_p_u___register___masks_ga12198f84250021efbcc5cd113b082a46}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_VLD@{SYSMPU\_WORD\_VLD}}
+\index{SYSMPU\_WORD\_VLD@{SYSMPU\_WORD\_VLD}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_VLD}{SYSMPU\_WORD\_VLD}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+VLD(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga3a8af1d96f0672f6e086d70f9bcbb06a}{SYSMPU\+\_\+\+WORD\+\_\+\+VLD\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___s_y_s_m_p_u___register___masks_ga65e6de8c34911946e2548317ef7f5aa0}{SYSMPU\+\_\+\+WORD\+\_\+\+VLD\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga65e6de8c34911946e2548317ef7f5aa0}\label{group___s_y_s_m_p_u___register___masks_ga65e6de8c34911946e2548317ef7f5aa0}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_VLD\_MASK@{SYSMPU\_WORD\_VLD\_MASK}}
+\index{SYSMPU\_WORD\_VLD\_MASK@{SYSMPU\_WORD\_VLD\_MASK}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_VLD\_MASK}{SYSMPU\_WORD\_VLD\_MASK}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+VLD\+\_\+\+MASK~(0x1U)}
+
+\mbox{\Hypertarget{group___s_y_s_m_p_u___register___masks_ga3a8af1d96f0672f6e086d70f9bcbb06a}\label{group___s_y_s_m_p_u___register___masks_ga3a8af1d96f0672f6e086d70f9bcbb06a}} 
+\index{SYSMPU Register Masks@{SYSMPU Register Masks}!SYSMPU\_WORD\_VLD\_SHIFT@{SYSMPU\_WORD\_VLD\_SHIFT}}
+\index{SYSMPU\_WORD\_VLD\_SHIFT@{SYSMPU\_WORD\_VLD\_SHIFT}!SYSMPU Register Masks@{SYSMPU Register Masks}}
+\doxysubsubsection{\texorpdfstring{SYSMPU\_WORD\_VLD\_SHIFT}{SYSMPU\_WORD\_VLD\_SHIFT}}
+{\footnotesize\ttfamily \#define SYSMPU\+\_\+\+WORD\+\_\+\+VLD\+\_\+\+SHIFT~(0U)}
+

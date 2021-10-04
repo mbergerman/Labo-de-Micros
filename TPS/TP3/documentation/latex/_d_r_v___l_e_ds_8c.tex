@@ -1,0 +1,130 @@
+\hypertarget{_d_r_v___l_e_ds_8c}{}\doxysection{drivers/\+DRV\+\_\+\+LEDs.c File Reference}
+\label{_d_r_v___l_e_ds_8c}\index{drivers/DRV\_LEDs.c@{drivers/DRV\_LEDs.c}}
+
+
+LEDs driver.  
+
+
+{\ttfamily \#include \char`\"{}DRV\+\_\+\+LEDs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DRV\+\_\+\+Timers.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structselector__data__t}{selector\+\_\+data\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___l_e_ds_8c_aaf584f70289e5fd799fef97c85bb97ee}{STATUS0}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},2)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___l_e_ds_8c_aa6aa3353326411951938073499579582}{STATUS1}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},3)
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structselector__data__t}{selector\+\_\+data\+\_\+t}} \mbox{\hyperlink{_d_r_v___l_e_ds_8c_a33d1f8844621110eee19cffeca4da32f}{selector\+\_\+data\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_r_v___l_e_ds_8c_ad01e06046ad67ff45343f39dcc81df90}{init\+LEDs}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the LEDs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___l_e_ds_8c_a83d7de4cef0c2924540b0290e67c579d}{disp\+Clear\+LED}} (int n)
+\begin{DoxyCompactList}\small\item\em Turn off a LED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___l_e_ds_8c_a83cf1c2a8516ed219e648d78a9633466}{disp\+Set\+LED}} (int n)
+\begin{DoxyCompactList}\small\item\em Turn on a LED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___l_e_ds_8c_ac68048849fab011ad6d1ef6bc3d77005}{disp\+Toggle\+LED}} (int n)
+\begin{DoxyCompactList}\small\item\em Toggle a LED. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+LEDs driver. 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_aaf584f70289e5fd799fef97c85bb97ee}\label{_d_r_v___l_e_ds_8c_aaf584f70289e5fd799fef97c85bb97ee}} 
+\index{DRV\_LEDs.c@{DRV\_LEDs.c}!STATUS0@{STATUS0}}
+\index{STATUS0@{STATUS0}!DRV\_LEDs.c@{DRV\_LEDs.c}}
+\doxysubsubsection{\texorpdfstring{STATUS0}{STATUS0}}
+{\footnotesize\ttfamily \#define STATUS0~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},2)}
+
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_aa6aa3353326411951938073499579582}\label{_d_r_v___l_e_ds_8c_aa6aa3353326411951938073499579582}} 
+\index{DRV\_LEDs.c@{DRV\_LEDs.c}!STATUS1@{STATUS1}}
+\index{STATUS1@{STATUS1}!DRV\_LEDs.c@{DRV\_LEDs.c}}
+\doxysubsubsection{\texorpdfstring{STATUS1}{STATUS1}}
+{\footnotesize\ttfamily \#define STATUS1~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04aa2c62b62b658ac45e83749e9e9c1cb46}{PC}},3)}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_a33d1f8844621110eee19cffeca4da32f}\label{_d_r_v___l_e_ds_8c_a33d1f8844621110eee19cffeca4da32f}} 
+\index{DRV\_LEDs.c@{DRV\_LEDs.c}!selector\_data\_t@{selector\_data\_t}}
+\index{selector\_data\_t@{selector\_data\_t}!DRV\_LEDs.c@{DRV\_LEDs.c}}
+\doxysubsubsection{\texorpdfstring{selector\_data\_t}{selector\_data\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structselector__data__t}{selector\+\_\+data\+\_\+t}} \mbox{\hyperlink{structselector__data__t}{selector\+\_\+data\+\_\+t}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_a83d7de4cef0c2924540b0290e67c579d}\label{_d_r_v___l_e_ds_8c_a83d7de4cef0c2924540b0290e67c579d}} 
+\index{DRV\_LEDs.c@{DRV\_LEDs.c}!dispClearLED@{dispClearLED}}
+\index{dispClearLED@{dispClearLED}!DRV\_LEDs.c@{DRV\_LEDs.c}}
+\doxysubsubsection{\texorpdfstring{dispClearLED()}{dispClearLED()}}
+{\footnotesize\ttfamily void disp\+Clear\+LED (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Turn off a LED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index of LED to turn off \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_a83cf1c2a8516ed219e648d78a9633466}\label{_d_r_v___l_e_ds_8c_a83cf1c2a8516ed219e648d78a9633466}} 
+\index{DRV\_LEDs.c@{DRV\_LEDs.c}!dispSetLED@{dispSetLED}}
+\index{dispSetLED@{dispSetLED}!DRV\_LEDs.c@{DRV\_LEDs.c}}
+\doxysubsubsection{\texorpdfstring{dispSetLED()}{dispSetLED()}}
+{\footnotesize\ttfamily void disp\+Set\+LED (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Turn on a LED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index of LED to turn on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_ac68048849fab011ad6d1ef6bc3d77005}\label{_d_r_v___l_e_ds_8c_ac68048849fab011ad6d1ef6bc3d77005}} 
+\index{DRV\_LEDs.c@{DRV\_LEDs.c}!dispToggleLED@{dispToggleLED}}
+\index{dispToggleLED@{dispToggleLED}!DRV\_LEDs.c@{DRV\_LEDs.c}}
+\doxysubsubsection{\texorpdfstring{dispToggleLED()}{dispToggleLED()}}
+{\footnotesize\ttfamily void disp\+Toggle\+LED (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Toggle a LED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Index of LED to toggle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 = timer expired 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_r_v___l_e_ds_8c_ad01e06046ad67ff45343f39dcc81df90}\label{_d_r_v___l_e_ds_8c_ad01e06046ad67ff45343f39dcc81df90}} 
+\index{DRV\_LEDs.c@{DRV\_LEDs.c}!initLEDs@{initLEDs}}
+\index{initLEDs@{initLEDs}!DRV\_LEDs.c@{DRV\_LEDs.c}}
+\doxysubsubsection{\texorpdfstring{initLEDs()}{initLEDs()}}
+{\footnotesize\ttfamily void init\+LEDs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the LEDs. 
+

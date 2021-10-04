@@ -1,0 +1,27 @@
+var struct_s_d_h_c___type =
+[
+    [ "AC12ERR", "group___v_r_e_f___peripheral___access___layer.html#ga529946a02b908ffad2b189bc08c38b06", null ],
+    [ "ADMAES", "group___v_r_e_f___peripheral___access___layer.html#ga8e1a5a5c26b845e94b25570e42202612", null ],
+    [ "ADSADDR", "group___v_r_e_f___peripheral___access___layer.html#gab418d6ab842253ec1556bd0683bea1cf", null ],
+    [ "BLKATTR", "group___v_r_e_f___peripheral___access___layer.html#ga9f9b6d19cd4e74ea6eeaa705328e7f74", null ],
+    [ "CMDARG", "group___v_r_e_f___peripheral___access___layer.html#ga36131cec3559ac2988019df27ecdace4", null ],
+    [ "CMDRSP", "group___v_r_e_f___peripheral___access___layer.html#gad184f191e589977878810a7928b86cca", null ],
+    [ "DATPORT", "group___v_r_e_f___peripheral___access___layer.html#ga1b5d16498d603c9560eaec51c9431747", null ],
+    [ "DSADDR", "group___v_r_e_f___peripheral___access___layer.html#ga5faf862a2959435c8593e46ebc556ec7", null ],
+    [ "FEVT", "group___v_r_e_f___peripheral___access___layer.html#ga879095f3afc53d94fbf0c7e2cbc16f49", null ],
+    [ "HOSTVER", "group___v_r_e_f___peripheral___access___layer.html#ga6fb8df4ccedb41b45d7103c792355b8b", null ],
+    [ "HTCAPBLT", "group___v_r_e_f___peripheral___access___layer.html#ga73dfc37156a450d49ec75627cbdcd499", null ],
+    [ "IRQSIGEN", "group___v_r_e_f___peripheral___access___layer.html#ga7c4a15d213d6f5016a29746a3a660485", null ],
+    [ "IRQSTAT", "group___v_r_e_f___peripheral___access___layer.html#gab2a2eb6abddb0830e64595289d121ebf", null ],
+    [ "IRQSTATEN", "group___v_r_e_f___peripheral___access___layer.html#ga6fe708359ce072299bd38cee3be1c913", null ],
+    [ "MMCBOOT", "group___v_r_e_f___peripheral___access___layer.html#gaf8e7ecba38e254125b45008783ff62c3", null ],
+    [ "PROCTL", "group___v_r_e_f___peripheral___access___layer.html#gad66c30417fba3cdaa46be7ae1ac08ff2", null ],
+    [ "PRSSTAT", "group___v_r_e_f___peripheral___access___layer.html#gaa3de0ff8130a446f28bc8bceca15501c", null ],
+    [ "RESERVED_0", "group___v_r_e_f___peripheral___access___layer.html#gab5b3e978eb3ceb8a2aadaeeab28db00b", null ],
+    [ "RESERVED_1", "group___v_r_e_f___peripheral___access___layer.html#ga30320ad485493928a2f7198e40227043", null ],
+    [ "RESERVED_2", "group___v_r_e_f___peripheral___access___layer.html#ga1e23711e9e444e5d829041e531103d74", null ],
+    [ "SYSCTL", "group___v_r_e_f___peripheral___access___layer.html#gaaf4c7a736d3642f87d615b538e7696e2", null ],
+    [ "VENDOR", "group___v_r_e_f___peripheral___access___layer.html#ga87a1f785e501e18ed2c06222b361741f", null ],
+    [ "WML", "group___v_r_e_f___peripheral___access___layer.html#gaf376a0eb86aeb220c638a59b38a372bc", null ],
+    [ "XFERTYP", "group___v_r_e_f___peripheral___access___layer.html#ga3015ac9f1cbb9fe880d346521783f479", null ]
+];

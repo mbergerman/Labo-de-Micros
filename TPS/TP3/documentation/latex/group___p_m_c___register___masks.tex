@@ -1,0 +1,372 @@
+\hypertarget{group___p_m_c___register___masks}{}\doxysection{PMC Register Masks}
+\label{group___p_m_c___register___masks}\index{PMC Register Masks@{PMC Register Masks}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga4e92bd47dc68cc81e62c344586a4cdfa}{PMC\+\_\+\+BASE}}~(0x4007\+D000u)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga979c6d379c67bc2f3e8eb6efcb509f69}{PMC}}~((\mbox{\hyperlink{struct_p_m_c___type}{PMC\+\_\+\+Type}} $\ast$)\mbox{\hyperlink{group___p_m_c___register___masks_ga4e92bd47dc68cc81e62c344586a4cdfa}{PMC\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_gab8cb010a2427fcd279c99d0bd4eb809f}{PMC\+\_\+\+BASE\+\_\+\+ADDRS}}~\{ \mbox{\hyperlink{group___p_m_c___register___masks_ga4e92bd47dc68cc81e62c344586a4cdfa}{PMC\+\_\+\+BASE}} \}
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga4bcd62643d597f7230f9c1e3d03caaa7}{PMC\+\_\+\+BASE\+\_\+\+PTRS}}~\{ \mbox{\hyperlink{group___p_m_c___register___masks_ga979c6d379c67bc2f3e8eb6efcb509f69}{PMC}} \}
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga55eb026c8e8941e1e4d009d8563784b0}{PMC\+\_\+\+IRQS}}~\{ \mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083aa4897ad7f6f60bb37f339af7cc9c4477}{LVD\+\_\+\+LVW\+\_\+\+IRQn}} \}
+\end{DoxyCompactItemize}
+\doxysubsection*{LVDSC1 -\/ Low Voltage Detect Status And Control 1 register}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga777eada2a526d88569a30323e9d3e1d3}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDV\+\_\+\+MASK}}~(0x3U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_gaaf45daa6de387f93bc57f1218ab17a16}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDV\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_gae2cf4048ec29cc1a54349d8bc18e27e4}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDV}}(x)~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_gaaf45daa6de387f93bc57f1218ab17a16}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDV\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga777eada2a526d88569a30323e9d3e1d3}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDV\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_gad771f87e373907e3ef60e5fa31001fad}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDRE\+\_\+\+MASK}}~(0x10U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga056ca878a20782f5bf65b3be3e98581d}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDRE\+\_\+\+SHIFT}}~(4U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga5cb39f8534fc256799aa9e495b5f449d}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDRE}}(x)~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga056ca878a20782f5bf65b3be3e98581d}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDRE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_gad771f87e373907e3ef60e5fa31001fad}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDRE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga1e7518c88ea0037d099124a643788363}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDIE\+\_\+\+MASK}}~(0x20U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga30ca240c9254a7e76123a3cf2bfdc40e}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDIE\+\_\+\+SHIFT}}~(5U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_gaca76bd97c7883297f5b00061a1cc0578}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDIE}}(x)~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga30ca240c9254a7e76123a3cf2bfdc40e}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDIE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga1e7518c88ea0037d099124a643788363}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDIE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga65d04677ca16ad916563d6673cb8ecaa}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDACK\+\_\+\+MASK}}~(0x40U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga56654042b7934ca0e6c51f21db7d1201}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDACK\+\_\+\+SHIFT}}~(6U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_gaac6d13822cd8df0c6dcd9538aa820a6b}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDACK}}(x)~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga56654042b7934ca0e6c51f21db7d1201}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDACK\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga65d04677ca16ad916563d6673cb8ecaa}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDACK\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga44ae12d2d3e732cd25a897092a7e9ada}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDF\+\_\+\+MASK}}~(0x80U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga75efd4534766aaa126efff96d241de61}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDF\+\_\+\+SHIFT}}~(7U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga9deb83dbe1f7f6415f842750016bd408}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDF}}(x)~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga75efd4534766aaa126efff96d241de61}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDF\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga44ae12d2d3e732cd25a897092a7e9ada}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDF\+\_\+\+MASK}})
+\end{DoxyCompactItemize}
+\doxysubsection*{LVDSC2 -\/ Low Voltage Detect Status And Control 2 register}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_gaab1198a446bb9b8412589eeb12311666}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWV\+\_\+\+MASK}}~(0x3U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_gabd2e288b833d9e66c422b814dc7b5f03}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWV\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga4599ee84bb111c3f42a8613447ca823d}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWV}}(x)~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_gabd2e288b833d9e66c422b814dc7b5f03}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWV\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_gaab1198a446bb9b8412589eeb12311666}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWV\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga3a9de69524d99d6ec8985d211bc7861d}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWIE\+\_\+\+MASK}}~(0x20U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_gaf5cb9cf53bade8254aa7749b5eb36eff}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWIE\+\_\+\+SHIFT}}~(5U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga48d1cdfca4a7c154993c1e741101a07d}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWIE}}(x)~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_gaf5cb9cf53bade8254aa7749b5eb36eff}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWIE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga3a9de69524d99d6ec8985d211bc7861d}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWIE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga8b0c8bcad4d38e6ff797e9bc3d9db6d7}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWACK\+\_\+\+MASK}}~(0x40U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga99ad1d373a7be7591a7ee3577bed5374}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWACK\+\_\+\+SHIFT}}~(6U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga487c1af0f694e53be64251c1862e8d9c}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWACK}}(x)~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga99ad1d373a7be7591a7ee3577bed5374}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWACK\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga8b0c8bcad4d38e6ff797e9bc3d9db6d7}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWACK\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga34187b0598a3e166a457818770a616d4}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWF\+\_\+\+MASK}}~(0x80U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga8bcfb9fc5fd4a92164b2aa6cdb6db77e}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWF\+\_\+\+SHIFT}}~(7U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga674f52d0325d911bf7dd91bf47b708f4}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWF}}(x)~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga8bcfb9fc5fd4a92164b2aa6cdb6db77e}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWF\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga34187b0598a3e166a457818770a616d4}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWF\+\_\+\+MASK}})
+\end{DoxyCompactItemize}
+\doxysubsection*{REGSC -\/ Regulator Status And Control register}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga98cf5c98c133e20fb620faa6ca29d98e}{PMC\+\_\+\+REGSC\+\_\+\+BGBE\+\_\+\+MASK}}~(0x1U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga2e23aa8155158c86fc53ccd8baccf24d}{PMC\+\_\+\+REGSC\+\_\+\+BGBE\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_gafb37a90d087dbf5bc4c3b654e33d6ef7}{PMC\+\_\+\+REGSC\+\_\+\+BGBE}}(x)~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga2e23aa8155158c86fc53ccd8baccf24d}{PMC\+\_\+\+REGSC\+\_\+\+BGBE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga98cf5c98c133e20fb620faa6ca29d98e}{PMC\+\_\+\+REGSC\+\_\+\+BGBE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_gab830f2c82eef6d0db7caab8ee5689ba6}{PMC\+\_\+\+REGSC\+\_\+\+REGONS\+\_\+\+MASK}}~(0x4U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga06b4e6d970f2610a635c92bb1270541d}{PMC\+\_\+\+REGSC\+\_\+\+REGONS\+\_\+\+SHIFT}}~(2U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga5c4e1173d8cdf7f0318071b77331fb83}{PMC\+\_\+\+REGSC\+\_\+\+REGONS}}(x)~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga06b4e6d970f2610a635c92bb1270541d}{PMC\+\_\+\+REGSC\+\_\+\+REGONS\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_gab830f2c82eef6d0db7caab8ee5689ba6}{PMC\+\_\+\+REGSC\+\_\+\+REGONS\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga35ced6f0f133b2d5892bdcba3e0b2832}{PMC\+\_\+\+REGSC\+\_\+\+ACKISO\+\_\+\+MASK}}~(0x8U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_gad2b9b6ce6aa455e8607fd3c2d1647544}{PMC\+\_\+\+REGSC\+\_\+\+ACKISO\+\_\+\+SHIFT}}~(3U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga3267bf5ad24a6ff2fced59c01f98c652}{PMC\+\_\+\+REGSC\+\_\+\+ACKISO}}(x)~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_gad2b9b6ce6aa455e8607fd3c2d1647544}{PMC\+\_\+\+REGSC\+\_\+\+ACKISO\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga35ced6f0f133b2d5892bdcba3e0b2832}{PMC\+\_\+\+REGSC\+\_\+\+ACKISO\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga7e1520a56f4d2675018d5efaa9492f19}{PMC\+\_\+\+REGSC\+\_\+\+BGEN\+\_\+\+MASK}}~(0x10U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_gab43d258e6864ee3a7a728de1d720f6fe}{PMC\+\_\+\+REGSC\+\_\+\+BGEN\+\_\+\+SHIFT}}~(4U)
+\item 
+\#define \mbox{\hyperlink{group___p_m_c___register___masks_ga2823482fbfe8289abb28701a85bd3539}{PMC\+\_\+\+REGSC\+\_\+\+BGEN}}(x)~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_gab43d258e6864ee3a7a728de1d720f6fe}{PMC\+\_\+\+REGSC\+\_\+\+BGEN\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga7e1520a56f4d2675018d5efaa9492f19}{PMC\+\_\+\+REGSC\+\_\+\+BGEN\+\_\+\+MASK}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga979c6d379c67bc2f3e8eb6efcb509f69}\label{group___p_m_c___register___masks_ga979c6d379c67bc2f3e8eb6efcb509f69}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC@{PMC}}
+\index{PMC@{PMC}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC}{PMC}}
+{\footnotesize\ttfamily \#define PMC~((\mbox{\hyperlink{struct_p_m_c___type}{PMC\+\_\+\+Type}} $\ast$)\mbox{\hyperlink{group___p_m_c___register___masks_ga4e92bd47dc68cc81e62c344586a4cdfa}{PMC\+\_\+\+BASE}})}
+
+Peripheral PMC base pointer \mbox{\Hypertarget{group___p_m_c___register___masks_ga4e92bd47dc68cc81e62c344586a4cdfa}\label{group___p_m_c___register___masks_ga4e92bd47dc68cc81e62c344586a4cdfa}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_BASE@{PMC\_BASE}}
+\index{PMC\_BASE@{PMC\_BASE}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_BASE}{PMC\_BASE}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+BASE~(0x4007\+D000u)}
+
+Peripheral PMC base address \mbox{\Hypertarget{group___p_m_c___register___masks_gab8cb010a2427fcd279c99d0bd4eb809f}\label{group___p_m_c___register___masks_gab8cb010a2427fcd279c99d0bd4eb809f}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_BASE\_ADDRS@{PMC\_BASE\_ADDRS}}
+\index{PMC\_BASE\_ADDRS@{PMC\_BASE\_ADDRS}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_BASE\_ADDRS}{PMC\_BASE\_ADDRS}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+BASE\+\_\+\+ADDRS~\{ \mbox{\hyperlink{group___p_m_c___register___masks_ga4e92bd47dc68cc81e62c344586a4cdfa}{PMC\+\_\+\+BASE}} \}}
+
+Array initializer of PMC peripheral base addresses \mbox{\Hypertarget{group___p_m_c___register___masks_ga4bcd62643d597f7230f9c1e3d03caaa7}\label{group___p_m_c___register___masks_ga4bcd62643d597f7230f9c1e3d03caaa7}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_BASE\_PTRS@{PMC\_BASE\_PTRS}}
+\index{PMC\_BASE\_PTRS@{PMC\_BASE\_PTRS}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_BASE\_PTRS}{PMC\_BASE\_PTRS}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+BASE\+\_\+\+PTRS~\{ \mbox{\hyperlink{group___p_m_c___register___masks_ga979c6d379c67bc2f3e8eb6efcb509f69}{PMC}} \}}
+
+Array initializer of PMC peripheral base pointers \mbox{\Hypertarget{group___p_m_c___register___masks_ga55eb026c8e8941e1e4d009d8563784b0}\label{group___p_m_c___register___masks_ga55eb026c8e8941e1e4d009d8563784b0}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_IRQS@{PMC\_IRQS}}
+\index{PMC\_IRQS@{PMC\_IRQS}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_IRQS}{PMC\_IRQS}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+IRQS~\{ \mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083aa4897ad7f6f60bb37f339af7cc9c4477}{LVD\+\_\+\+LVW\+\_\+\+IRQn}} \}}
+
+Interrupt vectors for the PMC peripheral type \mbox{\Hypertarget{group___p_m_c___register___masks_gaac6d13822cd8df0c6dcd9538aa820a6b}\label{group___p_m_c___register___masks_gaac6d13822cd8df0c6dcd9538aa820a6b}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDACK@{PMC\_LVDSC1\_LVDACK}}
+\index{PMC\_LVDSC1\_LVDACK@{PMC\_LVDSC1\_LVDACK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDACK}{PMC\_LVDSC1\_LVDACK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDACK(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga56654042b7934ca0e6c51f21db7d1201}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDACK\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga65d04677ca16ad916563d6673cb8ecaa}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDACK\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga65d04677ca16ad916563d6673cb8ecaa}\label{group___p_m_c___register___masks_ga65d04677ca16ad916563d6673cb8ecaa}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDACK\_MASK@{PMC\_LVDSC1\_LVDACK\_MASK}}
+\index{PMC\_LVDSC1\_LVDACK\_MASK@{PMC\_LVDSC1\_LVDACK\_MASK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDACK\_MASK}{PMC\_LVDSC1\_LVDACK\_MASK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDACK\+\_\+\+MASK~(0x40U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga56654042b7934ca0e6c51f21db7d1201}\label{group___p_m_c___register___masks_ga56654042b7934ca0e6c51f21db7d1201}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDACK\_SHIFT@{PMC\_LVDSC1\_LVDACK\_SHIFT}}
+\index{PMC\_LVDSC1\_LVDACK\_SHIFT@{PMC\_LVDSC1\_LVDACK\_SHIFT}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDACK\_SHIFT}{PMC\_LVDSC1\_LVDACK\_SHIFT}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDACK\+\_\+\+SHIFT~(6U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga9deb83dbe1f7f6415f842750016bd408}\label{group___p_m_c___register___masks_ga9deb83dbe1f7f6415f842750016bd408}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDF@{PMC\_LVDSC1\_LVDF}}
+\index{PMC\_LVDSC1\_LVDF@{PMC\_LVDSC1\_LVDF}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDF}{PMC\_LVDSC1\_LVDF}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDF(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga75efd4534766aaa126efff96d241de61}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDF\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga44ae12d2d3e732cd25a897092a7e9ada}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDF\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga44ae12d2d3e732cd25a897092a7e9ada}\label{group___p_m_c___register___masks_ga44ae12d2d3e732cd25a897092a7e9ada}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDF\_MASK@{PMC\_LVDSC1\_LVDF\_MASK}}
+\index{PMC\_LVDSC1\_LVDF\_MASK@{PMC\_LVDSC1\_LVDF\_MASK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDF\_MASK}{PMC\_LVDSC1\_LVDF\_MASK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDF\+\_\+\+MASK~(0x80U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga75efd4534766aaa126efff96d241de61}\label{group___p_m_c___register___masks_ga75efd4534766aaa126efff96d241de61}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDF\_SHIFT@{PMC\_LVDSC1\_LVDF\_SHIFT}}
+\index{PMC\_LVDSC1\_LVDF\_SHIFT@{PMC\_LVDSC1\_LVDF\_SHIFT}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDF\_SHIFT}{PMC\_LVDSC1\_LVDF\_SHIFT}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDF\+\_\+\+SHIFT~(7U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_gaca76bd97c7883297f5b00061a1cc0578}\label{group___p_m_c___register___masks_gaca76bd97c7883297f5b00061a1cc0578}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDIE@{PMC\_LVDSC1\_LVDIE}}
+\index{PMC\_LVDSC1\_LVDIE@{PMC\_LVDSC1\_LVDIE}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDIE}{PMC\_LVDSC1\_LVDIE}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDIE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga30ca240c9254a7e76123a3cf2bfdc40e}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDIE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga1e7518c88ea0037d099124a643788363}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDIE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga1e7518c88ea0037d099124a643788363}\label{group___p_m_c___register___masks_ga1e7518c88ea0037d099124a643788363}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDIE\_MASK@{PMC\_LVDSC1\_LVDIE\_MASK}}
+\index{PMC\_LVDSC1\_LVDIE\_MASK@{PMC\_LVDSC1\_LVDIE\_MASK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDIE\_MASK}{PMC\_LVDSC1\_LVDIE\_MASK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDIE\+\_\+\+MASK~(0x20U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga30ca240c9254a7e76123a3cf2bfdc40e}\label{group___p_m_c___register___masks_ga30ca240c9254a7e76123a3cf2bfdc40e}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDIE\_SHIFT@{PMC\_LVDSC1\_LVDIE\_SHIFT}}
+\index{PMC\_LVDSC1\_LVDIE\_SHIFT@{PMC\_LVDSC1\_LVDIE\_SHIFT}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDIE\_SHIFT}{PMC\_LVDSC1\_LVDIE\_SHIFT}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDIE\+\_\+\+SHIFT~(5U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga5cb39f8534fc256799aa9e495b5f449d}\label{group___p_m_c___register___masks_ga5cb39f8534fc256799aa9e495b5f449d}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDRE@{PMC\_LVDSC1\_LVDRE}}
+\index{PMC\_LVDSC1\_LVDRE@{PMC\_LVDSC1\_LVDRE}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDRE}{PMC\_LVDSC1\_LVDRE}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDRE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga056ca878a20782f5bf65b3be3e98581d}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDRE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_gad771f87e373907e3ef60e5fa31001fad}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDRE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_gad771f87e373907e3ef60e5fa31001fad}\label{group___p_m_c___register___masks_gad771f87e373907e3ef60e5fa31001fad}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDRE\_MASK@{PMC\_LVDSC1\_LVDRE\_MASK}}
+\index{PMC\_LVDSC1\_LVDRE\_MASK@{PMC\_LVDSC1\_LVDRE\_MASK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDRE\_MASK}{PMC\_LVDSC1\_LVDRE\_MASK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDRE\+\_\+\+MASK~(0x10U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga056ca878a20782f5bf65b3be3e98581d}\label{group___p_m_c___register___masks_ga056ca878a20782f5bf65b3be3e98581d}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDRE\_SHIFT@{PMC\_LVDSC1\_LVDRE\_SHIFT}}
+\index{PMC\_LVDSC1\_LVDRE\_SHIFT@{PMC\_LVDSC1\_LVDRE\_SHIFT}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDRE\_SHIFT}{PMC\_LVDSC1\_LVDRE\_SHIFT}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDRE\+\_\+\+SHIFT~(4U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_gae2cf4048ec29cc1a54349d8bc18e27e4}\label{group___p_m_c___register___masks_gae2cf4048ec29cc1a54349d8bc18e27e4}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDV@{PMC\_LVDSC1\_LVDV}}
+\index{PMC\_LVDSC1\_LVDV@{PMC\_LVDSC1\_LVDV}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDV}{PMC\_LVDSC1\_LVDV}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDV(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_gaaf45daa6de387f93bc57f1218ab17a16}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDV\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga777eada2a526d88569a30323e9d3e1d3}{PMC\+\_\+\+LVDSC1\+\_\+\+LVDV\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga777eada2a526d88569a30323e9d3e1d3}\label{group___p_m_c___register___masks_ga777eada2a526d88569a30323e9d3e1d3}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDV\_MASK@{PMC\_LVDSC1\_LVDV\_MASK}}
+\index{PMC\_LVDSC1\_LVDV\_MASK@{PMC\_LVDSC1\_LVDV\_MASK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDV\_MASK}{PMC\_LVDSC1\_LVDV\_MASK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDV\+\_\+\+MASK~(0x3U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_gaaf45daa6de387f93bc57f1218ab17a16}\label{group___p_m_c___register___masks_gaaf45daa6de387f93bc57f1218ab17a16}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC1\_LVDV\_SHIFT@{PMC\_LVDSC1\_LVDV\_SHIFT}}
+\index{PMC\_LVDSC1\_LVDV\_SHIFT@{PMC\_LVDSC1\_LVDV\_SHIFT}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC1\_LVDV\_SHIFT}{PMC\_LVDSC1\_LVDV\_SHIFT}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC1\+\_\+\+LVDV\+\_\+\+SHIFT~(0U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga487c1af0f694e53be64251c1862e8d9c}\label{group___p_m_c___register___masks_ga487c1af0f694e53be64251c1862e8d9c}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC2\_LVWACK@{PMC\_LVDSC2\_LVWACK}}
+\index{PMC\_LVDSC2\_LVWACK@{PMC\_LVDSC2\_LVWACK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC2\_LVWACK}{PMC\_LVDSC2\_LVWACK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC2\+\_\+\+LVWACK(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga99ad1d373a7be7591a7ee3577bed5374}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWACK\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga8b0c8bcad4d38e6ff797e9bc3d9db6d7}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWACK\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga8b0c8bcad4d38e6ff797e9bc3d9db6d7}\label{group___p_m_c___register___masks_ga8b0c8bcad4d38e6ff797e9bc3d9db6d7}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC2\_LVWACK\_MASK@{PMC\_LVDSC2\_LVWACK\_MASK}}
+\index{PMC\_LVDSC2\_LVWACK\_MASK@{PMC\_LVDSC2\_LVWACK\_MASK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC2\_LVWACK\_MASK}{PMC\_LVDSC2\_LVWACK\_MASK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC2\+\_\+\+LVWACK\+\_\+\+MASK~(0x40U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga99ad1d373a7be7591a7ee3577bed5374}\label{group___p_m_c___register___masks_ga99ad1d373a7be7591a7ee3577bed5374}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC2\_LVWACK\_SHIFT@{PMC\_LVDSC2\_LVWACK\_SHIFT}}
+\index{PMC\_LVDSC2\_LVWACK\_SHIFT@{PMC\_LVDSC2\_LVWACK\_SHIFT}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC2\_LVWACK\_SHIFT}{PMC\_LVDSC2\_LVWACK\_SHIFT}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC2\+\_\+\+LVWACK\+\_\+\+SHIFT~(6U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga674f52d0325d911bf7dd91bf47b708f4}\label{group___p_m_c___register___masks_ga674f52d0325d911bf7dd91bf47b708f4}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC2\_LVWF@{PMC\_LVDSC2\_LVWF}}
+\index{PMC\_LVDSC2\_LVWF@{PMC\_LVDSC2\_LVWF}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC2\_LVWF}{PMC\_LVDSC2\_LVWF}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC2\+\_\+\+LVWF(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga8bcfb9fc5fd4a92164b2aa6cdb6db77e}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWF\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga34187b0598a3e166a457818770a616d4}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWF\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga34187b0598a3e166a457818770a616d4}\label{group___p_m_c___register___masks_ga34187b0598a3e166a457818770a616d4}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC2\_LVWF\_MASK@{PMC\_LVDSC2\_LVWF\_MASK}}
+\index{PMC\_LVDSC2\_LVWF\_MASK@{PMC\_LVDSC2\_LVWF\_MASK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC2\_LVWF\_MASK}{PMC\_LVDSC2\_LVWF\_MASK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC2\+\_\+\+LVWF\+\_\+\+MASK~(0x80U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga8bcfb9fc5fd4a92164b2aa6cdb6db77e}\label{group___p_m_c___register___masks_ga8bcfb9fc5fd4a92164b2aa6cdb6db77e}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC2\_LVWF\_SHIFT@{PMC\_LVDSC2\_LVWF\_SHIFT}}
+\index{PMC\_LVDSC2\_LVWF\_SHIFT@{PMC\_LVDSC2\_LVWF\_SHIFT}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC2\_LVWF\_SHIFT}{PMC\_LVDSC2\_LVWF\_SHIFT}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC2\+\_\+\+LVWF\+\_\+\+SHIFT~(7U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga48d1cdfca4a7c154993c1e741101a07d}\label{group___p_m_c___register___masks_ga48d1cdfca4a7c154993c1e741101a07d}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC2\_LVWIE@{PMC\_LVDSC2\_LVWIE}}
+\index{PMC\_LVDSC2\_LVWIE@{PMC\_LVDSC2\_LVWIE}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC2\_LVWIE}{PMC\_LVDSC2\_LVWIE}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC2\+\_\+\+LVWIE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_gaf5cb9cf53bade8254aa7749b5eb36eff}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWIE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga3a9de69524d99d6ec8985d211bc7861d}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWIE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga3a9de69524d99d6ec8985d211bc7861d}\label{group___p_m_c___register___masks_ga3a9de69524d99d6ec8985d211bc7861d}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC2\_LVWIE\_MASK@{PMC\_LVDSC2\_LVWIE\_MASK}}
+\index{PMC\_LVDSC2\_LVWIE\_MASK@{PMC\_LVDSC2\_LVWIE\_MASK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC2\_LVWIE\_MASK}{PMC\_LVDSC2\_LVWIE\_MASK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC2\+\_\+\+LVWIE\+\_\+\+MASK~(0x20U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_gaf5cb9cf53bade8254aa7749b5eb36eff}\label{group___p_m_c___register___masks_gaf5cb9cf53bade8254aa7749b5eb36eff}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC2\_LVWIE\_SHIFT@{PMC\_LVDSC2\_LVWIE\_SHIFT}}
+\index{PMC\_LVDSC2\_LVWIE\_SHIFT@{PMC\_LVDSC2\_LVWIE\_SHIFT}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC2\_LVWIE\_SHIFT}{PMC\_LVDSC2\_LVWIE\_SHIFT}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC2\+\_\+\+LVWIE\+\_\+\+SHIFT~(5U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga4599ee84bb111c3f42a8613447ca823d}\label{group___p_m_c___register___masks_ga4599ee84bb111c3f42a8613447ca823d}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC2\_LVWV@{PMC\_LVDSC2\_LVWV}}
+\index{PMC\_LVDSC2\_LVWV@{PMC\_LVDSC2\_LVWV}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC2\_LVWV}{PMC\_LVDSC2\_LVWV}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC2\+\_\+\+LVWV(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_gabd2e288b833d9e66c422b814dc7b5f03}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWV\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_gaab1198a446bb9b8412589eeb12311666}{PMC\+\_\+\+LVDSC2\+\_\+\+LVWV\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_gaab1198a446bb9b8412589eeb12311666}\label{group___p_m_c___register___masks_gaab1198a446bb9b8412589eeb12311666}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC2\_LVWV\_MASK@{PMC\_LVDSC2\_LVWV\_MASK}}
+\index{PMC\_LVDSC2\_LVWV\_MASK@{PMC\_LVDSC2\_LVWV\_MASK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC2\_LVWV\_MASK}{PMC\_LVDSC2\_LVWV\_MASK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC2\+\_\+\+LVWV\+\_\+\+MASK~(0x3U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_gabd2e288b833d9e66c422b814dc7b5f03}\label{group___p_m_c___register___masks_gabd2e288b833d9e66c422b814dc7b5f03}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_LVDSC2\_LVWV\_SHIFT@{PMC\_LVDSC2\_LVWV\_SHIFT}}
+\index{PMC\_LVDSC2\_LVWV\_SHIFT@{PMC\_LVDSC2\_LVWV\_SHIFT}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_LVDSC2\_LVWV\_SHIFT}{PMC\_LVDSC2\_LVWV\_SHIFT}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+LVDSC2\+\_\+\+LVWV\+\_\+\+SHIFT~(0U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga3267bf5ad24a6ff2fced59c01f98c652}\label{group___p_m_c___register___masks_ga3267bf5ad24a6ff2fced59c01f98c652}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_REGSC\_ACKISO@{PMC\_REGSC\_ACKISO}}
+\index{PMC\_REGSC\_ACKISO@{PMC\_REGSC\_ACKISO}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_REGSC\_ACKISO}{PMC\_REGSC\_ACKISO}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+REGSC\+\_\+\+ACKISO(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_gad2b9b6ce6aa455e8607fd3c2d1647544}{PMC\+\_\+\+REGSC\+\_\+\+ACKISO\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga35ced6f0f133b2d5892bdcba3e0b2832}{PMC\+\_\+\+REGSC\+\_\+\+ACKISO\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga35ced6f0f133b2d5892bdcba3e0b2832}\label{group___p_m_c___register___masks_ga35ced6f0f133b2d5892bdcba3e0b2832}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_REGSC\_ACKISO\_MASK@{PMC\_REGSC\_ACKISO\_MASK}}
+\index{PMC\_REGSC\_ACKISO\_MASK@{PMC\_REGSC\_ACKISO\_MASK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_REGSC\_ACKISO\_MASK}{PMC\_REGSC\_ACKISO\_MASK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+REGSC\+\_\+\+ACKISO\+\_\+\+MASK~(0x8U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_gad2b9b6ce6aa455e8607fd3c2d1647544}\label{group___p_m_c___register___masks_gad2b9b6ce6aa455e8607fd3c2d1647544}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_REGSC\_ACKISO\_SHIFT@{PMC\_REGSC\_ACKISO\_SHIFT}}
+\index{PMC\_REGSC\_ACKISO\_SHIFT@{PMC\_REGSC\_ACKISO\_SHIFT}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_REGSC\_ACKISO\_SHIFT}{PMC\_REGSC\_ACKISO\_SHIFT}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+REGSC\+\_\+\+ACKISO\+\_\+\+SHIFT~(3U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_gafb37a90d087dbf5bc4c3b654e33d6ef7}\label{group___p_m_c___register___masks_gafb37a90d087dbf5bc4c3b654e33d6ef7}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_REGSC\_BGBE@{PMC\_REGSC\_BGBE}}
+\index{PMC\_REGSC\_BGBE@{PMC\_REGSC\_BGBE}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_REGSC\_BGBE}{PMC\_REGSC\_BGBE}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+REGSC\+\_\+\+BGBE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga2e23aa8155158c86fc53ccd8baccf24d}{PMC\+\_\+\+REGSC\+\_\+\+BGBE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga98cf5c98c133e20fb620faa6ca29d98e}{PMC\+\_\+\+REGSC\+\_\+\+BGBE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga98cf5c98c133e20fb620faa6ca29d98e}\label{group___p_m_c___register___masks_ga98cf5c98c133e20fb620faa6ca29d98e}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_REGSC\_BGBE\_MASK@{PMC\_REGSC\_BGBE\_MASK}}
+\index{PMC\_REGSC\_BGBE\_MASK@{PMC\_REGSC\_BGBE\_MASK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_REGSC\_BGBE\_MASK}{PMC\_REGSC\_BGBE\_MASK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+REGSC\+\_\+\+BGBE\+\_\+\+MASK~(0x1U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga2e23aa8155158c86fc53ccd8baccf24d}\label{group___p_m_c___register___masks_ga2e23aa8155158c86fc53ccd8baccf24d}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_REGSC\_BGBE\_SHIFT@{PMC\_REGSC\_BGBE\_SHIFT}}
+\index{PMC\_REGSC\_BGBE\_SHIFT@{PMC\_REGSC\_BGBE\_SHIFT}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_REGSC\_BGBE\_SHIFT}{PMC\_REGSC\_BGBE\_SHIFT}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+REGSC\+\_\+\+BGBE\+\_\+\+SHIFT~(0U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga2823482fbfe8289abb28701a85bd3539}\label{group___p_m_c___register___masks_ga2823482fbfe8289abb28701a85bd3539}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_REGSC\_BGEN@{PMC\_REGSC\_BGEN}}
+\index{PMC\_REGSC\_BGEN@{PMC\_REGSC\_BGEN}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_REGSC\_BGEN}{PMC\_REGSC\_BGEN}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+REGSC\+\_\+\+BGEN(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_gab43d258e6864ee3a7a728de1d720f6fe}{PMC\+\_\+\+REGSC\+\_\+\+BGEN\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_ga7e1520a56f4d2675018d5efaa9492f19}{PMC\+\_\+\+REGSC\+\_\+\+BGEN\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga7e1520a56f4d2675018d5efaa9492f19}\label{group___p_m_c___register___masks_ga7e1520a56f4d2675018d5efaa9492f19}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_REGSC\_BGEN\_MASK@{PMC\_REGSC\_BGEN\_MASK}}
+\index{PMC\_REGSC\_BGEN\_MASK@{PMC\_REGSC\_BGEN\_MASK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_REGSC\_BGEN\_MASK}{PMC\_REGSC\_BGEN\_MASK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+REGSC\+\_\+\+BGEN\+\_\+\+MASK~(0x10U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_gab43d258e6864ee3a7a728de1d720f6fe}\label{group___p_m_c___register___masks_gab43d258e6864ee3a7a728de1d720f6fe}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_REGSC\_BGEN\_SHIFT@{PMC\_REGSC\_BGEN\_SHIFT}}
+\index{PMC\_REGSC\_BGEN\_SHIFT@{PMC\_REGSC\_BGEN\_SHIFT}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_REGSC\_BGEN\_SHIFT}{PMC\_REGSC\_BGEN\_SHIFT}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+REGSC\+\_\+\+BGEN\+\_\+\+SHIFT~(4U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga5c4e1173d8cdf7f0318071b77331fb83}\label{group___p_m_c___register___masks_ga5c4e1173d8cdf7f0318071b77331fb83}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_REGSC\_REGONS@{PMC\_REGSC\_REGONS}}
+\index{PMC\_REGSC\_REGONS@{PMC\_REGSC\_REGONS}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_REGSC\_REGONS}{PMC\_REGSC\_REGONS}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+REGSC\+\_\+\+REGONS(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint8\+\_\+t)(((uint8\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_m_c___register___masks_ga06b4e6d970f2610a635c92bb1270541d}{PMC\+\_\+\+REGSC\+\_\+\+REGONS\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_m_c___register___masks_gab830f2c82eef6d0db7caab8ee5689ba6}{PMC\+\_\+\+REGSC\+\_\+\+REGONS\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_gab830f2c82eef6d0db7caab8ee5689ba6}\label{group___p_m_c___register___masks_gab830f2c82eef6d0db7caab8ee5689ba6}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_REGSC\_REGONS\_MASK@{PMC\_REGSC\_REGONS\_MASK}}
+\index{PMC\_REGSC\_REGONS\_MASK@{PMC\_REGSC\_REGONS\_MASK}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_REGSC\_REGONS\_MASK}{PMC\_REGSC\_REGONS\_MASK}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+REGSC\+\_\+\+REGONS\+\_\+\+MASK~(0x4U)}
+
+\mbox{\Hypertarget{group___p_m_c___register___masks_ga06b4e6d970f2610a635c92bb1270541d}\label{group___p_m_c___register___masks_ga06b4e6d970f2610a635c92bb1270541d}} 
+\index{PMC Register Masks@{PMC Register Masks}!PMC\_REGSC\_REGONS\_SHIFT@{PMC\_REGSC\_REGONS\_SHIFT}}
+\index{PMC\_REGSC\_REGONS\_SHIFT@{PMC\_REGSC\_REGONS\_SHIFT}!PMC Register Masks@{PMC Register Masks}}
+\doxysubsubsection{\texorpdfstring{PMC\_REGSC\_REGONS\_SHIFT}{PMC\_REGSC\_REGONS\_SHIFT}}
+{\footnotesize\ttfamily \#define PMC\+\_\+\+REGSC\+\_\+\+REGONS\+\_\+\+SHIFT~(2U)}
+

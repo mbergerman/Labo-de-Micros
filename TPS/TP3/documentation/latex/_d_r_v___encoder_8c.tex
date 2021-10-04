@@ -1,0 +1,157 @@
+\hypertarget{_d_r_v___encoder_8c}{}\doxysection{drivers/\+DRV\+\_\+\+Encoder.c File Reference}
+\label{_d_r_v___encoder_8c}\index{drivers/DRV\_Encoder.c@{drivers/DRV\_Encoder.c}}
+
+
+Rotary encoder driver.  
+
+
+{\ttfamily \#include \char`\"{}DRV\+\_\+\+Board.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DRV\+\_\+\+Encoder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DRV\+\_\+\+Timers.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___encoder_8c_ad7c0c16486a5a3e1579cc8e384d7f96a}{PIN\+\_\+A}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04ae3d8a811f3bf7196f361be4104db68db}{PA}},1)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___encoder_8c_a9fda21ec50fc75d0fa9bbcb33bf560ff}{PIN\+\_\+B}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04a8b7dd81ba2f0d15957795457d92ce139}{PB}},23)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___encoder_8c_aff50e04f4467fb9c5b259e2ee6f21464}{PIN\+\_\+\+SWITCH}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04ae3d8a811f3bf7196f361be4104db68db}{PA}},2)
+\item 
+\#define \mbox{\hyperlink{_d_r_v___encoder_8c_a4f5376783549da38da34aefaaafc7e57}{SW\+\_\+\+ACTIVE}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_ab811d8c6ff3a505312d3276590444289}{LOW}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677}{states}} \{ \newline
+\mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a13d000b4d7dc70d90239b7430d1eb6b2}{START}}
+, \mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a93d7c90f5d8b891553e209dacde24540}{CW1}}
+, \mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a5c930f1fdddb45dc12abf7ec15a2e4fa}{CW2}}
+, \mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a262e0e464f8d83f40df739c158e3fac6}{CW3}}
+, \newline
+\mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677aeb32b85d12e3066e7de9b1ac51aba196}{ACW1}}
+, \mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a26612c012ef14832248441517eb78b88}{ACW2}}
+, \mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a4376e2bd7deff1c3c5f9115c28c584c8}{ACW3}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_r_v___encoder_8c_a816b22a073a30b233d6afdf983c27e8d}{init\+Encoder}} ()
+\begin{DoxyCompactList}\small\item\em Initialize encoder. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_d_r_v___encoder_8c_aeecebb19c73c7d96e9bff0d2e2dac31f}{encoder\+Get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Check for new encoder events. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_d_r_v___encoder_8h_a30a1a4fd7b6a6ed6a023e586c82ac854}{encoder\+Result\+\_\+t}} \mbox{\hyperlink{_d_r_v___encoder_8c_a997ecbb0db39175331354fa59dbb08a9}{encoder\+Get\+Event}} ()
+\begin{DoxyCompactList}\small\item\em Get event type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rotary encoder driver. 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_d_r_v___encoder_8c_ad7c0c16486a5a3e1579cc8e384d7f96a}\label{_d_r_v___encoder_8c_ad7c0c16486a5a3e1579cc8e384d7f96a}} 
+\index{DRV\_Encoder.c@{DRV\_Encoder.c}!PIN\_A@{PIN\_A}}
+\index{PIN\_A@{PIN\_A}!DRV\_Encoder.c@{DRV\_Encoder.c}}
+\doxysubsubsection{\texorpdfstring{PIN\_A}{PIN\_A}}
+{\footnotesize\ttfamily \#define PIN\+\_\+A~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04ae3d8a811f3bf7196f361be4104db68db}{PA}},1)}
+
+\mbox{\Hypertarget{_d_r_v___encoder_8c_a9fda21ec50fc75d0fa9bbcb33bf560ff}\label{_d_r_v___encoder_8c_a9fda21ec50fc75d0fa9bbcb33bf560ff}} 
+\index{DRV\_Encoder.c@{DRV\_Encoder.c}!PIN\_B@{PIN\_B}}
+\index{PIN\_B@{PIN\_B}!DRV\_Encoder.c@{DRV\_Encoder.c}}
+\doxysubsubsection{\texorpdfstring{PIN\_B}{PIN\_B}}
+{\footnotesize\ttfamily \#define PIN\+\_\+B~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04a8b7dd81ba2f0d15957795457d92ce139}{PB}},23)}
+
+\mbox{\Hypertarget{_d_r_v___encoder_8c_aff50e04f4467fb9c5b259e2ee6f21464}\label{_d_r_v___encoder_8c_aff50e04f4467fb9c5b259e2ee6f21464}} 
+\index{DRV\_Encoder.c@{DRV\_Encoder.c}!PIN\_SWITCH@{PIN\_SWITCH}}
+\index{PIN\_SWITCH@{PIN\_SWITCH}!DRV\_Encoder.c@{DRV\_Encoder.c}}
+\doxysubsubsection{\texorpdfstring{PIN\_SWITCH}{PIN\_SWITCH}}
+{\footnotesize\ttfamily \#define PIN\+\_\+\+SWITCH~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_a282f03f9d8560d495e180e7e1703ef0b}{PORTNUM2\+PIN}}(\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_abc6126af1d45847bc59afa0aa3216b04ae3d8a811f3bf7196f361be4104db68db}{PA}},2)}
+
+\mbox{\Hypertarget{_d_r_v___encoder_8c_a4f5376783549da38da34aefaaafc7e57}\label{_d_r_v___encoder_8c_a4f5376783549da38da34aefaaafc7e57}} 
+\index{DRV\_Encoder.c@{DRV\_Encoder.c}!SW\_ACTIVE@{SW\_ACTIVE}}
+\index{SW\_ACTIVE@{SW\_ACTIVE}!DRV\_Encoder.c@{DRV\_Encoder.c}}
+\doxysubsubsection{\texorpdfstring{SW\_ACTIVE}{SW\_ACTIVE}}
+{\footnotesize\ttfamily \#define SW\+\_\+\+ACTIVE~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_ab811d8c6ff3a505312d3276590444289}{LOW}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677}} 
+\index{DRV\_Encoder.c@{DRV\_Encoder.c}!states@{states}}
+\index{states@{states}!DRV\_Encoder.c@{DRV\_Encoder.c}}
+\doxysubsubsection{\texorpdfstring{states}{states}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677}{states}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{START@{START}!DRV\_Encoder.c@{DRV\_Encoder.c}}\index{DRV\_Encoder.c@{DRV\_Encoder.c}!START@{START}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a13d000b4d7dc70d90239b7430d1eb6b2}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a13d000b4d7dc70d90239b7430d1eb6b2}} 
+START&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CW1@{CW1}!DRV\_Encoder.c@{DRV\_Encoder.c}}\index{DRV\_Encoder.c@{DRV\_Encoder.c}!CW1@{CW1}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a93d7c90f5d8b891553e209dacde24540}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a93d7c90f5d8b891553e209dacde24540}} 
+CW1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CW2@{CW2}!DRV\_Encoder.c@{DRV\_Encoder.c}}\index{DRV\_Encoder.c@{DRV\_Encoder.c}!CW2@{CW2}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a5c930f1fdddb45dc12abf7ec15a2e4fa}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a5c930f1fdddb45dc12abf7ec15a2e4fa}} 
+CW2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CW3@{CW3}!DRV\_Encoder.c@{DRV\_Encoder.c}}\index{DRV\_Encoder.c@{DRV\_Encoder.c}!CW3@{CW3}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a262e0e464f8d83f40df739c158e3fac6}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a262e0e464f8d83f40df739c158e3fac6}} 
+CW3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACW1@{ACW1}!DRV\_Encoder.c@{DRV\_Encoder.c}}\index{DRV\_Encoder.c@{DRV\_Encoder.c}!ACW1@{ACW1}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677aeb32b85d12e3066e7de9b1ac51aba196}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677aeb32b85d12e3066e7de9b1ac51aba196}} 
+ACW1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACW2@{ACW2}!DRV\_Encoder.c@{DRV\_Encoder.c}}\index{DRV\_Encoder.c@{DRV\_Encoder.c}!ACW2@{ACW2}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a26612c012ef14832248441517eb78b88}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a26612c012ef14832248441517eb78b88}} 
+ACW2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ACW3@{ACW3}!DRV\_Encoder.c@{DRV\_Encoder.c}}\index{DRV\_Encoder.c@{DRV\_Encoder.c}!ACW3@{ACW3}}}\mbox{\Hypertarget{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a4376e2bd7deff1c3c5f9115c28c584c8}\label{_d_r_v___encoder_8c_aa19be6305a5a4485e1e70de70ed7d677a4376e2bd7deff1c3c5f9115c28c584c8}} 
+ACW3&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_d_r_v___encoder_8c_a997ecbb0db39175331354fa59dbb08a9}\label{_d_r_v___encoder_8c_a997ecbb0db39175331354fa59dbb08a9}} 
+\index{DRV\_Encoder.c@{DRV\_Encoder.c}!encoderGetEvent@{encoderGetEvent}}
+\index{encoderGetEvent@{encoderGetEvent}!DRV\_Encoder.c@{DRV\_Encoder.c}}
+\doxysubsubsection{\texorpdfstring{encoderGetEvent()}{encoderGetEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_d_r_v___encoder_8h_a30a1a4fd7b6a6ed6a023e586c82ac854}{encoder\+Result\+\_\+t}} encoder\+Get\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get event type. 
+
+\begin{DoxyReturn}{Returns}
+event 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_r_v___encoder_8c_aeecebb19c73c7d96e9bff0d2e2dac31f}\label{_d_r_v___encoder_8c_aeecebb19c73c7d96e9bff0d2e2dac31f}} 
+\index{DRV\_Encoder.c@{DRV\_Encoder.c}!encoderGetStatus@{encoderGetStatus}}
+\index{encoderGetStatus@{encoderGetStatus}!DRV\_Encoder.c@{DRV\_Encoder.c}}
+\doxysubsubsection{\texorpdfstring{encoderGetStatus()}{encoderGetStatus()}}
+{\footnotesize\ttfamily bool encoder\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check for new encoder events. 
+
+\begin{DoxyReturn}{Returns}
+true if there is an encoder event 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_r_v___encoder_8c_a816b22a073a30b233d6afdf983c27e8d}\label{_d_r_v___encoder_8c_a816b22a073a30b233d6afdf983c27e8d}} 
+\index{DRV\_Encoder.c@{DRV\_Encoder.c}!initEncoder@{initEncoder}}
+\index{initEncoder@{initEncoder}!DRV\_Encoder.c@{DRV\_Encoder.c}}
+\doxysubsubsection{\texorpdfstring{initEncoder()}{initEncoder()}}
+{\footnotesize\ttfamily void init\+Encoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize encoder. 
+

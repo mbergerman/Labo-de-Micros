@@ -1,0 +1,290 @@
+\hypertarget{group___p_i_t___register___masks}{}\doxysection{PIT Register Masks}
+\label{group___p_i_t___register___masks}\index{PIT Register Masks@{PIT Register Masks}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_gaf00b86ba33a2cfe7bb100b4f01905f41}{PIT\+\_\+\+BASE}}~(0x40037000u)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_gaf181c9e6602b6432a0bf1a9243808968}{PIT}}~((\mbox{\hyperlink{struct_p_i_t___type}{PIT\+\_\+\+Type}} $\ast$)\mbox{\hyperlink{group___p_i_t___register___masks_gaf00b86ba33a2cfe7bb100b4f01905f41}{PIT\+\_\+\+BASE}})
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga79085fa95893e4423661373b7be2f0a7}{PIT\+\_\+\+BASE\+\_\+\+ADDRS}}~\{ \mbox{\hyperlink{group___p_i_t___register___masks_gaf00b86ba33a2cfe7bb100b4f01905f41}{PIT\+\_\+\+BASE}} \}
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga403e0ed71b80cfe3e085fe6b56b5eff0}{PIT\+\_\+\+BASE\+\_\+\+PTRS}}~\{ \mbox{\hyperlink{group___p_i_t___register___masks_gaf181c9e6602b6432a0bf1a9243808968}{PIT}} \}
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga5f0ae6317a2c8c12e46e49c6e2e29dda}{PIT\+\_\+\+IRQS}}~\{ \{ \mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083ab3bc681f165a0965ac922a33bcc466c3}{PIT0\+\_\+\+IRQn}}, \mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083aebde56c1a0c87a74c43fc8b35309d429}{PIT1\+\_\+\+IRQn}}, \mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083afdef24d623050c63c2c35eb54dd35caf}{PIT2\+\_\+\+IRQn}}, \mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083aa6195cc174d28b297fe7652bf1663311}{PIT3\+\_\+\+IRQn}} \} \}
+\end{DoxyCompactItemize}
+\doxysubsection*{MCR -\/ PIT Module Control Register}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga8149a0bb21843632dd4528b540480ba7}{PIT\+\_\+\+MCR\+\_\+\+FRZ\+\_\+\+MASK}}~(0x1U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga500ccd29eaebc20aa853e7bbb23e3c0c}{PIT\+\_\+\+MCR\+\_\+\+FRZ\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_gab52ff9f5a1c18eee41b58100aa415dfe}{PIT\+\_\+\+MCR\+\_\+\+FRZ}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_ga500ccd29eaebc20aa853e7bbb23e3c0c}{PIT\+\_\+\+MCR\+\_\+\+FRZ\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga8149a0bb21843632dd4528b540480ba7}{PIT\+\_\+\+MCR\+\_\+\+FRZ\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga024258b2c23ff75f3e161e56adbbe733}{PIT\+\_\+\+MCR\+\_\+\+MDIS\+\_\+\+MASK}}~(0x2U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga7ddcd16550ff71e4ee5ac48022ae6fb6}{PIT\+\_\+\+MCR\+\_\+\+MDIS\+\_\+\+SHIFT}}~(1U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_gafae73f01b87a4e133c1289e0d09f8de2}{PIT\+\_\+\+MCR\+\_\+\+MDIS}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_ga7ddcd16550ff71e4ee5ac48022ae6fb6}{PIT\+\_\+\+MCR\+\_\+\+MDIS\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga024258b2c23ff75f3e161e56adbbe733}{PIT\+\_\+\+MCR\+\_\+\+MDIS\+\_\+\+MASK}})
+\end{DoxyCompactItemize}
+\doxysubsection*{LDVAL -\/ Timer Load Value Register}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_gab7929b3b8a0c170a50f57d97face5365}{PIT\+\_\+\+LDVAL\+\_\+\+TSV\+\_\+\+MASK}}~(0x\+FFFFFFFFU)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga463855d2b42de901bad9bea868f4f48b}{PIT\+\_\+\+LDVAL\+\_\+\+TSV\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga1aa1b498b2c8f1a14d095370a7ddf9a6}{PIT\+\_\+\+LDVAL\+\_\+\+TSV}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_ga463855d2b42de901bad9bea868f4f48b}{PIT\+\_\+\+LDVAL\+\_\+\+TSV\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_gab7929b3b8a0c170a50f57d97face5365}{PIT\+\_\+\+LDVAL\+\_\+\+TSV\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga3d2d70f366f2b214ae060c0cb0abb202}{PIT\+\_\+\+LDVAL\+\_\+\+COUNT}}~(4U)
+\end{DoxyCompactItemize}
+\doxysubsection*{CVAL -\/ Current Timer Value Register}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga2810b877338372cb9b9d944b206c08d3}{PIT\+\_\+\+CVAL\+\_\+\+TVL\+\_\+\+MASK}}~(0x\+FFFFFFFFU)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga28753a1a45034ccd34e052faa3e02ff0}{PIT\+\_\+\+CVAL\+\_\+\+TVL\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga00291ae8d045c0b0f199d8950c7e453a}{PIT\+\_\+\+CVAL\+\_\+\+TVL}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_ga28753a1a45034ccd34e052faa3e02ff0}{PIT\+\_\+\+CVAL\+\_\+\+TVL\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga2810b877338372cb9b9d944b206c08d3}{PIT\+\_\+\+CVAL\+\_\+\+TVL\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga8620fe2fb28dc11a864333f6ef51b9bd}{PIT\+\_\+\+CVAL\+\_\+\+COUNT}}~(4U)
+\end{DoxyCompactItemize}
+\doxysubsection*{TCTRL -\/ Timer Control Register}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga1099670711f996f5fa84e33bbfe794b2}{PIT\+\_\+\+TCTRL\+\_\+\+TEN\+\_\+\+MASK}}~(0x1U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga0080137ff0378087f08cc12fd10b3e1f}{PIT\+\_\+\+TCTRL\+\_\+\+TEN\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_gaecd36aa22b2758d6c39b6b2df234e3a8}{PIT\+\_\+\+TCTRL\+\_\+\+TEN}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_ga0080137ff0378087f08cc12fd10b3e1f}{PIT\+\_\+\+TCTRL\+\_\+\+TEN\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga1099670711f996f5fa84e33bbfe794b2}{PIT\+\_\+\+TCTRL\+\_\+\+TEN\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga99639aabcac1d6042d14e7893d00bf67}{PIT\+\_\+\+TCTRL\+\_\+\+TIE\+\_\+\+MASK}}~(0x2U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_gae21aee9e81741a924c9f2824fbc5775b}{PIT\+\_\+\+TCTRL\+\_\+\+TIE\+\_\+\+SHIFT}}~(1U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_gaa39036db7a5f8baae6f986b5809d054c}{PIT\+\_\+\+TCTRL\+\_\+\+TIE}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_gae21aee9e81741a924c9f2824fbc5775b}{PIT\+\_\+\+TCTRL\+\_\+\+TIE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga99639aabcac1d6042d14e7893d00bf67}{PIT\+\_\+\+TCTRL\+\_\+\+TIE\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga734e2e947c649d50b9ca46405e451c2b}{PIT\+\_\+\+TCTRL\+\_\+\+CHN\+\_\+\+MASK}}~(0x4U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga9a1c8aa25a05c9b2c9503a003fa8d24d}{PIT\+\_\+\+TCTRL\+\_\+\+CHN\+\_\+\+SHIFT}}~(2U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_gaeab3c9394c0312620a55449b2daeeaf8}{PIT\+\_\+\+TCTRL\+\_\+\+CHN}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_ga9a1c8aa25a05c9b2c9503a003fa8d24d}{PIT\+\_\+\+TCTRL\+\_\+\+CHN\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga734e2e947c649d50b9ca46405e451c2b}{PIT\+\_\+\+TCTRL\+\_\+\+CHN\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_gaf5d79447f057663c2cf041cb472bd2b3}{PIT\+\_\+\+TCTRL\+\_\+\+COUNT}}~(4U)
+\end{DoxyCompactItemize}
+\doxysubsection*{TFLG -\/ Timer Flag Register}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga9de8d708b43c9ca35df26c7b43f09769}{PIT\+\_\+\+TFLG\+\_\+\+TIF\+\_\+\+MASK}}~(0x1U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_gaf6f5ddca2193ed04bc61bc3e899f5ced}{PIT\+\_\+\+TFLG\+\_\+\+TIF\+\_\+\+SHIFT}}~(0U)
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_gae5a66a0689241a2d1f52b5c989c81b6b}{PIT\+\_\+\+TFLG\+\_\+\+TIF}}(x)~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_gaf6f5ddca2193ed04bc61bc3e899f5ced}{PIT\+\_\+\+TFLG\+\_\+\+TIF\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga9de8d708b43c9ca35df26c7b43f09769}{PIT\+\_\+\+TFLG\+\_\+\+TIF\+\_\+\+MASK}})
+\item 
+\#define \mbox{\hyperlink{group___p_i_t___register___masks_ga7d2129ae649e32ec8c7e6804ba6b6551}{PIT\+\_\+\+TFLG\+\_\+\+COUNT}}~(4U)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___p_i_t___register___masks_gaf181c9e6602b6432a0bf1a9243808968}\label{group___p_i_t___register___masks_gaf181c9e6602b6432a0bf1a9243808968}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT@{PIT}}
+\index{PIT@{PIT}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT}{PIT}}
+{\footnotesize\ttfamily \#define PIT~((\mbox{\hyperlink{struct_p_i_t___type}{PIT\+\_\+\+Type}} $\ast$)\mbox{\hyperlink{group___p_i_t___register___masks_gaf00b86ba33a2cfe7bb100b4f01905f41}{PIT\+\_\+\+BASE}})}
+
+Peripheral PIT base pointer \mbox{\Hypertarget{group___p_i_t___register___masks_gaf00b86ba33a2cfe7bb100b4f01905f41}\label{group___p_i_t___register___masks_gaf00b86ba33a2cfe7bb100b4f01905f41}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_BASE@{PIT\_BASE}}
+\index{PIT\_BASE@{PIT\_BASE}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_BASE}{PIT\_BASE}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+BASE~(0x40037000u)}
+
+Peripheral PIT base address \mbox{\Hypertarget{group___p_i_t___register___masks_ga79085fa95893e4423661373b7be2f0a7}\label{group___p_i_t___register___masks_ga79085fa95893e4423661373b7be2f0a7}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_BASE\_ADDRS@{PIT\_BASE\_ADDRS}}
+\index{PIT\_BASE\_ADDRS@{PIT\_BASE\_ADDRS}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_BASE\_ADDRS}{PIT\_BASE\_ADDRS}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+BASE\+\_\+\+ADDRS~\{ \mbox{\hyperlink{group___p_i_t___register___masks_gaf00b86ba33a2cfe7bb100b4f01905f41}{PIT\+\_\+\+BASE}} \}}
+
+Array initializer of PIT peripheral base addresses \mbox{\Hypertarget{group___p_i_t___register___masks_ga403e0ed71b80cfe3e085fe6b56b5eff0}\label{group___p_i_t___register___masks_ga403e0ed71b80cfe3e085fe6b56b5eff0}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_BASE\_PTRS@{PIT\_BASE\_PTRS}}
+\index{PIT\_BASE\_PTRS@{PIT\_BASE\_PTRS}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_BASE\_PTRS}{PIT\_BASE\_PTRS}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+BASE\+\_\+\+PTRS~\{ \mbox{\hyperlink{group___p_i_t___register___masks_gaf181c9e6602b6432a0bf1a9243808968}{PIT}} \}}
+
+Array initializer of PIT peripheral base pointers \mbox{\Hypertarget{group___p_i_t___register___masks_ga8620fe2fb28dc11a864333f6ef51b9bd}\label{group___p_i_t___register___masks_ga8620fe2fb28dc11a864333f6ef51b9bd}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_CVAL\_COUNT@{PIT\_CVAL\_COUNT}}
+\index{PIT\_CVAL\_COUNT@{PIT\_CVAL\_COUNT}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_CVAL\_COUNT}{PIT\_CVAL\_COUNT}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+CVAL\+\_\+\+COUNT~(4U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga00291ae8d045c0b0f199d8950c7e453a}\label{group___p_i_t___register___masks_ga00291ae8d045c0b0f199d8950c7e453a}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_CVAL\_TVL@{PIT\_CVAL\_TVL}}
+\index{PIT\_CVAL\_TVL@{PIT\_CVAL\_TVL}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_CVAL\_TVL}{PIT\_CVAL\_TVL}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+CVAL\+\_\+\+TVL(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_ga28753a1a45034ccd34e052faa3e02ff0}{PIT\+\_\+\+CVAL\+\_\+\+TVL\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga2810b877338372cb9b9d944b206c08d3}{PIT\+\_\+\+CVAL\+\_\+\+TVL\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga2810b877338372cb9b9d944b206c08d3}\label{group___p_i_t___register___masks_ga2810b877338372cb9b9d944b206c08d3}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_CVAL\_TVL\_MASK@{PIT\_CVAL\_TVL\_MASK}}
+\index{PIT\_CVAL\_TVL\_MASK@{PIT\_CVAL\_TVL\_MASK}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_CVAL\_TVL\_MASK}{PIT\_CVAL\_TVL\_MASK}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+CVAL\+\_\+\+TVL\+\_\+\+MASK~(0x\+FFFFFFFFU)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga28753a1a45034ccd34e052faa3e02ff0}\label{group___p_i_t___register___masks_ga28753a1a45034ccd34e052faa3e02ff0}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_CVAL\_TVL\_SHIFT@{PIT\_CVAL\_TVL\_SHIFT}}
+\index{PIT\_CVAL\_TVL\_SHIFT@{PIT\_CVAL\_TVL\_SHIFT}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_CVAL\_TVL\_SHIFT}{PIT\_CVAL\_TVL\_SHIFT}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+CVAL\+\_\+\+TVL\+\_\+\+SHIFT~(0U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga5f0ae6317a2c8c12e46e49c6e2e29dda}\label{group___p_i_t___register___masks_ga5f0ae6317a2c8c12e46e49c6e2e29dda}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_IRQS@{PIT\_IRQS}}
+\index{PIT\_IRQS@{PIT\_IRQS}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_IRQS}{PIT\_IRQS}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+IRQS~\{ \{ \mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083ab3bc681f165a0965ac922a33bcc466c3}{PIT0\+\_\+\+IRQn}}, \mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083aebde56c1a0c87a74c43fc8b35309d429}{PIT1\+\_\+\+IRQn}}, \mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083afdef24d623050c63c2c35eb54dd35caf}{PIT2\+\_\+\+IRQn}}, \mbox{\hyperlink{group___interrupt__vector__numbers_gga666eb0caeb12ec0e281415592ae89083aa6195cc174d28b297fe7652bf1663311}{PIT3\+\_\+\+IRQn}} \} \}}
+
+Interrupt vectors for the PIT peripheral type \mbox{\Hypertarget{group___p_i_t___register___masks_ga3d2d70f366f2b214ae060c0cb0abb202}\label{group___p_i_t___register___masks_ga3d2d70f366f2b214ae060c0cb0abb202}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_LDVAL\_COUNT@{PIT\_LDVAL\_COUNT}}
+\index{PIT\_LDVAL\_COUNT@{PIT\_LDVAL\_COUNT}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_LDVAL\_COUNT}{PIT\_LDVAL\_COUNT}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+LDVAL\+\_\+\+COUNT~(4U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga1aa1b498b2c8f1a14d095370a7ddf9a6}\label{group___p_i_t___register___masks_ga1aa1b498b2c8f1a14d095370a7ddf9a6}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_LDVAL\_TSV@{PIT\_LDVAL\_TSV}}
+\index{PIT\_LDVAL\_TSV@{PIT\_LDVAL\_TSV}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_LDVAL\_TSV}{PIT\_LDVAL\_TSV}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+LDVAL\+\_\+\+TSV(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_ga463855d2b42de901bad9bea868f4f48b}{PIT\+\_\+\+LDVAL\+\_\+\+TSV\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_gab7929b3b8a0c170a50f57d97face5365}{PIT\+\_\+\+LDVAL\+\_\+\+TSV\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_gab7929b3b8a0c170a50f57d97face5365}\label{group___p_i_t___register___masks_gab7929b3b8a0c170a50f57d97face5365}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_LDVAL\_TSV\_MASK@{PIT\_LDVAL\_TSV\_MASK}}
+\index{PIT\_LDVAL\_TSV\_MASK@{PIT\_LDVAL\_TSV\_MASK}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_LDVAL\_TSV\_MASK}{PIT\_LDVAL\_TSV\_MASK}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+LDVAL\+\_\+\+TSV\+\_\+\+MASK~(0x\+FFFFFFFFU)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga463855d2b42de901bad9bea868f4f48b}\label{group___p_i_t___register___masks_ga463855d2b42de901bad9bea868f4f48b}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_LDVAL\_TSV\_SHIFT@{PIT\_LDVAL\_TSV\_SHIFT}}
+\index{PIT\_LDVAL\_TSV\_SHIFT@{PIT\_LDVAL\_TSV\_SHIFT}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_LDVAL\_TSV\_SHIFT}{PIT\_LDVAL\_TSV\_SHIFT}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+LDVAL\+\_\+\+TSV\+\_\+\+SHIFT~(0U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_gab52ff9f5a1c18eee41b58100aa415dfe}\label{group___p_i_t___register___masks_gab52ff9f5a1c18eee41b58100aa415dfe}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_MCR\_FRZ@{PIT\_MCR\_FRZ}}
+\index{PIT\_MCR\_FRZ@{PIT\_MCR\_FRZ}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_MCR\_FRZ}{PIT\_MCR\_FRZ}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+MCR\+\_\+\+FRZ(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_ga500ccd29eaebc20aa853e7bbb23e3c0c}{PIT\+\_\+\+MCR\+\_\+\+FRZ\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga8149a0bb21843632dd4528b540480ba7}{PIT\+\_\+\+MCR\+\_\+\+FRZ\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga8149a0bb21843632dd4528b540480ba7}\label{group___p_i_t___register___masks_ga8149a0bb21843632dd4528b540480ba7}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_MCR\_FRZ\_MASK@{PIT\_MCR\_FRZ\_MASK}}
+\index{PIT\_MCR\_FRZ\_MASK@{PIT\_MCR\_FRZ\_MASK}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_MCR\_FRZ\_MASK}{PIT\_MCR\_FRZ\_MASK}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+MCR\+\_\+\+FRZ\+\_\+\+MASK~(0x1U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga500ccd29eaebc20aa853e7bbb23e3c0c}\label{group___p_i_t___register___masks_ga500ccd29eaebc20aa853e7bbb23e3c0c}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_MCR\_FRZ\_SHIFT@{PIT\_MCR\_FRZ\_SHIFT}}
+\index{PIT\_MCR\_FRZ\_SHIFT@{PIT\_MCR\_FRZ\_SHIFT}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_MCR\_FRZ\_SHIFT}{PIT\_MCR\_FRZ\_SHIFT}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+MCR\+\_\+\+FRZ\+\_\+\+SHIFT~(0U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_gafae73f01b87a4e133c1289e0d09f8de2}\label{group___p_i_t___register___masks_gafae73f01b87a4e133c1289e0d09f8de2}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_MCR\_MDIS@{PIT\_MCR\_MDIS}}
+\index{PIT\_MCR\_MDIS@{PIT\_MCR\_MDIS}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_MCR\_MDIS}{PIT\_MCR\_MDIS}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+MCR\+\_\+\+MDIS(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_ga7ddcd16550ff71e4ee5ac48022ae6fb6}{PIT\+\_\+\+MCR\+\_\+\+MDIS\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga024258b2c23ff75f3e161e56adbbe733}{PIT\+\_\+\+MCR\+\_\+\+MDIS\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga024258b2c23ff75f3e161e56adbbe733}\label{group___p_i_t___register___masks_ga024258b2c23ff75f3e161e56adbbe733}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_MCR\_MDIS\_MASK@{PIT\_MCR\_MDIS\_MASK}}
+\index{PIT\_MCR\_MDIS\_MASK@{PIT\_MCR\_MDIS\_MASK}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_MCR\_MDIS\_MASK}{PIT\_MCR\_MDIS\_MASK}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+MCR\+\_\+\+MDIS\+\_\+\+MASK~(0x2U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga7ddcd16550ff71e4ee5ac48022ae6fb6}\label{group___p_i_t___register___masks_ga7ddcd16550ff71e4ee5ac48022ae6fb6}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_MCR\_MDIS\_SHIFT@{PIT\_MCR\_MDIS\_SHIFT}}
+\index{PIT\_MCR\_MDIS\_SHIFT@{PIT\_MCR\_MDIS\_SHIFT}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_MCR\_MDIS\_SHIFT}{PIT\_MCR\_MDIS\_SHIFT}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+MCR\+\_\+\+MDIS\+\_\+\+SHIFT~(1U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_gaeab3c9394c0312620a55449b2daeeaf8}\label{group___p_i_t___register___masks_gaeab3c9394c0312620a55449b2daeeaf8}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TCTRL\_CHN@{PIT\_TCTRL\_CHN}}
+\index{PIT\_TCTRL\_CHN@{PIT\_TCTRL\_CHN}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TCTRL\_CHN}{PIT\_TCTRL\_CHN}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TCTRL\+\_\+\+CHN(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_ga9a1c8aa25a05c9b2c9503a003fa8d24d}{PIT\+\_\+\+TCTRL\+\_\+\+CHN\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga734e2e947c649d50b9ca46405e451c2b}{PIT\+\_\+\+TCTRL\+\_\+\+CHN\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga734e2e947c649d50b9ca46405e451c2b}\label{group___p_i_t___register___masks_ga734e2e947c649d50b9ca46405e451c2b}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TCTRL\_CHN\_MASK@{PIT\_TCTRL\_CHN\_MASK}}
+\index{PIT\_TCTRL\_CHN\_MASK@{PIT\_TCTRL\_CHN\_MASK}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TCTRL\_CHN\_MASK}{PIT\_TCTRL\_CHN\_MASK}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TCTRL\+\_\+\+CHN\+\_\+\+MASK~(0x4U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga9a1c8aa25a05c9b2c9503a003fa8d24d}\label{group___p_i_t___register___masks_ga9a1c8aa25a05c9b2c9503a003fa8d24d}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TCTRL\_CHN\_SHIFT@{PIT\_TCTRL\_CHN\_SHIFT}}
+\index{PIT\_TCTRL\_CHN\_SHIFT@{PIT\_TCTRL\_CHN\_SHIFT}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TCTRL\_CHN\_SHIFT}{PIT\_TCTRL\_CHN\_SHIFT}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TCTRL\+\_\+\+CHN\+\_\+\+SHIFT~(2U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_gaf5d79447f057663c2cf041cb472bd2b3}\label{group___p_i_t___register___masks_gaf5d79447f057663c2cf041cb472bd2b3}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TCTRL\_COUNT@{PIT\_TCTRL\_COUNT}}
+\index{PIT\_TCTRL\_COUNT@{PIT\_TCTRL\_COUNT}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TCTRL\_COUNT}{PIT\_TCTRL\_COUNT}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TCTRL\+\_\+\+COUNT~(4U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_gaecd36aa22b2758d6c39b6b2df234e3a8}\label{group___p_i_t___register___masks_gaecd36aa22b2758d6c39b6b2df234e3a8}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TCTRL\_TEN@{PIT\_TCTRL\_TEN}}
+\index{PIT\_TCTRL\_TEN@{PIT\_TCTRL\_TEN}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TCTRL\_TEN}{PIT\_TCTRL\_TEN}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TCTRL\+\_\+\+TEN(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_ga0080137ff0378087f08cc12fd10b3e1f}{PIT\+\_\+\+TCTRL\+\_\+\+TEN\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga1099670711f996f5fa84e33bbfe794b2}{PIT\+\_\+\+TCTRL\+\_\+\+TEN\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga1099670711f996f5fa84e33bbfe794b2}\label{group___p_i_t___register___masks_ga1099670711f996f5fa84e33bbfe794b2}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TCTRL\_TEN\_MASK@{PIT\_TCTRL\_TEN\_MASK}}
+\index{PIT\_TCTRL\_TEN\_MASK@{PIT\_TCTRL\_TEN\_MASK}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TCTRL\_TEN\_MASK}{PIT\_TCTRL\_TEN\_MASK}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TCTRL\+\_\+\+TEN\+\_\+\+MASK~(0x1U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga0080137ff0378087f08cc12fd10b3e1f}\label{group___p_i_t___register___masks_ga0080137ff0378087f08cc12fd10b3e1f}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TCTRL\_TEN\_SHIFT@{PIT\_TCTRL\_TEN\_SHIFT}}
+\index{PIT\_TCTRL\_TEN\_SHIFT@{PIT\_TCTRL\_TEN\_SHIFT}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TCTRL\_TEN\_SHIFT}{PIT\_TCTRL\_TEN\_SHIFT}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TCTRL\+\_\+\+TEN\+\_\+\+SHIFT~(0U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_gaa39036db7a5f8baae6f986b5809d054c}\label{group___p_i_t___register___masks_gaa39036db7a5f8baae6f986b5809d054c}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TCTRL\_TIE@{PIT\_TCTRL\_TIE}}
+\index{PIT\_TCTRL\_TIE@{PIT\_TCTRL\_TIE}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TCTRL\_TIE}{PIT\_TCTRL\_TIE}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TCTRL\+\_\+\+TIE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_gae21aee9e81741a924c9f2824fbc5775b}{PIT\+\_\+\+TCTRL\+\_\+\+TIE\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga99639aabcac1d6042d14e7893d00bf67}{PIT\+\_\+\+TCTRL\+\_\+\+TIE\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga99639aabcac1d6042d14e7893d00bf67}\label{group___p_i_t___register___masks_ga99639aabcac1d6042d14e7893d00bf67}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TCTRL\_TIE\_MASK@{PIT\_TCTRL\_TIE\_MASK}}
+\index{PIT\_TCTRL\_TIE\_MASK@{PIT\_TCTRL\_TIE\_MASK}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TCTRL\_TIE\_MASK}{PIT\_TCTRL\_TIE\_MASK}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TCTRL\+\_\+\+TIE\+\_\+\+MASK~(0x2U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_gae21aee9e81741a924c9f2824fbc5775b}\label{group___p_i_t___register___masks_gae21aee9e81741a924c9f2824fbc5775b}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TCTRL\_TIE\_SHIFT@{PIT\_TCTRL\_TIE\_SHIFT}}
+\index{PIT\_TCTRL\_TIE\_SHIFT@{PIT\_TCTRL\_TIE\_SHIFT}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TCTRL\_TIE\_SHIFT}{PIT\_TCTRL\_TIE\_SHIFT}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TCTRL\+\_\+\+TIE\+\_\+\+SHIFT~(1U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga7d2129ae649e32ec8c7e6804ba6b6551}\label{group___p_i_t___register___masks_ga7d2129ae649e32ec8c7e6804ba6b6551}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TFLG\_COUNT@{PIT\_TFLG\_COUNT}}
+\index{PIT\_TFLG\_COUNT@{PIT\_TFLG\_COUNT}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TFLG\_COUNT}{PIT\_TFLG\_COUNT}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TFLG\+\_\+\+COUNT~(4U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_gae5a66a0689241a2d1f52b5c989c81b6b}\label{group___p_i_t___register___masks_gae5a66a0689241a2d1f52b5c989c81b6b}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TFLG\_TIF@{PIT\_TFLG\_TIF}}
+\index{PIT\_TFLG\_TIF@{PIT\_TFLG\_TIF}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TFLG\_TIF}{PIT\_TFLG\_TIF}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TFLG\+\_\+\+TIF(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((uint32\+\_\+t)(((uint32\+\_\+t)(x)) $<$$<$ \mbox{\hyperlink{group___p_i_t___register___masks_gaf6f5ddca2193ed04bc61bc3e899f5ced}{PIT\+\_\+\+TFLG\+\_\+\+TIF\+\_\+\+SHIFT}})) \& \mbox{\hyperlink{group___p_i_t___register___masks_ga9de8d708b43c9ca35df26c7b43f09769}{PIT\+\_\+\+TFLG\+\_\+\+TIF\+\_\+\+MASK}})}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_ga9de8d708b43c9ca35df26c7b43f09769}\label{group___p_i_t___register___masks_ga9de8d708b43c9ca35df26c7b43f09769}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TFLG\_TIF\_MASK@{PIT\_TFLG\_TIF\_MASK}}
+\index{PIT\_TFLG\_TIF\_MASK@{PIT\_TFLG\_TIF\_MASK}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TFLG\_TIF\_MASK}{PIT\_TFLG\_TIF\_MASK}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TFLG\+\_\+\+TIF\+\_\+\+MASK~(0x1U)}
+
+\mbox{\Hypertarget{group___p_i_t___register___masks_gaf6f5ddca2193ed04bc61bc3e899f5ced}\label{group___p_i_t___register___masks_gaf6f5ddca2193ed04bc61bc3e899f5ced}} 
+\index{PIT Register Masks@{PIT Register Masks}!PIT\_TFLG\_TIF\_SHIFT@{PIT\_TFLG\_TIF\_SHIFT}}
+\index{PIT\_TFLG\_TIF\_SHIFT@{PIT\_TFLG\_TIF\_SHIFT}!PIT Register Masks@{PIT Register Masks}}
+\doxysubsubsection{\texorpdfstring{PIT\_TFLG\_TIF\_SHIFT}{PIT\_TFLG\_TIF\_SHIFT}}
+{\footnotesize\ttfamily \#define PIT\+\_\+\+TFLG\+\_\+\+TIF\+\_\+\+SHIFT~(0U)}
+

@@ -1,17 +1,15 @@
 /*
  * GENERATED FILE - DO NOT EDIT
- * Copyright (c) 2008-2013 Code Red Technologies Ltd,
- * Copyright 2015, 2018-2019 NXP
+ * (c) Code Red Technologies Ltd, 2008-2013
  * (c) NXP Semiconductors 2013-2021
  * Generated linker script file for MK64FN1M0xxx12
  * Created from library.ldt by FMCreateLinkLibraries
- * Using Freemarker v2.3.30
- * MCUXpresso IDE v11.4.0 [Build 6237] [2021-08-06] on Oct 2, 2021, 4:46:52 PM
+ * Using Freemarker v2.3.23
+ * MCUXpresso IDE v10.2.0 [Build 759] [2018-05-15]  on 02/10/2021 17:24:39
  */
 
 GROUP (
   "libcr_semihost_nf.a"
   "libcr_c.a"
   "libcr_eabihelpers.a"
-  "libgcc.a"
 )

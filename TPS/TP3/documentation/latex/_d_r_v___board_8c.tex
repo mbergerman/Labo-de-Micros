@@ -1,0 +1,127 @@
+\hypertarget{_d_r_v___board_8c}{}\doxysection{drivers/\+DRV\+\_\+\+Board.c File Reference}
+\label{_d_r_v___board_8c}\index{drivers/DRV\_Board.c@{drivers/DRV\_Board.c}}
+
+
+FRDM Board management.  
+
+
+{\ttfamily \#include \char`\"{}DRV\+\_\+\+Board.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}PDRV\+\_\+\+GPIO.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___board_8c_adbe1217411020dce276444293215c7f2}{LED\+\_\+\+ACTIVE}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_ab811d8c6ff3a505312d3276590444289}{LOW}}
+\item 
+\#define \mbox{\hyperlink{_d_r_v___board_8c_a4f5376783549da38da34aefaaafc7e57}{SW\+\_\+\+ACTIVE}}~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_ab811d8c6ff3a505312d3276590444289}{LOW}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_r_v___board_8c_acf15165e08940e0b050e6c739de8d349}{init\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Initialize FRDM Board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___board_8c_a4918dd09074f898b0dd8247689490185}{set\+LED}} (\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{LED\+\_\+t}} led, bool value)
+\begin{DoxyCompactList}\small\item\em Sets value of LED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___board_8c_ad1fcdaa55f41faa32d79c6304042fe96}{clear\+LED}} (\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{LED\+\_\+t}} led)
+\begin{DoxyCompactList}\small\item\em Turn off LED. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_r_v___board_8c_abf6e71ba8041ab4865bf37e3a8af87e7}{toggle\+LED}} (\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{LED\+\_\+t}} led)
+\begin{DoxyCompactList}\small\item\em Toggle LED. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_d_r_v___board_8c_a0371fe5f560339c593a8bdb6973756bf}{get\+SW}} (\mbox{\hyperlink{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90e}{SW\+\_\+t}} sw)
+\begin{DoxyCompactList}\small\item\em Read value of switch. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+FRDM Board management. 
+
+\begin{DoxyAuthor}{Author}
+Grupo 1 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_d_r_v___board_8c_adbe1217411020dce276444293215c7f2}\label{_d_r_v___board_8c_adbe1217411020dce276444293215c7f2}} 
+\index{DRV\_Board.c@{DRV\_Board.c}!LED\_ACTIVE@{LED\_ACTIVE}}
+\index{LED\_ACTIVE@{LED\_ACTIVE}!DRV\_Board.c@{DRV\_Board.c}}
+\doxysubsubsection{\texorpdfstring{LED\_ACTIVE}{LED\_ACTIVE}}
+{\footnotesize\ttfamily \#define LED\+\_\+\+ACTIVE~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_ab811d8c6ff3a505312d3276590444289}{LOW}}}
+
+\mbox{\Hypertarget{_d_r_v___board_8c_a4f5376783549da38da34aefaaafc7e57}\label{_d_r_v___board_8c_a4f5376783549da38da34aefaaafc7e57}} 
+\index{DRV\_Board.c@{DRV\_Board.c}!SW\_ACTIVE@{SW\_ACTIVE}}
+\index{SW\_ACTIVE@{SW\_ACTIVE}!DRV\_Board.c@{DRV\_Board.c}}
+\doxysubsubsection{\texorpdfstring{SW\_ACTIVE}{SW\_ACTIVE}}
+{\footnotesize\ttfamily \#define SW\+\_\+\+ACTIVE~\mbox{\hyperlink{_p_d_r_v___g_p_i_o_8h_ab811d8c6ff3a505312d3276590444289}{LOW}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_d_r_v___board_8c_ad1fcdaa55f41faa32d79c6304042fe96}\label{_d_r_v___board_8c_ad1fcdaa55f41faa32d79c6304042fe96}} 
+\index{DRV\_Board.c@{DRV\_Board.c}!clearLED@{clearLED}}
+\index{clearLED@{clearLED}!DRV\_Board.c@{DRV\_Board.c}}
+\doxysubsubsection{\texorpdfstring{clearLED()}{clearLED()}}
+{\footnotesize\ttfamily void clear\+LED (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{LED\+\_\+t}}}]{led }\end{DoxyParamCaption})}
+
+
+
+Turn off LED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & led\+: RED, GREEN, BLUE \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___board_8c_a0371fe5f560339c593a8bdb6973756bf}\label{_d_r_v___board_8c_a0371fe5f560339c593a8bdb6973756bf}} 
+\index{DRV\_Board.c@{DRV\_Board.c}!getSW@{getSW}}
+\index{getSW@{getSW}!DRV\_Board.c@{DRV\_Board.c}}
+\doxysubsubsection{\texorpdfstring{getSW()}{getSW()}}
+{\footnotesize\ttfamily bool get\+SW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___board_8h_ab3eaf74a5bbc7ce90dc87a3ad2d8e90e}{SW\+\_\+t}}}]{sw }\end{DoxyParamCaption})}
+
+
+
+Read value of switch. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sw} & sw\+: SW2, SW3 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___board_8c_acf15165e08940e0b050e6c739de8d349}\label{_d_r_v___board_8c_acf15165e08940e0b050e6c739de8d349}} 
+\index{DRV\_Board.c@{DRV\_Board.c}!initBoard@{initBoard}}
+\index{initBoard@{initBoard}!DRV\_Board.c@{DRV\_Board.c}}
+\doxysubsubsection{\texorpdfstring{initBoard()}{initBoard()}}
+{\footnotesize\ttfamily void init\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize FRDM Board. 
+
+\mbox{\Hypertarget{_d_r_v___board_8c_a4918dd09074f898b0dd8247689490185}\label{_d_r_v___board_8c_a4918dd09074f898b0dd8247689490185}} 
+\index{DRV\_Board.c@{DRV\_Board.c}!setLED@{setLED}}
+\index{setLED@{setLED}!DRV\_Board.c@{DRV\_Board.c}}
+\doxysubsubsection{\texorpdfstring{setLED()}{setLED()}}
+{\footnotesize\ttfamily void set\+LED (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{LED\+\_\+t}}}]{led,  }\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Sets value of LED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & led\+: RED, GREEN, BLUE \\
+\hline
+{\em value} & value\+: true or false \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_r_v___board_8c_abf6e71ba8041ab4865bf37e3a8af87e7}\label{_d_r_v___board_8c_abf6e71ba8041ab4865bf37e3a8af87e7}} 
+\index{DRV\_Board.c@{DRV\_Board.c}!toggleLED@{toggleLED}}
+\index{toggleLED@{toggleLED}!DRV\_Board.c@{DRV\_Board.c}}
+\doxysubsubsection{\texorpdfstring{toggleLED()}{toggleLED()}}
+{\footnotesize\ttfamily void toggle\+LED (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_d_r_v___board_8h_add06cf8aa4e6538b7411fe9976dbf4d5}{LED\+\_\+t}}}]{led }\end{DoxyParamCaption})}
+
+
+
+Toggle LED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led} & led\+: RED, GREEN, BLUE \\
+\hline
+\end{DoxyParams}

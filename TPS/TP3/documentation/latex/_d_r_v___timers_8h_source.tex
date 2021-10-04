@@ -1,0 +1,77 @@
+\hypertarget{_d_r_v___timers_8h_source}{}\doxysection{DRV\+\_\+\+Timers.\+h}
+\label{_d_r_v___timers_8h_source}\index{drivers/DRV\_Timers.h@{drivers/DRV\_Timers.h}}
+\mbox{\hyperlink{_d_r_v___timers_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/***************************************************************************/}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef \_TIMER\_H\_}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define \_TIMER\_H\_}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{11 \textcolor{comment}{ * INCLUDE HEADER FILES}}
+\DoxyCodeLine{12 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{20 \textcolor{comment}{ * CONSTANT AND MACRO DEFINITIONS USING \#DEFINE}}
+\DoxyCodeLine{21 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define TIMER\_TICK\_MS       1}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define TIMER\_MS2TICKS(ms)  ((ms)/TIMER\_TICK\_MS)}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define TIMERS\_MAX\_CANT     32}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define TIMER\_INVALID\_ID    255}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{31 \textcolor{comment}{ * ENUMERATIONS AND STRUCTURES AND TYPEDEFS}}
+\DoxyCodeLine{32 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{comment}{// Timer Modes}}
+\DoxyCodeLine{35 \textcolor{keyword}{enum} \{ \mbox{\hyperlink{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5a6155e9404d43a8e6efa4063c86efcfaf}{TIM\_MODE\_SINGLESHOT}}, \mbox{\hyperlink{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5a7a1497f4309bf8f5d2fb0ac7695822c3}{TIM\_MODE\_PERIODIC}}, \mbox{\hyperlink{_d_r_v___timers_8h_a99fb83031ce9923c84392b4e92f956b5ae2f303315d389a36b806045ab38241e4}{CANT\_TIM\_MODES}} \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{comment}{// Timer alias}}
+\DoxyCodeLine{38 \textcolor{keyword}{typedef} uint32\_t \mbox{\hyperlink{_d_r_v___timers_8h_a21588d564d58c0716d3901da569691db}{ttick\_t}};}
+\DoxyCodeLine{39 \textcolor{keyword}{typedef} uint8\_t \mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\_id\_t}};}
+\DoxyCodeLine{40 \textcolor{keyword}{typedef} void (*\mbox{\hyperlink{_d_r_v___timers_8h_a0b70e2941dede906fc97d15b026a16e1}{tim\_callback\_t}})(void);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{44 \textcolor{comment}{ * VARIABLE PROTOTYPES WITH GLOBAL SCOPE}}
+\DoxyCodeLine{45 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{48 \textcolor{comment}{ * FUNCTION PROTOTYPES WITH GLOBAL SCOPE}}
+\DoxyCodeLine{49 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{54 \textcolor{keywordtype}{void} \mbox{\hyperlink{_d_r_v___timers_8h_a9e737e3249388fb2e50d868bad69c688}{initTimers}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{comment}{// Non-\/Blocking services ////////////////////////////////////////////////}}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{63 \mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\_id\_t}} \mbox{\hyperlink{_d_r_v___timers_8h_a482d96c2dea661ebf999865b82f776b8}{timerGetId}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 }
+\DoxyCodeLine{73 \textcolor{keywordtype}{void} \mbox{\hyperlink{_d_r_v___timers_8h_a03e4dcebc46bc9c08d903d44fbb8f834}{timerStart}}(\mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\_id\_t}} \textcolor{keywordtype}{id}, \mbox{\hyperlink{_d_r_v___timers_8h_a21588d564d58c0716d3901da569691db}{ttick\_t}} ticks, uint8\_t mode, \mbox{\hyperlink{_d_r_v___timers_8h_a0b70e2941dede906fc97d15b026a16e1}{tim\_callback\_t}} callback);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 }
+\DoxyCodeLine{80 \textcolor{keywordtype}{void} \mbox{\hyperlink{_d_r_v___timers_8h_a1d8fc7435aca9180251cd17ee1f61cb4}{timerStop}}(\mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\_id\_t}} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 }
+\DoxyCodeLine{88 \textcolor{keywordtype}{bool} \mbox{\hyperlink{_d_r_v___timers_8h_a9d870bec105107f492485b93d20867da}{timerExpired}}(\mbox{\hyperlink{_d_r_v___timers_8h_a196e96c7c2523d4d6c9d3e0c47e8c582}{tim\_id\_t}} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91 \textcolor{comment}{// Blocking services ////////////////////////////////////////////////}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{97 \textcolor{keywordtype}{void} \mbox{\hyperlink{_d_r_v___timers_8h_a367713eae4c0901efd5b7336f20ddefa}{timerDelay}}(\mbox{\hyperlink{_d_r_v___timers_8h_a21588d564d58c0716d3901da569691db}{ttick\_t}} ticks);}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{101 \textcolor{comment}{ ******************************************************************************/}}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_TIMER\_H\_}}
+
+\end{DoxyCode}
