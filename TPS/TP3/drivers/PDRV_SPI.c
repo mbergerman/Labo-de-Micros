@@ -191,20 +191,20 @@ static SPI_mode_t port_mode[3];
 void SPI_Init(uint8_t spi_port, SPI_config_t config)
 {
     port_mode[spi_port] = config.mode; //remember port mode
-    config.chip_selects = ((chip_selects == 0)? 1 : config.chip_selects); //Minimum number of peripherals is 1
+    config.chip_selects = ((config.chip_selects == 0)? 1 : config.chip_selects); //Minimum number of peripherals is 1
     
     //Clock Gating
     switch(spi_port)
     {
-        case SPI0:            
+        case 0:
             SIM->SCGC6 |= SIM_SCGC6_SPI0(1);
             NVIC_EnableIRQ(SPI0_IRQn);
             break;
-        case SPI1:
+        case 1:
             SIM->SCGC6 |= SIM_SCGC6_SPI1(1);
             NVIC_EnableIRQ(SPI1_IRQn);
             break;
-        case SPI2:
+        case 2:
             SIM->SCGC3 |= SIM_SCGC3_SPI0(1);
             NVIC_EnableIRQ(SPI2_IRQn);
             break;
@@ -226,27 +226,27 @@ void SPI_Init(uint8_t spi_port, SPI_config_t config)
         PORT_PTRS[SPI_PCS0_PORT(spi_port)]->PCR[SPI_PCS0_PIN(spi_port)] = 0x0; //Clear
         PORT_PTRS[SPI_PCS0_PORT(spi_port)]->PCR[SPI_PCS0_PIN(spi_port)] |= PORT_PCR_MUX(SPI_PCS0_ALT(spi_port));
 
-        if (config.chip_selects > 1 && spi_port != SPI2)
+        if (config.chip_selects > 1 && spi_port != 2)
         {
             PORT_PTRS[SPI_PCS1_PORT(spi_port)]->PCR[SPI_PCS1_PIN(spi_port)] = 0x0; //Clear
             PORT_PTRS[SPI_PCS1_PORT(spi_port)]->PCR[SPI_PCS1_PIN(spi_port)] |= PORT_PCR_MUX(SPI_PCS1_ALT(spi_port));
         }
-        if (config.chip_selects > 2 && spi_port != SPI2)
+        if (config.chip_selects > 2 && spi_port != 2)
         {
             PORT_PTRS[SPI_PCS2_PORT(spi_port)]->PCR[SPI_PCS2_PIN(spi_port)] = 0x0; //Clear
             PORT_PTRS[SPI_PCS2_PORT(spi_port)]->PCR[SPI_PCS2_PIN(spi_port)] |= PORT_PCR_MUX(SPI_PCS2_ALT(spi_port));
         }
-        if (config.chip_selects > 3 && spi_port != SPI2)
+        if (config.chip_selects > 3 && spi_port != 2)
         {
             PORT_PTRS[SPI_PCS3_PORT(spi_port)]->PCR[SPI_PCS3_PIN(spi_port)] = 0x0; //Clear
             PORT_PTRS[SPI_PCS3_PORT(spi_port)]->PCR[SPI_PCS3_PIN(spi_port)] |= PORT_PCR_MUX(SPI_PCS3_ALT(spi_port));
         }
-        if (config.chip_selects > 4 && spi_port == SPI0)
+        if (config.chip_selects > 4 && spi_port == 0)
         {
             PORT_PTRS[SPI0_PCS4_PORT]->PCR[SPI0_PCS4_PIN] = 0x0; //Clear
             PORT_PTRS[SPI0_PCS4_PORT]->PCR[SPI0_PCS4_PIN] |= PORT_PCR_MUX(SPI0_PCS4_ALT);
         }
-        if (config.chip_selects > 5 && spi_port == SPI0)
+        if (config.chip_selects > 5 && spi_port == 0)
         {
             PORT_PTRS[SPI0_PCS5_PORT]->PCR[SPI0_PCS5_PIN] = 0x0; //Clear
             PORT_PTRS[SPI0_PCS5_PORT]->PCR[SPI0_PCS5_PIN] |= PORT_PCR_MUX(SPI0_PCS5_ALT);
@@ -265,21 +265,20 @@ void SPI_Init(uint8_t spi_port, SPI_config_t config)
     if(config.mode)
     {
         // CTAR Master Config
-        SPI_PTRS[spi_port]->CTAR = 0x0;
-        SPI_PTRS[spi_port]->CTAR |= SPI_CTAR_DBR(0); // 50/50 Clock duty cycle 
-        SPI_PTRS[spi_port]->CTAR |= SPI_CTAR_FMSZ(config.frame_size); // User defined frame size
-        SPI_PTRS[spi_port]->CTAR |= SPI_CTAR_LSBFE(config.LSB_first); // User defined LSB first in transfer or not
-        SPI_PTRS[spi_port]->CTAR |= SPI_CTAR_CPHA(config.clock_phase); // User defined SCK phase
-        SPI_PTRS[spi_port]->CTAR |= SPI_CTAR_CPOL(config.clock_polarity); // User defined SCK polarity
+        SPI_PTRS[spi_port]->CTAR[1] = 0x0;
+        SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_DBR(0); // 50/50 Clock duty cycle
+        SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_FMSZ(config.frame_size); // User defined frame size
+        SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_LSBFE(config.LSB_first); // User defined LSB first in transfer or not
+        SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_CPHA(config.clock_phase); // User defined SCK phase
+        SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_CPOL(config.clock_polarity); // User defined SCK polarity
 
     }
     else
     {
         // CTAR Slave Config
-        SPI_PTRS[spi_port]->CTAR |= SPI_CTAR_SLAVE_FMSZ(config.frame_size); // User defined frame size
-        SPI_PTRS[spi_port]->CTAR |= SPI_CTAR_SLAVE_LSBFE(config.LSB_first); // User defined LSB first in transfer or not
-        SPI_PTRS[spi_port]->CTAR |= SPI_CTAR_SLAVE_CPHA(config.clock_phase); // User defined SCK phase
-        SPI_PTRS[spi_port]->CTAR |= SPI_CTAR_SLAVE_CPOL(config.clock_polarity); // User defined SCK polarity
+        SPI_PTRS[spi_port]->CTAR[0] |= SPI_CTAR_SLAVE_FMSZ(config.frame_size); // User defined frame size
+        SPI_PTRS[spi_port]->CTAR[0] |= SPI_CTAR_SLAVE_CPHA(config.clock_phase); // User defined SCK phase
+        SPI_PTRS[spi_port]->CTAR[0] |= SPI_CTAR_SLAVE_CPOL(config.clock_polarity); // User defined SCK polarity
 
     }
     //Rest flags

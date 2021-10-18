@@ -38,13 +38,13 @@ typedef enum {SLAVE, MASTER} SPI_mode_t;
 
 typedef struct SPI_config_t
 {
-	SPI_mode_t mode,
-	uint8_t chip_selects,
-	uint8_t frame_size, 
+	SPI_mode_t mode;
+	uint8_t chip_selects;
+	uint8_t frame_size;
 	bool clock_polarity;
 	bool clock_phase;
 	bool LSB_first;
-	bool PCSIS
+	bool PCSIS;
 }SPI_config_t;
 
 /*******************************************************************************
