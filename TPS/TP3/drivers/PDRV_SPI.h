@@ -23,8 +23,6 @@
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
 
-enum {SPI0, SPI1, SPI2};
-
 typedef enum {SLAVE, MASTER} SPI_mode_t;
 
 /**
@@ -61,7 +59,7 @@ typedef struct SPI_config_t
 
 /**
  * @brief SPI_init: Initialize an SPI port
- * @param spi_port - SPI port to initialize (SPI0, SPI1, SPI2)
+ * @param spi_port - SPI port to initialize (SPI0 = 0, SPI1 = 1, SPI2 = 2)
  * @param config - User defined configuration of the SPI port (see SPI_config_t data type)
 */
 void SPI_Init(uint8_t spi_port, SPI_config_t config);
