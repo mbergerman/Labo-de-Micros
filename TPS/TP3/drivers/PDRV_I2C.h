@@ -17,7 +17,7 @@
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
 
-
+#define	MSG_BUFFER_LEN	32
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -34,10 +34,6 @@ typedef enum{
 	I2C_SPEED_16276HZ = 0x2F
 }i2c_speed_t;
 
-typedef struct{
-	i2c_speed_t speed;
-}i2c_cfg_t;
-
 /*******************************************************************************
  * VARIABLE PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
@@ -50,14 +46,22 @@ typedef struct{
  ******************************************************************************/
 
 /**
- * @brief TODO: completar descripcion
- * @param param1 Descripcion parametro 1
- * @param param2 Descripcion parametro 2
- * @return Descripcion valor que devuelve
+ * @brief Initialize I2C driver
+ * @param id I2C's number
+ * @param config I2C's configuration (speed, etc.)
 */
-// +ej: char lcd_goto (int fil, int col);+
+void initI2C(uint8_t id, i2c_speed_t speed);
 
-void initI2C(uint8_t id, i2c_cfg_t config);
+/**
+ * @brief Write a message to be transmitted. Non-Blocking
+ * @param id I2C's number
+ * @param address I2C Address
+ * @param msg Buffer with the bytes to be transfered
+ * @param cant Desired quantity of bytes to be transfered
+ * @return Real quantity of bytes to be transfered
+*/
+uint8_t i2cWriteMsg(uint8_t id, uint32_t address, const char* msg, uint8_t cant);
+
 
 /*******************************************************************************
  ******************************************************************************/
