@@ -205,7 +205,7 @@ void SPI_Init(uint8_t spi_port, SPI_config_t config)
             NVIC_EnableIRQ(SPI1_IRQn);
             break;
         case 2:
-            SIM->SCGC3 |= SIM_SCGC3_SPI0(1);
+            SIM->SCGC3 |= SIM_SCGC3_SPI2(1);
             NVIC_EnableIRQ(SPI2_IRQn);
             break;
     }

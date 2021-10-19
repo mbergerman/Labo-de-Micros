@@ -1,5 +1,5 @@
 /***************************************************************************//**
-  @file     PDRV_SPI.c
+  @file     PDRV_FTM.c
   @brief    SPI driver.
   @author   Grupo 1
  ******************************************************************************/
@@ -15,6 +15,8 @@
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
+
+#define MAX_FTM 4
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -32,6 +34,8 @@
  * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
+static const FTM_Config_t ftm_config[MAX_FTM];
+
 /*******************************************************************************
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
@@ -46,7 +50,27 @@ static FTM_Type* const FTM_PTRS[] = FTM_BASE_PTRS;
 
 void FTM_init(uint8_t FTM, FTM_Channel_t channel, FTM_Config_t config)
 {
-
+	//Clock gating and NVIC IRQ enable
+    switch(FTM)
+    {
+        case 0:
+        	SIM->SCGC6 |= SIM_SCGC6_FTM0_MASK;
+        	NVIC_EnableIRQ(FTM0_IRQn);
+            break;
+        case 1:
+        	SIM->SCGC6 |= SIM_SCGC6_FTM1_MASK;
+        	NVIC_EnableIRQ(FTM1_IRQn);
+            break;
+        case 2:
+        	SIM->SCGC6 |= SIM_SCGC6_FTM2_MASK;
+			SIM->SCGC3 |= SIM_SCGC3_FTM2_MASK;
+			NVIC_EnableIRQ(FTM2_IRQn);
+            break;
+        case 3:
+        	SIM->SCGC3 |= SIM_SCGC3_FTM3_MASK;
+        	NVIC_EnableIRQ(FTM3_IRQn);
+        	break;
+    }
 }
 
 /*******************************************************************************
