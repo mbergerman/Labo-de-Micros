@@ -184,6 +184,9 @@ void FTM_init(uint8_t FTM, FTM_Config_t config)
 	// Save configuration
 	ftm_config[FTM] = config;
 
+    // Enable FTM register write
+    FTM_PTRS[FTM]->MODE |= FTM_MODE_WPDIS(1);
+
 	// Clock gating and NVIC
     switch(FTM)
     {
@@ -210,58 +213,81 @@ void FTM_init(uint8_t FTM, FTM_Config_t config)
         	break;
     }
 
-    //init channel GPIO
+    //init channel GPIO and polarity
     switch(config.channel)
     {
     	case FTM_Channel_0:
         	PORT_PTRS[FTM_CH0_PORT(FTM)]->PCR[FTM_CH0_PIN(FTM)] = 0x0; //Clear
         	PORT_PTRS[FTM_CH0_PORT(FTM)]->PCR[FTM_CH0_PIN(FTM)] |= PORT_PCR_DSE(1);
         	PORT_PTRS[FTM_CH0_PORT(FTM)]->PCR[FTM_CH0_PIN(FTM)] |= PORT_PCR_MUX(FTM_CH0_ALT(FTM));
+
+        	FTM_PTRS[FTM]->POL = (FTM_PTRS[FTM]->POL & ~FTM_POL_POL0_MASK) | FTM_POL_POL0(config.active_low);
         break;
     	case FTM_Channel_1:
 			PORT_PTRS[FTM_CH1_PORT(FTM)]->PCR[FTM_CH1_PIN(FTM)] = 0x0; //Clear
 			PORT_PTRS[FTM_CH1_PORT(FTM)]->PCR[FTM_CH1_PIN(FTM)] |= PORT_PCR_DSE(1);
 			PORT_PTRS[FTM_CH1_PORT(FTM)]->PCR[FTM_CH1_PIN(FTM)] |= PORT_PCR_MUX(FTM_CH1_ALT(FTM));
+
+        	FTM_PTRS[FTM]->POL = (FTM_PTRS[FTM]->POL & ~FTM_POL_POL1_MASK) | FTM_POL_POL1(config.active_low);
 		break;
     	case FTM_Channel_2:
 			PORT_PTRS[FTM_CH2_PORT(FTM)]->PCR[FTM_CH2_PIN(FTM)] = 0x0; //Clear
 			PORT_PTRS[FTM_CH2_PORT(FTM)]->PCR[FTM_CH2_PIN(FTM)] |= PORT_PCR_DSE(1);
 			PORT_PTRS[FTM_CH2_PORT(FTM)]->PCR[FTM_CH2_PIN(FTM)] |= PORT_PCR_MUX(FTM_CH2_ALT(FTM));
+
+        	FTM_PTRS[FTM]->POL = (FTM_PTRS[FTM]->POL & ~FTM_POL_POL2_MASK) | FTM_POL_POL2(config.active_low);
 		break;
     	case FTM_Channel_3:
 			PORT_PTRS[FTM_CH3_PORT(FTM)]->PCR[FTM_CH3_PIN(FTM)] = 0x0; //Clear
 			PORT_PTRS[FTM_CH3_PORT(FTM)]->PCR[FTM_CH3_PIN(FTM)] |= PORT_PCR_DSE(1);
 			PORT_PTRS[FTM_CH3_PORT(FTM)]->PCR[FTM_CH3_PIN(FTM)] |= PORT_PCR_MUX(FTM_CH3_ALT(FTM));
+
+        	FTM_PTRS[FTM]->POL = (FTM_PTRS[FTM]->POL & ~FTM_POL_POL3_MASK) | FTM_POL_POL3(config.active_low);
 		break;
     	case FTM_Channel_4:
 			PORT_PTRS[FTM_CH4_PORT(FTM)]->PCR[FTM_CH4_PIN(FTM)] = 0x0; //Clear
 			PORT_PTRS[FTM_CH4_PORT(FTM)]->PCR[FTM_CH4_PIN(FTM)] |= PORT_PCR_DSE(1);
 			PORT_PTRS[FTM_CH4_PORT(FTM)]->PCR[FTM_CH4_PIN(FTM)] |= PORT_PCR_MUX(FTM_CH4_ALT(FTM));
+
+        	FTM_PTRS[FTM]->POL = (FTM_PTRS[FTM]->POL & ~FTM_POL_POL4_MASK) | FTM_POL_POL4(config.active_low);
 		break;
     	case FTM_Channel_5:
 			PORT_PTRS[FTM_CH5_PORT(FTM)]->PCR[FTM_CH5_PIN(FTM)] = 0x0; //Clear
 			PORT_PTRS[FTM_CH5_PORT(FTM)]->PCR[FTM_CH5_PIN(FTM)] |= PORT_PCR_DSE(1);
 			PORT_PTRS[FTM_CH5_PORT(FTM)]->PCR[FTM_CH5_PIN(FTM)] |= PORT_PCR_MUX(FTM_CH5_ALT(FTM));
+
+        	FTM_PTRS[FTM]->POL = (FTM_PTRS[FTM]->POL & ~FTM_POL_POL5_MASK) | FTM_POL_POL5(config.active_low);
 		break;
     	case FTM_Channel_6:
 			PORT_PTRS[FTM_CH6_PORT(FTM)]->PCR[FTM_CH6_PIN(FTM)] = 0x0; //Clear
 			PORT_PTRS[FTM_CH6_PORT(FTM)]->PCR[FTM_CH6_PIN(FTM)] |= PORT_PCR_DSE(1);
 			PORT_PTRS[FTM_CH6_PORT(FTM)]->PCR[FTM_CH6_PIN(FTM)] |= PORT_PCR_MUX(FTM_CH6_ALT(FTM));
+
+        	FTM_PTRS[FTM]->POL = (FTM_PTRS[FTM]->POL & ~FTM_POL_POL6_MASK) | FTM_POL_POL6(config.active_low);
 		break;
     	case FTM_Channel_7:
 			PORT_PTRS[FTM_CH7_PORT(FTM)]->PCR[FTM_CH7_PIN(FTM)] = 0x0; //Clear
 			PORT_PTRS[FTM_CH7_PORT(FTM)]->PCR[FTM_CH7_PIN(FTM)] |= PORT_PCR_DSE(1);
 			PORT_PTRS[FTM_CH7_PORT(FTM)]->PCR[FTM_CH7_PIN(FTM)] |= PORT_PCR_MUX(FTM_CH7_ALT(FTM));
+
+        	FTM_PTRS[FTM]->POL = (FTM_PTRS[FTM]->POL & ~FTM_POL_POL7_MASK) | FTM_POL_POL7(config.active_low);
 		break;
     }
 
-
     // FTM Register config
-    // Enable write
-    FTM_PTRS[FTM]->MODE |= FTM_MODE_WPDIS(1);
+
     // Set Mode
     FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC = (FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC & ~(FTM_CnSC_MSB_MASK | FTM_CnSC_MSA_MASK)) |
     			                      (FTM_CnSC_MSB((config.mode >> 1) & 0X01) | FTM_CnSC_MSA((config.mode >> 0) & 0X01));
+    // Set CLK Source
+    FTM_PTRS[FTM]->SC = (FTM_PTRS[FTM]->SC & ~FTM_SC_CLKS_MASK) | FTM_SC_CLKS(config.CLK_source);
+    if (CLK_source == FTM_ExtCLK)
+    {
+		// Set external clk gpio
+    	PORT_PTRS[FTM_CLKIN_PORT(config.ext_clock)]->PCR[FTM_CLKIN_PIN(config.ext_clock)] = 0x0; //Clear
+		PORT_PTRS[FTM_CLKIN_PORT(config.ext_clock)]->PCR[FTM_CLKIN_PIN(config.ext_clock)] |= PORT_PCR_DSE(1);
+		PORT_PTRS[FTM_CLKIN_PORT(config.ext_clock)]->PCR[FTM_CLKIN_PIN(config.ext_clock)] |= PORT_PCR_MUX(FTM_CLKIN_ALT(config.ext_clock));
+    }
     // Set Prescaler
     FTM_PTRS[FTM]->SC = (FTM_PTRS[FTM]->SC & ~FTM_SC_PS_MASK) | FTM_SC_PS(config.prescale);
     // Set Modulo and Counter

@@ -51,6 +51,7 @@ typedef struct FTM_Config_t
 	FTM_Mode_t mode;
 	FTM_Prescale_t prescale;
 	FTM_CLKSource_t CLK_source;
+	uint8_t ext_clock;
 	union
 	{
 		FTM_Edge_t IC_edge;
@@ -63,7 +64,7 @@ typedef struct FTM_Config_t
 		uint16_t counter;
 		uint16_t PWM_DC;
 	};
-	bool active_high;
+	bool active_low;
 	bool DMA_on;
 	bool interrupt_on;
 }FTM_Config_t;
