@@ -197,15 +197,15 @@ void SPI_Init(uint8_t spi_port, SPI_config_t config)
     switch(spi_port)
     {
         case 0:
-            SIM->SCGC6 |= SIM_SCGC6_SPI0(1);
+            SIM->SCGC6 |= SIM_SCGC6_SPI0_MASK;
             NVIC_EnableIRQ(SPI0_IRQn);
             break;
         case 1:
-            SIM->SCGC6 |= SIM_SCGC6_SPI1(1);
+            SIM->SCGC6 |= SIM_SCGC6_SPI1_MASK;
             NVIC_EnableIRQ(SPI1_IRQn);
             break;
         case 2:
-            SIM->SCGC3 |= SIM_SCGC3_SPI2(1);
+            SIM->SCGC3 |= SIM_SCGC3_SPI2_MASK;
             NVIC_EnableIRQ(SPI2_IRQn);
             break;
     }
