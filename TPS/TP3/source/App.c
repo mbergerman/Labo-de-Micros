@@ -13,6 +13,7 @@
 
 #include "DRV_Board.h"
 #include "DRV_Timers.h"
+#include "PDRV_I2C.h"
 
 
 /*******************************************************************************
@@ -47,12 +48,16 @@ void App_Init (void)
 {
    	initBoard();
    	initTimers();
+   	initI2C(0, I2C_SPEED_4069HZ);
 }
 
 /* Función que se llama constantemente en un ciclo infinito */
 void App_Run (void)
 {
-
+	if(getSW(SW3)){
+		toggleLED(BLUE);
+		i2cSendMessage(0, I2C_MODE_TX, 0x12, "Hola Mundo!", strlen("Hola Mundo!"));
+	}
 }
 
 /*******************************************************************************
