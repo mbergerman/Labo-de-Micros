@@ -22,8 +22,8 @@
 #define FTM_CLKIN0_PORT 1
 #define FTM_CLKIN1_PORT 1
 
-#define FTM_CLKIN0_PIN ((FTM_CLKIN0_PORT<<5) + 16)   // PTB16
-#define FTM_CLKIN1_PIN ((FTM_CLKIN1_PORT<<5) + 17)   // PTB17
+#define FTM_CLKIN0_PIN 16   // PTB16
+#define FTM_CLKIN1_PIN 17   // PTB17
 
 #define FTM_CLKIN0_ALT 4
 #define FTM_CLKIN1_ALT 4
@@ -43,14 +43,14 @@
 #define FTM0_CH6_PORT 0
 #define FTM0_CH7_PORT 0
 
-#define FTM0_CH0_PIN ((FTM0_CH0_PORT<<5) + 1)   // PTC1
-#define FTM0_CH1_PIN ((FTM0_CH1_PORT<<5) + 2)   // PTC2
-#define FTM0_CH2_PIN ((FTM0_CH2_PORT<<5) + 3)   // PTC3
-#define FTM0_CH3_PIN ((FTM0_CH3_PORT<<5) + 4)   // PTC4
-#define FTM0_CH4_PIN ((FTM0_CH4_PORT<<5) + 4)   // PTD4
-#define FTM0_CH5_PIN ((FTM0_CH5_PORT<<5) + 0)   // PTA0
-#define FTM0_CH6_PIN ((FTM0_CH6_PORT<<5) + 1)   // PTA1
-#define FTM0_CH7_PIN ((FTM0_CH7_PORT<<5) + 2)   // PTA2
+#define FTM0_CH0_PIN 1   // PTC1
+#define FTM0_CH1_PIN 2   // PTC2
+#define FTM0_CH2_PIN 3   // PTC3
+#define FTM0_CH3_PIN 4   // PTC4
+#define FTM0_CH4_PIN 4   // PTD4
+#define FTM0_CH5_PIN 0   // PTA0
+#define FTM0_CH6_PIN 1   // PTA1
+#define FTM0_CH7_PIN 2   // PTA2
 
 #define FTM0_CH0_ALT 4
 #define FTM0_CH1_ALT 4
@@ -65,8 +65,8 @@
 #define FTM1_CH0_PORT 1
 #define FTM1_CH1_PORT 1
 
-#define FTM1_CH0_PIN ((FTM1_CH0_PORT<<5) + 0)   // PTB0
-#define FTM1_CH1_PIN ((FTM1_CH1_PORT<<5) + 1)   // PTB1
+#define FTM1_CH0_PIN 0   // PTB0
+#define FTM1_CH1_PIN 1   // PTB1
 
 #define FTM1_CH0_ALT 3
 #define FTM1_CH1_ALT 3
@@ -75,8 +75,8 @@
 #define FTM2_CH0_PORT 1
 #define FTM2_CH1_PORT 1
 
-#define FTM2_CH0_PIN ((FTM2_CH0_PORT<<5) + 18)   // PTB18
-#define FTM2_CH1_PIN ((FTM2_CH1_PORT<<5) + 19)   // PTB19
+#define FTM2_CH0_PIN 18   // PTB18
+#define FTM2_CH1_PIN 19   // PTB19
 
 #define FTM2_CH0_ALT 3
 #define FTM2_CH1_ALT 3
@@ -87,10 +87,10 @@
 #define FTM3_CH2_PORT 3
 #define FTM3_CH3_PORT 3
 
-#define FTM3_CH0_PIN ((FTM3_CH0_PORT<<5) + 0)   // PTD0
-#define FTM3_CH1_PIN ((FTM3_CH1_PORT<<5) + 1)   // PTD1
-#define FTM3_CH2_PIN ((FTM3_CH2_PORT<<5) + 2)   // PTD2
-#define FTM3_CH3_PIN ((FTM3_CH3_PORT<<5) + 3)   // PTD3
+#define FTM3_CH0_PIN 0   // PTD0
+#define FTM3_CH1_PIN 1   // PTD1
+#define FTM3_CH2_PIN 2   // PTD2
+#define FTM3_CH3_PIN 3   // PTD3
 
 #define FTM3_CH0_ALT 4
 #define FTM3_CH1_ALT 4
@@ -184,9 +184,6 @@ void FTM_init(uint8_t FTM, FTM_Config_t config)
 	// Save configuration
 	ftm_config[FTM] = config;
 
-    // Enable FTM register write
-    FTM_PTRS[FTM]->MODE |= FTM_MODE_WPDIS(1);
-
 	// Clock gating and NVIC
     switch(FTM)
     {
@@ -213,16 +210,27 @@ void FTM_init(uint8_t FTM, FTM_Config_t config)
         	break;
     }
 
+    // Enable FTM register write
+    FTM_PTRS[FTM]->MODE = FTM_MODE_WPDIS(1);
+
+    // Clock gating for the channel port
+	SIM->SCGC5 |= SIM_SCGC5_PORTA_MASK;
+	SIM->SCGC5 |= SIM_SCGC5_PORTB_MASK;
+	SIM->SCGC5 |= SIM_SCGC5_PORTC_MASK;
+	SIM->SCGC5 |= SIM_SCGC5_PORTD_MASK;
+	SIM->SCGC5 |= SIM_SCGC5_PORTE_MASK;
+
     //init channel GPIO and polarity
     switch(config.channel)
     {
     	case FTM_Channel_0:
-        	PORT_PTRS[FTM_CH0_PORT(FTM)]->PCR[FTM_CH0_PIN(FTM)] = 0x0; //Clear
+    		PORT_PTRS[FTM_CH0_PORT(FTM)]->PCR[FTM_CH0_PIN(FTM)] = 0x0; //Clear
         	PORT_PTRS[FTM_CH0_PORT(FTM)]->PCR[FTM_CH0_PIN(FTM)] |= PORT_PCR_DSE(1);
         	PORT_PTRS[FTM_CH0_PORT(FTM)]->PCR[FTM_CH0_PIN(FTM)] |= PORT_PCR_MUX(FTM_CH0_ALT(FTM));
 
         	FTM_PTRS[FTM]->POL = (FTM_PTRS[FTM]->POL & ~FTM_POL_POL0_MASK) | FTM_POL_POL0(config.active_low);
         break;
+        //corregir
     	case FTM_Channel_1:
 			PORT_PTRS[FTM_CH1_PORT(FTM)]->PCR[FTM_CH1_PIN(FTM)] = 0x0; //Clear
 			PORT_PTRS[FTM_CH1_PORT(FTM)]->PCR[FTM_CH1_PIN(FTM)] |= PORT_PCR_DSE(1);
@@ -281,7 +289,8 @@ void FTM_init(uint8_t FTM, FTM_Config_t config)
     			                      (FTM_CnSC_MSB((config.mode >> 1) & 0X01) | FTM_CnSC_MSA((config.mode >> 0) & 0X01));
     // Set CLK Source
     FTM_PTRS[FTM]->SC = (FTM_PTRS[FTM]->SC & ~FTM_SC_CLKS_MASK) | FTM_SC_CLKS(config.CLK_source);
-    if (CLK_source == FTM_ExtCLK)
+    //corregir
+    if (config.CLK_source == FTM_ExtCLK)
     {
 		// Set external clk gpio
     	PORT_PTRS[FTM_CLKIN_PORT(config.ext_clock)]->PCR[FTM_CLKIN_PIN(config.ext_clock)] = 0x0; //Clear
@@ -328,24 +337,47 @@ void FTM_init(uint8_t FTM, FTM_Config_t config)
     FTM_PTRS[FTM]->MODE = (FTM_PTRS[FTM]->MODE & ~FTM_MODE_WPDIS_MASK) | FTM_MODE_WPDIS(0);
 }
 
-void FTM_Start(uint8_t FTM)
+void FTM_start(uint8_t FTM)
 {
-	FTM_PTRS[FTM]->SC |= FTM_SC_CLKS(0x01);
+	FTM_PTRS[FTM]->SC = FTM_PTRS[FTM]->SC | FTM_SC_CLKS(0x01);
 }
 
-void FTM_Stop(uint8_t FTM)
+void FTM_stop(uint8_t FTM)
 {
-	FTM_PTRS[FTM]->SC &= ~FTM_SC_CLKS(0x01);
+	FTM_PTRS[FTM]->SC =  FTM_PTRS[FTM]->SC & ~FTM_SC_CLKS(0x01);
 }
 
 void FTM_resetCounter(uint8_t FTM)
 {
 	// Enable write
 	FTM_PTRS[FTM]->MODE |= FTM_MODE_WPDIS(1);
+
 	// Reset counter
 	FTM_PTRS[FTM]->CNT = 0x0;
+
 	// Disable write
     FTM_PTRS[FTM]->MODE = (FTM_PTRS[FTM]->MODE & ~FTM_MODE_WPDIS_MASK) | FTM_MODE_WPDIS(0);
+}
+
+uint16_t FTM_getCounter(uint8_t FTM)
+{
+	return FTM_PTRS[FTM]->CONTROLS[ftm_config[FTM].channel].CnV = FTM_CnV_VAL(ftm_config[FTM].counter);
+}
+
+void FTM_modifyDC(uint8_t FTM, uint16_t DC)
+{
+	// Enable FTM register write
+	FTM_PTRS[FTM]->MODE = FTM_MODE_WPDIS(1);
+
+    if(ftm_config[FTM].mode == FTM_PWM)
+    {
+    	// Turn percentage duty cycle to counter value
+    	ftm_config[FTM].counter = (uint16_t)((DC / 100.0) * ftm_config[FTM].modulo);
+    	FTM_PTRS[FTM]->CONTROLS[ftm_config[FTM].channel].CnV = FTM_CnV_VAL(ftm_config[FTM].counter);
+    }
+
+	// Disable write
+	FTM_PTRS[FTM]->MODE = (FTM_PTRS[FTM]->MODE & ~FTM_MODE_WPDIS_MASK) | FTM_MODE_WPDIS(0);
 }
 
 /*******************************************************************************

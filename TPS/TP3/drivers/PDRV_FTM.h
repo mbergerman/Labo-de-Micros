@@ -83,6 +83,8 @@ void FTM_init(uint8_t FTM, FTM_Config_t config);
 void FTM_start(uint8_t FTM);
 void FTM_stop(uint8_t FTM);
 void FTM_resetCounter(uint8_t FTM);
+uint16_t FTM_getCounter(uint8_t FTM);
+void FTM_modifyDC(uint8_t FTM, uint16_t DC);
 
 /*******************************************************************************
  ******************************************************************************/
