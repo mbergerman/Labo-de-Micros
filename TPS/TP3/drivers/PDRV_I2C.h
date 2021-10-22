@@ -23,6 +23,8 @@
 #define I2C_RESTART 1<<8
 #define I2C_READ    2<<8
 
+#define I2C_ADDR_W(addr)	(addr<<1 | 0x0)
+#define I2C_ADDR_R(addr)	(addr<<1 | 0x1)
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -79,5 +81,7 @@ void initI2C(uint8_t, i2c_speed_t);
 */
 int32_t i2cSendSequence(uint8_t i2c_num, uint16_t *sequence, uint32_t sequence_len, uint8_t *received_data,
 						  void (*callback_fn)(void*), void *user_data);
+
+uint8_t i2cGetStatus(uint8_t i2c_num);
 
 #endif /* I2C_H */

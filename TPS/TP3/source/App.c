@@ -13,7 +13,7 @@
 
 #include "DRV_Board.h"
 #include "DRV_Timers.h"
-#include "PDRV_I2C.h"
+#include "DRV_Accelerometer.h"
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
@@ -35,9 +35,7 @@
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-static uint32_t status;
-static uint16_t init_sequence[] = {0x3a, 0x0d, I2C_RESTART, 0x3b, I2C_READ};
-static uint8_t device_id = 0;		/* Will contain the device id after sequence has been processed. */
+static uint8_t device_id;
 
 /*******************************************************************************
  *******************************************************************************
@@ -50,22 +48,27 @@ void App_Init (void)
 {
    	initBoard();
    	initTimers();
-   	initI2C(0, I2C_SPEED_32522HZ);
+   	initAccelerometer();
 }
 
 /* Función que se llama constantemente en un ciclo infinito */
 void App_Run (void)
 {
-	static bool flag = false;
+	static bool btn_flag = false;
+	static bool accel_config = false;
+	if(!accel_config){
+		accelConfigInit();
+		accel_config = true;
+	}
 
-	if(getSW(SW3) && !flag){
-		flag = true;
-
+	if(getSW(SW3) && !btn_flag){
+		btn_flag = true;
 		toggleLED(BLUE);
 
-		status = i2cSendSequence(0, init_sequence, 5, &device_id, NULL, NULL);
+		uint8_t xaxis[2];
+		AccelReadDataX(xaxis);
 
-		//i2cSendMessage(0, I2C_MODE_TX, 0x12, "Hola Mundo!", strlen("Hola Mundo!"));
+		//i2cSendSequence(0, init_sequence, 5, &device_id, NULL, NULL);
 	}
 }
 

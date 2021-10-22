@@ -121,7 +121,6 @@ void initI2C(uint8_t i2c_num, i2c_speed_t i2c_speed) {
 	PORT_PTRS[I2C_PORT(i2c_num)]->PCR[I2C_SDA_PIN(i2c_num)] = PORT_PCR_MUX(I2C_ALT(i2c_num)) | PORT_PCR_ODE(1); // Enable open drain
 	PORT_PTRS[I2C_PORT(i2c_num)]->PCR[I2C_SCL_PIN(i2c_num)] = PORT_PCR_MUX(I2C_ALT(i2c_num)) | PORT_PCR_ODE(1); // Enable open drain
 
-
 	i2c->C1 = 0;
 	i2c->C1 |= I2C_C1_IICEN_MASK;
 	i2c->F &= ~0xf;
@@ -168,6 +167,10 @@ int32_t i2cSendSequence(uint8_t i2c_num, uint16_t *sequence, uint32_t sequence_l
 	i2c->D = *channel->sequence++;
 
 	return result;                /* Everything is OK. */
+}
+
+uint8_t i2cGetStatus(uint8_t i2c_num){
+	return i2c_channels[i2c_num].status;
 }
 
 
