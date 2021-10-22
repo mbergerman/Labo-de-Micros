@@ -28,16 +28,16 @@
 #define SPI0_PCS4_PORT   2
 #define SPI0_PCS5_PORT   1
 
-#define SPI0_SCLK_PIN   ((SPI0_SCLK_PORT<<5) + 1)   // PTD1
-#define SPI0_SOUT_PIN   ((SPI0_SOUT_PORT<<5) + 2)   // PTD2
-#define SPI0_SIN_PIN    ((SPI0_SIN_PORT<<5) + 3)   // PTD3
+#define SPI0_SCLK_PIN   1   // PTD1
+#define SPI0_SOUT_PIN   2   // PTD2
+#define SPI0_SIN_PIN    3   // PTD3
 
-#define SPI0_PCS0_PIN   ((SPI0_PCS0_PORT<<5) + 0)   // PTD0
-#define SPI0_PCS1_PIN   ((SPI0_PCS1_PORT<<5) + 3)   // PTC3
-#define SPI0_PCS2_PIN   ((SPI0_PCS2_PORT<<5) + 2)   // PTC2
-#define SPI0_PCS3_PIN   ((SPI0_PCS3_PORT<<5) + 1)   // PTC1
-#define SPI0_PCS4_PIN   ((SPI0_PCS4_PORT<<5) + 0)   // PTC0
-#define SPI0_PCS5_PIN   ((SPI0_PCS4_PORT<<5) + 23)   // PTB23
+#define SPI0_PCS0_PIN   0   // PTD0
+#define SPI0_PCS1_PIN   3   // PTC3
+#define SPI0_PCS2_PIN   2   // PTC2
+#define SPI0_PCS3_PIN   1   // PTC1
+#define SPI0_PCS4_PIN   0   // PTC0
+#define SPI0_PCS5_PIN   23   // PTB23
 
 #define SPI0_SCLK_ALT    2
 #define SPI0_SOUT_ALT    2
@@ -60,14 +60,14 @@
 #define SPI1_PCS2_PORT   4
 #define SPI1_PCS3_PORT   4
 
-#define SPI1_SCLK_PIN   ((SPI1_SCLK_PORT<<5) + 2)   // PTE2
-#define SPI1_SOUT_PIN   ((SPI1_SOUT_PORT<<5) + 1)   // PTE1
-#define SPI1_SIN_PIN    ((SPI1_SIN_PORT<<5) + 3)   // PTE3
+#define SPI1_SCLK_PIN   2   // PTE2
+#define SPI1_SOUT_PIN   1   // PTE1
+#define SPI1_SIN_PIN    3   // PTE3
 
-#define SPI1_PCS0_PIN   ((SPI1_PCS0_PORT<<5) + 4)   // PTE4
-#define SPI1_PCS1_PIN   ((SPI1_PCS1_PORT<<5) + 0)   // PTE4
-#define SPI1_PCS2_PIN   ((SPI1_PCS2_PORT<<5) + 5)   // PTE4
-#define SPI1_PCS3_PIN   ((SPI1_PCS3_PORT<<5) + 6)   // PTE4
+#define SPI1_PCS0_PIN   4   // PTE4
+#define SPI1_PCS1_PIN   0   // PTE4
+#define SPI1_PCS2_PIN   5   // PTE4
+#define SPI1_PCS3_PIN   6   // PTE4
 
 #define SPI1_SCLK_ALT    2
 #define SPI1_SOUT_ALT    2
@@ -84,10 +84,10 @@
 #define SPI2_SIN_PORT    1
 #define SPI2_PCS0_PORT   1
 
-#define SPI2_SCLK_PIN   ((SPI2_SCLK_PORT<<5) + 21)   // PTB21
-#define SPI2_SOUT_PIN   ((SPI2_SOUT_PORT<<5) + 22)   // PTB22
-#define SPI2_SIN_PIN    ((SPI2_SIN_PORT<<5) + 23)   // PTB23
-#define SPI2_PCS0_PIN   ((SPI2_PCS0_PORT<<5) + 20)   // PTB20
+#define SPI2_SCLK_PIN   21   // PTB21
+#define SPI2_SOUT_PIN   22   // PTB22
+#define SPI2_SIN_PIN    23   // PTB23
+#define SPI2_PCS0_PIN   20   // PTB20
 
 #define SPI2_SCLK_ALT    2
 #define SPI2_SOUT_ALT    2
@@ -210,6 +210,13 @@ void SPI_Init(uint8_t spi_port, SPI_config_t config)
             break;
     }
 
+    //Port Clock Gating
+	SIM->SCGC5 |= SIM_SCGC5_PORTA_MASK;
+	SIM->SCGC5 |= SIM_SCGC5_PORTB_MASK;
+	SIM->SCGC5 |= SIM_SCGC5_PORTC_MASK;
+	SIM->SCGC5 |= SIM_SCGC5_PORTD_MASK;
+	SIM->SCGC5 |= SIM_SCGC5_PORTE_MASK;
+
     //Pins Config
     PORT_PTRS[SPI_SCLK_PORT(spi_port)]->PCR[SPI_SCLK_PIN(spi_port)] = 0x0; //Clear
     PORT_PTRS[SPI_SCLK_PORT(spi_port)]->PCR[SPI_SCLK_PIN(spi_port)] |= PORT_PCR_MUX(SPI_SCLK_ALT(spi_port));
@@ -254,16 +261,23 @@ void SPI_Init(uint8_t spi_port, SPI_config_t config)
     }
 
     // SPI Registers Config
+
+    //Disable Continuous chip select
+	SPI_PTRS[spi_port]->PUSHR = (SPI_PTRS[spi_port]->PUSHR & ~SPI_PUSHR_CONT_MASK) | SPI_PUSHR_CONT(0);
+
     // MCR Config
     SPI_PTRS[spi_port]->MCR = 0x0 | SPI_MCR_HALT(1); //Clear and Halt - SPI is enabled at the end of the Init
     SPI_PTRS[spi_port]->MCR |= SPI_MCR_MSTR(config.mode); //Define SPI mode Slave or Master
     SPI_PTRS[spi_port]->MCR |= SPI_MCR_PCSIS(config.PCSIS); //Define SPI chip select inactive status as Active High or Active Low
-    //SPI_PTRS[spi_port]->MCR |= SPI_MCR_CONT_SCKE(1);  //Turn SCLK Continuous mode on
+
     SPI_PTRS[spi_port]->MCR |= SPI_MCR_ROOE(1);  //RX FIFO overflow data into shift register 
 
     // CTAR Config
     if(config.mode)
     {
+    	//Set CTAR0 as the transfer config
+        SPI_PTRS[spi_port]->PUSHR |= SPI_PUSHR_CTAS(1);
+
         // CTAR Master Config
         SPI_PTRS[spi_port]->CTAR[1] = 0x0;
         SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_DBR(0); // 50/50 Clock duty cycle
@@ -272,6 +286,8 @@ void SPI_Init(uint8_t spi_port, SPI_config_t config)
         SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_CPHA(config.clock_phase); // User defined SCK phase
         SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_CPOL(config.clock_polarity); // User defined SCK polarity
 
+        SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_BR(0b1101);
+        SPI_PTRS[spi_port]->MCR |= SPI_MCR_CONT_SCKE(1);  //Turn SCLK Continuous mode on
     }
     else
     {
@@ -279,7 +295,6 @@ void SPI_Init(uint8_t spi_port, SPI_config_t config)
         SPI_PTRS[spi_port]->CTAR[0] |= SPI_CTAR_SLAVE_FMSZ(config.frame_size); // User defined frame size
         SPI_PTRS[spi_port]->CTAR[0] |= SPI_CTAR_SLAVE_CPHA(config.clock_phase); // User defined SCK phase
         SPI_PTRS[spi_port]->CTAR[0] |= SPI_CTAR_SLAVE_CPOL(config.clock_polarity); // User defined SCK polarity
-
     }
     //Rest flags
     SPI_PTRS[spi_port]->SR = 0x0;
@@ -293,12 +308,18 @@ void SPI_Init(uint8_t spi_port, SPI_config_t config)
 
 uint16_t SPI_Read(uint8_t spi_port)
 {
-    return SPI_PTRS[spi_port]->POPR;
+    return (SPI_PTRS[spi_port]->POPR & SPI_POPR_RXDATA_MASK) >> SPI_POPR_RXDATA_SHIFT;
 }
 
-void SPI_Write(uint8_t spi_port, uint16_t spi_data)
+void SPI_Write(uint8_t spi_port, uint16_t spi_data, uint8_t chip_select)
 {
-    SPI_PTRS[spi_port]->PUSHR = spi_data;
+	SPI_PTRS[spi_port]->PUSHR = (SPI_PTRS[spi_port]->PUSHR & ~SPI_PUSHR_PCS_MASK) | SPI_PUSHR_PCS(1 << chip_select);
+	SPI_PTRS[spi_port]->PUSHR = (SPI_PTRS[spi_port]->PUSHR & ~SPI_PUSHR_TXDATA_MASK) | SPI_PUSHR_TXDATA(spi_data);
+}
+
+bool SPI_TransferComplete(uint8_t spi_port)
+{
+	return (SPI_PTRS[spi_port]->SR & SPI_SR_TCF_MASK) >> SPI_SR_TCF_SHIFT;
 }
 
 /*******************************************************************************
