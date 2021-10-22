@@ -245,10 +245,14 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="com.crt.advproject.config.exe.debug.1284265667.359081765" name="PORT_Drive.h" rcbsApplicability="disable" resourcePath="drivers/PORT_Drive.h" toolsToInvoke=""/>
+					<fileInfo id="com.crt.advproject.config.exe.debug.1284265667.220389431" name="TEST_I2C.h" rcbsApplicability="disable" resourcePath="drivers/TEST_I2C.h" toolsToInvoke=""/>
+					<fileInfo id="com.crt.advproject.config.exe.debug.1284265667.789215787" name="I2C_Drive.h" rcbsApplicability="disable" resourcePath="drivers/I2C_Drive.h" toolsToInvoke=""/>
+					<fileInfo id="com.crt.advproject.config.exe.debug.1284265667.931053207" name="PDRV_I2C.h" rcbsApplicability="disable" resourcePath="drivers/PDRV_I2C.h" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
-						<entry excluding="DRV_Stub_Encoder.c|DRV_Stub_Display.c|DRV_Stub_Encoder.h|DRV_Stub_Display.h" flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="drivers"/>
-						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="source"/>
+						<entry excluding="PORT_Drive.h|PORT_Drive.c|I2C_Drive.c|I2C_Drive.h|PDRV_I2C.h|PDRV_I2C.c|DRV_Stub_Encoder.c|DRV_Stub_Display.c|DRV_Stub_Encoder.h|DRV_Stub_Display.h" flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="drivers"/>
+						<entry excluding="App_Drive.c" flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="source"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

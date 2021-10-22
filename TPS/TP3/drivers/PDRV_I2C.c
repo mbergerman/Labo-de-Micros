@@ -78,7 +78,7 @@
 #define i2c_wait(id)				while((I2C_PTRS[id]->S & I2C_S_IICIF_MASK)==0) {} \
 									I2C_PTRS[id]->S |= I2C_S_IICIF_MASK		// Clear IICIF: w1c
 
-#define i2c_write_byte(id, data)	I2C_PTRS[id]->D = data
+#define i2c_write_byte(id, data)	I2C_PTRS[id]->D = (uint8_t) data
 
 #define i2c_disable_ack(id)			I2C_PTRS[id]->C1 |= I2C_C1_TXAK_MASK
 
@@ -132,7 +132,6 @@ static uint8_t dummy_read;
 
 void initI2C(uint8_t id, i2c_speed_t speed){
 
-
 	// 1) Clock enable
 	SIM->SCGC5 |= SIM_SCGC5_PORT(I2C_SDA_PORT(id),1);
 	SIM->SCGC5 |= SIM_SCGC5_PORT(I2C_SCL_PORT(id),1);
@@ -158,10 +157,38 @@ void initI2C(uint8_t id, i2c_speed_t speed){
 	PORT_PTRS[I2C_SCL_PORT(id)]->PCR[I2C_SCL_PIN(id)] |= PORT_PCR_ODE(1);	// Enable open drain
 
 
+	I2C_PTRS[id]->C1 |= I2C_C1_IICEN(1);	// I2C Enable
+
+	//I2C baud rate = I2C module clock speed (Hz)/(mul × SCL divider)
+	I2C_PTRS[id]->F = I2C_F_MULT(0x2) | I2C_F_ICR(speed);	// mul = 4
+
+	// Set slave address just in case
+	//I2C_PTRS[id]->A1 = 0xA0;
+
+	// Clear all flags before begin
+	//I2C_PTRS[id]->FLT = I2C_FLT_STARTF_MASK | I2C_FLT_STOPF_MASK ; 	// Clear FLT flags (START and STOP); START-STOP ISR disable
+	//I2C_PTRS[id]->S = I2C_S_IICIF_MASK | I2C_S_ARBL_MASK; 			// Clear IICIF flag
+
+	//I2C_PTRS[id]->C1 |= I2C_C1_IICIE_MASK;	//I2C Interrupt Enable
+
+	//NVIC_EnableIRQ(I2C_IRQn[id]);
+
+
+	// START + ADDRESS
+	//I2C_PTRS[id]->C1 |= I2C_C1_TX_MASK | I2C_C1_MST_MASK; 	// | I2C_C1_IICIE_MASK; // set TX mode and generate START and enable ISR
+	//I2C_PTRS[id]->D = (uint8_t) ( (0x57<<1) | (0<<0) ); 	// TX address + RnW =
+
+	//i2c_wait(id);
+
+	//i2c_stop(id);
+}
+
+
+void i2cSendMessage(uint8_t id, i2c_mode_t mode, uint8_t address, const char* msg, uint8_t cant){
+
 	I2C_PTRS[id]->C1 |= I2C_C1_IICEN(1); //| I2C_C1_IICIE(1);	// I2C Enable, I2C Interrupt Enable
 
 	I2C_PTRS[id]->F = I2C_F_MULT(0x2) | I2C_F_ICR(0x3F);	//(uint32_t) 0x0;	// Clear
-
 
 	I2C_PTRS[id]->A1 = 0xA2;
 
@@ -173,22 +200,12 @@ void initI2C(uint8_t id, i2c_speed_t speed){
 	I2C_PTRS[id]->C1 |= I2C_C1_TX_MASK | I2C_C1_MST_MASK; 	// | I2C_C1_IICIE_MASK; // set TX mode and generate START and enable ISR
 	I2C_PTRS[id]->D = (uint8_t) ( (0x5F<<1) | (0<<0) ); 	// TX address + RnW =
 
-	//I2C baud rate = I2C module clock speed (Hz)/(mul × SCL divider)
-	//I2C_PTRS[id]->F |= I2C_F_MULT(0b10);		// mul = 4
-	//I2C_PTRS[id]->F |= I2C_F_ICR(0x13);	//speed);
-
-	i2c_wait(id);
+	//i2c_wait(id);
 
 	i2c_stop(id);
 
 
-	NVIC_EnableIRQ(I2C_IRQn[id]);
-}
-
-
-
-void i2cSendMessage(uint8_t id, i2c_mode_t mode, uint8_t address, const char* msg, uint8_t cant){
-	i2c_start_transmission(id, mode, address);
+	/*i2c_start_transmission(id, mode, address);
 
 	i2c_wait(id);
 
@@ -200,8 +217,7 @@ void i2cSendMessage(uint8_t id, i2c_mode_t mode, uint8_t address, const char* ms
 
 	//i2c_wait(id);
 
-	i2c_stop(id);
-
+	i2c_stop(id);*/
 
 
 
@@ -223,13 +239,13 @@ static void i2c_start_transmission(uint8_t id, i2c_mode_t mode, uint8_t address)
 	i2c_msg_mode = mode;
 	i2c_mode = mode;
 
-	uint8_t peripheral_id = address << 1 | i2c_mode;
+	uint8_t peripheral_address = address << 1 | i2c_mode;
 
 	/* send start signal */
 	i2c_start(id);
 
 	/* send address with W/R bit */
-	i2c_write_byte(id, peripheral_id);
+	i2c_write_byte(id, peripheral_address);
 }
 
 
