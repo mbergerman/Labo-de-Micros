@@ -44,7 +44,7 @@ typedef struct SPI_config_t
 	bool clock_polarity;
 	bool clock_phase;
 	bool LSB_first;
-	bool PCSIS;
+	bool CS_active_low;
 }SPI_config_t;
 
 /*******************************************************************************

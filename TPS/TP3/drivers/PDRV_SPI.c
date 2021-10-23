@@ -268,25 +268,27 @@ void SPI_Init(uint8_t spi_port, SPI_config_t config)
     // MCR Config
     SPI_PTRS[spi_port]->MCR = 0x0 | SPI_MCR_HALT(1); //Clear and Halt - SPI is enabled at the end of the Init
     SPI_PTRS[spi_port]->MCR |= SPI_MCR_MSTR(config.mode); //Define SPI mode Slave or Master
-    SPI_PTRS[spi_port]->MCR |= SPI_MCR_PCSIS(config.PCSIS); //Define SPI chip select inactive status as Active High or Active Low
+    SPI_PTRS[spi_port]->MCR |= SPI_MCR_PCSIS(config.CS_active_low); //Define SPI chip select inactive status as Active High or Active Low
 
     SPI_PTRS[spi_port]->MCR |= SPI_MCR_ROOE(1);  //RX FIFO overflow data into shift register 
 
     // CTAR Config
     if(config.mode)
     {
-    	//Set CTAR0 as the transfer config
+    	//Set CTAR1 as the transfer config
         SPI_PTRS[spi_port]->PUSHR |= SPI_PUSHR_CTAS(1);
 
         // CTAR Master Config
         SPI_PTRS[spi_port]->CTAR[1] = 0x0;
         SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_DBR(0); // 50/50 Clock duty cycle
+        SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_PBR(0b00); // Clock Prescaler of 2
         SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_FMSZ(config.frame_size); // User defined frame size
         SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_LSBFE(config.LSB_first); // User defined LSB first in transfer or not
         SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_CPHA(config.clock_phase); // User defined SCK phase
         SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_CPOL(config.clock_polarity); // User defined SCK polarity
 
-        SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_BR(0b1101);
+        //Clock scaler = 16384 => CLK = (SYSCLK/2) * (1/16384)
+        SPI_PTRS[spi_port]->CTAR[1] = (SPI_PTRS[spi_port]->CTAR[1] & ~SPI_CTAR_BR_MASK) | SPI_CTAR_BR(0b1101);
         SPI_PTRS[spi_port]->MCR |= SPI_MCR_CONT_SCKE(1);  //Turn SCLK Continuous mode on
     }
     else
@@ -302,8 +304,7 @@ void SPI_Init(uint8_t spi_port, SPI_config_t config)
     //Set Transfer Counter to 0
     SPI_PTRS[spi_port]->TCR |= SPI_TCR_SPI_TCNT(0);
     //Enable SPI port
-    SPI_PTRS[spi_port]->MCR |= SPI_MCR_HALT(0);
-
+    SPI_PTRS[spi_port]->MCR = (SPI_PTRS[spi_port]->MCR & ~SPI_MCR_HALT_MASK) | SPI_MCR_HALT(0);
 }
 
 uint16_t SPI_Read(uint8_t spi_port)
