@@ -72,7 +72,7 @@ void uart_irq_handler(uint8_t id);
 //Init
 static PORT_Type* const PORT_PTRS[6] = {PORTA,PORTA,PORTD,PORTC,PORTA,PORTA};
 static UART_Type* const UART_PTRS[6] = UART_BASE_PTRS;
-static uint8_t const PORT_INDEX[] = {PA, PE, PD, PC, PE, PE};
+//static uint8_t const PORT_INDEX[] = {PA, PE, PD, PC, PE, PE};
 static const IRQn_Type IRQn[] = {UART0_RX_TX_IRQn, UART1_RX_TX_IRQn, UART2_RX_TX_IRQn, UART3_RX_TX_IRQn, UART4_RX_TX_IRQn, UART5_RX_TX_IRQn};
 
 //

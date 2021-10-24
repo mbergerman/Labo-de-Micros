@@ -1,7 +1,7 @@
 /***************************************************************************//**
-  @file     +Nombre del archivo (ej: template.h)+
-  @brief    +Descripcion del archivo+
-  @author   +Nombre del autor (ej: Salvador Allende)+
+  @file     DRV_UART.h
+  @brief    UART driver with package's functionality
+  @author   Grupo 1
  ******************************************************************************/
 
 #ifndef _DRV_UART_H_
@@ -16,21 +16,23 @@
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
 #define UART_ID 3
+#define TOPIC_SIZE 1
 #define PAYLOAD_SIZE 1
-#define MESSAGE_SIZE 1
-#define PACKAGE_SIZE (PAYLOAD_SIZE+MESSAGE_SIZE)
+#define PACKAGE_SIZE (PAYLOAD_SIZE+TOPIC_SIZE)
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
-typedef struct {
-	char payload[PAYLOAD_SIZE];
-	char message[MESSAGE_SIZE];
-} package_t;
 
-/*******************************************************************************
- * VARIABLE PROTOTYPES WITH GLOBAL SCOPE
- ******************************************************************************/
+// A package has a topic and a payload.
+// The topic is used to identify the category of the package
+// The payload is the content
+// For example for 45% brightness we use, package = {{'B'},{45}}
+
+typedef struct {
+	char topic[TOPIC_SIZE];
+	char payload[PAYLOAD_SIZE];
+} package_t;
 
 
 /*******************************************************************************
@@ -38,14 +40,26 @@ typedef struct {
  ******************************************************************************/
 
 /**
- * @brief TODO: completar descripcion
- * @param param1 Descripcion parametro 1
- * @param param2 Descripcion parametro 2
- * @return Descripcion valor que devuelve
+ * @brief initialize the communication
 */
+void initUartCom(void);
 
+/**
+ * @brief Add a package to the transmitter's queue
+ * @param package to be transmitted
+ * @return true if the tx is successful
+*/
 bool sentPackage(package_t package);
+
+/**
+ * @brief Receive the first package in the receiver's queue
+ * @return the package or an empty package {{0},{0}} if there aren't any packages in the queue
+*/
 package_t receivePackage(void);
+
+/**
+ * @brief empty the receiver's queue without reading the packages
+*/
 void emptyInbox(void);
 /*******************************************************************************
  ******************************************************************************/

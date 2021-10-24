@@ -33,7 +33,7 @@ IPAddress MqttServer(192,168,0,10);				// MQTT server URL or IP (see ipconfig ->
 const unsigned int MqttPort=1883; 					// MQTT port (default 1883)
 const char MqttUser[]="user";		// user name 
 const char MqttPassword[]="password";				// user password
-const char MqttClientID[]="ESP-IoT";					// Device ID (warning: must be unique) 
+const char MqttClientID[]="ESP-Lolin";					// Device ID (warning: must be unique) 
 
 #elif CLOUD==CLOUD_DANY
 
@@ -129,7 +129,7 @@ char password[] = "tele12345";   // Set password to "" for open networks.
 #define DEBUG_OFF  0
 #define DEBUG_ON   1
 
-#define debug DEBUG_ON
+#define debug DEBUG_OFF
 
 #define debug_message(fmt,...)          \
   do {              \
@@ -142,6 +142,7 @@ char password[] = "tele12345";   // Set password to "" for open networks.
 void setup_wifi(void);    
 void setup_mqtt(void);
 void get_color_number(char* ptr1, char* ptr2, char* const color);
+void reconnect_();
 
 long TimeSinceLastMeasure = 0;
 uint32_t Ldr_delayMS=1000;  
@@ -168,55 +169,67 @@ void setup() {
 
 
 
-#define INBOX_SIZE 101
+#define INBOX_SIZE 1
+#define TOPIC_SIZE 1
 #define PAYLOAD_SIZE 1
-#define MESSAGE_SIZE 1
-#define PACKAGE_SIZE (PAYLOAD_SIZE+MESSAGE_SIZE)
-#define TOPIC(w) (w=='B'?"brillo":"other")
+#define PACKAGE_SIZE (TOPIC_SIZE+PAYLOAD_SIZE)
+#define TOPIC(w)    (w=='B'?"brillo":( \
+                    w=='S'?"suspender":"otro"))
 
 typedef struct {
-    char payload[PAYLOAD_SIZE];
-    byte message[MESSAGE_SIZE];
+    char topic[TOPIC_SIZE+1];
+    byte payload[PAYLOAD_SIZE+1];
 } package_t;
 
 
-package_t inbox [INBOX_SIZE];
-package_t* inbox_ptr = inbox;
-bool run = true;
+package_t inbox = {0,0,0,0};
+package_t* inbox_ptr = &inbox;
+//package_t* read_inbox = inbox_ptr;
 
+bool ready_to_pub = true;
+
+byte brightness = 0;
+char suspended = 'A';
 
 
 void loop() {
 
 // Check MQTT conection is still active
 
-  if (!mqtt_client.connected()) {
-      reconnect();
-      
- }
+    if (!mqtt_client.connected()) {
+        reconnect_();
+    }
 
 // This should be called regularly to allow the client 
 // to process incoming messages and maintain
 // its connection to the server
 
-  mqtt_client.loop();  
-  
+    mqtt_client.loop();  
 
-    if (Serial.available()>=PACKAGE_SIZE && run) {
-        Serial.readBytes(inbox_ptr->payload, PAYLOAD_SIZE);
-        Serial.readBytes(inbox_ptr->message, MESSAGE_SIZE);
 
-        mqtt_client.publish( String(TOPIC(inbox_ptr->payload[0])).c_str(), String(inbox_ptr->message[0]).c_str(), false); //publish brightness
-        
-        inbox_ptr++;
-        if (inbox_ptr - inbox > INBOX_SIZE) {
-            inbox_ptr = inbox;
-            //run = false;
-        }
-
+    if (Serial.available()>=PACKAGE_SIZE) {
+        Serial.readBytes(inbox.topic, TOPIC_SIZE);
+        Serial.readBytes(inbox.payload, PAYLOAD_SIZE);
     }
-    
- 
+
+    if(inbox.topic[0] == 'S') {
+        if(suspended != inbox.payload[0]) {
+           suspended = inbox.payload[0];
+            mqtt_client.publish( String(TOPIC(inbox.topic[0])).c_str() , String(inbox.payload[0]).c_str(), false); //publish suspend
+      
+        }
+    }
+
+
+    if(inbox.topic[0] == 'B') {
+        if(brightness != inbox.payload[0]) {
+            brightness = inbox.payload[0];
+            mqtt_client.publish( String(TOPIC(inbox.topic[0])).c_str() , String(inbox.payload[0]).c_str(), false); //publish brightness
+        }
+    }
+
+
+
 } // End of main Loop
 
 //=======================SET UP WiFi==================================================================
@@ -274,9 +287,9 @@ void callback(char* topic, byte* payload, unsigned int length) {
 void ParseTopic(char* topic, byte* payload, unsigned int length)
 {
 
-  if(!strcmp(topic,"color"))  
-  {
-
+    if(!strcmp(topic,"color"))  
+    {
+    
         char* rgb = (char*)payload;
     
         char* rptr1 = strchr(rgb, '(');
@@ -293,16 +306,29 @@ void ParseTopic(char* topic, byte* payload, unsigned int length)
         char* bptr2 = strchr(bptr1, ')');
         char blue[4] = {0};
         get_color_number(bptr1,bptr2,blue);
-
-        //char rgb_buf[6] = {'r',atoi(red),'g',atoi(green),'b',atoi(blue)};
-        //Serial.write(rgb_buf,6);
+    
         Serial.write('r');
         Serial.write((byte)atoi(red));
         Serial.write('g');
         Serial.write((byte)atoi(green));
         Serial.write('b');
         Serial.write((byte)atoi(blue));
-  }
+    }
+
+    else if(!strcmp(topic,"brillo_nodered")) {
+        char number_str[4] = {0};
+        for(unsigned int i=0; i<length; i++) {
+            number_str[i] = *(payload+i);
+        }
+        Serial.write('B');
+        Serial.write((byte)atoi(number_str));
+    }
+
+    else if(!strcmp(topic,"suspender_nodered")) {
+
+        Serial.write('S');
+        Serial.write(!suspended+'0'); //toggle;
+    }
 
 }
 
@@ -328,7 +354,7 @@ void get_color_number(char* ptr1, char* ptr2, char* const color) {
 }
 
 
-void reconnect() {
+void reconnect_() {
 
   while (!mqtt_client.connected())      // Loop until we're reconnected
   {
@@ -342,13 +368,14 @@ void reconnect() {
   
             // ... and subscribe to topics
            
-            // mqtt_client.subscribe("#");
+//                    mqtt_client.subscribe("#");
             mqtt_client.subscribe("color");
-
+            mqtt_client.subscribe("brillo_nodered");
+            mqtt_client.subscribe("suspender_nodered");
       }
       else
       {
-		   // If conection is not established just make a short blink
+		    // If conection is not established just make a short blink
       
             debug_message("failed, rc=");       //For rc codes see https://pubsubclient.knolleary.net/api.html#state
             debug_message("%d",mqtt_client.state());
@@ -358,7 +385,6 @@ void reconnect() {
             digitalWrite(STATUS_LED,LED_ON);
             delay(200);  //Short 200 ms blink
             digitalWrite(STATUS_LED,LED_OFF);
-        
       }
       
   } // end of while

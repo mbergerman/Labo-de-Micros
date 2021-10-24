@@ -1,7 +1,7 @@
 /***************************************************************************//**
   @file     UART.c
-  @brief    UART Driver for K64F. Non-Blocking and using FIFO feature
-  @author   Nicolás Magliola
+  @brief    UART Driver for K64F.
+  @author   Grupo 1.
  ******************************************************************************/
 
 #ifndef _UART_H_
