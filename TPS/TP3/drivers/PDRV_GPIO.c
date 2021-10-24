@@ -23,9 +23,9 @@
 #define ARRAY_SIZE (FSL_FEATURE_SOC_PORT_COUNT*PINS_PER_PORT)
 
 
-#define GPIO_DEVELOPMENT_MODE    1
+//#define GPIO_DEVELOPMENT_MODE    1
 #ifdef GPIO_DEVELOPMENT_MODE
-	#define GPIO_IRQ_TEST_PIN	PORTNUM2PIN(PE,24)
+	#define GPIO_IRQ_TEST_PIN	PORTNUM2PIN(PB,19)
 #endif
 
 /*******************************************************************************

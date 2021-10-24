@@ -36,10 +36,10 @@
 // calibration value register
 #define CALIB_MASK 0xC0FFFFFF
 
-#define SYSTICK_DEVELOPMENT_MODE    1
+//#define SYSTICK_DEVELOPMENT_MODE    1
 #ifdef SYSTICK_DEVELOPMENT_MODE
 	#include "PDRV_GPIO.h"
-	#define SYSTICK_IRQ_TEST_PIN	PORTNUM2PIN(PE,25)
+	#define SYSTICK_IRQ_TEST_PIN	PORTNUM2PIN(PB,18)
 #endif
 
 /*******************************************************************************

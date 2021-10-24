@@ -55,7 +55,11 @@ dkms.conf
 *.mk
 *.axf
 *.ld
+<<<<<<< HEAD
+*.launch
+=======
 
 *.launch
 *.cproject
 *.project
+>>>>>>> main
