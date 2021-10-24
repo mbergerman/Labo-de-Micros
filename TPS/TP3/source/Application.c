@@ -143,7 +143,7 @@ void App_Run() {
 		ADC_data[0] = ADC_getValue(ADC0_t);
 
 
-		if ( abs(ADC_data[1]-ADC_data[0])>=6 && abs(ADC_data[2]-ADC_data[1])>=6  ) {
+		if ( abs(ADC_data[1]-ADC_data[0])>=5 && abs(ADC_data[2]-ADC_data[1])>=2  ) {
 			point.brightness = (uint8_t)( 100 * ADC_getValue(ADC0_t) / 255 );
 			change_brightness = true;
 			wait = SECONDS2SUSPEND;
