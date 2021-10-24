@@ -64,7 +64,7 @@ typedef struct SPI_config_t
 */
 void SPI_Init(uint8_t spi_port, SPI_config_t config);
 
-uint16_t SPI_Read(uint8_t spi_port);
+uint32_t SPI_Read(uint8_t spi_port);
 
 void SPI_Write(uint8_t spi_port, uint16_t spi_data, uint8_t chip_select);
 

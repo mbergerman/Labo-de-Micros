@@ -312,6 +312,7 @@ uint32_t SPI_Read(uint8_t spi_port)
 	return (SPI_PTRS[spi_port]->POPR & SPI_POPR_RXDATA_MASK) >> SPI_POPR_RXDATA_SHIFT;
 }
 
+
 void SPI_Write(uint8_t spi_port, uint16_t spi_data, uint8_t chip_select)
 {
 	SPI_PTRS[spi_port]->PUSHR = (SPI_PTRS[spi_port]->PUSHR & ~SPI_PUSHR_PCS_MASK) | SPI_PUSHR_PCS(1 << chip_select);

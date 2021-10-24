@@ -13,6 +13,7 @@
 
 #include "DRV_Board.h"
 #include "DRV_Timers.h"
+#include "DRV_LEDMatrix.h"
 
 
 /*******************************************************************************
@@ -47,6 +48,10 @@ void App_Init (void)
 {
    	initBoard();
    	initTimers();
+   	LEDMatrix_init();
+   	color_t color = {255,0,0};
+   	LEDMatrix_updateLED(color, 3, 3);
+
 }
 
 /* Función que se llama constantemente en un ciclo infinito */

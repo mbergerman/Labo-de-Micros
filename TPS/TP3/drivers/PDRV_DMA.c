@@ -77,8 +77,8 @@ void DMA_init(uint8_t DMA_channel, DMA_config_t config)
 	DMA0->TCD[DMA_channel].NBYTES_MLNO = config.transfer_bytes;
 
 	// Number of major transfer cycles
-	DMA0->TCD[DMA_channel].CITER_ELINKNO = DMA_CITER_ELINKNO_CITER(major_cycles);
-	DMA0->TCD[DMA_channel].BITER_ELINKNO = DMA_BITER_ELINKNO_BITER(major_cycles);
+	DMA0->TCD[DMA_channel].CITER_ELINKNO = DMA_CITER_ELINKNO_CITER(config.major_cycles);
+	DMA0->TCD[DMA_channel].BITER_ELINKNO = DMA_BITER_ELINKNO_BITER(config.major_cycles);
 
 	// Set Wrap Around
 	DMA0->TCD[DMA_channel].SLAST = -config.wrap_around;

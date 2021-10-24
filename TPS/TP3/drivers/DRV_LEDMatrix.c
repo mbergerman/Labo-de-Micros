@@ -67,7 +67,7 @@ static FTM_Config_t ftm_config;
 static FTM_Config_t ftm_reset_config;
 static DMA_config_t dma_config;
 
-static LEDMatrix_t * my_matrix;
+static LEDMatrix_t my_matrix;
 static PWM_Array_t my_pwm_array;
 
 /*******************************************************************************
@@ -76,7 +76,8 @@ static PWM_Array_t my_pwm_array;
  *******************************************************************************
  ******************************************************************************/
 
-void LEDMatrix_init(LEDMatrix_t * matrix)
+
+void LEDMatrix_init()
 {
 
 	ftm_config.channel = FTM_Channel_0;
@@ -97,7 +98,7 @@ void LEDMatrix_init(LEDMatrix_t * matrix)
 	ftm_reset_config.modulo = RESET_MODULO;
 	ftm_config.PWM_DC = 0;
 
-	dma_config.source_buffer = my_pwm_matrix;
+	dma_config.source_buffer = my_pwm_array;
 	dma_config.destination_buffer = FTM_getCounterPointer(0, FTM_Channel_0);
 	dma_config.request_source = FTM0CH0;
 	dma_config.source_offset = sizeof(uint16_t);
@@ -109,13 +110,11 @@ void LEDMatrix_init(LEDMatrix_t * matrix)
 	FTM_start(0);
 	FTM_modifyDC(0, 0);
 	DMA_init(0, dma_config);
-
-	my_matrix = matrix;
 	LED2PWM();
 }
 
-void LEDMatrix_update()
-{
+void LEDMatrix_updateLED(color_t led, uint8_t height, uint8_t width){
+	my_matrix[height][width] = led;
 	LED2PWM();
 }
 
@@ -128,38 +127,33 @@ void LEDMatrix_update()
 void LED2PWM()
 {
 	uint8_t color_checker = GREEN_CHECK;
+	uint8_t PWM_counter = 0;
 
-	uint8_t matrix_counter = 0;
-
-	int i;
-
-	for (i = 0; i < HEIGHT*WIDTH*LED_BITS; i++)
-	{
-		if (color_checker == GREEN_CHECK)
-		{
-			my_pwm_matrix[i] = ((*(my_matrix + matrix_counter).green >> i & 0x01) == 0) ? MATRIX0 : MATRIX1;
-		}
-		if (color_checker == RED_CHECK)
-		{
-			my_pwm_matrix[i] = ((*(my_matrix + matrix_counter).red >> i & 0x01) == 0) ? MATRIX0 : MATRIX1;
-		}
-		if (color_checker == BLUE_CHECK)
-		{
-			my_pwm_matrix[i] = ((*(my_matrix + matrix_counter).blue >> i & 0x01) == 0) ? MATRIX0 : MATRIX1;
-		}
-
-		i++;
-
-		if ( i % COLOR_RESOLUTION == 0)
-		{
-			color_checker++;
-			if (color_checker > BLUE_CHECK)
-			{
-				color_checker = GREEN_CHECK;
-				matrix_counter++;
+	for(uint8_t x = 0; x < HEIGHT; x++){
+		for(uint8_t y = 0; y < WIDTH; y++){
+			for(uint8_t i = 0; i < LED_BITS; i++){
+				switch(color_checker){
+				case GREEN_CHECK:
+					my_pwm_array[PWM_counter + i] = ((my_matrix[x][y].green >> i & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					break;
+				case RED_CHECK:
+					my_pwm_array[PWM_counter + i] = ((my_matrix[x][y].red >> i & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					break;
+				default:
+					my_pwm_array[PWM_counter + i] = ((my_matrix[x][y].blue >> i & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					break;
+				}
+				if(i % 8==0){
+					color_checker ++;
+					if(color_checker > BLUE_CHECK){
+						color_checker = GREEN_CHECK;
+					}
+				}
 			}
+			PWM_counter ++;
 		}
 	}
 }
+
 
 /******************************************************************************/

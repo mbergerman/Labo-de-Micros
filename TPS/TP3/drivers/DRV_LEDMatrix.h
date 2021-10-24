@@ -39,8 +39,8 @@ typedef color_t LEDMatrix_t[HEIGHT][WIDTH];
  * VARIABLE PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
 
-void LEDMatrix_init(LEDMatrix_t * matrix);
-void LEDMatrix_update();
+void LEDMatrix_init();
+void LEDMatrix_updateLED(color_t led, uint8_t height, uint8_t width);
 
 /*******************************************************************************
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE

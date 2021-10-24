@@ -395,7 +395,7 @@ void FTM_modifyModulo(uint8_t FTM, uint16_t modulo)
     FTM_PTRS[FTM]->MODE = (FTM_PTRS[FTM]->MODE & ~FTM_MODE_WPDIS_MASK) | FTM_MODE_WPDIS(0);
 }
 
-void * FTM_getCounterPointer(uint8_t channel, FTM_Channel_t channel)
+void* FTM_getCounterPointer(uint8_t FTM, FTM_Channel_t channel)
 {
 	return &(FTM_PTRS[FTM]->CONTROLS[channel].CnV);
 }
