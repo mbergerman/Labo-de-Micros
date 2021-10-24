@@ -86,6 +86,8 @@ void FTM_resetCounter(uint8_t FTM);
 uint16_t FTM_getCounter(uint8_t FTM);
 void FTM_modifyDC(uint8_t FTM, uint16_t DC);
 
+void * FTM_getCounterPointer(uint8_t FTM, FTM_Channel_t channel);
+
 /*******************************************************************************
  ******************************************************************************/
 
