@@ -69,7 +69,7 @@ static const uint16_t seq_odr_config[] = {I2C_ADDR_W(FXOS8700CQ_SLAVE_ADDR), FXO
 static const uint16_t seq_status[] = {I2C_ADDR_W(FXOS8700CQ_SLAVE_ADDR), FXOS8700CQ_STATUS, I2C_RESTART, I2C_ADDR_R(FXOS8700CQ_SLAVE_ADDR), I2C_READ};
 
 static const uint16_t seq_getx[] = {I2C_ADDR_W(FXOS8700CQ_SLAVE_ADDR), FXOS8700CQ_OUT_X_MSB, I2C_RESTART, I2C_ADDR_R(FXOS8700CQ_SLAVE_ADDR), I2C_READ, I2C_READ};
-
+static const uint16_t seq_gety[] = {I2C_ADDR_W(FXOS8700CQ_SLAVE_ADDR), FXOS8700CQ_OUT_Y_MSB, I2C_RESTART, I2C_ADDR_R(FXOS8700CQ_SLAVE_ADDR), I2C_READ, I2C_READ};
 
 
 /*******************************************************************************
@@ -178,7 +178,21 @@ bool accelReadDataX(uint8_t* result){
 	}
 }
 
-uint16_t accelProcessResult(uint8_t* result){
+bool accelReadDataY(uint8_t* result){
+	if(i2cGetStatus(0) == I2C_AVAILABLE && !busy_waiting){
+		reading_ready_flag = false;
+		i2cSendSequence(0, (uint16_t*)seq_gety, 6, result, reading_is_ready, 0);
+
+		busy_waiting = true;
+		timerStart(wait_tim_id, BUSY_WAIT_TICKS, TIM_MODE_SINGLESHOT, done_waiting);
+
+		return true;
+	}else{
+		return false;
+	}
+}
+
+int16_t accelProcessResult(uint8_t* result){
 
 	int16_t acc;
 	acc = (result[0] << 6) | (result[1] >> 2);

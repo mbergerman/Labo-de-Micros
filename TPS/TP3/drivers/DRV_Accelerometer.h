@@ -17,7 +17,7 @@
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
 
-
+#define ACC_RANGE_LSB	0.488	// mg/LSB
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -39,7 +39,9 @@ void initAccelerometer();
 bool accelConfigInit();
 bool accelNewData(uint8_t*);
 bool accelReadDataX(uint8_t* result);
-uint16_t accelProcessResult(uint8_t* result);
+bool accelReadDataY(uint8_t* result);
+int16_t accelProcessResult(uint8_t* result);
+bool accelReadingReady();
 
 /*******************************************************************************
  ******************************************************************************/

@@ -39,6 +39,7 @@
  ******************************************************************************/
 
 static uint8_t xaxis[2];
+static uint8_t yaxis[2];
 
 /*******************************************************************************
  *******************************************************************************
@@ -57,28 +58,16 @@ void App_Init (void)
 /* Función que se llama constantemente en un ciclo infinito */
 void App_Run (void)
 {
-	static bool btn_flag = false;
-	static bool xaxis_sent = false;
 	static bool accel_config = false;
 	if(!accel_config) accel_config = accelConfigInit();
 
-	if(getSW(SW3) && !btn_flag){
-		btn_flag = true;
-		toggleLED(BLUE);
 
-		accelReadDataX(xaxis);
-		xaxis_sent = true;
+	accelReadDataX(xaxis);
+	timerDelay(TIMER_MS2TICKS(500));
+	accelReadDataY(yaxis);
+	timerDelay(TIMER_MS2TICKS(500));
+	printf("X = %d , Y = %d\n", accelProcessResult(xaxis), accelProcessResult(yaxis));
 
-		//i2cSendSequence(0, init_sequence, 5, &device_id, NULL, NULL);
-	}else{
-		btn_flag = false;
-	}
-
-	if(xaxis_sent && accelReadingReady()){
-		printf("%d %d\n", xaxis[0], xaxis[1]);
-		xaxis_sent = false;
-
-	}
 }
 
 /*******************************************************************************
