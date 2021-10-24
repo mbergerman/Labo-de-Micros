@@ -51,11 +51,6 @@
 
 #define F_MUL_VALUE	0x2		// mul = 4
 
-/* Channel status definitions. These are not enumerated, as I want them to be uint8_t. */
-#define I2C_AVAILABLE 	0
-#define I2C_BUSY 		1
-#define I2C_ERROR 		2
-
 /* These correspond to bit 0 of the address byte. */
 #define I2C_WRITING 0
 #define I2C_READING 1
@@ -128,7 +123,7 @@ void initI2C(uint8_t i2c_num, i2c_speed_t i2c_speed) {
 	NVIC_EnableIRQ(I2C_IRQn[i2c_num]);
 }
 
-int32_t i2cSendSequence(uint8_t i2c_num, uint16_t *sequence, uint32_t sequence_len, uint8_t *received_data,
+int32_t i2cSendSequence(uint8_t i2c_num, uint16_t* sequence, uint32_t sequence_len, uint8_t *received_data,
 						  void (*callback_fn)(void*), void *user_data) {
 	volatile I2C_Channel *channel = &(i2c_channels[i2c_num]);
 	I2C_Type* i2c = I2C_PTRS[i2c_num];
@@ -182,8 +177,8 @@ uint8_t i2cGetStatus(uint8_t i2c_num){
 
 
 void i2c_irq_handler(uint32_t channel_number) {
-	volatile I2C_Channel* channel = &i2c_channels[channel_number];;
-	I2C_Type* i2c = (I2C_Type*)I2C_PTRS[channel_number];;
+	volatile I2C_Channel* channel = &i2c_channels[channel_number];
+	I2C_Type* i2c = (I2C_Type*)I2C_PTRS[channel_number];
 	uint16_t element;
 	uint8_t status;
 
@@ -232,6 +227,7 @@ void i2c_irq_handler(uint32_t channel_number) {
 
 				/* Generate STOP (set MST=0), switch to RX mode, and disable further interrupts. */
 				i2c->C1 &= ~(I2C_C1_MST_MASK | I2C_C1_IICIE_MASK | I2C_C1_TXAK_MASK);
+
 				/* Call the user-supplied callback function upon successful completion (if it exists). */
 				if(channel->callback_fn) {
 					(*channel->callback_fn)(channel->user_data);
@@ -259,6 +255,7 @@ void i2c_irq_handler(uint32_t channel_number) {
         if(channel->sequence == channel->sequence_end) {
             /* Generate STOP (set MST=0), switch to RX mode, and disable further interrupts. */
             i2c->C1 &= ~(I2C_C1_MST_MASK | I2C_C1_IICIE_MASK | I2C_C1_TXAK_MASK);
+
             /* Call the user-supplied callback function upon successful completion (if it exists). */
             if(channel->callback_fn) {
             (*channel->callback_fn)(channel->user_data);

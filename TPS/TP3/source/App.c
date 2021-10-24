@@ -15,6 +15,9 @@
 #include "DRV_Timers.h"
 #include "DRV_Accelerometer.h"
 
+//Debug
+#include "PDRV_I2C.h"
+
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
@@ -35,7 +38,7 @@
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-static uint8_t device_id;
+static uint8_t xaxis[2];
 
 /*******************************************************************************
  *******************************************************************************
@@ -55,20 +58,26 @@ void App_Init (void)
 void App_Run (void)
 {
 	static bool btn_flag = false;
+	static bool xaxis_sent = false;
 	static bool accel_config = false;
-	if(!accel_config){
-		accelConfigInit();
-		accel_config = true;
-	}
+	if(!accel_config) accel_config = accelConfigInit();
 
 	if(getSW(SW3) && !btn_flag){
 		btn_flag = true;
 		toggleLED(BLUE);
 
-		uint8_t xaxis[2];
-		AccelReadDataX(xaxis);
+		accelReadDataX(xaxis);
+		xaxis_sent = true;
 
 		//i2cSendSequence(0, init_sequence, 5, &device_id, NULL, NULL);
+	}else{
+		btn_flag = false;
+	}
+
+	if(xaxis_sent && accelReadingReady()){
+		printf("%d %d\n", xaxis[0], xaxis[1]);
+		xaxis_sent = false;
+
 	}
 }
 

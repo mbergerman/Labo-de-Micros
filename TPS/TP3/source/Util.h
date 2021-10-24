@@ -1,17 +1,19 @@
 /***************************************************************************//**
-  @file     DRV_Accelerometer.h
+  @file     Util.h
   @brief    +Descripcion del archivo+
   @author   matia
  ******************************************************************************/
 
-#ifndef DRV_ACCELEROMETER_H_
-#define DRV_ACCELEROMETER_H_
+#ifndef UTIL_H_
+#define UTIL_H_
 
 /*******************************************************************************
  * INCLUDE HEADER FILES
  ******************************************************************************/
 
-#include "Util.h"
+#include <stdint.h>
+#include <stdbool.h>
+#include <stdlib.h>
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
@@ -22,6 +24,7 @@
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
+
 
 
 /*******************************************************************************
@@ -35,13 +38,9 @@
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
 
-void initAccelerometer();
-bool accelConfigInit();
-bool accelNewData(uint8_t*);
-bool accelReadDataX(uint8_t* result);
-uint16_t accelProcessResult(uint8_t* result);
+
 
 /*******************************************************************************
  ******************************************************************************/
 
-#endif /* DRV_ACCELEROMETER_H_ */
+#endif /* UTIL_H_ */
