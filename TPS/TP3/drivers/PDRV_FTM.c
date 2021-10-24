@@ -380,6 +380,21 @@ void FTM_modifyDC(uint8_t FTM, uint16_t DC)
 	FTM_PTRS[FTM]->MODE = (FTM_PTRS[FTM]->MODE & ~FTM_MODE_WPDIS_MASK) | FTM_MODE_WPDIS(0);
 }
 
+void FTM_modifyModulo(uint8_t FTM, uint16_t modulo)
+{
+	//update in memory
+	ftm_config[FTM].modulo = modulo;
+
+	// Enable write
+	FTM_PTRS[FTM]->MODE |= FTM_MODE_WPDIS(1);
+
+	//Modify modulo
+	FTM_PTRS[FTM]->MOD = FTM_MOD_MOD(modulo);
+
+	// Disable write
+    FTM_PTRS[FTM]->MODE = (FTM_PTRS[FTM]->MODE & ~FTM_MODE_WPDIS_MASK) | FTM_MODE_WPDIS(0);
+}
+
 void * FTM_getCounterPointer(uint8_t channel, FTM_Channel_t channel)
 {
 	return &(FTM_PTRS[FTM]->CONTROLS[channel].CnV);
