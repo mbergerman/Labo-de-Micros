@@ -1,6 +1,6 @@
 /***************************************************************************//**
-  @file     PDRV_SPI.c
-  @brief    SPI driver.
+  @file     DRV_ShiftRegister.c
+  @brief    Shift register driver.
   @author   Grupo 1
  ******************************************************************************/
 
@@ -40,9 +40,9 @@ void shift_register_ISR();
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-uint32_t SR_data;
+static uint32_t SR_data;
 
-tim_id_t SR_timer_id;
+static tim_id_t SR_timer_id;
 
 /*******************************************************************************
  *******************************************************************************
