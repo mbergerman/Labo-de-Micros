@@ -34,8 +34,9 @@
 
 #define FTM_MODULO 63
 
-#define MATRIX0	(uint16_t) ((LED_T0H/LED_0T) * FTM_MODULO)
-#define MATRIX1 (uint16_t) ((LED_T1H/LED_1T) * FTM_MODULO)
+#define MATRIX0	(uint16_t) 20
+//((LED_T0H/LED_0T) * FTM_MODULO)
+#define MATRIX1 (uint16_t) 43
 
 #define RESET_MODULO 3000
 
@@ -92,7 +93,7 @@ void LEDMatrix_init()
 	ftm_config.interrupt_on = true;
 
 	FTM_init(0, ftm_config);
-	FTM_modifyDC(0, 0);
+	FTM_modifyDC(0, 20);
 
 	ftm_reset_config = ftm_config;
 	ftm_reset_config.modulo = RESET_MODULO;
@@ -134,23 +135,23 @@ void LED2PWM()
 			for(uint8_t i = 0; i < LED_BITS; i++){
 				switch(color_checker){
 				case GREEN_CHECK:
-					my_pwm_array[PWM_counter + i] = ((my_matrix[x][y].green >> i & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					my_pwm_array[PWM_counter + i] = ((my_matrix[x][y].green >> i%8 & 0x01) == 0) ? MATRIX0 : MATRIX1;
 					break;
 				case RED_CHECK:
-					my_pwm_array[PWM_counter + i] = ((my_matrix[x][y].red >> i & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					my_pwm_array[PWM_counter + i] = ((my_matrix[x][y].red >> i%8 & 0x01) == 0) ? MATRIX0 : MATRIX1;
 					break;
 				default:
-					my_pwm_array[PWM_counter + i] = ((my_matrix[x][y].blue >> i & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					my_pwm_array[PWM_counter + i] = ((my_matrix[x][y].blue >> i%8 & 0x01) == 0) ? MATRIX0 : MATRIX1;
 					break;
 				}
-				if(i % 8==0){
-					color_checker ++;
+				if(((i + 1) % 8 == 0) && (i != 0)){
+					color_checker++;
 					if(color_checker > BLUE_CHECK){
 						color_checker = GREEN_CHECK;
 					}
 				}
 			}
-			PWM_counter ++;
+			PWM_counter++;
 		}
 	}
 }
