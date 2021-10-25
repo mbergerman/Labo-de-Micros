@@ -246,11 +246,10 @@
 							<tool id="com.crt.advproject.tool.debug.debug.338094777" name="MCU Debugger" superClass="com.crt.advproject.tool.debug.debug"/>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="com.crt.advproject.config.exe.debug.1284265667.858181136" name="PDRV_FTM.h" rcbsApplicability="disable" resourcePath="drivers/PDRV_FTM.h" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
-						<entry excluding="PDRV_FTM.h|PDRV_FTM.c|DRV_Stub_Encoder.c|DRV_Stub_Display.c|DRV_Stub_Encoder.h|DRV_Stub_Display.h" flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="drivers"/>
-						<entry excluding="App-Test-HAL.c" flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="source"/>
+						<entry excluding="PDRV_SPI.h|PDRV_SPI.c|PDRV_FTM.h|PDRV_FTM.c|DRV_Stub_Encoder.c|DRV_Stub_Display.c|DRV_Stub_Encoder.h|DRV_Stub_Display.h" flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="drivers"/>
+						<entry excluding="App-Test-Acc.c|App-Test-HAL.c" flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="source"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

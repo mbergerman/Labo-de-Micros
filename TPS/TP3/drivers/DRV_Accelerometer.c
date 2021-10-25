@@ -47,7 +47,6 @@
  * VARIABLES WITH GLOBAL SCOPE
  ******************************************************************************/
 
-// +ej: unsigned int anio_actual;+
 
 
 /*******************************************************************************
@@ -82,6 +81,10 @@ static uint8_t config_state;
 static tim_id_t wait_tim_id;
 static bool busy_waiting;
 static bool reading_ready_flag;
+
+static uint8_t xaxis[2];
+static uint8_t yaxis[2];
+static acc_t acceleration;
 
 /*******************************************************************************
  *******************************************************************************
@@ -164,10 +167,10 @@ bool accelNewData(uint8_t* result){
 	}
 }
 
-bool accelReadDataX(uint8_t* result){
+bool accelReadDataX(void){
 	if(i2cGetStatus(0) == I2C_AVAILABLE && !busy_waiting){
 		reading_ready_flag = false;
-		i2cSendSequence(0, (uint16_t*)seq_getx, 6, result, reading_is_ready, 0);
+		i2cSendSequence(0, (uint16_t*)seq_getx, 6, xaxis, reading_is_ready, 0);
 
 		busy_waiting = true;
 		timerStart(wait_tim_id, BUSY_WAIT_TICKS, TIM_MODE_SINGLESHOT, done_waiting);
@@ -178,10 +181,10 @@ bool accelReadDataX(uint8_t* result){
 	}
 }
 
-bool accelReadDataY(uint8_t* result){
+bool accelReadDataY(void){
 	if(i2cGetStatus(0) == I2C_AVAILABLE && !busy_waiting){
 		reading_ready_flag = false;
-		i2cSendSequence(0, (uint16_t*)seq_gety, 6, result, reading_is_ready, 0);
+		i2cSendSequence(0, (uint16_t*)seq_gety, 6, yaxis, reading_is_ready, 0);
 
 		busy_waiting = true;
 		timerStart(wait_tim_id, BUSY_WAIT_TICKS, TIM_MODE_SINGLESHOT, done_waiting);
@@ -204,6 +207,19 @@ int16_t accelProcessResult(uint8_t* result){
 
 bool accelReadingReady(){
 	return reading_ready_flag;
+}
+
+acc_t getAccelerationVector() {
+	acceleration.x = accelProcessResult(xaxis);
+	acceleration.y = accelProcessResult(yaxis);
+	return acceleration;
+}
+
+acc_t readAcceleration(void) {
+	accelReadDataX();
+	timerDelay(TIMER_MS2TICKS(2));
+	accelReadDataY();
+	return getAccelerationVector();
 }
 
 /*******************************************************************************

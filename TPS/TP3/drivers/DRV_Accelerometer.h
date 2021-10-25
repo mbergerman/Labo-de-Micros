@@ -23,6 +23,10 @@
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
 
+typedef struct {
+	int16_t x;
+	int16_t y;
+} acc_t;
 
 /*******************************************************************************
  * VARIABLE PROTOTYPES WITH GLOBAL SCOPE
@@ -38,10 +42,14 @@
 void initAccelerometer();
 bool accelConfigInit();
 bool accelNewData(uint8_t*);
-bool accelReadDataX(uint8_t* result);
-bool accelReadDataY(uint8_t* result);
+bool accelReadDataX(void);
+bool accelReadDataY(void);
 int16_t accelProcessResult(uint8_t* result);
 bool accelReadingReady();
+
+acc_t getAccelerationVector();
+acc_t readAcceleration(void);
+
 
 /*******************************************************************************
  ******************************************************************************/
