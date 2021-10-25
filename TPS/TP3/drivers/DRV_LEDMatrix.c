@@ -75,12 +75,10 @@ void LEDMatrix_init()
 	ftm_config.CLK_source = FTM_SysCLK;
 	ftm_config.PWM_logic = FTM_High;
 	ftm_config.modulo = FTM_MODULO;
-	ftm_config.PWM_DC = 0;
+	ftm_config.PWM_DC = 20;
 	ftm_config.active_low = false;
 	ftm_config.DMA_on = true;
 	ftm_config.interrupt_on = true;
-
-	FTM_init(0, ftm_config);
 
 	dma_config.source_buffer = my_pwm_array;
 	dma_config.destination_buffer = FTM_getCounterPointer(0, FTM_Channel_0);
@@ -88,11 +86,14 @@ void LEDMatrix_init()
 	dma_config.source_offset = sizeof(uint16_t);
 	dma_config.destination_offset = 0;
 	dma_config.transfer_bytes = sizeof(uint16_t);
-	dma_config.major_cycles = HEIGHT*WIDTH;
+	dma_config.major_cycles = HEIGHT*WIDTH*LED_BITS;
 	dma_config.wrap_around = sizeof(my_pwm_array);
 
-	DMA_init(0, dma_config);
 	LED2PWM();
+
+	FTM_init(0, ftm_config);
+	DMA_init(0, dma_config);
+
 	FTM_start(0);
 }
 
