@@ -66,6 +66,10 @@ void ShiftRegister_init()
 	SR_timer_id = timerGetId();
 
 	SPI_Write(0, 0, 0);
+	SPI_Write(0, 0, 0);
+	SPI_Write(0, 0, 0);
+	SPI_Write(0, 0, 0);
+	SPI_Write(0, 0, 0);
 	timerStart(SR_timer_id, TIMER_MS2TICKS(REFRESH_RATE), TIM_MODE_PERIODIC, shift_register_ISR);
 
 }

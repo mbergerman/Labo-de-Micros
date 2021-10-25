@@ -11,9 +11,7 @@
  * INCLUDE HEADER FILES
  ******************************************************************************/
 
-#include <stdint.h>
-#include <stdbool.h>
-#include <stdlib.h>
+#include "Util.h"
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
