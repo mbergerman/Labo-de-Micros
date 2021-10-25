@@ -10,6 +10,8 @@
 
 #include "PDRV_DMA.h"
 #include "PDRV_FTM.h"
+
+#include "DRV_Timers.h"
 #include "DRV_LEDMatrix.h"
 
 /*******************************************************************************
@@ -28,6 +30,8 @@
 
 #define MATRIX0	(uint16_t) 20
 #define MATRIX1 (uint16_t) 43
+
+#define MAX_BR 100.0
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -59,6 +63,11 @@ static DMA_config_t dma_config;
 static LEDMatrix_t my_matrix;
 static PWM_Array_t my_pwm_array;
 
+static tim_id_t refresh_id;
+
+static uint8_t refresh_rate = 5;
+static bool refreshing = true;
+
 /*******************************************************************************
  *******************************************************************************
                         GLOBAL FUNCTION DEFINITIONS
@@ -89,6 +98,10 @@ void LEDMatrix_init()
 	dma_config.major_cycles = HEIGHT*WIDTH*LED_BITS;
 	dma_config.wrap_around = sizeof(my_pwm_array);
 
+	refresh_id = timerGetId();
+
+	timerStart(refresh_id, TIMER_MS2TICKS((uint8_t)(refresh_rate/2.0)), TIM_MODE_PERIODIC, refresh);
+
 	LED2PWM();
 
 	FTM_init(0, ftm_config);
@@ -100,6 +113,13 @@ void LEDMatrix_init()
 void LEDMatrix_updateLED(color_t led, uint8_t height, uint8_t width){
 	my_matrix[height][width] = led;
 	LED2PWM();
+}
+
+void LEDMatrix_updateBrightness(uint8_t brightness)
+{
+	timerStop(refresh_id);
+	refresh_rate = (uint8_t) ((MAX_BR - brightness) / MAX_BR);
+	timerStart(refresh_id, TIMER_MS2TICKS((uint8_t)(refresh_rate/2.0)), TIM_MODE_PERIODIC, refresh);
 }
 
 /*******************************************************************************
@@ -118,16 +138,16 @@ void LED2PWM()
 			for(uint8_t i = 0; i < LED_BITS; i++){
 				switch(color_checker){
 				case GREEN_CHECK:
-					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].green >> i%8 & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].green >> i%COLOR_RESOLUTION & 0x01) == 0) ? MATRIX0 : MATRIX1;
 					break;
 				case RED_CHECK:
-					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].red >> i%8 & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].red >> i%COLOR_RESOLUTION & 0x01) == 0) ? MATRIX0 : MATRIX1;
 					break;
 				default:
-					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].blue >> i%8 & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].blue >> i%COLOR_RESOLUTION & 0x01) == 0) ? MATRIX0 : MATRIX1;
 					break;
 				}
-				if(((i + 1) % 8 == 0) && (i != 0)){
+				if(((i + 1) % COLOR_RESOLUTION == 0) && (i != 0)){
 					color_checker++;
 					if(color_checker > BLUE_CHECK){
 						color_checker = GREEN_CHECK;
@@ -139,5 +159,15 @@ void LED2PWM()
 	}
 }
 
+void refresh()
+{
+	FTM_stop(0);
+	if (!refreshing)
+	{
+		FTM_start(0);
+		refreshing = true;
+	}
+	refreshing = false;
+}
 
 /******************************************************************************/
