@@ -1,13 +1,6 @@
+// Grupo 1 - LM
 
-/*
-  Box1
-
-  modified  August 2017
-  by Jacoby Daniel
-  
-*/
-
-// Board NodeMCU 0.9 (ESP-12 Module) 
+// Board NodeMCU 1.0 (ESP-12 Module) 
 
 #include <ESP8266WiFi.h> 
 #include <PubSubClient.h>   
@@ -174,7 +167,8 @@ void setup() {
 #define PAYLOAD_SIZE 1
 #define PACKAGE_SIZE (TOPIC_SIZE+PAYLOAD_SIZE)
 #define TOPIC(w)    (w=='B'?"brillo":( \
-                    w=='S'?"suspender":"otro"))
+                    w=='S'?"suspender":( \
+                    w=='P'?"position":"otro")))
 
 typedef struct {
     char topic[TOPIC_SIZE+1];
@@ -190,6 +184,7 @@ bool ready_to_pub = true;
 
 byte brightness = 0;
 char suspended = 'A';
+byte pos = 0;
 
 
 void loop() {
@@ -220,11 +215,20 @@ void loop() {
         }
     }
 
-
     if(inbox.topic[0] == 'B') {
         if(brightness != inbox.payload[0]) {
             brightness = inbox.payload[0];
             mqtt_client.publish( String(TOPIC(inbox.topic[0])).c_str() , String(inbox.payload[0]).c_str(), false); //publish brightness
+        }
+    }
+
+    if(inbox.topic[0] == 'P') {
+        if(pos != inbox.payload[0]) {
+            pos = inbox.payload[0];
+            byte posx = (inbox.payload[0] >> 4); //payload = xxxxyyyy
+            byte posy = inbox.payload[0] & 0xF;
+            byte position_payload[11] = {'(','x',',','y',')','=','(',(byte)('0'+posx),',',(byte)('0'+posy),')'};
+            mqtt_client.publish( String(TOPIC(inbox.topic[0])).c_str() , position_payload, 11, false); //publish position
         }
     }
 
