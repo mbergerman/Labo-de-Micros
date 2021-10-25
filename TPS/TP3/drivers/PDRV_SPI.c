@@ -282,14 +282,16 @@ void SPI_Init(uint8_t spi_port, SPI_config_t config)
         SPI_PTRS[spi_port]->CTAR[1] = 0x0;
         SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_DBR(0); // 50/50 Clock duty cycle
         SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_PBR(0b10); // Clock Prescaler of 5
-        SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_FMSZ(config.frame_size); // User defined frame size
+        SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_FMSZ(config.frame_size)-1; // User defined frame size
         SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_LSBFE(config.LSB_first); // User defined LSB first in transfer or not
         SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_CPHA(config.clock_phase); // User defined SCK phase
         SPI_PTRS[spi_port]->CTAR[1] |= SPI_CTAR_CPOL(config.clock_polarity); // User defined SCK polarity
 
-        //Clock scaler = 1024 => CLK = (SYSCLK/5) * (1/1024) = 9765.625 (Lo mas cerca de 9600 que se puede)
+        //Clock scaler = 1024 => CLK = (SYSCLK/5) * (1/1024) = 9765.625 (Parecido a UART)
         SPI_PTRS[spi_port]->CTAR[1] = (SPI_PTRS[spi_port]->CTAR[1] & ~SPI_CTAR_BR_MASK) | SPI_CTAR_BR(0b1001);
-        SPI_PTRS[spi_port]->MCR |= SPI_MCR_CONT_SCKE(1);  //Turn SCLK Continuous mode on
+
+        //Testing:
+        //SPI_PTRS[spi_port]->MCR |= SPI_MCR_CONT_SCKE(1);  //Turn SCLK Continuous mode on
     }
     else
     {
@@ -309,14 +311,14 @@ void SPI_Init(uint8_t spi_port, SPI_config_t config)
 
 uint32_t SPI_Read(uint8_t spi_port)
 {
-	return (SPI_PTRS[spi_port]->POPR & SPI_POPR_RXDATA_MASK) >> SPI_POPR_RXDATA_SHIFT;
+	return (SPI_PTRS[spi_port]->POPR & SPI_POPR_RXDATA_MASK) >> SPI_POPR_RXDATA_SHIFT ;
 }
 
 
 void SPI_Write(uint8_t spi_port, uint16_t spi_data, uint8_t chip_select)
 {
-	SPI_PTRS[spi_port]->PUSHR = (SPI_PTRS[spi_port]->PUSHR & ~SPI_PUSHR_PCS_MASK) | SPI_PUSHR_PCS(1 << chip_select);
-	SPI_PTRS[spi_port]->PUSHR = (SPI_PTRS[spi_port]->PUSHR & ~SPI_PUSHR_TXDATA_MASK) | SPI_PUSHR_TXDATA(spi_data);
+	SPI_PTRS[spi_port]->PUSHR = (SPI_PTRS[spi_port]->PUSHR & ~SPI_PUSHR_PCS_MASK) | SPI_PUSHR_PCS(1 << chip_select) |
+								(SPI_PTRS[spi_port]->PUSHR & ~SPI_PUSHR_TXDATA_MASK) | SPI_PUSHR_TXDATA(spi_data);
 }
 
 bool SPI_TransferComplete(uint8_t spi_port)

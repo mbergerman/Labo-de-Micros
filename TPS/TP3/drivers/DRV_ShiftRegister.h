@@ -19,6 +19,9 @@
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
 
+#define	SR_SERIAL_SHIFT_PIN	PORTNUM2PIN(PC, 12)
+#define	SR_LATCH_PIN		PORTNUM2PIN(PC, 4)
+
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/

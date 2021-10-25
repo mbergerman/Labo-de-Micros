@@ -30,11 +30,7 @@ static DMA_config_t DMA_channel_config[16];
  * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-<<<<<<< Updated upstream
 void DMA_init(uint8_t DMA_channel, DMA_config_t config)
-=======
-void initDMA(uint8_t DMA_channel, DMA_config_t config)
->>>>>>> Stashed changes
 {
 	// Remember channel config
 	DMA_channel_config[DMA_channel] = config;
@@ -43,16 +39,12 @@ void initDMA(uint8_t DMA_channel, DMA_config_t config)
 	SIM->SCGC7 |= SIM_SCGC7_DMA_MASK;
 	SIM->SCGC6 |= SIM_SCGC6_DMAMUX_MASK;
 
-	// Set request source
-<<<<<<< Updated upstream
-	DMAMUX->CHCFG[DMA_channel] |= DMAMUX_CHCFG_ENBL_MASK | DMAMUX_CHCFG_SOURCE((uint8_t)config.request_source);
-=======
+
 	if(config.request_source >= 58){
 		DMAMUX->CHCFG[DMA_channel] |= DMAMUX_CHCFG_ENBL_MASK | DMAMUX_CHCFG_TRIG_MASK | DMAMUX_CHCFG_SOURCE((uint8_t)config.request_source);
 	}else{
 		DMAMUX->CHCFG[DMA_channel] |= DMAMUX_CHCFG_ENBL_MASK | DMAMUX_CHCFG_SOURCE((uint8_t)config.request_source);
 	}
->>>>>>> Stashed changes
 
 	// Clear all the pending events
 	NVIC_ClearPendingIRQ(DMA0_IRQn + DMA_channel);
@@ -96,19 +88,11 @@ void initDMA(uint8_t DMA_channel, DMA_config_t config)
 	DMA0->TCD[DMA_channel].SLAST = -config.wrap_around;
 
 
-<<<<<<< Updated upstream
-    // DLASTSGA DLAST Scatter and Gatter
-     DMA0->TCD[DMA_channel].DLAST_SGA = 0x00;
-
-	// Setup control and status register.
-	DMA0->TCD[DMA_channel].CSR = DMA_CSR_INTMAJOR_MASK;	//Enable Major Interrupt.
-=======
     // DLASTSGA DLAST Scatter and Gather
     DMA0->TCD[DMA_channel].DLAST_SGA = 0x00;
 
 	// Setup control and status register.
 	//DMA0->TCD[DMA_channel].CSR = DMA_CSR_INTMAJOR_MASK;	//Enable Major Interrupt.
->>>>>>> Stashed changes
 
 	// Enable request signal
 	switch(DMA_channel)

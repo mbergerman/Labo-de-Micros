@@ -8,18 +8,14 @@
  * INCLUDE HEADER FILES
  ******************************************************************************/
 
-#include "MK64F12.h"
-#include "hardware.h"
-#include <stdio.h>
+#include "Util.h"
 #include <string.h>
+#include <stdio.h>
 #include "DRV_UART.h"
 #include "DRV_Timers.h"
-#include "PDRV_ADC.h"
 #include "DRV_WaveGen.h"
-
-
-
-#include "PDRV_PIT.h"
+#include "DRV_Buttons.h"
+#include "DRV_Board.h"
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
@@ -58,15 +54,35 @@ void App_Init() {
 	// Init Timer
 	//initTimers();
 
-	initWaveGen();
-	//initPIT(0x02FAF07F);
+	//initWaveGen();
+
+	initBoard();
+
+	initButtons();
 }
 
 void App_Run() {
-	wavegenSetFreq(0x0200000);
+	static SR_button_t sr_data = 0;
+
+	toggleLED(BLUE);
+
+	sr_data = getButtonPressed();
+
+	if(sr_data == BUTTON_LEFT){
+		printf("L\n");
+	}else if(sr_data == BUTTON_RIGHT){
+		printf("R\n");
+	}else if(sr_data == BUTTON_STATE){
+		printf("S\n");
+	}
+
+	timerDelay(TIMER_MS2TICKS(500));
+
+
+	/*wavegenSetFreq(0x0200000);
 	delayLoop(10000000UL);
 	wavegenSetFreq(0x0100000);
-	delayLoop(10000000UL);
+	delayLoop(10000000UL);*/
 	/*static uint16_t val = 0;
 
 	dacWrite(val);
