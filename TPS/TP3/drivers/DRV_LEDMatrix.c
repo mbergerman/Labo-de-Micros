@@ -24,21 +24,10 @@
 
 #define COLOR_RESOLUTION 8
 
-#define LED_T0H 0.4
-#define LED_T0L 0.85
-#define LED_0T LED_T0H + LED_T0L
-
-#define LED_T1H 0.8
-#define LED_T1L 0.45
-#define LED_1T LED_T1H + LED_T1L
-
-#define FTM_MODULO 63
+#define FTM_MODULO 61
 
 #define MATRIX0	(uint16_t) 20
-//((LED_T0H/LED_0T) * FTM_MODULO)
 #define MATRIX1 (uint16_t) 43
-
-#define RESET_MODULO 3000
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -65,7 +54,6 @@ void LED2PWM();
  ******************************************************************************/
 
 static FTM_Config_t ftm_config;
-static FTM_Config_t ftm_reset_config;
 static DMA_config_t dma_config;
 
 static LEDMatrix_t my_matrix;
@@ -93,11 +81,6 @@ void LEDMatrix_init()
 	ftm_config.interrupt_on = true;
 
 	FTM_init(0, ftm_config);
-	FTM_modifyDC(0, 20);
-
-	ftm_reset_config = ftm_config;
-	ftm_reset_config.modulo = RESET_MODULO;
-	ftm_config.PWM_DC = 0;
 
 	dma_config.source_buffer = my_pwm_array;
 	dma_config.destination_buffer = FTM_getCounterPointer(0, FTM_Channel_0);
@@ -108,10 +91,9 @@ void LEDMatrix_init()
 	dma_config.major_cycles = HEIGHT*WIDTH;
 	dma_config.wrap_around = sizeof(my_pwm_array);
 
-	FTM_start(0);
-	FTM_modifyDC(0, 0);
 	DMA_init(0, dma_config);
 	LED2PWM();
+	FTM_start(0);
 }
 
 void LEDMatrix_updateLED(color_t led, uint8_t height, uint8_t width){
@@ -135,13 +117,13 @@ void LED2PWM()
 			for(uint8_t i = 0; i < LED_BITS; i++){
 				switch(color_checker){
 				case GREEN_CHECK:
-					my_pwm_array[PWM_counter + i] = ((my_matrix[x][y].green >> i%8 & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].green >> i%8 & 0x01) == 0) ? MATRIX0 : MATRIX1;
 					break;
 				case RED_CHECK:
-					my_pwm_array[PWM_counter + i] = ((my_matrix[x][y].red >> i%8 & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].red >> i%8 & 0x01) == 0) ? MATRIX0 : MATRIX1;
 					break;
 				default:
-					my_pwm_array[PWM_counter + i] = ((my_matrix[x][y].blue >> i%8 & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].blue >> i%8 & 0x01) == 0) ? MATRIX0 : MATRIX1;
 					break;
 				}
 				if(((i + 1) % 8 == 0) && (i != 0)){
