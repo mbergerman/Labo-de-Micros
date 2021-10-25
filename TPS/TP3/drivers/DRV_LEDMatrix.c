@@ -138,13 +138,13 @@ void LED2PWM()
 			for(uint8_t i = 0; i < LED_BITS; i++){
 				switch(color_checker){
 				case GREEN_CHECK:
-					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].green >> i%COLOR_RESOLUTION & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].g >> i%COLOR_RESOLUTION & 0x01) == 0) ? MATRIX0 : MATRIX1;
 					break;
 				case RED_CHECK:
-					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].red >> i%COLOR_RESOLUTION & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].r >> i%COLOR_RESOLUTION & 0x01) == 0) ? MATRIX0 : MATRIX1;
 					break;
 				default:
-					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].blue >> i%COLOR_RESOLUTION & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					my_pwm_array[(PWM_counter * LED_BITS) + i] = ((my_matrix[x][y].b >> i%COLOR_RESOLUTION & 0x01) == 0) ? MATRIX0 : MATRIX1;
 					break;
 				}
 				if(((i + 1) % COLOR_RESOLUTION == 0) && (i != 0)){
