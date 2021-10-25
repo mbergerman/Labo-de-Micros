@@ -41,6 +41,7 @@ typedef color_t LEDMatrix_t[HEIGHT][WIDTH];
 
 void LEDMatrix_init();
 void LEDMatrix_updateLED(color_t led, uint8_t height, uint8_t width);
+void LEDMatrix_updateBrightness(uint8_t brightness);
 
 /*******************************************************************************
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE
