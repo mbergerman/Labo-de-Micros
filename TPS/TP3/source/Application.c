@@ -12,11 +12,12 @@
 #include "hardware.h"
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 #include "DRV_UART.h"
 #include "DRV_Timers.h"
 #include "PDRV_ADC.h"
 #include "DRV_Accelerometer.h"
-#include <math.h>
+#include "DRV_Buttons.h"
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
@@ -76,6 +77,8 @@ typedef struct {
 	uint16_t y;
 } std_acc_t;
 
+typedef enum {VERTICAL, HORIZONTAL} direction_t;
+
 /*******************************************************************************
  * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
  ******************************************************************************/
@@ -87,6 +90,7 @@ void timer_tx_status_callback();
 void timer_rx_callback();
 void timer_suspend_callback();
 void timer_position_callback();
+void timer_buttons_callback();
 
 /*******************************************************************************
  * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
@@ -98,13 +102,13 @@ static std_acc_t standard_deviation(acc_t* data, uint8_t len);
  * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-static const point_t default_point = DEFAULT_POINT;
+//static const point_t default_point = DEFAULT_POINT;
 
 /*******************************************************************************
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-static point_t point = default_point;
+static point_t point = DEFAULT_POINT;
 
 // Timers' IDs
 static tim_id_t timer_tx_bright;
@@ -118,19 +122,25 @@ static bool change_color = true;
 static bool change_brightness = true;
 static bool change_position = true;
 
-// suspend
+// suspend status
 static char status = AWAKE;
-
 static uint8_t wait = SECONDS2SUSPEND;
 
+
+// ADC
 static ADCData_t ADC_data[3]; //save three values in order to notice significant changes
 
+// Acc
 typedef struct {
 	acc_t data[ACC_MEMORY_SIZE];
 	acc_t* ptr;
 }acc_memory_t;
 static acc_memory_t acc_memory;
 
+// buttons
+
+static SR_button_t button = BUTTON_NONE;
+static direction_t direction = HORIZONTAL;
 
 
 /*******************************************************************************
@@ -140,12 +150,19 @@ static acc_memory_t acc_memory;
  ******************************************************************************/
 
 void App_Init() {
+	// Init Timer
+	initTimers();
 
 	// Init UART
 	initUartCom();
 
 	//Init ADC
-	ADC_Init (ADC0_t, ADC_b8, ADC_c4, input_clock, ADC_mA, 0);
+	ADC_Init(ADC0_t, ADC_b8, ADC_c4, input_clock, ADC_mA, 0);
+	ADC_SetInterruptMode(ADC0_t, true);
+	ADC_StartConversion(ADC0_t, 0);
+
+	//Init ADC LDR
+	ADC_Init(ADC1_t, ADC_b8, ADC_c4, input_clock, ADC_mA, 0);
 	ADC_SetInterruptMode(ADC0_t, true);
 	ADC_StartConversion(ADC0_t, 0);
 
@@ -153,24 +170,33 @@ void App_Init() {
 	initAccelerometer();
 	acc_memory.ptr = acc_memory.data;
 
-	// Init Timer
-	initTimers();
+	//Init buttons with SPI
+	initButtons();
 
 	//Config UART Timers
+
+	// send brightness to nodered
 	timer_tx_bright = timerGetId();
 	timerStart(timer_tx_bright, TIMER_MS2TICKS(1000), TIM_MODE_PERIODIC, timer_tx_bright_callback);
+	// uart receive packages
 	timer_rx = timerGetId();
 	timerStart(timer_rx, TIMER_MS2TICKS(100), TIM_MODE_PERIODIC, timer_rx_callback);
+	// send status to nodered
 	timer_tx_status = timerGetId();
 	timerStart(timer_tx_status, TIMER_MS2TICKS(200), TIM_MODE_PERIODIC, timer_tx_status_callback);
+	// update accelerometer
 	timer_acc = timerGetId();
 	timerStart(timer_acc, TIMER_MS2TICKS(100), TIM_MODE_PERIODIC, timer_position_callback);
+	// send position to nodered
 	timer_tx_pos = timerGetId();
 	timerStart(timer_tx_pos, TIMER_MS2TICKS(250), TIM_MODE_PERIODIC, timer_tx_pos_callback);
-
-	//Suspend timer
+	// suspend timer
 	tim_id_t timer_suspend = timerGetId();
 	timerStart(timer_suspend, TIMER_MS2TICKS(1000*SECONDS2SUSPEND/10), TIM_MODE_PERIODIC, timer_suspend_callback);
+
+	//update position with buttos
+	tim_id_t timer_buttons = timerGetId();
+	timerStart(timer_buttons, TIMER_MS2TICKS(100), TIM_MODE_PERIODIC, timer_buttons_callback);
 
 }
 
@@ -296,7 +322,6 @@ void timer_suspend_callback() {
 		if(wait == 0) {
 			status = SUSPENDED;
 			wait = SECONDS2SUSPEND;
-
 		}
 	}
 }
@@ -304,10 +329,6 @@ void timer_suspend_callback() {
 // ==== UPDATE POSITION =====
 void timer_position_callback() {
 	std_acc_t std_acc = standard_deviation(acc_memory.data, ACC_MEMORY_SIZE);
-//	if( std_acc.x > 200 || std_acc.y > 200 ) {
-//		printf("Std = (%u , %u) \n",(uint16_t)std_acc.x, (uint16_t)std_acc.y);
-//		printf("Acc = (%d , %d) \n",(acc_memory.ptr-1)->x, (acc_memory.ptr-1)->y);
-//	}
 	if(std_acc.x > ACC_THRESHOLD) {
 		change_position = true;
 		if((acc_memory.ptr-1)->x > 0) {
@@ -325,6 +346,37 @@ void timer_position_callback() {
 		else if((acc_memory.ptr-1)->x < 0) {
 			point.pos.y -= point.pos.y!=MIN_POS;
 		}
+	}
+}
+
+
+void timer_buttons_callback() {
+	button = getButtonPressed();
+	switch(button) {
+	case BUTTON_STATE:
+		direction = !direction; //toggle direction
+		break;
+	case BUTTON_RIGHT:
+		change_position = true;
+		if(direction == HORIZONTAL) {
+			point.pos.x += point.pos.x!=MAX_POS;
+		}
+		else if(direction == VERTICAL) {
+			point.pos.y += point.pos.y!=MAX_POS;
+		}
+		break;
+	case BUTTON_LEFT:
+		change_position = true;
+		if(direction == HORIZONTAL) {
+			point.pos.x -= point.pos.x!=MIN_POS;
+		}
+		else if(direction == VERTICAL) {
+			point.pos.y -= point.pos.y!=MIN_POS;
+		}
+		break;
+	default:
+		button = BUTTON_NONE;
+		break;
 	}
 }
 
