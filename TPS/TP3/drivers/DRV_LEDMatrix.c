@@ -78,6 +78,7 @@ static bool refreshing = true;
 
 void LEDMatrix_init()
 {
+	initTimers();
 
 	ftm_config.channel = FTM_Channel_0;
 	ftm_config.mode = FTM_PWM;
