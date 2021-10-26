@@ -24,10 +24,27 @@
  * VARIABLES WITH GLOBAL SCOPE
  ******************************************************************************/
 
-static DMA_config_t DMA_channel_config[16];
-
 /*******************************************************************************
  * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
+ ******************************************************************************/
+
+static void dma_irq_handler(uint8_t channel);
+
+/*******************************************************************************
+ * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
+ ******************************************************************************/
+
+/*******************************************************************************
+ * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
+ ******************************************************************************/
+
+static DMA_config_t DMA_channel_config[16];
+static dma_callback_t dma_callbacks[16];
+
+/*******************************************************************************
+ *******************************************************************************
+                        GLOBAL FUNCTION DEFINITIONS
+ *******************************************************************************
  ******************************************************************************/
 
 void DMA_init(uint8_t DMA_channel, DMA_config_t config)
@@ -150,6 +167,10 @@ void DMA_init(uint8_t DMA_channel, DMA_config_t config)
 
 }
 
+void DMA_setMajorCallback(uint8_t channel, dma_callback_t callback_fn){
+	dma_callbacks[channel] = callback_fn;
+}
+
 /*******************************************************************************
  * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
@@ -171,42 +192,30 @@ void DMA_init(uint8_t DMA_channel, DMA_config_t config)
  *******************************************************************************
  ******************************************************************************/
 
-void DMA0_IRQHandler(void){
-	DMA0->TCD[0].CSR |= DMA_CSR_DONE_MASK;
-}
-
-void DMA1_IRQHandler(void){}
-
-void DMA2_IRQHandler(void){
+static void dma_irq_handler(uint8_t channel){
 	/* Clear the interrupt flag. */
-	DMA0->CINT |= DMA_CINT_CINT(2);
+	DMA0->CINT |= DMA_CINT_CINT(channel);
+	if(dma_callbacks[channel]){
+		dma_callbacks[channel]();
+	}
 }
 
-void DMA3_IRQHandler(void){}
-
-void DMA4_IRQHandler(void){}
-
-void DMA5_IRQHandler(void){}
-
-void DMA6_IRQHandler(void){}
-
-void DMA7_IRQHandler(void){}
-
-void DMA8_IRQHandler(void){}
-
-void DMA9_IRQHandler(void){}
-
-void DMA10_IRQHandler(void){}
-
-void DMA11_IRQHandler(void){}
-
-void DMA12_IRQHandler(void){}
-
-void DMA13_IRQHandler(void){}
-
-void DMA14_IRQHandler(void){}
-
-void DMA15_IRQHandler(void){}
+void DMA0_IRQHandler(void){ dma_irq_handler(0); }
+void DMA1_IRQHandler(void){ dma_irq_handler(1); }
+void DMA2_IRQHandler(void){ dma_irq_handler(2); }
+void DMA3_IRQHandler(void){ dma_irq_handler(3); }
+void DMA4_IRQHandler(void){ dma_irq_handler(4); }
+void DMA5_IRQHandler(void){ dma_irq_handler(5); }
+void DMA6_IRQHandler(void){ dma_irq_handler(6); }
+void DMA7_IRQHandler(void){ dma_irq_handler(7); }
+void DMA8_IRQHandler(void){ dma_irq_handler(8); }
+void DMA9_IRQHandler(void){ dma_irq_handler(9); }
+void DMA10_IRQHandler(void){ dma_irq_handler(10); }
+void DMA11_IRQHandler(void){ dma_irq_handler(11); }
+void DMA12_IRQHandler(void){ dma_irq_handler(12); }
+void DMA13_IRQHandler(void){ dma_irq_handler(13); }
+void DMA14_IRQHandler(void){ dma_irq_handler(14); }
+void DMA15_IRQHandler(void){ dma_irq_handler(15); }
 
 void DMA_Error_IRQHandler(void){
 	/* Clear all error indicators.*/

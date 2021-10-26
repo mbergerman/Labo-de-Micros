@@ -21,6 +21,8 @@
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
 
+typedef void (*dma_callback_t)(void);
+
 typedef enum {	FTM0CH0 = 20, 	FTM0CH1 = 21, FTM0CH2 = 22, FTM0CH3 = 23,
 			  	FTM0CH4 = 24, 	FTM0CH5 = 25, FTM0CH6 = 26, FTM0CH7 = 27,
 			  	DMADAC0 = 45,	DMADAC1 = 46, DMAALWAYS63 = 63				} DMA_request_t;
@@ -48,6 +50,8 @@ typedef struct DMA_config_t
  ******************************************************************************/
 
 void DMA_init(uint8_t DMA_channel, DMA_config_t config);
+void DMA_setMajorCallback(uint8_t channel, dma_callback_t callback_fn);
+
 /*******************************************************************************
  ******************************************************************************/
 

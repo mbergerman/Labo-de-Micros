@@ -90,6 +90,8 @@ void initWaveGen(){
 
 	initPIT(0x02FAF07F);	// 1/50Mhz = 20ns   (1s/20ns)-1= 49,999,999 cycles or 0x02FAF07F);
 	pitSetCallback(start_dma_transfer);
+
+	wavegenSetFreq(1);
 }
 void wavegenSetFreq(uint32_t freq){
 	pitSetFreq(freq * SINE_TABLE_LEN);

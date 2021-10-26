@@ -32,9 +32,16 @@
 #define MATRIX1 (uint16_t) 43
 #define MATRIXR (uint16_t) 1
 
-#define PMW_ARRAY_LEN	HEIGHT*WIDTH*LED_BITS + 1
+#define MATRIX_BIT_SYMBOL(brightness, i)	(((brightness >> (COLOR_RESOLUTION-1 - i%COLOR_RESOLUTION) & 0x01) == 0) ? MATRIX0 : MATRIX1)
 
-#define MAX_BR 100.0
+#define PMW_ARRAY_LEN	HEIGHT*WIDTH*LED_BITS
+
+#define MAX_BRIGHTNESS			(float)100.0
+
+#define LED_MATRIX_DMA_CHNNL	0
+#define LED_MATRIX_FTM_CHNNL	0
+
+#define RESET_TICKS		TIMER_MS2TICKS(2)
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -50,8 +57,9 @@ typedef uint16_t PWM_Array_t[PMW_ARRAY_LEN];
  * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-void LEDMatrix_RGB2PWM();
-void refresh();
+static void LEDMatrix_RGB2PWM();
+static void LEDMatrix_reset();
+static void LEDMatrix_restart();
 
 /*******************************************************************************
  * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
@@ -65,19 +73,11 @@ static FTM_Config_t ftm_config;
 static DMA_config_t dma_config;
 
 static PWM_Array_t pwm_led_matrix;
-static LEDMatrix_t rgb_led_matrix ={{{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50}},
-									{{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50}},
-									{{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50}},
-									{{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 50, 0},{0, 50, 0},{0, 0, 50},{0, 0, 50},{0, 0, 50}},
-									{{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 50, 0},{0, 50, 0},{0, 0, 50},{0, 0, 50},{0, 0, 50}},
-									{{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50}},
-									{{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50}},
-									{{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50},{0, 0, 50}}};
+static LEDMatrix_t rgb_led_matrix;
 
-static tim_id_t refresh_id;
+static tim_id_t reset_tim_id;
 
-static uint8_t refresh_rate = 5;
-static bool refreshing = true;
+static float matrix_brightness = 100.0;
 
 /*******************************************************************************
  *******************************************************************************
@@ -110,16 +110,15 @@ void LEDMatrix_init()
 	dma_config.major_cycles = PMW_ARRAY_LEN;
 	dma_config.wrap_around = sizeof(pwm_led_matrix);
 
-	refresh_id = timerGetId();
-
-	//timerStart(refresh_id, TIMER_MS2TICKS((uint8_t)(refresh_rate/2.0)), TIM_MODE_PERIODIC, refresh);
+	reset_tim_id = timerGetId();
 
 	LEDMatrix_RGB2PWM();
 
-	FTM_init(0, ftm_config);
-	DMA_init(0, dma_config);
+	FTM_init(LED_MATRIX_FTM_CHNNL, ftm_config);
+	DMA_init(LED_MATRIX_DMA_CHNNL, dma_config);
+	DMA_setMajorCallback(LED_MATRIX_DMA_CHNNL, LEDMatrix_reset);
 
-	FTM_start(0);
+	FTM_start(LED_MATRIX_FTM_CHNNL);
 }
 
 void LEDMatrix_updateLED(color_t led, uint8_t height, uint8_t width){
@@ -127,11 +126,15 @@ void LEDMatrix_updateLED(color_t led, uint8_t height, uint8_t width){
 	LEDMatrix_RGB2PWM();
 }
 
-void LEDMatrix_updateBrightness(uint8_t brightness)
+void LEDMatrix_setBrightness(float brightness)
 {
-	timerStop(refresh_id);
-	refresh_rate = (uint8_t) ((MAX_BR - brightness) / MAX_BR);
-	timerStart(refresh_id, TIMER_MS2TICKS((uint8_t)(refresh_rate/2.0)), TIM_MODE_PERIODIC, refresh);
+	matrix_brightness = brightness;
+	LEDMatrix_RGB2PWM();
+}
+
+float LEDMatrix_getBrightness()
+{
+	return matrix_brightness;
 }
 
 /*******************************************************************************
@@ -140,26 +143,28 @@ void LEDMatrix_updateBrightness(uint8_t brightness)
  *******************************************************************************
  ******************************************************************************/
 
-void LEDMatrix_RGB2PWM()
+static void LEDMatrix_RGB2PWM()
 {
 	uint8_t color_checker = GREEN_CHECK;
 	uint8_t PWM_counter = 0;
 
-	// Last value is the reset condition
-	pwm_led_matrix[PMW_ARRAY_LEN-1] = MATRIXR;
-
 	for(uint8_t x = 0; x < HEIGHT; x++){
 		for(uint8_t y = 0; y < WIDTH; y++){
+
+			uint8_t red_brightness = (uint8_t)((float)rgb_led_matrix[x][y].r * (matrix_brightness / MAX_BRIGHTNESS));
+			uint8_t green_brightness = (uint8_t)((float)rgb_led_matrix[x][y].g * (matrix_brightness / MAX_BRIGHTNESS));
+			uint8_t blue_brightness = (uint8_t)((float)rgb_led_matrix[x][y].b * (matrix_brightness / MAX_BRIGHTNESS));
+
 			for(uint8_t i = 0; i < LED_BITS; i++){
 				switch(color_checker){
 				case GREEN_CHECK:
-					pwm_led_matrix[(PWM_counter * LED_BITS) + i] = ((rgb_led_matrix[x][y].g >> i%COLOR_RESOLUTION & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					pwm_led_matrix[(PWM_counter * LED_BITS) + i] = MATRIX_BIT_SYMBOL(green_brightness, i);
 					break;
 				case RED_CHECK:
-					pwm_led_matrix[(PWM_counter * LED_BITS) + i] = ((rgb_led_matrix[x][y].r >> i%COLOR_RESOLUTION & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					pwm_led_matrix[(PWM_counter * LED_BITS) + i] = MATRIX_BIT_SYMBOL(red_brightness, i);
 					break;
 				default:
-					pwm_led_matrix[(PWM_counter * LED_BITS) + i] = ((rgb_led_matrix[x][y].b >> i%COLOR_RESOLUTION & 0x01) == 0) ? MATRIX0 : MATRIX1;
+					pwm_led_matrix[(PWM_counter * LED_BITS) + i] = MATRIX_BIT_SYMBOL(blue_brightness, i);
 					break;
 				}
 				if(((i + 1) % COLOR_RESOLUTION == 0) && (i != 0)){
@@ -174,15 +179,13 @@ void LEDMatrix_RGB2PWM()
 	}
 }
 
-void refresh()
-{
-	FTM_stop(0);
-	if (!refreshing)
-	{
-		FTM_start(0);
-		refreshing = true;
-	}
-	refreshing = false;
+static void LEDMatrix_reset(){
+	FTM_stop(LED_MATRIX_FTM_CHNNL);
+	timerStart(reset_tim_id, RESET_TICKS, TIM_MODE_SINGLESHOT, LEDMatrix_restart);
+}
+
+static void LEDMatrix_restart(){
+	FTM_start(LED_MATRIX_FTM_CHNNL);
 }
 
 /******************************************************************************/

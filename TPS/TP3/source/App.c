@@ -59,25 +59,79 @@ void App_Init() {
 	initWaveGen();
 	initBoard();
 
-	//LEDMatrix_init();
+	LEDMatrix_init();
 }
 
 void App_Run() {
+	static uint8_t counter = 0;
+
+	static uint8_t old_w = 0;
+	static uint8_t old_h = 1;
+	static uint8_t old2_w = 0;
+	static uint8_t old2_h = 2;
+	static uint8_t old3_w = 0;
+	static uint8_t old3_h = 3;
 	static uint8_t w = 0;
+	static uint8_t h = 0;
+	static int w_dir = 1;
+	static int h_dir = 0;
 
-	color_t led_color = {120, 255, 0};
+	static color_t led_color = {100, 0, 0};
+	static color_t led_black = {0, 0, 0};
 
-	//LEDMatrix_updateLED(led_color, 3, w);
+	LEDMatrix_updateLED(led_black, old3_h, old3_w);
+	LEDMatrix_updateLED(led_color, h, w);
 
-	//timerDelay(TIMER_MS2TICKS(500));
+	timerDelay(TIMER_MS2TICKS(100));
 
-	//w = (w+1)%8;
+	if(led_color.r == 100){
+		led_color = (color_t){0, 0, 100};
+	}else{
+		led_color = (color_t){100, 0, 0};
+	}
+
+	old3_w = old2_w;
+	old3_h = old2_h;
+	old2_w = old_w;
+	old2_h = old_h;
+	old_w = w;
+	old_h = h;
+
+	w += w_dir;
+	h += h_dir;
+	if(w == 7 && w_dir == 1){
+		w_dir = 0;
+		h_dir = 1;
+	}
+	if(h == 7 && h_dir == 1){
+		w_dir = -1;
+		h_dir = 0;
+	}
+	if(w == 0 && w_dir == -1){
+		w_dir = 0;
+		h_dir = -1;
+	}
+	if(h == 0 && h_dir == -1){
+		w_dir = 1;
+		h_dir = 0;
+	}
+
+	counter += 1;
+
+	if(counter == 28){
+		counter = 0;
+		if(LEDMatrix_getBrightness() < 100){
+			LEDMatrix_setBrightness(100);
+		}else{
+			LEDMatrix_setBrightness(25);
+		}
+	}
 
 
-	wavegenSetFreq(5);
+	/*wavegenSetFreq(5);
 	delayLoop(10000000UL);
 	wavegenSetFreq(10);
-	delayLoop(10000000UL);
+	delayLoop(10000000UL);*/
 
 }
 
