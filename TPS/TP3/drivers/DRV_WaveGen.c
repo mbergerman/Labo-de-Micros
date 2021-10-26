@@ -88,9 +88,7 @@ void initWaveGen(){
 
 	DMA_init(DAC_DMA_CHNNL, dma_config);
 
-
-	//0x2FAEF
-	initPIT(0x02FAF07);	// 1/50Mhz = 20ns   (1s/20ns)-1= 49,999,999 cycles or 0x02FAF07F);
+	initPIT(0x02FAF07F);	// 1/50Mhz = 20ns   (1s/20ns)-1= 49,999,999 cycles or 0x02FAF07F);
 	pitSetCallback(start_dma_transfer);
 }
 void wavegenSetFreq(uint32_t freq){

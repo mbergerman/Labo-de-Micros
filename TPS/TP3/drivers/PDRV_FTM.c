@@ -149,6 +149,9 @@
 #define FTM_CH7_ALT(ftm_port)	   FTM0_CH7_ALT
 
 
+#define __FTM_REG_WAIT__		for(uint32_t i = 0; i < 10000; i++){}
+
+
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
@@ -303,10 +306,11 @@ void FTM_init(uint8_t FTM, FTM_Config_t config)
 	FTM_PTRS[FTM]->CNTIN = 0x0;
 	FTM_PTRS[FTM]->CNT = 0x0;
 	FTM_PTRS[FTM]->MOD = FTM_MOD_MOD(config.modulo);
-	for(int i = 0; i < 10000; i++)
-	{
 
-	}
+
+	__FTM_REG_WAIT__
+
+
 	switch(config.mode)
 	{
 		case FTM_InputCapture:
@@ -331,10 +335,11 @@ void FTM_init(uint8_t FTM, FTM_Config_t config)
 		config.counter = (uint16_t)((config.PWM_DC / 100.0) * config.modulo);
 	}
 	FTM_PTRS[FTM]->CONTROLS[config.channel].CnV = FTM_CnV_VAL(config.counter);
-	for(int i = 0; i < 10000; i++)
-	{
 
-	}
+
+	__FTM_REG_WAIT__
+
+
     // Set DMA mode
     FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC = (FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC & ~(FTM_CnSC_DMA_MASK)) |
     											   (FTM_CnSC_DMA(config.DMA_on));

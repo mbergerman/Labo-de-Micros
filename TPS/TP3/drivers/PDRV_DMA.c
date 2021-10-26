@@ -92,7 +92,8 @@ void DMA_init(uint8_t DMA_channel, DMA_config_t config)
     DMA0->TCD[DMA_channel].DLAST_SGA = 0x00;
 
 	// Setup control and status register.
-	//DMA0->TCD[DMA_channel].CSR = DMA_CSR_INTMAJOR_MASK;	//Enable Major Interrupt.
+    //DMA0->TCD[DMA_channel].CSR &= ~DMA_CSR_INTMAJOR_MASK;
+	DMA0->TCD[DMA_channel].CSR |= DMA_CSR_INTMAJOR_MASK;		//Enable Major Interrupt.
 
 	// Enable request signal
 	switch(DMA_channel)
@@ -170,22 +171,46 @@ void DMA_init(uint8_t DMA_channel, DMA_config_t config)
  *******************************************************************************
  ******************************************************************************/
 
-void DMA0_IRQHandler(void){}
+void DMA0_IRQHandler(void){
+	DMA0->TCD[0].CSR |= DMA_CSR_DONE_MASK;
+}
+
 void DMA1_IRQHandler(void){}
-void DMA2_IRQHandler(void){}
+
+void DMA2_IRQHandler(void){
+	/* Clear the interrupt flag. */
+	DMA0->CINT |= DMA_CINT_CINT(2);
+}
+
 void DMA3_IRQHandler(void){}
+
 void DMA4_IRQHandler(void){}
+
 void DMA5_IRQHandler(void){}
+
 void DMA6_IRQHandler(void){}
+
 void DMA7_IRQHandler(void){}
+
 void DMA8_IRQHandler(void){}
+
 void DMA9_IRQHandler(void){}
+
 void DMA10_IRQHandler(void){}
+
 void DMA11_IRQHandler(void){}
+
 void DMA12_IRQHandler(void){}
+
 void DMA13_IRQHandler(void){}
+
 void DMA14_IRQHandler(void){}
+
 void DMA15_IRQHandler(void){}
-void DMA_Error_IRQHandler(void){}
+
+void DMA_Error_IRQHandler(void){
+	/* Clear all error indicators.*/
+	DMA0->CERR = DMA_CERR_CAEI(1);
+}
 
 /******************************************************************************/
