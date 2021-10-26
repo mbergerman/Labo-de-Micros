@@ -177,7 +177,7 @@ void App_Init() {
 
 	// send brightness to nodered
 	timer_tx_bright = timerGetId();
-	timerStart(timer_tx_bright, TIMER_MS2TICKS(1000), TIM_MODE_PERIODIC, timer_tx_bright_callback);
+	timerStart(timer_tx_bright, TIMER_MS2TICKS(120), TIM_MODE_PERIODIC, timer_tx_bright_callback);
 	// uart receive packages
 	timer_rx = timerGetId();
 	timerStart(timer_rx, TIMER_MS2TICKS(100), TIM_MODE_PERIODIC, timer_rx_callback);
@@ -189,7 +189,7 @@ void App_Init() {
 	timerStart(timer_acc, TIMER_MS2TICKS(100), TIM_MODE_PERIODIC, timer_position_callback);
 	// send position to nodered
 	timer_tx_pos = timerGetId();
-	timerStart(timer_tx_pos, TIMER_MS2TICKS(250), TIM_MODE_PERIODIC, timer_tx_pos_callback);
+	timerStart(timer_tx_pos, TIMER_MS2TICKS(150), TIM_MODE_PERIODIC, timer_tx_pos_callback);
 	// suspend timer
 	tim_id_t timer_suspend = timerGetId();
 	timerStart(timer_suspend, TIMER_MS2TICKS(1000*SECONDS2SUSPEND/10), TIM_MODE_PERIODIC, timer_suspend_callback);
@@ -212,7 +212,7 @@ void App_Run() {
 	if (acc_memory.ptr - acc_memory.data == ACC_MEMORY_SIZE) {
 		acc_memory.ptr = acc_memory.data;
 	}
-	timerDelay(100);
+	timerDelay(10);
 
 	if(status == AWAKE) {
 		//Read ADC
