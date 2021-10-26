@@ -300,33 +300,41 @@ void FTM_init(uint8_t FTM, FTM_Config_t config)
     // Set Prescaler
     FTM_PTRS[FTM]->SC = (FTM_PTRS[FTM]->SC & ~FTM_SC_PS_MASK) | FTM_SC_PS(config.prescale);
     // Set Modulo and Counter
-    FTM_PTRS[FTM]->CNTIN = 0x0;
-    FTM_PTRS[FTM]->CNT = 0x0;
-    FTM_PTRS[FTM]->MOD = FTM_MOD_MOD(config.modulo);
-    switch(config.mode)
-    {
-    	case FTM_InputCapture:
-    		FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC =
-    						(FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC & ~(FTM_CnSC_ELSB_MASK | FTM_CnSC_ELSA_MASK)) |
-    						(FTM_CnSC_ELSB((config.IC_edge >> 1) & 0X01) | FTM_CnSC_ELSA((config.IC_edge >> 0) & 0X01));
-    	break;
-    	case FTM_OutputCompare:
-    		FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC =
-    						(FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC & ~(FTM_CnSC_ELSB_MASK | FTM_CnSC_ELSA_MASK)) |
-    		    			(FTM_CnSC_ELSB((config.OC_effect >> 1) & 0X01) | FTM_CnSC_ELSA((config.OC_effect >> 0) & 0X01));
-    	break;
-    	case FTM_PWM:
-    		FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC =
-    						(FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC & ~(FTM_CnSC_ELSB_MASK | FTM_CnSC_ELSA_MASK)) |
-    		    			(FTM_CnSC_ELSB((config.PWM_logic >> 1) & 0X01) | FTM_CnSC_ELSA((config.PWM_logic >> 0) & 0X01));
-    	break;
-    }
-    if(config.mode == FTM_PWM)
-    {
-    	// Turn percentage duty cycle to counter value
-    	config.counter = (uint16_t)((config.PWM_DC / 100.0) * config.modulo);
-    }
-    FTM_PTRS[FTM]->CONTROLS[config.channel].CnV = FTM_CnV_VAL(config.counter);
+	FTM_PTRS[FTM]->CNTIN = 0x0;
+	FTM_PTRS[FTM]->CNT = 0x0;
+	FTM_PTRS[FTM]->MOD = FTM_MOD_MOD(config.modulo);
+	for(int i = 0; i < 10000; i++)
+	{
+
+	}
+	switch(config.mode)
+	{
+		case FTM_InputCapture:
+			FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC =
+							(FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC & ~(FTM_CnSC_ELSB_MASK | FTM_CnSC_ELSA_MASK)) |
+							(FTM_CnSC_ELSB((config.IC_edge >> 1) & 0X01) | FTM_CnSC_ELSA((config.IC_edge >> 0) & 0X01));
+		break;
+		case FTM_OutputCompare:
+			FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC =
+							(FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC & ~(FTM_CnSC_ELSB_MASK | FTM_CnSC_ELSA_MASK)) |
+							(FTM_CnSC_ELSB((config.OC_effect >> 1) & 0X01) | FTM_CnSC_ELSA((config.OC_effect >> 0) & 0X01));
+		break;
+		case FTM_PWM:
+			FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC =
+							(FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC & ~(FTM_CnSC_ELSB_MASK | FTM_CnSC_ELSA_MASK)) |
+							(FTM_CnSC_ELSB((config.PWM_logic >> 1) & 0X01) | FTM_CnSC_ELSA((config.PWM_logic >> 0) & 0X01));
+		break;
+	}
+	if(config.mode == FTM_PWM)
+	{
+		// Turn percentage duty cycle to counter value
+		config.counter = (uint16_t)((config.PWM_DC / 100.0) * config.modulo);
+	}
+	FTM_PTRS[FTM]->CONTROLS[config.channel].CnV = FTM_CnV_VAL(config.counter);
+	for(int i = 0; i < 10000; i++)
+	{
+
+	}
     // Set DMA mode
     FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC = (FTM_PTRS[FTM]->CONTROLS[config.channel].CnSC & ~(FTM_CnSC_DMA_MASK)) |
     											   (FTM_CnSC_DMA(config.DMA_on));
@@ -395,7 +403,7 @@ void FTM_modifyModulo(uint8_t FTM, uint16_t modulo)
     FTM_PTRS[FTM]->MODE = (FTM_PTRS[FTM]->MODE & ~FTM_MODE_WPDIS_MASK) | FTM_MODE_WPDIS(0);
 }
 
-void* FTM_getCounterPointer(uint8_t FTM, FTM_Channel_t channel)
+void * FTM_getCounterPointer(uint8_t FTM, FTM_Channel_t channel)
 {
 	return &(FTM_PTRS[FTM]->CONTROLS[channel].CnV);
 }
