@@ -11,7 +11,7 @@
  * INCLUDE HEADER FILES
  ******************************************************************************/
 
-
+#include "Util.h"
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
@@ -37,8 +37,8 @@
  ******************************************************************************/
 
 void initWaveGen();
-void wavegenSetFreq();
-void wavegenSetAmp();
+void wavegenSetFreq(uint32_t);
+void wavegenSetAmp(uint8_t);
 
 
 /*******************************************************************************

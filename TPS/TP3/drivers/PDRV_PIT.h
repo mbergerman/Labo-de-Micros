@@ -58,7 +58,7 @@
 
 void initPIT();
 void pitSetCallback(void (*callback_fn)(void));
-void pitSetTime(uint32_t pit_time);
+void pitSetFreq(uint32_t pit_time);
 void pitStartDMAtransfer(uint32_t channel);
 
 /*******************************************************************************

@@ -41,7 +41,7 @@
 void initDAC(void);
 void dacEnableDMA();
 void dacWrite(uint16_t);
-
+void dacSetAmplitude(uint8_t amp);	// amp va de 0 a 255 pero solo se toman en cuenta los primeros 6 bits
 
 /*******************************************************************************
  ******************************************************************************/

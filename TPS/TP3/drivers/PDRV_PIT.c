@@ -10,6 +10,7 @@
 
 #include <PDRV_PIT.h>
 #include "MK64F12.h"
+#include "hardware.h"
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
@@ -74,8 +75,8 @@ void initPIT(uint32_t pit_time){
 	NVIC_EnableIRQ(PIT0_IRQn);
 }
 
-void pitSetTime(uint32_t pit_time){
-	PIT->CHANNEL[0].LDVAL = pit_time;
+void pitSetFreq(uint32_t freq){
+	PIT->CHANNEL[0].LDVAL = ((__CORE_CLOCK__/2) / freq - 1);
 }
 
 void pitSetCallback(void (*callback_fn)()){

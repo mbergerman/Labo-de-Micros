@@ -94,9 +94,11 @@ void initWaveGen(){
 	pitSetCallback(start_dma_transfer);
 }
 void wavegenSetFreq(uint32_t freq){
-	pitSetTime(freq);
+	pitSetFreq(freq * SINE_TABLE_LEN);
 }
-void wavegenSetAmp(){}
+void wavegenSetAmp(uint8_t amp){
+	dacSetAmplitude(amp);
+}
 
 /*******************************************************************************
  *******************************************************************************

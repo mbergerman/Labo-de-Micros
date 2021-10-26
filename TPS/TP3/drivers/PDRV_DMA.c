@@ -170,6 +170,22 @@ void DMA_init(uint8_t DMA_channel, DMA_config_t config)
  *******************************************************************************
  ******************************************************************************/
 
-
+void DMA0_IRQHandler(void){}
+void DMA1_IRQHandler(void){}
+void DMA2_IRQHandler(void){}
+void DMA3_IRQHandler(void){}
+void DMA4_IRQHandler(void){}
+void DMA5_IRQHandler(void){}
+void DMA6_IRQHandler(void){}
+void DMA7_IRQHandler(void){}
+void DMA8_IRQHandler(void){}
+void DMA9_IRQHandler(void){}
+void DMA10_IRQHandler(void){}
+void DMA11_IRQHandler(void){}
+void DMA12_IRQHandler(void){}
+void DMA13_IRQHandler(void){}
+void DMA14_IRQHandler(void){}
+void DMA15_IRQHandler(void){}
+void DMA_Error_IRQHandler(void){}
 
 /******************************************************************************/

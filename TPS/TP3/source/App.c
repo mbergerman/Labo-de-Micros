@@ -16,6 +16,7 @@
 #include "DRV_WaveGen.h"
 #include "DRV_Buttons.h"
 #include "DRV_Board.h"
+#include "DRV_LEDMatrix.h"
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
@@ -54,35 +55,27 @@ void App_Init() {
 	// Init Timer
 	//initTimers();
 
-	//initWaveGen();
+	initWaveGen();
 
-	initBoard();
-
-	initButtons();
+	//LEDMatrix_init();
 }
 
 void App_Run() {
-	static SR_button_t sr_data = 0;
+	/*static uint8_t w = 0;
 
-	toggleLED(BLUE);
+	color_t led_color = {120, 255, 0};
 
-	sr_data = getButtonPressed();
-
-	if(sr_data == BUTTON_LEFT){
-		printf("L\n");
-	}else if(sr_data == BUTTON_RIGHT){
-		printf("R\n");
-	}else if(sr_data == BUTTON_STATE){
-		printf("S\n");
-	}
+	LEDMatrix_updateLED(led_color, 3, w);
 
 	timerDelay(TIMER_MS2TICKS(500));
 
+	w = (w+1)%8;*/
 
-	/*wavegenSetFreq(0x0200000);
+
+	wavegenSetFreq(5);
 	delayLoop(10000000UL);
-	wavegenSetFreq(0x0100000);
-	delayLoop(10000000UL);*/
+	wavegenSetFreq(10);
+	delayLoop(10000000UL);
 	/*static uint16_t val = 0;
 
 	dacWrite(val);
