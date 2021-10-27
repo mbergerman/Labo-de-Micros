@@ -22,7 +22,7 @@
 //============================================
 #if CLOUD==CLOUD_HOME
 
-IPAddress MqttServer(192,168,0,10);				// MQTT server URL or IP (see ipconfig -> IPv4)
+IPAddress MqttServer(192,168,0,7);				// MQTT server URL or IP (see ipconfig -> IPv4)
 const unsigned int MqttPort=1883; 					// MQTT port (default 1883)
 const char MqttUser[]="user";		// user name 
 const char MqttPassword[]="password";				// user password
@@ -51,8 +51,8 @@ WiFiClient wclient;
 PubSubClient mqtt_client(wclient);
 //=====================================================================
 // WiFi credentials
-char ssid[] = "El Salvador 2.4GHz";
-char password[] = "tele12345";   // Set password to "" for open networks.
+char ssid[] = "Mi_Red";
+char password[] = "alambrico0";   // Set password to "" for open networks.
 
 //char ssid[] = "NODE_RED";
 //char password[] = "GEDA2016";   // Set password to "" for open networks.
@@ -61,7 +61,7 @@ char password[] = "tele12345";   // Set password to "" for open networks.
 //Board defifinitions 
  
 //======================
-#define HARD LOLIN              // Select Board Type or External pin
+#define HARD AMICA              // Select Board Type or External pin
 //======================
 
 #define AMICA 0

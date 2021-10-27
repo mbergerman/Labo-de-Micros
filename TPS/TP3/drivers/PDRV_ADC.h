@@ -6,6 +6,8 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+typedef void (*adc_callback_t)(void);
+
 typedef enum
 {
 	ADC_b8,
@@ -68,9 +70,10 @@ typedef uint16_t ADCData_t;
 
 void ADC_Init (ADC_n, ADCBits_t, ADCCycles_t, ADCClock_Divide, ADCMux_t, ADCChannel_t);
 
-void 		ADC_SetInterruptMode   (ADC_n, bool);
-bool 		ADC_IsInterruptPending (ADC_n);
-void 		ADC_ClearInterruptFlag (ADC_n);
+void ADC_SetInterruptMode(ADC_n, bool);
+bool ADC_IsInterruptPending(ADC_n);
+void ADC_ClearInterruptFlag(ADC_n);
+void ADC_SetInterruptCallback(ADC_n, adc_callback_t);
 
 void 		ADC_SetResolution 	   (ADC_n, ADCBits_t);
 ADCBits_t 	ADC_GetResolution 	   (ADC_n);

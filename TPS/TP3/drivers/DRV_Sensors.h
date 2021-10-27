@@ -1,11 +1,11 @@
 /***************************************************************************//**
-  @file     DRV_WaveGen.h
+  @file     DRV_Sensor.h
   @brief    +Descripcion del archivo+
   @author   matia
  ******************************************************************************/
 
-#ifndef DRV_WAVEGEN_H_
-#define DRV_WAVEGEN_H_
+#ifndef DRV_SENSORS_H_
+#define DRV_SENSORS_H_
 
 /*******************************************************************************
  * INCLUDE HEADER FILES
@@ -17,7 +17,7 @@
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
 
-
+typedef uint16_t sensorData_t;
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -36,12 +36,11 @@
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
 
-void initWaveGen(float, uint32_t);
-void wavegenSetFreq(uint32_t);
-void wavegenSetAmp(float);
-float wavegenGetAmp();
+void initSensor(uint8_t);
+void sensorStartReading(uint8_t num);
+sensorData_t sensorGetValue(uint8_t num);
 
 /*******************************************************************************
  ******************************************************************************/
 
-#endif /* DRV_WAVEGEN_H_ */
+#endif /* DRV_SENSORS_H_ */

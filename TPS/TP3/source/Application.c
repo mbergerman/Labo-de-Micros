@@ -15,10 +15,11 @@
 #include <math.h>
 #include "DRV_UART.h"
 #include "DRV_Timers.h"
-#include "PDRV_ADC.h"
+#include "DRV_Sensors.h"
 #include "DRV_Accelerometer.h"
 #include "DRV_Buttons.h"
 #include "DRV_LEDMatrix.h"
+#include "DRV_WaveGen.h"
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
@@ -53,7 +54,7 @@
 #define	ACC_MEMORY_SIZE		10
 #define MIN_POS				0
 #define MAX_POS				7
-#define ACC_THRESHOLD		80
+#define ACC_THRESHOLD		250  // 80
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -101,7 +102,7 @@ void timer_buttons_callback();
  * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-static std_acc_t standard_deviation(acc_t* data, uint8_t len);
+//static std_acc_t standard_deviation(acc_t* data, uint8_t len);
 
 /*******************************************************************************
  * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
@@ -136,14 +137,16 @@ static uint8_t wait = SECONDS2SUSPEND;
 
 
 // ADC
-static ADCData_t ADC_data[3]; //save three values in order to notice significant changes
-static ADCData_t LDR_data[2];
-// Acc
+static sensorData_t pot_data[2]; //save two values in order to notice significant changes
+static sensorData_t LDR_data[2];
+
+// Accel
 typedef struct {
 	acc_t data[ACC_MEMORY_SIZE];
 	acc_t* ptr;
 }acc_memory_t;
 static acc_memory_t acc_memory;
+static acc_t accel_value;
 
 // buttons
 static SR_button_t button = BUTTON_NONE;
@@ -151,7 +154,7 @@ static direction_t direction = HORIZONTAL;
 
 
 //wavegen
-static wave_t wave = {1.0, 10};
+static wave_t wave_params = {100.0, 10};
 
 /*******************************************************************************
  *******************************************************************************
@@ -166,15 +169,13 @@ void App_Init() {
 	// Init UART
 	initUartCom();
 
-	//Init ADC
-	ADC_Init(ADC0_t, ADC_b8, ADC_c4, input_clock, ADC_mA, 0);
-	ADC_SetInterruptMode(ADC0_t, true);
-	ADC_StartConversion(ADC0_t, 0);
+	//Init Potentiometer
+	initSensor(0);
+	sensorStartReading(0);
 
-	//Init ADC LDR
-	ADC_Init(ADC1_t, ADC_b8, ADC_c4, input_clock, ADC_mA, 0);
-	ADC_SetInterruptMode(ADC1_t, true);
-	ADC_StartConversion(ADC1_t, 0);
+	//Init LDR
+	initSensor(1);
+	sensorStartReading(1);
 
 	//Init Accelerometer
 	initAccelerometer();
@@ -183,26 +184,34 @@ void App_Init() {
 	//Init buttons with SPI
 	initButtons();
 
+	//Init WaveGen
+	initWaveGen(wave_params.a, wave_params.f);
+
 	//Config UART Timers
 
 	// send brightness to nodered
 	timer_tx_bright = timerGetId();
 	timerStart(timer_tx_bright, TIMER_MS2TICKS(120), TIM_MODE_PERIODIC, timer_tx_bright_callback);
+
 	// uart receive packages
 	timer_rx = timerGetId();
 	timerStart(timer_rx, TIMER_MS2TICKS(100), TIM_MODE_PERIODIC, timer_rx_callback);
+
 	// send status to nodered
 	timer_tx_status = timerGetId();
 	timerStart(timer_tx_status, TIMER_MS2TICKS(200), TIM_MODE_PERIODIC, timer_tx_status_callback);
+
 	// update accelerometer
 	timer_acc = timerGetId();
-	timerStart(timer_acc, TIMER_MS2TICKS(100), TIM_MODE_PERIODIC, timer_position_callback);
+	timerStart(timer_acc, TIMER_MS2TICKS(250), TIM_MODE_PERIODIC, timer_position_callback);
+
 	// send position to nodered
 	timer_tx_pos = timerGetId();
 	timerStart(timer_tx_pos, TIMER_MS2TICKS(150), TIM_MODE_PERIODIC, timer_tx_pos_callback);
+
 	// suspend timer
 	tim_id_t timer_suspend = timerGetId();
-	timerStart(timer_suspend, TIMER_MS2TICKS(1000*SECONDS2SUSPEND/10), TIM_MODE_PERIODIC, timer_suspend_callback);
+	//timerStart(timer_suspend, TIMER_MS2TICKS(1000*SECONDS2SUSPEND/10), TIM_MODE_PERIODIC, timer_suspend_callback);
 
 	//update position with buttons
 	tim_id_t timer_buttons = timerGetId();
@@ -220,32 +229,34 @@ void App_Run() {
 		accel_config = accelConfigInit();
 	}
 
-	*acc_memory.ptr++ = readAcceleration();
-	if (acc_memory.ptr - acc_memory.data == ACC_MEMORY_SIZE) {
-		acc_memory.ptr = acc_memory.data;
-	}
+	accel_value = readAcceleration();
+
+	//*acc_memory.ptr++ = readAcceleration();
+	//if (acc_memory.ptr - acc_memory.data == ACC_MEMORY_SIZE) {
+	//	acc_memory.ptr = acc_memory.data;
+	//}
 	timerDelay(10);
 
 	if(status == AWAKE) {
-		//Read ADC
-		ADC_data[2] = ADC_data[1];
-		ADC_data[1] = ADC_data[0];
-		ADC_data[0] = ADC_getValue(ADC0_t);
+		//Read Pot
+		pot_data[0] = sensorGetValue(0);
 
-		LDR_data[1] = LDR_data[0];
-		LDR_data[0] = ADC_getValue(ADC1_t);
+		LDR_data[0] = sensorGetValue(1);
 
 
-		if ( abs(ADC_data[1]-ADC_data[0])>=5 && abs(ADC_data[2]-ADC_data[1])>=2  ) {
-			point.brightness = (uint8_t)( 100 * ADC_getValue(ADC0_t) / 255 );
+		if ( abs(pot_data[0]-pot_data[1]) >= 10 ) {
+			point.brightness = (uint8_t)( 100.0 * pot_data[0] / 255.0 );
 			change_brightness = true;
+			pot_data[1] = pot_data[0];
 			wait = SECONDS2SUSPEND;
 		}
 
-		if ( abs(LDR_data[1]-LDR_data[0])>=1 ) {
+		if ( abs(LDR_data[0]-LDR_data[1]) >= 3 ) {
+			LDR_data[1] = LDR_data[0];
+
 			package_t package;
 			package.topic[0] = LDR_TOPIC;
-			package.payload[0] = LDR_data[0];
+			package.payload[0] = 255-LDR_data[0];
 			sentPackage(package);
 			if(adaptative) {
 				point.brightness = (uint8_t)( 100 * (255-LDR_data[0]) / 255 );
@@ -267,7 +278,7 @@ void App_Run() {
 
 		if(change_brightness) {
 			// Stub for update_brightness()
-			//printf("New brightness: %d%%\n",point.brightness);
+			printf("New brightness: %d%%\n",point.brightness);
 			//
 
 			LEDMatrix_setBrightness(point.brightness);
@@ -290,15 +301,19 @@ void App_Run() {
 
 		if(change_amplitud) {
 			// Stub for update_amplitud()
-			printf("New amplitud: %.2fV\n", wave.a);
-			//
+			printf("New amplitud: %.2fV\n", wave_params.a);
+
+			wavegenSetAmp(wave_params.a);
+
 			change_amplitud = false;
 		}
 
 		if(change_frequency) {
 			// Stub for update_amplitud()
-			printf("New frequency: %dHz\n", wave.f);
-			//
+			printf("New frequency: %dHz\n", wave_params.f);
+
+			wavegenSetFreq(wave_params.f);
+
 			change_frequency = false;
 		}
 
@@ -362,11 +377,11 @@ void timer_rx_callback() {
 		emptyInbox();
 		break;
 	case AMPLITUD_TOPIC:
-		wave.a = (float)0.1*package.payload[0];
+		wave_params.a = (float)(100.0 / 33.0)*package.payload[0];
 		change_amplitud = true;
 		break;
 	case FREQUENCY_TOPIC:
-		wave.f = package.payload[0];
+		wave_params.f = package.payload[0];
 		change_frequency = true;
 		break;
 	case ADAPTATIVE_TOPIC:
@@ -394,34 +409,26 @@ void timer_suspend_callback() {
 
 // ==== UPDATE POSITION =====
 void timer_position_callback() {
-	std_acc_t std_acc = standard_deviation(acc_memory.data, ACC_MEMORY_SIZE);
-	if(std_acc.x > ACC_THRESHOLD) {
 
+	if(abs(accel_value.x) > ACC_THRESHOLD || abs(accel_value.y) > ACC_THRESHOLD){
 		if(!change_position){
 			point.last_pos.x = point.pos.x;
 			point.last_pos.y = point.pos.y;
 		}
-
 		change_position = true;
-		if((acc_memory.ptr-1)->x > 0) {
+
+		if(accel_value.x > ACC_THRESHOLD) {
 			point.pos.x += point.pos.x!=MAX_POS;
 		}
-		else if((acc_memory.ptr-1)->x < 0) {
+		else if(accel_value.x < -ACC_THRESHOLD) {
 			point.pos.x -= point.pos.x!=MIN_POS;
 		}
-	}
-	if( std_acc.y > ACC_THRESHOLD) {
 
-		if(!change_position){
-			point.last_pos.x = point.pos.x;
-			point.last_pos.y = point.pos.y;
-		}
-
-		change_position = true;
-		if((acc_memory.ptr-1)->y > 0) {
+		// Por como esta conectado, el sentido de Y está invertido
+		if(accel_value.y < -ACC_THRESHOLD) {
 			point.pos.y += point.pos.y!=MAX_POS;
 		}
-		else if((acc_memory.ptr-1)->x < 0) {
+		else if(accel_value.y > ACC_THRESHOLD) {
 			point.pos.y -= point.pos.y!=MIN_POS;
 		}
 	}
@@ -490,7 +497,7 @@ void timer_buttons_callback() {
  *******************************************************************************
  ******************************************************************************/
 
-static std_acc_t standard_deviation(acc_t* data, uint8_t len) {
+/*static std_acc_t standard_deviation(acc_t* data, uint8_t len) {
    int32_t sum_x = 0;
    int32_t sum_y = 0;
    double deviation;
@@ -520,4 +527,4 @@ static std_acc_t standard_deviation(acc_t* data, uint8_t len) {
    std_acc_t std_acc = {stddeviation_x,stddeviation_y};
 
    return std_acc;
-}
+}*/
