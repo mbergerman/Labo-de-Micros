@@ -1,0 +1,876 @@
+[
+    {
+        "id": "7a25794c893453b8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "44e4bc0a5a7e828c",
+        "type": "mqtt-broker",
+        "name": "Home",
+        "broker": "192.168.0.10",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "498e6c4ae785d2d3",
+        "type": "ui_tab",
+        "name": "Trabajo Práctico 3 - LM Grupo 1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5582399678d04b77",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "eb53bd5ef2403677",
+        "type": "ui_group",
+        "name": "Brillo",
+        "tab": "498e6c4ae785d2d3",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d94d93a689df7b24",
+        "type": "ui_group",
+        "name": "Color",
+        "tab": "498e6c4ae785d2d3",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c1cac965dbd6ac98",
+        "type": "ui_group",
+        "name": "Estado",
+        "tab": "498e6c4ae785d2d3",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0012c4521172d651",
+        "type": "ui_group",
+        "name": "Posición",
+        "tab": "498e6c4ae785d2d3",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e49857e121dc6c61",
+        "type": "ui_group",
+        "name": "Generador",
+        "tab": "498e6c4ae785d2d3",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d9132559c95119b7",
+        "type": "ui_group",
+        "name": "Luz",
+        "tab": "498e6c4ae785d2d3",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a7f8479c8f6b4c68",
+        "type": "mqtt in",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "topic": "brillo",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "44e4bc0a5a7e828c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 250,
+        "y": 60,
+        "wires": [
+            [
+                "6f7d764c2d1a5936",
+                "da8a2ddf86bafcc1"
+            ]
+        ]
+    },
+    {
+        "id": "6f7d764c2d1a5936",
+        "type": "debug",
+        "z": "7a25794c893453b8",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "665e24e56abd9dc5",
+        "type": "ui_colour_picker",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "label": "",
+        "group": "d94d93a689df7b24",
+        "format": "rgb",
+        "outformat": "string",
+        "showSwatch": true,
+        "showPicker": true,
+        "showValue": true,
+        "showHue": false,
+        "showAlpha": false,
+        "showLightness": true,
+        "square": "false",
+        "dynOutput": "false",
+        "order": 0,
+        "width": "5",
+        "height": "5",
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 510,
+        "y": 360,
+        "wires": [
+            [
+                "a8faee3c22be7fe8"
+            ]
+        ]
+    },
+    {
+        "id": "a8faee3c22be7fe8",
+        "type": "mqtt out",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "topic": "color",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "44e4bc0a5a7e828c",
+        "x": 710,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "410d8f33c70b08d8",
+        "type": "mqtt out",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "topic": "brillo_nodered",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "44e4bc0a5a7e828c",
+        "x": 680,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "da8a2ddf86bafcc1",
+        "type": "ui_slider",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "label": "Brillo",
+        "tooltip": "",
+        "group": "eb53bd5ef2403677",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 470,
+        "y": 60,
+        "wires": [
+            [
+                "410d8f33c70b08d8"
+            ]
+        ],
+        "info": "`color=red`"
+    },
+    {
+        "id": "f274d019277b28f1",
+        "type": "mqtt out",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "topic": "suspender_nodered",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "44e4bc0a5a7e828c",
+        "x": 740,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "dcb65cc3d0a730f3",
+        "type": "debug",
+        "z": "7a25794c893453b8",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "e6094f0dc57a48a2",
+        "type": "mqtt in",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "topic": "suspender",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "44e4bc0a5a7e828c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 300,
+        "y": 480,
+        "wires": [
+            [
+                "dcb65cc3d0a730f3",
+                "e26279e8d6be12a1"
+            ]
+        ]
+    },
+    {
+        "id": "3a7932e70d0a7e9f",
+        "type": "ui_button",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "group": "c1cac965dbd6ac98",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "I O",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "#d9534f",
+        "className": "",
+        "icon": "",
+        "payload": "a",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 580,
+        "wires": [
+            [
+                "f274d019277b28f1"
+            ]
+        ]
+    },
+    {
+        "id": "e25cdcee22466a0d",
+        "type": "ui_text",
+        "z": "7a25794c893453b8",
+        "group": "c1cac965dbd6ac98",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 650,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "e26279e8d6be12a1",
+        "type": "change",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "65",
+                "fromt": "num",
+                "to": "Apagado",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "69",
+                "fromt": "num",
+                "to": "Encendido",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 460,
+        "wires": [
+            [
+                "e25cdcee22466a0d"
+            ]
+        ]
+    },
+    {
+        "id": "a60bda67eba82199",
+        "type": "mqtt in",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "topic": "position",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "44e4bc0a5a7e828c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 310,
+        "y": 660,
+        "wires": [
+            [
+                "736b36cc43a462eb"
+            ]
+        ]
+    },
+    {
+        "id": "736b36cc43a462eb",
+        "type": "ui_text",
+        "z": "7a25794c893453b8",
+        "group": "0012c4521172d651",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 510,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "7da376187fc65240",
+        "type": "ui_slider",
+        "z": "7a25794c893453b8",
+        "d": true,
+        "name": "",
+        "label": "x",
+        "tooltip": "",
+        "group": "0012c4521172d651",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "7",
+        "step": 1,
+        "className": "",
+        "x": 510,
+        "y": 740,
+        "wires": [
+            [
+                "ae1750487d86386e"
+            ]
+        ]
+    },
+    {
+        "id": "cc34c21846c4dc62",
+        "type": "ui_slider",
+        "z": "7a25794c893453b8",
+        "d": true,
+        "name": "",
+        "label": "y",
+        "tooltip": "",
+        "group": "0012c4521172d651",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "7",
+        "step": 1,
+        "className": "",
+        "x": 510,
+        "y": 800,
+        "wires": [
+            [
+                "54f90892b415a6ee"
+            ]
+        ]
+    },
+    {
+        "id": "ae1750487d86386e",
+        "type": "mqtt out",
+        "z": "7a25794c893453b8",
+        "d": true,
+        "name": "",
+        "topic": "posx",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "44e4bc0a5a7e828c",
+        "x": 670,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "54f90892b415a6ee",
+        "type": "mqtt out",
+        "z": "7a25794c893453b8",
+        "d": true,
+        "name": "",
+        "topic": "posy",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "44e4bc0a5a7e828c",
+        "x": 670,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "08893a69a57b8554",
+        "type": "change",
+        "z": "7a25794c893453b8",
+        "d": true,
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66474a35e50377ba",
+        "type": "comment",
+        "z": "7a25794c893453b8",
+        "name": "Brillo",
+        "info": "",
+        "x": 110,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "9d48b362462c7100",
+        "type": "comment",
+        "z": "7a25794c893453b8",
+        "name": "Color",
+        "info": "",
+        "x": 110,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "6b4257cccf823aca",
+        "type": "comment",
+        "z": "7a25794c893453b8",
+        "name": "Suspensión",
+        "info": "",
+        "x": 110,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "0ead9ebde4ae45e6",
+        "type": "comment",
+        "z": "7a25794c893453b8",
+        "name": "Posición",
+        "info": "",
+        "x": 120,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "99cb2eade9646352",
+        "type": "comment",
+        "z": "7a25794c893453b8",
+        "name": "Wavegen",
+        "info": "",
+        "x": 120,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "3bad6bd6f072fcc4",
+        "type": "ui_slider",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "label": "Amplitud [Volts]",
+        "tooltip": "",
+        "group": "e49857e121dc6c61",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "0",
+        "max": "3.3",
+        "step": "0.1",
+        "className": "",
+        "x": 420,
+        "y": 900,
+        "wires": [
+            [
+                "44c0c450289b0c49"
+            ]
+        ]
+    },
+    {
+        "id": "44c0c450289b0c49",
+        "type": "mqtt out",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "topic": "amplitud",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "44e4bc0a5a7e828c",
+        "x": 600,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "5842e5e1b713080d",
+        "type": "ui_slider",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "label": "Frecuencia [Hz]",
+        "tooltip": "",
+        "group": "e49857e121dc6c61",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "1",
+        "max": "250",
+        "step": "1",
+        "className": "",
+        "x": 410,
+        "y": 960,
+        "wires": [
+            [
+                "e0781119aed4393b"
+            ]
+        ]
+    },
+    {
+        "id": "e0781119aed4393b",
+        "type": "mqtt out",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "topic": "frequency",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "44e4bc0a5a7e828c",
+        "x": 600,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "ab48ade040188403",
+        "type": "mqtt in",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "topic": "ldr",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "44e4bc0a5a7e828c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 310,
+        "y": 180,
+        "wires": [
+            [
+                "a5e3548ef9c23992"
+            ]
+        ]
+    },
+    {
+        "id": "a5e3548ef9c23992",
+        "type": "ui_gauge",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "group": "eb53bd5ef2403677",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Luminosidad",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "255",
+        "colors": [
+            "#553535",
+            "#ac790c",
+            "#fff700"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 480,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "108f7ca4a7aeb7a1",
+        "type": "ui_switch",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "label": "Modo adaptativo",
+        "tooltip": "",
+        "group": "eb53bd5ef2403677",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 480,
+        "y": 260,
+        "wires": [
+            [
+                "ae927491e771d3fb"
+            ]
+        ]
+    },
+    {
+        "id": "ae927491e771d3fb",
+        "type": "mqtt out",
+        "z": "7a25794c893453b8",
+        "name": "",
+        "topic": "adaptative",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "44e4bc0a5a7e828c",
+        "x": 690,
+        "y": 260,
+        "wires": []
+    }
+]
