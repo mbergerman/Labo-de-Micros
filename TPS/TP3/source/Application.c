@@ -38,6 +38,10 @@
 #define BLUE_TOPIC			'b'
 #define SUSPEND_TOPIC		'S'
 #define POSITION_TOPIC		'P'
+#define AMPLITUD_TOPIC		'V'
+#define FREQUENCY_TOPIC		'F'
+#define LDR_TOPIC			'L'
+#define ADAPTATIVE_TOPIC	'M'
 
 //STATUS
 #define SUSPENDED			'A'
@@ -74,6 +78,11 @@ typedef struct {
 } std_acc_t;
 
 typedef enum {VERTICAL, HORIZONTAL} direction_t;
+
+typedef struct {
+	float a;
+	uint8_t f;
+} wave_t;
 
 /*******************************************************************************
  * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
@@ -117,6 +126,9 @@ static tim_id_t timer_tx_pos;
 static bool change_color = true;
 static bool change_brightness = true;
 static bool change_position = true;
+static bool change_amplitud = true;
+static bool change_frequency = true;
+static bool adaptative = false;
 
 // suspend status
 static char status = AWAKE;
@@ -125,7 +137,7 @@ static uint8_t wait = SECONDS2SUSPEND;
 
 // ADC
 static ADCData_t ADC_data[3]; //save three values in order to notice significant changes
-
+static ADCData_t LDR_data[2];
 // Acc
 typedef struct {
 	acc_t data[ACC_MEMORY_SIZE];
@@ -134,10 +146,12 @@ typedef struct {
 static acc_memory_t acc_memory;
 
 // buttons
-
 static SR_button_t button = BUTTON_NONE;
 static direction_t direction = HORIZONTAL;
 
+
+//wavegen
+static wave_t wave = {1.0, 10};
 
 /*******************************************************************************
  *******************************************************************************
@@ -158,9 +172,9 @@ void App_Init() {
 	ADC_StartConversion(ADC0_t, 0);
 
 	//Init ADC LDR
-	//ADC_Init(ADC1_t, ADC_b8, ADC_c4, input_clock, ADC_mA, 0);
-	//ADC_SetInterruptMode(ADC0_t, true);
-	//ADC_StartConversion(ADC0_t, 0);
+	ADC_Init(ADC1_t, ADC_b8, ADC_c4, input_clock, ADC_mA, 0);
+	ADC_SetInterruptMode(ADC1_t, true);
+	ADC_StartConversion(ADC1_t, 0);
 
 	//Init Accelerometer
 	initAccelerometer();
@@ -188,7 +202,7 @@ void App_Init() {
 	timerStart(timer_tx_pos, TIMER_MS2TICKS(150), TIM_MODE_PERIODIC, timer_tx_pos_callback);
 	// suspend timer
 	tim_id_t timer_suspend = timerGetId();
-	//timerStart(timer_suspend, TIMER_MS2TICKS(1000*SECONDS2SUSPEND/10), TIM_MODE_PERIODIC, timer_suspend_callback);
+	timerStart(timer_suspend, TIMER_MS2TICKS(1000*SECONDS2SUSPEND/10), TIM_MODE_PERIODIC, timer_suspend_callback);
 
 	//update position with buttons
 	tim_id_t timer_buttons = timerGetId();
@@ -218,6 +232,9 @@ void App_Run() {
 		ADC_data[1] = ADC_data[0];
 		ADC_data[0] = ADC_getValue(ADC0_t);
 
+		LDR_data[1] = LDR_data[0];
+		LDR_data[0] = ADC_getValue(ADC1_t);
+
 
 		if ( abs(ADC_data[1]-ADC_data[0])>=5 && abs(ADC_data[2]-ADC_data[1])>=2  ) {
 			point.brightness = (uint8_t)( 100 * ADC_getValue(ADC0_t) / 255 );
@@ -225,9 +242,21 @@ void App_Run() {
 			wait = SECONDS2SUSPEND;
 		}
 
+		if ( abs(LDR_data[1]-LDR_data[0])>=1 ) {
+			package_t package;
+			package.topic[0] = LDR_TOPIC;
+			package.payload[0] = LDR_data[0];
+			sentPackage(package);
+			if(adaptative) {
+				point.brightness = (uint8_t)( 100 * (255-LDR_data[0]) / 255 );
+				change_brightness = true;
+				wait = SECONDS2SUSPEND;
+			}
+		}
+
 		if(change_color) {
 			// Stub for update_color()
-			//printf("New color: rgb(%d,%d,%d)\n",point.color.r,point.color.g,point.color.b);
+			printf("New color: rgb(%d,%d,%d)\n",point.color.r,point.color.g,point.color.b);
 
 			LEDMatrix_updateLED(black_color, point.last_pos.y, point.last_pos.x);
 			LEDMatrix_updateLED(point.color, point.pos.y, point.pos.x);
@@ -257,6 +286,20 @@ void App_Run() {
 
 			change_position = false;
 			wait = SECONDS2SUSPEND;
+		}
+
+		if(change_amplitud) {
+			// Stub for update_amplitud()
+			printf("New amplitud: %.2fV\n", wave.a);
+			//
+			change_amplitud = false;
+		}
+
+		if(change_frequency) {
+			// Stub for update_amplitud()
+			printf("New frequency: %dHz\n", wave.f);
+			//
+			change_frequency = false;
 		}
 
 	}
@@ -317,6 +360,22 @@ void timer_rx_callback() {
 		}
 		wait = SECONDS2SUSPEND;
 		emptyInbox();
+		break;
+	case AMPLITUD_TOPIC:
+		wave.a = (float)0.1*package.payload[0];
+		change_amplitud = true;
+		break;
+	case FREQUENCY_TOPIC:
+		wave.f = package.payload[0];
+		change_frequency = true;
+		break;
+	case ADAPTATIVE_TOPIC:
+		if(package.payload[0]==1) {
+			adaptative = true;
+		}
+		else {
+			adaptative = false;
+		}
 		break;
 	}
 }

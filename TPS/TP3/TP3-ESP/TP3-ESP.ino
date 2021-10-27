@@ -122,7 +122,7 @@ char password[] = "tele12345";   // Set password to "" for open networks.
 #define DEBUG_OFF  0
 #define DEBUG_ON   1
 
-#define debug DEBUG_OFF
+#define debug DEBUG_ON
 
 #define debug_message(fmt,...)          \
   do {              \
@@ -168,7 +168,8 @@ void setup() {
 #define PACKAGE_SIZE (TOPIC_SIZE+PAYLOAD_SIZE)
 #define TOPIC(w)    (w=='B'?"brillo":( \
                     w=='S'?"suspender":( \
-                    w=='P'?"position":"otro")))
+                    w=='P'?"position":( \
+                    w=='L'?"ldr":"otro"))))
 
 typedef struct {
     char topic[TOPIC_SIZE+1];
@@ -183,6 +184,7 @@ package_t* inbox_ptr = &inbox;
 bool ready_to_pub = true;
 
 byte brightness = 0;
+byte ldr = 0;
 char suspended = 'A';
 byte pos = 0;
 
@@ -229,6 +231,13 @@ void loop() {
             byte posy = inbox.payload[0] & 0xF;
             byte position_payload[11] = {'(','x',',','y',')','=','(',(byte)('0'+posx),',',(byte)('0'+posy),')'};
             mqtt_client.publish( String(TOPIC(inbox.topic[0])).c_str() , position_payload, 11, false); //publish position
+        }
+    }
+
+    if(inbox.topic[0] == 'L') {
+        if(ldr != inbox.payload[0]) {
+            ldr = inbox.payload[0];
+            mqtt_client.publish( String(TOPIC(inbox.topic[0])).c_str() , String(inbox.payload[0]).c_str(), false); //publish brightness
         }
     }
 
@@ -334,6 +343,41 @@ void ParseTopic(char* topic, byte* payload, unsigned int length)
         Serial.write(!suspended+'0'); //toggle;
     }
 
+    
+    else if(!strcmp(topic,"amplitud")) {
+        char number_str[6] = {0};
+        for(unsigned int i=0; i<length; i++) {
+            number_str[i] = *(payload+i);
+        }
+        Serial.write('V');
+        Serial.write((byte)(atof(number_str)*10.0));
+    }
+
+    
+    else if(!strcmp(topic,"frequency")) {
+        char number_str[6] = {0};
+        for(unsigned int i=0; i<length; i++) {
+            number_str[i] = *(payload+i);
+        }
+        Serial.write('F');
+        Serial.write((byte)atoi(number_str));
+    }
+
+    else if(!strcmp(topic,"adaptative")) {
+        char bool_str[6] = {0};
+        for(unsigned int i=0; i<length; i++) {
+            bool_str[i] = *(payload+i);
+        }
+        if(!strcmp(bool_str,"true")) {
+            Serial.write('M');
+            Serial.write((byte)1);
+        }
+        else if(!strcmp(bool_str,"false")) {
+            Serial.write('M');
+            Serial.write((byte)0);
+        }
+    }
+    
 }
 
 void get_color_number(char* ptr1, char* ptr2, char* const color) {
@@ -376,6 +420,9 @@ void reconnect_() {
             mqtt_client.subscribe("color");
             mqtt_client.subscribe("brillo_nodered");
             mqtt_client.subscribe("suspender_nodered");
+            mqtt_client.subscribe("amplitud");
+            mqtt_client.subscribe("frequency");
+            mqtt_client.subscribe("adaptative");
       }
       else
       {
