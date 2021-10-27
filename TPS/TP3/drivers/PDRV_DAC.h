@@ -19,6 +19,7 @@
 
 #define DAC_DMA_CHNNL	2
 #define DAC_DMA_DEST	(&DAC0->DAT[0].DATL)
+#define DAC_SCALE		(0b1 << 12)
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS

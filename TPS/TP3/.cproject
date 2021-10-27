@@ -245,11 +245,14 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="com.crt.advproject.config.exe.debug.1284265667.1281607362" name="Application.c" rcbsApplicability="disable" resourcePath="source/Application.c" toolsToInvoke="com.crt.advproject.gcc.exe.debug.1546198014.843558031">
+						<tool id="com.crt.advproject.gcc.exe.debug.1546198014.843558031" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug.1546198014"/>
+					</fileInfo>
 					<fileInfo id="com.crt.advproject.config.exe.debug.1284265667.858181136" name="PDRV_FTM.h" rcbsApplicability="disable" resourcePath="drivers/PDRV_FTM.h" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
 						<entry flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="drivers"/>
-						<entry excluding="App-Test-Acc.c|Application.c|App-Test-HAL.c" flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="source"/>
+						<entry excluding="App-Test-Acc.c|APP_TEST.c|App.c|App-Test-HAL.c" flags="LOCAL|VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="source"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

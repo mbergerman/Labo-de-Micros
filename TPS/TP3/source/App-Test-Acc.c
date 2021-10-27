@@ -38,6 +38,9 @@
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
+static uint8_t xaxis[2];
+static uint8_t yaxis[2];
+
 /*******************************************************************************
  *******************************************************************************
                         GLOBAL FUNCTION DEFINITIONS
@@ -58,9 +61,9 @@ void App_Run (void)
 	static bool accel_config = false;
 	if(!accel_config) accel_config = accelConfigInit();
 
-	acc_t acc = readAcceleration();
-	timerDelay(TIMER_MS2TICKS(1000));
-	printf("X = %d , Y = %d\n", acc.x, acc.y);
+
+	acc_t vector = readAcceleration();
+	printf("X = %d , Y = %d\n", vector.x, vector.y);
 
 }
 
@@ -72,4 +75,3 @@ void App_Run (void)
 
 /*******************************************************************************
  ******************************************************************************/
-

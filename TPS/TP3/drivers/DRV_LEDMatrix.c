@@ -128,7 +128,7 @@ void LEDMatrix_updateLED(color_t led, uint8_t height, uint8_t width){
 
 void LEDMatrix_setBrightness(float brightness)
 {
-	matrix_brightness = brightness;
+	matrix_brightness = (brightness > MAX_BRIGHTNESS) ? MAX_BRIGHTNESS : ((brightness < 0) ? 0 : brightness);
 	LEDMatrix_RGB2PWM();
 }
 

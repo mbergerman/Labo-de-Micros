@@ -36,10 +36,10 @@
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
 
-void initWaveGen();
+void initWaveGen(float, uint32_t);
 void wavegenSetFreq(uint32_t);
-void wavegenSetAmp(uint8_t);
-
+void wavegenSetAmp(float);
+float wavegenGetAmp();
 
 /*******************************************************************************
  ******************************************************************************/

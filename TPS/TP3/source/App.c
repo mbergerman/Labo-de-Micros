@@ -31,7 +31,8 @@
  * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-static void delayLoop(uint32_t veces);
+static void wavegen_demo();
+static void led_matrix_demo();
 
 /*******************************************************************************
  * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
@@ -41,6 +42,8 @@ static void delayLoop(uint32_t veces);
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
+static tim_id_t wavegen_tim_id;
+static tim_id_t led_matrix_tim_id;
 
 /*******************************************************************************
  *******************************************************************************
@@ -49,20 +52,35 @@ static void delayLoop(uint32_t veces);
  ******************************************************************************/
 
 void App_Init() {
+	initUartCom();
+	initTimers();
+	initWaveGen(100.0, 10);
+	LEDMatrix_init();			// Inicializar último
 
-	// Init UART
-	//initUartCom();
 
-	// Init Timer
-	//initTimers();
+	led_matrix_tim_id = timerGetId();
+	timerStart(led_matrix_tim_id, TIMER_MS2TICKS(100), TIM_MODE_PERIODIC, led_matrix_demo);
 
-	initWaveGen();
-	initBoard();
 
-	LEDMatrix_init();
+	wavegen_tim_id = timerGetId();
+	timerStart(wavegen_tim_id, TIMER_MS2TICKS(1000), TIM_MODE_PERIODIC, wavegen_demo);
 }
 
 void App_Run() {
+
+}
+
+static void wavegen_demo(){
+	if(wavegenGetAmp() > 50.0){
+		wavegenSetFreq(10);
+		wavegenSetAmp(50.0);
+	}else{
+		wavegenSetFreq(5);
+		wavegenSetAmp(100.0);
+	}
+}
+
+static void led_matrix_demo(){
 	static uint8_t counter = 0;
 
 	static uint8_t old_w = 0;
@@ -81,8 +99,6 @@ void App_Run() {
 
 	LEDMatrix_updateLED(led_black, old3_h, old3_w);
 	LEDMatrix_updateLED(led_color, h, w);
-
-	timerDelay(TIMER_MS2TICKS(100));
 
 	if(led_color.r == 100){
 		led_color = (color_t){0, 0, 100};
@@ -126,16 +142,4 @@ void App_Run() {
 			LEDMatrix_setBrightness(25);
 		}
 	}
-
-
-	/*wavegenSetFreq(5);
-	delayLoop(10000000UL);
-	wavegenSetFreq(10);
-	delayLoop(10000000UL);*/
-
-}
-
-static void delayLoop(uint32_t veces)
-{
-    while (veces--);
 }

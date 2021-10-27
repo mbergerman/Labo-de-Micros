@@ -217,8 +217,9 @@ acc_t getAccelerationVector() {
 
 acc_t readAcceleration(void) {
 	accelReadDataX();
-	timerDelay(TIMER_MS2TICKS(2));
+	timerDelay(TIMER_MS2TICKS(3));
 	accelReadDataY();
+	timerDelay(TIMER_MS2TICKS(3));
 	return getAccelerationVector();
 }
 

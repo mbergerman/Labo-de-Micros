@@ -18,6 +18,7 @@
 #include "PDRV_ADC.h"
 #include "DRV_Accelerometer.h"
 #include "DRV_Buttons.h"
+#include "DRV_LEDMatrix.h"
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
@@ -60,13 +61,6 @@ typedef struct {
 } pos_t;
 
 typedef struct {
-	uint8_t r;
-	uint8_t g;
-	uint8_t b;
-} color_t;
-
-
-typedef struct {
 	pos_t pos;
 	uint8_t brightness;
 	color_t color;
@@ -92,9 +86,7 @@ void timer_suspend_callback();
 void timer_position_callback();
 void timer_buttons_callback();
 
-/*******************************************************************************
- * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
- ******************************************************************************/
+void initAppTimers();
 
 static std_acc_t standard_deviation(acc_t* data, uint8_t len);
 
@@ -154,24 +146,98 @@ void App_Init() {
 	initTimers();
 
 	// Init UART
-	initUartCom();
+	//initUartCom();
 
 	//Init ADC
-	ADC_Init(ADC0_t, ADC_b8, ADC_c4, input_clock, ADC_mA, 0);
-	ADC_SetInterruptMode(ADC0_t, true);
-	ADC_StartConversion(ADC0_t, 0);
+	//ADC_Init(ADC0_t, ADC_b8, ADC_c4, input_clock, ADC_mA, 0);
+	//ADC_SetInterruptMode(ADC0_t, true);
 
 	//Init ADC LDR
-	ADC_Init(ADC1_t, ADC_b8, ADC_c4, input_clock, ADC_mA, 0);
-	ADC_SetInterruptMode(ADC0_t, true);
-	ADC_StartConversion(ADC0_t, 0);
+	//ADC_Init(ADC1_t, ADC_b8, ADC_c4, input_clock, ADC_mA, 0);
+	//ADC_SetInterruptMode(ADC1_t, true);
+	//ADC_StartConversion(ADC1_t, 0);
 
 	//Init Accelerometer
 	initAccelerometer();
 	acc_memory.ptr = acc_memory.data;
 
 	//Init buttons with SPI
-	initButtons();
+	//initButtons();
+
+	//LEDMatrix_init();	// Inicializar último
+}
+
+void App_Run() {
+
+	static bool init_app_timers = false;
+
+	//Check accelerometer
+	static bool accel_config = false;
+	if (!accel_config) {
+		accel_config = accelConfigInit();
+	}else{											// Una vez que se configura el accel, continuo con la app
+		if(!init_app_timers){
+			initAppTimers();
+			init_app_timers = true;
+		}
+
+		*acc_memory.ptr++ = readAcceleration();
+		if (acc_memory.ptr - acc_memory.data == ACC_MEMORY_SIZE) {
+			acc_memory.ptr = acc_memory.data;
+		}
+		timerDelay(10);
+
+		if(status == AWAKE) {
+			//Read ADC
+			ADC_data[2] = ADC_data[1];
+			ADC_data[1] = ADC_data[0];
+			ADC_data[0] = ADC_getValue(ADC0_t);
+
+
+			if ( abs(ADC_data[1]-ADC_data[0])>=4 && abs(ADC_data[2]-ADC_data[1])>=2  ) {
+				point.brightness = (uint8_t)( 100 * ADC_getValue(ADC0_t) / 255 );
+				change_brightness = true;
+				wait = SECONDS2SUSPEND;
+			}
+
+			if(change_color) {
+				// Debug:
+				printf("New color: rgb(%d,%d,%d)\n",point.color.r,point.color.g,point.color.b);
+
+				//LEDMatrix_updateLED(point.color, point.pos.y, point.pos.x);
+
+				change_color = false;
+				wait = SECONDS2SUSPEND;
+			}
+
+			if(change_brightness) {
+				// Debug:
+				printf("New brightness: %d%%\n",point.brightness);
+
+				//LEDMatrix_setBrightness(point.brightness);
+
+				change_brightness = false;
+				wait = SECONDS2SUSPEND;
+			}
+
+			if(change_position) {
+				// Debug:
+				printf("New position: (%d,%d)\n", point.pos.x, point.pos.y);
+
+				//LEDMatrix_updateLED(point.color, point.pos.y, point.pos.x);
+
+				change_position = false;
+				wait = SECONDS2SUSPEND;
+			}
+
+		}
+	}
+
+}
+
+
+void initAppTimers(){
+	//ADC_StartConversion(ADC0_t, 0);
 
 	//Config UART Timers
 
@@ -194,66 +260,9 @@ void App_Init() {
 	tim_id_t timer_suspend = timerGetId();
 	//timerStart(timer_suspend, TIMER_MS2TICKS(1000*SECONDS2SUSPEND/10), TIM_MODE_PERIODIC, timer_suspend_callback);
 
-	//update position with buttos
+	//update position with buttons
 	tim_id_t timer_buttons = timerGetId();
 	timerStart(timer_buttons, TIMER_MS2TICKS(50), TIM_MODE_PERIODIC, timer_buttons_callback);
-
-}
-
-void App_Run() {
-
-	//Check accelerometer
-	static bool accel_config = false;
-	if (!accel_config) {
-		accel_config = accelConfigInit();
-	}
-
-	*acc_memory.ptr++ = readAcceleration();
-	if (acc_memory.ptr - acc_memory.data == ACC_MEMORY_SIZE) {
-		acc_memory.ptr = acc_memory.data;
-	}
-	timerDelay(10);
-
-	if(status == AWAKE) {
-		//Read ADC
-		ADC_data[2] = ADC_data[1];
-		ADC_data[1] = ADC_data[0];
-		ADC_data[0] = ADC_getValue(ADC0_t);
-
-
-		if ( abs(ADC_data[1]-ADC_data[0])>=5 && abs(ADC_data[2]-ADC_data[1])>=2  ) {
-			point.brightness = (uint8_t)( 100 * ADC_getValue(ADC0_t) / 255 );
-			change_brightness = true;
-			wait = SECONDS2SUSPEND;
-		}
-
-		if(change_color) {
-			// Stub for update_color()
-			printf("New color: rgb(%d,%d,%d)\n",point.color.r,point.color.g,point.color.b);
-			//
-			change_color = false;
-			wait = SECONDS2SUSPEND;
-		}
-
-		if(change_brightness) {
-			// Stub for update_brightness()
-			printf("New brightness: %d%%\n",point.brightness);
-			//
-			change_brightness = false;
-			wait = SECONDS2SUSPEND;
-		}
-
-		if(change_position) {
-			// Stub for update_position()
-
-			printf("New position: (%d,%d)\n", point.pos.x, point.pos.y);
-			//
-			change_position = false;
-			wait = SECONDS2SUSPEND;
-		}
-
-	}
-
 }
 
 // === Timer callbacks for UART communication ===
