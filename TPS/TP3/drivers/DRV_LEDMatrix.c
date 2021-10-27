@@ -41,7 +41,7 @@
 #define LED_MATRIX_DMA_CHNNL	0
 #define LED_MATRIX_FTM_CHNNL	0
 
-#define RESET_TICKS		TIMER_MS2TICKS(2)
+#define RESET_TICKS		TIMER_MS2TICKS(10)
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS

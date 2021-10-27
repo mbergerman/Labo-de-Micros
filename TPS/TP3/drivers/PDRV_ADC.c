@@ -3,12 +3,17 @@
 #include "MK64F12.h"
 #include "hardware.h"
 #include "DRV_Timers.h"
-#define TWO_POW_NUM_OF_CAL (1 << 4)
+
+#define TWO_POW_NUM_OF_CAL 	(1 << 4)
+#define CONVERSION_TICKS	TIMER_MS2TICKS(10)
 
 bool ADC_interrupt[2] = {false, false};
 typedef ADC_Type *ADC_t;
 static ADCData_t current_value[2] = {0, 0};
 static ADCChannel_t channels[2]= {0, 0};
+
+static tim_id_t conversion0_tim_id;
+static tim_id_t conversion1_tim_id;
 
 void ADC_Init (ADC_n adc_,ADCBits_t resolution, ADCCycles_t cycles, ADCClock_Divide divide_select, ADCMux_t mux, ADCChannel_t channel){
 
@@ -36,6 +41,9 @@ void ADC_Init (ADC_n adc_,ADCBits_t resolution, ADCCycles_t cycles, ADCClock_Div
 	ADC_SetCycles(adc_, cycles);
 	adc->CFG2 = (adc->CFG2 & ~ADC_CFG2_MUXSEL_MASK) | ADC_CFG2_MUXSEL(mux);
 	channels[adc_] = channel;
+
+	conversion0_tim_id = timerGetId();
+	conversion1_tim_id = timerGetId();
 }
 
 void ADC_SetResolution (ADC_n adc_, ADCBits_t bits)
@@ -179,12 +187,22 @@ bool ADC_Calibrate (ADC_n adc_)
 	return true;
 }
 
+void ADC_StartConversion_0(){
+	ADC_StartConversion (ADC0_t, channels[ADC0_t]);
+}
+
+void ADC_StartConversion_1(){
+	ADC_StartConversion (ADC1_t, channels[ADC1_t]);
+}
+
+
 __ISR__ ADC0_IRQHandler(void){
 	ADCData_t data = ADC_getData(ADC0_t);
 	if(data != current_value[ADC0_t]){
 		current_value[ADC0_t] = data;
 	}
-	ADC_StartConversion (ADC0_t, channels[ADC0_t]);
+
+	timerStart(conversion0_tim_id, CONVERSION_TICKS, TIM_MODE_SINGLESHOT, ADC_StartConversion_0);
 }
 
 __ISR__ ADC1_IRQHandler(void){
@@ -192,5 +210,5 @@ __ISR__ ADC1_IRQHandler(void){
 	if(data != current_value[ADC1_t]){
 		current_value[ADC1_t] = data;
 	}
-	ADC_StartConversion (ADC1_t, channels[ADC1_t]);
+	timerStart(conversion1_tim_id, CONVERSION_TICKS, TIM_MODE_SINGLESHOT, ADC_StartConversion_1);
 }

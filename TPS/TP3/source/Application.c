@@ -18,6 +18,7 @@
 #include "PDRV_ADC.h"
 #include "DRV_Accelerometer.h"
 #include "DRV_Buttons.h"
+#include "DRV_LEDMatrix.h"
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
@@ -25,10 +26,10 @@
 
 //DEFAULT POINT
 #define DEFAULT_BRIGHTNESS 	(50)
-#define DEFAULT_POS			{3,3}
+#define DEFAULT_POS			(pos_t){3,3}
 #define	RED					{255,0,0}
 #define DEFAULT_COLOR		RED
-#define DEFAULT_POINT  		{DEFAULT_POS,DEFAULT_BRIGHTNESS,DEFAULT_COLOR}
+#define DEFAULT_POINT  		{DEFAULT_POS, DEFAULT_POS, DEFAULT_BRIGHTNESS, DEFAULT_COLOR}
 
 //TOPICS
 #define BRIGHTNESS_TOPIC	'B'
@@ -59,15 +60,10 @@ typedef struct {
 	uint8_t y;
 } pos_t;
 
-typedef struct {
-	uint8_t r;
-	uint8_t g;
-	uint8_t b;
-} color_t;
-
 
 typedef struct {
 	pos_t pos;
+	pos_t last_pos;
 	uint8_t brightness;
 	color_t color;
 } point_t;
@@ -102,7 +98,7 @@ static std_acc_t standard_deviation(acc_t* data, uint8_t len);
  * ROM CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
-//static const point_t default_point = DEFAULT_POINT;
+static const color_t black_color = {0, 0, 0};
 
 /*******************************************************************************
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
@@ -162,9 +158,9 @@ void App_Init() {
 	ADC_StartConversion(ADC0_t, 0);
 
 	//Init ADC LDR
-	ADC_Init(ADC1_t, ADC_b8, ADC_c4, input_clock, ADC_mA, 0);
-	ADC_SetInterruptMode(ADC0_t, true);
-	ADC_StartConversion(ADC0_t, 0);
+	//ADC_Init(ADC1_t, ADC_b8, ADC_c4, input_clock, ADC_mA, 0);
+	//ADC_SetInterruptMode(ADC0_t, true);
+	//ADC_StartConversion(ADC0_t, 0);
 
 	//Init Accelerometer
 	initAccelerometer();
@@ -194,10 +190,12 @@ void App_Init() {
 	tim_id_t timer_suspend = timerGetId();
 	//timerStart(timer_suspend, TIMER_MS2TICKS(1000*SECONDS2SUSPEND/10), TIM_MODE_PERIODIC, timer_suspend_callback);
 
-	//update position with buttos
+	//update position with buttons
 	tim_id_t timer_buttons = timerGetId();
 	timerStart(timer_buttons, TIMER_MS2TICKS(50), TIM_MODE_PERIODIC, timer_buttons_callback);
 
+	LEDMatrix_init();
+	LEDMatrix_updateLED(point.color, point.pos.y, point.pos.x);
 }
 
 void App_Run() {
@@ -229,25 +227,34 @@ void App_Run() {
 
 		if(change_color) {
 			// Stub for update_color()
-			printf("New color: rgb(%d,%d,%d)\n",point.color.r,point.color.g,point.color.b);
-			//
+			//printf("New color: rgb(%d,%d,%d)\n",point.color.r,point.color.g,point.color.b);
+
+			LEDMatrix_updateLED(black_color, point.last_pos.y, point.last_pos.x);
+			LEDMatrix_updateLED(point.color, point.pos.y, point.pos.x);
+
 			change_color = false;
 			wait = SECONDS2SUSPEND;
 		}
 
 		if(change_brightness) {
 			// Stub for update_brightness()
-			printf("New brightness: %d%%\n",point.brightness);
+			//printf("New brightness: %d%%\n",point.brightness);
 			//
+
+			LEDMatrix_setBrightness(point.brightness);
+
 			change_brightness = false;
 			wait = SECONDS2SUSPEND;
 		}
 
 		if(change_position) {
 			// Stub for update_position()
-
-			printf("New position: (%d,%d)\n", point.pos.x, point.pos.y);
+			//printf("New position: (%d,%d)\n", point.pos.x, point.pos.y);
 			//
+
+			LEDMatrix_updateLED(black_color, point.last_pos.y, point.last_pos.x);
+			LEDMatrix_updateLED(point.color, point.pos.y, point.pos.x);
+
 			change_position = false;
 			wait = SECONDS2SUSPEND;
 		}
@@ -330,6 +337,12 @@ void timer_suspend_callback() {
 void timer_position_callback() {
 	std_acc_t std_acc = standard_deviation(acc_memory.data, ACC_MEMORY_SIZE);
 	if(std_acc.x > ACC_THRESHOLD) {
+
+		if(!change_position){
+			point.last_pos.x = point.pos.x;
+			point.last_pos.y = point.pos.y;
+		}
+
 		change_position = true;
 		if((acc_memory.ptr-1)->x > 0) {
 			point.pos.x += point.pos.x!=MAX_POS;
@@ -339,6 +352,12 @@ void timer_position_callback() {
 		}
 	}
 	if( std_acc.y > ACC_THRESHOLD) {
+
+		if(!change_position){
+			point.last_pos.x = point.pos.x;
+			point.last_pos.y = point.pos.y;
+		}
+
 		change_position = true;
 		if((acc_memory.ptr-1)->y > 0) {
 			point.pos.y += point.pos.y!=MAX_POS;
@@ -364,6 +383,12 @@ void timer_buttons_callback() {
 			break;
 		case BUTTON_RIGHT:
 			if(!holding_down){
+
+				if(!change_position){
+					point.last_pos.x = point.pos.x;
+					point.last_pos.y = point.pos.y;
+				}
+
 				change_position = true;
 				holding_down = true;
 				if(direction == HORIZONTAL) {
@@ -376,6 +401,12 @@ void timer_buttons_callback() {
 			break;
 		case BUTTON_LEFT:
 			if(!holding_down){
+
+				if(!change_position){
+					point.last_pos.x = point.pos.x;
+					point.last_pos.y = point.pos.y;
+				}
+
 				change_position = true;
 				holding_down = true;
 				if(direction == HORIZONTAL) {

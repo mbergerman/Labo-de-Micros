@@ -21,7 +21,7 @@
 #define TIMER_TICK_MS       1
 #define TIMER_MS2TICKS(ms)  ((ms)/TIMER_TICK_MS)
 
-#define TIMERS_MAX_CANT     32
+#define TIMERS_MAX_CANT     64
 #define TIMER_INVALID_ID    255
 
 
