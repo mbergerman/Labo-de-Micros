@@ -211,7 +211,7 @@ void App_Init() {
 
 	// suspend timer
 	tim_id_t timer_suspend = timerGetId();
-	//timerStart(timer_suspend, TIMER_MS2TICKS(1000*SECONDS2SUSPEND/10), TIM_MODE_PERIODIC, timer_suspend_callback);
+	timerStart(timer_suspend, TIMER_MS2TICKS(1000*SECONDS2SUSPEND/10), TIM_MODE_PERIODIC, timer_suspend_callback);
 
 	//update position with buttons
 	tim_id_t timer_buttons = timerGetId();
@@ -237,11 +237,46 @@ void App_Run() {
 	//}
 	timerDelay(10);
 
+	// Read LDR
+	LDR_data[0] = sensorGetValue(1);
+
+	if ( abs(LDR_data[0]-LDR_data[1]) >= 3 ) {
+		LDR_data[1] = LDR_data[0];
+
+		package_t package;
+		package.topic[0] = LDR_TOPIC;
+		package.payload[0] = 255-LDR_data[0];
+		sentPackage(package);
+		if(adaptative) {
+			point.brightness = (uint8_t)( 100 * (255-LDR_data[0]) / 255 );
+			change_brightness = true;
+			wait = SECONDS2SUSPEND;
+		}
+	}
+
+	//WaveGen parameters
+
+	if(change_amplitud) {
+		// Stub for update_amplitud()
+		//printf("New amplitud: %.2fV\n", wave_params.a);
+
+		wavegenSetAmp(wave_params.a);
+
+		change_amplitud = false;
+	}
+
+	if(change_frequency) {
+		// Stub for update_amplitud()
+		//printf("New frequency: %dHz\n", wave_params.f);
+
+		wavegenSetFreq(wave_params.f);
+
+		change_frequency = false;
+	}
+
 	if(status == AWAKE) {
 		//Read Pot
 		pot_data[0] = sensorGetValue(0);
-
-		LDR_data[0] = sensorGetValue(1);
 
 
 		if ( abs(pot_data[0]-pot_data[1]) >= 10 ) {
@@ -251,23 +286,9 @@ void App_Run() {
 			wait = SECONDS2SUSPEND;
 		}
 
-		if ( abs(LDR_data[0]-LDR_data[1]) >= 3 ) {
-			LDR_data[1] = LDR_data[0];
-
-			package_t package;
-			package.topic[0] = LDR_TOPIC;
-			package.payload[0] = 255-LDR_data[0];
-			sentPackage(package);
-			if(adaptative) {
-				point.brightness = (uint8_t)( 100 * (255-LDR_data[0]) / 255 );
-				change_brightness = true;
-				wait = SECONDS2SUSPEND;
-			}
-		}
-
 		if(change_color) {
 			// Stub for update_color()
-			printf("New color: rgb(%d,%d,%d)\n",point.color.r,point.color.g,point.color.b);
+			//printf("New color: rgb(%d,%d,%d)\n",point.color.r,point.color.g,point.color.b);
 
 			LEDMatrix_updateLED(black_color, point.last_pos.y, point.last_pos.x);
 			LEDMatrix_updateLED(point.color, point.pos.y, point.pos.x);
@@ -278,7 +299,7 @@ void App_Run() {
 
 		if(change_brightness) {
 			// Stub for update_brightness()
-			printf("New brightness: %d%%\n",point.brightness);
+			//printf("New brightness: %d%%\n",point.brightness);
 			//
 
 			LEDMatrix_setBrightness(point.brightness);
@@ -298,25 +319,6 @@ void App_Run() {
 			change_position = false;
 			wait = SECONDS2SUSPEND;
 		}
-
-		if(change_amplitud) {
-			// Stub for update_amplitud()
-			printf("New amplitud: %.2fV\n", wave_params.a);
-
-			wavegenSetAmp(wave_params.a);
-
-			change_amplitud = false;
-		}
-
-		if(change_frequency) {
-			// Stub for update_amplitud()
-			printf("New frequency: %dHz\n", wave_params.f);
-
-			wavegenSetFreq(wave_params.f);
-
-			change_frequency = false;
-		}
-
 	}
 
 }
@@ -369,9 +371,11 @@ void timer_rx_callback() {
 	case SUSPEND_TOPIC:
 		if(status == AWAKE) {
 			status = SUSPENDED;
+			LEDMatrix_updateLED(black_color, point.pos.y, point.pos.x);
 		}
 		else if(status == SUSPENDED) {
 			status = AWAKE;
+			LEDMatrix_updateLED(point.color, point.pos.y, point.pos.x);
 		}
 		wait = SECONDS2SUSPEND;
 		emptyInbox();
@@ -401,6 +405,7 @@ void timer_suspend_callback() {
 	if(status == AWAKE) {
 		wait--;
 		if(wait == 0) {
+			LEDMatrix_updateLED(black_color, point.pos.y, point.pos.x);
 			status = SUSPENDED;
 			wait = SECONDS2SUSPEND;
 		}

@@ -22,11 +22,11 @@
 //============================================
 #if CLOUD==CLOUD_HOME
 
-IPAddress MqttServer(192,168,0,7);				// MQTT server URL or IP (see ipconfig -> IPv4)
+IPAddress MqttServer(192,168,1,107);				// MQTT server URL or IP (see ipconfig -> IPv4)
 const unsigned int MqttPort=1883; 					// MQTT port (default 1883)
-const char MqttUser[]="user";		// user name 
-const char MqttPassword[]="password";				// user password
-const char MqttClientID[]="ESP-Lolin";					// Device ID (warning: must be unique) 
+const char MqttUser[]="user";		              // user name 
+const char MqttPassword[]="password";				  // user password
+const char MqttClientID[]="ESP-Amica-Mati";		// Device ID (warning: must be unique) 
 
 #elif CLOUD==CLOUD_DANY
 
@@ -34,7 +34,7 @@ IPAddress MqttServer(54,232,42,75);
 const unsigned int MqttPort=1883; 
 const char MqttUser[]="itba.jacoby@gmail.com";
 const char MqttPassword[]="password";
-const char MqttClientID[]="Pablo";
+const char MqttClientID[]="Mati";
 
 #elif CLOUD==CLOUD_MQTT
 
@@ -51,8 +51,8 @@ WiFiClient wclient;
 PubSubClient mqtt_client(wclient);
 //=====================================================================
 // WiFi credentials
-char ssid[] = "Mi_Red";
-char password[] = "alambrico0";   // Set password to "" for open networks.
+char ssid[] = "TimTam";
+char password[] = "wolfram123";   // Set password to "" for open networks.
 
 //char ssid[] = "NODE_RED";
 //char password[] = "GEDA2016";   // Set password to "" for open networks.
@@ -122,7 +122,7 @@ char password[] = "alambrico0";   // Set password to "" for open networks.
 #define DEBUG_OFF  0
 #define DEBUG_ON   1
 
-#define debug DEBUG_ON
+#define debug DEBUG_OFF
 
 #define debug_message(fmt,...)          \
   do {              \
