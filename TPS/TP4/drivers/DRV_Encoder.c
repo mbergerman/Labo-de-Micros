@@ -53,6 +53,9 @@ static encoderResult_t encoder_event;
 //Def del timer
 static tim_id_t encoder_timer;
 
+//Semáforo del encoder
+static OS_SEM semEncoder;
+
 /*******************************************************************************
  *******************************************************************************
                         GLOBAL FUNCTION DEFINITIONS
@@ -75,6 +78,10 @@ void initEncoder() {
 
     //Seteo el timer para que llame periodicamente a encoder_callback con 1ms
 	timerStart(encoder_timer, TIMER_MS2TICKS(1), TIM_MODE_PERIODIC, encoder_callback);
+
+	//Create semaphore
+    OS_ERR os_err;
+	OSSemCreate(&semEncoder, "Sem Enc", 0u, &os_err);
 }
 
 bool encoderGetStatus(){
@@ -90,6 +97,10 @@ encoderResult_t encoderGetEvent(){
 	return encoder_event;
 }
 
+OS_SEM* encoderSemPointer(){
+	return &semEncoder;
+}
+
 /*******************************************************************************
  *******************************************************************************
                         LOCAL FUNCTION DEFINITIONS
@@ -102,6 +113,8 @@ static encoderResult_t check_event(bool A, bool B){
     static enum states current_state = START;
     static bool last_sw = false;
 
+    OS_ERR os_err;
+
     encoderResult_t result = ENC_NONE;
 
     // Reviso si hubo un flanco del switch
@@ -109,6 +122,8 @@ static encoderResult_t check_event(bool A, bool B){
     if(!last_sw && current_sw){
     	result = ENC_CLICK;
     	status = true;
+
+    	OSSemPost(&semEncoder, OS_OPT_POST_1, &os_err);
     }
     last_sw = current_sw;
 
@@ -147,6 +162,8 @@ static encoderResult_t check_event(bool A, bool B){
                     current_state = START;
                     result = ENC_RIGHT;
                     status = true;
+
+                    OSSemPost(&semEncoder, OS_OPT_POST_1, &os_err);
                 } 
                 else if(!A && B){
                       
@@ -181,6 +198,8 @@ static encoderResult_t check_event(bool A, bool B){
                     current_state = START;
                     result = ENC_LEFT;
                     status = true;
+
+                    OSSemPost(&semEncoder, OS_OPT_POST_1, &os_err);
                 } 
                 else if(A && !B){
                       

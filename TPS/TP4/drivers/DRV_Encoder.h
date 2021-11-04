@@ -13,6 +13,7 @@
  ******************************************************************************/
 
 #include "PDRV_GPIO.h"
+#include  <os.h>
 
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
@@ -55,6 +56,12 @@ bool encoderGetStatus();
  * @return event
  */
 encoderResult_t encoderGetEvent();
+
+/**
+ * @brief Get pointer to Encoder semaphore
+ * @return pointer to semaphore
+ */
+OS_SEM* encoderSemPointer();
 
 /*******************************************************************************
  ******************************************************************************/

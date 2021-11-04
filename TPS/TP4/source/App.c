@@ -162,15 +162,19 @@ void App_Init (void)
 /* Función que se llama constantemente en un ciclo infinito */
 void App_Run (void)
 {
-
 	static menuState_t menu_state = STATE_MAIN;
-	menuEvent_t event = EVENT_NONE;
+	static menuEvent_t event = EVENT_NONE;
 
-	if(readerIsReady()){
+    OS_ERR os_err;
+
+	/*if(readerIsReady()){
 		event = EVENT_CARD;
 	}else if(encoderGetStatus()){
 		event = encoderGetEvent();	// Es valido igualarlo ya que en el enum se definen los mismos índices
-	}
+	}*/
+
+	OSSemPend(encoderSemPointer(), 0, OS_OPT_PEND_BLOCKING, NULL, &os_err);
+	event = encoderGetEvent();	// Es valido igualarlo ya que en el enum se definen los mismos índices
 
 	if(event != EVENT_NONE){
 		switch(menu_state){
