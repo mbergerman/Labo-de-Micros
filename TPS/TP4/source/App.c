@@ -128,6 +128,8 @@ static uint16_t disp_scroll_speed = 500;
 
 //static adminItem_t admin_item = ITEM_ADD_USER;
 
+static OS_PEND_DATA event_pend_tbl[2];
+
 /*******************************************************************************
  *******************************************************************************
                         GLOBAL FUNCTION DEFINITIONS
@@ -157,6 +159,9 @@ void App_Init (void)
 
 	//Inicializo el number editor
 	initNumberEditor();
+
+	event_pend_tbl[0].PendObjPtr = (OS_PEND_OBJ*) encoderSemPointer();
+	event_pend_tbl[1].PendObjPtr = (OS_PEND_OBJ*) readerSemPointer();
 }
 
 /* Función que se llama constantemente en un ciclo infinito */
@@ -165,16 +170,14 @@ void App_Run (void)
 	static menuState_t menu_state = STATE_MAIN;
 	static menuEvent_t event = EVENT_NONE;
 
-    OS_ERR os_err;
+	OS_ERR os_err;
+    OSPendMulti(&event_pend_tbl[0], 2, 0, OS_OPT_PEND_BLOCKING, &os_err);
 
-	/*if(readerIsReady()){
+	if(readerIsReady()){
 		event = EVENT_CARD;
 	}else if(encoderGetStatus()){
 		event = encoderGetEvent();	// Es valido igualarlo ya que en el enum se definen los mismos índices
-	}*/
-
-	OSSemPend(encoderSemPointer(), 0, OS_OPT_PEND_BLOCKING, NULL, &os_err);
-	event = encoderGetEvent();	// Es valido igualarlo ya que en el enum se definen los mismos índices
+	}
 
 	if(event != EVENT_NONE){
 		switch(menu_state){

@@ -110,6 +110,10 @@ static tim_id_t reader_tim_id;
 static char result_buffer[PAN_MAX_LEN]; //número de la tarjeta
 static uint8_t result_buffer_len;
 static bool is_ready = false; //hubo un input que todavía no fue parseado. Se puede leer con getValue()
+
+//Semáforo del lector
+static OS_SEM semReader;
+
 /*******************************************************************************
  *******************************************************************************
                         GLOBAL FUNCTION DEFINITIONS
@@ -117,11 +121,17 @@ static bool is_ready = false; //hubo un input que todavía no fue parseado. Se p
  ******************************************************************************/
 
 void initReader(void){
+
+
 	gpioMode(READER_EN_PIN, INPUT);
 	gpioMode(READER_CLK_PIN, INPUT);
 	gpioMode(READER_DATA_PIN, INPUT);
 
 	reader_tim_id = timerGetId();
+
+	//Create semaphore
+    OS_ERR os_err;
+	OSSemCreate(&semReader, "Sem Reader", 0u, &os_err);
 }
 
 void enableReader(){
@@ -151,6 +161,11 @@ void getValueReader(char* result_number_ptr, uint8_t* result_len_ptr) {
 	is_ready = false;
 }
 
+
+OS_SEM* readerSemPointer(){
+	return &semReader;
+}
+
 /*******************************************************************************
  *******************************************************************************
                         LOCAL FUNCTION DEFINITIONS
@@ -159,6 +174,8 @@ void getValueReader(char* result_number_ptr, uint8_t* result_len_ptr) {
 
 // sacar la interrupcion por enable
 static void reader_enable_irq(){
+    OS_ERR os_err;
+
 	if(gpioRead(READER_EN_PIN) == EN_ACTIVE){
 		bit_buffer_flag = true;
 		reader_running = true;
@@ -172,6 +189,8 @@ static void reader_enable_irq(){
 			gpioIRQ(READER_CLK_PIN, GPIO_IRQ_MODE_DISABLE, reader_clock_irq);
 
 			is_ready = true;
+
+            OSSemPost(&semReader, OS_OPT_POST_1, &os_err);
 		}
 	}
 }

@@ -50,9 +50,6 @@ static void TaskStart(void *p_arg) {
 #endif
 
     while (1) {
-        //OSTimeDlyHMSM(0u, 0u, 1u, 0u, OS_OPT_TIME_HMSM_STRICT, &os_err);
-        //LED_G_TOGGLE();
-
     	App_Run();
     }
 }

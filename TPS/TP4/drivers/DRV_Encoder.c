@@ -81,7 +81,7 @@ void initEncoder() {
 
 	//Create semaphore
     OS_ERR os_err;
-	OSSemCreate(&semEncoder, "Sem Enc", 0u, &os_err);
+	OSSemCreate(&semEncoder, "Sem Encoder", 0u, &os_err);
 }
 
 bool encoderGetStatus(){

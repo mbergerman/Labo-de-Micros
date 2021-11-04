@@ -12,6 +12,7 @@
  * INCLUDE HEADER FILES
  ******************************************************************************/
 
+#include  <os.h>
 #include "PDRV_GPIO.h"
 
 /*******************************************************************************
@@ -64,6 +65,12 @@ bool readerIsReady();
  * @param result_len_ptr Pointer to result length variable
  */
 void getValueReader(char* result_number_ptr, uint8_t* result_len_ptr);
+
+/**
+ * @brief Get pointer to Card Reader semaphore
+ * @return pointer to semaphore
+ */
+OS_SEM* readerSemPointer();
 
 
 /*******************************************************************************
