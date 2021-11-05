@@ -65,7 +65,9 @@ int main(void) {
 
     OSInit(&err);
 
+    hw_DisableInterrupts();
     App_Init();
+    hw_EnableInterrupts();
 
  #if OS_CFG_SCHED_ROUND_ROBIN_EN > 0u
 	 /* Enable task round robin. */
@@ -74,7 +76,7 @@ int main(void) {
     OS_CPU_SysTickInit(SystemCoreClock / (uint32_t)OSCfg_TickRate_Hz);
 
     OSTaskCreate(&TaskStartTCB,
-                 "App Task Start",
+                 "Main App Task",
                   TaskStart,
                   0u,
                   TASKSTART_PRIO,
