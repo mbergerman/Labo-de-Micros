@@ -2,35 +2,33 @@
 #include  <os.h>
 #include <stddef.h>		//NULL definition
 
-/* LEDs */
-#define LED_R_PORT            PORTB
-#define LED_R_GPIO            GPIOB
-#define LED_G_PORT            PORTE
-#define LED_G_GPIO            GPIOE
-#define LED_B_PORT            PORTB
-#define LED_B_GPIO            GPIOB
-#define LED_R_PIN             22
-#define LED_G_PIN             26
-#define LED_B_PIN             21
-#define LED_B_ON()           (LED_B_GPIO->PCOR |= (1 << LED_B_PIN))
-#define LED_B_OFF()          (LED_B_GPIO->PSOR |= (1 << LED_B_PIN))
-#define LED_B_TOGGLE()       (LED_B_GPIO->PTOR |= (1 << LED_B_PIN))
-#define LED_G_ON()           (LED_G_GPIO->PCOR |= (1 << LED_G_PIN))
-#define LED_G_OFF()          (LED_G_GPIO->PSOR |= (1 << LED_G_PIN))
-#define LED_G_TOGGLE()       (LED_G_GPIO->PTOR |= (1 << LED_G_PIN))
-#define LED_R_ON()           (LED_R_GPIO->PCOR |= (1 << LED_R_PIN))
-#define LED_R_OFF()          (LED_R_GPIO->PSOR |= (1 << LED_R_PIN))
-#define LED_R_TOGGLE()       (LED_R_GPIO->PTOR |= (1 << LED_R_PIN))
-
 /* Task Start */
 #define TASKSTART_STK_SIZE 		512u
 #define TASKSTART_PRIO 			2u
 static OS_TCB TaskStartTCB;
 static CPU_STK TaskStartStk[TASKSTART_STK_SIZE];
 
+/* Task 2 */
+#define TASK2_STK_SIZE			256u
+#define TASK2_STK_SIZE_LIMIT	(TASK2_STK_SIZE / 10u)
+#define TASK2_PRIO              3u
+static OS_TCB Task2TCB;
+static CPU_STK Task2Stk[TASK2_STK_SIZE];
+
 
 void App_Init (void);
 void App_Run (void);
+void Transmission_Init (void);
+void Transmission_Run (void);
+
+
+static void TaskTransmission(void *p_arg) {
+    (void)p_arg;
+
+    while (1) {
+    	Transmission_Run();
+    }
+}
 
 
 static void TaskStart(void *p_arg) {
@@ -49,10 +47,26 @@ static void TaskStart(void *p_arg) {
     CPU_IntDisMeasMaxCurReset();
 #endif
 
+    /* Create Task2 */
+	OSTaskCreate(&Task2TCB, 			//tcb
+				 "Task Transmission",	//name
+				 TaskTransmission,		//func
+				  0u,					//arg
+				  TASK2_PRIO,			//prio
+				 &Task2Stk[0u],			//stack
+				  TASK2_STK_SIZE_LIMIT,	//stack limit
+				  TASK2_STK_SIZE,		//stack size
+				  0u,
+				  0u,
+				  0u,
+				 (OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
+				 &os_err);
+
     while (1) {
     	App_Run();
     }
 }
+
 
 int main(void) {
     OS_ERR err;
@@ -67,6 +81,7 @@ int main(void) {
 
     hw_DisableInterrupts();
     App_Init();
+    Transmission_Init();
     hw_EnableInterrupts();
 
  #if OS_CFG_SCHED_ROUND_ROBIN_EN > 0u

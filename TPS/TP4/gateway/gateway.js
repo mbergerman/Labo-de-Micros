@@ -2,7 +2,7 @@
 /*** Configuration ***/
 /*******************************************************************/
 var serialPortName = "COM8";
-var thingSpeakAPIKey = "DVDTVSXTQFY8QZXT";
+var thingSpeakAPIKey = "7DHOYBR5D1SRDRSM";
 
 // process cmd arguments
 process.argv.forEach(function (val, index, array) {
