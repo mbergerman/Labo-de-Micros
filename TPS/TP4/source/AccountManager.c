@@ -32,15 +32,17 @@ void initDataBase()
 	master_user.PIN = MASTER_PIN;
 	master_user.admin = true;
 	master_user.error_counter = 0;
+	master_user.office_floor = 0;
+	master_user.inside_building = false;
 	user_data_base[users_in_db] = master_user;
 	users_in_db++;
 
 	// Tarjetas que teníamos a mano:
-	dbAddNewUser(master_user, 22747207, 800, false);
-	dbAddNewUser(master_user, 38966311, 60831, false);
+	dbAddNewUser(master_user, 22747207, 800, false, 1);
+	dbAddNewUser(master_user, 38966311, 60831, false, 1);	// Tarjeta ITBA M.Bergerman
 
 	// Test user:
-	dbAddNewUser(master_user, 10000000, 10090, false);
+	dbAddNewUser(master_user, 10000000, 10090, false, 2);	// Ejemplo
 }
 
 //Devuelve si el ID está en la BD
@@ -69,7 +71,7 @@ User* dbUserSearch(uint32_t ID_to_search)
 	return NULL;	// No se encontró el user (no debería pasar ya que antes se llama a id_check
 }
 
-bool dbAddNewUser(User admin_user, uint32_t ID_u, uint32_t PIN_u, bool admin_u){
+bool dbAddNewUser(User admin_user, uint32_t ID_u, uint32_t PIN_u, bool admin_u, uint8_t floor){
 	bool done = false;
 	if(admin_user.admin && !dbCheckID(ID_u)){
 		User new_user;
@@ -77,6 +79,8 @@ bool dbAddNewUser(User admin_user, uint32_t ID_u, uint32_t PIN_u, bool admin_u){
 		new_user.PIN = PIN_u;
 		new_user.admin = admin_u;
 		new_user.error_counter = 0;
+		new_user.office_floor = floor;
+		new_user.inside_building = false;
 		user_data_base[users_in_db] = new_user;
 		users_in_db++;
 		done = true;
@@ -99,3 +103,11 @@ bool dbRemoveUser(User admin_user, uint32_t ID_u){
 bool dbUserBlocked(User* u){
 	return (u->error_counter >= MAX_ERRORS);
 }
+
+
+bool dbToggleInsideBuilding(User* u){
+	u->inside_building = !u->inside_building;
+	return u->inside_building;
+}
+
+

@@ -8,6 +8,7 @@
  * INCLUDE HEADER FILES
  ******************************************************************************/
 
+#include "os.h"
 #include "MK64F12.h"
 #include "PDRV_GPIO.h"
 #include "hardware.h"

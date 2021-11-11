@@ -32,6 +32,8 @@
 #define WARNING_TIME_MS 2500	// Duración del LED warning
 #define LATCH_TIME_MS 	5000	// Duración del pestillo
 
+#define OFFICE_FLOOR_COUNT	10
+
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
@@ -107,6 +109,9 @@ static void unshow_error();
 static void show_warning();
 static void unshow_warning();
 
+static OS_Q* floorMsgQPointer;
+static void update_floor_information(User* u);
+
 /*******************************************************************************
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
@@ -130,6 +135,8 @@ static uint16_t disp_scroll_speed = 500;
 
 static OS_PEND_DATA event_pend_tbl[2];
 
+static uint16_t floor_occupancy[OFFICE_FLOOR_COUNT];
+
 /*******************************************************************************
  *******************************************************************************
                         GLOBAL FUNCTION DEFINITIONS
@@ -137,7 +144,7 @@ static OS_PEND_DATA event_pend_tbl[2];
  ******************************************************************************/
 
 /* Función que se llama 1 vez, al comienzo del programa */
-void App_Init (void)
+void App_Init (OS_Q* msgq)
 {
    	initBoard();
    	initTimers();
@@ -162,6 +169,8 @@ void App_Init (void)
 
 	event_pend_tbl[0].PendObjPtr = (OS_PEND_OBJ*) encoderSemPointer();
 	event_pend_tbl[1].PendObjPtr = (OS_PEND_OBJ*) readerSemPointer();
+
+	floorMsgQPointer = msgq;
 }
 
 /* Función que se llama constantemente en un ciclo infinito */
@@ -169,6 +178,13 @@ void App_Run (void)
 {
 	static menuState_t menu_state = STATE_MAIN;
 	static menuEvent_t event = EVENT_NONE;
+	static bool init_floor_values = false;
+
+	if(!init_floor_values){
+		OS_ERR os_err;
+		OSQPost(floorMsgQPointer, (void*)(&floor_occupancy), sizeof(void*), OS_OPT_POST_FIFO, &os_err);
+		init_floor_values = true;
+	}
 
 	OS_ERR os_err;
     OSPendMulti(&event_pend_tbl[0], 2, 0, OS_OPT_PEND_BLOCKING, &os_err);
@@ -361,7 +377,7 @@ static menuState_t state_pin(menuEvent_t event) {
 						dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
 
 						edit_user_pin = false;
-					}else if ((pin_value == user_to_check->PIN) && !edit_user_pin){
+					}else if (pin_value == user_to_check->PIN){
 						if (edit_flag) {
 							if (!user_to_check->admin) {
 								edit_user_pin = true;
@@ -383,7 +399,7 @@ static menuState_t state_pin(menuEvent_t event) {
 							dispStartAutoScroll(disp_scroll_speed);
 							dispWriteBuffer(strlen(menu_item_strings[menu_item]), menu_item_strings[menu_item]);
 
-							user_to_check->error_counter=0;
+							update_floor_information(user_to_check);
 						}
 					}else{
 						//Si no se valida ID y PIN, se prende el LED de error
@@ -531,6 +547,18 @@ static void show_warning() {
 
 static void unshow_warning() {
 	dispClearLED(LED_WARNING);
+}
+
+static void update_floor_information(User* u){
+	u->error_counter=0;
+	if(dbToggleInsideBuilding(u)){
+		floor_occupancy[u->office_floor] += 1;
+	}else{
+		floor_occupancy[u->office_floor] -= 1;
+	}
+
+    OS_ERR os_err;
+	OSQPost(floorMsgQPointer, (void*)(&floor_occupancy), sizeof(void*), OS_OPT_POST_FIFO, &os_err);
 }
 
 /*******************************************************************************

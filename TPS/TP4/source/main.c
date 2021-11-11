@@ -15,10 +15,11 @@ static CPU_STK TaskStartStk[TASKSTART_STK_SIZE];
 static OS_TCB Task2TCB;
 static CPU_STK Task2Stk[TASK2_STK_SIZE];
 
+static OS_Q floorMsgQueue;
 
-void App_Init (void);
+void App_Init (OS_Q*);
 void App_Run (void);
-void Transmission_Init (void);
+void Transmission_Init (OS_Q*);
 void Transmission_Run (void);
 
 
@@ -46,6 +47,9 @@ static void TaskStart(void *p_arg) {
 #ifdef CPU_CFG_INT_DIS_MEAS_EN
     CPU_IntDisMeasMaxCurReset();
 #endif
+
+    /* Create message queue */
+    OSQCreate(&floorMsgQueue, "Floor Msg Queue", 32, &os_err);
 
     /* Create Task2 */
 	OSTaskCreate(&Task2TCB, 			//tcb
@@ -80,8 +84,8 @@ int main(void) {
     OSInit(&err);
 
     hw_DisableInterrupts();
-    App_Init();
-    Transmission_Init();
+    App_Init(&floorMsgQueue);
+    Transmission_Init(&floorMsgQueue);
     hw_EnableInterrupts();
 
  #if OS_CFG_SCHED_ROUND_ROBIN_EN > 0u

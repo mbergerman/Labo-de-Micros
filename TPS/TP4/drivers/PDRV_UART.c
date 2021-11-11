@@ -8,8 +8,9 @@
  * INCLUDE HEADER FILES
  ******************************************************************************/
 
-#include <PDRV_UART.h>
+#include "os.h"
 #include "MK64F12.h"
+#include "PDRV_UART.h"
 #include "hardware.h"
 
 

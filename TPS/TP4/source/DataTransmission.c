@@ -39,6 +39,7 @@
  * STATIC VARIABLES AND CONST VARIABLES WITH FILE LEVEL SCOPE
  ******************************************************************************/
 
+static OS_Q* floorMsgQPointer;
 
 /*******************************************************************************
  *******************************************************************************
@@ -47,16 +48,27 @@
  ******************************************************************************/
 
 /* Función que se llama 1 vez, al comienzo del programa */
-void Transmission_Init (void)
+void Transmission_Init (OS_Q* msgq)
 {
 	initBoard();
 	initDataTransmission();
+
+	floorMsgQPointer = msgq;
 }
 
 /* Función que se llama constantemente en un ciclo infinito */
 void Transmission_Run (void)
 {
 	OS_ERR os_err;
+
+	void* p_msg;
+	OS_MSG_SIZE msg_size;
+
+	p_msg = OSQPend(floorMsgQPointer, 0, OS_OPT_PEND_BLOCKING, &msg_size, NULL, &os_err);
+
+	sendData(((uint16_t*)p_msg)[0], ((uint16_t*)p_msg)[1], ((uint16_t*)p_msg)[2]);
+
+	/*
 
 	if(responseReady()){
 		if(getResponse() == KEEP_ALIVE_OK){
@@ -66,7 +78,7 @@ void Transmission_Run (void)
 	OSTimeDlyHMSM(0, 0, 0, 500, OS_OPT_TIME_HMSM_STRICT, &os_err);
 	sendKeepAlive();
 	setLED(BLUE, 0);
-	OSTimeDlyHMSM(0, 0, 0, 500, OS_OPT_TIME_HMSM_STRICT, &os_err);
+	OSTimeDlyHMSM(0, 0, 0, 500, OS_OPT_TIME_HMSM_STRICT, &os_err);*/
 }
 
 /*******************************************************************************

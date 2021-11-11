@@ -34,6 +34,8 @@ typedef struct Users {
 	uint32_t PIN;
 	bool admin;
 	uint8_t error_counter;
+	uint8_t office_floor;	// Piso del edificio donde se encuentra la oficina
+	bool inside_building;	// El usuario esta dentro del edificio?
 } User;
 
 /*******************************************************************************
@@ -49,12 +51,14 @@ bool dbCheckID(uint32_t ID_buffered);
 User* dbUserSearch(uint32_t ID_to_search);
 
 //Se puede agregar solo si hay un usuario Admin que lo valide
-bool dbAddNewUser(User admin_user, uint32_t ID_u, uint32_t PIN_u, bool admin_u);
+bool dbAddNewUser(User admin_user, uint32_t ID_u, uint32_t PIN_u, bool admin_u, uint8_t);
 
 //Se puede eliminar solo si hay un usuario Admin que lo valide
 bool dbRemoveUser(User admin_user, uint32_t ID_u);
 
 bool dbUserBlocked(User* u);
+
+bool dbToggleInsideBuilding(User* u);
 
 /*******************************************************************************
  ******************************************************************************/

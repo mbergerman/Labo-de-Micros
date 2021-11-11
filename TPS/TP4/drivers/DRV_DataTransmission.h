@@ -37,7 +37,7 @@ enum{
 /**
  * @brief initialize the communication
 */
-void initDataTransmission(void);
+void initDataTransmission();
 
 /**
  * @brief Send three uint16_t values
