@@ -125,6 +125,12 @@ bool gpioRead (pin_t pin){
  ******************************************************************************/
 
 static void IRQHandler(int32_t port) {
+	CPU_SR_ALLOC();
+
+	CPU_CRITICAL_ENTER();
+	OSIntEnter();                                           /* Tell uC/OS-III that we are starting an ISR             */
+	CPU_CRITICAL_EXIT();
+
 
 #ifdef GPIO_DEVELOPMENT_MODE
 	gpioWrite(GPIO_IRQ_TEST_PIN, HIGH);
@@ -144,6 +150,8 @@ static void IRQHandler(int32_t port) {
 	gpioWrite(GPIO_IRQ_TEST_PIN, LOW);
 #endif //GPIO_DEVELOPMENT_MODE
 
+
+	OSIntExit();                                            /* Tell uC/OS-III that we are leaving the ISR             */
 }
 
 __ISR__ PORTA_IRQHandler(void) { IRQHandler(PA); }

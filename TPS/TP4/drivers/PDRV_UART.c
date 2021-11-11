@@ -216,6 +216,13 @@ static void UART_SetBaudRate (UART_Type* uart, uint32_t baudrate) {
 }
 
 void uart_irq_handler(uint8_t id) {
+	CPU_SR_ALLOC();
+
+	CPU_CRITICAL_ENTER();
+	OSIntEnter();                                           /* Tell uC/OS-III that we are starting an ISR             */
+	CPU_CRITICAL_EXIT();
+
+
 	UART_Type* const UARTX = UART_PTRS[id];
 
 	//interrupted by transmitter
@@ -249,6 +256,9 @@ void uart_irq_handler(uint8_t id) {
 		rx[id].read = true;
 		//UARTX->C2 &= ~UART_C2_RIE_MASK;
 	}
+
+
+	OSIntExit();                                            /* Tell uC/OS-III that we are leaving the ISR             */
 }
 
 __ISR__ UART0_RX_TX_IRQHandler(void) {uart_irq_handler(0);}
