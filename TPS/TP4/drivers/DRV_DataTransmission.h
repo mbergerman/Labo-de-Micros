@@ -18,7 +18,6 @@
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
 
-#define PAYLOAD_SIZE 	1
 
 /*******************************************************************************
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
@@ -27,8 +26,10 @@
 enum{
 	SEND_DATA_OK = 0x81,
 	SEND_DATA_FAIL = 0xC1,
-	KEEP_ALIVE_OK = 0x82
+	KEEPALIVE_OK = 0x82
 };
+
+typedef void (*response_callback_t)(void);
 
 /*******************************************************************************
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE
@@ -70,6 +71,12 @@ uint8_t getResponse(void) ;
  * @brief empty the receiver's queue without reading the packages
 */
 void emptyInbox(void);
+
+/**
+ * @brief Set callback to be called on UART interrupts
+ * @param callback_fn callback function
+*/
+void setResponseCallback(response_callback_t callback_fn);
 
 /*******************************************************************************
  ******************************************************************************/

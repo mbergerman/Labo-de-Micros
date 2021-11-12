@@ -15,19 +15,34 @@ static CPU_STK TaskStartStk[TASKSTART_STK_SIZE];
 static OS_TCB Task2TCB;
 static CPU_STK Task2Stk[TASK2_STK_SIZE];
 
+/* Task 3 */
+#define TASK3_STK_SIZE			256u
+#define TASK3_STK_SIZE_LIMIT	(TASK3_STK_SIZE / 10u)
+#define TASK3_PRIO              3u
+static OS_TCB Task3TCB;
+static CPU_STK Task3Stk[TASK3_STK_SIZE];
+
 static OS_Q floorMsgQueue;
 
 void App_Init (OS_Q*);
 void App_Run (void);
 void Transmission_Init (OS_Q*);
 void Transmission_Run (void);
-
+void KeepAlive_Run (void);
 
 static void TaskTransmission(void *p_arg) {
     (void)p_arg;
 
     while (1) {
     	Transmission_Run();
+    }
+}
+
+static void TaskKeepAlive(void *p_arg) {
+    (void)p_arg;
+
+    while (1) {
+    	KeepAlive_Run();
     }
 }
 
@@ -60,6 +75,21 @@ static void TaskStart(void *p_arg) {
 				 &Task2Stk[0u],			//stack
 				  TASK2_STK_SIZE_LIMIT,	//stack limit
 				  TASK2_STK_SIZE,		//stack size
+				  0u,
+				  0u,
+				  0u,
+				 (OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
+				 &os_err);
+
+	/* Create Task3 */
+	OSTaskCreate(&Task3TCB, 			//tcb
+				 "Task KeepAlive",		//name
+				 TaskKeepAlive,			//func
+				  0u,					//arg
+				  TASK3_PRIO,			//prio
+				 &Task3Stk[0u],			//stack
+				  TASK3_STK_SIZE_LIMIT,	//stack limit
+				  TASK3_STK_SIZE,		//stack size
 				  0u,
 				  0u,
 				  0u,

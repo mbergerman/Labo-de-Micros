@@ -38,11 +38,14 @@ void initDataBase()
 	users_in_db++;
 
 	// Tarjetas que teníamos a mano:
-	dbAddNewUser(master_user, 22747207, 800, false, 1);
-	dbAddNewUser(master_user, 38966311, 60831, false, 1);	// Tarjeta ITBA M.Bergerman
+	dbAddNewUser(master_user, 22747207, 800, false, 0);
+	dbAddNewUser(master_user, 38966311, 60831, false, 0);	// Tarjeta ITBA M.Bergerman
+	dbAddNewUser(master_user, 20980792, 00000, false, 0);	// Tarjeta Ecobici M.Bergerman
+	dbAddNewUser(master_user, 72762949, 00000, false, 1);	// Tarjeta StarBucks M.Bergerman
+	dbAddNewUser(master_user,  2278701, 00000, false, 1);	// Tarjeta MSC M.Bergerman
+	dbAddNewUser(master_user, 20000000, 00000, false, 2);	// Ejemplo 1
+	dbAddNewUser(master_user, 10000000, 00000, false, 2);	// Ejemplo 2
 
-	// Test user:
-	dbAddNewUser(master_user, 10000000, 10090, false, 2);	// Ejemplo
 }
 
 //Devuelve si el ID está en la BD

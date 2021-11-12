@@ -83,6 +83,8 @@ static const IRQn_Type IRQn[] = {UART0_RX_TX_IRQn, UART1_RX_TX_IRQn, UART2_RX_TX
 static buffer_t tx[UART_CANT_IDS];
 static buffer_t rx[UART_CANT_IDS];
 
+static uart_callback_t uart_callbacks[6];
+
 /*******************************************************************************
  *******************************************************************************
                         GLOBAL FUNCTION DEFINITIONS
@@ -197,6 +199,11 @@ bool uartIsTxMsgComplete(uint8_t id) {
 	return tx[id].done;
 }
 
+
+void uartSetCallback(uint8_t id, uart_callback_t callback_fn){
+	uart_callbacks[id] = callback_fn;
+}
+
 /*******************************************************************************
  *******************************************************************************
                         LOCAL FUNCTION DEFINITIONS
@@ -256,6 +263,11 @@ void uart_irq_handler(uint8_t id) {
 		}
 		rx[id].read = true;
 		//UARTX->C2 &= ~UART_C2_RIE_MASK;
+	}
+
+	// Make call to callback function
+	if(uart_callbacks[id]){
+		uart_callbacks[id]();
 	}
 
 

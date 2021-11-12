@@ -22,9 +22,6 @@
 
 #define BUFFER_SIZE	32
 
-// Ports
-enum { PA, PB, PC, PD, PE };
-
 // Convert port and number into pin ID
 // Ex: PTB5  -> PORTNUM2PIN(PB,5)  -> 0x25
 //     PTC22 -> PORTNUM2PIN(PC,22) -> 0x56
@@ -36,12 +33,17 @@ enum { PA, PB, PC, PD, PE };
  * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
  ******************************************************************************/
 
+// Ports
+enum { PA, PB, PC, PD, PE };
+
 typedef struct {
 	uint32_t baudrate;
 	bool parity;
 	//etc
 } uart_cfg_t;
 
+
+typedef void (*uart_callback_t)(void);
 
 /*******************************************************************************
  * VARIABLE PROTOTYPES WITH GLOBAL SCOPE
@@ -96,6 +98,13 @@ uint8_t uartWriteMsg(uint8_t id, const char* msg, uint8_t cant);
  * @return All bytes were transfered
 */
 bool uartIsTxMsgComplete(uint8_t id);
+
+/**
+ * @brief Set callback to be called on UART interrupts
+ * @param id UART's number
+ * @param callback_fn callback function
+*/
+void uartSetCallback(uint8_t id, uart_callback_t callback_fn);
 
 
 /*******************************************************************************
